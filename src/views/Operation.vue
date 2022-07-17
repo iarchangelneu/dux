@@ -1,0 +1,1909 @@
+<template>
+  <div>
+    <div class="header">
+      <div class="operation-banner">
+        <div class="menu">
+          <Header/>
+        </div>
+        <h1 class="operation-banner__title">
+          <p class="operation-us"><img class="span-svg" src="../assets/images/contact/Ellipse1.svg" alt="elipse">DUXGroup
+            Operation</p>
+          a Team of real <span class="color-blue">professionals</span>
+        </h1>
+    </div>
+    </div>
+    <div class="divider">
+      <img src="../assets/images/operation/departament.svg"/>
+    </div>
+    <div class="department">
+      <h2 class="department__title">
+        At DUXGroup, more than <span class="color-blue">350 experts  </span>working in different departments <span
+          class="color-blue">around the world</span> ensure the operational activities of the
+        <span class="color-blue">holding</span> and its <span class="color-blue">brands.</span>
+      </h2>
+      <div class="mechanism-container">
+        <div class="mechanism mechanism-support" @click="$modal.show('support-modal');">
+          <img  alt="shestiryonka" class='small-shestiryonka transparent' src="../assets/images/operation/shestiryonka.svg" />
+          <p class="mechanism-text">
+            Support
+          </p>
+        </div>
+        <div class="mechanism mechanism-vip" @click="$modal.show('vip-modal');">
+          <img  alt="shestiryonka" class='medium-shestiryonka' src="../assets/images/operation/shestiryonka.svg" />
+          <p class="mechanism-text medium-circle">
+            VIP Support
+          </p>
+
+        </div>
+        <div class="mechanism mechanism-hr" @click="$modal.show('hr-modal');">
+          <img  alt="shestiryonka" class='small-shestiryonka' src="../assets/images/operation/shestiryonka.svg" />
+          <p class="mechanism-text">
+            HR
+          </p>
+        </div>
+        <div class="mechanism mechanism-legal" @click="$modal.show('legal-modal');">
+          <img  alt="shestiryonka" class='big-shestiryonka' src="../assets/images/operation/shestiryonka.svg" />
+          <p class="mechanism-text big-circle">
+            Legal & Finance
+          </p>
+        </div>
+        <div class="mechanism mechanism-antifraud" @click="$modal.show('antifraud-modal');">
+          <img  alt="shestiryonka" class='medium-shestiryonka' src="../assets/images/operation/shestiryonka.svg" />
+          <p class="mechanism-text medium-circle">
+            Antifraud
+          </p>
+        </div>
+        <div class="mechanism mechanism-design" @click="$modal.show('design-modal');">
+          <img  alt="shestiryonka" class='small-shestiryonka' src="../assets/images/operation/shestiryonka.svg" />
+          <p class="mechanism-text">
+            Design
+          </p>
+        </div>
+        <div class="mechanism mechanism-bi"  @click="$modal.show('bi-modal');">
+          <img  alt="shestiryonka" class='medium-shestiryonka' src="../assets/images/operation/shestiryonka.svg" />
+          <p class="mechanism-text medium-circle">
+            BI Analytics
+          </p>
+        </div>
+        <div class="mechanism mechanism-crm"  @click="$modal.show('crm-modal');">
+          <img  alt="shestiryonka" class='small-shestiryonka' src="../assets/images/operation/shestiryonka.svg" />
+          <p class="mechanism-text">
+            CRM
+          </p>
+        </div>
+        <div class="mechanism mechanism-development"  @click="$modal.show('development-modal');">
+          <img  alt="shestiryonka" class='big-shestiryonka' src="../assets/images/operation/shestiryonka.svg" />
+          <p class="mechanism-text big-circle">
+            Development
+          </p>
+        </div>
+        <div class="mechanism mechanism-team" @click="$modal.show('team-modal');">
+          <img  alt="shestiryonka" class='medium-shestiryonka' src="../assets/images/operation/shestiryonka.svg" />
+          <p class="mechanism-text medium-circle">
+            Product Team
+          </p>
+        </div>
+        <div class="mechanism mechanism-pr" @click="$modal.show('pr-modal');">
+          <img  alt="shestiryonka" class='big-shestiryonka' src="../assets/images/operation/shestiryonka.svg" />
+          <p class="mechanism-text big-circle">
+            PR & Marketing
+          </p>
+        </div>
+        <div class="mechanism mechanism-psp" @click="$modal.show('psp-modal');">
+          <img  alt="shestiryonka" class='big-shestiryonka' src="../assets/images/operation/shestiryonka.svg" />
+          <p class="mechanism-text big-circle">
+            Integration & PSP
+          </p>
+        </div>
+      </div>
+      <div class="modals">
+        <modal
+            name="psp-modal"
+            class="modal-container"
+            :max-width="667"
+            :width="667"
+            styles="background-color:transparent; text-align:center; box-shadow:none"
+            :height="'auto'"
+            :adaptive="true">
+          <div class="container">
+            <img src="../assets/images/operation/shestyorinka-grey.png" />
+            <div class="text">
+              <p>&#x2022; Integration & PSP</p>
+              <p>Working on connecting the main payment and game providers necessary to provide an optimal level of service and fun to players from different countries.</p>
+            </div>
+          </div>
+        </modal>
+        <modal
+            name="crm-modal"
+            class="modal-container"
+            :max-width="667"
+            :width="667"
+            styles="background-color:transparent; text-align:center; box-shadow:none"
+            :height="'auto'"
+            :adaptive="true">
+          <div class="container">
+            <img src="../assets/images/operation/shestyorinka-grey.png" />
+            <div class="text">
+              <p>&#x2022; CRM</p>
+              <p>Develop and implement promotions and contests for users of the product.</p>
+            </div>
+          </div>
+        </modal>
+        <modal
+            name="pr-modal"
+            class="modal-container"
+            :max-width="667"
+            :width="667"
+            styles="background-color:transparent; text-align:center; box-shadow:none"
+            :height="'auto'"
+            :adaptive="true">
+          <div class="container">
+            <img src="../assets/images/operation/shestyorinka-grey.png" />
+            <div class="text">
+              <p>&#x2022; PR & Marketing</p>
+              <p>Promote the brands of the holding, follow the latest trends in the sphere, and implement them into life, taking care of the brand name.</p>
+            </div>
+          </div>
+        </modal>
+        <modal
+            name="team-modal"
+            class="modal-container"
+            :max-width="667"
+            :width="667"
+            styles="background-color:transparent; text-align:center; box-shadow:none"
+            :height="'auto'"
+            :adaptive="true">
+          <div class="container">
+            <img src="../assets/images/operation/shestyorinka-grey.png" />
+            <div class="text">
+              <p>&#x2022; Product Team</p>
+              <p>Help in collaboration, systematic planning, and organization of the work on all types of products.</p>
+            </div>
+          </div>
+        </modal>
+        <modal
+            name="development-modal"
+            class="modal-container"
+            :max-width="667"
+            :width="667"
+            styles="background-color:transparent; text-align:center; box-shadow:none"
+            :height="'auto'"
+            :adaptive="true">
+          <div class="container">
+            <img src="../assets/images/operation/shestyorinka-grey.png" />
+            <div class="text">
+              <p>&#x2022; Development</p>
+              <p>Create advanced frontend and backend solutions for all products of the company.</p>
+            </div>
+          </div>
+        </modal>
+        <modal
+            name="bi-modal"
+            class="modal-container"
+            :max-width="667"
+            :width="667"
+            styles="background-color:transparent; text-align:center; box-shadow:none"
+            :height="'auto'"
+            :adaptive="true">
+          <div class="container">
+            <img src="../assets/images/operation/shestyorinka-grey.png" />
+            <div class="text">
+              <p>&#x2022; BI Analytics</p>
+              <p>Calculating and analyzing the main indicators of user gaming activity in real-time, based on data obtained by neural networks on the platform.</p>
+            </div>
+          </div>
+        </modal>
+        <modal
+            name="design-modal"
+            class="modal-container"
+            :max-width="667"
+            :width="667"
+            styles="background-color:transparent; text-align:center; box-shadow:none"
+            :height="'auto'"
+            :adaptive="true">
+          <div class="container">
+            <img src="../assets/images/operation/shestyorinka-grey.png" />
+            <div class="text">
+              <p>&#x2022; Design</p>
+              <p>Create modern visual depictions of all the projects we have.</p>
+            </div>
+          </div>
+        </modal>
+        <modal
+            name="antifraud-modal"
+            class="modal-container"
+            :max-width="667"
+            :width="667"
+            styles="background-color:transparent; text-align:center; box-shadow:none"
+            :height="'auto'"
+            :adaptive="true">
+          <div class="container">
+            <img src="../assets/images/operation/shestyorinka-grey.png" />
+            <div class="text">
+              <p>&#x2022; Antifraud</p>
+              <p>Continuously monitor and analyze the activity of players to identify suspicious activity.</p>
+            </div>
+          </div>
+        </modal>
+        <modal
+            name="legal-modal"
+            class="modal-container"
+            :max-width="667"
+            :width="667"
+            styles="background-color:transparent; text-align:center; box-shadow:none"
+            :height="'auto'"
+            :adaptive="true">
+          <div class="container">
+            <img src="../assets/images/operation/shestyorinka-grey.png" />
+            <div class="text">
+              <p>&#x2022; Legal & Finance</p>
+              <p>Take care of all legal and financial issues, including issues of obtaining various local licenses and all the accounting.</p>
+            </div>
+          </div>
+        </modal>
+        <modal
+            name="hr-modal"
+            class="modal-container"
+            :max-width="667"
+            :width="667"
+            styles="background-color:transparent; text-align:center; box-shadow:none"
+            :height="'auto'"
+            :adaptive="true">
+          <div class="container">
+            <img src="../assets/images/operation/shestyorinka-grey.png" />
+            <div class="text">
+              <p>&#x2022; HR</p>
+              <p>Look for and find the best market experts, maintain a friendly atmosphere in all offices and take care of the corporate culture of the holding.</p>
+            </div>
+          </div>
+        </modal>
+        <modal
+            name="vip-modal"
+            class="modal-container"
+            :max-width="667"
+            :width="667"
+            styles="background-color:transparent; text-align:center; box-shadow:none"
+            :height="'auto'"
+            :adaptive="true">
+          <div class="container">
+            <img src="../assets/images/operation/shestyorinka-grey.png" />
+            <div class="text">
+              <p>&#x2022; & VIP Support</p>
+              <p>Respond to the requests of players and VIP players, as well as provide round-the-clock support for each product and monitor the activity of users.</p>
+            </div>
+          </div>
+        </modal>
+        <modal
+            name="support-modal"
+            class="modal-container"
+            :max-width="667"
+            :width="667"
+            styles="background-color:transparent; text-align:center; box-shadow:none"
+            :height="'auto'"
+            :adaptive="true">
+          <div class="container">
+            <img src="../assets/images/operation/shestyorinka-grey.png" />
+            <div class="text">
+              <p>&#x2022; Support</p>
+              <p>Respond to the requests of players and VIP players, as well as provide round-the-clock support for each product and monitor the activity of users.</p>
+            </div>
+          </div>
+        </modal>
+      </div>
+      <div class="divider">
+        <img  alt="header" src="../assets/images/operation/Header.svg"/>
+      </div>
+      <div class="unique">
+        <div class="unique-container">
+          <div class="unique-container-left-side">
+            <div class="unique-container-left-side-dote">
+              <img src="../assets/images/careers/dote16.svg" alt="dote16"/>
+            </div>
+            <div class="unique-container-left-side-text">
+              <h3 class="unique-container-left-side-title">Years of Experience</h3>
+            </div>
+          </div>
+          <div class="unique-container-right-side">
+            <p class="unique-container-right-side-text">
+              DUXGroup has come a long way since its inception, starting small but eventually growing into a supremely
+              reputable developer and a major competitor, offering nothing but the best in iGaming solutions. With
+              considerable experience under our belt, DUXGroup offers the essential services needed for creating,
+              growing, and maintaining a successful online casino business.
+            </p>
+          </div>
+        </div>
+        <div class="unique-container">
+          <div class="unique-container-left-side">
+            <div class="unique-container-left-side-dote">
+              <img src="../assets/images/careers/dote16.svg" alt="dote16"/>
+            </div>
+            <div class="unique-container-left-side-text">
+              <h3 class="unique-container-left-side-title">Vast Portfolio</h3>
+            </div>
+          </div>
+          <div class="unique-container-right-side">
+            <p class="unique-container-right-side-text">
+              DUXGroup boasts a comprehensive portfolio, handling billions of transactions every year. By becoming one
+              of the many casino operators in our ranks, you’ll have access to the best gaming content and products in
+              the industry from a range of hundreds of gaming providers. You’ll also be able to add your players to an
+              arsenal of millions of already registered players.
+            </p>
+          </div>
+        </div>
+        <div class="unique-container">
+          <div class="unique-container-left-side">
+            <div class="unique-container-left-side-dote">
+              <img src="../assets/images/careers/dote16.svg" alt="dote16"/>
+            </div>
+            <div class="unique-container-left-side-text">
+              <h3 class="unique-container-left-side-title third-title">Innovation, design, and technology</h3>
+            </div>
+          </div>
+          <div class="unique-container-right-side">
+            <p class="unique-container-right-side-text">
+              Innovation is crucial for success in the iGaming world. Our
+              experienced team is full of pioneers and we firmly believe in adopting cutting edge technology. It is this
+              cutting edge technology coupled with great design that carves the way to becoming a world class iGaming
+              company. Since DUXGroup began, our top tier developers have been renowned for creating the ultimate
+              customisable website layouts for our clients. We aspire to consistently deliver nothing but the best
+              products to our casino operators and an unbelievable gaming experience to our players all over the world.
+            </p>
+          </div>
+        </div>
+        <div class="unique-container">
+          <div class="unique-container-left-side">
+            <div class="unique-container-left-side-dote">
+              <img src="../assets/images/careers/dote16.svg" alt="dote16"/>
+            </div>
+            <div class="unique-container-left-side-text">
+              <h3 class="unique-container-left-side-title">Special approach </h3>
+            </div>
+          </div>
+          <div class="unique-container-right-side">
+            <p class="unique-container-right-side-text">
+              The name DUXGroup was not chosen by mistake. Dux is a leader,
+              who gathers the best of the best around him to conquer the igaming industry. There are several projects
+              within the holding and each is unique, headed by a leader pushing the “tribe” forward.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="divider">
+        <img src="../assets/images/operation/brands.svg"/>
+      </div>
+      <div class="brands">
+        <div class="brands-container">
+          <img src="../assets/images/operation/Getslots.svg" alt="brands">
+        </div>
+        <div class="brands-container">
+          <img src="../assets/images/operation/Octo.svg" alt="brands">
+        </div>
+        <div class="brands-container">
+          <img src="../assets/images/operation/Pino.svg" alt="brands">
+        </div>
+        <div class="brands-container">
+          <img src="../assets/images/operation/Dux.svg" alt="brands">
+        </div>
+      </div>
+      <div class="brands-title-container">
+        <h2 class="brands-title">
+          On our brands we have<span class="color-blue"> the best </span>game and payment providers necessary to provide
+          an <span class="color-blue">optimal level of service</span> and
+          fun to players from <span class="color-blue">different countries.</span>
+        </h2>
+      </div>
+      <div class="game-provider">
+        <h3 class="game-provider-title">
+          <span class="color-blue"> game </span>providers
+        </h3>
+        <div class="provider-row">
+          <div class="provider-row-columns">
+            <img src="../assets/images/operation/gameproviders/Pragmatic.svg" alt="game-providers" class="provider-img">
+            <img src="../assets/images/operation/gameproviders/Playn'Go.svg" alt="game-providers" class="provider-img">
+            <img src="../assets/images/operation/gameproviders/Evolution.svg" alt="game-providers" class="provider-img">
+            <img src="../assets/images/operation/gameproviders/Playson.svg" alt="game-providers" class="provider-img">
+            <img src="../assets/images/operation/gameproviders/Pushgaming.svg" alt="game-providers" class="provider-img">
+            <img src="../assets/images/operation/gameproviders/Booongo.svg" alt="game-providers" class="provider-img">
+            <img src="../assets/images/operation/gameproviders/PragmaticLive.svg" alt="game-providers" class="provider-img">
+            <img src="../assets/images/operation/gameproviders/Bgaming.svg" alt="game-providers" class="provider-img">
+            <img src="../assets/images/operation/gameproviders/Spinomenal.svg" alt="game-providers" class="provider-img">
+            <img src="../assets/images/operation/gameproviders/Nolimitcity.svg" alt="game-providers" class="provider-img">
+            <img src="../assets/images/operation/gameproviders/Microgaming.svg" alt="game-providers" class="provider-img">
+            <img src="../assets/images/operation/gameproviders/Redtiger.svg" alt="game-providers" class="provider-img">
+            <img src="../assets/images/operation/gameproviders/Thunderkick.svg" alt="game-providers" class="provider-img">
+            <img src="../assets/images/operation/gameproviders/wazdan.svg" alt="game-providers" class="provider-img">
+            <img src="../assets/images/operation/gameproviders/booming.svg" alt="game-providers" class="provider-img">
+            <img src="../assets/images/operation/gameproviders/Isoftbet.svg" alt="game-providers" class="provider-img">
+            <img src="../assets/images/operation/gameproviders/Netent.svg" alt="game-providers" class="provider-img">
+            <img src="../assets/images/operation/gameproviders/Yggdrasil.svg" alt="game-providers" class="provider-img">
+            <img src="../assets/images/operation/gameproviders/EGT.svg" alt="game-providers" class="provider-img">
+            <img src="../assets/images/operation/gameproviders/belatra.svg" alt="game-providers" class="provider-img">
+
+          </div>
+
+        </div>
+      </div>
+      <div class="payment-provider">
+        <h3 class="payment-provider-title">
+          <span class="color-blue"> payment </span>providers
+        </h3>
+        <div class="payment-provider-row">
+          <div class="payment-provider-row-columns">
+            <div><img src="../assets/images/operation/payment/visa.svg" class="provider-img" alt="payment"></div>
+            <div><img src="../assets/images/operation/payment/mastercard.svg" class="provider-img" alt="payment"></div>
+            <div><img src="../assets/images/operation/payment/interac.svg" class="provider-img" alt="payment"></div>
+            <div><img src="../assets/images/operation/payment/better.svg" class="provider-img" alt="payment"></div>
+            <div><img src="../assets/images/operation/payment/neteller.svg" class="provider-img neteller" alt="payment"></div>
+            <div><img src="../assets/images/operation/payment/jeton.svg" class="provider-img" alt="payment"></div>
+            <div><img src="../assets/images/operation/payment/rappid.svg" class="provider-img" alt="payment"></div>
+            <div><img src="../assets/images/operation/payment/ezwallet.svg" class="provider-img" alt="payment"></div>
+            <div><img src="../assets/images/operation/payment/mifinity.svg" class="provider-img" alt="payment"></div>
+            <div><img src="../assets/images/operation/payment/dimoco.svg" class="provider-img" alt="payment"></div>
+            <div><img src="../assets/images/operation/payment/skrill.svg" class="provider-img" alt="payment"></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <FooterPart/>
+
+      </div>
+    </div>
+
+  </div>
+</template>
+
+<script>
+import Header from '../components/Header' ;
+import FooterPart from "@/components/Footer";
+
+export default {
+
+  name: "Operation-page",
+  data(){
+    return {
+
+    }
+  },
+  components: {Header, FooterPart},
+  methods: {
+    show(){
+      this.$modal.show('my-first-modal');
+    }
+  },
+  mounted() {
+    this.show()
+  }
+
+}
+</script>
+
+<style scoped lang="scss">
+.modal-container{
+  z-index: 99999999;
+  .container{
+    position: relative;
+    img{
+      animation: rotating-big 4s linear infinite;
+      width: 100%;
+    }
+    .text{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      p:first-child{
+        font-family: 'Oxygen', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+      }
+      p:nth-child(2){
+        margin-top: 10px;
+        font-family: 'Oxygen', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        display: flex;
+        align-items: flex-end;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        opacity: 0.9;
+      }
+    }
+  }
+}
+@keyframes rotating-min {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@keyframes rotating-big {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.footer{
+  padding: 0 25px !important;
+}
+@media (min-width: 320px) and (max-width: 768px){
+  .footer{
+    padding: 0 16px !important;
+  }
+}
+.department {
+  background: #010C28;
+  display: flex;
+  justify-content: center;
+  padding-top: 96px;
+  flex-direction: column;
+}
+
+.department__title {
+  text-align: center;
+  font-size: 58px;
+  color: white;
+  padding: 0 25px;
+  font-family: 'Oxygen', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.color-blue {
+  color: #2F5BD8;
+}
+.header{
+  background: #010C28 url('../assets/images/gradient.png') center;
+  background-size: cover;
+}
+.operation-banner {
+  background: url("../assets/images/operation/operation-bg.svg") no-repeat right top;
+
+  padding: 25px 25px 0 25px;
+
+  &__title {
+    font-family: "Oxygen", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 134px;
+    line-height: 95%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #F0F0F0;
+    margin-top: 400px;
+    flex-wrap: wrap;
+    display: flex;
+
+    & .operation-us {
+      font-family: "Oxygen", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 38px;
+      line-height: 48px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #F0F0F0;
+      margin: 0 70px 0 0;
+      vertical-align: top;
+      max-width: 230px;
+      display: flex;
+      align-items: baseline;
+      & .span-svg {
+        margin-right: 11px;
+        vertical-align: baseline;
+      }
+
+    }
+  }
+}
+
+.divider {
+  padding: 200px 10px 0 10px;
+  display: flex;
+  width: 100%;
+  background-color: #010C28;
+  align-items: flex-end;
+
+  img {
+    width: 100%;
+  }
+}
+
+.mechanism-container {
+  min-height: 860px;
+  position: relative;
+}
+
+//.mechanism:first-child:hover .mechanism:nth-child(1) img{
+//  animation-play-state: paused;
+//}
+//.mechanism:hover > img{
+//  -webkit-animation-play-state:paused;
+//  -moz-animation-play-state: paused;
+//  -o-animation-play-state: paused;
+//  animation-play-state:paused;
+//}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+.mechanism:hover > p{
+  transform: scale(1.1);
+  font-size: 13.5px;
+  border:none;
+  border:none;
+}
+.mechanism:hover{
+  z-index: 99999;
+}
+
+
+
+
+
+.mechanism-support, .mechanism-hr, .mechanism-design, .mechanism-crm{
+  width: 114px;
+  height: 114px;
+}
+.mechanism-vip, .mechanism-team, .mechanism-antifraud, .mechanism-bi{
+  width: 156px;
+  height: 156px;
+}
+.mechanism-legal, .mechanism-pr, .mechanism-psp, .mechanism-development{
+  width: 217px;
+  height: 217px;
+}
+
+
+
+
+//.mechanism-legal img, .mechanism-team img, .mechanism-design img, .mechanism-development img, .mechanism-bi img, .mechanism-development img{
+//  animation: rotating-big 4s linear infinite ;
+//}
+//.mechanism-pr img, .mechanism-psp img, .mechanism-vip img, .mechanism-antifraud img, .mechanism-crm img, .mechanism-support img , .mechanism-hr img {
+//  animation: rotating-min 2s linear infinite;
+//}
+
+.mechanism-support img,  .mechanism-design img,.mechanism-hr img, .mechanism-crm img, .mechanism-pr img,.mechanism-psp img, .mechanism-hr img,.mechanism-crm img,{
+  animation: rotating-min 4s linear infinite;
+}
+.mechanism-antifraud img, .mechanism-bi img,  .mechanism-pr img,.mechanism-psp img{
+  animation: rotating-min 5s linear infinite;
+}
+.mechanism-team img, .mechanism-vip img, .mechanism-vip img {
+  animation: rotating-big 5s linear infinite;
+}
+.mechanism-legal img, .mechanism-development img, .mechanism-pr img, .mechanism-psp img,{
+  animation: rotating-big 7s linear infinite ;
+}
+
+ .mechanism-antifraud:hover, .mechanism-support:hover  {
+  background: linear-gradient(86.5deg, #5433FF 8.33%, #20BDFF 73.44%, #A5FECB 100%);
+  transform: scale(1.2);
+  border-radius: 50%;
+  border: none;
+  font-size: 14px !important;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.mechanism-vip:hover , .mechanism-team:hover{
+  background: linear-gradient(286.9deg, #E52D27 29.52%, #A50C10 100%);
+  transform: scale(1.2);
+  border-radius: 50%;
+  border: none;
+  font-size: 18px;
+  font-family: 'Oxygen', sans-serif;
+}
+.mechanism-legal:hover ,.mechanism-crm:hover {
+  background: linear-gradient(105.97deg, #4B0082 27.44%, #9400D3 100%);
+  transform: scale(1.2);
+  border-radius: 50%;
+  border: none;
+  font-size: 18px;
+  font-family: 'Oxygen', sans-serif;
+}
+.mechanism-hr:hover,.mechanism-bi:hover{
+  background: linear-gradient(95.7deg, #000428 7.7%, #004E92 90.93%);
+  transform: scale(1.2);
+  border-radius: 50%;
+  border: none;
+  font-size: 18px;
+  font-family: 'Oxygen', sans-serif;
+}
+.mechanism-pr:hover,.mechanism-psp:hover{
+  background: linear-gradient(135deg, #003D4D 0%, #00C996 100%);
+  transform: scale(1.2);
+  border-radius: 50%;
+  border: none;
+  font-size: 18px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.mechanism-development:hover{
+  background: linear-gradient(294.31deg, #FE8C00 0%, #F83600 100%);
+  transform: scale(1.2);
+  border-radius: 50%;
+  border: none;
+  font-size: 18px;
+  font-family: 'Oxygen', sans-serif;
+}
+.mechanism-design:hover{
+  background: linear-gradient(75.06deg, #42275A 10.32%, #734B6D 84.99%);
+  transform: scale(1.2);
+  border-radius: 50%;
+  border: none;
+  font-size: 18px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+
+.mechanism {
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  transition-timing-function: ease-in-out;
+  justify-content: center;
+  position: absolute;
+  &>.small-shestiryonka{
+    width: 174px;
+    height: 174px;
+  }
+  &>.medium-shestiryonka{
+    width: 232px;
+    height: 232px;
+  }
+  &>.big-shestiryonka{
+    width: 330px;
+    height: 330px;
+  }
+  &:nth-child(1) {
+    top: 16%;
+    left: 12%;
+  }
+
+  &:nth-child(2) {
+
+
+    top: 17%;
+    left: 27%;
+  }
+
+  &:nth-child(3) {
+    left: 30%;
+    top: 46%;
+  }
+
+  &:nth-child(4) {
+
+
+    left: 7%;
+    top: 42%;
+  }
+
+  &:nth-child(5) {
+    top: 30%;
+    left: 48%;
+  }
+
+  &:nth-child(6) {
+    top: 56%;
+    left: 61%;
+  }
+
+  &:nth-child(7) {
+
+    top: 82%;
+    left: 59%;
+
+  }
+
+  &:nth-child(8) {
+    top: 89%;
+    left: 76%;
+  }
+
+  &:nth-child(9) {
+
+    top: 16%;
+    left: 67%;
+  }
+
+  &:nth-child(10) {
+
+    left: 21%;
+    top: 75%;
+  }
+
+  &:nth-child(11) {
+    left: 40%;
+    top: 60%;
+
+  }
+
+  &:nth-child(12) {
+
+    top: 53%;
+    right: 9%;
+
+  }
+
+  &-text {
+    width: 114px;
+    height: 114px;
+    color: white;
+    position: absolute;
+    border: 1px solid #032B96;
+    font-family: 'Oxygen', sans-serif;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+}
+
+.big-circle {
+  width: 217px;
+  height: 217px;
+}
+
+.medium-circle {
+  width: 156px;
+  height: 156px;
+}
+
+.unique {
+  background-color: #010C28;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-title {
+    margin-top: 96px;
+    max-width: 820px;
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 105%;
+
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #F0F0F0;
+  }
+
+  &-container {
+    margin-top: 70px;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid #828FA1;
+
+    &:nth-child(1) {
+      margin-top: 96px;
+      border: none;
+    }
+
+    &-left-side {
+      display: flex;
+      align-items: baseline;
+      &-dote {
+        margin-right: 10%;
+        padding-top: 10px;
+      }
+      & .third-title{
+        max-width: 400px;
+      }
+      &-title {
+        min-width: 425px;
+        font-family: 'Oxygen', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 48px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #F0F0F0;
+
+      }
+    }
+
+    &-right-side {
+      &-text {
+        max-width: 562px;
+        font-family: 'Exo', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        color: #F0F0F0;
+
+      }
+    }
+  }
+
+}
+
+.brands {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 97px;
+
+  &-container {
+    border: 25px solid;
+    border-image-source: url("../assets/images/operation/shape.svg");
+    border-image-slice: 20 22;
+
+    background: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 323px;
+    height: 197px;
+    &:hover{
+      border-image-source: url("../assets/images/operation/border-hover.svg");
+      border-image-slice: 20 22;
+      cursor: pointer;
+    }
+  }
+}
+
+.brands-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 91px;
+}
+
+.brands-title {
+  font-size: 58px;
+  color: white;
+  max-width: 978px;
+  font-family: 'Oxygen', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 105%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.game-provider {
+  &-title {
+    font-family: 'Oxygen', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 88px;
+  }
+
+  .provider-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 59px;
+
+
+    &-columns {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.payment-provider {
+  &-title {
+    font-family: 'Oxygen', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 88px;
+  }
+
+  &-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 59px;
+    padding-bottom: 150px;
+
+    &-columns {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto auto;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media only screen and (max-width: 1406px) {
+
+  .mechanism {
+    &:nth-child(1) {
+      top: 17%;
+      left: 9%;
+    }
+
+    &:nth-child(2){
+      top: 19%;
+      left: 25%;
+    }
+
+    &:nth-child(3) {
+      left: 29%;
+    }
+
+    &:nth-child(4) {
+      left: 6%;
+
+    }
+    &:nth-child(5){
+      top: 30%;
+      left: 46%;
+    }
+    &:nth-child(6) {
+      left: 58%;
+    }
+
+    &:nth-child(7) {
+      top: 88%;
+      left: 57%;
+    }
+
+    &:nth-child(9) {
+      top: 13%;
+    }
+
+    &:nth-child(10) {
+      left: 16%;
+      top: 77%;
+    }
+
+    &:nth-child(11) {
+      left: 35%;
+      top: 66%;
+
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1306px) {
+  .mechanism {
+
+    &:nth-child(1) {
+      left: 6%;
+    }
+
+    &:nth-child(2) {
+      left: 22%;
+      top: 13%;
+    }
+
+    &:nth-child(3) {
+      top: 38%;
+    }
+
+    &:nth-child(4) {
+      left: 6%;
+    }
+
+    &:nth-child(5) {
+      top: 22%;
+      left: 46%;
+    }
+
+    &:nth-child(6) {
+      top: 44%;
+      left: 61%;
+    }
+
+    &:nth-child(7) {
+      top: 85%;
+      left: 54%;
+    }
+
+
+    &:nth-child(9) {
+      top: 13%;
+      left: 68%;
+    }
+
+    &:nth-child(10) {
+      top: 75%;
+      left: 19%;
+    }
+
+    &:nth-child(11) {
+      left: 38%;
+      top: 55%;
+
+    }
+
+  }
+  .brands-container {
+    width: 226px;
+    height: 136px;
+    &>img{
+      width: 150px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1236px) {
+  .mechanism {
+    &:nth-child(1) {
+      left: 3%;
+    }
+
+    &:nth-child(2) {
+      left: 21%;
+      top: 19%;
+    }
+
+    &:nth-child(3) {
+      left: 35%;
+      top: 45%;
+    }
+     &:nth-child(4){
+       top: 46%;
+       left: 6%;
+     }
+    &:nth-child(5) {
+      left: 43%;
+    }
+
+    &:nth-child(6) {
+      top: 13%;
+      left: 63%;
+    }
+
+    &:nth-child(7) {
+      top: 27%;
+      right: 10%;
+      left: auto;
+    }
+
+    &:nth-child(8) {
+
+      top: 66%;
+      left: 81%;
+
+    }
+
+    &:nth-child(9) {
+      top: 75%;
+      left: 28%;
+    }
+
+    &:nth-child(10) {
+      top: 96%;
+      left: 6%;
+    }
+
+    &:nth-child(11) {
+      top: 49%;
+      left: 54%;
+    }
+
+    &:nth-child(12) {
+      top: 85%;
+      right: 17%;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+  .operation-banner {
+    background: url("../assets/images/operation/bg-medium.svg") no-repeat right top, linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28);
+  }
+  .operation-banner__title {
+    font-size: 84px !important;
+    margin-top: 300px !important;
+  }
+}
+.payment-provider-row-columns{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & > div{
+    flex: 16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      margin: 0 auto;
+    }
+  }
+}
+@media screen and (min-width: 1160px) and (max-width: 1440px) {
+  .payment-provider-row-columns{
+    & > div{
+      flex: 15% !important;
+    }
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1160px) {
+  .payment-provider-row-columns{
+    & > div{
+      flex: 11% !important;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .payment-provider-row-columns{
+    & > div{
+      flex: 25% !important;
+    }
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .payment-provider-row-columns{
+    & > div{
+      flex: 33% !important;
+    }
+  }
+}
+@media only screen and (max-width: 1160px) {
+  .unique-container-left-side-title {
+    max-width: 307px !important;
+    min-width: 300px !important;
+    font-size: 34px !important;
+  }
+  .unique-container-right-side-text {
+    max-width: 480px;
+    font-size: 18px !important;
+  }
+  .title-container {
+    padding: 110px 32px;
+  }
+  .mechanism-container {
+    min-height: 980px;
+  }
+
+  .operation-us{
+    font-size: 22px  !important;
+    margin: 0!important;
+    line-height: 28px !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .mechanism {
+    &:nth-child(1) {
+      left: 3%;
+      top: 16%;
+
+    }
+
+    &:nth-child(2) {
+      left: 22%;
+      top: 19%;
+    }
+
+    &:nth-child(3) {
+      left: 36%;
+      top: 39%;
+    }
+
+    &:nth-child(4) {
+
+      top: 42%;
+
+    }
+
+    &:nth-child(5) {
+      left: 49%;
+    }
+
+    &:nth-child(6) {
+      top: 13%;
+      left: 68%;
+    }
+
+    &:nth-child(7) {
+      top: 30%;
+      right: 8%;
+      left: auto;
+
+    }
+
+    &:nth-child(8) {
+      top: 66%;
+      right: 7%;
+      left: auto;
+
+    }
+
+    &:nth-child(9) {
+      top: 75%;
+      left: 27%;
+
+
+
+    }
+
+    &:nth-child(10) {
+      top: 94%;
+      left: 5%;
+
+  }
+
+    &:nth-child(11) {
+      top: 50%;
+      left: 51%;
+    }
+
+    &:nth-child(12) {
+      top: 83%;
+      right: 17%;
+    }
+  }
+  .divider{
+    padding-top: 150px !important;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .provider-row-columns{
+    grid-template-columns: auto auto auto auto !important; ;
+  }
+
+  .brands-container{
+    width: 186px;
+    height: 116px;
+  }
+  .operation-banner__title{
+    font-size: 68px !important;
+    margin-top: 228px !important
+  }
+  .operation-us{
+    font-size: 20px !important;
+  }
+  .mechanism {
+    &>.small-shestiryonka{
+      width: 136px;
+      height: 136px;
+    }
+    &>.medium-shestiryonka{
+      width: 182px;
+      height: 182px;
+    }
+    &>.big-shestiryonka{
+      width: 258px;
+      height: 258px;
+    }
+    &:nth-child(1) {
+      left: 3%;
+    }
+
+    &:nth-child(2) {
+      left: 20%;
+      top: 19%;
+    }
+
+    &:nth-child(3) {
+      left: 36%;
+      top: 39%;
+    }
+
+    &:nth-child(4) {
+      left: 3%;
+      top: 37%;
+
+    }
+
+    &:nth-child(5) {
+      left: 46%;
+    }
+
+    &:nth-child(6) {
+      top: 15%;
+      left: 69%;
+    }
+
+    &:nth-child(7) {
+      top: 29%;
+      right: 7%;
+      left: auto;
+
+    }
+
+    &:nth-child(8) {
+      top: 70%;
+      right: 7%;
+      left: auto;
+
+    }
+
+    &:nth-child(9) {
+      top: 61%;
+      left: 19%;
+    }
+
+    &:nth-child(10) {
+      top: 84%;
+      left: 4%;
+    }
+
+    &:nth-child(11) {
+      top: 47%;
+      left: 52%;
+    }
+
+    &:nth-child(12) {
+      top: 78%;
+      right: 23%;
+    }
+    &-text {
+      width: 89px;
+      height: 89px;
+    }
+  }
+  .big-circle{
+
+    width: 171px;
+    height: 171px;
+
+  }
+  .medium-circle{
+    width: 116px;
+    height: 116px;
+  }
+
+  .unique-title {
+    max-width: 591px !important;
+    font-size: 38px !important;
+  }
+  .unique-container-left-side-title {
+    max-width: 268px !important;
+    min-width: 268px !important;
+    font-size: 22px !important;
+  }
+  .unique-container-right-side-text {
+    max-width: 376px !important;
+    font-size: 16px !important;
+  }
+
+}
+@media only screen and (max-width: 768px) {
+  .operation-banner {
+    background: url("../assets/images/operation/small.svg") no-repeat right top, linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28);
+  }
+  .department__title{
+    font-size: 38px !important;
+  }
+  .operation-us{
+    max-width: 150px !important;
+    font-size: 20px !important;
+    line-height: 25px !important;
+  }
+  .brands-title{
+    font-size: 58px !important;
+    max-width: 752px !important;
+  }
+  .brands-container{
+    width: 164px;
+    height: 107px;
+    &>img{
+      width: 127px;
+    }
+  }
+  .divider{
+    padding-top: 100px !important;
+  }
+}
+.unique-container-left-side-title {
+  max-width: 178px !important;
+  min-width: 228px !important;
+  font-size: 22px !important;
+}
+
+@media only screen and (max-width: 744px) {
+  .provider-row-columns{
+    grid-template-columns: auto auto auto  !important; ;
+  }
+  .mechanism {
+    &:nth-child(1) {
+      top: 12%;
+      left: 2%;
+    }
+
+    &:nth-child(2) {
+      left: 19%;
+      top: 19%;
+    }
+
+    &:nth-child(3) {
+      left: 36%;
+      top: 39%;
+    }
+
+    &:nth-child(4) {
+      left: 0;
+      top: 37%;
+    }
+
+    &:nth-child(5) {
+      left: 45%;;
+    }
+
+    &:nth-child(6) {
+      top: 15%;
+      left: 71%;
+    }
+
+    &:nth-child(7) {
+      top: 29%;
+      right: 8%;
+      left: auto;
+
+    }
+
+    &:nth-child(8) {
+      top: 70%;
+      right: 8%;
+
+      left: auto;
+
+    }
+
+    &:nth-child(9) {
+      top: 61%;
+      left: 19%;
+    }
+
+    &:nth-child(10) {
+      top: 83%;
+      left: 2%;
+    }
+
+    &:nth-child(11) {
+      top: 47%;
+      left: 52%;
+    }
+
+    &:nth-child(12) {
+      top: 81%;
+      right: 21%;
+
+    }
+  }
+}
+@media only screen and (max-width: 684px) {
+  .divider{
+    padding-top: 100px !important
+  }
+  .mechanism {
+    &:nth-child(1) {
+      top: 18%;
+      left: 4%;
+
+    }
+
+    &:nth-child(2) {
+      left: 24%;
+      top: 9%;
+    }
+
+    &:nth-child(3) {
+      left: 39%;
+      top: 40%;
+    }
+
+    &:nth-child(4) {
+
+      left: 3%;
+      top: 32.1%;
+
+    }
+
+    &:nth-child(5) {
+      left: 43%;
+    }
+
+    &:nth-child(6) {
+
+      top: 14%;
+      left: auto;
+      right: 9%;
+
+    }
+
+    &:nth-child(7) {
+      top: 29%;
+      right: 8%;
+      left: auto;
+
+    }
+
+    &:nth-child(8) {
+      top: 74%;
+      right: 7%;
+      left: auto;
+
+    }
+
+    &:nth-child(9) {
+      top: 61%;
+      left: 19%;
+    }
+
+    &:nth-child(10) {
+      top: 83%;
+      left: 3%;
+    }
+
+    &:nth-child(11) {
+      top: 49%;
+      left: auto;
+      right: 10%;
+    }
+
+    &:nth-child(12) {
+
+      top: 83%;
+      right: 22%;
+
+
+    }
+  }
+  .brands-container{
+    width: 134px;
+    height: 82px;
+    &>img{
+      width: 99px;
+    }
+  }
+}
+
+@media only screen and (max-width: 663px) {
+  .unique-container{
+    flex-direction: column;
+  }
+  .unique-container-right-side-text{
+    margin-top: 10px;
+  }
+  .unique-container-left-side-dote{
+    margin: 10px;
+  }
+  .unique-container-left-side-title{
+    max-width: 100% !important;
+    font-size: 20px !important;
+  }
+  .unique-container-right-side-text{
+    max-width: 100% !important;
+    font-size: 14px !important;
+  }
+}
+@media only screen and (max-width: 647px) {
+  .provider-img{
+    width: 100px;
+  }
+  .neteller{
+    width: 70px !important;
+  }
+  .divider{
+    padding-top: 0 !important;
+  }
+
+  .operation-banner__title{
+    font-size: 33px !important;
+    margin-top: 128px !important;
+
+  }
+  .operation-us{
+    width: 100%;
+    font-size: 16px !important;
+  }
+  .department__title{
+    font-size: 22px !important;
+  }
+  .mechanism-container {
+    min-height: 747px;
+  }
+  .brands{
+    flex-wrap: wrap;
+  }
+  .mechanism-container {
+    min-height: 747px !important;
+  }
+  .mechanism {
+    &>.small-shestiryonka{
+      width: 78px;
+      height: 78px;
+    }
+    &>.medium-shestiryonka{
+      width: 104px;
+      height: 104px;
+    }
+    &>.big-shestiryonka{
+      width: 146px;
+      height: 146px;
+    }
+
+
+    &:nth-child(1){
+      left: 0;
+      top: 13%;
+
+    }
+    &:nth-child(2) {
+      left: 25%;
+      top: 8%;
+    }
+    &:nth-child(3){
+      left: auto;
+      right: 5%;
+      top: 16%;
+    }
+    &:nth-child(4) {
+      top: 21%;
+      right: 39%;
+      left: auto;
+    }
+    &:nth-child(5) {
+      left: auto;
+      right: 8%;
+      top: 26%;
+    }
+    &:nth-child(6){
+      top: 43%;
+      right: auto;
+    }
+    &:nth-child(7) {
+      top: 40%;
+      left: 25%;
+    }
+    &:nth-child(8){
+      top: 41%;
+      right: 3%;
+    }
+    &:nth-child(9) {
+
+      top: 52%;
+
+      left: auto;
+      right: 43%;
+    }
+    &:nth-child(10) {
+
+      left: auto;
+      right: 3%;
+      top: 52%;
+    }
+
+    &:nth-child(11) {
+      top: 72%;
+      left: auto;
+      right: 43%;
+    }
+
+    &:nth-child(12) {
+      top: 65%;
+      right: 0;
+
+    }
+
+    &-text {
+      width: 51px;
+      height: 51px;
+      font-size: 8px!important;
+    }
+  }
+
+  .big-circle {
+    width: 97px;
+    height: 97px;
+  }
+
+  .medium-circle {
+    width: 69px;
+    height: 69px;
+  }
+  .brands-title{
+    font-size: 22px !important;
+  }
+  .game-provider-title{
+    font-size: 20px !important;
+  }
+ .payment-provider-title{
+   font-size: 20px !important;
+ }
+}
+@media only screen and (max-width: 450px) {
+
+  .operation-banner {
+    background: url("../assets/images/operation/very-small.svg") no-repeat right top, linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28);
+
+  }
+  .operation-us{
+    font-size: 16px !important;
+    line-height: 20px !important;
+    max-width: 264px !important;
+  }
+  .operation-banner__title {
+    margin-top: 100px !important;
+  }
+}
+</style>
