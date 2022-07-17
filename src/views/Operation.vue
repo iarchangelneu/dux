@@ -932,14 +932,15 @@ export default {
   }
 
   &-container {
-    margin-top: 70px;
-    padding: 10px 25px;
+
+    padding: 10px 25px 80px 25px;
     display: flex;
     justify-content: space-between;
     width: 100%;
     border-top: 1px solid #828FA1;
 
     &:nth-child(1) {
+      padding-top: 0;
       margin-top: 96px;
       border: none;
     }
@@ -951,11 +952,10 @@ export default {
         margin-right: 10%;
         padding-top: 10px;
       }
-      & .third-title{
-        max-width: 400px;
-      }
+
       &-title {
-        min-width: 425px;
+        min-width: 500px;
+        max-width: 500px;
         font-family: 'Oxygen', sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -1348,7 +1348,15 @@ export default {
 }
 
 @media only screen and (max-width: 1024px) {
-
+.unique-container{
+  padding: 10px 32px 56px 32px;
+  &:nth-child(1){
+    margin-top: 72px;
+  }
+  &:nth-child(4){
+   padding-bottom: 0;
+  }
+}
   .mechanism {
     &:nth-child(1) {
       left: 3%;
@@ -1547,6 +1555,15 @@ export default {
 
 }
 @media only screen and (max-width: 768px) {
+  .unique-container{
+    padding: 10px 8px 42px 8px;
+    &:nth-child(1){
+      margin-top: 56px;
+    }
+    &:nth-child(4){
+      padding-bottom: 0;
+    }
+  }
   .operation-banner {
     background: url("../assets/images/operation/small.svg") no-repeat right top, linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28);
   }
@@ -1572,13 +1589,13 @@ export default {
   .divider{
     padding-top: 100px !important;
   }
-}
+
 .unique-container-left-side-title {
   max-width: 178px !important;
   min-width: 228px !important;
   font-size: 22px !important;
 }
-
+}
 @media only screen and (max-width: 744px) {
   .provider-row-columns{
     grid-template-columns: auto auto auto  !important; ;
@@ -1739,6 +1756,15 @@ export default {
 
 @media only screen and (max-width: 663px) {
   .unique-container{
+    padding: 15px 16px 24px 16px;
+    &:nth-child(1){
+      margin-top: 72px;
+    }
+    &:nth-child(4){
+      padding-bottom: 0;
+    }
+  }
+  .unique-container{
     flex-direction: column;
   }
   .unique-container-right-side-text{
@@ -1757,6 +1783,7 @@ export default {
   }
 }
 @media only screen and (max-width: 647px) {
+
   .provider-img{
     width: 100px;
   }
@@ -1764,7 +1791,7 @@ export default {
     width: 70px !important;
   }
   .divider{
-    padding-top: 0 !important;
+    padding-top: 72px !important;
   }
 
   .operation-banner__title{
@@ -1891,6 +1918,11 @@ export default {
    font-size: 20px !important;
  }
 }
+@media only screen and (max-width: 536px){
+.brands-container:nth-child(4){
+  margin-top: 17px;
+}
+}
 @media only screen and (max-width: 450px) {
 
   .operation-banner {
@@ -1904,6 +1936,11 @@ export default {
   }
   .operation-banner__title {
     margin-top: 100px !important;
+  }
+}
+@media only screen and (max-width: 402px){
+  .brands-container:nth-child(3){
+    margin-top: 17px;
   }
 }
 </style>
