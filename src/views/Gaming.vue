@@ -337,7 +337,7 @@ export default {
   .header_part{
     p{
       font-size: 134px !important;
-      width: 100% !important;
+      width: 1100px !important;
     }
     .images{
       img{
@@ -346,9 +346,17 @@ export default {
     }
     .content{
       p{
+        font-size: 84px !important;
+        line-height: 105% !important;
         span{
-          margin: 0 40px 30px 0 !important;
+          margin: 0 40px 10px 0 !important;
           vertical-align: middle !important;
+
+        }
+        span.brave{
+
+          font-size: 22px !important;
+          line-height: 28px !important;
         }
       }
     }
@@ -397,10 +405,6 @@ export default {
     margin-top: -1px;
   }
   .header_part{
-    p{
-      font-size: 71px !important;
-      width: 100% !important;
-    }
     .images{
       img{
         width: 100% !important;
@@ -408,9 +412,12 @@ export default {
     }
     .content{
       p{
+        font-size: 68px !important;
+        width: 700px !important; ;
+        line-height: 105% !important;
         span.brave{
           font-size: 22px !important;
-          margin: 0 40px 30px 0 !important;
+          margin: 0 20px 30px 0 !important;
           vertical-align: middle !important;
         }
       }
@@ -480,12 +487,6 @@ export default {
     margin-top: -1px;
   }
   .header_part{
-    p{
-      font-size: 40px !important;
-      width: 100% !important;
-      display: flex;
-      flex-direction: column;
-    }
     .images{
       img{
         width: 100% !important;
@@ -493,13 +494,19 @@ export default {
     }
     .content{
       p{
+        font-size: 34px !important;
+        width: 100% !important;
+        line-height: 110% !important;
+        display: flex !important;
+        flex-direction: column !important;
         span.brave{
           font-size: 16px !important;
+          line-height: 20px !important;
           margin: 0 15px 10px 0 !important;
           vertical-align: middle !important;
           svg{
-            width: 14px !important;
-            height: 14px !important;
+            width: 10px !important;
+            height: 10px !important;
           }
         }
       }

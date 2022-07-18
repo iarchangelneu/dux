@@ -589,11 +589,27 @@ export default {
   background: #010C28 url('../assets/images/gradient.png') center;
   background-size: cover;
 }
+@media (min-width: 768px) and (max-width: 1024px){
+  .operation-banner{
+    padding: 8px 8px 0 8px !important;
+  }
+}
 .operation-banner {
   background: url("../assets/images/operation/operation-bg.svg") no-repeat right top;
 
   padding: 25px 25px 0 25px;
-
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    & .operation-banner__title{
+      font-size: 84px !important;
+      line-height: 105% !important;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    & .operation-banner__title{
+      font-size: 68px !important;
+      line-height: 105% !important;
+    }
+  }
   &__title {
     font-family: "Oxygen", sans-serif;
     font-style: normal;
@@ -621,6 +637,7 @@ export default {
       max-width: 230px;
       display: flex;
       align-items: baseline;
+
       & .span-svg {
         margin-right: 11px;
         vertical-align: baseline;
@@ -1271,14 +1288,15 @@ export default {
   }
 
 }
+@media only screen and (max-width: 1200px){
 
+}
 @media only screen and (max-width: 1200px) {
   .operation-banner {
     background: url("../assets/images/operation/bg-medium.svg") no-repeat right top, linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28);
   }
   .operation-banner__title {
-    font-size: 84px !important;
-    margin-top: 300px !important;
+    margin-top: 230px !important;
   }
 }
 .payment-provider-row-columns{

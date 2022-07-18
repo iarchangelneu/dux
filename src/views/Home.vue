@@ -2064,7 +2064,7 @@ export default {
           font-family: 'Oxygen', sans-serif;
           font-style: normal;
           font-weight: 400;
-          font-size: 136px;
+          font-size: 134px;
           line-height: 130px;
           letter-spacing: 0.02em;
           text-transform: uppercase;
@@ -2851,6 +2851,9 @@ export default {
 
       //border-radius: 20%;
       //min-height: 500px;
+      &:hover > .cards {
+        display: block !important;
+      }
       img{
         width: 100%;
         overflow: hidden;
@@ -2960,6 +2963,7 @@ export default {
         background-position: top left;
         position: absolute;
         top: 100px;
+        display: none;
         left: 100px;
         border-radius: 10px;
         padding: 50px 18px 50px 25px;
