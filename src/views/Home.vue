@@ -1971,6 +1971,14 @@ export default {
           }
         }
         .map{
+          .cards{
+            padding: 30px 15px !important;
+            .card{
+              p{
+                font-size: 17px !important;
+              }
+            }
+          }
           img:first-child{
             display: none !important;
           }
