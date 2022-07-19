@@ -2,12 +2,12 @@
   <div class="container">
     <div class="header_part">
       <div class="menu">
-        <Header />
+        <Header  @opened="openedMobMenu"/>
       </div>
       <div class="images">
         <img src="../assets/images/gaming/header-photo.svg" style="float: right" />
       </div>
-      <div class="content">
+      <div class="content" v-if="menuClosed">
         <p class="p">
                 <span class="brave">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill" viewBox="0 0 16 16">
@@ -43,7 +43,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill" viewBox="0 0 16 16">
               <circle cx="8" cy="8" r="8"/>
             </svg>
-            <h3>HOW TO LIMIT YOUR LOSSES AND SPENDING</h3>
+            <p>HOW TO LIMIT YOUR LOSSES AND SPENDING</p>
           </div>
           <h4>We offer a Personal Limits feature. Here you can set limits on the amount you deposit, lose, wager, and spend in one game. Or even on your overall account activity. You can change these limits at any time. Customers have the flexibility of increasing/decreasing their purchase limits in order to control their level by adhering to KYC processes in accordance to the project. Reducing the limit will take effect immediately, but an increase in any limit will happen after email confirmation.</h4>
         </div>
@@ -52,7 +52,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill" viewBox="0 0 16 16">
               <circle cx="8" cy="8" r="8"/>
             </svg>
-            <h3>Cooling-Off Period</h3>
+            <p>Cooling-Off Period</p>
           </div>
           <h4>You can set a cooling-off period for 1 week, 1 month, 3 months, or 6 months. When this limit is in effect, the system may limit the possibility of making a deposit and close access to all promotional offers. You can still withdraw any remaining funds during this period. This Cooling-Off period is instantly applied to your account and when it expires your account will be re-activated automatically.</h4>
         </div>
@@ -61,7 +61,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill" viewBox="0 0 16 16">
               <circle cx="8" cy="8" r="8"/>
             </svg>
-            <h3>Self-Exclusion</h3>
+            <p>Self-Exclusion</p>
           </div>
           <h4>You can set a Self-Exclusion Limit for 6 months, 9 months, or 1 year. When you do this your Player Account will be immediately disabled and you will be excluded from all of our promotional offers for the period you are excluded. You cannot deposit or withdraw funds when this exclusion is active. When this exclusion expires your account will not be automatically re-activated. When you set a Self-exclusion it lets us know that we need to do everything we can to block your access to your account and make sure that you receive no promotional materials whatsoever.</h4>
         </div>
@@ -70,7 +70,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill" viewBox="0 0 16 16">
               <circle cx="8" cy="8" r="8"/>
             </svg>
-            <h3>LET’S SEE SOME ID</h3>
+            <p>LET’S SEE SOME ID</p>
           </div>
             <h4>We only accept players who are at least 18 years old and use all available methods we have to stop any minors from registering and playing. We always reserve the right to ask for any proof of identity and if the player is not 18+ their access to our casinos will be denied immediately.</h4>
         </div>
@@ -79,7 +79,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill" viewBox="0 0 16 16">
               <circle cx="8" cy="8" r="8"/>
             </svg>
-            <h3>OUR REALITY CHECK</h3>
+            <p>OUR REALITY CHECK</p>
           </div>
           <h4>Time flies when you're having fun, so we send hourly notifications in-game to remind you of your Casino expenditure. Regardless of how many games you are playing, we will always let you know every hour. This is to help you reflect on your bets and perhaps consider stopping for a while.</h4>
         </div>
@@ -113,6 +113,20 @@ export default {
   name: "Gaming_page",
   components: {
     Header, Footer
+  },
+  data(){
+    return {
+      menuClosed: true,
+    }
+  },
+  methods: {
+    openedMobMenu(value){
+      if(value){
+        this.menuClosed = !this.menuClosed
+      }else{
+        this.menuClosed = true
+      }
+    },
   }
 }
 </script>
@@ -129,6 +143,7 @@ export default {
     background: #010C28 url('../assets/images/gradient.png') center;
     background-size: cover;
     //background: linear-gradient(180deg,#02185b,#00174e,#001542,#001135,#010c28);
+    height: 702px;
     .menu{
       padding: 25px 25px 0 25px;
     }
@@ -138,7 +153,7 @@ export default {
       display: flex;
       justify-content: flex-end;
       img{
-        width: 100%;
+        height: 420px;
       }
     }
 
@@ -146,8 +161,6 @@ export default {
       padding: 0 25px;
       position: relative;
       .p{
-        position: absolute;
-        top: -50px ;
         font-family: 'Oxygen', sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -156,7 +169,7 @@ export default {
         letter-spacing: 0.02em;
         text-transform: uppercase;
         color: #F0F0F0;
-        margin: 0;
+        margin: -50px 0 0;
         width: 1400px;
         .blue{
           vertical-align: text-top;
@@ -170,7 +183,7 @@ export default {
           display: inline-flex;
           align-items: baseline;
           min-width: 160px;
-          max-width: 170px;
+          max-width: 200px;
           letter-spacing: 0.03em;
           text-transform: uppercase;
           color: #F0F0F0;
@@ -179,6 +192,8 @@ export default {
           svg{
             margin-right: 11px;
             vertical-align: baseline;
+            width: 20px;
+            height: 20px;
           }
         }
       }
@@ -235,13 +250,17 @@ export default {
           justify-content: space-between;
           div{
             display: flex;
-            align-items: baseline;
+            align-items: flex-start;
+            height: fit-content;
             width: 35%;
+
             svg{
               margin-right: 100px;
               min-width: 20px;
+              margin-top: 12px;
             }
-            h3{
+
+            p{
               font-family: 'Oxygen' ,sans-serif;
               font-style: normal;
               font-weight: 400;
@@ -346,23 +365,25 @@ export default {
     margin-top: -1px;
   }
   .learn{
-    padding-top: 200px !important;
+    padding-top: 105px !important;
   }
   .header_part{
+    height: 417px !important;
     p{
       font-size: 134px !important;
       width: 1100px !important;
     }
     .images{
       img{
-        width: 100% !important;
+        //width: 100% !important;
+        height: 261px !important;
       }
     }
     .content{
       p{
         font-size: 84px !important;
         line-height: 105% !important;
-        top: -110px !important;
+        margin: -90px 0 0 !important;
         span{
           margin: 0 40px 10px 0 !important;
           vertical-align: middle !important;
@@ -420,17 +441,22 @@ export default {
     margin-top: -1px;
   }
   .header_part{
+    height: 300px !important;
+    .menu{
+      padding: 17px 8px 0 8px !important;
+    }
     .images{
       img{
-        width: 100% !important;
+        height: 184px !important;
       }
     }
     .content{
+      padding: 0 8px !important;
       p{
         font-size: 68px !important;
         width: 700px !important; ;
         line-height: 105% !important;
-        top: -80px !important;
+        margin: -75px 0 0 !important;
         span.brave{
           font-size: 22px !important;
           margin: 10px 20px 0 0px !important;
@@ -444,7 +470,7 @@ export default {
     height: 12px !important;
   }
   .learn{
-    padding-top: 210px !important;
+    padding-top: 72px !important;
     .content{
       width: 70% !important;
       padding: 80px 0 !important;
@@ -462,7 +488,7 @@ export default {
           svg{
             margin-right: 10px !important;
           }
-          h3{
+          p{
             font-size: 25px !important;
             line-height: 35px !important;
           }
@@ -507,9 +533,10 @@ export default {
     margin-top: -1px;
   }
   .header_part{
+    height: 265px !important;
     .images{
       img{
-        width: 100% !important;
+        height: 120px !important;
       }
     }
     .content{
@@ -518,8 +545,7 @@ export default {
         width: 100% !important;
         line-height: 110% !important;
         position: relative !important;
-        top: 0 !important;
-        margin-top: -50px !important;
+        margin-top: -20px !important;
         display: flex !important;
         flex-direction: column !important;
         span.brave{
@@ -561,13 +587,14 @@ export default {
         div{
           width: auto !important;
           display: flex !important;
-          align-items: center !important;
+          //align-items: center !important;
           svg{
             margin-right: 10px !important;
             width: 10px !important;
+            margin-top: 5px !important;
             height: 10px !important;
           }
-          h3{
+          p{
             font-size: 16px !important;
             line-height: 25px !important;
           }

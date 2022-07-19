@@ -198,44 +198,89 @@ export default {
         margin-top: -1px;
       }
       .header{
+        height: 417px !important;
         &__menu{
           //background-image: url('../assets/images/ventures/header1024.png') !important;
           //min-height: 700px !important;
+          //.cubes{
+          //  .cube{
+          //
+          //  }
+          //  div:nth-child(1){
+          //    width: 20px !important;
+          //    margin-right: 10px !important;
+          //  }
+          //  div:nth-child(2){
+          //    width: 40px !important;
+          //    margin-right: 10px !important;
+          //  }
+          //  div:nth-child(3){
+          //    width: 60px !important;
+          //    margin-right: 12px !important;
+          //  }
+          //  div:nth-child(4){
+          //    width: 80px !important;
+          //    margin-right: 15px !important;
+          //  }
+          //  div:nth-child(5){
+          //    width: 100px !important;
+          //    margin-right: 20px !important;
+          //  }
+          //  div:nth-child(6){
+          //    width: 120px !important;
+          //    margin-right: 40px !important;
+          //  }
+          //  div:nth-child(7){
+          //    width: 140px !important;
+          //    margin-right: 60px !important;
+          //  }
+          //  div:nth-child(8){
+          //    width: 160px !important;
+          //    margin-right: 25px !important;
+          //  }
+          //}
+          min-height: 120px !important;
+          background-position:  top 0px right 0 !important;
           .cubes{
-            .cube{
-
-            }
             div:nth-child(1){
-              width: 20px !important;
+              width: 10px !important;
+              height: 60px !important;
               margin-right: 10px !important;
             }
             div:nth-child(2){
-              width: 40px !important;
+              width: 20px !important;
+              height: 80px !important;
               margin-right: 10px !important;
             }
             div:nth-child(3){
-              width: 60px !important;
+              width: 40px !important;
+              height: 100px !important;
               margin-right: 12px !important;
             }
             div:nth-child(4){
-              width: 80px !important;
+              width: 60px !important;
+              height: 110px !important;
               margin-right: 15px !important;
             }
             div:nth-child(5){
-              width: 100px !important;
-              margin-right: 20px !important;
+              width: 80px !important;
+              height: 110px !important;
+              margin-right: 18px !important;
             }
             div:nth-child(6){
-              width: 120px !important;
-              margin-right: 40px !important;
+              width: 90px !important;
+              height: 110px !important;
+              margin-right: 20px !important;
             }
             div:nth-child(7){
-              width: 140px !important;
-              margin-right: 60px !important;
+              width: 100px !important;
+              height: 110px !important;
+              margin-right: 25px !important;
             }
             div:nth-child(8){
-              width: 160px !important;
-              margin-right: 25px !important;
+              width: 120px !important;
+              height: 110px !important;
+              margin-right: 20px !important;
             }
           }
         }
@@ -350,10 +395,12 @@ export default {
       margin-top: -1px;
     }
     .header {
+      height: 400px !important;
       &__menu {
         //background-image: url('../assets/images/ventures/header768.png') !important;
         min-height: 120px !important;
         background-position:  top 0px right 0 !important;
+
         .cubes{
           div:nth-child(1){
             width: 10px !important;
@@ -418,7 +465,7 @@ export default {
       }
     }
     .investment{
-      padding-top: 50px !important;
+      padding-top: 70px !important;
       .content{
         padding: 90px 0 70px 8px !important;
         p{
@@ -567,6 +614,7 @@ export default {
       margin-top: -1px;
     }
     .header {
+      height: 265px !important;
       &__menu {
         //background-image: url('../assets/images/ventures/header320.png') !important;
         min-height: 120px !important;
@@ -639,7 +687,7 @@ export default {
       }
     }
     .investment{
-      padding-top: 65px !important;
+      padding-top: 70px !important;
       .title{
         padding: 0 15px !important;
         img:nth-child(1){
@@ -858,6 +906,7 @@ export default {
     position: relative;
     overflow: hidden;
     z-index: 1;
+    height: 702px;
     &__menu{
       z-index: 10;
       //background-image: url('../assets/images/ventures/header-bg.png');

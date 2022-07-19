@@ -976,6 +976,18 @@ export default {
     }
   }
 }
+@media screen and (min-width: 320px) and ( max-width: 400px){
+  .partnership{
+    .items{
+      .item{
+        & img.partnership-bg{
+          width: 100% !important;
+          height: 400px !important;
+        }
+      }
+    }
+  }
+}
 
 
 
@@ -987,7 +999,8 @@ export default {
     }
     .header{
       .bg-img{
-        background-size: auto !important;
+        background-size: contain !important;
+        min-height: 526px !important;
         .klor{
           top: 12% !important;
           right: 50% !important;
@@ -1250,7 +1263,7 @@ export default {
         background-image: url('../assets/images/home/bg768.png');
         background-position: top right;
         background-size: auto !important;
-        min-height: 500px !important;
+        min-height: 424px !important;
         .klor{
           width: 153px !important;
           height: 100px !important;
@@ -1565,7 +1578,7 @@ export default {
         background-image: url('../assets/images/home/bg320.png');
         background-position: top right;
         background-size: auto !important;
-        min-height: 300px !important;
+        min-height: 436px !important;
         .klor{
           width: 100px !important;
           height: 70px !important;
@@ -1582,7 +1595,7 @@ export default {
           width: 53px !important;
           height: 58px !important;
           right: 15% !important;
-          bottom: -60px !important;
+          bottom: 0px !important;
         }
         .menu{
           padding:16px !important;
@@ -1634,7 +1647,7 @@ export default {
       }
     }
     .history{
-      padding-top: 130px !important;
+      padding-top: 50px !important;
       .title{
         padding: 0 15px !important;
         img:nth-child(1){
@@ -2055,7 +2068,7 @@ export default {
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
-    min-height: 700px;
+    min-height: 702px;
     img.zar-poqr{
       position: absolute;
       bottom: -40px;

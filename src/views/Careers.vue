@@ -12,7 +12,7 @@
       </div>
     </div>
 
-    <div class="devider">
+    <div class="devider first-devider">
       <img src="../assets/images/careers/careers.svg" alt="careers"/>
     </div>
     <div class="line" v-if="menuClosed">
@@ -630,6 +630,13 @@ export default {
 }
 
 @media (max-width: 1439px) and (min-width: 1024px) {
+  .careers-banner{
+    min-height: 417px !important;
+    height: 417px !important;
+    &__title{
+      margin-top: 100px !important;
+    }
+  }
   .line {
     padding-top: 72px !important;
   }
@@ -671,10 +678,11 @@ export default {
           font-size: 84px !important;
           padding: 0 !important;
         }
+        }
       }
     }
   }
-}
+
 
 @media (max-width: 1023px) and (min-width: 769px) {
   .careers {
@@ -684,10 +692,18 @@ export default {
     position: relative;
     top: 5px;
   }
+  .careers-banner{
+    min-height: 300px !important;
+    height: 300px !important;
+  }
   .careers-banner__title {
+    margin-top: 40px !important;
     font-size: 68px !important;
     line-height: 105% !important;
     max-width: 503px !important;
+  }
+  .first-devider{
+    padding-top: 50px !important;
   }
   .line {
     padding-top: 67px !important;
@@ -731,6 +747,14 @@ export default {
 @media (max-width: 768px) and (min-width: 320px) {
   .careers-banner {
     background: url("../assets/images/careers/320.svg") no-repeat;
+    height: 265px !important;
+    min-height: 265px !important;
+    &__title{
+      margin-top: 60px !important;
+    }
+  }
+  .first-devider{
+    padding-top: 70px !important;
   }
   .careers {
     display: flex;

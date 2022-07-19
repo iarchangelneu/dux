@@ -602,6 +602,7 @@ export default {
 .header{
   background: #010C28 url('../assets/images/gradient.png') center;
   background-size: cover;
+  height: 702px ;
 }
 @media (min-width: 769px) and (max-width: 1024px){
   .operation-banner{
@@ -621,7 +622,7 @@ export default {
 .operation-banner {
   background: url("../assets/images/operation/operation-bg.svg") no-repeat right top;
 
-  padding: 25px 25px 0 25px;
+  padding: 0 25px;
 
 
   &__title {
@@ -661,6 +662,9 @@ export default {
   }
 }
 @media (min-width: 1024px) and (max-width: 1439px) {
+  .header{
+    height: 417px !important;
+  }
   .operation-banner__title{
     font-size: 84px !important;
     line-height: 105% !important;
@@ -997,7 +1001,8 @@ export default {
 
     &-left-side {
       display: flex;
-      align-items: baseline;
+      height: fit-content;
+      align-items: flex-start;
       &-dote {
         margin-right: 10%;
         padding-top: 10px;
