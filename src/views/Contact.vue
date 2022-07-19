@@ -62,7 +62,7 @@ export default {
     //background: #010C28 url('../assets/images/gradient.png') center;
     //background-size: cover;
     background-size: contain;
-    min-height: 702px;
+
     padding: 25px;
     .header{
 
@@ -91,7 +91,8 @@ export default {
         color: #F0F0F0;
         margin: 0 70px 70px 0;
         vertical-align: top;
-
+        position: relative;
+        top: 13px;
         & .span-svg {
           margin-right: 11px;
           vertical-align: baseline;
@@ -247,14 +248,8 @@ export default {
   }
 }
 @media only screen and (max-width: 802px){
-  .contact-banner__title{
-    max-width: 674px !important;
-    font-size: 68px !important;
-  }
-  .contact-us{
-    max-width: 127px !important;
-    font-size: 20px !important;
-  }
+
+
 }
 @media only screen and (max-width: 768px){
   .contact-banner{
@@ -262,10 +257,7 @@ export default {
   }
 }
 @media only screen and (max-width: 676px){
-  .contact-banner{
-    min-height: 523px !important;
 
-  }
   .devider{
     padding-top: 0 !important;
   }
@@ -303,13 +295,73 @@ export default {
     max-width: 288px !important;
     font-size: 34px !important;
   }
-  .contact-banner{
-    min-height: 393px !important;
-  }
+
 }
 @media only screen and (max-width: 321px){
   .contact-banner{
     background: url("../assets/images/contact/320.svg") no-repeat, linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28);
+  }
+}
+@media (min-width: 320px) and (max-width: 768px){
+  .contact-us{
+    position: initial !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    margin: 0 140px 0 0 !important;
+    & > img{
+      width: 10px;
+    }
+  }
+  .devider{
+    padding-top: 72px !important;
+  }
+  .contact-banner__title{
+    font-size: 34px !important;
+    line-height: 110% !important;
+    margin-top: 60px !important;
+    max-width: 288px !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+  .contact-us{
+    font-size: 20px !important;
+    line-height: 25px !important;
+    margin: 0 !important;
+    position: relative;
+    top: 10px;
+    & > img{
+      width: 10px;
+    }
+  }
+  .devider{
+    padding-top: 72px !important;
+  }
+  .contact-banner__title{
+    font-size: 68px !important;
+    line-height: 105% !important;
+    margin-top: 60px !important;
+    max-width: 719px !important;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px){
+  .contact-us{
+   font-size: 22px !important;
+   line-height: 28px !important;
+    margin: 0 !important;
+    position: relative;
+    top: 10px;
+    & > img{
+      width: 10px;
+    }
+  }
+  .devider{
+    padding-top: 105px !important;
+  }
+  .contact-banner__title{
+   font-size: 84px !important;
+   line-height: 105% !important;
+    margin-top: 89px !important;
+    max-width: 840px !important;
   }
 }
 </style>

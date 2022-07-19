@@ -8,7 +8,7 @@
         <h1 class="operation-banner__title">
           <p class="operation-us"><img class="span-svg" src="../assets/images/contact/Ellipse1.svg" alt="elipse">DUXGroup
             Operation</p>
-          a Team of real <span class="color-blue">professionals</span>
+          a Team of real &nbsp; <span class="color-blue ndk"> professionals</span>
         </h1>
     </div>
     </div>
@@ -562,6 +562,20 @@ export default {
   .footer{
     padding: 0 16px !important;
   }
+  .operation-banner__title{
+    font-size: 34px !important;
+    line-height: 110% !important;
+  }
+  .operation-us{
+    margin: 0 240px 0 0 !important;
+    max-width: 280px;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    & > img{
+      width: 10px;
+    }
+  }
+
 }
 .department {
   background: #010C28;
@@ -589,27 +603,27 @@ export default {
   background: #010C28 url('../assets/images/gradient.png') center;
   background-size: cover;
 }
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 769px) and (max-width: 1024px){
   .operation-banner{
     padding: 8px 8px 0 8px !important;
+  }
+  .operation-us{
+    font-size: 20px !important;
+    line-height: 25px !important;
+    max-width: 137px !important;
+
+  }
+  .operation-banner__title{
+    font-size: 68px !important;
+    line-height: 105% !important;
   }
 }
 .operation-banner {
   background: url("../assets/images/operation/operation-bg.svg") no-repeat right top;
 
   padding: 25px 25px 0 25px;
-  @media (min-width: 1024px) and (max-width: 1440px) {
-    & .operation-banner__title{
-      font-size: 84px !important;
-      line-height: 105% !important;
-    }
-  }
-  @media (min-width: 768px) and (max-width: 1024px) {
-    & .operation-banner__title{
-      font-size: 68px !important;
-      line-height: 105% !important;
-    }
-  }
+
+
   &__title {
     font-family: "Oxygen", sans-serif;
     font-style: normal;
@@ -627,12 +641,12 @@ export default {
       font-family: "Oxygen", sans-serif;
       font-style: normal;
       font-weight: 400;
-      font-size: 38px;
-      line-height: 48px;
+      font-size: 34px;
+      line-height: 110%;
       letter-spacing: 0.03em;
       text-transform: uppercase;
       color: #F0F0F0;
-      margin: 0 70px 0 0;
+      margin: 15px 20px 0 0;
       vertical-align: top;
       max-width: 230px;
       display: flex;
@@ -644,6 +658,25 @@ export default {
       }
 
     }
+  }
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .operation-banner__title{
+    font-size: 84px !important;
+    line-height: 105% !important;
+
+  }
+  .operation-us{
+    font-size: 22px !important;
+    line-height: 28px !important;
+    max-width: 190px !important;
+  }
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .operation-banner__title{
+    font-size: 68px !important;
+    line-height: 105% !important;
   }
 }
 
@@ -1358,11 +1391,7 @@ export default {
     min-height: 980px;
   }
 
-  .operation-us{
-    font-size: 22px  !important;
-    margin: 0!important;
-    line-height: 28px !important;
-  }
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1460,12 +1489,10 @@ export default {
     height: 116px;
   }
   .operation-banner__title{
-    font-size: 68px !important;
+
     margin-top: 228px !important
   }
-  .operation-us{
-    font-size: 20px !important;
-  }
+
   .mechanism {
     &>.small-shestiryonka{
       width: 136px;
@@ -1588,11 +1615,7 @@ export default {
   .department__title{
     font-size: 38px !important;
   }
-  .operation-us{
-    max-width: 150px !important;
-    font-size: 20px !important;
-    line-height: 25px !important;
-  }
+
   .brands-title{
     font-size: 58px !important;
     max-width: 752px !important;
@@ -1813,7 +1836,6 @@ export default {
   }
 
   .operation-banner__title{
-    font-size: 33px !important;
     margin-top: 128px !important;
 
   }
@@ -1886,6 +1908,7 @@ export default {
     }
     &:nth-child(9) {
 
+
       top: 52%;
 
       left: auto;
@@ -1941,24 +1964,32 @@ export default {
   margin-top: 17px;
 }
 }
+@media only screen and (max-width: 500px){
+  .operation-us{
+    margin: 0!important;
+  }
+}
 @media only screen and (max-width: 450px) {
 
   .operation-banner {
     background: url("../assets/images/operation/very-small.svg") no-repeat right top, linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28);
 
   }
-  .operation-us{
-    font-size: 16px !important;
-    line-height: 20px !important;
-    max-width: 264px !important;
-  }
+
   .operation-banner__title {
     margin-top: 100px !important;
   }
 }
+
 @media only screen and (max-width: 402px){
   .brands-container:nth-child(3){
     margin-top: 17px;
   }
+}
+@media only screen and (max-width: 338px){
+.ndk{
+  position: absolute;
+  top: 210px;
+}
 }
 </style>
