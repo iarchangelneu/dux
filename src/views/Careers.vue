@@ -629,7 +629,7 @@ export default {
   }
 }
 
-@media (max-width: 1440px) and (min-width: 1025px) {
+@media (max-width: 1439px) and (min-width: 1024px) {
   .line {
     padding-top: 72px !important;
   }
@@ -676,7 +676,7 @@ export default {
   }
 }
 
-@media (max-width: 1024px) and (min-width: 769px) {
+@media (max-width: 1023px) and (min-width: 769px) {
   .careers {
     font-size: 20px !important;
     line-height: 25px !important;

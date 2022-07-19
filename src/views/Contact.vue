@@ -322,7 +322,7 @@ export default {
     max-width: 288px !important;
   }
 }
-@media (min-width: 769px) and (max-width: 1024px){
+@media (min-width: 769px) and (max-width: 1023px){
   .contact-us{
     font-size: 20px !important;
     line-height: 25px !important;
@@ -343,7 +343,7 @@ export default {
     max-width: 719px !important;
   }
 }
-@media (min-width: 1025px) and (max-width: 1440px){
+@media (min-width: 1024px) and (max-width: 1439px){
   .contact-us{
    font-size: 22px !important;
    line-height: 28px !important;

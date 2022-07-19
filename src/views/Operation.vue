@@ -660,7 +660,7 @@ export default {
     }
   }
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
   .operation-banner__title{
     font-size: 84px !important;
     line-height: 105% !important;
@@ -1346,7 +1346,7 @@ export default {
     }
   }
 }
-@media screen and (min-width: 1160px) and (max-width: 1440px) {
+@media screen and (min-width: 1160px) and (max-width: 1439px) {
   .payment-provider-row-columns{
     & > div{
       flex: 15% !important;

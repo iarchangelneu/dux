@@ -980,7 +980,7 @@ export default {
 
 
 
-@media screen and (min-width: 1025px) and ( max-width: 1440px){
+@media screen and (min-width: 1024px) and ( max-width: 1439px){
   .container{
     & > * {
       margin-top: -1px;
@@ -991,6 +991,9 @@ export default {
         .klor{
           top: 12% !important;
           right: 50% !important;
+        }
+        .zar-poqr{
+          bottom: -40px !important;
         }
         .menu{
           .content{
@@ -1003,9 +1006,16 @@ export default {
               .brave{
                 letter-spacing: 0.03em !important;
                 font-size: 22px !important;
-                line-height: 55px !important;
+                line-height: 28px !important;
                 margin-right: 30px !important;
                 min-width: 170px !important;
+                display: inline-flex !important;
+                align-items: center !important;
+                vertical-align: 45px !important;
+                svg{
+                  width: 10px !important;
+                  height: 10px !important;
+                }
               }
             }
           }
@@ -1024,7 +1034,7 @@ export default {
       }
     }
     .history{
-      padding-top: 50px !important;
+      padding-top: 70px !important;
       p{
         font-size: 32px !important;
         width: 70% !important;
@@ -1227,7 +1237,7 @@ export default {
     }
   }
 }
-@media screen and (min-width: 768px) and ( max-width: 1024px) {
+@media screen and (min-width: 769px) and ( max-width: 1023px) {
   .slick-slide{
     margin-right: 50px !important;
   }
@@ -1267,7 +1277,15 @@ export default {
                 letter-spacing: 0.03em !important;
                 font-size: 20px !important;
                 min-width: 150px !important;
-                line-height: 40px !important;
+                line-height: 25px !important;
+                display: inline-flex !important;
+                align-items: center !important;
+                vertical-align: 35px !important;
+
+                svg{
+                  width: 10px !important;
+                  height: 10px !important;
+                }
               }
             }
           }
@@ -1533,7 +1551,7 @@ export default {
   }
 
 }
-@media screen and (min-width: 320px) and ( max-width: 767px){
+@media screen and (min-width: 320px) and ( max-width: 768px){
   .small-header{
     display: block !important;
   }
@@ -1585,8 +1603,9 @@ export default {
                 }
                 letter-spacing: 0.03em !important;
                 font-size: 16px !important;
-                display: block !important;
+                display: flex !important;
                 margin: 0 0 10px 0 !important;
+                align-items: center !important;
                 line-height: 20px !important;
               }
             }
@@ -1615,6 +1634,7 @@ export default {
       }
     }
     .history{
+      padding-top: 130px !important;
       .title{
         padding: 0 15px !important;
         img:nth-child(1){
@@ -2038,8 +2058,8 @@ export default {
     min-height: 700px;
     img.zar-poqr{
       position: absolute;
-      bottom: -20px;
-      right: 35%;
+      bottom: -40px;
+      right: 38%;
     }
     img.zar-mec{
       position: absolute;
@@ -2065,7 +2085,7 @@ export default {
           font-style: normal;
           font-weight: 400;
           font-size: 134px;
-          line-height: 130px;
+          line-height: 95%;
           letter-spacing: 0.02em;
           text-transform: uppercase;
           color: #F0F0F0;
@@ -2077,11 +2097,10 @@ export default {
             width: fit-content;
             font-weight: 400;
             min-width: 250px;
-            display: inline-block;
             font-size: 38px;
             line-height: 75px;
-            //display: flex;
-            //align-items: center;
+            display: inline-flex;
+            align-items: center;
             letter-spacing: 0.03em;
             text-transform: uppercase;
             color: #F0F0F0;
@@ -2092,6 +2111,8 @@ export default {
             svg{
               margin-right: 11px;
               vertical-align: baseline;
+              width: 20px;
+              height: 20px;
             }
           }
         }
@@ -2118,7 +2139,7 @@ export default {
     }
   }
   background-color: #010C28;
-  padding-top: 100px;
+  padding-top: 140px;
   width: 100%;
   font-family: 'Exo',  system-ui;
   font-style: normal;
@@ -2435,13 +2456,13 @@ export default {
         //min-width: 700px;
         width: 100%;
       }
-      @media (min-width: 1440px){
+      @media (min-width: 1439px){
         img{
           min-width: 450px !important;
           width: 100% !important;
         }
       }
-      @media (min-width: 1024px) and (max-width: 1440px){
+      @media (min-width: 1024px) and (max-width: 1439px){
         img{
           min-width: 320px !important;
           width: 100% !important;

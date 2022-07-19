@@ -12,7 +12,8 @@
                 <span class="brave">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill" viewBox="0 0 16 16">
                     <circle cx="8" cy="8" r="8"/>
-                  </svg>Why It Matters
+                  </svg>
+                  <span>Why It Matters</span>
                 </span>
           <span class="blue">Responsible</span> Gaming
         </p>
@@ -132,13 +133,21 @@ export default {
       padding: 25px 25px 0 25px;
     }
     .images{
+      width: 90%;
+      margin-left: auto;
       display: flex;
       justify-content: flex-end;
+      img{
+        width: 100%;
+      }
     }
 
     .content{
       padding: 0 25px;
+      position: relative;
       .p{
+        position: absolute;
+        top: -50px ;
         font-family: 'Oxygen', sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -158,13 +167,15 @@ export default {
           font-weight: 400;
           font-size: 34px;
           line-height: 110%;
-          display: inline-block;
-          width: 160px;
+          display: inline-flex;
+          align-items: baseline;
+          min-width: 160px;
+          max-width: 170px;
           letter-spacing: 0.03em;
           text-transform: uppercase;
           color: #F0F0F0;
-          margin: 0 70px 70px 0;
-          vertical-align: super;
+          margin: 0 70px 50px 0;
+          vertical-align: bottom;
           svg{
             margin-right: 11px;
             vertical-align: baseline;
@@ -174,7 +185,7 @@ export default {
     }
   }
   .learn{
-    padding-top: 150px;
+    padding-top: 450px;
     background-color: #010c28;
     .title{
       padding: 0 25px;
@@ -329,10 +340,13 @@ export default {
     padding: 50px 16px 0 16px !important;
   }
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
 .container{
   & > *{
     margin-top: -1px;
+  }
+  .learn{
+    padding-top: 200px !important;
   }
   .header_part{
     p{
@@ -348,6 +362,7 @@ export default {
       p{
         font-size: 84px !important;
         line-height: 105% !important;
+        top: -110px !important;
         span{
           margin: 0 40px 10px 0 !important;
           vertical-align: middle !important;
@@ -415,16 +430,21 @@ export default {
         font-size: 68px !important;
         width: 700px !important; ;
         line-height: 105% !important;
+        top: -80px !important;
         span.brave{
           font-size: 22px !important;
-          margin: 0 20px 30px 0 !important;
-          vertical-align: middle !important;
+          margin: 10px 20px 0 0px !important;
+          vertical-align: top !important;
         }
       }
     }
   }
+  .lists .content__item div svg{
+    width: 12px !important;
+    height: 12px !important;
+  }
   .learn{
-    padding-top: 70px !important;
+    padding-top: 210px !important;
     .content{
       width: 70% !important;
       padding: 80px 0 !important;
@@ -497,6 +517,9 @@ export default {
         font-size: 34px !important;
         width: 100% !important;
         line-height: 110% !important;
+        position: relative !important;
+        top: 0 !important;
+        margin-top: -50px !important;
         display: flex !important;
         flex-direction: column !important;
         span.brave{
@@ -516,7 +539,7 @@ export default {
     .title{
       padding: 0 16px !important;
     }
-    padding-top: 30px !important;
+    padding-top: 70px !important;
     .content{
       width: auto !important;
       padding: 30px 16px !important;
@@ -537,10 +560,12 @@ export default {
         align-items: flex-start !important;
         div{
           width: auto !important;
+          display: flex !important;
+          align-items: center !important;
           svg{
             margin-right: 10px !important;
-            width: 16px !important;
-            height: 16px !important;
+            width: 10px !important;
+            height: 10px !important;
           }
           h3{
             font-size: 16px !important;

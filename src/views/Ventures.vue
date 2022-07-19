@@ -25,7 +25,7 @@
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill" viewBox="0 0 16 16">
                     <circle cx="8" cy="8" r="8"/>
                   </svg>
-                  DUXGROUP VENTURES
+                  <span>DUXGROUP VENTURES</span>
                 </span>
           We invest in <br /> <span class="blue">the future of<br> iGaming</span>
         </p>
@@ -192,7 +192,7 @@ export default {
 .small-header{
   display: none;
 }
-@media screen and (min-width: 1025px) and ( max-width: 1440px){
+@media screen and (min-width: 1024px) and ( max-width: 1439px){
     .container{
       &>*{
         margin-top: -1px;
@@ -344,7 +344,7 @@ export default {
       }
     }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px){
+@media screen and (min-width: 769px) and (max-width: 1023px){
   .container{
     &>*{
       margin-top: -1px;
@@ -404,14 +404,14 @@ export default {
           .brave{
             margin: 0 !important;
             margin-right: 30px !important;
+            margin-bottom: 10px !important;
             font-size: 20px !important;
             width: 160px !important;
             line-height: 25px !important;
-            vertical-align: baseline !important;
+            vertical-align: bottom !important;
             svg{
-              width: 10px !important;
-              height: 10px !important;
-              vertical-align: baseline !important;
+              width: 15px !important;
+              height: 15px !important;
             }
           }
         }
@@ -616,15 +616,20 @@ export default {
       }
 
       .content {
+        padding: 16px !important;
         p {
           font-size: 34px !important;
           line-height: 110% !important;
+          display: flex;
+          flex-direction: column;
           .brave {
-            display: block !important;
             margin: 0 !important;
             font-size: 16px !important;
             text-align: left !important;
             line-height: 20px !important;
+            display: inline-flex !important;
+            align-items: center;
+            vertical-align: super !important;
             svg{
               width: 10px !important;
               height: 10px !important;
@@ -634,7 +639,7 @@ export default {
       }
     }
     .investment{
-      padding-top: 70px !important;
+      padding-top: 65px !important;
       .title{
         padding: 0 15px !important;
         img:nth-child(1){
@@ -968,12 +973,12 @@ export default {
           font-style: normal;
           width: 300px;
           text-align: left;
-          display: inline-block;
           font-weight: 400;
           font-size: 38px;
-          line-height: 48px;
-          //display: flex;
-          //align-items: center;
+          line-height: 95%;
+          display: inline-flex;
+
+          align-items: center;
           letter-spacing: 0.03em;
           text-transform: uppercase;
           color: #F0F0F0;
@@ -982,6 +987,8 @@ export default {
           svg{
             margin-right: 11px;
             vertical-align: baseline;
+            width: 20px ;
+            height: 20px ;
           }
         }
       }
@@ -1182,7 +1189,7 @@ export default {
         margin: 0 auto;
       }
     }
-    @media (min-width: 1024px) and (max-width: 1440px){
+    @media (min-width: 1024px) and (max-width: 1439px){
       .advert{
         padding: 60px 32px 110px 32px !important;
         p{
@@ -1190,7 +1197,7 @@ export default {
         }
       }
     }
-    @media (min-width: 768px) and (max-width: 1024px){
+    @media (min-width: 769px) and (max-width: 1023px){
       .advert{
         padding: 48px 8px 70px 8px !important;
         p{
