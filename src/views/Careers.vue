@@ -632,7 +632,6 @@ export default {
 @media (max-width: 1439px) and (min-width: 1024px) {
   .careers-banner{
     min-height: 417px !important;
-    height: 417px !important;
     &__title{
       margin-top: 100px !important;
     }
@@ -640,11 +639,17 @@ export default {
   .line {
     padding-top: 72px !important;
   }
+  .devider{
+    padding-top: 105px !important;
+  }
   .careers {
     font-size: 22px !important;
     line-height: 28px !important;
     position: relative;
     top: 7px;
+    & > img{
+      width: 10px;
+    }
   }
   .careers-banner__title {
     font-size: 84px !important;
@@ -669,6 +674,12 @@ export default {
       }
     }
   }
+  .igaming-container-left-side-title{
+    line-height: 110% !important;
+  }
+  .igaming-container-left-side-dote{
+    padding-top: 13px !important;
+  }
   .marquee-container {
     .Marquee {
       padding: 0 !important;
@@ -692,9 +703,18 @@ export default {
     position: relative;
     top: 5px;
   }
+  .igaming-container-left-side-dote > img {
+    width: 14px;
+  }
+  .igaming-container-left-side-title{
+    line-height:  28px !important;
+  }
+  .igaming-container-left-side-dote{
+    padding-top: 7px !important;
+  }
   .careers-banner{
     min-height: 300px !important;
-    height: 300px !important;
+
   }
   .careers-banner__title {
     margin-top: 40px !important;
@@ -703,7 +723,7 @@ export default {
     max-width: 503px !important;
   }
   .first-devider{
-    padding-top: 50px !important;
+    padding-top: 72px !important;
   }
   .line {
     padding-top: 67px !important;
@@ -743,18 +763,36 @@ export default {
     }
   }
 }
-
+@media (max-width: 768px) and (min-width: 633px){
+.igaming-container-left-side-dote{
+  display: inline !important;
+ margin-top: 7px !important;
+}
+}
 @media (max-width: 768px) and (min-width: 320px) {
   .careers-banner {
     background: url("../assets/images/careers/320.svg") no-repeat;
-    height: 265px !important;
+
     min-height: 265px !important;
     &__title{
       margin-top: 60px !important;
     }
   }
+  .igaming-container-left-side-dote > img {
+    width: 10px;
+  }
+
+  .igaming-container-left-side-title{
+    line-height: 25.25px !important;
+  }
+  .igaming-container-left-side-dote{
+padding-top: 0 !important;
+    display: flex;
+    align-items: center;
+    margin: 0 10px 0 0 ;
+  }
   .first-devider{
-    padding-top: 70px !important;
+    padding-top: 72px !important;
   }
   .careers {
     display: flex;
@@ -928,6 +966,9 @@ export default {
     color: #F0F0F0;
     margin-top: 250px;
     max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
 
     & .careers {
       font-family: "Oxygen", sans-serif;
@@ -939,9 +980,9 @@ export default {
       letter-spacing: 0.03em;
       text-transform: uppercase;
       color: #F0F0F0;
-      margin: 0 70px 70px 0;
-      vertical-align: top;
-
+      margin: 0 70px 0 0;
+      display: inline-flex;
+      align-items: center;
       & .span-svg {
         margin-right: 11px;
         vertical-align: baseline;
@@ -951,7 +992,7 @@ export default {
 }
 
 .devider {
-  padding-top: 100px;
+  padding-top: 150px;
   display: flex;
   width: 100%;
   background-color: #010C28;
@@ -1266,7 +1307,7 @@ export default {
 
       &-dote {
         margin-right: 10%;
-        padding-top: 10px;
+        padding-top: 17px;
       }
 
       &-title {
@@ -1319,15 +1360,10 @@ export default {
 }
 
 @media only screen and (max-width: 1160px) {
-  .careers-banner {
-    min-height: 0;
-  }
   .careers-banner__title {
     margin-top: 98px;
   }
-  .devider {
-    padding-top: 105px;
-  }
+
   .careers-form__container {
     padding: 32px;
   }
@@ -1373,9 +1409,7 @@ export default {
     }
   }
 
-  .devider {
-    padding-top: 72px;
-  }
+
   .benefits {
     padding: 56px;
   }
@@ -1619,9 +1653,7 @@ export default {
   .igaming-container-right-side-text {
     margin-top: 10px;
   }
-  .igaming-container-left-side-dote {
-    margin: 10px;
-  }
+
   .igaming-container-left-side-title {
     max-width: 100% !important;
     font-size: 20px !important;

@@ -59,14 +59,9 @@ export default {
   background-size: cover;
   .contact-banner {
     background: url("../assets/images/contact/Union.svg") no-repeat;
-    //background: #010C28 url('../assets/images/gradient.png') center;
-    //background-size: cover;
     background-size: contain;
-
     padding: 25px;
-    .header{
-
-    }
+    min-height: 702px;
     &__title {
       font-family: "Oxygen", sans-serif;
       font-style: normal;
@@ -93,6 +88,8 @@ export default {
         vertical-align: top;
         position: relative;
         top: 13px;
+        display: inline-flex;
+        align-items: center;
         & .span-svg {
           margin-right: 11px;
           vertical-align: baseline;
@@ -103,7 +100,7 @@ export default {
 }
 
 .devider {
-  padding-top: 200px;
+  padding-top: 150px;
   display: flex;
   width: 100%;
   background-color: #010C28;
@@ -247,7 +244,24 @@ export default {
     width: 352px !important;
   }
 }
-@media only screen and (max-width: 802px){
+@media (max-width: 1439px) and (min-width: 1024px) {
+
+  .contact-banner {
+    min-height: 417px !important;
+  }
+
+}
+@media (max-width: 1023px) and (min-width: 769px){
+  .contact-banner {
+    min-height: 300px !important;
+  }
+
+}
+@media (max-width: 768px) and (min-width: 320px){
+
+  .contact-banner {
+    min-height: 265px !important;
+  }
 
 
 }
