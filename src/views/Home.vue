@@ -490,6 +490,7 @@
             <img src="../assets/images/offices/2.jpeg" class="abs" data-aos="fade-down" data-aos-duration="1500"/>
           </div>
           <div class="map">
+
             <img src="../assets/images/offices/map.png" />
             <img src="../assets/images/offices/map320.png" alt="map" class="small-map" />
             <div class="malta">
@@ -507,8 +508,6 @@
                 <p>Number of open vacancies: <span class="grey">15</span></p>
               </div>
             </div>
-
-
           </div>
         </div>
       </div>
@@ -531,11 +530,29 @@ let mooveCursor = () => {
   const cards = document.querySelector('#cards');
 
   const moveCursor = (e)=> {
-    const mouseY = e.clientY- 100;
-    const mouseX = e.clientX - 100;
+    var mouseY = e.clientY;
+    var mouseX = e.clientX;
 
-    document.querySelector('#cards').style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+
+    // console.log(document.querySelector('#cards').offsetWidth)
+    if(window.innerWidth > 480){
+      if(mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth - 90){
+        document.querySelector('#cards').style.visibility = `hidden`;
+      }else{
+        document.querySelector('#cards').style.visibility = `visible`;
+      }
+    }
+    if(window.innerWidth < 1024){
+      if( mouseX < 40 || mouseX > document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth){
+        document.querySelector('#cards').style.visibility = `visible`;
+      }
+      mouseY = e.clientY -200;
+      mouseX = e.clientX;
+    }
+
+    document.querySelector('#cards').style.transform = `translate3d(${mouseX}px, ${mouseY - 150}px, 0)`;
   }
+
 
   window.addEventListener('mousemove', moveCursor)
 
@@ -2004,14 +2021,15 @@ export default {
           }
         }
         .map{
-          .cards{
-            padding: 30px 15px !important;
-            .card{
-              p{
-                font-size: 17px !important;
+
+            .cards{
+              .card{
+                p{
+                  font-size: 17px !important;
+                }
               }
             }
-          }
+
           img:first-child{
             display: none !important;
           }
@@ -2873,6 +2891,7 @@ export default {
     .map{
       width: 100%;
       position: relative;
+      overflow: hidden;
       //box-shadow: inset 0 0 10px #010C28;
       //border-bottom-left-radius: 50%;
       //border-bottom-right-radius: 50%;
@@ -2891,7 +2910,8 @@ export default {
       img{
         width: 100%;
         overflow: hidden;
-        -webkit-mask-image: radial-gradient(ellipse 90% 237% at 54% 71%, black 30%, transparent 50%);
+        //-webkit-mask-image: radial-gradient(ellipse 90% 237% at 54% 71%, black 30%, transparent 50%);
+        -webkit-mask-image: radial-gradient(ellipse 132% 173% at 54% 71%, black 30%, transparent 50%);
       }
       .malta, .cyprus{
         .circle{
@@ -2996,25 +3016,29 @@ export default {
         background-repeat: no-repeat;
         background-position: top left;
         position: absolute;
-        top: 100px;
+        top: 0px;
+        left: 0px;
+        box-sizing: border-box;
+        cursor: pointer;
         display: none;
-        left: 100px;
         border-radius: 10px;
         padding: 50px 18px 50px 25px;
-        .card{
-          p{
-            margin: 0 0 16px 0;
-            font-family: 'Exo', sans-serif;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 27px;
-            color: #F0F0F0;
+          .card{
 
+            p{
+              margin: 0 0 16px 0;
+              font-family: 'Exo', sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 27px;
+              color: #F0F0F0;
+
+            }
           }
+
         }
 
-      }
     }
   }
 }
