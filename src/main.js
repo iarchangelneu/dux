@@ -6,7 +6,7 @@ import BlockTitle from './components/BlockTitle.vue'
 
 export default {
   components: {
-    BlockTitle
+    'BlockTitle': BlockTitle
   }
 }
 

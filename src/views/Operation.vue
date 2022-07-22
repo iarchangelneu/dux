@@ -13,7 +13,8 @@
       </div>
     </div>
     <div class="first-devider">
-      <img src="../assets/images/operation/departament.svg"/>
+      <!-- <img src="../assets/images/operation/departament.svg"/> -->
+      <BlockTitle title="our departments"></BlockTitle>
     </div>
     <div class="department">
       <h2 class="department__title">
@@ -299,7 +300,8 @@
         </modal>
       </div>
       <div class="divider">
-        <img alt="header" src="../assets/images/operation/Header.svg"/>
+        <!-- <img alt="header" src="../assets/images/operation/Header.svg"/> -->
+        <BlockTitle title="What makes us unique?"></BlockTitle>
       </div>
       <div class="unique">
         <div class="unique-container">
@@ -470,6 +472,7 @@
 <script>
 import Header from '../components/Header' ;
 import FooterPart from "@/components/Footer";
+import BlockTitle from '../components/BlockTitle.vue';
 
 export default {
 
@@ -477,7 +480,7 @@ export default {
   data() {
     return {}
   },
-  components: {Header, FooterPart},
+  components: {Header, FooterPart, BlockTitle},
   methods: {
     show() {
       this.$modal.show('my-first-modal');
@@ -861,7 +864,7 @@ export default {
 //  animation: rotating-min 2s linear infinite;
 //}
 
-.mechanism-support img, .mechanism-design img, .mechanism-hr img, .mechanism-crm img, .mechanism-pr img, .mechanism-psp img, .mechanism-hr img, .mechanism-crm img, {
+.mechanism-support img, .mechanism-design img, .mechanism-hr img, .mechanism-crm img, .mechanism-pr img, .mechanism-psp img, .mechanism-hr img, .mechanism-crm img {
   animation: rotating-min 4s linear infinite;
 }
 
@@ -873,7 +876,7 @@ export default {
   animation: rotating-big 5s linear infinite;
 }
 
-.mechanism-legal img, .mechanism-development img, .mechanism-pr img, .mechanism-psp img, {
+.mechanism-legal img, .mechanism-development img, .mechanism-pr img, .mechanism-psp img {
   animation: rotating-big 7s linear infinite;
 }
 

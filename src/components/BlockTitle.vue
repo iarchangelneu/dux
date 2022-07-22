@@ -12,6 +12,7 @@
 
 <script>
 export default {
+    name: 'BlockTitle',
     props: ['title'],
     computed:{
         client(){
@@ -36,6 +37,7 @@ export default {
 <style>
     .blockTitle__cont{
         position: relative;
+        width: 100%;
     }
     .blockTitle__cont img{
         width: 100%;
@@ -53,6 +55,11 @@ export default {
         text-align: center;
         top: 14px;
         line-height: 105%;
+    }
+    @media screen and (max-width: 1440px) {
+        .blockTitle__text{
+            top: 10px;
+        }
     }
     @media screen and (max-width: 1024px) {
         .blockTitle__text{
