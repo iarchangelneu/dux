@@ -601,7 +601,9 @@ export default {
   }
 
 }
-
+.menu{
+  padding: 25px 0;
+}
 .department {
   background: #010C28;
   display: flex;

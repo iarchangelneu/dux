@@ -534,21 +534,29 @@ let mooveCursor = () => {
     var mouseX = e.clientX;
 
 
-    // console.log(document.querySelector('#cards').offsetWidth)
-    if(window.innerWidth > 480){
-      if(mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth - 90){
+    // console.log(document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth + 90)
+    if(window.innerWidth > 1024){
+      if(mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth -20){
         document.querySelector('#cards').style.visibility = `hidden`;
       }else{
         document.querySelector('#cards').style.visibility = `visible`;
       }
     }
-    if(window.innerWidth < 1024){
-      if( mouseX < 40 || mouseX > document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth){
+    // if(window.innerWidth < 1024){
+    //   if( mouseX < 40 || mouseX > document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth){
+    //     document.querySelector('#cards').style.visibility = `visible`;
+    //   }
+    //   mouseY = e.clientY -200;
+    //   mouseX = e.clientX;
+    // }
+    if(window.innerWidth > 480 && window.innerWidth < 1024){
+      if(mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth - 40){
+        document.querySelector('#cards').style.visibility = `hidden`;
+      }else{
         document.querySelector('#cards').style.visibility = `visible`;
       }
-      mouseY = e.clientY -200;
-      mouseX = e.clientX;
     }
+
 
     document.querySelector('#cards').style.transform = `translate3d(${mouseX}px, ${mouseY - 150}px, 0)`;
   }
