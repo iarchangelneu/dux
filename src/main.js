@@ -2,6 +2,13 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import VModal from 'vue-js-modal'
+import BlockTitle from './components/BlockTitle.vue'
+
+export default {
+  components: {
+    'BlockTitle': BlockTitle
+  }
+}
 
 Vue.use(VModal)
 import AOS from 'aos';

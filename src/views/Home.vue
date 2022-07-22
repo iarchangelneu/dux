@@ -25,8 +25,7 @@
     </div>
     <div class="history">
       <div class="title">
-        <img src="../assets/images/whatweare.svg" />
-        <img src="../assets/images/whatweare320.svg" class="small-header" />
+        <BlockTitle title="what we are?"></BlockTitle>
       </div>
       <p>
         When DUXGroup started in <span class="blue">2020</span>, we set out to make history by creating something great,
@@ -586,6 +585,7 @@ import VueSlickCarousel from 'vue-slick-carousel'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 import gsap from "gsap";
+import BlockTitle from '../components/BlockTitle.vue';
 
 
 let mooveCursor = () => {
@@ -718,7 +718,7 @@ export default {
       }
     }
   },
-  components: { FooterPart, Header, VueSlickCarousel },
+  components: { FooterPart, Header, VueSlickCarousel, BlockTitle },
   methods: {
     showNext() {
       this.$refs.carousel.next()
