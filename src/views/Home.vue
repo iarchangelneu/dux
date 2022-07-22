@@ -579,7 +579,7 @@ let mooveCursor = () => {
 
 
     // console.log(document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth + 90)
-    if (window.innerWidth > 1920) {
+    if (window.clientWidth > 1920) {
       if (mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth - 20) {
         document.querySelector('#cards').style.visibility = `hidden`;
       } else {
@@ -593,7 +593,7 @@ let mooveCursor = () => {
     //   mouseY = e.clientY -200;
     //   mouseX = e.clientX;
     // }
-    if (window.innerWidth > 480 && window.innerWidth < 1920) {
+    if (window.clientWidth > 480 && window.clientWidth < 1920) {
       if (mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth - 40) {
         document.querySelector('#cards').style.visibility = `hidden`;
       } else {
