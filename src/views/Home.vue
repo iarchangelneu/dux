@@ -1,525 +1,569 @@
 <template>
-    <div class="container">
-      <div class="header">
-        <div class="bg-img">
-          <img src="../assets/images/home/title/klor.png" class="klor" data-aos="fade-down"  data-aos-duration="2000"/>
-          <img src="../assets/images/home/title/zar-mec.png" class="zar-mec" data-aos="fade-up"  data-aos-duration="2000"/>
-          <img src="../assets/images/home/title/zar-poqr.png"  class="zar-poqr"  data-aos="fade-up"  data-aos-duration="2000" />
-          <div class="menu">
-            <Header @opened="openedMobMenu"/>
-            <div class="content">
-              <p class="p"  data-aos="fade-up" >
-                <span class="brave">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill" viewBox="0 0 16 16">
-                    <circle cx="8" cy="8" r="8"/>
-                  </svg>{{ this.text }}
-                </span>
-                We Were Born To Make History
-              </p>
-            </div>
+  <div class="container">
+    <div class="header">
+      <div class="bg-img">
+        <img src="../assets/images/home/title/klor.png" class="klor" data-aos="fade-down" data-aos-duration="2000" />
+        <img src="../assets/images/home/title/zar-mec.png" class="zar-mec" data-aos="fade-up"
+          data-aos-duration="2000" />
+        <img src="../assets/images/home/title/zar-poqr.png" class="zar-poqr" data-aos="fade-up"
+          data-aos-duration="2000" />
+        <div class="menu">
+          <Header @opened="openedMobMenu" />
+          <div class="content">
+            <p class="p" data-aos="fade-up">
+              <span class="brave">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
+                  viewBox="0 0 16 16">
+                  <circle cx="8" cy="8" r="8" />
+                </svg>{{ this.text }}
+              </span>
+              We Were Born To Make History
+            </p>
           </div>
         </div>
       </div>
-      <div class="history">
-        <div class="title">
-          <img src="../assets/images/whatweare.svg" />
-          <img src="../assets/images/whatweare320.svg"  class="small-header"/>
-        </div>
-        <p>
-          When DUXGroup started in <span class="blue">2020</span>, we set out to make history by creating something great, aiming to set the pace for the entire industry. <br /> <br />
-          Individuals  <span class="blue">specialising in iGaming</span>, mobile marketing, and product development came together to form three incredible teams into one strong project.
-          <span class="blue">“DUX” means “leader”</span>. And DUXGroup turns this name into reality.
-          We are  <span class="blue">leaders in everything</span> we do and continue to push our tribe forward every day.
-          Our mission? We want to  <span class="blue">revolutionize</span> the iGaming segment!
-        </p>
+    </div>
+    <div class="history">
+      <div class="title">
+        <img src="../assets/images/whatweare.svg" />
+        <img src="../assets/images/whatweare320.svg" class="small-header" />
       </div>
-      <div class="running">
-        <div class="title">
-          <p>We follow the principle </p>
-        </div>
-        <div class="line" v-if="menuClosed">
-<!--          <marquee direction="row" behavior="slide" height="100" width="100%" bgcolor="#010C28" Scrollamount=20>-->
-<!--&lt;!&ndash;          <div class="ticker-wrapper">&ndash;&gt;-->
-<!--            <div class="item" v-for="(item, id) in running" :key="id">-->
-<!--              <div class="circle"></div>-->
-<!--              <p>{{ item }}</p>-->
-<!--            </div>-->
-<!--&lt;!&ndash;          </div>&ndash;&gt;-->
-<!--          </marquee>-->
-
-          <div class="marquee-container">
-            <div class="Marquee">
-              <div class="Marquee-content">
-                <div class="Marquee-tag">
-                  <div class="circle"></div>
-                  <p>Revolutionize</p>
-                </div>
-                <div class="Marquee-tag">
-                  <div class="circle"></div>
-                  <p>Improve</p>
-                </div>
-                <div class="Marquee-tag">
-                  <div class="circle"></div>
-                  <p>Perfect</p>
-                </div>
-                <div class="Marquee-tag">
-                  <div class="circle"></div>
-                  <p>Revolutionize</p>
-                </div>
-                <div class="Marquee-tag">
-                  <div class="circle"></div>
-                  <p>Improve</p>
-                </div>
-                <div class="Marquee-tag">
-                  <div class="circle"></div>
-                  <p>Perfect</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="marquee-container">
-            <div class="Marquee">
-              <div class="Marquee-content" style="padding-left: 50px;">
-                <div class="Marquee-tag">
-                  <div class="circle"></div>
-                  <p>Improve</p>
-                </div>
-                <div class="Marquee-tag">
-                  <div class="circle"></div>
-                  <p>Perfect</p>
-                </div>
-                <div class="Marquee-tag">
-                  <div class="circle"></div>
-                  <p>Revolutionize</p>
-                </div>
-                <div class="Marquee-tag">
-                  <div class="circle"></div>
-                  <p>Improve</p>
-                </div>
-                <div class="Marquee-tag">
-                  <div class="circle"></div>
-                  <p>Perfect</p>
-                </div>
-                <div class="Marquee-tag">
-                  <div class="circle"></div>
-                  <p>Revolutionize</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <p>
+        When DUXGroup started in <span class="blue">2020</span>, we set out to make history by creating something great,
+        aiming to set the pace for the entire industry. <br /> <br />
+        Individuals <span class="blue">specialising in iGaming</span>, mobile marketing, and product development came
+        together to form three incredible teams into one strong project.
+        <span class="blue">“DUX” means “leader”</span>. And DUXGroup turns this name into reality.
+        We are <span class="blue">leaders in everything</span> we do and continue to push our tribe forward every day.
+        Our mission? We want to <span class="blue">revolutionize</span> the iGaming segment!
+      </p>
+    </div>
+    <div class="running">
+      <div class="title">
+        <p>We follow the principle </p>
       </div>
-
-
-      <div class="partnership">
-        <div class="divide_partnership">
-          <img src="../assets/images/whatweare.svg" />
-          <img src="../assets/images/partnership320.svg" class="small-header" />
-        </div>
-        <div class="title">
-          <p>Synergy and partnership</p>
-        </div>
-        <div class="items">
-          <div class="item">
-            <img src="../assets/images/partnership-bg.png" class="partnership-bg"/>
-            <div class="anime">
-              <div class="imgs view1">
-                <img src="../assets/images/partnership/view1/1.png" />
-                <img src="../assets/images/partnership/view1/2.png" />
-                <img src="../assets/images/partnership/view1/3.png" />
-                <img src="../assets/images/partnership/view1/4.png" />
-              </div>
-            </div>
-            <div class="content">
-              <p class="title">In People we Trust</p>
-              <p class="text">We build any and all success on hiring industry experts, who know exactly what our customers demand.
-                At DuxGroup there is no micromanagement, because we trust everyone to do their job to the highest standard. Our teams and people are our greatest asset.</p>
-            </div>
-          </div>
-          <div class="item">
-            <img src="../assets/images/partnership-bg.png" class="partnership-bg"/>
-            <div class="anime">
-              <div class="imgs view2">
-                <img src="../assets/images/partnership/view2/1.png" />
-                <img src="../assets/images/partnership/view2/2.png" />
-              </div>
-            </div>
-            <div class="content">
-              <p class="title">Transparency is Gold – Honesty, Directness, Clarity</p>
-              <p class="text">We build any and all success on hiring industry experts, who know exactly what our customers demand.
-                At DuxGroup there is no micromanagement, because we trust everyone to do their job to the highest standard. Our teams and people are our greatest asset.</p>
-            </div>
-            </div>
-          <div class="item">
-            <img src="../assets/images/partnership-bg.png" class="partnership-bg"/>
-            <div class="anime">
-              <div class="imgs view3">
-                <img src="../assets/images/partnership/view3/1.png" />
-                <img src="../assets/images/partnership/view3/2.png" />
-                <img src="../assets/images/partnership/view3/3.png" />
-                <img src="../assets/images/partnership/view3/4.png" />
-              </div>
-            </div>
-            <div class="content">
-              <p class="title">Resilience is Key – We have a plan</p>
-              <p class="text">We want to make an impact. But we are not too proud to admit that sometimes we need to re-adjust. Getting up after a fall and looking at different solutions that no one has ever thought of before - This is our strength.
-                We learn from our mistakes and create something different. We live by the 1+1=3 principle, because with each new try, we add greater value. Every time.</p>
-            </div>
-            </div>
-          <div class="item">
-            <img src="../assets/images/partnership-bg.png" class="partnership-bg"/>
-            <div class="anime">
-              <div class="imgs view4">
-                <img src="../assets/images/partnership/view4/1.png" />
-                <img src="../assets/images/partnership/view4/2.png" />
-                <img src="../assets/images/partnership/view4/3.png" />
-              </div>
-            </div>
-            <div class="content">
-              <p class="title">Team Dux – Together. – We are colleagues</p>
-              <p class="text">But first and foremost, we like each other and we are friends. We are one team and we stand together in our mission. There is no hierarchy.
-                You can have a coffee with your immediate colleagues or the "Head of Anything". This is by far the most important value we hold.</p>
-            </div>
-            </div>
-        </div>
-      </div>
-
-      <div class="slider">
-        <div class="header-sldier">
-          <img src="../assets/images/we-have.svg" />
-          <img src="../assets/images/we-have320.svg" class="small-header" />
-        </div>
-        <div class="title">
-          <p>We create <span class="blue">products</span> that players <span class="blue">love</span></p>
-        </div>
-        <div class="slide_part">
-          <div class="slider">
-            <div><img src="../assets/images/slider/Card1.png"></div>
-            <div><img src="../assets/images/slider/Card2.png"></div>
-            <div><img src="../assets/images/slider/Card3.png"></div>
-          </div>
-          <VueSlickCarousel ref="carousel" v-bind="settingsImages" class="vue-slick">
-            <div><img src="../assets/images/slider/Card1.png"></div>
-            <div><img src="../assets/images/slider/Card2.png"></div>
-            <div><img src="../assets/images/slider/Card3.png"></div>
-          </VueSlickCarousel>
-          <div class="arrows">
-            <div class="prev" @click="showPrev">
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="#2F5BD8" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
-              </svg>
-            </div>
-            <div class="next" @click="showNext">
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="#2F5BD8" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="divider">
+      <div class="line" v-if="menuClosed">
+        <!--          <marquee direction="row" behavior="slide" height="100" width="100%" bgcolor="#010C28" Scrollamount=20>-->
+        <!--&lt;!&ndash;          <div class="ticker-wrapper">&ndash;&gt;-->
+        <!--            <div class="item" v-for="(item, id) in running" :key="id">-->
+        <!--              <div class="circle"></div>-->
+        <!--              <p>{{ item }}</p>-->
+        <!--            </div>-->
+        <!--&lt;!&ndash;          </div>&ndash;&gt;-->
+        <!--          </marquee>-->
 
         <div class="marquee-container">
-          <div class="Marquee" style="margin-bottom: 0;">
+          <div class="Marquee">
             <div class="Marquee-content">
-              <div class="Marquee-tag max-width">
-                <img src="../assets/images/marquee/1.svg"  class="ml10" />
-                <p>WE LOVE</p>
+              <div class="Marquee-tag">
+                <div class="circle"></div>
+                <p>Revolutionize</p>
               </div>
-
-              <div class="Marquee-tag max-width">
-                <img src="../assets/images/marquee/2.svg"  class="ml10" />
-                <p>WE LOVE</p>
+              <div class="Marquee-tag">
+                <div class="circle"></div>
+                <p>Improve</p>
               </div>
-
-              <div class="Marquee-tag max-width">
-                <img src="../assets/images/marquee/3.svg"  class="ml10" />
-                <p>WE LOVE</p>
+              <div class="Marquee-tag">
+                <div class="circle"></div>
+                <p>Perfect</p>
               </div>
-              <div class="Marquee-tag max-width">
-                <img src="../assets/images/marquee/1.svg"  class="ml10" />
-                <p>WE LOVE</p>
+              <div class="Marquee-tag">
+                <div class="circle"></div>
+                <p>Revolutionize</p>
               </div>
-
-              <div class="Marquee-tag max-width">
-                <img src="../assets/images/marquee/2.svg"  class="ml10" />
-                <p>WE LOVE</p>
+              <div class="Marquee-tag">
+                <div class="circle"></div>
+                <p>Improve</p>
               </div>
-
-              <div class="Marquee-tag max-width">
-                <img src="../assets/images/marquee/3.svg"  class="ml10" />
-                <p>WE LOVE</p>
+              <div class="Marquee-tag">
+                <div class="circle"></div>
+                <p>Perfect</p>
               </div>
-
             </div>
           </div>
         </div>
         <div class="marquee-container">
           <div class="Marquee">
-            <div class="Marquee-content">
-              <div class="Marquee-tag max-width">
-                <p>WE LOVE</p>
-                <img src="../assets/images/marquee/5.svg" class="ml10" />
+            <div class="Marquee-content" style="padding-left: 50px;">
+              <div class="Marquee-tag">
+                <div class="circle"></div>
+                <p>Improve</p>
               </div>
-              <div class="Marquee-tag max-width">
-                <p>WE LOVE</p>
-                <img src="../assets/images/marquee/4.svg"  class="ml10" />
+              <div class="Marquee-tag">
+                <div class="circle"></div>
+                <p>Perfect</p>
               </div>
-
-              <div class="Marquee-tag max-width">
-                <p>WE LOVE</p>
-                <img src="../assets/images/marquee/5.svg"  class="ml10" />
+              <div class="Marquee-tag">
+                <div class="circle"></div>
+                <p>Revolutionize</p>
               </div>
-              <div class="Marquee-tag max-width">
-                <p>WE LOVE</p>
-                <img src="../assets/images/marquee/5.svg"  class="ml10" />
+              <div class="Marquee-tag">
+                <div class="circle"></div>
+                <p>Improve</p>
               </div>
-
-              <div class="Marquee-tag max-width">
-                <p>WE LOVE</p>
-                <img src="../assets/images/marquee/4.svg"  class="ml10" />
+              <div class="Marquee-tag">
+                <div class="circle"></div>
+                <p>Perfect</p>
               </div>
-
-              <div class="Marquee-tag max-width">
-                <p>WE LOVE</p>
-                <img src="../assets/images/marquee/5.svg"  class="ml10" />
-              </div>
-
-            </div>
-          </div>
-        </div>
-        <div class="content">
-          <div class="content__item">
-            <div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill" viewBox="0 0 16 16">
-                <circle cx="8" cy="8" r="8"/>
-              </svg>
-              <h3>DUXPlatform</h3>
-            </div>
-            <h4>IGaming platform that includes a casino and a sports betting solution. Innovative. Flexible. Comfortable. Unique.</h4>
-          </div>
-          <div class="content__item">
-            <div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill" viewBox="0 0 16 16">
-                <circle cx="8" cy="8" r="8"/>
-              </svg>
-              <h3>Affiliate Program</h3>
-            </div>
-            <h4>A strategic partner of Chilli Partners, with huge expertise and connections in affiliate marketing. The main office is located in Malta.</h4>
-          </div>
-          <div class="content__item">
-            <div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill" viewBox="0 0 16 16">
-                <circle cx="8" cy="8" r="8"/>
-              </svg>
-              <h3>DuxOperation</h3>
-            </div>
-            <h4>A team of professionals in the field of casino and sports operations. We have experience working with the largest brands in the world. We have the following departments: CRM, VIP, support, antifraud, payments, BI, and more.</h4>
-          </div>
-          <div class="content__item">
-            <div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill" viewBox="0 0 16 16">
-                <circle cx="8" cy="8" r="8"/>
-              </svg>
-              <h3>DUXVentures</h3>
-            </div>
-            <h4>We invest money in what we understand: iGaming, mobile marketing, digital, and crypto. The main principle is 1+1=3. We don’t just offer money. We give the project our expertise, experience, skills, and abilities.</h4>
-          </div>
-        </div>
-      </div>
-      <div class="mission">
-        <div class="title">
-          <img src="../assets/images/mission-divider.svg" />
-          <img src="../assets/images/mission-divider320.svg" class="small-header" />
-        </div>
-        <div class="content">
-          <p>Make <span class="blue">big waves</span> in the iGaming segment together with <span class="blue">our team</span> and build an awesome <span class="blue">ecosystem</span></p>
-          <img src="../assets/images/mission/6.png" class="forth_figure" data-aos="fade-up" />
-          <img src="../assets/images/mission/23.png" class="second_figure" data-aos="fade-up" />
-          <img src="../assets/images/mission/33.png" class="third_figure" data-aos="fade-down" />
-          <img src="../assets/images/mission/45.png" class="first_figure" data-aos="fade-down" />
-        </div>
-      </div>
-      <div class="gambling">
-        <div class="title">
-          <img src="../assets/images/gambling-bg.png" />
-          <img src="../assets/images/gambling320.svg" class="small-header"/>
-        </div>
-        <div class="content">
-          <div class="figure">
-            <p>Gambling should always be seen as entertainment and nothing else. Unfortunately, sometimes people can take it too far and potentially lose control of their betting.
-              You should never consider gambling as a source of income or a chance to recover from debt.
-              Always keep track of the time and money you spent on gambling, check this with yourself every day.
-            </p>
-            <div class="circle">
-              <span style="line-height: 180%;">READ MORE</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" fill="#00FFFF" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="events">
-        <div class="divider_event">
-          <img src="../assets/images/event-divider.svg" />
-          <img src="../assets/images/events320.svg" class="small-header" />
-        </div>
-        <div class="content">
-          <div class="title">
-            <p>We always <span class="blue">participate</span> in</p>
-          </div>
-          <div class="organizations">
-            <div class="img">
-              <img src="../assets/images/organizations/sigma.svg" />
-            </div>
-            <div class="img">
-              <img src="../assets/images/organizations/affiliate.svg" />
-            </div>
-            <div class="img">
-              <img src="../assets/images/organizations/asia.png" />
-            </div>
-            <div class="img">
-              <img src="../assets/images/organizations/london.svg" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="holding">
-        <div class="title">
-          <img src="../assets/images/holding/header.svg" />
-          <img src="../assets/images/holding/header320.svg" class="small-header"/>
-        </div>
-        <div class="slider-holding">
-          <div class="items">
-            <VueSlickCarousel ref="holding" v-bind="settings">
-              <div>
-                <div class="item">
-                  <div class="content">
-                    <p class="date">01.05.22</p>
-                    <p class="item_title">IGBAFFILIATE </p>
-                    <p class="item_content">DUXGroup: People are the core asset in our business</p>
-                  </div>
-                  <div class="img"  data-aos="fade-up" >
-                    <img src="../assets/images/person.png"/>
-                  </div>
-                  <div class="btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="60" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="item">
-                  <div class="content">
-                    <p class="date">01.05.22</p>
-                    <p class="item_title">IGBAFFILIATE </p>
-                    <p class="item_content">DUXGroup: People are the core asset in our business</p>
-                  </div>
-                  <div class="img">
-                    <img src="../assets/images/person.png" />
-                  </div>
-                  <div class="btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="60" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="item">
-                  <div class="content">
-                    <p class="date">01.05.22</p>
-                    <p class="item_title">IGBAFFILIATE </p>
-                    <p class="item_content">DUXGroup: People are the core asset in our business</p>
-                  </div>
-                  <div class="img">
-                    <img src="../assets/images/person.png" />
-                  </div>
-                  <div class="btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="60" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="item">
-                  <div class="content">
-                    <p class="date">01.05.22</p>
-                    <p class="item_title">IGBAFFILIATE </p>
-                    <p class="item_content">DUXGroup: People are the core asset in our business</p>
-                  </div>
-                  <div class="img">
-                    <img src="../assets/images/person.png" />
-                  </div>
-                  <div class="btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="60" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-
-            </VueSlickCarousel>
-            <div class="arrows">
-              <div class="prev" @click="$refs.holding.prev()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="#2F5BD8" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
-                </svg>
-              </div>
-              <div class="next" @click="$refs.holding.next()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="#2F5BD8" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                </svg>
+              <div class="Marquee-tag">
+                <div class="circle"></div>
+                <p>Revolutionize</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="offices">
-        <div class="title">
-          <img src="../assets/images/offices/Header.png" />
-          <img src="../assets/images/offices320.svg" class="small-header"/>
-        </div>
-        <div>
-          <div class="office">
-            <img src="../assets/images/offices/3.jpeg" data-aos="fade-up" data-aos-duration="1500"/>
-            <img src="../assets/images/offices/1.jpeg" data-aos="fade-up" data-aos-duration="1500"/>
-            <img src="../assets/images/offices/2.jpeg" class="abs" data-aos="fade-down" data-aos-duration="1500"/>
-          </div>
-          <div class="map">
-
-            <img src="../assets/images/offices/map.png" />
-            <img src="../assets/images/offices/map320.png" alt="map" class="small-map" />
-            <div class="malta">
-              <div class="circle"></div>
-              <div class="text">MALTA</div>
-            </div>
-            <div class="cyprus">
-              <div class="circle"></div>
-              <div class="text">CYPRUS</div>
-            </div>
-            <div class="cards" id="cards">
-              <div class="card">
-                <p>Established in <span class="grey">2020</span></p>
-                <p>Number of employees: <span class="grey">350+</span></p>
-                <p>Number of open vacancies: <span class="grey">15</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer">
-        <FooterPart />
-
       </div>
     </div>
+
+
+    <div class="partnership">
+      <div class="divide_partnership">
+        <img src="../assets/images/whatweare.svg" />
+        <img src="../assets/images/partnership320.svg" class="small-header" />
+      </div>
+      <div class="title">
+        <p>Synergy and partnership</p>
+      </div>
+      <div class="items">
+        <div class="item">
+          <img src="../assets/images/partnership-bg.png" class="partnership-bg" />
+          <div class="anime">
+            <div class="imgs view1">
+              <img src="../assets/images/partnership/view1/1.png" />
+              <img src="../assets/images/partnership/view1/2.png" />
+              <img src="../assets/images/partnership/view1/3.png" />
+              <img src="../assets/images/partnership/view1/4.png" />
+            </div>
+          </div>
+          <div class="content">
+            <p class="title">In People we Trust</p>
+            <p class="text">We build any and all success on hiring industry experts, who know exactly what our customers
+              demand.
+              At DuxGroup there is no micromanagement, because we trust everyone to do their job to the highest
+              standard. Our teams and people are our greatest asset.</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="../assets/images/partnership-bg.png" class="partnership-bg" />
+          <div class="anime">
+            <div class="imgs view2">
+              <img src="../assets/images/partnership/view2/1.png" />
+              <img src="../assets/images/partnership/view2/2.png" />
+            </div>
+          </div>
+          <div class="content">
+            <p class="title">Transparency is Gold – Honesty, Directness, Clarity</p>
+            <p class="text">We build any and all success on hiring industry experts, who know exactly what our customers
+              demand.
+              At DuxGroup there is no micromanagement, because we trust everyone to do their job to the highest
+              standard. Our teams and people are our greatest asset.</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="../assets/images/partnership-bg.png" class="partnership-bg" />
+          <div class="anime">
+            <div class="imgs view3">
+              <img src="../assets/images/partnership/view3/1.png" />
+              <img src="../assets/images/partnership/view3/2.png" />
+              <img src="../assets/images/partnership/view3/3.png" />
+              <img src="../assets/images/partnership/view3/4.png" />
+            </div>
+          </div>
+          <div class="content">
+            <p class="title">Resilience is Key – We have a plan</p>
+            <p class="text">We want to make an impact. But we are not too proud to admit that sometimes we need to
+              re-adjust. Getting up after a fall and looking at different solutions that no one has ever thought of
+              before - This is our strength.
+              We learn from our mistakes and create something different. We live by the 1+1=3 principle, because with
+              each new try, we add greater value. Every time.</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="../assets/images/partnership-bg.png" class="partnership-bg" />
+          <div class="anime">
+            <div class="imgs view4">
+              <img src="../assets/images/partnership/view4/1.png" />
+              <img src="../assets/images/partnership/view4/2.png" />
+              <img src="../assets/images/partnership/view4/3.png" />
+            </div>
+          </div>
+          <div class="content">
+            <p class="title">Team Dux – Together. – We are colleagues</p>
+            <p class="text">But first and foremost, we like each other and we are friends. We are one team and we stand
+              together in our mission. There is no hierarchy.
+              You can have a coffee with your immediate colleagues or the "Head of Anything". This is by far the most
+              important value we hold.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider">
+      <div class="header-sldier">
+        <img src="../assets/images/we-have.svg" />
+        <img src="../assets/images/we-have320.svg" class="small-header" />
+      </div>
+      <div class="title">
+        <p>We create <span class="blue">products</span> that players <span class="blue">love</span></p>
+      </div>
+      <div class="slide_part">
+        <div class="slider">
+          <div><img src="../assets/images/slider/Card1.png"></div>
+          <div><img src="../assets/images/slider/Card2.png"></div>
+          <div><img src="../assets/images/slider/Card3.png"></div>
+        </div>
+        <VueSlickCarousel ref="carousel" v-bind="settingsImages" class="vue-slick">
+          <div><img src="../assets/images/slider/Card1.png"></div>
+          <div><img src="../assets/images/slider/Card2.png"></div>
+          <div><img src="../assets/images/slider/Card3.png"></div>
+        </VueSlickCarousel>
+        <div class="arrows">
+          <div class="prev" @click="showPrev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="#2F5BD8" class="bi bi-arrow-left"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+            </svg>
+          </div>
+          <div class="next" @click="showNext">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="#2F5BD8" class="bi bi-arrow-right"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="divider">
+
+      <div class="marquee-container">
+        <div class="Marquee" style="margin-bottom: 0;">
+          <div class="Marquee-content">
+            <div class="Marquee-tag max-width">
+              <img src="../assets/images/marquee/1.svg" class="ml10" />
+              <p>WE LOVE</p>
+            </div>
+
+            <div class="Marquee-tag max-width">
+              <img src="../assets/images/marquee/2.svg" class="ml10" />
+              <p>WE LOVE</p>
+            </div>
+
+            <div class="Marquee-tag max-width">
+              <img src="../assets/images/marquee/3.svg" class="ml10" />
+              <p>WE LOVE</p>
+            </div>
+            <div class="Marquee-tag max-width">
+              <img src="../assets/images/marquee/1.svg" class="ml10" />
+              <p>WE LOVE</p>
+            </div>
+
+            <div class="Marquee-tag max-width">
+              <img src="../assets/images/marquee/2.svg" class="ml10" />
+              <p>WE LOVE</p>
+            </div>
+
+            <div class="Marquee-tag max-width">
+              <img src="../assets/images/marquee/3.svg" class="ml10" />
+              <p>WE LOVE</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="marquee-container">
+        <div class="Marquee">
+          <div class="Marquee-content">
+            <div class="Marquee-tag max-width">
+              <p>WE LOVE</p>
+              <img src="../assets/images/marquee/5.svg" class="ml10" />
+            </div>
+            <div class="Marquee-tag max-width">
+              <p>WE LOVE</p>
+              <img src="../assets/images/marquee/4.svg" class="ml10" />
+            </div>
+
+            <div class="Marquee-tag max-width">
+              <p>WE LOVE</p>
+              <img src="../assets/images/marquee/5.svg" class="ml10" />
+            </div>
+            <div class="Marquee-tag max-width">
+              <p>WE LOVE</p>
+              <img src="../assets/images/marquee/5.svg" class="ml10" />
+            </div>
+
+            <div class="Marquee-tag max-width">
+              <p>WE LOVE</p>
+              <img src="../assets/images/marquee/4.svg" class="ml10" />
+            </div>
+
+            <div class="Marquee-tag max-width">
+              <p>WE LOVE</p>
+              <img src="../assets/images/marquee/5.svg" class="ml10" />
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content__item">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
+              viewBox="0 0 16 16">
+              <circle cx="8" cy="8" r="8" />
+            </svg>
+            <h3>DUXPlatform</h3>
+          </div>
+          <h4>IGaming platform that includes a casino and a sports betting solution. Innovative. Flexible. Comfortable.
+            Unique.</h4>
+        </div>
+        <div class="content__item">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
+              viewBox="0 0 16 16">
+              <circle cx="8" cy="8" r="8" />
+            </svg>
+            <h3>Affiliate Program</h3>
+          </div>
+          <h4>A strategic partner of Chilli Partners, with huge expertise and connections in affiliate marketing. The
+            main office is located in Malta.</h4>
+        </div>
+        <div class="content__item">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
+              viewBox="0 0 16 16">
+              <circle cx="8" cy="8" r="8" />
+            </svg>
+            <h3>DuxOperation</h3>
+          </div>
+          <h4>A team of professionals in the field of casino and sports operations. We have experience working with the
+            largest brands in the world. We have the following departments: CRM, VIP, support, antifraud, payments, BI,
+            and more.</h4>
+        </div>
+        <div class="content__item">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
+              viewBox="0 0 16 16">
+              <circle cx="8" cy="8" r="8" />
+            </svg>
+            <h3>DUXVentures</h3>
+          </div>
+          <h4>We invest money in what we understand: iGaming, mobile marketing, digital, and crypto. The main principle
+            is 1+1=3. We don’t just offer money. We give the project our expertise, experience, skills, and abilities.
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="mission">
+      <div class="title">
+        <img src="../assets/images/mission-divider.svg" />
+        <img src="../assets/images/mission-divider320.svg" class="small-header" />
+      </div>
+      <div class="content">
+        <p>Make <span class="blue">big waves</span> in the iGaming segment together with <span class="blue">our
+            team</span> and build an awesome <span class="blue">ecosystem</span></p>
+        <img src="../assets/images/mission/6.png" class="forth_figure" data-aos="fade-up" />
+        <img src="../assets/images/mission/23.png" class="second_figure" data-aos="fade-up" />
+        <img src="../assets/images/mission/33.png" class="third_figure" data-aos="fade-down" />
+        <img src="../assets/images/mission/45.png" class="first_figure" data-aos="fade-down" />
+      </div>
+    </div>
+    <div class="gambling">
+      <div class="title">
+        <img src="../assets/images/gambling-bg.png" />
+        <img src="../assets/images/gambling320.svg" class="small-header" />
+      </div>
+      <div class="content">
+        <div class="figure">
+          <p>Gambling should always be seen as entertainment and nothing else. Unfortunately, sometimes people can take
+            it too far and potentially lose control of their betting.
+            You should never consider gambling as a source of income or a chance to recover from debt.
+            Always keep track of the time and money you spent on gambling, check this with yourself every day.
+          </p>
+          <div class="circle">
+            <span style="line-height: 180%;">READ MORE</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" fill="#00FFFF" class="bi bi-arrow-right"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="events">
+      <div class="divider_event">
+        <img src="../assets/images/event-divider.svg" />
+        <img src="../assets/images/events320.svg" class="small-header" />
+      </div>
+      <div class="content">
+        <div class="title">
+          <p>We always <span class="blue">participate</span> in</p>
+        </div>
+        <div class="organizations">
+          <div class="img">
+            <img src="../assets/images/organizations/sigma.svg" />
+          </div>
+          <div class="img">
+            <img src="../assets/images/organizations/affiliate.svg" />
+          </div>
+          <div class="img">
+            <img src="../assets/images/organizations/asia.png" />
+          </div>
+          <div class="img">
+            <img src="../assets/images/organizations/london.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="holding">
+      <div class="title">
+        <img src="../assets/images/holding/header.svg" />
+        <img src="../assets/images/holding/header320.svg" class="small-header" />
+      </div>
+      <div class="slider-holding">
+        <div class="items">
+          <VueSlickCarousel ref="holding" v-bind="settings">
+            <div>
+              <div class="item">
+                <div class="content">
+                  <p class="date">01.05.22</p>
+                  <p class="item_title">IGBAFFILIATE </p>
+                  <p class="item_content">DUXGroup: People are the core asset in our business</p>
+                </div>
+                <div class="img" data-aos="fade-up">
+                  <img src="../assets/images/person.png" />
+                </div>
+                <div class="btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="60" fill="currentColor"
+                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="item">
+                <div class="content">
+                  <p class="date">01.05.22</p>
+                  <p class="item_title">IGBAFFILIATE </p>
+                  <p class="item_content">DUXGroup: People are the core asset in our business</p>
+                </div>
+                <div class="img">
+                  <img src="../assets/images/person.png" />
+                </div>
+                <div class="btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="60" fill="currentColor"
+                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="item">
+                <div class="content">
+                  <p class="date">01.05.22</p>
+                  <p class="item_title">IGBAFFILIATE </p>
+                  <p class="item_content">DUXGroup: People are the core asset in our business</p>
+                </div>
+                <div class="img">
+                  <img src="../assets/images/person.png" />
+                </div>
+                <div class="btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="60" fill="currentColor"
+                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="item">
+                <div class="content">
+                  <p class="date">01.05.22</p>
+                  <p class="item_title">IGBAFFILIATE </p>
+                  <p class="item_content">DUXGroup: People are the core asset in our business</p>
+                </div>
+                <div class="img">
+                  <img src="../assets/images/person.png" />
+                </div>
+                <div class="btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="60" fill="currentColor"
+                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+          </VueSlickCarousel>
+          <div class="arrows">
+            <div class="prev" @click="$refs.holding.prev()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="#2F5BD8" class="bi bi-arrow-left"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+              </svg>
+            </div>
+            <div class="next" @click="$refs.holding.next()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="#2F5BD8" class="bi bi-arrow-right"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offices">
+      <div class="title">
+        <img src="../assets/images/offices/Header.png" />
+        <img src="../assets/images/offices320.svg" class="small-header" />
+      </div>
+      <div>
+        <div class="office">
+          <img src="../assets/images/offices/3.jpeg" data-aos="fade-up" data-aos-duration="1500" />
+          <img src="../assets/images/offices/1.jpeg" data-aos="fade-up" data-aos-duration="1500" />
+          <img src="../assets/images/offices/2.jpeg" class="abs" data-aos="fade-down" data-aos-duration="1500" />
+        </div>
+        <div class="map">
+
+          <img src="../assets/images/offices/map.png" />
+          <img src="../assets/images/offices/map320.png" alt="map" class="small-map" />
+          <div class="malta">
+            <div class="circle"></div>
+            <div class="text">MALTA</div>
+          </div>
+          <div class="cyprus">
+            <div class="circle"></div>
+            <div class="text">CYPRUS</div>
+          </div>
+          <div class="cards" id="cards">
+            <div class="card">
+              <p>Established in <span class="grey">2020</span></p>
+              <p>Number of employees: <span class="grey">350+</span></p>
+              <p>Number of open vacancies: <span class="grey">15</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <FooterPart />
+
+    </div>
+  </div>
 </template>
 
 <script>
-import Header from '../components/Header' ;
+import Header from '../components/Header';
 import FooterPart from "@/components/Footer";
 import VueSlickCarousel from 'vue-slick-carousel'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
@@ -529,16 +573,16 @@ import gsap from "gsap";
 let mooveCursor = () => {
   const cards = document.querySelector('#cards');
 
-  const moveCursor = (e)=> {
+  const moveCursor = (e) => {
     var mouseY = e.clientY;
     var mouseX = e.clientX;
 
 
     // console.log(document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth + 90)
-    if(window.innerWidth > 1024){
-      if(mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth -20){
+    if (window.innerWidth > 1920) {
+      if (mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth - 20) {
         document.querySelector('#cards').style.visibility = `hidden`;
-      }else{
+      } else {
         document.querySelector('#cards').style.visibility = `visible`;
       }
     }
@@ -549,10 +593,10 @@ let mooveCursor = () => {
     //   mouseY = e.clientY -200;
     //   mouseX = e.clientX;
     // }
-    if(window.innerWidth > 480 && window.innerWidth < 1024){
-      if(mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth - 40){
+    if (window.innerWidth > 480 && window.innerWidth < 1920) {
+      if (mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth - 40) {
         document.querySelector('#cards').style.visibility = `hidden`;
-      }else{
+      } else {
         document.querySelector('#cards').style.visibility = `visible`;
       }
     }
@@ -564,7 +608,7 @@ let mooveCursor = () => {
 
   window.addEventListener('mousemove', moveCursor)
 
-  if(cards){
+  if (cards) {
     gsap.to("#curveText", {
       rotation: 360,
       duration: 4,
@@ -579,88 +623,88 @@ let mooveCursor = () => {
 mooveCursor();
 
 export default {
-    name: 'home-page',
-    data(){
-        return {
-          header_text: ['BRAVE', 'SMART', 'MOBILE', 'GAMBLERS'],
-          text: 'brave',
-          running: ['Revolutionize', 'Improve', 'Perfect', 'Revolutionize'],
-          menuClosed: true,
-          settingsImages: {
-            arrows: false,
-            dots: false,
-            slidesToShow: 2,
-            infinite: false,
-            centerMode: false,
-            touchMove: true,
-            adaptiveHeight: true,
-            variableWidth: true,
-            responsive: [
-              {
-                breakpoint: 1440,
-                settings: {
-                  slidesToShow: 3,
-                  slidesToScroll: 1,
-                }
-              },{
-                breakpoint: 768,
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                }
-              },
-              {
-                breakpoint: 320,
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                },
-              },
-            ],
+  name: 'home-page',
+  data() {
+    return {
+      header_text: ['BRAVE', 'SMART', 'MOBILE', 'GAMBLERS'],
+      text: 'brave',
+      running: ['Revolutionize', 'Improve', 'Perfect', 'Revolutionize'],
+      menuClosed: true,
+      settingsImages: {
+        arrows: false,
+        dots: false,
+        slidesToShow: 2,
+        infinite: false,
+        centerMode: false,
+        touchMove: true,
+        adaptiveHeight: true,
+        variableWidth: true,
+        responsive: [
+          {
+            breakpoint: 1440,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            }
+          }, {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
           },
-          settings: {
-            arrows: false,
-            dots: false,
-            slidesToShow: 2.5,
-            infinite: false,
-            touchMove: true,
-            variableWidth: true,
-            adaptiveHeight: true,
-            responsive: [
-              {
-                breakpoint: 1024,
-                settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 1,
-                },
-              },
-              {
-                breakpoint: 768,
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                }
-              },
-              {
-                breakpoint: 320,
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                },
-              },
-            ],
-          }
-        }
-    },
-  components: {FooterPart, Header, VueSlickCarousel },
+          {
+            breakpoint: 320,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      },
+      settings: {
+        arrows: false,
+        dots: false,
+        slidesToShow: 2.5,
+        infinite: false,
+        touchMove: true,
+        variableWidth: true,
+        adaptiveHeight: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 320,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      }
+    }
+  },
+  components: { FooterPart, Header, VueSlickCarousel },
   methods: {
     showNext() {
       this.$refs.carousel.next()
     },
-    openedMobMenu(value){
-      if(value){
+    openedMobMenu(value) {
+      if (value) {
         this.menuClosed = !this.menuClosed
-      }else{
+      } else {
         this.menuClosed = true
       }
     },
@@ -669,24 +713,24 @@ export default {
     },
   },
   watch: {
-      text(newVal){
-        if(newVal === 'SMART'){
-          setTimeout(() => {
-            this.text = 'MOBILE'
-          }, 2000);
-        }else if(newVal === 'MOBILE'){
-          setTimeout(() => {
-            this.text = 'GAMBLERS'
-          }, 2000);
-        }else if(newVal === 'GAMBLERS'){
-          setTimeout(() => {
-            this.text = 'BRAVE'
-          }, 2000);
-        }else if(newVal === 'BRAVE'){
-          setTimeout(() => {
-            this.text = 'SMART'
-          }, 2000);
-        }
+    text(newVal) {
+      if (newVal === 'SMART') {
+        setTimeout(() => {
+          this.text = 'MOBILE'
+        }, 2000);
+      } else if (newVal === 'MOBILE') {
+        setTimeout(() => {
+          this.text = 'GAMBLERS'
+        }, 2000);
+      } else if (newVal === 'GAMBLERS') {
+        setTimeout(() => {
+          this.text = 'BRAVE'
+        }, 2000);
+      } else if (newVal === 'BRAVE') {
+        setTimeout(() => {
+          this.text = 'SMART'
+        }, 2000);
+      }
     }
   },
   mounted() {
@@ -705,15 +749,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.max-width{
+.max-width {
   width: max-content !important;
 }
-.ml10{
+
+.ml10 {
   margin: 0 0.5rem !important;
 }
-.marquee-container{
+
+.marquee-container {
   //margin: 15px auto;
   overflow: hidden;
+
   .Marquee {
     width: 100vw;
     -webkit-box-sizing: border-box;
@@ -748,6 +795,7 @@ export default {
       -o-animation: marquee 20s linear infinite running;
       -ms-animation: marquee 20s linear infinite running;
       animation: marquee 20s linear infinite running;
+
       .Marquee-tag {
         width: fit-content;
         display: -webkit-inline-box;
@@ -773,7 +821,8 @@ export default {
         -o-transition: all 0.2s ease;
         -ms-transition: all 0.2s ease;
         transition: all 0.2s ease;
-        p{
+
+        p {
           color: #F0F0F0;
           font-family: 'Oxygen';
           font-style: normal;
@@ -783,7 +832,8 @@ export default {
           line-height: 95%;
           margin: 0;
         }
-        .circle{
+
+        .circle {
           margin: 40px;
           width: 30px !important;
           height: 30px !important;
@@ -806,6 +856,7 @@ export default {
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
+
   100% {
     -webkit-transform: translate(-50%);
     -moz-transform: translate(-50%);
@@ -814,6 +865,7 @@ export default {
     transform: translate(-50%);
   }
 }
+
 @-webkit-keyframes marquee {
   0% {
     -webkit-transform: translateX(0);
@@ -822,6 +874,7 @@ export default {
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
+
   100% {
     -webkit-transform: translate(-50%);
     -moz-transform: translate(-50%);
@@ -830,6 +883,7 @@ export default {
     transform: translate(-50%);
   }
 }
+
 @-o-keyframes marquee {
   0% {
     -webkit-transform: translateX(0);
@@ -838,6 +892,7 @@ export default {
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
+
   100% {
     -webkit-transform: translate(-50%);
     -moz-transform: translate(-50%);
@@ -846,6 +901,7 @@ export default {
     transform: translate(-50%);
   }
 }
+
 @keyframes marquee {
   0% {
     -webkit-transform: translateX(0);
@@ -854,6 +910,7 @@ export default {
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
+
   100% {
     -webkit-transform: translate(-50%);
     -moz-transform: translate(-50%);
@@ -862,6 +919,7 @@ export default {
     transform: translate(-50%);
   }
 }
+
 //.ticker-wrapper{
 //  animation: ticker 10s infinite linear forwards;
 //  animation-delay: 0s;
@@ -908,31 +966,38 @@ export default {
 //    transform: translate(-100%, 0);
 //  }
 //}
-.small-map{
+.small-map {
   display: none;
 }
-.arrows{
+
+.arrows {
   display: flex;
   align-items: center;
   margin-top: 30px;
-  .prev, .next{
+
+  .prev,
+  .next {
     cursor: pointer;
   }
-  .prev{
+
+  .prev {
     margin-right: 20px;
   }
 }
-.blue{
+
+.blue {
   color: #2F5BD8;
 }
-.small-header{
+
+.small-header {
   display: none;
 }
-@media screen and (min-width: 768px) and ( max-width: 1024px){
-  .partnership{
-    .items{
-      .item{
-        & img.partnership-bg{
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .partnership {
+    .items {
+      .item {
+        & img.partnership-bg {
           width: 100% !important;
           height: 440px !important;
         }
@@ -940,11 +1005,12 @@ export default {
     }
   }
 }
-@media screen and (min-width: 701px) and ( max-width: 768px){
-  .partnership{
-    .items{
-      .item{
-        & img.partnership-bg{
+
+@media screen and (min-width: 701px) and (max-width: 768px) {
+  .partnership {
+    .items {
+      .item {
+        & img.partnership-bg {
           width: 100% !important;
           height: 255px !important;
         }
@@ -953,11 +1019,11 @@ export default {
   }
 }
 
-@media screen and (min-width: 601px) and ( max-width: 700px){
-  .partnership{
-    .items{
-      .item{
-        & img.partnership-bg{
+@media screen and (min-width: 601px) and (max-width: 700px) {
+  .partnership {
+    .items {
+      .item {
+        & img.partnership-bg {
           width: 100% !important;
           height: 280px !important;
         }
@@ -965,11 +1031,12 @@ export default {
     }
   }
 }
-@media screen and (min-width: 501px) and ( max-width: 600px){
-  .partnership{
-    .items{
-      .item{
-        & img.partnership-bg{
+
+@media screen and (min-width: 501px) and (max-width: 600px) {
+  .partnership {
+    .items {
+      .item {
+        & img.partnership-bg {
           width: 100% !important;
           height: 300px !important;
         }
@@ -977,11 +1044,12 @@ export default {
     }
   }
 }
-@media screen and (min-width: 401px) and ( max-width: 500px){
-  .partnership{
-    .items{
-      .item{
-        & img.partnership-bg{
+
+@media screen and (min-width: 401px) and (max-width: 500px) {
+  .partnership {
+    .items {
+      .item {
+        & img.partnership-bg {
           width: 100% !important;
           height: 340px !important;
         }
@@ -989,23 +1057,12 @@ export default {
     }
   }
 }
-@media screen and (min-width: 320px) and ( max-width: 400px){
-  .partnership{
-    .items{
-      .item{
-        & img.partnership-bg{
-          width: 100% !important;
-          height: 400px !important;
-        }
-      }
-    }
-  }
-}
-@media screen and (min-width: 320px) and ( max-width: 400px){
-  .partnership{
-    .items{
-      .item{
-        & img.partnership-bg{
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  .partnership {
+    .items {
+      .item {
+        & img.partnership-bg {
           width: 100% !important;
           height: 400px !important;
         }
@@ -1014,34 +1071,53 @@ export default {
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  .partnership {
+    .items {
+      .item {
+        & img.partnership-bg {
+          width: 100% !important;
+          height: 400px !important;
+        }
+      }
+    }
+  }
+}
 
 
 
-@media screen and (min-width: 1024px) and ( max-width: 1439px){
-  .container{
-    & > * {
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .container {
+    &>* {
       margin-top: -1px;
     }
-    .header{
-      .bg-img{
+
+    .header {
+      .bg-img {
         background-size: contain !important;
         min-height: 526px !important;
-        .klor{
+
+        .klor {
           top: 12% !important;
           right: 50% !important;
         }
-        .zar-poqr{
+
+        .zar-poqr {
           bottom: -40px !important;
         }
-        .menu{
-          .content{
+
+        .menu {
+          .content {
             margin-top: 190px !important;
-            p{
+
+            p {
               width: 80% !important;
               font-size: 84px !important;
               line-height: 105%;
               letter-spacing: 0.02em !important;
-              .brave{
+
+              .brave {
                 letter-spacing: 0.03em !important;
                 font-size: 22px !important;
                 line-height: 28px !important;
@@ -1050,7 +1126,8 @@ export default {
                 display: inline-flex !important;
                 align-items: center !important;
                 vertical-align: 45px !important;
-                svg{
+
+                svg {
                   width: 10px !important;
                   height: 10px !important;
                 }
@@ -1060,77 +1137,92 @@ export default {
         }
       }
     }
-    .marquee-container{
-      .Marquee{
+
+    .marquee-container {
+      .Marquee {
         padding: 0 !important;
-        &-content{
-          .Marquee-tag{
+
+        &-content {
+          .Marquee-tag {
             font-size: 84px !important;
             padding: 0 !important;
           }
         }
       }
     }
-    .history{
+
+    .history {
       padding-top: 70px !important;
-      p{
+
+      p {
         font-size: 32px !important;
         width: 70% !important;
         padding-top: 70px !important;
         line-height: 125% !important;
       }
     }
-    .running{
+
+    .running {
       padding-top: 120px !important;
-      .title{
-        p{
+
+      .title {
+        p {
           font-size: 22px !important;
           line-height: 28px !important;
           text-align: center !important;
           letter-spacing: 0.03em !important;
         }
       }
-      .line{
-        marquee{
+
+      .line {
+        marquee {
           //letter-spacing: 0.02em !important;
           font-size: 84px !important;
           line-height: 105% !important;
-          svg{
+
+          svg {
             vertical-align: sub !important;
           }
-          &:first-child{
+
+          &:first-child {
             margin-bottom: 25px !important;
           }
         }
       }
     }
-    .partnership{
+
+    .partnership {
       padding-top: 100px !important;
-      .title{
+
+      .title {
         padding: 70px 0 50px 0 !important;
-        p{
+
+        p {
           margin: 0 !important;
           padding: 0 !important;
         }
       }
-      .items{
-        .item{
+
+      .items {
+        .item {
           //padding: 25px;
           width: 48% !important;
           border: none !important;
           background-size: contain;
+
           //& img:first-child:not(.imgs img){
           //  height: 450px !important;
           //}
-          .content{
-            .title{
+          .content {
+            .title {
               font-size: 22px !important;
               line-height: 28px !important;
               letter-spacing: 0.03em !important;
               margin: 0 !important;
               padding: 0 !important;
             }
-            .text{
+
+            .text {
               font-size: 18px !important;
               line-height: 24px !important;
             }
@@ -1138,8 +1230,9 @@ export default {
         }
       }
     }
-    .slider{
-      .title{
+
+    .slider {
+      .title {
         p {
           font-size: 68px !important;
           line-height: 105% !important;
@@ -1147,74 +1240,90 @@ export default {
           letter-spacing: 0.02em !important;
         }
       }
-      .slide_part{
-        div{
-          img{
+
+      .slide_part {
+        div {
+          img {
             //width: auto !important;
           }
         }
       }
     }
-    .divider{
+
+    .divider {
       padding-top: 100px !important;
-      marquee{
+
+      marquee {
         letter-spacing: 0.02em !important;
         font-size: 84px !important;
         line-height: 105% !important;
-        img{
+
+        img {
           width: 70px !important;
-          height: auto  !important;
+          height: auto !important;
         }
       }
-      .content{
+
+      .content {
         padding: 110px 30px 0px 30px !important;
-        &__item{
-          div{
+
+        &__item {
+          div {
             width: 50% !important;
-            svg{
+
+            svg {
               width: 16px !important;
               height: 16px !important;
               margin-right: 85px !important;
             }
           }
-          h4{
 
-          }
+          h4 {}
         }
       }
     }
-    .mission{
+
+    .mission {
       padding-top: 0 !important;
-      .content{
+
+      .content {
         padding: 200px 32px 150px calc(35px + (143 - 35) * ((100vw - 1025px) / (1440 - 1025))) !important;
-        p{
+
+        p {
           width: 65% !important;
         }
-        img.first_figure{
+
+        img.first_figure {
           width: 170px !important;
           height: 150px !important;
         }
-        img.third_figure{
+
+        img.third_figure {
           width: 240px !important;
           height: 190px !important;
         }
-        img.second_figure{
+
+        img.second_figure {
           width: 340px !important;
           height: 400px !important;
           top: 25%;
         }
-        img.forth_figure{
+
+        img.forth_figure {
           width: 147px !important;
           height: 161px !important;
         }
       }
     }
-    .gambling{
+
+    .gambling {
       padding-top: 70px !important;
-      .content{
-        .figure{
+
+      .content {
+        .figure {
           padding: 100px 50px !important;
-          p{
+
+          p {
             width: 71% !important;
             font-size: 32px !important;
             line-height: 125% !important;
@@ -1222,10 +1331,11 @@ export default {
         }
       }
     }
-    .events{
-      .content{
-        .title{
-          p{
+
+    .events {
+      .content {
+        .title {
+          p {
             width: 70% !important;
             padding: 70px 0 !important;
             margin: 0 auto !important;
@@ -1233,28 +1343,34 @@ export default {
         }
       }
     }
-    .holding{
+
+    .holding {
       padding-top: 160px !important;
-      .slider-holding{
-        .items{
+
+      .slider-holding {
+        .items {
           padding-left: 25px !important;
-          .item{
+
+          .item {
             box-sizing: border-box !important;
             width: 340px !important;
             background-size: contain;
             min-height: 430px !important;
             padding: 0 24px 50px 24px !important;
-            .item_content{
+
+            .item_content {
               font-size: 18px !important;
               line-height: 24px !important;
             }
-            .img{
-              img{
+
+            .img {
+              img {
                 width: 80% !important;
               }
 
             }
-            .btn{
+
+            .btn {
               width: 70px !important;
               height: 70px !important;
               margin: 0 !important;
@@ -1263,55 +1379,66 @@ export default {
         }
       }
     }
-    .offices{
-      .office{
-        img:first-child{
+
+    .offices {
+      .office {
+        img:first-child {
           width: 60% !important;
         }
-        .abs{
+
+        .abs {
           //bottom : calc(20px + (50-20) * ((100vw - 320px) / (1200-320)))
         }
       }
     }
   }
 }
-@media screen and (min-width: 769px) and ( max-width: 1023px) {
-  .slick-slide{
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .slick-slide {
     margin-right: 50px !important;
   }
-  .container{
-    & > * {
+
+  .container {
+    &>* {
       margin-top: -1px !important;
     }
-    .header{
-      .bg-img{
+
+    .header {
+      .bg-img {
         background-image: url('../assets/images/home/bg768.png');
         background-position: top right;
         background-size: auto !important;
         min-height: 424px !important;
-        .klor{
+
+        .klor {
           width: 153px !important;
           height: 100px !important;
         }
-        .zar-mec{
+
+        .zar-mec {
           width: 100px !important;
           height: 100px !important;
           top: 30% !important;
         }
-        .zar-poqr{
+
+        .zar-poqr {
           width: 50px !important;
           height: 55px !important;
         }
-        .menu{
-          .content{
+
+        .menu {
+          .content {
             margin-top: 160px !important;
             padding: 0 8px !important;
-            p{
+
+            p {
               width: 80% !important;
               font-size: 68px !important;
               line-height: 105% !important;
               letter-spacing: 0.02em !important;
-              .brave{
+
+              .brave {
                 letter-spacing: 0.03em !important;
                 font-size: 20px !important;
                 min-width: 150px !important;
@@ -1320,7 +1447,7 @@ export default {
                 align-items: center !important;
                 vertical-align: 35px !important;
 
-                svg{
+                svg {
                   width: 10px !important;
                   height: 10px !important;
                 }
@@ -1331,27 +1458,32 @@ export default {
       }
     }
 
-    .marquee-container{
-      .Marquee{
+    .marquee-container {
+      .Marquee {
         padding: 0 !important;
         margin: 0 !important;
-        &-content{
-          .Marquee-tag{
+
+        &-content {
+          .Marquee-tag {
             margin: 0 !important;
             padding: 0 !important;
-            p{
+
+            p {
               font-size: 68px !important;
             }
-            .circle{
+
+            .circle {
               margin: 30px !important;
             }
           }
         }
       }
     }
-    .history{
+
+    .history {
       padding-top: 55px !important;
-      p{
+
+      p {
         font-size: 26px !important;
         line-height: 125% !important;
         padding: 55px 70px 80px 70px !important;
@@ -1360,22 +1492,25 @@ export default {
       }
     }
 
-    .partnership{
-      .items{
-        .item{
+    .partnership {
+      .items {
+        .item {
           width: 47% !important;
           border: none !important;
           background-size: contain;
-          .content{
+
+          .content {
             padding: 0 !important;
             top: 140px !important;
-            .title{
+
+            .title {
               font-size: 20px !important;
               line-height: 25px !important;
               margin: 0 !important;
               padding: 0 !important;
             }
-            .text{
+
+            .text {
               font-size: 16px !important;
               line-height: 20px !important;
             }
@@ -1383,66 +1518,81 @@ export default {
         }
       }
     }
-    .running{
+
+    .running {
       padding: 0 !important;
-      .title{
-        p{
+
+      .title {
+        p {
           font-size: 22px !important;
           line-height: 28px !important;
           letter-spacing: 0.03em !important;
         }
       }
-      .line{
-        marquee{
+
+      .line {
+        marquee {
           font-size: 68px !important;
           line-height: 105% !important;
-          svg{
+
+          svg {
             margin: 15px !important;
           }
         }
       }
     }
-    .slider{
-      .title{
+
+    .slider {
+      .title {
         margin: 50px !important;
-        p{
+
+        p {
           width: 75% !important;
           font-size: 58px;
           line-height: 105%;
         }
       }
-      .slide_part{
+
+      .slide_part {
         margin-left: 25px !important;
       }
     }
-    .divider{
-      marquee{
+
+    .divider {
+      marquee {
         font-size: 68px !important;
         line-height: 105% !important;
         letter-spacing: 0.02em !important;
       }
-      img{
+
+      img {
         width: 70px !important;
         height: 70px !important;
         vertical-align: bottom !important;
       }
     }
-    .content{
+
+    .content {
       padding: 70px 8px !important;
-      &__item{
+
+      &__item {
         padding: 10px 0 36px 0 !important;
-        div{
+
+        div {
           width: 40% !important;
-          svg{
+
+          svg {
             margin-right: 20px !important;
           }
-          h3{
+
+          h3 {
             font-size: 22px !important;
             line-height: 28px !important;
             letter-spacing: 0.03em !important;
           }
         }
-        h4{
+
+        h4 {
           width: 60% !important;
           font-size: 16px !important;
           line-height: 20px !important;
@@ -1450,47 +1600,58 @@ export default {
         }
       }
     }
-    .mission{
+
+    .mission {
       padding-top: 0 !important;
-      .content{
+
+      .content {
         padding: 170px 32px 140px 32px !important;
-        p{
+
+        p {
           width: 60% !important;
           font-size: 38px !important;
           line-height: 48px !important;
           letter-spacing: 0.03em !important;
         }
-        .first_figure{
+
+        .first_figure {
           width: 126px !important;
           height: 115px !important;
         }
-        .third_figure{
+
+        .third_figure {
           width: 181px !important;
           height: 143px !important;
         }
-        .second_figure{
+
+        .second_figure {
           width: 280px !important;
           height: 320px !important;
         }
-        .forth_figure{
+
+        .forth_figure {
           width: 110px !important;
           height: 120px !important;
           bottom: 10% !important;
         }
       }
     }
-    .gambling{
-      .title{
+
+    .gambling {
+      .title {
         padding-bottom: 60px !important;
       }
-      .content{
+
+      .content {
         padding: 0 !important;
-        .figure{
+
+        .figure {
           padding: 72px 48px 48px 48px;
           margin: 0 !important;
           width: auto !important;
           justify-content: space-between !important;
-          p{
+
+          p {
             font-size: 26px !important;
             line-height: 125% !important;
             width: 70% !important;
@@ -1498,64 +1659,81 @@ export default {
         }
       }
     }
-    .events{
+
+    .events {
       padding-top: 70px !important;
-      .content{
+
+      .content {
         padding: 0 !important;
-        .title{
-          p{
+
+        .title {
+          p {
             padding: 65px 0 !important;
             margin: 0 !important;
           }
         }
-        .organizations{
-          img:first-child, img:nth-child(3){
+
+        .organizations {
+
+          img:first-child,
+          img:nth-child(3) {
             width: 95px !important;
           }
-          img:nth-child(2), img:nth-child(4){
+
+          img:nth-child(2),
+          img:nth-child(4) {
             width: 69px !important;
           }
         }
       }
     }
-    .holding{
-      .slider-holding{
-        .items{
+
+    .holding {
+      .slider-holding {
+        .items {
           padding-left: 25px !important;
-          .item{
+
+          .item {
             width: 310px !important;
             background-size: contain !important;
             margin-right: 20px !important;
             min-height: 510px !important;
-            .content{
+
+            .content {
 
               padding: 0 !important;
-              .date{
+
+              .date {
                 font-weight: 700 !important;
                 font-size: 12px !important;
                 line-height: 105% !important;
                 letter-spacing: 0.04em !important;
               }
-              .item_title{
+
+              .item_title {
                 font-size: 28px !important;
                 line-height: 35px !important;
                 letter-spacing: 0.03em !important;
                 margin: 37px 0 13px 0 !important;
               }
-              .item_content{
+
+              .item_content {
                 font-size: 16px !important;
                 line-height: 20px !important;
                 letter-spacing: 0.04em !important;
               }
             }
-            .img{
+
+            .img {
               bottom: 100px !important;
-              img{
+
+              img {
                 width: 90% !important;
               }
 
             }
-            .btn{
+
+            .btn {
               width: 70px;
               height: 70px;
               margin-bottom: 100px !important;
@@ -1564,20 +1742,25 @@ export default {
         }
       }
     }
-    .offices{
+
+    .offices {
       padding: 65px 8px !important;
-      .title{
+
+      .title {
         padding-bottom: 64px !important;
       }
-      div{
-        .office{
-          img:first-child{
+
+      div {
+        .office {
+          img:first-child {
             width: 50% !important;
           }
-          img:nth-child(2){
+
+          img:nth-child(2) {
             width: 30% !important;
           }
-          img:nth-child(3){
+
+          img:nth-child(3) {
             width: 24% !important;
             bottom: -150px !important;
             //top: calc(120px + (150 - 120) * ((100vw - 1440px) / (1920 - 1440)));
@@ -1589,56 +1772,68 @@ export default {
   }
 
 }
-@media screen and (min-width: 320px) and ( max-width: 768px){
-  .small-header{
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .small-header {
     display: block !important;
   }
-  .container{
-    & > * {
+
+  .container {
+    &>* {
       margin-top: -1px !important;
     }
-    .header{
+
+    .header {
       min-height: 300px !important;
-      .bg-img{
+
+      .bg-img {
         background-image: url('../assets/images/home/bg320.png');
         background-position: top right;
         background-size: auto !important;
         min-height: 436px !important;
-        .klor{
+
+        .klor {
           width: 100px !important;
           height: 70px !important;
           left: 7% !important;
           top: 100px !important;
           right: 0 !important;
         }
-        .zar-mec{
+
+        .zar-mec {
           width: 105px !important;
           height: 105px !important;
           top: 35% !important;
         }
-        .zar-poqr{
+
+        .zar-poqr {
           width: 53px !important;
           height: 58px !important;
           right: 15% !important;
           bottom: 0px !important;
         }
-        .menu{
-          padding:16px !important;
-          .content{
+
+        .menu {
+          padding: 16px !important;
+
+          .content {
             margin: 0;
             padding: 0 5px !important;
             margin-top: 190px !important;
-            p{
+
+            p {
               font-size: 34px !important;
               line-height: 110% !important;
               letter-spacing: 0.03em !important;
               width: 95% !important;
               margin: 0 !important;
-              .brave{
-                svg{
+
+              .brave {
+                svg {
                   width: 10px !important;
                   height: 10px !important;
                 }
+
                 letter-spacing: 0.03em !important;
                 font-size: 16px !important;
                 display: flex !important;
@@ -1651,81 +1846,100 @@ export default {
         }
       }
     }
-    .marquee-container{
-      .Marquee{
+
+    .marquee-container {
+      .Marquee {
         padding: 0 !important;
         margin: 0 !important;
-        &-content{
-          .Marquee-tag{
+
+        &-content {
+          .Marquee-tag {
             margin: 0 !important;
             padding: 0 !important;
-            p{
+
+            p {
               font-size: 58px !important;
               line-height: 105% !important;
 
             }
-            .circle{
+
+            .circle {
               margin: 30px !important;
             }
           }
         }
       }
     }
-    .history{
+
+    .history {
       padding-top: 50px !important;
-      .title{
+
+      .title {
         padding: 0 15px !important;
-        img:nth-child(1){
+
+        img:nth-child(1) {
           display: none !important;
         }
-        img{
+
+        img {
           width: 100% !important;
         }
       }
-      p{
+
+      p {
         padding: 40px 16px 0 16px !important;
         font-size: 20px !important;
         line-height: 27px !important;
         width: auto !important;
       }
     }
-    .running{
+
+    .running {
       padding-top: 90px !important;
-      .title{
-        p{
+
+      .title {
+        p {
           font-size: 20px !important;
           line-height: 25px !important;
           text-align: center !important;
           letter-spacing: 0.03em !important;
         }
       }
-      .line{
-        marquee{
+
+      .line {
+        marquee {
           letter-spacing: 0.02em !important;
           font-size: 58px !important;
           line-height: 105% !important;
-          svg{
+
+          svg {
             margin: 10px !important;
           }
         }
       }
     }
-    .slider{
-       .slide_part div img{
-         width: 288px !important;
-       }
-      .header-sldier{
+
+    .slider {
+      .slide_part div img {
+        width: 288px !important;
+      }
+
+      .header-sldier {
         padding: 0 16px !important;
-        img:first-child{
+
+        img:first-child {
           display: none !important;
         }
-        img{
+
+        img {
           width: 100% !important;
         }
       }
-      .title{
+
+      .title {
         margin: 50px !important;
-        p{
+
+        p {
           font-size: 34px !important;
           line-height: 110% !important;
           text-align: center !important;
@@ -1733,11 +1947,13 @@ export default {
           width: auto !important;
         }
       }
-      .slide_part{
+
+      .slide_part {
         margin-left: 16px !important;
-        .slider{
-          .vue-slick{
-            div{
+
+        .slider {
+          .vue-slick {
+            div {
 
               margin-right: 10px !important;
 
@@ -1748,17 +1964,21 @@ export default {
         }
       }
     }
-    .partnership{
-      .divide_partnership{
-        img:nth-child(1){
+
+    .partnership {
+      .divide_partnership {
+        img:nth-child(1) {
           display: none !important;
         }
       }
-      .items{
+
+      .items {
         flex-direction: column !important;
         padding: 0 16px !important;
-        .item{
+
+        .item {
           width: 100% !important;
+
           //& img:first-child{
           //  width: 100% !important;
           //}
@@ -1768,18 +1988,21 @@ export default {
           //  width: 140px !important;
           //  height: 64px !important;
           //}
-          .anime{
+          .anime {
             top: 10px !important;
           }
-          .content{
+
+          .content {
             top: 98px !important;
-            .title{
+
+            .title {
               font-size: 20px !important;
               line-height: 25px !important;
               letter-spacing: 0.03em !important;
               margin: 16px 0 !important;
             }
-            .text{
+
+            .text {
               font-size: 14px !important;
               line-height: 18px !important;
               letter-spacing: 0.04em !important;
@@ -1788,57 +2011,70 @@ export default {
         }
       }
     }
-    .divider{
+
+    .divider {
       padding-top: 60px !important;
-      marquee{
+
+      marquee {
         font-size: 58px !important;
         line-height: 105% !important;
         letter-spacing: 0.02em !important;
-        img{
+
+        img {
           width: 60px !important;
           height: 60px !important;
           vertical-align: bottom !important;
         }
       }
-      .content{
+
+      .content {
         padding-top: 80px !important;
-        &__item{
+
+        &__item {
           display: flex;
           flex-direction: column !important;
           align-items: flex-start !important;
           padding-bottom: 25px !important;
-          div{
+
+          div {
             width: auto !important;
-            svg{
+
+            svg {
               margin-right: 8px !important;
               width: 15px !important;
               height: 15px !important;
             }
-            h3{
+
+            h3 {
               font-size: 20px !important;
               line-height: 25px !important;
               letter-spacing: 0.03em !important;
             }
           }
-          h4{
+
+          h4 {
             padding-top: 20px !important;
             width: auto !important;
           }
         }
       }
     }
-    .mission{
+
+    .mission {
       overflow: hidden !important;
-      .title{
-        img:first-child{
+
+      .title {
+        img:first-child {
           display: none !important;
         }
       }
-      .content{
+
+      .content {
         padding: 128px 16px 107px 16px !important;
         min-height: 145px !important;
         position: relative;
-        p{
+
+        p {
           position: absolute;
           z-index: 99;
           text-align: center;
@@ -1848,54 +2084,65 @@ export default {
           text-align: center !important;
           letter-spacing: 0.03em !important;
         }
-        .first_figure{
+
+        .first_figure {
           width: 62px !important;
           height: 56px !important;
           left: 16px !important;
         }
-        .third_figure{
+
+        .third_figure {
           width: 90px !important;
           height: 70px !important;
           right: 30% !important;
           top: 0 !important;
         }
-        .second_figure{
+
+        .second_figure {
           width: 180px !important;
           height: 220px !important;
           top: 5% !important;
           right: -70px !important;
         }
-        .forth_figure{
+
+        .forth_figure {
           width: 55px !important;
           height: 60px !important;
         }
       }
     }
-    .gambling{
+
+    .gambling {
       padding-top: 30px !important;
       padding-bottom: 80px !important;
-      .title{
+
+      .title {
         padding-bottom: 40px !important;
-        img:first-child{
+
+        img:first-child {
           display: none !important;
         }
       }
-      .content{
+
+      .content {
         margin: 0 !important;
-        .figure{
+
+        .figure {
           background-image: url('../assets/images/gmbling-fon320.png');
           background-position: inherit !important;
           padding: 36px 16px !important;
           margin: 0 !important;
           flex-direction: column !important;
           width: auto !important;
-          p{
+
+          p {
             font-size: 18px !important;
             width: auto !important;
             line-height: 24px !important;
             margin-bottom: 25px !important;
           }
-          .circle{
+
+          .circle {
             width: 110px !important;
             height: 110px !important;
             letter-spacing: 0.04em !important;
@@ -1905,83 +2152,102 @@ export default {
         }
       }
     }
-    .events{
+
+    .events {
       padding: 0 16px !important;
-      .divider_event{
-        img:first-child{
+
+      .divider_event {
+        img:first-child {
           display: none;
         }
       }
-      .content{
+
+      .content {
         padding-bottom: 120px !important;
-        .title{
-          p{
+
+        .title {
+          p {
             margin: 40px 0 60px 0 !important;
             font-size: 34px !important;
             line-height: 110% !important;
             letter-spacing: 0.03em !important;
           }
         }
-        .organizations{
+
+        .organizations {
           display: grid;
           grid-template-columns: auto auto;
           row-gap: 50px;
           justify-content: center;
           align-items: center;
           width: auto !important;
-          img:nth-child(1), img:nth-child(3){
+
+          img:nth-child(1),
+          img:nth-child(3) {
             width: 95px !important;
             height: 31px !important;
             vertical-align: super;
           }
-          img:nth-child(2), img:nth-child(4){
+
+          img:nth-child(2),
+          img:nth-child(4) {
             width: 68px !important;
             height: 64px !important;
             vertical-align: super;
           }
-          img{
+
+          img {
             margin-right: 40px !important;
           }
         }
       }
     }
-    .holding{
+
+    .holding {
       padding-top: 0 !important;
-      .title{
-        img:first-child{
+
+      .title {
+        img:first-child {
           display: none !important;
         }
       }
-      .slider-holding{
+
+      .slider-holding {
         margin-top: 40px !important;
         padding: 0 16px !important;
-        .items{
+
+        .items {
           padding-left: 0 !important;
-          .item{
+
+          .item {
             width: 228px !important;
             min-height: 420px !important;
             padding: 0 20px !important;
-            .content{
-              .item_title{
+
+            .content {
+              .item_title {
                 font-size: 20px !important;
                 line-height: 25px !important;
                 letter-spacing: 0.03em !important;
               }
-              .item_content{
+
+              .item_content {
                 font-size: 16px !important;
                 line-height: 20px !important;
                 letter-spacing: 0.04em !important;
               }
             }
 
-            .img{
+            .img {
               bottom: 120px !important;
-              img{
+
+              img {
                 width: 70% !important;
               }
 
             }
-            .btn{
+
+            .btn {
               width: 65px !important;
               height: 65px !important;
               margin-bottom: 120px !important;
@@ -1990,36 +2256,44 @@ export default {
         }
       }
     }
-    .offices{
+
+    .offices {
       padding: 0 !important;
       padding-top: 80px !important;
-      .title{
+
+      .title {
         padding: 0 16px !important;
         width: auto !important;
-        img:first-child{
+
+        img:first-child {
           display: none !important;
         }
-        img{
+
+        img {
           width: 100% !important;
         }
       }
-      div{
-        .office{
+
+      div {
+        .office {
           flex-direction: column !important;
           padding: 0 16px !important;
           align-items: flex-start !important;
+
           //width: 80% !important;
-          img:nth-child(1){
+          img:nth-child(1) {
             width: 66% !important;
             z-index: 50 !important;
           }
-          img:nth-child(2){
+
+          img:nth-child(2) {
             width: 60% !important;
             margin-top: 16px !important;
             z-index: 150 !important;
             align-self: center;
           }
-          .abs{
+
+          .abs {
             width: 30% !important;
             //bottom: 150px !important;
             bottom: calc(80px + (200 - 80) * ((100vw - 320px) / (767 - 320))) !important;
@@ -2028,32 +2302,36 @@ export default {
             z-index: 100 !important;
           }
         }
-        .map{
 
-            .cards{
-              .card{
-                p{
-                  font-size: 17px !important;
-                }
+        .map {
+
+          .cards {
+            .card {
+              p {
+                font-size: 17px !important;
               }
             }
+          }
 
-          img:first-child{
+          img:first-child {
             display: none !important;
           }
-          .small-map{
+
+          .small-map {
             display: block !important;
             width: 90% !important;
             margin: 0 auto;
 
           }
-          .malta{
-            .circle{
+
+          .malta {
+            .circle {
               position: absolute !important;
               left: 45.8% !important;
               top: 45% !important;
             }
-            .text{
+
+            .text {
               //left: 260px !important;
               //top: 35% !important;
               left: calc(50px + (260 - 50) * ((100vw - 320px) / (767 - 320)));
@@ -2061,13 +2339,15 @@ export default {
               //top: 33% !important;
             }
           }
-          .cyprus{
-            .circle{
+
+          .cyprus {
+            .circle {
               position: absolute !important;
               right: 43.5% !important;
               top: 46% !important;
             }
-            .text{
+
+            .text {
               right: calc(35px + (235 - 35) * ((100vw - 320px) / (767 - 320)));
               //top: 41%;
             }
@@ -2082,12 +2362,13 @@ export default {
 
 
 
-.header{
+.header {
   //background: linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28);
   background: #010C28 url('../assets/images/gradient.png') center;
   background-size: cover;
   min-height: 500px;
-  .bg-img{
+
+  .bg-img {
     width: 100%;
     position: relative;
     background-image: url("../assets/images/home-bg.png");
@@ -2095,31 +2376,36 @@ export default {
     background-size: contain;
     background-repeat: no-repeat;
     min-height: 702px;
-    img.zar-poqr{
+
+    img.zar-poqr {
       position: absolute;
       bottom: -40px;
       right: 38%;
     }
-    img.zar-mec{
+
+    img.zar-mec {
       position: absolute;
       top: 40%;
       right: 10%;
     }
-    img.klor{
+
+    img.klor {
       position: absolute;
       top: 15%;
       right: 40%;
     }
 
-    .menu{
+    .menu {
       padding: 25px;
-      .content{
+
+      .content {
         margin-top: 210px;
+
         //padding: 25px;
         //p::first-line {
         //  line-height:75% !important;
         //}
-        .p{
+        .p {
           font-family: 'Oxygen', sans-serif;
           font-style: normal;
           font-weight: 400;
@@ -2130,7 +2416,8 @@ export default {
           color: #F0F0F0;
           margin: 0;
           width: 1100px;
-          .brave{
+
+          .brave {
             font-family: 'Oxygen', sans-serif;
             font-style: normal;
             width: fit-content;
@@ -2147,7 +2434,8 @@ export default {
             margin-right: 50px;
             //margin: 0 70px 70px 0;
             vertical-align: top;
-            svg{
+
+            svg {
               margin-right: 11px;
               vertical-align: baseline;
               width: 20px;
@@ -2159,43 +2447,52 @@ export default {
     }
   }
 }
-.divide{
+
+.divide {
   //padding-top: 150px;
   display: flex;
   //width: 100%;
   background-color: #010C28;
   align-items: flex-end;
   padding: 150px 25px 0 25px;
-  img{
+
+  img {
     width: 100%;
   }
 }
-.history{
-  .title{
+
+.history {
+  .title {
     padding: 0 25px;
-    img{
+
+    img {
       width: 100%;
     }
   }
+
   background-color: #010C28;
   padding-top: 140px;
   width: 100%;
-  font-family: 'Exo',  system-ui;
+  font-family: 'Exo',
+  system-ui;
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
   line-height: 47px;
   color: #F0F0F0;
-  p{
+
+  p {
     width: 740px;
     padding-top: 90px;
     margin: 0 auto;
   }
 }
-.running{
+
+.running {
   padding-top: 150px;
   background-color: #010C28;
-  .title{
+
+  .title {
     font-family: 'Oxygen', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -2206,18 +2503,22 @@ export default {
     padding-bottom: 40px;
     text-transform: uppercase;
     color: #F0F0F0;
-    p{
+
+    p {
       margin: 0;
     }
   }
-  .line{
-    marquee{
+
+  .line {
+    marquee {
       display: flex;
-      .item{
+
+      .item {
         width: min-content;
         display: flex;
         align-items: center;
-        p{
+
+        p {
           font-family: 'Oxygen', sans-serif;
           font-style: normal;
           font-weight: 400;
@@ -2230,7 +2531,8 @@ export default {
           text-transform: uppercase;
           color: #F0F0F0;
         }
-        .circle{
+
+        .circle {
           margin: 40px;
           width: 30px !important;
           height: 30px !important;
@@ -2238,11 +2540,13 @@ export default {
           border-radius: 50%;
         }
       }
-      svg{
+
+      svg {
         //vertical-align: super;
         margin: 40px;
       }
-      &:first-child{
+
+      &:first-child {
         margin-bottom: 25px !important;
       }
     }
@@ -2252,18 +2556,21 @@ export default {
 
 
 
-.partnership{
+.partnership {
   width: 100%;
   background-color: #010C28;
   padding-top: 130px;
-  .divide_partnership{
+
+  .divide_partnership {
     padding: 0 25px;
-    img{
+
+    img {
       width: 100%;
     }
   }
-  .title{
-    p{
+
+  .title {
+    p {
       margin: 0;
       padding: 90px 0 50px 0;
       font-family: 'Oxygen', sans-serif;
@@ -2277,134 +2584,155 @@ export default {
       color: #F0F0F0;
     }
   }
-  .items{
+
+  .items {
     padding: 0 25px;
     display: flex;
     flex: 50%;
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 0 auto;
-    .item{
+
+    .item {
       position: relative;
-      width:45%;
+      width: 45%;
       margin-bottom: 30px;
       //background-image: url('../assets/images/partnership-bg.png');
       background-position: top;
       background-repeat: no-repeat;
       background-size: cover;
       border-radius: 10px;
-      &:hover > .anime .imgs{
+
+      &:hover>.anime .imgs {
         width: 200px;
       }
-      &:hover > .anime .view2 img:nth-child(2){
-         left: 35% !important;
+
+      &:hover>.anime .view2 img:nth-child(2) {
+        left: 35% !important;
       }
-      &:hover > .anime .view4 img:nth-child(2){
-         left: 18% !important;
+
+      &:hover>.anime .view4 img:nth-child(2) {
+        left: 18% !important;
       }
-      & img:first-child:not(.imgs img){
+
+      & img:first-child:not(.imgs img) {
         width: 100%;
         height: 400px;
       }
-      .anime{
+
+      .anime {
         width: 200px;
         height: 90px;
         margin-top: 10px;
         position: absolute;
         top: 24px;
         left: 24px;
-        .imgs{
+
+        .imgs {
           position: relative;
           transition: width 1s;
           transition-timing-function: ease;
           width: 130px;
           height: 90px;
         }
-        .view1{
-          img:nth-child(1){
+
+        .view1 {
+          img:nth-child(1) {
             width: 22px;
             height: 22px;
             position: absolute;
             bottom: 10%;
             right: 20%;
           }
-          img:nth-child(2){
+
+          img:nth-child(2) {
             width: 29px;
             height: 29px;
             position: absolute;
             bottom: 20%;
             left: 0;
           }
-          img:nth-child(3){
+
+          img:nth-child(3) {
             width: 50px;
             height: 50px;
             position: absolute;
             top: 0;
             right: 0;
           }
-          img:nth-child(4){
+
+          img:nth-child(4) {
             width: 62px;
             height: 62px;
             position: absolute;
-            bottom: 15% ;
-            left: 30% ;
+            bottom: 15%;
+            left: 30%;
           }
 
         }
-        .view2{
-          img:nth-child(1){
+
+        .view2 {
+          img:nth-child(1) {
             width: auto;
             position: absolute;
             left: 0;
             bottom: 0;
           }
-          img:nth-child(2){
+
+          img:nth-child(2) {
             width: auto;
             position: absolute;
             left: 20%;
             top: 0;
           }
         }
-        .view3{
-          img:nth-child(1){
+
+        .view3 {
+          img:nth-child(1) {
             width: auto;
             position: absolute;
             left: 0;
             bottom: 0;
           }
-          img:nth-child(2){
+
+          img:nth-child(2) {
             width: auto;
             position: absolute;
             left: 10%;
             bottom: 0;
           }
-          img:nth-child(3){
+
+          img:nth-child(3) {
             width: auto;
             position: absolute;
             left: 27%;
             bottom: 0;
           }
-          img:nth-child(4){
+
+          img:nth-child(4) {
             width: auto;
             position: absolute;
             left: 45%;
             bottom: 0;
           }
         }
-        .view4{
-          img:nth-child(1){
+
+        .view4 {
+          img:nth-child(1) {
             width: auto;
             position: absolute;
             top: 0;
             left: 0;
           }
-          img:nth-child(2){
+
+          img:nth-child(2) {
             width: auto;
             position: absolute;
             bottom: -3px;
             left: 10%;
           }
-          img:nth-child(3){
+
+          img:nth-child(3) {
             width: auto;
             position: absolute;
             bottom: -3px;
@@ -2412,14 +2740,16 @@ export default {
           }
         }
       }
-      .content{
+
+      .content {
         position: absolute;
         top: 140px;
         width: calc(100% - 48px);
         //top: calc(120px + (150 - 120) * ((100vw - 1440px) / (1920 - 1440)));
         left: 24px;
         color: white;
-        .title{
+
+        .title {
           font-family: 'Oxygen', sans-serif;
           font-style: normal;
           font-weight: 400;
@@ -2430,7 +2760,8 @@ export default {
           text-transform: uppercase;
           color: #F0F0F0;
         }
-        p:nth-child(2){
+
+        p:nth-child(2) {
           font-family: 'Exo', sans-serif;
           font-style: normal;
           font-weight: 400;
@@ -2440,6 +2771,7 @@ export default {
           //width: 30vw;
         }
       }
+
       //.title{
       //  position: absolute;
       //  top: 150px;
@@ -2460,74 +2792,91 @@ export default {
     }
 
 
-    }
   }
-.slider{
+}
+
+.slider {
   background-color: #010C28;
   padding-top: 95px;
-  .header-sldier{
+
+  .header-sldier {
     padding: 0 25px;
-    img{
-      width:  100%
+
+    img {
+      width: 100%
     }
   }
-  .title{
-    margin:90px 0;
+
+  .title {
+    margin: 90px 0;
   }
-  .slide_part{
+
+  .slide_part {
     margin-left: 25px;
-    .slider{
+
+    .slider {
       display: flex;
       justify-content: space-around;
       align-items: center;
     }
-    .vue-slick{
+
+    .vue-slick {
       display: none;
     }
-    .arrows{
+
+    .arrows {
       display: none;
     }
-    div{
+
+    div {
       margin-right: 10px;
-      img{
+
+      img {
 
         cursor: pointer;
         //min-width: 700px;
         width: 100%;
       }
-      @media (min-width: 1439px){
-        img{
+
+      @media (min-width: 1439px) {
+        img {
           min-width: 450px !important;
           width: 100% !important;
         }
       }
-      @media (min-width: 1024px) and (max-width: 1439px){
-        img{
+
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        img {
           min-width: 320px !important;
           width: 100% !important;
         }
       }
-      @media (min-width: 769px) and (max-width: 1024px){
-        img{
+
+      @media (min-width: 769px) and (max-width: 1024px) {
+        img {
           min-width: 200px !important;
           width: 100% !important;
         }
       }
 
     }
-    @media (min-width: 320px) and (max-width: 768px){
-      .slider{
+
+    @media (min-width: 320px) and (max-width: 768px) {
+      .slider {
         display: none !important;
       }
-      .vue-slick{
+
+      .vue-slick {
         display: block !important;
       }
-      .arrows{
+
+      .arrows {
         display: flex !important;
       }
     }
   }
-  p{
+
+  p {
     width: 740px;
     font-family: 'Oxygen', sans-serif;
     font-style: normal;
@@ -2541,14 +2890,15 @@ export default {
     color: #F0F0F0;
   }
 }
-.divider{
+
+.divider {
   padding-top: 150px;
   width: 100%;
   background-color: #010C28;
   align-items: flex-end;
   color: white;
 
-  marquee{
+  marquee {
     font-family: 'Oxygen', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -2560,34 +2910,42 @@ export default {
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #F0F0F0;
-    img{
+
+    img {
       width: 100px;
       height: 100px;
     }
-    p{
+
+    p {
       margin: 0;
     }
+
     //display: flex;
   }
 }
-.divider{
-  .content{
+
+.divider {
+  .content {
     padding: 200px 25px 0 25px;
-    &__item{
+
+    &__item {
       border-top: 1px solid #828FA1;
       display: flex;
       padding: 10px 0 110px 0;
       align-items: flex-start;
       justify-content: space-between;
-      div{
+
+      div {
         display: flex;
         align-items: center;
         width: 45%;
-        svg{
+
+        svg {
           margin-right: 100px;
         }
-        h3{
-          font-family: 'Oxygen' ,sans-serif;
+
+        h3 {
+          font-family: 'Oxygen', sans-serif;
           font-style: normal;
           font-weight: 400;
           font-size: 38px;
@@ -2599,7 +2957,8 @@ export default {
           color: #F0F0F0;
         }
       }
-      h4{
+
+      h4 {
         width: 45%;
         font-family: 'Exo', sans-serif;
         font-style: normal;
@@ -2612,20 +2971,25 @@ export default {
     }
   }
 }
-.mission{
+
+.mission {
   padding-top: 70px;
   background-color: #010C28;
-  .title{
+
+  .title {
     //width: 100%;
     padding: 0 25px;
-    img{
+
+    img {
       width: 100%;
     }
   }
-  .content{
+
+  .content {
     padding: 300px 300px 180px 100px;
     position: relative;
-    p{
+
+    p {
       font-family: 'Oxygen', sans-serif;
       font-style: normal;
       font-weight: 400;
@@ -2637,41 +3001,50 @@ export default {
       text-transform: uppercase;
       color: #F0F0F0;
     }
-    .first_figure{
+
+    .first_figure {
       position: absolute;
       left: 25px;
       top: 30px;
     }
-    .second_figure{
+
+    .second_figure {
       position: absolute;
       right: 0;
       top: 20%;
     }
-    .third_figure{
+
+    .third_figure {
       position: absolute;
       right: 20%;
       top: 30px;
     }
-    .forth_figure{
+
+    .forth_figure {
       position: absolute;
       right: 25%;
       bottom: 0;
     }
   }
 }
-.gambling{
+
+.gambling {
   background-color: #010C28;
   padding: 0 25px;
-  .title{
+
+  .title {
     width: 100%;
     padding-bottom: 100px;
-    img{
+
+    img {
       width: 100%;
     }
   }
-  .content{
+
+  .content {
     width: 100%;
-    .figure{
+
+    .figure {
       background-image: url('../assets/images/gambling-fon.png');
       background-position: top;
       background-repeat: no-repeat;
@@ -2682,8 +3055,9 @@ export default {
       justify-content: space-between;
       border-radius: 15px;
       margin: 0 auto;
-      padding: 112px 90px 90px 50px ;
-      p{
+      padding: 112px 90px 90px 50px;
+
+      p {
         font-family: 'Exo', sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -2693,7 +3067,8 @@ export default {
         line-height: 47px;
         color: #F0F0F0;
       }
-      .circle{
+
+      .circle {
         background-color: #010C28;
         width: 130px;
         height: 130px;
@@ -2717,22 +3092,27 @@ export default {
         color: #F0F0F0;
         border-radius: 50%;
       }
-      .circle:hover{
+
+      .circle:hover {
         background: #1F2941;
       }
     }
   }
 
 }
-.events{
+
+.events {
   background-color: #010C28;
   padding: 0 25px;
   padding-top: 150px;
-  .divider_event, .divider_event img{
+
+  .divider_event,
+  .divider_event img {
     width: 100%;
   }
-  .content{
-    .title{
+
+  .content {
+    .title {
       p {
         font-family: 'Oxygen', sans-serif;
         font-style: normal;
@@ -2745,21 +3125,25 @@ export default {
         color: #F0F0F0;
       }
     }
-    .organizations{
+
+    .organizations {
       margin: 0 auto;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-      .img{
+
+      .img {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        span{
+
+        span {
           font-size: 17px;
           font-family: 'Oxygen';
           color: white;
           font-weight: 700;
         }
+
         //img:not(:last-child){
         //  margin-right: 130px;
         //}
@@ -2768,25 +3152,31 @@ export default {
     }
   }
 }
-.holding{
+
+.holding {
   background-color: #010C28;
   padding-top: 200px;
-  .title{
+
+  .title {
     padding: 0 25px;
-    img{
+
+    img {
       width: 100%;
     }
   }
-  .slider-holding{
+
+  .slider-holding {
     margin-top: 90px;
-    .items{
+
+    .items {
       padding-left: 25px;
-      .item{
+
+      .item {
         background-image: url('../assets/images/holding/bg.svg');
         background-repeat: no-repeat;
         background-size: contain;
         min-height: 540px;
-        padding: 0 30px ;
+        padding: 0 30px;
         margin-right: 50px;
         position: relative;
         display: flex;
@@ -2794,8 +3184,9 @@ export default {
         justify-content: space-between;
         cursor: pointer;
         width: 384px !important;
-        .content{
-          .date{
+
+        .content {
+          .date {
             font-family: 'Oxygen', sans-serif;
             font-style: normal;
             font-weight: 700;
@@ -2807,7 +3198,8 @@ export default {
             padding-top: 10px;
             color: #828FA1;
           }
-          .item_title{
+
+          .item_title {
             font-family: 'Oxygen', sans-serif;
             font-style: normal;
             font-weight: 400;
@@ -2817,7 +3209,8 @@ export default {
             text-transform: uppercase;
             color: #F0F0F0;
           }
-          .item_content{
+
+          .item_content {
             font-family: 'Exo', sans-serif;
             font-style: normal;
             font-weight: 400;
@@ -2828,16 +3221,19 @@ export default {
             color: #F0F0F0;
           }
         }
-        .img{
+
+        .img {
           position: absolute;
           bottom: 45px;
-          display:none;
+          display: none;
           z-index: -3;
-          img{
+
+          img {
             width: 100%;
           }
         }
-        .btn{
+
+        .btn {
           width: 100px;
           height: 100px;
           border-radius: 50%;
@@ -2855,38 +3251,46 @@ export default {
   }
 }
 
-.slider-holding .items .item:hover > .img{
+.slider-holding .items .item:hover>.img {
   display: block;
   transition-duration: 2s;
 }
-.slider-holding .items .item:hover > .btn{
+
+.slider-holding .items .item:hover>.btn {
   background-color: #1F2941;
 }
-.offices{
+
+.offices {
   padding: 150px 25px;
   background-color: #010C28;
-  .title{
+
+  .title {
     width: 100%;
     padding-bottom: 100px;
-    img{
+
+    img {
       width: 100%;
     }
   }
-  div{
-    .office{
+
+  div {
+    .office {
       display: flex;
       justify-content: space-between;
       align-items: center;
       position: relative;
-      img:nth-child(1){
+
+      img:nth-child(1) {
         width: 46%;
         border-radius: 10px;
       }
-      img:nth-child(2){
+
+      img:nth-child(2) {
         width: 23%;
         border-radius: 10px;
       }
-      .abs{
+
+      .abs {
         position: absolute;
         bottom: -190px;
         left: 40%;
@@ -2896,7 +3300,8 @@ export default {
         z-index: 100;
       }
     }
-    .map{
+
+    .map {
       width: 100%;
       position: relative;
       overflow: hidden;
@@ -2912,32 +3317,37 @@ export default {
 
       //border-radius: 20%;
       //min-height: 500px;
-      &:hover > .cards {
+      &:hover>.cards {
         display: block !important;
       }
-      img{
+
+      img {
         width: 100%;
         overflow: hidden;
         //-webkit-mask-image: radial-gradient(ellipse 90% 237% at 54% 71%, black 30%, transparent 50%);
         -webkit-mask-image: radial-gradient(ellipse 132% 173% at 54% 71%, black 30%, transparent 50%);
       }
-      .malta, .cyprus{
-        .circle{
+
+      .malta,
+      .cyprus {
+        .circle {
           height: 8px;
           width: 8px;
           background-color: #2F5BD8;
           border-radius: 50%;
           cursor: pointer;
         }
-        .text{
+
+        .text {
           padding: 8px 16px;
           background: #828FA1;
           border-radius: 30px;
           width: fit-content;
         }
       }
-      .malta{
-        .circle{
+
+      .malta {
+        .circle {
           position: absolute;
           left: 48.8%;
           top: 43.3%;
@@ -2945,12 +3355,14 @@ export default {
           //  display: block !important;
           //}
         }
-        .text{
-          @media (min-width: 1025px) and (max-width: 1920px){
+
+        .text {
+          @media (min-width: 1025px) and (max-width: 1920px) {
             left: calc(385px + (820 - 385) * ((100vw - 1025px) / (1920 - 1025)));
             top: calc(190px + (390 - 190) * ((100vw - 1025px) / (1920 - 1025))) !important;
           }
-          @media (min-width: 768px) and (max-width: 1024px){
+
+          @media (min-width: 768px) and (max-width: 1024px) {
             left: calc(275px + (400 - 275) * ((100vw - 768px) / (1024 - 768)));
             top: calc(150px + (195 - 150) * ((100vw - 768px) / (1024 - 768))) !important;
             font-style: normal !important;
@@ -2959,16 +3371,19 @@ export default {
             line-height: 105% !important;
             letter-spacing: 0.04em !important;
           }
-          @media (min-width: 320px) and (max-width: 767px){
+
+          @media (min-width: 320px) and (max-width: 767px) {
             top: calc(100px + (300 - 100) * ((100vw - 320px) / (767 - 320))) !important;
             font-size: 12px !important;
             line-height: 105% !important;
             letter-spacing: 0.04em !important;
           }
+
           position: absolute;
           left: 385px; //385
           top: 390px; // 195
-          font-family: 'Oxygen', sans-serif;
+          font-family: 'Oxygen',
+          sans-serif;
           font-style: normal;
           font-weight: 700;
           font-size: 16px;
@@ -2978,18 +3393,21 @@ export default {
           color: #1F2941;
         }
       }
-      .cyprus{
-        .circle{
+
+      .cyprus {
+        .circle {
           position: absolute;
           right: 46%;
           top: 45%;
         }
-        .text{
-          @media (min-width: 1025px) and (max-width: 1920px){
+
+        .text {
+          @media (min-width: 1025px) and (max-width: 1920px) {
             right: calc(340px + (760 - 340) * ((100vw - 1025px) / (1920 - 1025))) !important;
             top: calc(195px + (395 - 195) * ((100vw - 1025px) / (1920 - 1025))) !important;
           }
-          @media (min-width: 768px) and (max-width: 1024px){
+
+          @media (min-width: 768px) and (max-width: 1024px) {
             right: calc(240px + (360 - 240) * ((100vw - 768px) / (1024 - 768))) !important;
             top: calc(150px + (195 - 150) * ((100vw - 768px) / (1024 - 768))) !important;
             font-size: 14px !important;
@@ -2999,16 +3417,18 @@ export default {
             text-transform: uppercase !important;
           }
 
-          @media (min-width: 320px) and (max-width: 767px){
+          @media (min-width: 320px) and (max-width: 767px) {
             //left: calc(275px + (400 - 275) * ((100vw - 768px) / (1024 - 768)));
             top: calc(100px + (300 - 100) * ((100vw - 320px) / (767 - 320))) !important;
             font-size: 12px !important;
           }
+
           //display: none;
           position: absolute;
           right: 760px; //340 // 360
           top: 41%;
-          font-family: 'Oxygen', sans-serif;
+          font-family: 'Oxygen',
+          sans-serif;
           font-style: normal;
           font-weight: 700;
           font-size: 16px;
@@ -3018,7 +3438,8 @@ export default {
           color: #1F2941;
         }
       }
-      .cards{
+
+      .cards {
         background-image: url('../assets/images/offices/card-bg.svg');
         background-size: contain;
         background-repeat: no-repeat;
@@ -3031,31 +3452,34 @@ export default {
         display: none;
         border-radius: 10px;
         padding: 50px 18px 50px 25px;
-          .card{
 
-            p{
-              margin: 0 0 16px 0;
-              font-family: 'Exo', sans-serif;
-              font-style: normal;
-              font-weight: 400;
-              font-size: 20px;
-              line-height: 27px;
-              color: #F0F0F0;
+        .card {
 
-            }
+          p {
+            margin: 0 0 16px 0;
+            font-family: 'Exo', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 27px;
+            color: #F0F0F0;
+
           }
-
         }
+
+      }
 
     }
   }
 }
-.footer{
+
+.footer {
   background-color: #010C28;
   padding: 0 25px !important;
 }
-@media (min-width: 320px) and (max-width: 768px){
-  .footer{
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .footer {
     padding: 0 16px !important;
   }
 }
