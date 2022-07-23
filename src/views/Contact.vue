@@ -14,7 +14,7 @@
     </div>
 
     <div class="devider">
-      <img src="../assets/images/contact/contact.svg" alt="contact" />
+      <BlockTitle title="investments"></BlockTitle>
     </div>
     <div class="contact-form__container">
       <form action="#" class="contact-form">
@@ -38,13 +38,15 @@
 <script>
 import HeaderPart from "@/components/Header";
 import FooterPart from "@/components/Footer"
+import BlockTitle from '../components/BlockTitle.vue';
 export default {
 
   name: "Contact-us",
-  components: { HeaderPart, FooterPart }
+  components: { HeaderPart, FooterPart, BlockTitle }
 
 }
 </script>
+    
 
 <style lang="scss" scoped>
 * {
@@ -478,7 +480,7 @@ export default {
   }
 
   .contact-form {
-    padding: 0 50px !important;
+    padding: 0 80px !important;
   }
 
   .form-left-side-text {
@@ -486,12 +488,21 @@ export default {
   }
 
   .form-left-side-title {
+    width: 244px;
+
     .header-container .contact-banner__title {
       font-size: 16px !important;
     }
   }
-  .header-container .contact-banner__title{
-    font-size: 16px !important; 
+
+  .header-container .contact-banner__title {
+    font-size: 34px !important;
+  }
+
+  .contact-form__container {
+
+    min-height: 600px !important;
+
   }
 }
 </style>
