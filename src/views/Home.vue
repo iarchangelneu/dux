@@ -603,10 +603,12 @@ let mooveCursor = () => {
   const cards = document.querySelector('#cards');
 
   const moveCursor = (e) => {
+    // console.log(window.location.pathname)
+    
     var mouseY = e.clientY;
     var mouseX = e.clientX;
 
-
+    if(window.location.pathname == '/'){
     // console.log(document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth + 90)
     if (window.clientWidth > 1920) {
       if (mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth - 20) {
@@ -615,6 +617,7 @@ let mooveCursor = () => {
         document.querySelector('#cards').style.visibility = `visible`;
       }
     }
+    
     // if(window.innerWidth < 1024){
     //   if( mouseX < 40 || mouseX > document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth){
     //     document.querySelector('#cards').style.visibility = `visible`;
@@ -622,6 +625,7 @@ let mooveCursor = () => {
     //   mouseY = e.clientY -200;
     //   mouseX = e.clientX;
     // }
+    
     if (window.clientWidth > 480 && window.clientWidth < 1920) {
       if (mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth - 40) {
         document.querySelector('#cards').style.visibility = `hidden`;
@@ -629,9 +633,11 @@ let mooveCursor = () => {
         document.querySelector('#cards').style.visibility = `visible`;
       }
     }
+    
 
-
+    
     document.querySelector('#cards').style.transform = `translate3d(${mouseX}px, ${mouseY - 150}px, 0)`;
+    }
   }
 
 
