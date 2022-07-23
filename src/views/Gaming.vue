@@ -22,7 +22,7 @@
     </div>
     <div class="learn">
       <div class="title">
-        <img src="../assets/images/gaming/learn.svg" />
+        <BlockTitle title="Learn more"></BlockTitle>
       </div>
       <div class="content">
         <p>
@@ -43,7 +43,7 @@
     </div>
     <div class="lists">
       <div class="title">
-        <img src="../assets/images/gaming/howitwork.svg" />
+        <BlockTitle title="how it works"></BlockTitle>
       </div>
       <div class="content">
         <div class="content__item">
@@ -116,7 +116,7 @@
     </div>
     <div class="seeking">
       <div class="title">
-        <img src="../assets/images/gaming/seeking-title.svg" />
+        <BlockTitle title="seeking outside help"></BlockTitle>
       </div>
       <div class="content">
         <img src="../assets/images/gaming/seeking-bg.svg" v-if="window.width > 1024" />
@@ -142,10 +142,12 @@
 <script>
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import BlockTitle from '../components/BlockTitle.vue';
 export default {
   name: "Gaming_page",
   components: {
-    Header, Footer
+    Header, Footer,
+    BlockTitle
   },
   data() {
     return {
@@ -783,7 +785,7 @@ export default {
         .text {
           position: relative;
           margin-top: 50px !important;
-          background-image: url('../assets/images/gaming/seeking-bg.svg');
+          background-image: url('../assets/images/seeking320.png');
           background-position: center;
           background-size: cover;
           width: auto !important;
@@ -938,13 +940,14 @@ export default {
           .text {
             position: relative;
             margin-top: 50px !important;
-            background-image: url('../assets/images/gaming/seeking-bg.svg');
+            background-image: url('../assets/images/seeking320.png');
             background-position: center;
             background-size: cover;
             width: auto !important;
             border-radius: 15px !important;
             margin: 0 auto;
-            padding: 50px 16px !important;
+            padding: 60px 27px !important;
+            margin-bottom: 40px !important;
 
             p {
               font-size: 16px !important;
