@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="div__back">
 
     <div class="header-container">
       <div class="careers-banner">
@@ -13,7 +13,7 @@
     </div>
 
     <div class="devider first-devider">
-      <img src="../assets/images/careers/careers.svg" alt="careers"/>
+      <BlockTitle title="DUXGroup Family"></BlockTitle>
     </div>
     <div class="line" v-if="menuClosed">
       <div class="marquee-container">
@@ -122,10 +122,15 @@
         </div>
       </div>
       <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/e4PBKgLlaHk" title="YouTube video player"
+        <div class="video__cont" width="560" height="315" onclick="this.nextElementSibling.style.display='block'; this.style.display='none'"> 
+          <img src="../assets/images/careers/video-pre.png" style="cursor:pointer" /> 
+        </div> 
+        <iframe class="video__frame" width="560" height="315" src="https://www.youtube.com/embed/e4PBKgLlaHk" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                allowfullscreen
+                style="display: none;"
+                ></iframe>
       </div>
       <div class="slider">
         <VueSlickCarousel ref="images" v-bind="settingsImages">
@@ -159,7 +164,7 @@
       </div>
     </div>
     <div class="devider">
-      <img src="../assets/images/careers/benefites.svg" alt="careers"/>
+      <BlockTitle title="BENEFITS"></BlockTitle>
     </div>
     <div class="benefits">
       <h2 class="benefits__title">We
@@ -214,7 +219,7 @@
       </div>
     </div>
     <div class="devider">
-      <img src="../assets/images/careers/header.svg" alt="header"/>
+      <BlockTitle title="CAREER"></BlockTitle>
     </div>
     <div class="career">
       <h2 class="career__title">Start your
@@ -265,39 +270,45 @@
       </div>
     </div>
     <div class="devider">
-      <img src="../assets/images/careers/linesecond.svg" alt="line second"/>
+      <BlockTitle title="Interview Process Timeline" :large="1"></BlockTitle>
     </div>
     <div class="stages" v-if="menuClosed">
       <div class="stage-container">
         <h2 class="stage-container-title">Stage 01</h2>
         <p class="stage-container-sub-title">CV Screening</p>
+        <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
       <img class="line-svg" src="../assets/images/careers/Line.svg" alt="Line"/>
       <div class="stage-container">
         <h2 class="stage-container-title">Stage 02</h2>
         <p class="stage-container-sub-title">1st Interview with HR</p>
+        <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
       <img class="line-svg" src="../assets/images/careers/Line.svg" alt="Line"/>
       <div class="stage-container">
         <h2 class="stage-container-title">Stage 03</h2>
         <p class="stage-container-sub-title">Interview with Hiring Manager</p>
         <p class="stage-container-sub-text">*Home Task may be<br> included in this stage</p>
+        <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
       <img class="line-svg" src="../assets/images/careers/Line.svg" alt="Line"/>
       <div class="stage-container">
         <h2 class="stage-container-title">Stage 04</h2>
         <p class="stage-container-sub-title">Final Interview with Management</p>
         <p class="stage-container-sub-text">(Usually for high level position)</p>
+        <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
       <img class="line-svg" src="../assets/images/careers/Line.svg" alt="Line"/>
       <div class="stage-container">
         <h2 class="stage-container-title">Stage 05</h2>
         <p class="stage-container-sub-title">Offer stage</p>
+        <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
       <img class="mobile-line" src="../assets/images/careers/mobile-line.svg" alt="mobile"/>
     </div>
     <div class="devider">
-      <img src="../assets/images/careers/about.svg" alt="about"/>
+      <!-- <img src="../assets/images/careers/about.svg" alt="about"/> -->
+      <BlockTitle title="About our team"></BlockTitle>
     </div>
     <div class="igaming">
       <h2 class="igaming-title">
@@ -317,8 +328,6 @@
         <div class="igaming-container-right-side">
           <p class="igaming-container-right-side-text">
             Hello world, DUXGroup calling! We’re a specialized team of
-            iGaming professionals that always manage to impress our customers and partners by providing the most
-            innovative and optimised iGaming solutions.Hello world, DUXGroup calling! We’re a specialized team of
             iGaming professionals that always manage to impress our customers and partners by providing the most
             innovative and optimised iGaming solutions.
           </p>
@@ -415,6 +424,7 @@ import FooterPart from "@/components/Footer";
 import VueSlickCarousel from 'vue-slick-carousel'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+import BlockTitle from "../components/BlockTitle.vue";
 
 export default {
   name: "Careers-page",
@@ -437,8 +447,11 @@ export default {
     }
   },
   components: {
-    HeaderPart, FooterPart, VueSlickCarousel
-  },
+    HeaderPart,
+    FooterPart,
+    VueSlickCarousel,
+    BlockTitle
+},
   methods: {
     openedMobMenu(value) {
       if (value) {
@@ -455,6 +468,11 @@ export default {
 <style>
 .slick-slide {
   margin-right: 20px !important;
+}
+@media screen and (max-width: 1024px) {
+  .slick-slide {
+    margin-right: 12px !important;
+  }
 }
 </style>
 <style lang="scss" scoped>
@@ -475,7 +493,7 @@ export default {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 1em;
+    padding: 0.25em;
     color: #fff;
     font-weight: 200;
     display: -webkit-box;
@@ -664,12 +682,12 @@ export default {
     }
 
     .slider {
-      padding-left: 25px !important;
+      padding-left: 100px !important;
 
       div {
         img {
-          width: 580px !important;
-          margin-left: 20px !important;
+          width: 430px !important;
+          margin-left: 16px !important;
         }
       }
     }
@@ -997,6 +1015,8 @@ padding-top: 0 !important;
   width: 100%;
   background-color: #010C28;
   align-items: flex-end;
+  padding-right: 25px;
+  padding-left: 25px;
 
   img {
     width: 100%;
@@ -1160,6 +1180,7 @@ padding-top: 0 !important;
         display: flex;
         width: 100%;
         justify-content: space-between;
+        align-items: flex-end;
 
         &-job-hirer {
 
@@ -1232,7 +1253,8 @@ padding-top: 0 !important;
     border-radius: 10px;
 
     &:hover {
-      border: 1px solid #00FFFF;
+      border: 1px solid rgba(0, 255, 255,0);
+      // border-image: url(../assets/images/careers/border.png);
     }
 
     &-title {
@@ -1306,12 +1328,23 @@ padding-top: 0 !important;
       display: flex;
 
       &-dote {
-        margin-right: 10%;
+        margin-right: 102px;
         padding-top: 17px;
       }
 
+      @media screen and (max-width: 1024px) {
+        &-dote {
+        margin-right: 65px;
+      }
+      }
+      @media screen and (max-width: 480px) {
+        &-dote {
+        margin-right: 8px;
+      }
+      }
+
       &-title {
-        max-width: 472px;
+        max-width: 480px;
         font-family: 'Oxygen', sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -1369,7 +1402,7 @@ padding-top: 0 !important;
   }
 
   .row__text {
-    max-width: 285px;
+    max-width: 300px;
     font-size: 22px;
   }
   .career__title {
@@ -1668,4 +1701,163 @@ padding-top: 0 !important;
   }
 }
 
+.border__img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.stage-container{
+  position: relative;
+}
+.stage-container:hover img{
+  display: block;
+}
+.div__back{
+  background-color: #010C28;
+}
+
+@media screen and (max-width: 1024px) {
+  .video__cont{
+    width: 798px;
+    height: 340px;
+  }
+  .video__cont img{
+    width: 100%;
+    height: 100%;
+  }
+  .video__frame{
+    width: 798px !important;
+    height: 340px !important;
+    min-height: unset !important;
+  }
+  .slider{
+    padding-left: 113px !important;
+  }
+  .slick-slide{
+    margin-right: 10px !important;
+  }
+  .benefits__title{
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  .row__text{
+    font-size: 22px !important;
+    width: 30%;
+  }
+  .igaming-container-left-side-dot{
+    margin-right: 65px !important;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .video__cont{
+    width: 288px;
+    height: 160px;
+  }
+  .video__cont img{
+    width: 100%;
+    height: 100%;
+  }
+  .video__frame{
+    width: 288px !important;
+    height: 160px !important;
+    min-height: unset !important;
+  }
+  .slick-slider{
+    padding-left: 16px !important;
+  }
+  .benefits__title{
+    font-size: 22px !important;
+  }
+  .benefits{
+    padding: 16px;
+  }
+  .benefits__title{
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .row{
+    margin-top: 39px;
+  }
+  .row__text{
+    margin-top: 16px;
+  }
+  .row__container{
+    margin-top: 0px !important;
+  }
+  .devider{
+    padding-top: 72px;
+  }
+  .stage-container-title{
+    font-size: 20px !important;
+  }
+  .stages{
+    padding-top: 32px;
+  }
+  .igaming-title{
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 375px) {
+  .careers{
+    font-size: 20px !important; 
+  }
+  .careers-banner__title{
+    font-size: 40px !important;
+    max-width: 295px !important;
+  }
+  .video__cont{
+    width: 350px;
+    height: 195px;
+  }
+  .video__cont img{
+    width: 100%;
+    height: 100%;
+  }
+  .video__frame{
+    width: 350px !important;
+    height: 195px !important;
+    min-height: unset !important;
+  }
+  .benefits__title{
+    font-size: 26px !important;
+    max-width: 330px !important;
+  }
+  .career__title{
+    font-size: 38px !important;
+    max-width: 275px !important;
+  }
+  .stage-container-title{
+    font-size: 24px !important;
+  }
+  .stage-container-sub-title{
+    font-size: 18px !important;
+  }
+  .igaming-title{
+    font-size: 38px !important;
+    max-width: 300px !important;
+  }
+  .igaming-container-left-side-title{
+    font-size: 24px !important;
+  }
+  .igaming-container-right-side-text{
+    font-size: 18px !important;
+  }
+  .igaming-container{
+    margin-top: 24px !important;
+  }
+  .title{
+    font-size: 24px !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .slick-slider{
+    padding-left: 4px !important;
+  }
+}
 </style>

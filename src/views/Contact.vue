@@ -486,7 +486,9 @@ export default {
   }
 
   .form-left-side-title {
-    font-size: 16px !important;
+    .header-container .contact-banner__title {
+      font-size: 16px !important;
+    }
   }
 }
 </style>

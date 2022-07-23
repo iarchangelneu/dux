@@ -26,7 +26,6 @@
     <div class="history">
       <div class="title">
         <BlockTitle title="what we are?"></BlockTitle>
-        <BlockTitle></BlockTitle>
       </div>
       <p>
         When DUXGroup started in <span class="blue">2020</span>, we set out to make history by creating something great,
@@ -3157,6 +3156,35 @@ export default {
       & img:first-child:not(.imgs img) {
         width: 100%;
         height: 400px;
+      }
+
+      &:hover>.anime .view3 {
+        img:nth-child(3) {
+            width: auto;
+            position: absolute;
+            left: 22%;
+            bottom: 0;
+          }
+          img:nth-child(4) {
+            width: auto;
+            position: absolute;
+            left: 41%;
+            bottom: 0;
+          }
+        @media screen and (max-width: 1024px) {
+          img:nth-child(3) {
+            width: auto;
+            position: absolute;
+            left: 22%;
+            bottom: 0;
+          }
+          img:nth-child(4) {
+            width: auto;
+            position: absolute;
+            left: 41%;
+            bottom: 0;
+          }
+        }
       }
 
       .anime {

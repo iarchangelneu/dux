@@ -1,5 +1,18 @@
 <template>
-    <div class="blockTitle__cont">
+    <div class="blockTitle__cont" v-if="largeS==1">
+        <img src="../assets/images/block-title-w.png" alt="" v-if="window.widthT > 1024">
+        <img src="../assets/images/block-title-w-1024.png" alt=""
+            v-else-if="window.widthT > 768 && window.widthT <= 1024">
+        <img src="../assets/images/block-title-w-1024.png" alt="" v-else-if="window.widthT > 480 && window.widthT <= 768">
+        <img src="../assets/images/block-title-w-320.png" alt="" v-else>
+        <div class="blockTitle__text" v-if="window.widthT > 480">
+            <span class="">{{ title }}</span>
+        </div>
+        <div class="blockTitle__text blockTitle__text__duo" v-else>
+            <span class="">{{ firstString }} <br> {{ lastString }}</span>
+        </div>
+    </div>
+    <div class="blockTitle__cont" v-else>
         <img src="../assets/images/block-title.png" alt="" v-if="window.widthT > 1024">
         <img src="../assets/images/block-title-1024.png" alt=""
             v-else-if="window.widthT > 768 && window.widthT <= 1024">
@@ -17,11 +30,14 @@ export default {
         return {
             window: {
                 widthT: 0
-            }
+            },
+            largeS: 0,
+            firstString: '',
+            lastString: '',
         }
     },
     name: 'BlockTitle',
-    props: ['title'],
+    props: ['title','large'],
     methods: {
         handleResize() {
             this.window.widthT = window.innerWidth;
@@ -35,6 +51,14 @@ export default {
     destroyed() {
         window.removeEventListener('resize', this.handleResize);
     },
+    mounted(){
+        if(this.title.length > 20){
+            this.largeS = 1
+            let arr = this.title.split(' ')
+            this.firstString = arr[0] + ' ' + arr[1];
+            this.lastString = arr[2]; 
+        }
+    }
 }
 </script>
 
@@ -112,6 +136,9 @@ export default {
 
     .blockTitle__text {
         font-size: 14px;
+    }
+    .blockTitle__text__duo{
+        top: 5px;
     }
 }
 </style>
