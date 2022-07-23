@@ -83,7 +83,7 @@ input {
 }
 
 .fixed-menu {
-
+  z-index: 1000;
   position: fixed;
   width: calc(100vw - 50px);
 }
