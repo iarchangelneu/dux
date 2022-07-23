@@ -472,5 +472,21 @@ export default {
     margin-top: 60px !important;
     max-width: 288px !important;
   }
+
+  .contact-form__container .contact-form {
+    background: url('../assets/images/contact320.png') no-repeat center !important;
+  }
+
+  .contact-form {
+    padding: 0 50px !important;
+  }
+
+  .form-left-side-text {
+    font-size: 14px !important;
+  }
+
+  .form-left-side-title {
+    font-size: 16px !important;
+  }
 }
 </style>
