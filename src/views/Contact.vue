@@ -3,17 +3,18 @@
     <div class="header-container">
       <div class="contact-banner">
         <div class="header">
-          <HeaderPart/>
+          <HeaderPart />
         </div>
         <h1 class="contact-banner__title">
-          <span class="contact-us"><img class="span-svg" src="../assets/images/contact/Ellipse1.svg" alt="elipse">contact us</span>
+          <span class="contact-us"><img class="span-svg" src="../assets/images/contact/Ellipse1.svg"
+              alt="elipse">contact us</span>
           We are open <span class="color-blue">24/7</span> for any kind of <span class="color-blue">collaboration</span>
         </h1>
       </div>
     </div>
 
     <div class="devider">
-      <img src="../assets/images/contact/contact.svg" alt="contact"/>
+      <img src="../assets/images/contact/contact.svg" alt="contact" />
     </div>
     <div class="contact-form__container">
       <form action="#" class="contact-form">
@@ -23,7 +24,7 @@
         </div>
         <div class="form-right-side">
           <input type="text" placeholder="Your contact e-mail" class="form-right-side-input">
-          <textarea  placeholder="Comment" class="form-right-side-input" ></textarea>
+          <textarea placeholder="Comment" class="form-right-side-input"></textarea>
           <button type="submit" class="form-right-side-input">Apply now</button>
         </div>
       </form>
@@ -40,28 +41,36 @@ import FooterPart from "@/components/Footer"
 export default {
 
   name: "Contact-us",
-  components: {HeaderPart, FooterPart}
+  components: { HeaderPart, FooterPart }
 
 }
 </script>
 
 <style lang="scss" scoped>
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+::placeholder {
+  color: #828FA1;
+}
+
 .color-blue {
   color: #2F5BD8;
 }
-.header-container{
+
+.header-container {
   background: #010C28 url('../assets/images/gradient.png') center;
   background-size: cover;
+
   .contact-banner {
     background: url("../assets/images/contact/Union.svg") no-repeat;
     background-size: contain;
     padding: 25px;
     min-height: 702px;
+
     &__title {
       font-family: "Oxygen", sans-serif;
       font-style: normal;
@@ -90,6 +99,7 @@ export default {
         top: 13px;
         display: inline-flex;
         align-items: center;
+
         & .span-svg {
           margin-right: 11px;
           vertical-align: baseline;
@@ -120,6 +130,7 @@ export default {
   margin-top: -1px;
   align-items: flex-start;
   justify-content: center;
+
   & .contact-form {
     display: flex;
     justify-content: space-around;
@@ -129,8 +140,9 @@ export default {
 
     & .form-left-side {
       margin-top: 114px;
+
       &-title {
-        font-family: 'Oxygen',sans-serif;
+        font-family: 'Oxygen', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 28px;
@@ -144,7 +156,7 @@ export default {
       &-text {
 
         margin: 0;
-        font-family: 'Exo',sans-serif;
+        font-family: 'Exo', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 26px;
@@ -158,7 +170,8 @@ export default {
       margin-top: 114px;
       display: flex;
       flex-direction: column;
-      &-input{
+
+      &-input {
         color: white;
         resize: none;
         max-width: 510px;
@@ -168,21 +181,23 @@ export default {
         margin-bottom: 20px;
         background: none;
         padding: 14px;
-        &:nth-child(2){
+
+        &:nth-child(2) {
           width: 510px;
           height: 108px;
           border: 1px solid #828FA1;
           border-radius: 10px;
 
         }
-        &:last-child{
+
+        &:last-child {
           margin-bottom: 0;
           width: 510px;
           height: 48px;
           background: #2F5BD8;
           text-align: initial;
           border-radius: 10px;
-          font-family: 'Oxygen',sans-serif;
+          font-family: 'Oxygen', sans-serif;
           font-style: normal;
           font-weight: 700;
           font-size: 14px;
@@ -197,53 +212,65 @@ export default {
     }
   }
 }
-.footer{
+
+.footer {
   background-color: #010C28;
   padding: 0 25px !important;
 }
 
-@media (min-width: 320px) and (max-width: 768px){
-  .footer{
+@media (min-width: 320px) and (max-width: 768px) {
+  .footer {
     padding: 0 16px !important;
   }
 }
-.devider{
+
+.devider {
   margin-top: -1px !important;
 }
-@media only screen and (max-width: 1300px){
 
-  .contact-form{
+@media only screen and (max-width: 1300px) {
+
+  .contact-form {
     width: 960px !important;
   }
-  .divider{
+
+  .divider {
     margin-top: -1px !important;
   }
 
 }
-@media only screen and (max-width: 1160px){
-  .contact-banner__title{
+
+@media only screen and (max-width: 1160px) {
+  .contact-banner__title {
     font-size: 84px;
   }
-  .contact-form__container{
+
+  .contact-form__container {
     padding: 32px;
   }
-  .contact-banner{
+
+  .contact-banner {
     background: url("../assets/images/contact/1024.svg") no-repeat, linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28);
   }
 }
-@media only screen and (max-width: 998px){
 
-  .form-left-side-title{
+
+@media only screen and (max-width: 998px) {
+
+  .form-left-side-title {
     font-size: 20px !important;
   }
-  .form-left-side-text{
+
+  .form-left-side-text {
     font-size: 20px !important;
     margin-bottom: 20px !important;
   }
-  .form-right-side-input{
+
+  .form-right-side-input {
     width: 352px !important;
   }
 }
+
 @media (max-width: 1439px) and (min-width: 1024px) {
 
   .contact-banner {
@@ -251,13 +278,15 @@ export default {
   }
 
 }
-@media (max-width: 1023px) and (min-width: 769px){
+
+@media (max-width: 1023px) and (min-width: 769px) {
   .contact-banner {
     min-height: 300px !important;
   }
 
 }
-@media (max-width: 768px) and (min-width: 320px){
+
+@media (max-width: 768px) and (min-width: 320px) {
 
   .contact-banner {
     min-height: 265px !important;
@@ -265,117 +294,183 @@ export default {
 
 
 }
-@media only screen and (max-width: 768px){
-  .contact-banner{
+
+@media only screen and (max-width: 768px) {
+  .contact-banner {
     background: url("../assets/images/contact/768.svg") no-repeat, linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28);
   }
 }
-@media only screen and (max-width: 676px){
 
-  .devider{
+@media only screen and (max-width: 676px) {
+
+  .devider {
     padding-top: 0 !important;
   }
-  .contact-banner__title{
+
+  .contact-banner__title {
     max-width: 674px !important;
     font-size: 68px !important;
     margin-top: 40px !important;
   }
-  .contact-us{
+
+  .contact-us {
     max-width: 100% !important;
     font-size: 20px !important;
     margin: 0 !important;
     display: flex;
     flex-direction: row;
-    width: 100%!important;
+    width: 100% !important;
   }
-  .contact-form{
+
+  .contact-form {
     flex-direction: column;
     padding: 0 30px;
     justify-content: center !important;
   }
-  .form-left-side{
+
+  .form-left-side {
     margin-top: 0 !important;
   }
-  .form-right-side{
+
+  .form-right-side {
     margin-top: 0 !important;
   }
-  .form-right-side-input{
+
+  .form-right-side-input {
     max-width: 100% !important;
     width: 100% !important;
   }
 }
-@media only screen and (max-width: 592px){
-  .contact-banner__title{
+
+@media only screen and (max-width: 592px) {
+  .contact-banner__title {
     max-width: 288px !important;
     font-size: 34px !important;
   }
 
 }
-@media only screen and (max-width: 321px){
-  .contact-banner{
+
+@media screen and (max-width:768px) {
+  .header-container .contact-banner__title {
+    font-size: 68px !important;
+    width: 692px !important;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .contact-banner {
     background: url("../assets/images/contact/320.svg") no-repeat, linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28);
   }
 }
-@media (min-width: 320px) and (max-width: 768px){
-  .contact-us{
-    position: initial !important;
-    font-size: 16px !important;
-    line-height: 20px !important;
-    margin: 0 140px 0 0 !important;
-    & > img{
+
+
+@media screen and (max-width: 1440px) {
+  .contact-form__container .contact-form .form-right-side-input {
+    font-size: 16px;
+    font-family: 'Oxygen';
+    color: #828FA1;
+
+  }
+
+  .header-container .contact-banner {
+    background: url(/img/Union.a63e40e7.svg) no-repeat;
+    background-size: contain;
+    padding: 25px;
+    min-height: 350px;
+    border: 1px solid #828FA1;
+  }
+
+  .contact-us {
+    font-size: 34px !important;
+    line-height: 28px !important;
+    margin: 0 !important;
+    position: relative;
+    margin-top: 50px !important;
+
+    &>img {
       width: 10px;
     }
   }
-  .devider{
-    padding-top: 72px !important;
+
+  .devider {
+    padding-top: 105px !important;
   }
-  .contact-banner__title{
-    font-size: 34px !important;
-    line-height: 110% !important;
-    margin-top: 60px !important;
-    max-width: 288px !important;
+
+  .contact-banner__title {
+    font-size: 134px !important;
+    line-height: 105% !important;
+    margin-top: 89px !important;
+    max-width: 1330px !important;
   }
 }
-@media (min-width: 769px) and (max-width: 1023px){
-  .contact-us{
+
+@media screen and (max-width: 1024px) {
+  .contact-form__container {
+    padding: 64px 32px 0 32px;
+  }
+
+  .contact-form__container .contact-form[data-v-df212a54] {
+    background: url('../assets/images/contact1024.png') no-repeat center;
+  }
+
+  .header-container .contact-banner__title {
+
+    font-size: 84px !important;
+    width: 850px !important;
+
+  }
+
+  .contact-us {
+
+    margin-top: 20px !important;
+  }
+
+  .contact-us {
     font-size: 20px !important;
     line-height: 25px !important;
     margin: 0 !important;
     position: relative;
     top: 10px;
-    & > img{
+    margin-top: 15px !important;
+
+    &>img {
       width: 10px;
     }
   }
-  .devider{
+
+  .devider {
     padding-top: 72px !important;
   }
-  .contact-banner__title{
+
+  .contact-banner__title {
     font-size: 68px !important;
     line-height: 105% !important;
     margin-top: 60px !important;
-    max-width: 719px !important;
+    max-width: 854px !important;
   }
 }
-@media (min-width: 1024px) and (max-width: 1439px){
-  .contact-us{
-   font-size: 22px !important;
-   line-height: 28px !important;
-    margin: 0 !important;
-    position: relative;
-    top: 10px;
-    & > img{
+
+@media screen and (max-width: 450px) {
+  .contact-us {
+    position: initial !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    margin: 0 140px 0 0 !important;
+
+    &>img {
       width: 10px;
     }
   }
-  .devider{
-    padding-top: 105px !important;
+
+  .devider {
+    padding-top: 72px !important;
   }
-  .contact-banner__title{
-   font-size: 84px !important;
-   line-height: 105% !important;
-    margin-top: 89px !important;
-    max-width: 840px !important;
+
+  .contact-banner__title {
+    font-size: 34px !important;
+    line-height: 110% !important;
+    margin-top: 60px !important;
+    max-width: 288px !important;
   }
 }
 </style>

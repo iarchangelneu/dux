@@ -1,9 +1,9 @@
 <template>
   <div class="container">
     <div class="header">
-      <div class="header__menu" >
+      <div class="header__menu">
         <div class="cubes">
-          <div class="cube" data-aos="fade-down" data-aos-delay="0" ></div>
+          <div class="cube" data-aos="fade-down" data-aos-delay="0"></div>
           <div class="cube" data-aos="fade-down" data-aos-delay="300"></div>
           <div class="cube" data-aos="fade-down" data-aos-delay="500"></div>
           <div class="cube" data-aos="fade-down" data-aos-delay="700"></div>
@@ -11,47 +11,48 @@
           <div class="cube" data-aos="fade-down" data-aos-delay="1100"></div>
           <div class="cube" data-aos="fade-down" data-aos-delay="1300"></div>
           <div class="cube" data-aos="fade-down" data-aos-delay="1500"></div>
-<!--          <div class="changeable"></div>-->
+          <!--          <div class="changeable"></div>-->
         </div>
-<!--        <div class="animatin-header_width">-->
-<!--          <img src="../assets/images/ventures/header-bg.png" />-->
-<!--        </div>-->
+        <!--        <div class="animatin-header_width">-->
+        <!--          <img src="../assets/images/ventures/header-bg.png" />-->
+        <!--        </div>-->
         <HeaderPart @opened="openedMobMenu" style="padding: 25px" />
       </div>
-<!--      <img src="../assets/images/ventures/header-bg.png"/>-->
+      <!--      <img src="../assets/images/ventures/header-bg.png"/>-->
       <div class="content">
         <p class="p">
-                <span class="brave">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill" viewBox="0 0 16 16">
-                    <circle cx="8" cy="8" r="8"/>
-                  </svg>
-                  <span>DUXGROUP VENTURES</span>
-                </span>
+          <span class="brave">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
+              viewBox="0 0 16 16">
+              <circle cx="8" cy="8" r="8" />
+            </svg>
+            <span>DUXGROUP VENTURES</span>
+          </span>
           We invest in <br /> <span class="blue">the future of<br> iGaming</span>
         </p>
       </div>
     </div>
     <div class="investment">
       <div class="title">
-
-        <img src="../assets/images/ventures/investment/title.svg" />
-        <img src="../assets/images/ventures/investment/title320.svg" class="small-header"/>
+        <BlockTitle title="investments"></BlockTitle>
       </div>
       <div class="content">
-        <p><span class="blue">DUXGROUP VENTURES</span> IS A VENTURE CAPITAL FUND THAT INVESTS <span class="blue">€1-5 MILLION</span> IN IGAMING PROJECTS IN LINE WITH A <span class="blue">WIN-WIN MODEL</span> </p>
+        <p><span class="blue">DUXGROUP VENTURES</span> IS A VENTURE CAPITAL FUND THAT INVESTS <span class="blue">€1-5
+            MILLION</span> IN IGAMING PROJECTS IN LINE WITH A <span class="blue">WIN-WIN MODEL</span> </p>
         <div class="imgs">
-          <img src="../assets/images/ventures/investment/euro-big.png"  data-aos="fade-down" data-aos-duration="1500"/>
-          <img src="../assets/images/ventures/investment/dive-small.png" data-aos="fade-up" data-aos-duration="1500"/>
-          <img src="../assets/images/ventures/investment/euro-middle.png"  data-aos="fade-down" data-aos-duration="1500"/>
-          <img src="../assets/images/ventures/investment/euro-small.png" data-aos="fade-down" data-aos-duration="1500" />
-          <img src="../assets/images/ventures/investment/Union.png" data-aos="fade-left" data-aos-duration="1500"/>
+          <img src="../assets/images/ventures/investment/euro-big.png" data-aos="fade-down" data-aos-duration="1500" />
+          <img src="../assets/images/ventures/investment/dive-small.png" data-aos="fade-up" data-aos-duration="1500" />
+          <img src="../assets/images/ventures/investment/euro-middle.png" data-aos="fade-down"
+            data-aos-duration="1500" />
+          <img src="../assets/images/ventures/investment/euro-small.png" data-aos="fade-down"
+            data-aos-duration="1500" />
+          <img src="../assets/images/ventures/investment/Union.png" data-aos="fade-left" data-aos-duration="1500" />
         </div>
       </div>
     </div>
     <div class="principes">
       <div class="title">
-        <img src="../assets/images/ventures/principes/header.svg" />
-        <img src="../assets/images/ventures/principes/header320.svg" class="small-header" />
+        <BlockTitle title="Our principles"></BlockTitle>
       </div>
       <div class="items">
         <div class="item">
@@ -69,7 +70,8 @@
             <p>A Strong Team</p>
           </div>
           <div class="text">
-            <p>We have combined the best experts in the field of marketing, product, and operations in the online gambling sector.</p>
+            <p>We have combined the best experts in the field of marketing, product, and operations in the online
+              gambling sector.</p>
           </div>
         </div>
         <div class="item">
@@ -78,15 +80,15 @@
             <p>iGaming Network</p>
           </div>
           <div class="text">
-            <p>We have been working in the market for more than 8 years and can introduce you to all the right people.</p>
+            <p>We have been working in the market for more than 8 years and can introduce you to all the right people.
+            </p>
           </div>
         </div>
       </div>
     </div>
     <div class="invest">
       <div class="title">
-        <img src="../assets/images/ventures/invest/header.svg" />
-        <img src="../assets/images/ventures/invest/header320.svg" class="small-header"/>
+        <BlockTitle title="We don't just invest money"></BlockTitle>
       </div>
 
       <div class="list__title__mob">
@@ -95,7 +97,7 @@
       <div class="description">
         <div class="list">
           <div class="list__title">
-            <p>There are more than <span class="blue">350 professionals</span> in our team</p>
+            <p>There are more than <span class="blue"><br>350 professionals</span> in our team</p>
           </div>
           <div class="items">
             <ul>
@@ -114,16 +116,18 @@
         </div>
       </div>
       <div class="advert">
-        <p>WE ARE A <span class="blue">STRONG TEAM</span> THAT HAS BEEN WORKING IN IGAMING FOR MORE THAN <span class="blue">8 YEARS.</span>
-          WHEN WE INVEST, <span class="blue">WE NOT ONLY INVEST MONEY,</span> BUT ALL THE EXPERTISE WE HAVE GATHERED DURING OUR OWN BUSINESS ADVENTURE.
-          WE CAN OFFER ALL OUR <span class="blue">INVALUABLE KNOWLEDGE AND EXPERIENCE,</span> WHICH WE CALL <span class="blue"> SMART MONEY.</span>
+        <p>WE ARE A <span class="blue">STRONG TEAM</span> THAT HAS BEEN WORKING IN IGAMING FOR MORE THAN <span
+            class="blue">8 YEARS.</span>
+          WHEN WE INVEST, <span class="blue">WE NOT ONLY INVEST MONEY,</span> BUT ALL THE EXPERTISE WE HAVE GATHERED
+          DURING OUR OWN BUSINESS ADVENTURE.
+          WE CAN OFFER ALL OUR <span class="blue">INVALUABLE KNOWLEDGE AND EXPERIENCE,</span> WHICH WE CALL <span
+            class="blue"> SMART MONEY.</span>
           WE CAN HELP YOU <span class="blue">ENTER THE IGAMING MARKET</span> AND SAVE TIME.</p>
       </div>
     </div>
     <div class="introduce">
       <div class="title">
-        <img src="../assets/images/ventures/introduce/header.svg" />
-        <img src="../assets/images/ventures/introduce/header320.svg" class="small-header"/>
+        <BlockTitle title="Introduce yourself"></BlockTitle>
       </div>
       <div class="content">
         <div class="request">
@@ -136,7 +140,8 @@
             <li><span>What does your company do? What is its main idea?</span></li>
             <li><span>What are the advantages of your business? How can it compete on the market?</span></li>
             <li><span>How do you think we can help your company? What do you want from our collaboration?</span></li>
-            <li><span>Please leave your request in our contact form. These questions will help us get acquainted and find common ground.</span></li>
+            <li><span>Please leave your request in our contact form. These questions will help us get acquainted and
+                find common ground.</span></li>
           </ul>
         </div>
       </div>
@@ -162,301 +167,366 @@
 <script>
 import HeaderPart from "@/components/Header";
 import FooterPart from "@/components/Footer";
+import BlockTitle from '../components/BlockTitle.vue';
 export default {
   name: "Ventures-page",
-  data(){
+  data() {
     return {
       menuClosed: false,
     }
   },
   methods: {
-    openedMobMenu(value){
-      if(value){
+    openedMobMenu(value) {
+      if (value) {
         this.menuClosed = !this.menuClosed
-      }else{
+      } else {
         this.menuClosed = true
       }
     },
   },
-  components: {FooterPart, HeaderPart},
+  components: { FooterPart, HeaderPart, BlockTitle },
 }
 </script>
 
+    
 <style scoped lang="scss">
-.menu-opened-for-container{
+.menu-opened-for-container {
   padding: 25px 0;
 }
-.blue{
+
+.blue {
   color: #2F5BD8;
 }
-.small-header{
+
+.small-header {
   display: none;
 }
-@media screen and (min-width: 1024px) and ( max-width: 1439px){
-    .container{
-      &>*{
-        margin-top: -1px;
-      }
-      .header{
-        height: 417px !important;
-        &__menu{
-          //background-image: url('../assets/images/ventures/header1024.png') !important;
-          //min-height: 700px !important;
-          //.cubes{
-          //  .cube{
-          //
-          //  }
-          //  div:nth-child(1){
-          //    width: 20px !important;
-          //    margin-right: 10px !important;
-          //  }
-          //  div:nth-child(2){
-          //    width: 40px !important;
-          //    margin-right: 10px !important;
-          //  }
-          //  div:nth-child(3){
-          //    width: 60px !important;
-          //    margin-right: 12px !important;
-          //  }
-          //  div:nth-child(4){
-          //    width: 80px !important;
-          //    margin-right: 15px !important;
-          //  }
-          //  div:nth-child(5){
-          //    width: 100px !important;
-          //    margin-right: 20px !important;
-          //  }
-          //  div:nth-child(6){
-          //    width: 120px !important;
-          //    margin-right: 40px !important;
-          //  }
-          //  div:nth-child(7){
-          //    width: 140px !important;
-          //    margin-right: 60px !important;
-          //  }
-          //  div:nth-child(8){
-          //    width: 160px !important;
-          //    margin-right: 25px !important;
-          //  }
-          //}
-          min-height: 120px !important;
-          background-position:  top 0px right 0 !important;
-          .cubes{
-            div:nth-child(1){
-              width: 10px !important;
-              height: 60px !important;
-              margin-right: 10px !important;
-            }
-            div:nth-child(2){
-              width: 20px !important;
-              height: 80px !important;
-              margin-right: 10px !important;
-            }
-            div:nth-child(3){
-              width: 40px !important;
-              height: 100px !important;
-              margin-right: 12px !important;
-            }
-            div:nth-child(4){
-              width: 60px !important;
-              height: 110px !important;
-              margin-right: 15px !important;
-            }
-            div:nth-child(5){
-              width: 80px !important;
-              height: 110px !important;
-              margin-right: 18px !important;
-            }
-            div:nth-child(6){
-              width: 90px !important;
-              height: 110px !important;
-              margin-right: 20px !important;
-            }
-            div:nth-child(7){
-              width: 100px !important;
-              height: 110px !important;
-              margin-right: 25px !important;
-            }
-            div:nth-child(8){
-              width: 120px !important;
-              height: 110px !important;
-              margin-right: 20px !important;
-            }
-          }
-        }
-        .content{
-          p{
-            font-size: 85px !important;
-            line-height: 105% !important;
-            .brave{
-              width: 250px !important;
-              margin-right: 0px !important;
-              font-size: 22px !important;
-              line-height: 28px !important;
-              letter-spacing: 0.03em !important;
-              vertical-align: top !important;
-            }
-          }
-        }
-      }
-      .investment{
-        padding-top: 100px !important;
-        .content{
-          padding: 200px 0 125px 25px !important;
-          p{
-            width: 75% !important;
-            font-size: 50px !important;
-          }
-        }
-        .imgs{
-          img:first-child{
-            top: 20px !important;
-            right: 20% !important;
-          }
-          img:nth-child(5){
-            top: 230px !important;
-            right: 0 !important;
-          }
-          img:nth-child(3){
-            left: 150px !important;
-          }
-          img:nth-child(2){
-            bottom: 0 !important;
-            right: 200px !important;
-          }
-        }
-      }
-      .principes{
-        padding-top: 10px !important;
-        padding-bottom: 110px !important;
-        .items{
-          .item{
-            &__title{
-              font-weight: 400 !important;
-              font-size: 22px !important;
-              line-height: 28px !important;
-              letter-spacing: 0.03em !important;
-            }
-            .text{
-              font-weight: 400 !important;
-              font-size: 20px !important;
-              line-height: 27px !important;
-            }
-          }
-        }
-      }
-      .invest{
-        .list__title__mob{
-          margin-top: 70px;
-          display: block !important;
-          width: 75% !important;
-          padding: 0 25px;
-        }
-        .description{
-          margin-top: 20px !important;
-          .list{
-            &__title{
-              display: none !important;
-            }
-            .items{
-              margin: 0 !important;
-            }
-          }
-        }
-      }
-      .introduce{
-        .content{
-          flex-direction: column !important;
-          &>*{
-            width: 100% !important;
-          }
-          .request p{
-            font-size: 58px !important;
-          }
-          .list ul{
-            padding-left: 20px !important;
-            li{
-              font-size: 19px !important;
-              span{
-                left: 20px !important;
-              }
-            }
-          }
-        }
-      }
-      .contact{
-        padding: 100px 0 !important;
-      }
-    }
-}
-@media screen and (min-width: 769px) and (max-width: 1023px){
-  .container{
-    &>*{
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .container .contact .title {
+    width: 85% !important;
+  }
+
+  .container .invest .description .list__title p {
+    font-size: 36px !important;
+
+  }
+
+  .container .invest .list__title__mob p {
+    font-size: 38px !important;
+
+  }
+
+  .container {
+    &>* {
       margin-top: -1px;
     }
-    .header {
-      height: 400px !important;
-      &__menu {
-        //background-image: url('../assets/images/ventures/header768.png') !important;
-        min-height: 120px !important;
-        background-position:  top 0px right 0 !important;
 
-        .cubes{
-          div:nth-child(1){
-            width: 10px !important;
+    .header {
+      height: 570px !important;
+
+      &__menu {
+        //background-image: url('../assets/images/ventures/header1024.png') !important;
+        //min-height: 700px !important;
+        //.cubes{
+        //  .cube{
+        //
+        //  }
+        //  div:nth-child(1){
+        //    width: 20px !important;
+        //    margin-right: 10px !important;
+        //  }
+        //  div:nth-child(2){
+        //    width: 40px !important;
+        //    margin-right: 10px !important;
+        //  }
+        //  div:nth-child(3){
+        //    width: 60px !important;
+        //    margin-right: 12px !important;
+        //  }
+        //  div:nth-child(4){
+        //    width: 80px !important;
+        //    margin-right: 15px !important;
+        //  }
+        //  div:nth-child(5){
+        //    width: 100px !important;
+        //    margin-right: 20px !important;
+        //  }
+        //  div:nth-child(6){
+        //    width: 120px !important;
+        //    margin-right: 40px !important;
+        //  }
+        //  div:nth-child(7){
+        //    width: 140px !important;
+        //    margin-right: 60px !important;
+        //  }
+        //  div:nth-child(8){
+        //    width: 160px !important;
+        //    margin-right: 25px !important;
+        //  }
+        //}
+        min-height: 120px !important;
+        background-position: top 0px right 0 !important;
+
+        .cubes {
+          div:nth-child(1) {
+            width: 30px !important;
             height: 60px !important;
             margin-right: 10px !important;
           }
-          div:nth-child(2){
+
+          div:nth-child(2) {
             width: 20px !important;
             height: 80px !important;
             margin-right: 10px !important;
           }
-          div:nth-child(3){
+
+          div:nth-child(3) {
             width: 40px !important;
             height: 100px !important;
             margin-right: 12px !important;
           }
-          div:nth-child(4){
+
+          div:nth-child(4) {
             width: 60px !important;
             height: 110px !important;
             margin-right: 15px !important;
           }
-          div:nth-child(5){
+
+          div:nth-child(5) {
             width: 80px !important;
             height: 110px !important;
             margin-right: 18px !important;
           }
-          div:nth-child(6){
+
+          div:nth-child(6) {
             width: 90px !important;
             height: 110px !important;
             margin-right: 20px !important;
           }
-          div:nth-child(7){
+
+          div:nth-child(7) {
             width: 100px !important;
             height: 110px !important;
             margin-right: 25px !important;
           }
-          div:nth-child(8){
+
+          div:nth-child(8) {
             width: 120px !important;
             height: 110px !important;
             margin-right: 20px !important;
           }
         }
       }
-      .content{
-        p{
-          font-size: 68px !important;
+
+      .content {
+        p {
+          font-size: 134px !important;
           line-height: 105% !important;
-          .brave{
+
+          .brave {
+            width: 250px !important;
+            margin-right: 0px !important;
+            font-size: 34px !important;
+            line-height: 35px !important;
+            letter-spacing: 0.03em !important;
+            vertical-align: top !important;
+          }
+        }
+      }
+    }
+
+    .investment {
+      padding-top: 100px !important;
+
+      .content {
+        padding: 200px 0 125px 25px !important;
+
+        p {
+          width: 60% !important;
+          font-size: 58px !important;
+        }
+      }
+
+      .imgs {
+        img:first-child {
+          top: 20px !important;
+          right: 20% !important;
+        }
+
+        img:nth-child(5) {
+          top: 230px !important;
+          right: 0 !important;
+        }
+
+        img:nth-child(3) {
+          left: 150px !important;
+        }
+
+        img:nth-child(2) {
+          bottom: 0 !important;
+          right: 200px !important;
+        }
+      }
+    }
+
+    .principes {
+      padding-top: 10px !important;
+      padding-bottom: 110px !important;
+
+      .items {
+        .item {
+          &__title {
+            font-weight: 400 !important;
+            font-size: 28px !important;
+            line-height: 28px !important;
+            letter-spacing: 0.03em !important;
+          }
+
+          .text {
+            font-weight: 400 !important;
+            font-size: 26px !important;
+            line-height: 27px !important;
+          }
+        }
+      }
+    }
+
+    .invest {
+      .list__title__mob {
+        margin-top: 70px;
+        display: none !important;
+        width: 75% !important;
+        padding: 0 25px;
+      }
+
+      .description {
+        margin-top: 20px !important;
+
+        .list {
+          &__title {
+            display: block !important;
+          }
+
+          .items {
+            margin: 0 !important;
+          }
+        }
+      }
+    }
+
+    .introduce {
+      .content {
+
+
+        &>* {
+          width: 100% !important;
+        }
+
+        .request p {
+          font-size: 58px !important;
+        }
+
+        .list ul {
+          padding-left: 20px !important;
+
+          li {
+            font-size: 19px !important;
+
+            span {
+              left: 20px !important;
+            }
+          }
+        }
+      }
+    }
+
+    .contact {
+      padding: 100px 0 !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    &>* {
+      margin-top: -1px;
+    }
+
+    .header {
+      height: 400px !important;
+
+      &__menu {
+        //background-image: url('../assets/images/ventures/header768.png') !important;
+        min-height: 120px !important;
+        background-position: top 0px right 0 !important;
+
+        .cubes {
+          div:nth-child(1) {
+            width: 10px !important;
+            height: 60px !important;
+            margin-right: 10px !important;
+          }
+
+          div:nth-child(2) {
+            width: 20px !important;
+            height: 80px !important;
+            margin-right: 10px !important;
+          }
+
+          div:nth-child(3) {
+            width: 40px !important;
+            height: 100px !important;
+            margin-right: 12px !important;
+          }
+
+          div:nth-child(4) {
+            width: 60px !important;
+            height: 110px !important;
+            margin-right: 15px !important;
+          }
+
+          div:nth-child(5) {
+            width: 80px !important;
+            height: 110px !important;
+            margin-right: 18px !important;
+          }
+
+          div:nth-child(6) {
+            width: 90px !important;
+            height: 110px !important;
+            margin-right: 20px !important;
+          }
+
+          div:nth-child(7) {
+            width: 100px !important;
+            height: 110px !important;
+            margin-right: 25px !important;
+          }
+
+          div:nth-child(8) {
+            width: 120px !important;
+            height: 110px !important;
+            margin-right: 20px !important;
+          }
+        }
+      }
+
+      .content {
+        p {
+          font-size: 84px !important;
+          line-height: 105% !important;
+
+          .brave {
             margin: 0 !important;
             margin-right: 30px !important;
             margin-bottom: 10px !important;
-            font-size: 20px !important;
+            font-size: 22px !important;
             width: 160px !important;
             line-height: 25px !important;
             vertical-align: bottom !important;
-            svg{
+
+            svg {
               width: 15px !important;
               height: 15px !important;
             }
@@ -464,41 +534,49 @@ export default {
         }
       }
     }
-    .investment{
+
+    .investment {
       padding-top: 70px !important;
-      .content{
+
+      .content {
         padding: 90px 0 70px 8px !important;
-        p{
+
+        p {
           width: 75% !important;
           font-size: 38px !important;
         }
       }
-      .imgs{
-        img:nth-child(4){
+
+      .imgs {
+        img:nth-child(4) {
           top: 80px !important;
           left: 10px !important;
           width: 40px !important;
           height: 40px !important;
         }
-        img:nth-child(3){
+
+        img:nth-child(3) {
           top: 0px !important;
           left: 80px !important;
           width: 75px !important;
           height: 75px !important;
         }
-        img:first-child{
+
+        img:first-child {
           top: 20px !important;
           right: 20% !important;
           width: 140px !important;
           height: 110px !important;
         }
-        img:nth-child(5){
+
+        img:nth-child(5) {
           top: 150px !important;
           right: 20px !important;
           width: 180px !important;
           height: 175px !important;
         }
-        img:nth-child(2){
+
+        img:nth-child(2) {
           bottom: 0 !important;
           right: 200px !important;
           width: 68px !important;
@@ -506,24 +584,31 @@ export default {
         }
       }
     }
-    .principes{
+
+    .principes {
       padding-top: 10px !important;
       padding-bottom: 70px !important;
-      .items{
+
+      .items {
         padding: 50px 8px 0 8px !important;
-        .item{
-          &__title{
+
+        .item {
+          &__title {
             font-size: 20px !important;
             line-height: 25px !important;
             letter-spacing: 0.03em !important;
-            p{
+
+            p {
               margin-left: 20px !important;
             }
-            img{
-              width: 48px !important; ;
+
+            img {
+              width: 48px !important;
+              ;
             }
           }
-          .text{
+
+          .text {
             font-size: 16px !important;
             line-height: 20px !important;
             letter-spacing: 0.04em !important;
@@ -531,73 +616,90 @@ export default {
         }
       }
     }
-    .invest{
-      .list__title__mob{
+
+    .invest {
+      .list__title__mob {
         margin-top: 70px;
         display: block !important;
         width: 75% !important;
         padding: 0 25px;
-        p{
+
+        p {
           font-size: 38px !important;
           line-height: 48px !important;
           letter-spacing: 0.03em !important;
           text-transform: uppercase !important;
         }
       }
-      .description{
+
+      .description {
         margin-top: 20px !important;
-        .list{
-          &__title{
+
+        .list {
+          &__title {
             display: none !important;
           }
-          .items{
+
+          .items {
             margin-top: 0 !important;
           }
         }
-        .img{
+
+        .img {
           width: 50% !important;
         }
       }
-      .advert{
+
+      .advert {
         padding: 48px 8px !important;
-        p{
+
+        p {
           font-size: 34px !important;
           line-height: 110% !important;
         }
       }
     }
-    .introduce{
-      .content{
+
+    .introduce {
+      .content {
         flex-direction: column !important;
         margin-top: 55px !important;
-        &>*{
+
+        &>* {
           width: 100% !important;
         }
-        .request p{
+
+        .request p {
           font-size: 38px !important;
 
           line-height: 48px !important;
         }
-        .list ul{
+
+        .list ul {
           padding-left: 20px !important;
-          li{
+
+          li {
             font-size: 18px !important;
             line-height: 24px !important;
-            span{
+
+            span {
               left: 15px !important;
             }
           }
         }
       }
     }
-    .contact{
-       padding: 70px 0 !important;
-      .title{
+
+    .contact {
+      padding: 70px 0 !important;
+
+      .title {
         width: 95% !important;
         margin: 0 auto;
-        p{
+
+        p {
           font-weight: 400 !important;
-          font-size: 38px !important;
+          font-size: 58px !important;
           line-height: 48px !important;
           letter-spacing: 0.03em !important;
         }
@@ -605,57 +707,84 @@ export default {
     }
   }
 }
-@media screen and (min-width: 320px) and (max-width: 768px){
-  .small-header{
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .container .contact .form input {
+
+    border-radius: 4px !important;
+
+  }
+
+  .container .contact .form textarea {
+    border-radius: 4px !important;
+
+  }
+
+  .container .invest .list__title__mob {
+    width: 90% !important;
+  }
+
+  .small-header {
     display: block !important;
   }
+
   .container {
-    & > * {
+    &>* {
       margin-top: -1px;
     }
+
     .header {
-      height: 265px !important;
+      height: 290px !important;
+
       &__menu {
         //background-image: url('../assets/images/ventures/header320.png') !important;
         min-height: 120px !important;
         background-position: top 0px right 0 !important;
-        .cubes{
-          div:nth-child(1){
+
+        .cubes {
+          div:nth-child(1) {
             width: 10px !important;
             height: 30px !important;
             margin-right: 4px !important;
           }
-          div:nth-child(2){
+
+          div:nth-child(2) {
             width: 15px !important;
             height: 50px !important;
             margin-right: 8px !important;
           }
-          div:nth-child(3){
+
+          div:nth-child(3) {
             width: 15px !important;
             height: 60px !important;
             margin-right: 8px !important;
           }
-          div:nth-child(4){
+
+          div:nth-child(4) {
             width: 20px !important;
             height: 80px !important;
             margin-right: 8px !important;
           }
-          div:nth-child(5){
+
+          div:nth-child(5) {
             width: 30px !important;
             height: 90px !important;
             margin-right: 10px !important;
           }
-          div:nth-child(6){
+
+          div:nth-child(6) {
             width: 40px !important;
             height: 100px !important;
             margin-right: 10px !important;
           }
-          div:nth-child(7){
+
+          div:nth-child(7) {
             width: 50px !important;
             height: 120px !important;
             margin-right: 12px !important;
           }
-          div:nth-child(8){
+
+          div:nth-child(8) {
             width: 55px !important;
             height: 120px !important;
             margin: 0 !important;
@@ -665,12 +794,15 @@ export default {
 
       .content {
         padding: 16px !important;
+
         p {
           font-size: 34px !important;
           line-height: 110% !important;
           display: flex;
           flex-direction: column;
+
           .brave {
+            white-space: nowrap;
             margin: 0 !important;
             font-size: 16px !important;
             text-align: left !important;
@@ -678,7 +810,8 @@ export default {
             display: inline-flex !important;
             align-items: center;
             vertical-align: super !important;
-            svg{
+
+            svg {
               width: 10px !important;
               height: 10px !important;
             }
@@ -686,48 +819,58 @@ export default {
         }
       }
     }
-    .investment{
+
+    .investment {
       padding-top: 70px !important;
-      .title{
+
+      .title {
         padding: 0 15px !important;
-        img:nth-child(1){
+
+        img:nth-child(1) {
           display: none !important;
         }
       }
-      .content{
+
+      .content {
         padding: 100px 0 60px 8px !important;
-        p{
+
+        p {
           width: 90% !important;
           font-size: 22px !important;
           text-align: center !important;
         }
       }
-      .imgs{
-        img:nth-child(4){
+
+      .imgs {
+        img:nth-child(4) {
           top: 80px !important;
           left: 10px !important;
           width: 30px !important;
           height: 30px !important;
         }
-        img:nth-child(3){
+
+        img:nth-child(3) {
           top: 10px !important;
           left: 15% !important;
           width: 55px !important;
           height: 55px !important;
         }
-        img:first-child{
+
+        img:first-child {
           top: 40px !important;
           left: 35% !important;
           width: 80px !important;
           height: 66px !important;
         }
-        img:nth-child(5){
+
+        img:nth-child(5) {
           top: 0px !important;
           right: 10px !important;
           width: 105px !important;
           height: 100px !important;
         }
-        img:nth-child(2){
+
+        img:nth-child(2) {
           bottom: 0 !important;
           right: 30% !important;
           width: 74px !important;
@@ -735,32 +878,42 @@ export default {
         }
       }
     }
-    .principes{
-      .title{
+
+    .principes {
+      .title {
         padding: 0 15px !important;
-        img:first-child{
+
+        img:first-child {
           display: none;
         }
       }
+
       padding-top: 10px !important;
       padding-bottom: 70px !important;
-      .items{
+
+      .items {
         padding: 38px 16px 0 16px !important;
         flex-direction: column !important;
-        .item{
+
+        .item {
           width: 100% !important;
-          &__title{
+
+          &__title {
             font-size: 22px !important;
             line-height: 28px !important;
             letter-spacing: 0.03em !important;
-            p{
+
+            p {
               margin-left: 20px !important;
             }
-            img{
-              width: 48px !important; ;
+
+            img {
+              width: 48px !important;
+              ;
             }
           }
-          .text{
+
+          .text {
             font-size: 16px !important;
             line-height: 20px !important;
             letter-spacing: 0.04em !important;
@@ -768,37 +921,46 @@ export default {
         }
       }
     }
-    .invest{
-      .title{
+
+    .invest {
+      .title {
         padding: 0 16px !important;
-        img:first-child{
+
+        img:first-child {
           display: none;
         }
       }
-      .list__title__mob{
+
+      .list__title__mob {
         margin-top: 70px;
         display: block !important;
         padding: 0 16px;
-        p{
+
+        p {
           font-size: 22px !important;
           line-height: 28px !important;
           letter-spacing: 0.03em !important;
           text-transform: uppercase !important;
         }
       }
-      .description{
+
+      .description {
         margin-top: 20px !important;
         flex-direction: column !important;
         align-items: flex-start !important;
-        .list{
-          &__title{
+
+        .list {
+          &__title {
             display: none !important;
           }
-          .items{
+
+          .items {
             margin-top: 0 !important;
-            ul{
+
+            ul {
               padding: 0 16px !important;
-              li{
+
+              li {
                 font-size: 16px !important;
                 line-height: 20px !important;
                 margin-bottom: 15px !important;
@@ -808,17 +970,21 @@ export default {
             }
           }
         }
-        .img{
+
+        .img {
+          margin-top: 30px;
           width: 100% !important;
 
-          img{
+          img {
             width: 100% !important;
           }
         }
       }
-      .advert{
+
+      .advert {
         padding: 36px 17px 72px 17px !important;
-        p{
+
+        p {
           font-size: 16px !important;
           line-height: 20px !important;
           letter-spacing: 0.03em !important;
@@ -828,33 +994,41 @@ export default {
         }
       }
     }
-    .introduce{
-      .title{
+
+    .introduce {
+      .title {
         padding: 0 16px !important;
-        img:first-child{
+
+        img:first-child {
           display: none;
         }
       }
-      .content{
+
+      .content {
         flex-direction: column !important;
         margin-top: 40px !important;
         padding: 0 16px !important;
-        &>*{
+
+        &>* {
           width: 100% !important;
         }
-        .request p{
+
+        .request p {
           font-size: 22px !important;
           line-height: 28px !important;
           letter-spacing: 0.03em !important;
         }
-        .list ul{
+
+        .list ul {
           padding-left: 16px !important;
           margin-top: 36px !important;
-          li{
+
+          li {
             font-size: 14px !important;
             margin-bottom: 20px !important;
             letter-spacing: 0.04em !important;
-            span{
+
+            span {
               left: 10px !important;
               font-size: 14px !important;
               line-height: 18px !important;
@@ -864,21 +1038,28 @@ export default {
         }
       }
     }
-    .contact{
+
+    .contact {
       padding: 50px 0 !important;
-      .title{
+
+      .title {
         width: 95% !important;
         margin: 0 auto;
-        p{
+
+        p {
           font-weight: 400 !important;
           font-size: 22px !important;
           line-height: 28px !important;
           letter-spacing: 0.03em !important;
         }
       }
-      .form{
+
+      .form {
         margin-top: 30px !important;
-        input, textarea, p{
+
+        input,
+        textarea,
+        p {
           width: 288px !important;
         }
       }
@@ -890,16 +1071,19 @@ export default {
   0% {
     left: 0;
   }
+
   100% {
     left: 100%;
     width: 0 !important;
   }
 }
-.container{
-  & > * {
+
+.container {
+  &>* {
     margin-top: -1px;
   }
-  .header{
+
+  .header {
     background: #010C28 url('../assets/images/gradient.png') center;
     background-size: cover;
     //background: linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28);
@@ -907,14 +1091,16 @@ export default {
     overflow: hidden;
     z-index: 1;
     height: 702px;
-    &__menu{
+
+    &__menu {
       z-index: 10;
       //background-image: url('../assets/images/ventures/header-bg.png');
       //background-repeat: no-repeat;
       min-height: 300px;
       //padding: 25px;
       background-position: right;
-      .cubes{
+
+      .cubes {
         position: absolute;
         right: 0;
         margin: 0;
@@ -922,49 +1108,60 @@ export default {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
-        .cube{
+
+        .cube {
           //background-color: red;
           border: 1px solid;
           border-image-slice: 1;
           border-image-source: linear-gradient(to bottom, #0046b0, #0058ba, #0069c2, #0079c8, #0089cd);
         }
-        div.cube{
+
+        div.cube {
           margin-right: 40px;
         }
-        div:nth-child(1){
+
+        div:nth-child(1) {
           width: 50px;
           height: 50px;
         }
-        div:nth-child(2){
+
+        div:nth-child(2) {
           width: 70px;
           height: 100px;
         }
-        div:nth-child(3){
+
+        div:nth-child(3) {
           //animation: 1s ease-in 2s 1 run;
           width: 90px;
           height: 150px;
         }
-        div:nth-child(4){
+
+        div:nth-child(4) {
           width: 110px;
           height: 200px;
         }
-        div:nth-child(5){
+
+        div:nth-child(5) {
           width: 130px;
           height: 250px;
         }
-        div:nth-child(6){
+
+        div:nth-child(6) {
           width: 150px;
           height: 300px;
         }
-        div:nth-child(7){
+
+        div:nth-child(7) {
           width: 170px;
           height: 300px;
         }
-        div:nth-child(8){
+
+        div:nth-child(8) {
           width: 190px;
           height: 300px;
         }
-        .changeable{
+
+        .changeable {
           width: 100%;
           height: 100%;
           background-image: linear-gradient(to bottom, #02185b, #001856, #001751, #00174c, #001647);
@@ -978,7 +1175,8 @@ export default {
         }
       }
     }
-    .animatin-header_width{
+
+    .animatin-header_width {
       //margin-top: -90px;
       //z-index: -99;
       //text-align: right;
@@ -989,13 +1187,14 @@ export default {
       top: 0;
       left: 50%;
       //border: 1px solid red;
-      width:50%;
+      width: 50%;
       height: 400px;
       overflow: hidden;
-      -webkit-animation: linear ;
+      -webkit-animation: linear;
       -webkit-animation-name: run;
       -webkit-animation-duration: 3s;
-      img{
+
+      img {
         width: auto;
         height: 200px;
         overflow: hidden;
@@ -1004,9 +1203,10 @@ export default {
     }
 
 
-    .content{
+    .content {
       padding: 25px;
-      .p{
+
+      .p {
         font-family: 'Oxygen', sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -1016,8 +1216,9 @@ export default {
         text-transform: uppercase;
         color: #F0F0F0;
         margin: 0;
+
         //width: 1350px;
-        .brave{
+        .brave {
           font-family: 'Oxygen', sans-serif, sans-serif;
           font-style: normal;
           width: 300px;
@@ -1031,32 +1232,39 @@ export default {
           letter-spacing: 0.03em;
           text-transform: uppercase;
           color: #F0F0F0;
-          margin: 10px 70px 0px 0;
+          margin: 37px 70px 0px 0;
           vertical-align: top;
-          svg{
+
+          svg {
+            margin-bottom: 26px;
             margin-right: 11px;
             vertical-align: baseline;
-            width: 20px ;
-            height: 20px ;
+            width: 20px;
+            height: 20px;
           }
         }
       }
     }
   }
-  .investment{
+
+  .investment {
     width: 100%;
     background-color: #010C28;
     padding-top: 150px;
-    .title{
+
+    .title {
       padding: 0 25px;
-      img{
+
+      img {
         width: 100%;
       }
     }
-    .content{
+
+    .content {
       padding: 250px 25px;
       position: relative;
-      p{
+
+      p {
         font-family: 'Oxygen', sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -1067,28 +1275,33 @@ export default {
         letter-spacing: 0.02em;
         text-transform: uppercase;
       }
-      .imgs{
-        img:first-child{
+
+      .imgs {
+        img:first-child {
           position: absolute;
           right: 30%;
           top: 50px;
         }
-        img:nth-child(2){
+
+        img:nth-child(2) {
           position: absolute;
           bottom: 200px;
           right: 40%;
         }
-        img:nth-child(3){
+
+        img:nth-child(3) {
           position: absolute;
           top: 0px;
           left: 300px;
         }
-        img:nth-child(4){
+
+        img:nth-child(4) {
           position: absolute;
           top: 125px;
           left: 50px;
         }
-        img:nth-child(5){
+
+        img:nth-child(5) {
           position: absolute;
           top: 300px;
           right: 150px;
@@ -1096,25 +1309,31 @@ export default {
       }
     }
   }
-  .principes{
+
+  .principes {
     background-color: #010C28;
     position: relative;
     padding-bottom: 180px;
+
     //margin-top: 90px;
-    .title{
+    .title {
       padding: 0 25px;
-      img{
+
+      img {
         width: 100%;
       }
     }
-    .items{
-      padding: 100px 25px 0 25px;
+
+    .items {
+      padding: 93px 0 0 0;
       display: flex;
       justify-content: space-around;
       align-items: flex-start;
-      .item{
+
+      .item {
         width: 28%;
-        &__title{
+
+        &__title {
           display: flex;
           align-items: center;
           font-family: 'Oxygen', sans-serif, sans-serif;
@@ -1125,18 +1344,21 @@ export default {
           letter-spacing: 0.03em;
           text-transform: uppercase;
           color: #F0F0F0;
-          p{
+
+          p {
             margin-left: 35px;
           }
         }
-        .text{
+
+        .text {
           font-family: 'Exo', sans-serif;
           font-style: normal;
           font-weight: 400;
           font-size: 26px;
           line-height: 125%;
           color: #F0F0F0;
-          p{
+
+          p {
             margin: 0;
           }
 
@@ -1144,17 +1366,22 @@ export default {
       }
     }
   }
-  .invest{
+
+  .invest {
     background-color: #010C28;
-    .title{
+
+    .title {
       padding: 1px 25px;
-      img{
+
+      img {
         width: 100%;
       }
     }
-    .list__title__mob{
+
+    .list__title__mob {
       display: none;
-      p{
+
+      p {
         font-family: 'Oxygen', sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -1166,19 +1393,22 @@ export default {
         color: #F0F0F0;
       }
     }
-    .description{
+
+    .description {
       padding: 0 25px;
       margin-top: 90px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      .list{
+
+      .list {
         width: 45%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        &__title{
-          p{
+
+        &__title {
+          p {
             font-family: 'Oxygen', sans-serif;
             font-style: normal;
             font-weight: 400;
@@ -1190,11 +1420,14 @@ export default {
             color: #F0F0F0;
           }
         }
-        .items{
+
+        .items {
           margin-top: 50px;
-          ul{
+
+          ul {
             list-style-image: url("../assets/images/ventures/invest/dot.svg");
-            li{
+
+            li {
               font-family: 'Oxygen', sans-serif;
               font-style: normal;
               font-weight: 400;
@@ -1204,27 +1437,33 @@ export default {
               margin-bottom: 20px;
               text-transform: uppercase;
               color: #F0F0F0;
-              &::before{
+
+              &::before {
                 margin-left: 15px;
               }
             }
-            li:before{
+
+            li:before {
               margin-left: 15px;
             }
           }
         }
       }
-      .img{
+
+      .img {
         width: 40%;
-        img{
+
+        img {
           width: 100%;
           float: right;
         }
       }
     }
-    .advert{
+
+    .advert {
       padding: 40px 80px 150px 80px;
-      p{
+
+      p {
         font-family: 'Oxygen', sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -1238,28 +1477,34 @@ export default {
         margin: 0 auto;
       }
     }
-    @media (min-width: 1024px) and (max-width: 1439px){
-      .advert{
+
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      .advert {
         padding: 60px 32px 110px 32px !important;
-        p{
+
+        p {
           //width: 100% !important;
         }
       }
     }
-    @media (min-width: 769px) and (max-width: 1023px){
-      .advert{
+
+    @media (min-width: 769px) and (max-width: 1023px) {
+      .advert {
         padding: 48px 8px 70px 8px !important;
-        p{
+
+        p {
           //width: 100% !important;
           font-size: 34px !important;
           line-height: 110% !important;
         }
       }
     }
-    @media (min-width: 320px) and (max-width: 768px){
-      .advert{
+
+    @media (min-width: 320px) and (max-width: 768px) {
+      .advert {
         padding: 36px 16px 70px 16px !important;
-        p{
+
+        p {
           font-size: 16px !important;
           line-height: 20px !important;
           letter-spacing: 0.03em !important;
@@ -1267,23 +1512,29 @@ export default {
       }
     }
   }
-  .introduce{
+
+  .introduce {
     background-color: #010C28;
-    .title{
+
+    .title {
       padding: 0 25px;
-      img{
+
+      img {
         width: 100%;
       }
     }
-    .content{
+
+    .content {
       padding: 0 25px;
       display: flex;
       margin-top: 90px;
       justify-content: space-between;
       align-items: flex-start;
-      .request{
+
+      .request {
         width: 44%;
-        p{
+
+        p {
           font-family: 'Oxygen', sans-serif;
           font-style: normal;
           font-weight: 400;
@@ -1296,16 +1547,20 @@ export default {
           color: #F0F0F0;
         }
       }
-      .list{
+
+      .list {
         width: 40%;
-        ul{
+
+        ul {
           list-style-image: url("../assets/images/ventures/invest/dot.svg");
-          li{
-            &:not(:last-child){
+
+          li {
+            &:not(:last-child) {
               margin-bottom: 25px;
             }
-            span{
-              font-family: 'Exo', sans-serif;
+
+            span {
+              font-family: 'Oxygen', sans-serif;
               font-style: normal;
               font-weight: 400;
               font-size: 20px;
@@ -1320,13 +1575,16 @@ export default {
       }
     }
   }
-  .contact{
+
+  .contact {
     padding: 150px 0;
     background-color: #010C28;
-    .title{
+
+    .title {
       width: 70%;
       margin: 0 auto;
-      p{
+
+      p {
         margin: 0;
         font-family: 'Oxygen', sans-serif;
         font-style: normal;
@@ -1339,36 +1597,45 @@ export default {
         color: #F0F0F0;
       }
     }
-    .form{
+
+    .form {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       margin: 0 auto;
       margin-top: 90px;
-      input, textarea{
+
+      input,
+      textarea {
         width: 100%;
       }
-      input{
+
+      input {
         border: 1px solid #828FA1;
         background: transparent;
-        padding: 15px 0 15px  15px;
+        padding: 15px 0 15px 15px;
         border-radius: 10px;
-        color:white;
+        color: #828FA1;
+        font-size: 16px;
         width: 510px;
       }
-      textarea{
+
+      textarea {
         border: 1px solid #828FA1;
         background: transparent;
-        padding: 15px 0 15px  15px;
+        padding: 15px 0 15px 15px;
         margin-top: 20px;
         border-radius: 10px;
         resize: none;
-        color: white;
+        color: #828FA1;
+        font-size: 16px;
         width: 510px;
+        min-height: 108px;
       }
-      p{
-        padding: 17px 0 17px  15px;
+
+      p {
+        padding: 17px 0 17px 15px;
         font-family: 'Oxygen', sans-serif;
         font-style: normal;
         font-weight: 700;
@@ -1385,12 +1652,14 @@ export default {
       }
     }
   }
-  .footer{
+
+  .footer {
     background-color: #010C28;
     padding: 0 25px !important;
   }
-  @media (min-width: 320px) and (max-width: 768px){
-    .footer{
+
+  @media (min-width: 320px) and (max-width: 768px) {
+    .footer {
       padding: 0 16px !important;
     }
   }
