@@ -26,6 +26,7 @@
     <div class="history">
       <div class="title">
         <BlockTitle title="what we are?"></BlockTitle>
+        <BlockTitle></BlockTitle>
       </div>
       <p>
         When DUXGroup started in <span class="blue">2020</span>, we set out to make history by creating something great,
@@ -117,8 +118,7 @@
 
     <div class="partnership">
       <div class="divide_partnership">
-        <img src="../assets/images/whatweare.svg" />
-        <img src="../assets/images/partnership320.svg" class="small-header" />
+        <BlockTitle title="what we do?"></BlockTitle>
       </div>
       <div class="title">
         <p>Synergy and partnership</p>
@@ -216,8 +216,7 @@
 
     <div class="slider">
       <div class="header-sldier">
-        <img src="../assets/images/we-have.svg" />
-        <img src="../assets/images/we-have320.svg" class="small-header" />
+        <BlockTitle title="what do we have?"></BlockTitle>
       </div>
       <div class="title">
         <p>We create <span class="blue">products</span> that players <span class="blue">love</span></p>
@@ -373,8 +372,7 @@
     </div>
     <div class="mission">
       <div class="title">
-        <img src="../assets/images/mission-divider.svg" />
-        <img src="../assets/images/mission-divider320.svg" class="small-header" />
+        <BlockTitle title="our mission"></BlockTitle>
       </div>
       <div class="content">
         <p>Make <span class="blue">big waves</span> in the iGaming segment together with <span class="blue">our
@@ -387,8 +385,7 @@
     </div>
     <div class="gambling">
       <div class="title">
-        <img src="../assets/images/gambling-bg.png" />
-        <img src="../assets/images/gambling320.svg" class="small-header" />
+        <BlockTitle title="safe gambling"></BlockTitle>
       </div>
       <div class="content">
         <div class="figure">
@@ -410,8 +407,7 @@
     </div>
     <div class="events">
       <div class="divider_event">
-        <img src="../assets/images/event-divider.svg" />
-        <img src="../assets/images/events320.svg" class="small-header" />
+        <BlockTitle title="events"></BlockTitle>
       </div>
       <div class="content">
         <div class="title">
@@ -431,12 +427,29 @@
             <img src="../assets/images/organizations/london.svg" />
           </div>
         </div>
+        <div class="organizations__mob">
+          <div style="display:flex; justify-content:space-between; align-items:center">
+            <div class="img">
+              <img src="../assets/images/organizations/sigma.svg" />
+            </div>
+            <div class="img">
+              <img src="../assets/images/organizations/affiliate.svg" />
+            </div>
+          </div>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-top:70px">
+            <div class="img">
+              <img src="../assets/images/organizations/london.svg" />
+            </div>
+            <div class="img">
+              <img src="../assets/images/organizations/asia.png" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="holding">
       <div class="title">
-        <img src="../assets/images/holding/header.svg" />
-        <img src="../assets/images/holding/header320.svg" class="small-header" />
+        <BlockTitle title="holding news"></BlockTitle>
       </div>
       <div class="slider-holding">
         <div class="items">
@@ -540,8 +553,7 @@
     </div>
     <div class="offices">
       <div class="title">
-        <img src="../assets/images/offices/Header.png" />
-        <img src="../assets/images/offices320.svg" class="small-header" />
+        <BlockTitle title="our offices"></BlockTitle>
       </div>
       <div>
         <div class="office">
@@ -783,6 +795,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.organizations__mob {
+  display: none;
+}
+
 .max-width {
   width: max-content !important;
 }
@@ -1091,6 +1107,8 @@ export default {
     }
   }
 }
+
+
 
 @media screen and (min-width: 320px) and (max-width: 400px) {
   .partnership {
@@ -2214,7 +2232,39 @@ export default {
 
 }
 
+@media screen and (max-width:450px) {
+  .organizations__mob {
+    display: contents;
+  }
+
+  .organizations__flex {
+    display: flex;
+    justify-content: center;
+  }
+
+  .organizations {
+    display: none !important;
+  }
+
+  .container .events .content .title p {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 500px) {
+  .offices div .office img:nth-child(1) {
+    border-radius: 4px !important;
+  }
+
+  .offices div .office img:nth-child(2) {
+    border-radius: 4px !important;
+  }
+
+  .offices div .office img:nth-child(3) {
+    border-radius: 4px !important;
+  }
+
   .arrows {
     margin-top: -60px !important;
   }
@@ -2697,7 +2747,7 @@ export default {
           padding-left: 0 !important;
 
           .item {
-            width: 228px !important;
+            width: 248px !important;
             min-height: 0 !important;
             padding: 0 20px !important;
 
@@ -3097,7 +3147,11 @@ export default {
       }
 
       &:hover>.anime .view4 img:nth-child(2) {
-        left: 18% !important;
+        right: 0 !important;
+      }
+
+      &:hover>.anime .view4 img:nth-child(3) {
+        right: 10px !important;
       }
 
       & img:first-child:not(.imgs img) {
@@ -3214,14 +3268,14 @@ export default {
             width: auto;
             position: absolute;
             bottom: -3px;
-            left: 10%;
+            left: 37px !important;
           }
 
           img:nth-child(3) {
             width: auto;
             position: absolute;
             bottom: -3px;
-            right: 0;
+            right: -35px !important;
           }
         }
       }
@@ -3533,9 +3587,9 @@ export default {
         left: 35% !important;
       }
 
-      &:hover>.anime .view4 img:nth-child(2) {
-        left: 18% !important;
-      }
+      // &:hover>.anime .view4 img:nth-child(2) {
+      //   left: 10% !important;
+      // }
 
       & img:first-child:not(.imgs img) {
         width: 100%;

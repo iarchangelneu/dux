@@ -13,6 +13,25 @@
         <router-link to="/contact">CONTACTS</router-link>
       </div>
     </div>
+    <div style="border-top: 1px solid #828FA1 !important;">
+      <div class="footer__mob">
+
+        <div style="display:flex; justify-content: space-between; align-items: center;margin-top: 16px;">
+          <div class="logo">
+            <img src="../assets/images/logo.svg">
+          </div>
+          <div class="link">
+            <router-link to="/contact">CONTACTS</router-link>
+          </div>
+        </div>
+        <div class="menu">
+          <router-link to="/">INSTAGRAM</router-link>
+          <router-link to="/">FACEBOOK</router-link>
+          <router-link to="/">LINKEDIN</router-link>
+        </div>
+
+      </div>
+    </div>
   </div>
 </template>
 
@@ -24,18 +43,21 @@ export default {
 
 <style scoped lang="scss">
 @media screen and (min-width: 320px) and (max-width: 500px) {
+  .footer__mob {
+    display: contents !important;
+    padding: 35px 0;
+  }
+
   .footer {
-    flex-direction: column !important;
-    align-items: inherit !important;
+    display: none !important;
 
     .menu {
       display: flex;
-      flex-direction: column;
       justify-content: space-between;
       align-items: center;
 
       a {
-        margin: 15px 0px !important;
+        margin: 26px 0px !important;
         text-align: center;
       }
     }
@@ -47,6 +69,10 @@ export default {
       }
     }
   }
+}
+
+.footer__mob {
+  display: none;
 }
 
 .footer {
