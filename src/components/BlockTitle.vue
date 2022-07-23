@@ -90,4 +90,12 @@ export default {
             font-size: 14px;
         }
     }
+    @media screen and (max-width: 330px) {
+        .blockTitle__text{
+            top: 10px;
+        }
+        .blockTitle__text{
+            font-size: 14px;
+        }
+    }
 </style>

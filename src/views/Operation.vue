@@ -8,7 +8,7 @@
         <h1 class="operation-banner__title">
           <p class="operation-us"><img class="span-svg" src="../assets/images/contact/Ellipse1.svg" alt="elipse">DUXGroup
             Operation</p>
-          a Team of real &nbsp; <span class="color-blue ndk"> professionals</span>
+          a Team &nbsp; of real <br> <span class="color-blue ndk"> professionals</span>
         </h1>
       </div>
     </div>
@@ -64,7 +64,7 @@
         <div class="mechanism mechanism-bi" @click="$modal.show('bi-modal');">
           <img alt="shestiryonka" class='medium-shestiryonka' src="../assets/images/operation/shestiryonka.svg"/>
           <p class="mechanism-text medium-circle">
-            BI Analytics
+            BI <br> Analytics
           </p>
         </div>
         <div class="mechanism mechanism-crm" @click="$modal.show('crm-modal');">
@@ -82,7 +82,7 @@
         <div class="mechanism mechanism-team" @click="$modal.show('team-modal');">
           <img alt="shestiryonka" class='medium-shestiryonka' src="../assets/images/operation/shestiryonka.svg"/>
           <p class="mechanism-text medium-circle">
-            Product Team
+            Product <br> Team
           </p>
         </div>
         <div class="mechanism mechanism-pr" @click="$modal.show('pr-modal');">
@@ -301,7 +301,8 @@
       </div>
       <div class="divider">
         <!-- <img alt="header" src="../assets/images/operation/Header.svg"/> -->
-        <BlockTitle title="What makes us unique?"></BlockTitle>
+        <BlockTitle title="What makes us unique?" v-if="version == 1"></BlockTitle>
+        <BlockTitle title="About our team" v-else></BlockTitle>
       </div>
       <div class="unique">
         <div class="unique-container">
@@ -378,8 +379,9 @@
           </div>
         </div>
       </div>
-      <div class="divider">
-        <img src="../assets/images/operation/brands.svg"/>
+      <div class="divider div-brands">
+        <!-- <img src="../assets/images/operation/brands.svg"/> -->
+        <BlockTitle title="our brands"></BlockTitle>
       </div>
       <div class="brands">
         <div class="brands-container">
@@ -478,7 +480,9 @@ export default {
 
   name: "Operation-page",
   data() {
-    return {}
+    return {
+      version: 1,
+    }
   },
   components: {Header, FooterPart, BlockTitle},
   methods: {
@@ -488,12 +492,33 @@ export default {
   },
   mounted() {
     this.show()
+    let width = window.innerWidth
+    if(width > 480){
+      this.version = 1
+    }
+    else {
+      this.version = 0
+    }
   }
 
 }
 </script>
 
 <style scoped lang="scss">
+.unique-container-left-side-dote{
+  margin-right: 105px !important;  
+}
+@media screen and (max-width: 1024px) {
+  .unique-container-left-side-dote{
+  margin-right: 65px !important;  
+}
+}
+@media screen and (max-width: 768px) {
+  .unique-container-left-side-dote{
+  margin-right: 10% !important;  
+}
+}
+
 .modal-container {
   z-index: 99999999;
 
@@ -1093,10 +1118,11 @@ export default {
 
   &-container {
 
-    padding: 10px 25px 80px 25px;
+    // padding: 10px 25px 80px 25px;
+    padding: 10px 0px 80px 0px;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: calc(100% - 50px);
     border-top: 1px solid #828FA1;
 
     &:nth-child(1) {
@@ -1911,8 +1937,11 @@ export default {
     }
   }
   .brands-container {
-    width: 134px;
-    height: 82px;
+    // width: 134px;
+    width: 42.50vw;
+    height: 26.25vw;
+    margin-top: 16px;
+    // height: 82px;
 
     & > img {
       width: 99px;
@@ -1922,10 +1951,10 @@ export default {
 
 @media only screen and (max-width: 663px) {
   .unique-container {
-    padding: 15px 16px 24px 16px;
+    // padding: 15px 16px 24px 16px;
 
     &:nth-child(1) {
-      margin-top: 72px;
+      margin-top: 32px;
     }
 
     &:nth-child(4) {
@@ -1938,16 +1967,29 @@ export default {
   .unique-container-right-side-text {
     margin-top: 10px;
   }
+  .unique-container-left-side{
+    align-items: flex-start;
+  }
   .unique-container-left-side-dote {
-    margin: 10px;
+    // margin: 10px;
+    margin-right: 8px !important;
+    padding-top: 3px;
+    img{
+      width: 10px;
+      height: 10px;
+    }
   }
   .unique-container-left-side-title {
     max-width: 100% !important;
     font-size: 20px !important;
+    line-height: 25px;
+    letter-spacing: 0.03em;
   }
   .unique-container-right-side-text {
     max-width: 100% !important;
     font-size: 14px !important;
+    line-height: 18px;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -1960,12 +2002,19 @@ export default {
     width: 70px !important;
   }
   .divider {
+    padding-top: 25px !important;
+  }
+  .div-brands{
     padding-top: 72px !important;
   }
 
   .operation-banner__title {
-    margin-top: 128px !important;
+    margin-top: 88px !important;
+    letter-spacing: 0.03em;
 
+  }
+  .operation-banner{
+    padding: 0 16px;
   }
   .operation-us {
     width: 100%;
@@ -2001,75 +2050,94 @@ export default {
 
 
     &:nth-child(1) {
-      left: 0;
-      top: 13%;
-
+      // left: 0;
+      // top: 13%;
+      top: 14.69vw;
+      left: 10vw;
     }
 
     &:nth-child(2) {
-      left: 25%;
-      top: 8%;
+      // left: 25%;
+      // top: 8%;
+      left: 38.33vw;
+      top: 14.69vw;
     }
 
     &:nth-child(3) {
-      left: auto;
-      right: 5%;
-      top: 16%;
+      left: unset;
+      // right: 5%;
+      // top: 16%;
+      top: 36.88vw;
+      right: 6.25vw;
     }
 
     &:nth-child(4) {
-      top: 21%;
-      right: 39%;
-      left: auto;
+      // top: 21%;
+      // right: 39%;
+      top: 39.69vw;
+      left: 6.25vw;
     }
 
     &:nth-child(5) {
-      left: auto;
-      right: 8%;
-      top: 26%;
+      left: unset;
+      // right: 8%;
+      // top: 26%;
+      top: 60.63vw;
+      right: 15.63vw;
     }
 
     &:nth-child(6) {
-      top: 43%;
-      right: auto;
+      // top: 43%;
+      top: 86.88vw;
+      left: 5.31vw;
+      right: unset;
     }
 
     &:nth-child(7) {
-      top: 40%;
-      left: 25%;
+      // top: 40%;
+      // left: 25%;
+      top: 88.75vw;
+      left: 30.63vw;
     }
 
     &:nth-child(8) {
-      top: 41%;
-      right: 3%;
+      // top: 41%;
+      // right: 3%;
+      top: 92.50vw;
+      right: 6vw;
     }
 
     &:nth-child(9) {
-
-
-      top: 52%;
-
-      left: auto;
-      right: 43%;
+      // top: 52%;
+      // left: auto;
+      // right: 43%;
+      left: 4.69vw;
+      top: 117.81vw;
+      right: unset;
     }
 
     &:nth-child(10) {
-
       left: auto;
-      right: 3%;
-      top: 52%;
+      // right: 3%;
+      // top: 52%;
+      right: 15.31vw;
+      top: 115.63vw;
     }
 
     &:nth-child(11) {
-      top: 72%;
-      left: auto;
-      right: 43%;
+      // top: 72%;
+      // left: auto;
+      // right: 43%;
+      top: 165.63vw;
+      left: 3.75vw;
+      right: unset;
     }
 
     &:nth-child(12) {
-      top: 65%;
-      right: 0;
-
+      // top: 65%;
+      // right: 0;
+      top: 149.06vw;
+      right: 4.38vw;
     }
 
     &-text {
@@ -2091,6 +2159,10 @@ export default {
   .brands-title {
     font-size: 22px !important;
   }
+  .brands{
+    padding-top: 36px;
+    justify-content: space-evenly;
+  }
   .game-provider-title {
     font-size: 20px !important;
   }
@@ -2101,13 +2173,14 @@ export default {
 
 @media only screen and (max-width: 536px) {
   .brands-container:nth-child(4) {
-    margin-top: 17px;
+    // margin-top: 17px;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .operation-us {
     margin: 0 !important;
+    margin-bottom: 10px !important;
   }
 }
 
@@ -2115,12 +2188,164 @@ export default {
   .brands-container:nth-child(3) {
     margin-top: 17px;
   }
-}
+  .department__title{
+    padding: 0 16px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  .department{
+    padding-top: 32px;
+  }
 
-@media only screen and (max-width: 338px) {
-  .ndk {
-    position: absolute;
-    top: 210px;
+  .mechanism-vip, .mechanism-antifraud, .mechanism-bi, .mechanism-team{
+    // width: 104px;
+    // height: 104px;
+    width: 32.50vw;
+    height: 32.50vw;
+  }
+  .mechanism-support,.mechanism-hr, .mechanism-design, .mechanism-crm{
+    // width: 78.74px;
+    // height: 78.74px;
+    width: 24.6vw;
+    height: 24.6vw;
+  }
+  .mechanism-legal, .mechanism-development, .mechanism-pr, .mechanism-psp{
+    // width: 149px;
+    // height: 149px;
+    width: 46.56vw;
+    height: 46.56vw;
+  }
+  .mechanism-text{
+    line-height: 10px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .department__title{
+    padding: 0 16px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  .department{
+    padding-top: 32px;
+  }
+
+  .mechanism-vip, .mechanism-antifraud, .mechanism-bi, .mechanism-team{
+    // width: 104px;
+    // height: 104px;
+    width: 32.50vw;
+    height: 32.50vw;
+  }
+  .mechanism-support,.mechanism-hr, .mechanism-design, .mechanism-crm{
+    // width: 78.74px;
+    // height: 78.74px;
+    width: 24.6vw;
+    height: 24.6vw;
+
+  }
+  .mechanism-legal, .mechanism-development, .mechanism-pr, .mechanism-psp{
+    // width: 149px;
+    // height: 149px;
+    width: 46.56vw;
+    height: 46.56vw;
+  }
+  .mechanism-text{
+    line-height: 10px;
+    width: 15.94vw;
+    height: 15.94vw;
+  }
+  .medium-circle{
+    width: 21.56vw;
+    height: 21.56vw;
+  }
+  .big-circle{
+    width: 30.31vw;
+    height: 30.31vw;
+  }
+  .mechanism img{
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .unique-container{
+    width: calc(100% - 32px);
+  }
+  .brands-title-container{
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .payment-provider-title{
+    margin-top: 36px;
+  }
+  .game-provider .provider-row, .payment-provider-row{
+    padding-top: 24px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 428px) {
+  .operation-us{
+    font-size: 20px !important;
+    max-width: 270px !important;
+  }
+  .operation-banner__title{
+    font-size: 40px !important;
+  }
+  .mechanism-text{
+    font-size: 10px !important;
+  }
+  .unique-container-left-side-title{
+    font-size: 26px !important;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+  }
+  .unique-container-right-side-text{
+    font-size: 18px !important;
+    line-height: 20px;
+  }
+  .department__title{
+    font-size: 26px !important;
+    padding: 0 32px;
+  }
+  .divider{
+    padding-top: 195px !important;
+  }
+
+  .brands-title{
+    font-size: 27px !important;
+    letter-spacing: 0.08em;
+  }
+
+  .game-provider-title{
+    font-size: 26px !important;
+  }
+  .provider-img{
+    width: 130px;
+  }
+  .brands-title-container{
+    padding-top: 22px;
+  }
+
+  .payment-provider-title{
+    font-size: 26px !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .brands-container:nth-child(1) img{
+    width: 66px;
+  }
+}
+
+// @media only screen and (max-width: 338px) {
+//   .ndk {
+//     position: absolute;
+//     top: 210px;
+//   }
+// }
 </style>
