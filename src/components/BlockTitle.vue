@@ -55,8 +55,15 @@ export default {
         if(this.title.length > 20){
             this.largeS = 1
             let arr = this.title.split(' ')
-            this.firstString = arr[0] + ' ' + arr[1];
-            this.lastString = arr[2]; 
+            if(arr.length > 3){
+                this.firstString = arr[0] + ' ' + arr[1] + ' ' + arr[2];
+                this.lastString = arr[3] + ' ' + arr[4]; 
+            }
+            else{
+                this.firstString = arr[0] + ' ' + arr[1];
+                this.lastString = arr[2]; 
+            }
+            
         }
     }
 }
