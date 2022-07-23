@@ -472,5 +472,8 @@ export default {
     margin-top: 60px !important;
     max-width: 288px !important;
   }
+  .header-container .contact-banner__title{
+    font-size: 16px !important;
+  }
 }
 </style>
