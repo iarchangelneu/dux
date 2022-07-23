@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="back">
     <div class="header">
       <div class="operation-banner">
         <div class="menu">
@@ -434,9 +434,14 @@
             <img src="../assets/images/operation/gameproviders/Isoftbet.svg" alt="game-providers" class="provider-img">
             <img src="../assets/images/operation/gameproviders/Netent.svg" alt="game-providers" class="provider-img">
             <img src="../assets/images/operation/gameproviders/Yggdrasil.svg" alt="game-providers" class="provider-img">
-            <img src="../assets/images/operation/gameproviders/EGT.svg" alt="game-providers" class="provider-img">
-            <img src="../assets/images/operation/gameproviders/belatra.svg" alt="game-providers" class="provider-img">
+            <img src="../assets/images/operation/gameproviders/EGT.svg" alt="game-providers" class="provider-img provider-imgMH">
+            <img src="../assets/images/operation/gameproviders/belatra.svg" alt="game-providers" class="provider-img provider-imgMH">
 
+          </div>
+
+          <div class="d-flex">
+            <img src="../assets/images/operation/gameproviders/EGT.svg" alt="game-providers" class="provider-img provider-imgPH">
+            <img src="../assets/images/operation/gameproviders/belatra.svg" alt="game-providers" class="provider-img provider-imgPH">
           </div>
 
         </div>
@@ -457,8 +462,8 @@
             <div><img src="../assets/images/operation/payment/rappid.svg" class="provider-img" alt="payment"></div>
             <div><img src="../assets/images/operation/payment/ezwallet.svg" class="provider-img" alt="payment"></div>
             <div><img src="../assets/images/operation/payment/mifinity.svg" class="provider-img" alt="payment"></div>
-            <div><img src="../assets/images/operation/payment/dimoco.svg" class="provider-img" alt="payment"></div>
-            <div><img src="../assets/images/operation/payment/skrill.svg" class="provider-img" alt="payment"></div>
+            <div><img src="../assets/images/operation/payment/dimoco.svg" class="provider-img provider-imgMarR" alt="payment"></div>
+            <div><img src="../assets/images/operation/payment/skrill.svg" class="provider-img provider-imgMarL" alt="payment"></div>
           </div>
         </div>
       </div>
@@ -800,7 +805,7 @@ export default {
   padding: 150px 10px 0 10px;
   display: flex;
   width: 100%;
-  background-color: #010C28;
+  // background-color: #010C28;
   align-items: flex-end;
 
   img {
@@ -2286,6 +2291,21 @@ export default {
   .game-provider .provider-row, .payment-provider-row{
     padding-top: 24px;
   }
+  .payment-provider-row{
+    padding-bottom: 72px;
+  }
+  .provider-imgMH{
+    display: none;
+  }
+  .provider-imgMarR{
+    margin-right: 15px;
+  }
+  .provider-imgMarL{
+    margin-left: 10px !important;
+  }
+  .operation-banner__title{
+    letter-spacing: 0.03em !important;
+  }
 }
 
 @media screen and (min-width: 400px) and (max-width: 428px) {
@@ -2336,16 +2356,81 @@ export default {
   }
 }
 
+@media screen and (min-width: 375px) and (max-width: 413px) {
+  .operation-us{
+    font-size: 20px !important;
+    max-width: 270px !important;
+  }
+  .operation-banner__title{
+    font-size: 36px !important;
+  }
+  .mechanism-text{
+    font-size: 10px !important;
+  }
+  .unique-container-left-side-title{
+    font-size: 26px !important;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+  }
+  .unique-container-right-side-text{
+    font-size: 18px !important;
+    line-height: 20px;
+  }
+  .department__title{
+    font-size: 26px !important;
+    padding: 0 27px;
+  }
+  .divider{
+    padding-top: 145px !important;
+  }
+
+  .brands-title{
+    font-size: 26px !important;
+    letter-spacing: 0.08em;
+  }
+
+  .game-provider-title{
+    font-size: 26px !important;
+  }
+  .provider-img{
+    width: 120px;
+  }
+  .brands-title-container{
+    padding-top: 22px;
+  }
+
+  .payment-provider-title{
+    font-size: 26px !important;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .brands-container:nth-child(1) img{
     width: 66px;
   }
+  .operation-banner{
+    padding: 0 13px;
+  }
 }
 
+@media screen and (min-width: 480px) {
+  .provider-imgPH{
+    display: none;
+  }
+}
 // @media only screen and (max-width: 338px) {
 //   .ndk {
 //     position: absolute;
 //     top: 210px;
 //   }
 // }
+@media screen and (max-width:1024px) and (min-width: 1000px) {
+  .divider{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+.back{
+  background-color: #010C28;
+}
 </style>
