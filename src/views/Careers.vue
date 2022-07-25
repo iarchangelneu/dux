@@ -124,8 +124,11 @@
       <div class="video">
         <div class="video__cont" width="560" height="315"
           onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
-          <img src="../assets/images/careers/video-pre.png" style="cursor:pointer" v-if="window.width > 450" />
-          <img src="../assets/images/careers/video-pre320.png" style="cursor:pointer" v-else />
+          <img src="../assets/images/careers/video-pre320.png" style="cursor:pointer" v-if="window.width <= 450" />
+          <img src="../assets/images/careers/video-pre.png" style="cursor:pointer" v-if="window.width > 768" />
+          <img src="../assets/images/careers/video-pre768.png" style="cursor:pointer"
+            v-if="window.width <= 768 && window.width > 450" />
+
         </div>
         <iframe class="video__frame" width="560" height="315" src="https://www.youtube.com/embed/e4PBKgLlaHk"
           title="YouTube video player" frameborder="0"
@@ -278,33 +281,45 @@
         <p class="stage-container-sub-title">CV Screening</p>
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
-      <img class="line-svg" src="../assets/images/careers/Line.svg" alt="Line" />
+      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768" />
+      <img class="line-svg " src="../assets/images/line__768.svg" alt="Line"
+        v-if="window.width <= 768 && window.width > 450" />
+      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450" />
       <div class="stage-container">
         <h2 class="stage-container-title">Stage 02</h2>
         <p class="stage-container-sub-title">1st Interview with HR</p>
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
-      <img class="line-svg" src="../assets/images/careers/Line.svg" alt="Line" />
+      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768" />
+      <img class="line-svg " src="../assets/images/line__768.svg" alt="Line"
+        v-if="window.width <= 768 && window.width > 450" />
+      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450" />
       <div class="stage-container">
         <h2 class="stage-container-title">Stage 03</h2>
         <p class="stage-container-sub-title">Interview with Hiring Manager</p>
         <p class="stage-container-sub-text">*Home Task may be<br> included in this stage</p>
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
-      <img class="line-svg" src="../assets/images/careers/Line.svg" alt="Line" />
+      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768" />
+      <img class="line-svg " src="../assets/images/wline__768.svg" style="transform: rotate(0deg);" alt="Line"
+        v-if="window.width <= 768 && window.width > 450" />
+      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450" />
       <div class="stage-container">
         <h2 class="stage-container-title">Stage 04</h2>
         <p class="stage-container-sub-title">Final Interview with Management</p>
         <p class="stage-container-sub-text">(Usually for high level position)</p>
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
-      <img class="line-svg" src="../assets/images/careers/Line.svg" alt="Line" />
+      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768" />
+      <img class="line-svg " src="../assets/images/rline__768.svg" alt="Line"
+        v-if="window.width <= 768 && window.width > 450" />
+      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450" />
       <div class="stage-container">
         <h2 class="stage-container-title">Stage 05</h2>
         <p class="stage-container-sub-title">Offer stage</p>
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
-      <img class="mobile-line" src="../assets/images/careers/mobile-line.svg" alt="mobile" />
+      <img class="mobile-line " src="../assets/images/careers/mobile-line.svg" alt="mobile" />
     </div>
     <div class="devider">
       <!-- <img src="../assets/images/careers/about.svg" alt="about"/> -->
@@ -464,7 +479,7 @@ export default {
       }
     },
     handleResize() {
-      this.window.widthT = window.innerWidth;
+      this.window.width = window.innerWidth;
     }
   },
   created() {
@@ -817,12 +832,16 @@ export default {
   }
 }
 
+
+
 @media (max-width: 768px) and (min-width: 633px) {
   .igaming-container-left-side-dote {
     display: inline !important;
     margin-top: 7px !important;
   }
 }
+
+
 
 @media (max-width: 768px) and (min-width: 320px) {
   .careers-banner {
@@ -1353,6 +1372,88 @@ export default {
   }
 }
 
+
+
+@media screen and (max-width: 768px) {
+  .igaming-container-left-side-dote {
+    margin-right: 32px !important;
+  }
+
+  .line-svg:nth-child(6) {
+    left: 79vw !important;
+  }
+
+  .mobile-line {
+    left: 89vw !important;
+  }
+
+  .line-svg:nth-child(8) {
+    right: 41%;
+  }
+
+  .stage-container:nth-child(9) {
+    right: 60% !important;
+  }
+
+  .stage-container:nth-child(7) {
+    right: 21.2% !important;
+  }
+
+  .stage-container-sub-title {
+    max-width: 121px !important;
+  }
+
+  .stages {
+    margin-top: -140px;
+  }
+
+  .blockTitle__cont {
+    z-index: 1000;
+  }
+
+  .career__title {
+    font-size: 58px !important;
+    line-height: 110% !important;
+  }
+
+  .row__text {
+    font-size: 16px !important;
+    width: 30%;
+  }
+
+  .benefits__title {
+    margin-top: 56px !important;
+    font-size: 38px !important;
+    max-width: 724px !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .devider {
+    padding-top: 72px !important;
+  }
+
+  .line .slider div img {
+    width: 400px !important;
+  }
+
+  .marquee-container .Marquee-content .Marquee-tag p {
+    font-size: 58px !important;
+    line-height: 105% !important;
+  }
+
+  .careers-banner__title {
+    font-size: 68px !important;
+    max-width: 674px !important;
+  }
+
+  .careers {
+    display: flex;
+    font-size: 20px !important;
+    margin-top: 10px !important;
+  }
+}
+
 .igaming {
   background-color: #010C28;
   display: flex;
@@ -1499,6 +1600,44 @@ export default {
 
   .title-container {
     padding: 110px 32px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .stages .line-svg {
+    margin: 0 128px !important;
+  }
+
+  .stages {
+    padding-top: 176px !important;
+  }
+
+  .line .slider div img {
+    width: 234px !important;
+  }
+
+  .career__title {
+    font-size: 34px !important;
+    line-height: 110% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .stages {
+    padding: 96px 8px 0px 8px;
+    justify-content: space-between !important;
+
+
+    .line {
+      width: 121px !important;
+      height: 100px !important;
+    }
+
+
+    .stage-container-sub-title {
+      max-width: 121px !important;
+      line-height: 17px !important;
+    }
   }
 }
 
@@ -1869,7 +2008,28 @@ export default {
   }
 }
 
+@media screen and (max-width:768px) {
+  .row__text {
+    font-size: 16px !important;
+    width: 30%;
+    line-height: 20px !important;
+  }
+
+  .benefits[data-v-5c6edceb] {
+    padding: 8px !important;
+  }
+}
+
 @media screen and (max-width: 480px) {
+
+  .igaming {
+    padding: 0 16px !important;
+  }
+
+  .igaming-container {
+    padding: 10px 0 !important;
+  }
+
   .career-main-block-items-text-container {
     align-items: flex-start !important;
   }
@@ -1936,6 +2096,13 @@ export default {
 
   .igaming-title {
     margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .careers-banner__title {
+    font-size: 34px !important;
+    max-width: 251px !important;
   }
 }
 
