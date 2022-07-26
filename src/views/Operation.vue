@@ -2367,10 +2367,19 @@ export default {
   .what__devider{
     padding-top: 212px !important;
   }
+  .unique-container-right-side-text{
+    margin-top: 20px !important;
+  }
+  .unique-container{
+    padding-top: 20px !important;
+  }
 }
 
 @media screen and (min-width: 375px) and (max-width: 413px) {
-  .brands-title{
+  .unique-container-right-side-text{
+    margin-top: 16px !important;
+  }
+.brands-title{
     line-height: 32px;
   }
   .what__devider{
@@ -2455,5 +2464,43 @@ export default {
 }
 .back{
   background-color: #010C28;
+}
+
+
+@media (max-width: 768px) and (min-width: 600px){
+  .operation-banner {
+   background: url("../assets/images/operation/operation-top.png") no-repeat right top !important;
+
+   min-height: 265px !important;
+   
+   align-items: center;
+
+   padding-left: 8px;
+   padding-right: 8px;
+ }
+ .operation-us{
+    margin: 0px !important;
+    max-width: 160px !important;
+    // align-items: center !important;
+    font-size: 20px !important;
+  
+ }
+
+  .unique-container-left-side-dote{
+    padding-top: 6px !important;
+  }
+ .unique-container-left-side-dote img{
+  width: 12px !important;
+ }
+ .unique-container-left-side-title{
+  line-height: 28px !important;
+  max-width: 276px !important;
+ }
+ .unique-container{
+  width: calc(100% - 16px) !important;
+ }
+  .payment-provider-row-columns > div[data-v-51e2911d] {
+      flex: 20% !important;
+  }
 }
 </style>
