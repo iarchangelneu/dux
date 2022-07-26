@@ -137,16 +137,16 @@
       </div>
       <div class="slider">
         <VueSlickCarousel ref="images" v-bind="settingsImages">
-          <img src="../assets/images/careers/slider/brooke-cagle-g1Kr4Ozfoac-unsplash1.png">
-          <img src="../assets/images/careers/slider/pexels-cowomen-20416291.png">
-          <img src="../assets/images/careers/slider/pexels-cowomen-20416293.png">
-          <img src="../assets/images/careers/slider/pexels-cowomen-20416294.png">
-          <img src="../assets/images/careers/slider/pexels-cowomen-20416296.png">
-          <img src="../assets/images/careers/slider/pexels-cowomen-20416297.png">
-          <img src="../assets/images/careers/slider/pexels-cowomen-20416298.png">
-          <img src="../assets/images/careers/slider/pexels-cowomen-20416299.png">
-          <img src="../assets/images/careers/slider/pexels-cowomen-204162910.png">
-          <img src="../assets/images/careers/slider/Rectangle930.png">
+          <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/brooke-cagle-g1Kr4Ozfoac-unsplash1.png"></div>
+          <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/pexels-cowomen-20416291.png"></div>
+          <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/pexels-cowomen-20416293.png"></div>
+          <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/pexels-cowomen-20416294.png"></div>
+          <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/pexels-cowomen-20416296.png"></div>
+          <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/pexels-cowomen-20416297.png"></div>
+          <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/pexels-cowomen-20416298.png"></div>
+          <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/pexels-cowomen-20416299.png"></div>
+          <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/pexels-cowomen-204162910.png"></div>
+          <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/Rectangle930.png"></div>
         </VueSlickCarousel>
         <div class="arrows">
           <div class="prev" @click="$refs.images.prev()">
@@ -451,16 +451,22 @@ export default {
       },
       menuClosed: true,
       settingsImages: {
+        draggable: true,
         arrows: false,
         dots: false,
         slidesToShow: 3,
         infinite: true,
         centerPadding: '100px',
-        touchMove: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        // touchMove: true,
+        // autoplay: true,
+        speed: 3000,
+        // autoplaySpeed: 1500,
         adaptiveHeight: true,
         variableWidth: true,
+        // swipeToSlide: true,
+        pauseOnHover: false,
+        // pauseOnFocus: true,
+        // waitForAnimate: false,
       },
     }
   },
@@ -2219,5 +2225,24 @@ export default {
   .slick-slider {
     padding-left: 4px !important;
   }
+}
+
+.kek{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  opacity: 0;
+  cursor: ew-resize;
+}
+.lol{
+  position: relative;
+}
+</style>
+
+<style>
+.slider img{
+  cursor: ew-resize;
 }
 </style>
