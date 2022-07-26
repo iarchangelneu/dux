@@ -2236,6 +2236,67 @@ export default {
 }
 
 @media screen and (max-width: 480px) {
+
+  .mechanism-vip:hover, .mechanism-team:hover, .mechanism-antifraud:hover, .mechanism-support:hover, .mechanism-legal:hover, .mechanism-crm:hover, .mechanism-hr:hover, .mechanism-bi:hover,
+  .mechanism-pr:hover, .mechanism-psp:hover, .mechanism-development:hover, .mechanism-design:hover{
+    background: unset
+  }
+  .mechanism-vip p:hover, .mechanism-team p:hover {
+  background: linear-gradient(286.9deg, #E52D27 29.52%, #A50C10 100%);
+  // transform: scale(1.2);
+  border-radius: 50%;
+  border: none;
+  font-size: 18px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.mechanism-antifraud p:hover, .mechanism-support p:hover {
+  background: linear-gradient(86.5deg, #5433FF 8.33%, #20BDFF 73.44%, #A5FECB 100%);
+  border-radius: 50%;
+  border: none;
+  font-size: 12px !important;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.mechanism-legal p:hover, .mechanism-crm p:hover {
+  background: linear-gradient(105.97deg, #4B0082 27.44%, #9400D3 100%);
+  border-radius: 50%;
+  border: none;
+  font-size: 18px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.mechanism-hr p:hover, .mechanism-bi p:hover {
+  background: linear-gradient(95.7deg, #000428 7.7%, #004E92 90.93%);
+  border-radius: 50%;
+  border: none;
+  font-size: 18px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.mechanism-pr p:hover, .mechanism-psp p:hover {
+  background: linear-gradient(135deg, #003D4D 0%, #00C996 100%);
+  border-radius: 50%;
+  border: none;
+  font-size: 18px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.mechanism-development p:hover {
+  background: linear-gradient(294.31deg, #FE8C00 0%, #F83600 100%);
+  border-radius: 50%;
+  border: none;
+  font-size: 18px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.mechanism-design p:hover {
+  background: linear-gradient(75.06deg, #42275A 10.32%, #734B6D 84.99%);
+  border-radius: 50%;
+  border: none;
+  font-size: 18px;
+  font-family: 'Oxygen', sans-serif;
+}
   .department__title{
     padding: 0 16px;
     font-weight: 400;
@@ -2468,6 +2529,12 @@ export default {
 
 
 @media (max-width: 768px) and (min-width: 600px){
+  .payment-provider-row{
+    padding-bottom: 72px;
+  }
+  .brands-title{
+    font-size: 38px !important;
+  }
   .operation-banner {
    background: url("../assets/images/operation/operation-top.png") no-repeat right top !important;
 
@@ -2483,6 +2550,7 @@ export default {
     max-width: 160px !important;
     // align-items: center !important;
     font-size: 20px !important;
+    margin-top: 8px !important;
   
  }
 
