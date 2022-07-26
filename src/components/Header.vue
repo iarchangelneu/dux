@@ -161,6 +161,7 @@ input {
     transition: color 0.2s ease-in-out;
     letter-spacing: 1px;
     font-family: 'Oxygen';
+    text-transform: uppercase;
   }
 
   nav a:before {
@@ -226,6 +227,7 @@ input {
     .menu-items {
       font-size: 12px !important;
       letter-spacing: 0.04em !important;
+
 
       a:not(:last-child) {
         margin-right: 30px !important;

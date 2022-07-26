@@ -52,7 +52,7 @@
         <!--          </marquee>-->
 
         <div class="marquee-container">
-          <div class="Marquee">
+          <div class="Marquee nomr">
             <div class="Marquee-content">
               <div class="Marquee-tag">
                 <div class="circle"></div>
@@ -126,8 +126,8 @@
         <div class="item">
           <img src="../assets/images/partnership-bg.png" class="partnership-bg" v-if="window.width > 1024" />
           <img src="@/assets/images/partnership__bg2.png" class="partnership-bg"
-            v-if="window.width <= 1024 && window.width > 320" alt="">
-          <img src="@/assets/images/partnership__bg3.png" class="partnership-bg bg__mob" v-if="window.width <= 320"
+            v-if="window.width <= 1024 && window.width > 450" alt="">
+          <img src="@/assets/images/partnership__bg3.png" class="partnership-bg bg__mob" v-if="window.width <= 450"
             alt="">
 
           <div class="anime">
@@ -604,39 +604,39 @@ let mooveCursor = () => {
 
   const moveCursor = (e) => {
     // console.log(window.location.pathname)
-    
+
     var mouseY = e.clientY;
     var mouseX = e.clientX;
 
-    if(window.location.pathname == '/'){
-    // console.log(document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth + 90)
-    if (window.clientWidth > 1920) {
-      if (mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth - 20) {
-        document.querySelector('#cards').style.visibility = `hidden`;
-      } else {
-        document.querySelector('#cards').style.visibility = `visible`;
+    if (window.location.pathname == '/') {
+      // console.log(document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth + 90)
+      if (window.clientWidth > 1920) {
+        if (mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth - 20) {
+          document.querySelector('#cards').style.visibility = `hidden`;
+        } else {
+          document.querySelector('#cards').style.visibility = `visible`;
+        }
       }
-    }
-    
-    // if(window.innerWidth < 1024){
-    //   if( mouseX < 40 || mouseX > document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth){
-    //     document.querySelector('#cards').style.visibility = `visible`;
-    //   }
-    //   mouseY = e.clientY -200;
-    //   mouseX = e.clientX;
-    // }
-    
-    if (window.clientWidth > 480 && window.clientWidth < 1920) {
-      if (mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth - 40) {
-        document.querySelector('#cards').style.visibility = `hidden`;
-      } else {
-        document.querySelector('#cards').style.visibility = `visible`;
-      }
-    }
-    
 
-    
-    document.querySelector('#cards').style.transform = `translate3d(${mouseX}px, ${mouseY - 150}px, 0)`;
+      // if(window.innerWidth < 1024){
+      //   if( mouseX < 40 || mouseX > document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth){
+      //     document.querySelector('#cards').style.visibility = `visible`;
+      //   }
+      //   mouseY = e.clientY -200;
+      //   mouseX = e.clientX;
+      // }
+
+      if (window.clientWidth > 480 && window.clientWidth < 1920) {
+        if (mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth - 40) {
+          document.querySelector('#cards').style.visibility = `hidden`;
+        } else {
+          document.querySelector('#cards').style.visibility = `visible`;
+        }
+      }
+
+
+
+      document.querySelector('#cards').style.transform = `translate3d(${mouseX}px, ${mouseY - 150}px, 0)`;
     }
   }
 
@@ -1145,6 +1145,11 @@ export default {
 
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+  .ml10 {
+    width: 100px !important;
+  }
+
   .container {
     &>* {
       margin-top: -1px;
@@ -1196,8 +1201,13 @@ export default {
     }
 
     .marquee-container {
+      .nomr {
+        margin-bottom: -23px !important;
+      }
+
       .Marquee {
         padding: 0 !important;
+        margin-bottom: 0;
 
         &-content {
           .Marquee-tag {
@@ -1210,6 +1220,7 @@ export default {
           }
         }
       }
+
     }
 
     .history {
@@ -1841,6 +1852,12 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
+  .holding .slider-holding .items .item {
+
+    padding: 0 11px !important;
+
+  }
+
   .events .content .organizations {
     justify-content: space-between !important;
   }
@@ -2158,10 +2175,10 @@ export default {
           padding-left: 25px !important;
 
           .item {
-            width: 310px !important;
+            width: 300px !important;
             background-size: contain !important;
             margin-right: 20px !important;
-            min-height: 510px !important;
+            min-height: 379px !important;
 
             .content {
 
@@ -2172,6 +2189,7 @@ export default {
                 font-size: 12px !important;
                 line-height: 105% !important;
                 letter-spacing: 0.04em !important;
+                padding-left: 13px;
               }
 
               .item_title {
@@ -2189,7 +2207,7 @@ export default {
             }
 
             .img {
-              bottom: 100px !important;
+              bottom: 12px !important;
 
               img {
                 width: 90% !important;
@@ -2200,7 +2218,7 @@ export default {
             .btn {
               width: 70px;
               height: 70px;
-              margin-bottom: 100px !important;
+              margin-bottom: 12px !important;
             }
           }
         }
@@ -2226,7 +2244,8 @@ export default {
 
           img:nth-child(3) {
             width: 24% !important;
-            bottom: -150px !important;
+            bottom: -100px !important;
+            left: 41%;
             //top: calc(120px + (150 - 120) * ((100vw - 1440px) / (1920 - 1440)));
           }
         }
@@ -2240,6 +2259,10 @@ export default {
 @media screen and (max-width:450px) {
   .organizations__mob {
     display: contents;
+
+    div {
+      justify-content: space-around !important;
+    }
   }
 
   .organizations__flex {
@@ -2271,7 +2294,7 @@ export default {
   }
 
   .arrows {
-    margin-top: -60px !important;
+    margin-top: -162px !important;
   }
 
   .partnership {
@@ -2753,7 +2776,6 @@ export default {
 
           .item {
             width: 248px !important;
-            min-height: 0 !important;
             padding: 0 20px !important;
 
             .content {
@@ -2771,7 +2793,9 @@ export default {
             }
 
             .img {
-              bottom: 120px !important;
+              bottom: 193px !important;
+              display: block !important;
+              width: 300px;
 
               img {
                 width: 70% !important;
@@ -2783,7 +2807,7 @@ export default {
               width: 65px !important;
               height: 65px !important;
               margin-top: 60px !important;
-              margin-bottom: 120px !important;
+              margin-bottom: 193px !important;
             }
           }
         }
@@ -2867,14 +2891,14 @@ export default {
           .malta {
             .circle {
               position: absolute !important;
-              left: 45.8% !important;
-              top: 45% !important;
+              left: 45% !important;
+              top: 43% !important;
             }
 
             .text {
               //left: 260px !important;
               //top: 35% !important;
-              left: calc(50px + (260 - 50) * ((100vw - 320px) / (767 - 320)));
+              left: calc(67px + (260 - 50) * ((100vw - 320px) / (767 - 320)));
               //left: 50px !important;
               //top: 33% !important;
             }
@@ -2884,11 +2908,11 @@ export default {
             .circle {
               position: absolute !important;
               right: 43.5% !important;
-              top: 46% !important;
+              top: 45.2% !important;
             }
 
             .text {
-              right: calc(35px + (235 - 35) * ((100vw - 320px) / (767 - 320)));
+              right: calc(60px + (235 - 35) * ((100vw - 320px) / (767 - 320)));
               //top: 41%;
             }
           }
@@ -3166,24 +3190,28 @@ export default {
 
       &:hover>.anime .view3 {
         img:nth-child(3) {
-            width: auto;
-            position: absolute;
-            left: 22%;
-            bottom: 0;
-          }
-          img:nth-child(4) {
-            width: auto;
-            position: absolute;
-            left: 41%;
-            bottom: 0;
-          }
+          width: auto;
+          position: absolute;
+          left: 22%;
+          bottom: 0;
+        }
+
+        img:nth-child(4) {
+          width: auto;
+          position: absolute;
+          left: 41%;
+          bottom: 0;
+        }
+
         @media screen and (max-width: 1024px) {
+
           img:nth-child(3) {
             width: auto;
             position: absolute;
             left: 22%;
             bottom: 0;
           }
+
           img:nth-child(4) {
             width: auto;
             position: absolute;
@@ -3872,6 +3900,8 @@ export default {
     }
 
     @media (min-width: 320px) and (max-width: 768px) {
+
+
       .slider {
         display: none !important;
       }
@@ -3881,6 +3911,7 @@ export default {
       }
 
       .arrows {
+        margin-top: 10px !important;
         display: flex !important;
       }
     }
@@ -4383,7 +4414,7 @@ export default {
           }
 
           @media (min-width: 320px) and (max-width: 767px) {
-            top: calc(100px + (300 - 100) * ((100vw - 320px) / (767 - 320))) !important;
+            top: calc(99px + (300 - 100) * ((100vw - 320px) / (767 - 320))) !important;
             font-size: 12px !important;
             line-height: 105% !important;
             letter-spacing: 0.04em !important;
@@ -4429,7 +4460,7 @@ export default {
 
           @media (min-width: 320px) and (max-width: 767px) {
             //left: calc(275px + (400 - 275) * ((100vw - 768px) / (1024 - 768)));
-            top: calc(100px + (300 - 100) * ((100vw - 320px) / (767 - 320))) !important;
+            top: calc(93px + (300 - 100) * ((100vw - 320px) / (767 - 320))) !important;
             font-size: 12px !important;
           }
 
@@ -4488,9 +4519,46 @@ export default {
   padding: 0 25px !important;
 }
 
+@media screen and (max-width: 450px) {
+  .container .holding .slider-holding .items .item .content .date {
+
+    padding-left: 0 !important;
+  }
+
+  .container .holding .slider-holding .items .item {
+    width: 248px !important;
+    background-size: contain !important;
+    margin-right: 20px !important;
+    min-height: 510px !important;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 768px) {
+  .holding {
+    padding-top: 115px !important;
+  }
+
+  .content {
+    .content__item {
+      div {
+        svg {
+          width: 14px !important;
+          height: 14px !important;
+        }
+      }
+    }
+  }
+
+  .slider .slide_part div img {
+    width: 320px;
+  }
+
   .footer {
     padding: 0 16px !important;
+  }
+
+  .partnership {
+    padding-top: 80px !important;
   }
 }
 </style>

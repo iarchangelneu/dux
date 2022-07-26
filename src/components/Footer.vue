@@ -13,7 +13,7 @@
         <router-link to="/contact">CONTACTS</router-link>
       </div>
     </div>
-    <div style="border-top: 1px solid #828FA1 !important;">
+    <div class="border__mob" style="border-top: 1px solid #828FA1 !important;">
       <div class="footer__mob">
 
         <div style="display:flex; justify-content: space-between; align-items: center;margin-top: 16px;">
@@ -42,7 +42,24 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@media screen and (max-width: 768px) {
+  .footer .link a {
+    font-size: 12px !important;
+    ;
+  }
+
+  .footer .menu a {
+
+    font-size: 12px !important;
+
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 500px) {
+  .border__mob {
+    display: block !important;
+  }
+
   .footer__mob {
     display: contents !important;
     padding: 35px 0;
@@ -69,6 +86,10 @@ export default {
       }
     }
   }
+}
+
+.border__mob {
+  display: none;
 }
 
 .footer__mob {

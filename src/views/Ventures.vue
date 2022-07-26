@@ -92,7 +92,7 @@
       </div>
 
       <div class="list__title__mob">
-        <p>There are more than <span class="blue">350 professionals</span> in our team</p>
+        <p>There are more than <br style="display:none"> <span class="blue">350 professionals</span> in our team</p>
       </div>
       <div class="description">
         <div class="list">
@@ -190,6 +190,10 @@ export default {
 
     
 <style scoped lang="scss">
+::placeholder {
+  color: #828FA1;
+}
+
 .menu-opened-for-container {
   padding: 25px 0;
 }
@@ -203,6 +207,11 @@ export default {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .container .header .content .p .brave svg {
+    min-width: 20px;
+    min-height: 20px;
+  }
+
   .container .contact .title {
     width: 85% !important;
   }
@@ -223,7 +232,7 @@ export default {
     }
 
     .header {
-      height: 570px !important;
+      height: 605px !important;
 
       &__menu {
         //background-image: url('../assets/images/ventures/header1024.png') !important;
@@ -265,57 +274,56 @@ export default {
         //    margin-right: 25px !important;
         //  }
         //}
-        min-height: 120px !important;
         background-position: top 0px right 0 !important;
 
         .cubes {
-          div:nth-child(1) {
-            width: 30px !important;
-            height: 60px !important;
-            margin-right: 10px !important;
-          }
+          // div:nth-child(1) {
+          //   width: 30px !important;
+          //   height: 60px !important;
+          //   margin-right: 10px !important;
+          // }
 
-          div:nth-child(2) {
-            width: 20px !important;
-            height: 80px !important;
-            margin-right: 10px !important;
-          }
+          // div:nth-child(2) {
+          //   width: 20px !important;
+          //   height: 80px !important;
+          //   margin-right: 10px !important;
+          // }
 
-          div:nth-child(3) {
-            width: 40px !important;
-            height: 100px !important;
-            margin-right: 12px !important;
-          }
+          // div:nth-child(3) {
+          //   width: 40px !important;
+          //   height: 100px !important;
+          //   margin-right: 12px !important;
+          // }
 
-          div:nth-child(4) {
-            width: 60px !important;
-            height: 110px !important;
-            margin-right: 15px !important;
-          }
+          // div:nth-child(4) {
+          //   width: 60px !important;
+          //   height: 110px !important;
+          //   margin-right: 15px !important;
+          // }
 
-          div:nth-child(5) {
-            width: 80px !important;
-            height: 110px !important;
-            margin-right: 18px !important;
-          }
+          // div:nth-child(5) {
+          //   width: 80px !important;
+          //   height: 110px !important;
+          //   margin-right: 18px !important;
+          // }
 
-          div:nth-child(6) {
-            width: 90px !important;
-            height: 110px !important;
-            margin-right: 20px !important;
-          }
+          // div:nth-child(6) {
+          //   width: 90px !important;
+          //   height: 110px !important;
+          //   margin-right: 20px !important;
+          // }
 
-          div:nth-child(7) {
-            width: 100px !important;
-            height: 110px !important;
-            margin-right: 25px !important;
-          }
+          // div:nth-child(7) {
+          //   width: 100px !important;
+          //   height: 110px !important;
+          //   margin-right: 25px !important;
+          // }
 
-          div:nth-child(8) {
-            width: 120px !important;
-            height: 110px !important;
-            margin-right: 20px !important;
-          }
+          // div:nth-child(8) {
+          //   width: 120px !important;
+          //   height: 110px !important;
+          //   margin-right: 20px !important;
+          // }
         }
       }
 
@@ -448,6 +456,7 @@ export default {
 }
 
 @media screen and (max-width: 1024px) {
+
   .container {
     &>* {
       margin-top: -1px;
@@ -543,7 +552,7 @@ export default {
 
         p {
           width: 75% !important;
-          font-size: 38px !important;
+          font-size: 58px !important;
         }
       }
 
@@ -625,8 +634,8 @@ export default {
         padding: 0 25px;
 
         p {
-          font-size: 38px !important;
-          line-height: 48px !important;
+          font-size: 58px !important;
+          line-height: 60px !important;
           letter-spacing: 0.03em !important;
           text-transform: uppercase !important;
         }
@@ -654,7 +663,7 @@ export default {
         padding: 48px 8px !important;
 
         p {
-          font-size: 34px !important;
+          font-size: 38px !important;
           line-height: 110% !important;
         }
       }
@@ -670,9 +679,9 @@ export default {
         }
 
         .request p {
-          font-size: 38px !important;
+          font-size: 58px !important;
 
-          line-height: 48px !important;
+          line-height: 60px !important;
         }
 
         .list ul {
@@ -691,7 +700,7 @@ export default {
     }
 
     .contact {
-      padding: 70px 0 !important;
+      padding: 70px 0 110px 0 !important;
 
       .title {
         width: 95% !important;
@@ -700,7 +709,7 @@ export default {
         p {
           font-weight: 400 !important;
           font-size: 58px !important;
-          line-height: 48px !important;
+          line-height: 60px !important;
           letter-spacing: 0.03em !important;
         }
       }
@@ -708,7 +717,201 @@ export default {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (max-width: 450px) {
+
+  .container .header .content p {
+    display: flex !important;
+    // font-size: 20px !important;
+  }
+
+  .container .contact .form p {
+    border-radius: 4px !important;
+  }
+
+  .container {
+    .header {
+      .content {
+        .p {
+          .brave {
+            margin-bottom: 10px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .container .header .content .p .brave svg {
+    margin-bottom: 0 !important;
+
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    .header {
+      .content {
+        .p {
+          font-size: 20px !important;
+        }
+      }
+    }
+  }
+
+  .container .header .content p {
+    display: flex !important;
+  }
+
+  .container .header .content .p {
+    font-size: 34px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+
+  .container {
+    .header {
+      &__menu {
+        //background-image: url('../assets/images/ventures/header768.png') !important;
+        min-height: 120px !important;
+        background-position: top 0px right 0 !important;
+
+        .cubes {
+          div:nth-child(1) {
+            width: 30px !important;
+            height: 60px !important;
+            margin-right: 10px !important;
+          }
+
+          div:nth-child(2) {
+            width: 40px !important;
+            height: 80px !important;
+            margin-right: 10px !important;
+          }
+
+          div:nth-child(3) {
+            width: 40px !important;
+            height: 100px !important;
+            margin-right: 12px !important;
+          }
+
+          div:nth-child(4) {
+            width: 60px !important;
+            height: 110px !important;
+            margin-right: 15px !important;
+          }
+
+          div:nth-child(5) {
+            width: 80px !important;
+            height: 110px !important;
+            margin-right: 18px !important;
+          }
+
+          div:nth-child(6) {
+            width: 70px !important;
+            height: 110px !important;
+            margin-right: 20px !important;
+          }
+
+          div:nth-child(7) {
+            width: 80px !important;
+            height: 110px !important;
+            margin-right: 25px !important;
+          }
+
+          div:nth-child(8) {
+            width: 100px !important;
+            height: 110px !important;
+            margin-right: 20px !important;
+          }
+        }
+      }
+
+      .content {
+        .p {
+          font-size: 68px !important;
+
+          .brave {
+            font-size: 20px !important;
+            white-space: normal;
+            line-height: 25px !important;
+          }
+        }
+
+        p {
+          display: block !important;
+        }
+      }
+    }
+  }
+
+  .container .header .content p .brave {}
+
+  .container .header .content p .brave svg {
+    margin-bottom: 0 !important;
+  }
+
+  .container .investment .content p {
+    width: 80% !important;
+    font-size: 38px !important;
+  }
+
+  .container .invest .list__title__mob p {
+    font-size: 38px !important;
+    line-height: 42px !important;
+  }
+
+  .container .invest .list__title__mob {
+    width: 90% !important;
+  }
+
+  .container .invest .list__title__mob br {
+    display: block !important;
+  }
+
+  .container .invest .advert p {
+    font-size: 34px !important;
+    line-height: 110% !important;
+  }
+
+  .container .introduce .content .request p {
+    font-size: 38px !important;
+    line-height: 42px !important;
+  }
+
+  .container .contact .title p {
+    font-size: 45px !important;
+    line-height: 42px !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container .header .content .p .brave {
+    font-size: 16px !important;
+    white-space: nowrap;
+  }
+
+  .container {
+    .header {
+      .content {
+
+        .p {
+          font-size: 34px !important;
+        }
+      }
+    }
+  }
+
+  .container .header .content p {
+    display: flex !important;
+  }
+
+  .container .header .content .p {
+    font-size: 34px !important;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .container .contact .form input {
 
     border-radius: 4px !important;
@@ -814,6 +1017,7 @@ export default {
             svg {
               width: 10px !important;
               height: 10px !important;
+              overflow: initial !important;
             }
           }
         }
@@ -1500,7 +1704,9 @@ export default {
       }
     }
 
-    @media (min-width: 320px) and (max-width: 768px) {
+
+
+    @media (min-width: 320px) and (max-width: 767px) {
       .advert {
         padding: 36px 16px 70px 16px !important;
 
@@ -1619,6 +1825,7 @@ export default {
         color: #828FA1;
         font-size: 16px;
         width: 510px;
+        font-family: 'Oxygen';
       }
 
       textarea {
@@ -1631,6 +1838,7 @@ export default {
         color: #828FA1;
         font-size: 16px;
         width: 510px;
+        font-family: 'Oxygen';
         min-height: 108px;
       }
 
@@ -1657,6 +1865,8 @@ export default {
     background-color: #010C28;
     padding: 0 25px !important;
   }
+
+
 
   @media (min-width: 320px) and (max-width: 768px) {
     .footer {

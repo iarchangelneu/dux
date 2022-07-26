@@ -3,10 +3,10 @@
 
     <div class="header-container">
       <div class="careers-banner">
-        <HeaderPart @opened="openedMobMenu"/>
+        <HeaderPart @opened="openedMobMenu" />
         <h1 class="careers-banner__title">
-        <span class="careers"><img class="span-svg" src="../assets/images/contact/Ellipse1.svg"
-                                   alt="elipse">Careers</span>
+          <span class="careers"><img class="span-svg" src="../assets/images/contact/Ellipse1.svg"
+              alt="elipse">Careers</span>
           <span class="color-blue">People </span>are our main treasure
         </h1>
       </div>
@@ -21,46 +21,46 @@
           <div class="Marquee-content">
             <div class="Marquee-tag max-width">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
-                   viewBox="0 0 16 16">
-                <circle cx="8" cy="8" r="8"/>
+                viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8" />
               </svg>
               <p>work hard</p>
             </div>
             <div class="Marquee-tag max-width">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
-                   viewBox="0 0 16 16">
-                <circle cx="8" cy="8" r="8"/>
+                viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8" />
               </svg>
               <p>Play hard</p>
             </div>
 
             <div class="Marquee-tag max-width">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
-                   viewBox="0 0 16 16">
-                <circle cx="8" cy="8" r="8"/>
+                viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8" />
               </svg>
               <p>work hard</p>
             </div>
             <div class="Marquee-tag max-width">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
-                   viewBox="0 0 16 16">
-                <circle cx="8" cy="8" r="8"/>
+                viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8" />
               </svg>
               <p>Play hard</p>
             </div>
 
             <div class="Marquee-tag max-width">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
-                   viewBox="0 0 16 16">
-                <circle cx="8" cy="8" r="8"/>
+                viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8" />
               </svg>
               <p>work hard</p>
             </div>
 
             <div class="Marquee-tag max-width">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
-                   viewBox="0 0 16 16">
-                <circle cx="8" cy="8" r="8"/>
+                viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8" />
               </svg>
               <p>Play hard</p>
             </div>
@@ -74,47 +74,47 @@
           <div class="Marquee-content" style="animation-delay: 2s">
             <div class="Marquee-tag max-width">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
-                   viewBox="0 0 16 16">
-                <circle cx="8" cy="8" r="8"/>
+                viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8" />
               </svg>
               <p>Play hard</p>
             </div>
 
             <div class="Marquee-tag max-width">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
-                   viewBox="0 0 16 16">
-                <circle cx="8" cy="8" r="8"/>
+                viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8" />
               </svg>
               <p>work hard</p>
             </div>
             <div class="Marquee-tag max-width">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
-                   viewBox="0 0 16 16">
-                <circle cx="8" cy="8" r="8"/>
+                viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8" />
               </svg>
               <p>Play hard</p>
             </div>
 
             <div class="Marquee-tag max-width">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
-                   viewBox="0 0 16 16">
-                <circle cx="8" cy="8" r="8"/>
+                viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8" />
               </svg>
               <p>work hard</p>
             </div>
 
             <div class="Marquee-tag max-width">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
-                   viewBox="0 0 16 16">
-                <circle cx="8" cy="8" r="8"/>
+                viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8" />
               </svg>
               <p>Play hard</p>
             </div>
 
             <div class="Marquee-tag max-width">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
-                   viewBox="0 0 16 16">
-                <circle cx="8" cy="8" r="8"/>
+                viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8" />
               </svg>
               <p>work hard</p>
             </div>
@@ -122,15 +122,18 @@
         </div>
       </div>
       <div class="video">
-        <div class="video__cont" width="560" height="315" onclick="this.nextElementSibling.style.display='block'; this.style.display='none'"> 
-          <img src="../assets/images/careers/video-pre.png" style="cursor:pointer" /> 
-        </div> 
-        <iframe class="video__frame" width="560" height="315" src="https://www.youtube.com/embed/e4PBKgLlaHk" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                style="display: none;"
-                ></iframe>
+        <div class="video__cont" width="560" height="315"
+          onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+          <img src="../assets/images/careers/video-pre320.png" style="cursor:pointer" v-if="window.width <= 450" />
+          <img src="../assets/images/careers/video-pre.png" style="cursor:pointer" v-if="window.width > 768" />
+          <img src="../assets/images/careers/video-pre768.png" style="cursor:pointer"
+            v-if="window.width <= 768 && window.width > 450" />
+
+        </div>
+        <iframe class="video__frame" width="560" height="315" src="https://www.youtube.com/embed/e4PBKgLlaHk"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen style="display: none;"></iframe>
       </div>
       <div class="slider">
         <VueSlickCarousel ref="images" v-bind="settingsImages">
@@ -148,16 +151,16 @@
         <div class="arrows">
           <div class="prev" @click="$refs.images.prev()">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="#2F5BD8" class="bi bi-arrow-left"
-                 viewBox="0 0 16 16">
+              viewBox="0 0 16 16">
               <path fill-rule="evenodd"
-                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
             </svg>
           </div>
           <div class="next" @click="$refs.images.next()">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="#2F5BD8" class="bi bi-arrow-right"
-                 viewBox="0 0 16 16">
+              viewBox="0 0 16 16">
               <path fill-rule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
             </svg>
           </div>
         </div>
@@ -278,33 +281,45 @@
         <p class="stage-container-sub-title">CV Screening</p>
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
-      <img class="line-svg" src="../assets/images/careers/Line.svg" alt="Line"/>
+      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768" />
+      <img class="line-svg " src="../assets/images/line__768.svg" alt="Line"
+        v-if="window.width <= 768 && window.width > 450" />
+      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450" />
       <div class="stage-container">
         <h2 class="stage-container-title">Stage 02</h2>
         <p class="stage-container-sub-title">1st Interview with HR</p>
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
-      <img class="line-svg" src="../assets/images/careers/Line.svg" alt="Line"/>
+      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768" />
+      <img class="line-svg " src="../assets/images/line__768.svg" alt="Line"
+        v-if="window.width <= 768 && window.width > 450" />
+      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450" />
       <div class="stage-container">
         <h2 class="stage-container-title">Stage 03</h2>
         <p class="stage-container-sub-title">Interview with Hiring Manager</p>
         <p class="stage-container-sub-text">*Home Task may be<br> included in this stage</p>
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
-      <img class="line-svg" src="../assets/images/careers/Line.svg" alt="Line"/>
+      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768" />
+      <img class="line-svg " src="../assets/images/wline__768.svg" style="transform: rotate(0deg);" alt="Line"
+        v-if="window.width <= 768 && window.width > 450" />
+      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450" />
       <div class="stage-container">
         <h2 class="stage-container-title">Stage 04</h2>
         <p class="stage-container-sub-title">Final Interview with Management</p>
         <p class="stage-container-sub-text">(Usually for high level position)</p>
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
-      <img class="line-svg" src="../assets/images/careers/Line.svg" alt="Line"/>
+      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768" />
+      <img class="line-svg " src="../assets/images/rline__768.svg" alt="Line"
+        v-if="window.width <= 768 && window.width > 450" />
+      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450" />
       <div class="stage-container">
         <h2 class="stage-container-title">Stage 05</h2>
         <p class="stage-container-sub-title">Offer stage</p>
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
-      <img class="mobile-line" src="../assets/images/careers/mobile-line.svg" alt="mobile"/>
+      <img class="mobile-line " src="../assets/images/careers/mobile-line.svg" alt="mobile" />
     </div>
     <div class="devider">
       <!-- <img src="../assets/images/careers/about.svg" alt="about"/> -->
@@ -313,13 +328,13 @@
     <div class="igaming">
       <h2 class="igaming-title">
         Innovative
-        <span class="color-blue">  iGaming</span>
+        <span class="color-blue"> iGaming</span>
         Meets a Passion for Tech
       </h2>
       <div class="igaming-container">
         <div class="igaming-container-left-side">
           <div class="igaming-container-left-side-dote">
-            <img src="../assets/images/careers/dote16.svg" alt="dote16"/>
+            <img src="../assets/images/careers/dote16.svg" alt="dote16" />
           </div>
           <div class="igaming-container-left-side-text">
             <h3 class="igaming-container-left-side-title">We think several steps ahead</h3>
@@ -336,7 +351,7 @@
       <div class="igaming-container">
         <div class="igaming-container-left-side">
           <div class="igaming-container-left-side-dote">
-            <img src="../assets/images/careers/dote16.svg" alt="dote16"/>
+            <img src="../assets/images/careers/dote16.svg" alt="dote16" />
           </div>
           <div class="igaming-container-left-side-text">
             <h3 class="igaming-container-left-side-title">We take care about our people</h3>
@@ -353,7 +368,7 @@
       <div class="igaming-container">
         <div class="igaming-container-left-side">
           <div class="igaming-container-left-side-dote">
-            <img src="../assets/images/careers/dote16.svg" alt="dote16"/>
+            <img src="../assets/images/careers/dote16.svg" alt="dote16" />
           </div>
           <div class="igaming-container-left-side-text">
             <h3 class="igaming-container-left-side-title">We love what we do</h3>
@@ -370,7 +385,7 @@
       <div class="igaming-container">
         <div class="igaming-container-left-side">
           <div class="igaming-container-left-side-dote">
-            <img src="../assets/images/careers/dote16.svg" alt="dote16"/>
+            <img src="../assets/images/careers/dote16.svg" alt="dote16" />
           </div>
           <div class="igaming-container-left-side-text">
             <h3 class="igaming-container-left-side-title">EVERYTHING YOU NEED TO WORK COMFORTABLY</h3>
@@ -387,7 +402,7 @@
       <div class="igaming-container">
         <div class="igaming-container-left-side">
           <div class="igaming-container-left-side-dote">
-            <img src="../assets/images/careers/dote16.svg" alt="dote16"/>
+            <img src="../assets/images/careers/dote16.svg" alt="dote16" />
           </div>
           <div class="igaming-container-left-side-text">
             <h3 class="igaming-container-left-side-title">ENGAGING EVENTS</h3>
@@ -413,7 +428,7 @@
       </h2>
     </div>
     <div class="footer">
-      <FooterPart/>
+      <FooterPart />
     </div>
   </div>
 </template>
@@ -431,6 +446,9 @@ export default {
 
   data() {
     return {
+      window: {
+        width: 0
+      },
       menuClosed: true,
       settingsImages: {
         arrows: false,
@@ -451,7 +469,7 @@ export default {
     FooterPart,
     VueSlickCarousel,
     BlockTitle
-},
+  },
   methods: {
     openedMobMenu(value) {
       if (value) {
@@ -460,7 +478,17 @@ export default {
         this.menuClosed = true
       }
     },
-  }
+    handleResize() {
+      this.window.width = window.innerWidth;
+    }
+  },
+  created() {
+    window.addEventListener('resize', this.handleResize);
+    this.handleResize();
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.handleResize);
+  },
 
 }
 </script>
@@ -469,6 +497,7 @@ export default {
 .slick-slide {
   margin-right: 20px !important;
 }
+
 @media screen and (max-width: 1024px) {
   .slick-slide {
     margin-right: 12px !important;
@@ -476,7 +505,6 @@ export default {
 }
 </style>
 <style lang="scss" scoped>
-
 .line {
   background: #010C28;
   padding-top: 112px;
@@ -587,6 +615,7 @@ export default {
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
+
   100% {
     -webkit-transform: translate(-50%);
     -moz-transform: translate(-50%);
@@ -604,6 +633,7 @@ export default {
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
+
   100% {
     -webkit-transform: translate(-50%);
     -moz-transform: translate(-50%);
@@ -621,6 +651,7 @@ export default {
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
+
   100% {
     -webkit-transform: translate(-50%);
     -moz-transform: translate(-50%);
@@ -638,6 +669,7 @@ export default {
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
+
   100% {
     -webkit-transform: translate(-50%);
     -moz-transform: translate(-50%);
@@ -648,32 +680,39 @@ export default {
 }
 
 @media (max-width: 1439px) and (min-width: 1024px) {
-  .careers-banner{
+  .careers-banner {
     min-height: 417px !important;
-    &__title{
+
+    &__title {
       margin-top: 100px !important;
     }
   }
+
   .line {
     padding-top: 72px !important;
   }
-  .devider{
+
+  .devider {
     padding-top: 105px !important;
   }
+
   .careers {
     font-size: 22px !important;
     line-height: 28px !important;
     position: relative;
     top: 7px;
-    & > img{
+
+    &>img {
       width: 10px;
     }
   }
+
   .careers-banner__title {
     font-size: 84px !important;
     line-height: 105% !important;
     max-width: 619px !important;
   }
+
   .line {
 
     .video {
@@ -692,12 +731,15 @@ export default {
       }
     }
   }
-  .igaming-container-left-side-title{
+
+  .igaming-container-left-side-title {
     line-height: 110% !important;
   }
-  .igaming-container-left-side-dote{
+
+  .igaming-container-left-side-dote {
     padding-top: 13px !important;
   }
+
   .marquee-container {
     .Marquee {
       padding: 0 !important;
@@ -707,10 +749,10 @@ export default {
           font-size: 84px !important;
           padding: 0 !important;
         }
-        }
       }
     }
   }
+}
 
 
 @media (max-width: 1023px) and (min-width: 769px) {
@@ -721,31 +763,39 @@ export default {
     position: relative;
     top: 5px;
   }
-  .igaming-container-left-side-dote > img {
+
+  .igaming-container-left-side-dote>img {
     width: 14px;
   }
-  .igaming-container-left-side-title{
-    line-height:  28px !important;
+
+  .igaming-container-left-side-title {
+    line-height: 28px !important;
   }
-  .igaming-container-left-side-dote{
+
+  .igaming-container-left-side-dote {
     padding-top: 7px !important;
   }
-  .careers-banner{
+
+  .careers-banner {
     min-height: 300px !important;
 
   }
+
   .careers-banner__title {
     margin-top: 40px !important;
     font-size: 68px !important;
     line-height: 105% !important;
     max-width: 503px !important;
   }
-  .first-devider{
+
+  .first-devider {
     padding-top: 72px !important;
   }
+
   .line {
     padding-top: 67px !important;
   }
+
   .line {
     .video {
       padding: 55px 8px 50px 8px !important;
@@ -781,82 +831,102 @@ export default {
     }
   }
 }
-@media (max-width: 768px) and (min-width: 633px){
-.igaming-container-left-side-dote{
-  display: inline !important;
- margin-top: 7px !important;
+
+
+
+@media (max-width: 768px) and (min-width: 633px) {
+  .igaming-container-left-side-dote {
+    display: inline !important;
+    margin-top: 7px !important;
+  }
 }
-}
+
+
+
 @media (max-width: 768px) and (min-width: 320px) {
   .careers-banner {
     background: url("../assets/images/careers/320.svg") no-repeat;
 
     min-height: 265px !important;
-    &__title{
+
+    &__title {
       margin-top: 60px !important;
     }
   }
-  .igaming-container-left-side-dote > img {
+
+  .igaming-container-left-side-dote>img {
     width: 10px;
   }
 
-  .igaming-container-left-side-title{
+  .igaming-container-left-side-title {
     line-height: 25.25px !important;
   }
-  .igaming-container-left-side-dote{
-padding-top: 0 !important;
+
+  .igaming-container-left-side-dote {
+    padding-top: 0 !important;
     display: flex;
     align-items: center;
-    margin: 0 10px 0 0 ;
+    margin: 0 10px 0 0;
   }
-  .first-devider{
+
+  .first-devider {
     padding-top: 72px !important;
   }
+
   .careers {
     display: flex;
     font-size: 16px !important;
     margin-bottom: 0 !important;
 
-    & > img {
+    &>img {
       width: 10px;
     }
   }
+
   .career__title {
     font-size: 34px !important;
     line-height: 110% !important;
   }
+
   .career-main-block-subtitle:nth-child(1) {
     font-size: 26px !important;
     line-height: 125% !important;
   }
+
   .career-main-block-subtitle {
     font-size: 20px !important;
     line-height: 27px !important;
   }
+
   .career-main-block-items-company-name {
     font-size: 14px !important;
     line-height: 18px !important;
   }
+
   .career-main-block-items-text-container-job-position {
     font-size: 18px !important;
     line-height: 24px !important;
   }
+
   .career-main-block-items-text-container-job-hirer {
     font-size: 14px !important;
     line-height: 18px !important;
   }
+
   .career-main-block-button {
     font-size: 12px !important;
     line-height: 105% !important;
   }
+
   .benefits__title {
     font-size: 22px !important;
     max-width: 288px !important;
   }
+
   .row__text {
     font-size: 18px !important;
 
-    & > span > img {
+    &>span>img {
       width: 10px;
     }
   }
@@ -865,12 +935,15 @@ padding-top: 0 !important;
     font-size: 34px !important;
     max-width: 251px !important;
   }
-  .Marquee-tag > svg {
+
+  .Marquee-tag>svg {
     margin: 0 20px !important;
   }
+
   .line {
     padding-top: 38px !important;
   }
+
   .line {
     .video {
       padding: 38px 16px 24px 16px !important;
@@ -887,6 +960,7 @@ padding-top: 0 !important;
       }
     }
   }
+
   .marquee-container {
     .Marquee {
       padding: 0 !important;
@@ -917,7 +991,8 @@ padding-top: 0 !important;
   align-items: center;
   margin-top: 30px;
 
-  .prev, .next {
+  .prev,
+  .next {
     cursor: pointer;
   }
 
@@ -1001,6 +1076,7 @@ padding-top: 0 !important;
       margin: 0 70px 0 0;
       display: inline-flex;
       align-items: center;
+
       & .span-svg {
         margin-right: 11px;
         vertical-align: baseline;
@@ -1161,7 +1237,8 @@ padding-top: 0 !important;
     }
 
     &-items {
-      border-bottom: 1px solid #828FA1;;
+      border-bottom: 1px solid #828FA1;
+      ;
       padding-bottom: 15px;
 
       &-company-name {
@@ -1253,7 +1330,7 @@ padding-top: 0 !important;
     border-radius: 10px;
 
     &:hover {
-      border: 1px solid rgba(0, 255, 255,0);
+      border: 1px solid rgba(0, 255, 255, 0);
       // border-image: url(../assets/images/careers/border.png);
     }
 
@@ -1292,6 +1369,88 @@ padding-top: 0 !important;
       text-transform: uppercase;
       color: #F0F0F0;
     }
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .igaming-container-left-side-dote {
+    margin-right: 32px !important;
+  }
+
+  .line-svg:nth-child(6) {
+    left: 79vw !important;
+  }
+
+  .mobile-line {
+    left: 89vw !important;
+  }
+
+  .line-svg:nth-child(8) {
+    right: 41%;
+  }
+
+  .stage-container:nth-child(9) {
+    right: 60% !important;
+  }
+
+  .stage-container:nth-child(7) {
+    right: 21.2% !important;
+  }
+
+  .stage-container-sub-title {
+    max-width: 121px !important;
+  }
+
+  .stages {
+    margin-top: -140px;
+  }
+
+  .blockTitle__cont {
+    z-index: 1000;
+  }
+
+  .career__title {
+    font-size: 58px !important;
+    line-height: 110% !important;
+  }
+
+  .row__text {
+    font-size: 16px !important;
+    width: 30%;
+  }
+
+  .benefits__title {
+    margin-top: 56px !important;
+    font-size: 38px !important;
+    max-width: 724px !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .devider {
+    padding-top: 72px !important;
+  }
+
+  .line .slider div img {
+    width: 400px !important;
+  }
+
+  .marquee-container .Marquee-content .Marquee-tag p {
+    font-size: 58px !important;
+    line-height: 105% !important;
+  }
+
+  .careers-banner__title {
+    font-size: 68px !important;
+    max-width: 674px !important;
+  }
+
+  .careers {
+    display: flex;
+    font-size: 20px !important;
+    margin-top: 10px !important;
   }
 }
 
@@ -1334,13 +1493,14 @@ padding-top: 0 !important;
 
       @media screen and (max-width: 1024px) {
         &-dote {
-        margin-right: 65px;
+          margin-right: 65px;
+        }
       }
-      }
+
       @media screen and (max-width: 480px) {
         &-dote {
-        margin-right: 8px;
-      }
+          margin-right: 8px;
+        }
       }
 
       &-title {
@@ -1405,33 +1565,79 @@ padding-top: 0 !important;
     max-width: 300px;
     font-size: 22px;
   }
+
   .career__title {
     max-width: 577px;
 
   }
+
   .stage-container {
     max-width: 150px;
     max-height: 150px;
   }
+
   .stage-container-title {
     font-size: 22px !important;
   }
+
   .stage-container-sub-title {
     font-size: 16px !important;
   }
+
   .stage-container-sub-text {
     font-size: 10px !important;
   }
+
   .igaming-container-left-side-title {
     max-width: 307px;
     font-size: 34px !important;
   }
+
   .igaming-container-right-side-text {
     max-width: 480px;
     font-size: 18px !important;
   }
+
   .title-container {
     padding: 110px 32px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .stages .line-svg {
+    margin: 0 128px !important;
+  }
+
+  .stages {
+    padding-top: 176px !important;
+  }
+
+  .line .slider div img {
+    width: 234px !important;
+  }
+
+  .career__title {
+    font-size: 34px !important;
+    line-height: 110% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .stages {
+    padding: 96px 8px 0px 8px;
+    justify-content: space-between !important;
+
+
+    .line {
+      width: 121px !important;
+      height: 100px !important;
+    }
+
+
+    .stage-container-sub-title {
+      max-width: 121px !important;
+      line-height: 17px !important;
+    }
   }
 }
 
@@ -1451,21 +1657,26 @@ padding-top: 0 !important;
   .career {
     padding-top: 56px;
   }
+
   .career__title {
     max-width: 485px !important;
   }
+
   .stage-container {
     max-width: 150px !important;
     max-height: 150px !important;
   }
+
   .career-main-block {
     padding: 48px 26px;
   }
+
   .stages {
     flex-wrap: wrap;
     justify-content: space-evenly;
     height: 500px;
   }
+
   .stage-container {
     margin-top: 36px;
 
@@ -1485,36 +1696,45 @@ padding-top: 0 !important;
       margin-top: 0;
     }
   }
+
   .line-svg:nth-child(8) {
     display: none;
   }
+
   .stage-container-title {
     max-width: 130px !important;
     font-size: 20px !important;
   }
+
   .stage-container-sub-title {
     max-width: 107px !important;
     font-size: 14px !important;
   }
+
   .stage-container-sub-text {
     max-width: 123px !important;
     font-size: 9px !important;
   }
+
   .igaming-title {
     max-width: 591px !important;
     font-size: 38px !important;
   }
+
   .igaming-container-left-side-title {
     max-width: 268px !important;
     font-size: 22px !important;
   }
+
   .igaming-container-right-side-text {
     max-width: 376px !important;
     font-size: 16px !important;
   }
+
   .title-container {
     padding: 72px 8px !important;
   }
+
   .title {
     max-width: 752px !important;
     font-size: 38px !important;
@@ -1529,6 +1749,7 @@ padding-top: 0 !important;
     left: 77.6vw;
     transform: rotate(180deg);
   }
+
   .line-svg:nth-child(8) {
     display: block;
     position: absolute;
@@ -1536,12 +1757,14 @@ padding-top: 0 !important;
     transform: rotate(180deg);
     right: 51%;
   }
+
   .mobile-line {
     display: block;
     position: absolute;
     left: 84vw;
     top: 372px;
   }
+
   .stage-container {
     &:nth-child(7) {
 
@@ -1592,6 +1815,7 @@ padding-top: 0 !important;
     left: 76.3vw;
     transform: rotate(180deg);
   }
+
   .line-svg:nth-child(8) {
     display: block;
     position: absolute;
@@ -1607,82 +1831,102 @@ padding-top: 0 !important;
   .mobile-line {
     display: none;
   }
+
   .line-svg {
     position: initial !important;
     transform: rotate(90deg) !important;
     margin-top: 5px !important;
   }
+
   .stages {
     display: flex;
     height: 1180px !important;
   }
+
   .stage-container {
     margin: 20px 0 !important;
     width: 100% !important;
     max-width: 100% !important;
   }
+
   .stage-container:nth-child(7) {
 
     position: initial;
 
   }
+
   .stage-container:nth-child(9) {
 
     position: initial;
 
   }
+
   .stage-container-sub-title {
     max-width: 100% !important;
     font-size: 14px !important;
   }
+
   .stage-container-title {
     max-width: 100% !important;
     font-size: 14px !important;
   }
+
   .stage-container-sub-text {
     max-width: 100% !important;
     font-size: 14px !important;
   }
+
   .line marquee {
     height: 48px;
     font-size: 38px;
   }
+
   .line marquee svg {
     margin: 0;
   }
+
   .benefits {
     padding: 32px;
   }
+
   .benefits__title {
     max-width: 288px !important;
     font-size: 22px !important;
   }
+
   .row__container {
     width: 100%;
     flex-direction: column;
   }
+
   .row__text {
     width: 100% !important;
     max-width: 100% !important;
 
   }
+
   .career__title {
     max-width: 265px !important;
 
   }
+
   .career-main-block {
     padding: 32px 8px
   }
+
   .career-main-block-items-text-container {
     flex-direction: column;
   }
+
   .igaming-title {
     max-width: 287px !important;
     font-size: 34px !important;
   }
+
   .igaming-container {
     flex-direction: column;
   }
+
   .igaming-container-right-side-text {
     margin-top: 10px;
   }
@@ -1691,17 +1935,19 @@ padding-top: 0 !important;
     max-width: 100% !important;
     font-size: 20px !important;
   }
+
   .igaming-container-right-side-text {
     max-width: 100% !important;
     font-size: 14px !important;
   }
+
   .title {
     max-width: 288px !important;
     font-size: 22px !important;
   }
 }
 
-.border__img{
+.border__img {
   position: absolute;
   top: 0;
   left: 0;
@@ -1709,154 +1955,225 @@ padding-top: 0 !important;
   height: 100%;
   display: none;
 }
-.stage-container{
+
+.stage-container {
   position: relative;
 }
-.stage-container:hover img{
+
+.stage-container:hover img {
   display: block;
 }
-.div__back{
+
+.div__back {
   background-color: #010C28;
 }
 
 @media screen and (max-width: 1024px) {
-  .video__cont{
+  .video__cont {
     width: 798px;
     height: 340px;
   }
-  .video__cont img{
+
+  .video__cont img {
     width: 100%;
     height: 100%;
   }
-  .video__frame{
+
+  .video__frame {
     width: 798px !important;
     height: 340px !important;
     min-height: unset !important;
   }
-  .slider{
+
+  .slider {
     padding-left: 113px !important;
   }
-  .slick-slide{
+
+  .slick-slide {
     margin-right: 10px !important;
   }
-  .benefits__title{
+
+  .benefits__title {
     padding-right: 32px;
     padding-left: 32px;
   }
-  .row__text{
+
+  .row__text {
     font-size: 22px !important;
     width: 30%;
   }
-  .igaming-container-left-side-dot{
+
+  .igaming-container-left-side-dot {
     margin-right: 65px !important;
   }
 }
 
-@media screen and (max-width: 480px){
-  .video__cont{
+@media screen and (max-width:768px) {
+  .row__text {
+    font-size: 16px !important;
+    width: 30%;
+    line-height: 20px !important;
+  }
+
+  .benefits[data-v-5c6edceb] {
+    padding: 8px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .igaming {
+    padding: 0 16px !important;
+  }
+
+  .igaming-container {
+    padding: 10px 0 !important;
+  }
+
+  .career-main-block-items-text-container {
+    align-items: flex-start !important;
+  }
+
+  .video__cont {
     width: 288px;
     height: 160px;
   }
-  .video__cont img{
+
+  .video__cont img {
     width: 100%;
     height: 100%;
   }
-  .video__frame{
+
+  .video__frame {
     width: 288px !important;
     height: 160px !important;
     min-height: unset !important;
   }
-  .slick-slider{
+
+  .slick-slider {
     padding-left: 16px !important;
   }
-  .benefits__title{
+
+  .benefits__title {
     font-size: 22px !important;
   }
-  .benefits{
+
+  .benefits {
     padding: 16px;
   }
-  .benefits__title{
+
+  .benefits__title {
     padding-right: 0px;
     padding-left: 0px;
   }
-  .row{
+
+  .row {
     margin-top: 39px;
   }
-  .row__text{
+
+  .row__text {
     margin-top: 16px;
+    font-family: 'Exo' !important;
+    text-transform: none !important;
+    font-size: 18px !important;
   }
-  .row__container{
+
+  .row__container {
     margin-top: 0px !important;
   }
-  .devider{
+
+  .devider {
     padding-top: 72px;
   }
-  .stage-container-title{
+
+  .stage-container-title {
     font-size: 20px !important;
   }
-  .stages{
+
+  .stages {
     padding-top: 32px;
   }
-  .igaming-title{
+
+  .igaming-title {
     margin-top: 24px;
   }
 }
 
-@media screen and (max-width: 480px) and (min-width: 375px) {
-  .careers{
-    font-size: 20px !important; 
+@media screen and (max-width: 480px) {
+  .careers-banner__title {
+    font-size: 34px !important;
+    max-width: 251px !important;
   }
-  .careers-banner__title{
+}
+
+@media screen and (max-width: 480px) and (min-width: 375px) {
+  .careers {
+    font-size: 20px !important;
+  }
+
+  .careers-banner__title {
     font-size: 40px !important;
     max-width: 295px !important;
   }
-  .video__cont{
+
+  .video__cont {
     width: 350px;
     height: 195px;
   }
-  .video__cont img{
+
+  .video__cont img {
     width: 100%;
     height: 100%;
   }
-  .video__frame{
+
+  .video__frame {
     width: 350px !important;
     height: 195px !important;
     min-height: unset !important;
   }
-  .benefits__title{
+
+  .benefits__title {
     font-size: 26px !important;
     max-width: 330px !important;
   }
-  .career__title{
+
+  .career__title {
     font-size: 38px !important;
     max-width: 275px !important;
   }
-  .stage-container-title{
+
+  .stage-container-title {
     font-size: 24px !important;
   }
-  .stage-container-sub-title{
+
+  .stage-container-sub-title {
     font-size: 18px !important;
   }
-  .igaming-title{
+
+  .igaming-title {
     font-size: 38px !important;
     max-width: 300px !important;
   }
-  .igaming-container-left-side-title{
+
+  .igaming-container-left-side-title {
     font-size: 24px !important;
   }
-  .igaming-container-right-side-text{
+
+  .igaming-container-right-side-text {
     font-size: 18px !important;
   }
-  .igaming-container{
+
+  .igaming-container {
     margin-top: 24px !important;
   }
-  .title{
+
+  .title {
     font-size: 24px !important;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .slick-slider{
+  .slick-slider {
     padding-left: 4px !important;
   }
 }

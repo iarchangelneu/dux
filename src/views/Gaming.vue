@@ -101,7 +101,7 @@
             player is not 18+ their access to our casinos will be denied immediately.</h4>
         </div>
         <div class="content__item">
-          <div>
+          <div class="our__r">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
               viewBox="0 0 16 16">
               <circle cx="8" cy="8" r="8" />
@@ -344,7 +344,7 @@ export default {
 
         h4 {
           max-width: 562px;
-          font-family: 'Exo', sans-serif;
+          font-family: 'Oxygen', sans-serif;
           font-style: normal;
           font-weight: 400;
           font-size: 20px;
@@ -441,7 +441,55 @@ export default {
   }
 }
 
+
+
+@media screen and (max-width: 1024px) {
+  .container .footer {
+    padding: 110px 25px 0 25px !important;
+  }
+
+  .container .seeking .content .text {
+    padding-top: 117px !important;
+
+  }
+
+  .container {
+    .lists {
+      .content__item {
+        .our__r {
+          width: 45% !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+
+  .container {
+    .lists {
+      .content__item {
+        h4 {
+          margin-top: 8px;
+        }
+
+        .our__r {
+          width: auto !important;
+        }
+      }
+    }
+  }
+
+}
+
 @media screen and (max-width: 1440px) {
+
+  .container .lists .content__item div {
+
+    width: 41% !important;
+  }
+
   .container .seeking .content {
     width: 90%;
 
@@ -454,7 +502,7 @@ export default {
   }
 
   .container .learn .content {
-    width: 75%;
+    width: 45%;
     margin: 0 auto;
     padding: 92px 142px;
   }
@@ -514,7 +562,7 @@ export default {
         &__item {
           div {
             svg {
-              margin-right: 65px !important;
+              margin-right: 61px !important;
             }
           }
 
@@ -535,7 +583,7 @@ export default {
 
           p {
             font-size: 28px !important;
-            line-height: 30px !important;
+            line-height: 35px !important;
           }
 
           span {
@@ -551,6 +599,8 @@ export default {
   }
 
 }
+
+
 
 @media (max-width: 769px) {
   .container {
@@ -576,7 +626,7 @@ export default {
 
         p {
           font-size: 68px !important;
-          width: 700px !important;
+          width: 715px !important;
           ;
           line-height: 105% !important;
           margin: -75px 0 0 !important;
@@ -621,12 +671,13 @@ export default {
             }
 
             p {
-              font-size: 25px !important;
+              font-size: 22px !important;
               line-height: 35px !important;
             }
           }
 
           h4 {
+            font-size: 16px !important;
             width: 50% !important;
           }
         }
@@ -915,7 +966,7 @@ export default {
 
             h4 {
               width: auto !important;
-              font-size: 14px !important;
+              font-size: 15px !important;
               line-height: 16px !important;
             }
           }
