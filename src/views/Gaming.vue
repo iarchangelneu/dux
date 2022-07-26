@@ -508,7 +508,7 @@ export default {
   }
 
   .container .learn .content p {
-    font-size: 20px !important;
+    font-size: 26px !important;
     ;
   }
 
@@ -526,7 +526,7 @@ export default {
 
       p {
         font-size: 134px !important;
-        width: 1100px !important;
+        width: 1176px !important;
       }
 
       .images {
@@ -538,9 +538,9 @@ export default {
 
       .content {
         p {
-          font-size: 84px !important;
+          font-size: 134px !important;
           line-height: 105% !important;
-          margin: -90px 0 0 !important;
+          margin: -134px 0 0 !important;
 
           span {
             margin: 0 40px 10px 0 !important;
@@ -578,11 +578,11 @@ export default {
 
 
         .text {
-          width: 92% !important;
+          width: 85% !important;
 
 
           p {
-            font-size: 28px !important;
+            font-size: 38px !important;
             line-height: 35px !important;
           }
 
@@ -600,7 +600,71 @@ export default {
 
 }
 
+@media screen and (max-width: 1024px) {
+  .container .seeking .content .text p {
+    font-size: 28px !important;
+    line-height: 35px !important;
+  }
 
+  .container {
+    .lists {
+      .content__item:nth-child(1) {
+        div {
+          p {
+            font-size: 35px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .container .lists .content__item h4 {
+    font-size: 18px !important;
+  }
+
+  .container .lists .content__item div svg {
+    min-width: 16px;
+    max-width: 16px;
+  }
+
+  .container .learn .content {
+    width: 70%;
+  }
+
+  .container .learn .content p {
+    font-size: 20px !important;
+  }
+
+  .container .header_part .content .p .brave svg {
+    margin-right: 11px;
+    vertical-align: baseline;
+    min-width: 10px;
+    min-height: 10px;
+    max-height: 10px;
+    max-width: 10px;
+  }
+
+  .container .header_part .content p span {
+    margin: 0 40px 4px 0 !important;
+    vertical-align: middle !important;
+  }
+
+  .container .header_part .content p {
+    font-size: 84px !important;
+    line-height: 105% !important;
+    margin: -40px 0 0 !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container .footer {
+    padding: 45px 25px 0 25px !important;
+  }
+
+  .container .lists .content__item:nth-child(1) div p {
+    font-size: 20px !important;
+  }
+}
 
 @media (max-width: 769px) {
   .container {
@@ -966,8 +1030,10 @@ export default {
 
             h4 {
               width: auto !important;
-              font-size: 15px !important;
+              font-size: 16px !important;
               line-height: 16px !important;
+              font-family: 'Exo';
+              line-height: 20px !important;
             }
           }
         }

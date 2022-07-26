@@ -226,13 +226,17 @@ export default {
 
   }
 
+  .container .header .content .p .brave {
+    margin-top: 20px !important;
+  }
+
   .container {
     &>* {
       margin-top: -1px;
     }
 
     .header {
-      height: 605px !important;
+      height: 740px !important;
 
       &__menu {
         //background-image: url('../assets/images/ventures/header1024.png') !important;
@@ -456,6 +460,10 @@ export default {
 }
 
 @media screen and (max-width: 1024px) {
+  .container .header .content .p .brave svg {
+    min-width: 10px;
+    min-height: 10px;
+  }
 
   .container {
     &>* {
@@ -463,7 +471,7 @@ export default {
     }
 
     .header {
-      height: 400px !important;
+      height: 430px !important;
 
       &__menu {
         //background-image: url('../assets/images/ventures/header768.png') !important;
@@ -529,7 +537,7 @@ export default {
           .brave {
             margin: 0 !important;
             margin-right: 30px !important;
-            margin-bottom: 10px !important;
+            margin-bottom: 27px !important;
             font-size: 22px !important;
             width: 160px !important;
             line-height: 25px !important;
