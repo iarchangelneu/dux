@@ -1388,7 +1388,7 @@ export default {
   }
 
   .line-svg:nth-child(8) {
-    right: 41%;
+    right: 41% !important;
   }
 
   .stage-container:nth-child(9) {
@@ -2027,6 +2027,17 @@ export default {
   }
 }
 
+@media screen and (max-width: 1024px) and (min-width: 800px) {
+  .careers{
+    margin-top: 3px !important;
+  }
+  .igaming-container{
+    width: calc(100% - 64px);
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
 @media screen and (max-width:768px) {
   .row__text {
     font-size: 16px !important;
@@ -2036,6 +2047,19 @@ export default {
 
   .benefits[data-v-5c6edceb] {
     padding: 8px !important;
+  }
+  
+}
+
+@media screen and (max-width:768px) and (min-width:600px){
+  .careers{
+    margin-top: 0px !important;
+    // margin-bottom: 3px !important;
+  }
+  .igaming-container{
+    width: calc(100% - 16px);
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
