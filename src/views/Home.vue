@@ -463,7 +463,8 @@
         <div class="items">
           <VueSlickCarousel ref="holding" v-bind="settings">
             <div>
-              <div class="item">
+              <div class="item"
+                onclick="window.location.href = 'https://www.igbaffiliate.com/partner-insights/duxgroup-people-are-the-core-asset-in-our-business/'">
                 <div class="content">
                   <p class="date">01.05.22</p>
                   <p class="item_title">IGBAFFILIATE </p>
@@ -482,7 +483,8 @@
               </div>
             </div>
             <div>
-              <div class="item">
+              <div class="item"
+                onclick="window.location.href = 'https://europeangaming.eu/portal/latest-news/2021/07/14/96210/hurricane-global-became-duxgroup-and-acquired-pinocasino/'">
                 <div class="content">
                   <p class="date">01.05.22</p>
                   <p class="item_title">IGBAFFILIATE </p>
@@ -501,7 +503,8 @@
               </div>
             </div>
             <div>
-              <div class="item">
+              <div class="item"
+                onclick="window.location.href = 'https://www.igbaffiliate.com/partner-insights/duxgroup-people-are-the-core-asset-in-our-business/'">
                 <div class="content">
                   <p class="date">01.05.22</p>
                   <p class="item_title">IGBAFFILIATE </p>
@@ -520,7 +523,8 @@
               </div>
             </div>
             <div>
-              <div class="item">
+              <div class="item"
+                onclick="window.location.href = 'https://europeangaming.eu/portal/latest-news/2021/07/14/96210/hurricane-global-became-duxgroup-and-acquired-pinocasino/'">
                 <div class="content">
                   <p class="date">01.05.22</p>
                   <p class="item_title">IGBAFFILIATE </p>
@@ -1156,6 +1160,9 @@ export default {
 
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .slider {
+    padding-top: 0px !important;
+  }
 
   .ml10 {
     width: 100px !important;
@@ -1404,7 +1411,7 @@ export default {
 
       .content {
         .figure {
-          padding: 100px 95px !important;
+          padding: 84px 95px !important;
           background-image: url('../assets/images/gambling.png');
 
           p {
@@ -2132,7 +2139,7 @@ export default {
 
         .figure {
           background-image: url('../assets/images/gambling2.png');
-          padding: 72px 48px 48px 48px;
+          padding: 55px 48px 48px 48px;
           margin: 0 !important;
           width: auto !important;
           justify-content: space-between !important;

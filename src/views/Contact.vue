@@ -378,7 +378,7 @@ export default {
     background: url(/img/Union.a63e40e7.svg) no-repeat;
     background-size: contain;
     padding: 25px;
-    min-height: 350px;
+    min-height: 730px;
   }
 
   .contact-us {
@@ -400,19 +400,26 @@ export default {
   .contact-banner__title {
     font-size: 134px !important;
     line-height: 105% !important;
-    margin-top: 89px !important;
+    margin-top: 244px !important;
     max-width: 1330px !important;
+  }
+
+  .header-container .contact-banner__title .contact-us {
+    top: -23px;
   }
 }
 
 @media screen and (max-width: 1024px) {
+  .header-container .contact-banner__title .contact-us {
+    top: -3px;
+  }
 
   .contact-form__container {
     padding: 64px 32px 0 32px;
     min-height: 622px;
   }
 
-  .contact-form__container .contact-form[data-v-df212a54] {
+  .contact-form__container .contact-form {
     background: url('../assets/images/contact1024.png') no-repeat center;
   }
 
@@ -450,6 +457,22 @@ export default {
     line-height: 105% !important;
     margin-top: 60px !important;
     max-width: 854px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-form__container {
+    padding: 64px 8px 0 8px;
+    min-height: 622px;
+  }
+
+  .contact-form__container .contact-form {
+    background: url('../assets/images/contact720.png') no-repeat center !important;
+  }
+
+  .header-container .contact-banner__title {
+    font-size: 68px !important;
+    width: 735px !important;
   }
 }
 
