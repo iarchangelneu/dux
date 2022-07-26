@@ -56,8 +56,15 @@ export default {
             this.largeS = 1
             let arr = this.title.split(' ')
             if(arr.length > 3){
-                this.firstString = arr[0] + ' ' + arr[1] + ' ' + arr[2];
-                this.lastString = arr[3] + ' ' + arr[4]; 
+                console.log(arr)
+                if(arr.length == 4){
+                    this.firstString = arr[0] + ' ' + arr[1];
+                    this.lastString = arr[2] + ' ' + arr[3]; 
+                }
+                else{
+                    this.firstString = arr[0] + ' ' + arr[1] + ' ' + arr[2];
+                    this.lastString = arr[3] + ' ' + arr[4]; 
+                }
             }
             else{
                 this.firstString = arr[0] + ' ' + arr[1];

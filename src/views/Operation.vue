@@ -299,7 +299,7 @@
           </div>
         </modal>
       </div>
-      <div class="divider">
+      <div class="divider what__devider">
         <!-- <img alt="header" src="../assets/images/operation/Header.svg"/> -->
         <BlockTitle title="What makes us unique?" v-if="version == 1"></BlockTitle>
         <BlockTitle title="About our team" v-else></BlockTitle>
@@ -665,7 +665,7 @@ export default {
   background-size: cover;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1023px) {
   .operation-banner {
     padding: 8px 8px 0 8px !important;
   }
@@ -726,7 +726,7 @@ export default {
 
 @media (max-width: 1439px) and (min-width: 1024px) {
   .operation-banner {
-    background: url("../assets/images/operation/bg-medium.svg") no-repeat right top, linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28);
+    background: url("../assets/images/operation/bg-medium.svg") no-repeat right top;
   }
   .operation-banner {
     min-height: 417px !important;
@@ -743,7 +743,7 @@ export default {
 }
 @media (max-width: 1023px) and (min-width: 769px){
  .operation-banner {
-   background: url("../assets/images/operation/small.svg") no-repeat right top, linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28);
+   background: url("../assets/images/operation/small.svg") no-repeat right top;
 
    min-height: 300px !important;
  }
@@ -766,7 +766,7 @@ export default {
 @media (max-width: 768px) and (min-width: 320px){
 
  .operation-banner {
-   background: url("../assets/images/operation/very-small.svg") no-repeat right top, linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28) !important;
+   background: url("../assets/images/operation/very-small.svg") no-repeat right top;
 
    min-height: 265px !important;
  }
@@ -777,6 +777,13 @@ export default {
     padding: 72px 8px 0 8px !important;
   }
 
+}
+@media (max-width: 767px) and (min-width: 320px){
+  .operation-banner {
+   background: url("../assets/images/operation/very-small.svg") no-repeat right top, linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28) !important;
+
+   min-height: 265px !important;
+ }
 }
 @media (min-width: 1024px) and (max-width: 1439px) {
 
@@ -794,7 +801,7 @@ export default {
 
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .operation-banner__title {
     font-size: 68px !important;
     line-height: 105% !important;
@@ -2333,7 +2340,7 @@ export default {
     padding: 0 32px;
   }
   .divider{
-    padding-top: 195px !important;
+    padding-top: 72px !important;
   }
 
   .brands-title{
@@ -2354,9 +2361,21 @@ export default {
   .payment-provider-title{
     font-size: 26px !important;
   }
+  .brands-title{
+    line-height: 32px;
+  }
+  .what__devider{
+    padding-top: 212px !important;
+  }
 }
 
 @media screen and (min-width: 375px) and (max-width: 413px) {
+  .brands-title{
+    line-height: 32px;
+  }
+  .what__devider{
+    padding-top: 72px !important;
+  }
   .operation-us{
     font-size: 20px !important;
     max-width: 270px !important;
@@ -2412,7 +2431,11 @@ export default {
     padding: 0 13px;
   }
 }
-
+@media screen and (min-width: 1024px) {
+  .payment-provider-row{
+    padding-bottom: 110px;
+  }
+}
 @media screen and (min-width: 480px) {
   .provider-imgPH{
     display: none;
