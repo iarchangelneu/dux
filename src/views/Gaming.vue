@@ -1030,4 +1030,36 @@ export default {
 
   }
 }
+
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  .container {
+    .seeking {
+      .content {
+        .text {
+          background-image: url('../assets/images/gamingbg.png') !important;
+          background-repeat: no-repeat !important;
+          background-size: contain !important;
+          padding-top: 62px !important;
+          padding-bottom: 126px !important;
+
+          p {
+            font-size: 19px !important;
+            padding-bottom: 54px !important;
+          }
+
+          span {
+            font-size: 19px !important;
+
+            a {
+              font-size: 15px !important;
+              margin-top: 4px !important;
+            }
+          }
+        }
+
+
+      }
+    }
+  }
+}
 </style>

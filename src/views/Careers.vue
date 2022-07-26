@@ -1605,6 +1605,25 @@ export default {
 
 @media screen and (max-width: 450px) {
   .stages .line-svg {
+    margin: 0 181px !important;
+  }
+
+  .stages {
+    padding-top: 176px !important;
+  }
+
+  .line .slider div img {
+    width: 234px !important;
+  }
+
+  .career__title {
+    font-size: 34px !important;
+    line-height: 110% !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .stages .line-svg {
     margin: 0 128px !important;
   }
 

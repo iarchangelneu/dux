@@ -379,7 +379,6 @@ export default {
     background-size: contain;
     padding: 25px;
     min-height: 350px;
-    border: 1px solid #828FA1;
   }
 
   .contact-us {
@@ -407,8 +406,10 @@ export default {
 }
 
 @media screen and (max-width: 1024px) {
+
   .contact-form__container {
     padding: 64px 32px 0 32px;
+    min-height: 622px;
   }
 
   .contact-form__container .contact-form[data-v-df212a54] {
@@ -466,6 +467,8 @@ export default {
 
   .devider {
     padding-top: 72px !important;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .contact-banner__title {
@@ -503,6 +506,33 @@ export default {
 
     min-height: 600px !important;
 
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 450px) {
+  .contact-form__container .contact-form .form-left-side-title {
+    margin-top: -50px;
+  }
+
+  .contact-form__container {
+    padding: 64px 8px 72px 8px;
+  }
+
+  .contact-form__container .contact-form {
+    background: url('../assets/images/gamingbg.png') no-repeat cover !important;
+    background-size: 383px 530px !important;
+    min-height: 590px !important;
+    padding: 0 23px !important;
+
+  }
+
+  .form-left-side-text {
+    margin-bottom: 30px !important;
+  }
+
+  .contact-form__container .contact-form .form-right-side-input {
+    margin-bottom: 30px;
+    border-radius: 4px !important;
   }
 }
 </style>
