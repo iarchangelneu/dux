@@ -127,8 +127,11 @@
           <img src="../assets/images/partnership-bg.png" class="partnership-bg" v-if="window.width > 1024" />
           <img src="@/assets/images/partnership__bg2.png" class="partnership-bg"
             v-if="window.width <= 1024 && window.width > 450" alt="">
-          <img src="@/assets/images/partnership__bg3.png" class="partnership-bg bg__mob" v-if="window.width <= 450"
+          <img src="@/assets/images/partnership__bg3.png" class="partnership-bg bg__mob" v-if="window.width <= 375"
             alt="">
+          <img src="@/assets/images/partnership__bg4.png" class="partnership-bg bg__mob "
+            v-if="window.width <= 450 && window.width > 375" alt="">
+
 
           <div class="anime">
             <div class="imgs view1">
@@ -149,9 +152,11 @@
         <div class="item">
           <img src="../assets/images/partnership-bg.png" class="partnership-bg" v-if="window.width > 1024" />
           <img src="@/assets/images/partnership__bg2.png" class="partnership-bg"
-            v-if="window.width <= 1024 && window.width > 320" alt="">
-          <img src="@/assets/images/partnership__bg3.png" class="partnership-bg bg__mob2" v-if="window.width <= 320"
+            v-if="window.width <= 1024 && window.width > 450" alt="">
+          <img src="@/assets/images/partnership__bg3.png" class="partnership-bg bg__mob2" v-if="window.width <= 375"
             alt="">
+          <img src="@/assets/images/partnership__bg4.png" class="partnership-bg bg__mob "
+            v-if="window.width <= 450 && window.width > 375" alt="">
           <div class="anime">
             <div class="imgs view2">
               <img src="../assets/images/partnership/view2/1.png" />
@@ -169,9 +174,11 @@
         <div class="item">
           <img src="../assets/images/partnership-bg.png" class="partnership-bg" v-if="window.width > 1024" />
           <img src="@/assets/images/partnership__bg2.png" class="partnership-bg"
-            v-if="window.width <= 1024 && window.width > 320" alt="">
-          <img src="@/assets/images/partnership__bg3.png" class="partnership-bg bg__mob3" v-if="window.width <= 320"
+            v-if="window.width <= 1024 && window.width > 450" alt="">
+          <img src="@/assets/images/partnership__bg3.png" class="partnership-bg bg__mob3" v-if="window.width <= 375"
             alt="">
+          <img src="@/assets/images/partnership__bg4.png" class="partnership-bg bg__mob bg__mob414"
+            v-if="window.width <= 450 && window.width > 375" alt="">
           <div class="anime">
             <div class="imgs view3">
               <img src="../assets/images/partnership/view3/1.png" />
@@ -192,9 +199,11 @@
         <div class="item">
           <img src="../assets/images/partnership-bg.png" class="partnership-bg" v-if="window.width > 1024" />
           <img src="@/assets/images/partnership__bg2.png" class="partnership-bg"
-            v-if="window.width <= 1024 && window.width > 320" alt="">
-          <img src="@/assets/images/partnership__bg3.png" class="partnership-bg bg__mob4" v-if="window.width <= 320"
+            v-if="window.width <= 1024 && window.width > 450" alt="">
+          <img src="@/assets/images/partnership__bg3.png" class="partnership-bg bg__mob4" v-if="window.width <= 375"
             alt="">
+          <img src="@/assets/images/partnership__bg4.png" class="partnership-bg bg__mob "
+            v-if="window.width <= 450 && window.width > 375" alt="">
           <div class="anime">
             <div class="imgs view4">
               <img src="../assets/images/partnership/view4/1.png" />
@@ -1047,6 +1056,8 @@ export default {
 .small-header {
   display: none;
 }
+
+
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .partnership {
@@ -2280,6 +2291,8 @@ export default {
   }
 }
 
+
+
 @media screen and (min-width: 320px) and (max-width: 500px) {
   .offices div .office img:nth-child(1) {
     border-radius: 4px !important;
@@ -2513,6 +2526,12 @@ export default {
         .item {
           .bg__mob {
             height: 345px !important;
+
+            @media screen and (max-width: 414px) {
+              .bg__mob {
+                height: 405px !important;
+              }
+            }
           }
 
           .bg__mob2 {
@@ -3396,6 +3415,70 @@ export default {
   }
 }
 
+@media screen and (min-width: 375px) and (max-width: 450px) {
+  .container {
+    .partnership {
+      .items {
+        .item:nth-child(1) {
+          .partnership-bg {
+            height: 370px !important;
+          }
+
+
+
+          .content {
+            .text {
+              font-size: 18px !important;
+            }
+          }
+
+          .bg__mob414 {
+            height: 400px !important;
+          }
+
+
+        }
+
+        .item:nth-child(2) {
+          .partnership-bg {
+            height: 400px !important;
+          }
+
+          .content {
+            .text {
+              font-size: 18px !important;
+            }
+          }
+        }
+
+        .item:nth-child(3) {
+          .partnership-bg {
+            height: 460px !important;
+          }
+
+          .content {
+            .text {
+              font-size: 18px !important;
+            }
+          }
+        }
+
+        .item:nth-child(4) {
+          .partnership-bg {
+            height: 400px !important;
+          }
+
+          .content {
+            .text {
+              font-size: 18px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
 
 
 
