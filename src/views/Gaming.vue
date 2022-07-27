@@ -223,7 +223,7 @@ export default {
         letter-spacing: 0.02em;
         text-transform: uppercase;
         color: #F0F0F0;
-        margin: -50px 0 0;
+        margin: 157px 0 0;
         width: 1400px;
 
         .blue {
@@ -522,7 +522,7 @@ export default {
     }
 
     .header_part {
-      height: 417px !important;
+      height: 756px !important;
 
       p {
         font-size: 134px !important;
@@ -540,7 +540,7 @@ export default {
         p {
           font-size: 134px !important;
           line-height: 105% !important;
-          margin: -134px 0 0 !important;
+          margin: 34px 0 0 !important;
 
           span {
             margin: 0 40px 10px 0 !important;
@@ -783,6 +783,16 @@ export default {
 }
 
 @media screen and (max-width: 450px) {
+  .container .seeking .title {
+    padding: 0 25px;
+    padding-top: 72px;
+  }
+
+  .container .lists .title {
+    padding: 0px 25px;
+    padding-top: 72px;
+  }
+
   .container .header_part .content p span {
     margin: 0 !important;
   }

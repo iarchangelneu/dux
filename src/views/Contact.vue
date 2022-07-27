@@ -112,6 +112,8 @@ export default {
 }
 
 .devider {
+  padding-left: 25px;
+  padding-right: 25px;
   padding-top: 150px;
   display: flex;
   width: 100%;
