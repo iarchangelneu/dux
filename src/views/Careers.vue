@@ -135,33 +135,44 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen style="display: none;"></iframe>
       </div>
-      <div class="slider">
-        <VueSlickCarousel ref="images" v-bind="settingsImages">
-          <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/brooke-cagle-g1Kr4Ozfoac-unsplash1.png"></div>
-          <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/pexels-cowomen-20416291.png"></div>
-          <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/pexels-cowomen-20416293.png"></div>
-          <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/pexels-cowomen-20416294.png"></div>
-          <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/pexels-cowomen-20416296.png"></div>
-          <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/pexels-cowomen-20416297.png"></div>
-          <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/pexels-cowomen-20416298.png"></div>
-          <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/pexels-cowomen-20416299.png"></div>
-          <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/pexels-cowomen-204162910.png"></div>
-          <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/Rectangle930.png"></div>
-        </VueSlickCarousel>
-        <div class="arrows">
-          <div class="prev" @click="$refs.images.prev()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="#2F5BD8" class="bi bi-arrow-left"
-              viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
-            </svg>
+      <div class="cont__slider">
+        <div class="slider swiper-container">
+          <!-- <VueSlickCarousel ref="images" v-bind="settingsImages">
+            <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/brooke-cagle-g1Kr4Ozfoac-unsplash1.png"></div>
+            <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/pexels-cowomen-20416291.png"></div>
+            <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/pexels-cowomen-20416293.png"></div>
+            <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/pexels-cowomen-20416294.png"></div>
+            <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/pexels-cowomen-20416296.png"></div>
+            <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/pexels-cowomen-20416297.png"></div>
+            <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/pexels-cowomen-20416298.png"></div>
+            <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/pexels-cowomen-20416299.png"></div>
+            <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/pexels-cowomen-204162910.png"></div>
+            <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/Rectangle930.png"></div>
+          </VueSlickCarousel> -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../assets/images/careers/slider/brooke-cagle-g1Kr4Ozfoac-unsplash1.png"></div>
+            <div class="swiper-slide"><img src="../assets/images/careers/slider/pexels-cowomen-20416291.png"></div>
+            <div class="swiper-slide"><img src="../assets/images/careers/slider/pexels-cowomen-20416293.png"></div>
+            <div class="swiper-slide"><img src="../assets/images/careers/slider/pexels-cowomen-20416294.png"></div>
+            <div class="swiper-slide"><img src="../assets/images/careers/slider/pexels-cowomen-20416296.png"></div>
+            <div class="swiper-slide"><img src="../assets/images/careers/slider/pexels-cowomen-20416297.png"></div>
+            <div class="swiper-slide"><img src="../assets/images/careers/slider/pexels-cowomen-20416298.png"></div>
+            <div class="swiper-slide"><img src="../assets/images/careers/slider/pexels-cowomen-20416299.png"></div>
+            <div class="swiper-slide"><img src="../assets/images/careers/slider/pexels-cowomen-204162910.png"></div>
+            <div class="swiper-slide"><img src="../assets/images/careers/slider/Rectangle930.png"></div>
           </div>
-          <div class="next" @click="$refs.images.next()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="#2F5BD8" class="bi bi-arrow-right"
-              viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-            </svg>
+          <div class="arrows">
+            <div class="prev swiper-button-prev" @click="$refs.images.prev()">
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="#2F5BD8" class="bi bi-arrow-left"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+              </svg> -->
+              <img src="../assets/images/careers/arrowPrev.svg" alt="">
+            </div>
+            <div class="next swiper-button-next" @click="$refs.images.next()">
+              <img src="../assets/images/careers/arrowNext.svg" alt="">
+            </div>
           </div>
         </div>
       </div>
@@ -440,6 +451,10 @@ import VueSlickCarousel from 'vue-slick-carousel'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 import BlockTitle from "../components/BlockTitle.vue";
+import Swiper, { Navigation, Pagination } from 'swiper'
+import 'swiper/swiper-bundle.css'
+
+Swiper.use([ Navigation, Pagination ])
 
 export default {
   name: "Careers-page",
@@ -474,7 +489,7 @@ export default {
     HeaderPart,
     FooterPart,
     VueSlickCarousel,
-    BlockTitle
+    BlockTitle,
   },
   methods: {
     openedMobMenu(value) {
@@ -495,6 +510,55 @@ export default {
   destroyed() {
     window.removeEventListener('resize', this.handleResize);
   },
+  mounted(){
+    new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      loop: true,
+      spaceBetween: 24,
+      grabCursor: true,
+      // width: 577,
+      speed: 5000,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      // scrollbar: {
+      //   el: '.swiper-scrollbar',
+      // },
+      breakpoints: {
+          // when window width is >= 320px
+          // 320: {
+          //   slidesPerView: 2,
+          //   spaceBetween: 20
+          // },
+          // when window width is >= 480px
+          // 480: {
+          //   slidesPerView: 3,
+          //   spaceBetween: 30
+          // },
+          // when window width is >= 640px
+          // 640: {
+          //   slidesPerView: 4,
+          //   spaceBetween: 40
+          // },
+          320: {
+            // slidesPerView: 4,
+            spaceBetween: 8
+          },
+          760: {
+            // slidesPerView: 4,
+            spaceBetween: 16
+          },
+          1025: {
+            // slidesPerView: 4,
+            spaceBetween: 24
+          }
+        }
+    })
+  }
 
 }
 </script>
@@ -727,12 +791,12 @@ export default {
     }
 
     .slider {
-      padding-left: 100px !important;
+      // padding-left: 100px !important;
 
       div {
         img {
-          width: 430px !important;
-          margin-left: 16px !important;
+          // width: 430px !important;
+          // margin-left: 16px !important;
         }
       }
     }
@@ -813,7 +877,7 @@ export default {
 
       div {
         img {
-          width: 400px !important;
+          // width: 400px !important;
         }
       }
     }
@@ -957,7 +1021,7 @@ export default {
     }
 
     .slider {
-      padding-left: 16px !important;
+      // padding-left: 16px !important;
 
       div {
         img {
@@ -1003,7 +1067,7 @@ export default {
   }
 
   .prev {
-    margin-right: 20px;
+    // margin-right: 20px;
   }
 }
 
@@ -1122,7 +1186,7 @@ export default {
 
   .slider {
     background-color: #010C28;
-    padding-left: 25px;
+    // padding-left: 25px;
   }
 
   marquee {
@@ -1440,7 +1504,7 @@ export default {
   }
 
   .line .slider div img {
-    width: 400px !important;
+    // width: 400px !important;
   }
 
   .marquee-container .Marquee-content .Marquee-tag p {
@@ -1619,7 +1683,7 @@ export default {
   }
 
   .line .slider div img {
-    width: 234px !important;
+    // width: 234px !important;
   }
 
   .career__title {
@@ -1638,7 +1702,7 @@ export default {
   }
 
   .line .slider div img {
-    width: 234px !important;
+    // width: 234px !important;
   }
 
   .career__title {
@@ -2011,7 +2075,7 @@ export default {
   }
 
   .slider {
-    padding-left: 113px !important;
+    // padding-left: 113px !important;
   }
 
   .slick-slide {
@@ -2238,6 +2302,92 @@ export default {
 }
 .lol{
   position: relative;
+}
+.cont__slider{
+  margin-left: 380px;
+  overflow: hidden;
+}
+
+.swiper-slide{
+  width: 577px;
+}
+.swiper-slide img{
+  width: 100%;
+}
+.swiper-slide-prev{
+  // transition: opacity 6s;
+  // opacity: 0;
+}
+.swiper-button-prev, .swiper-button-next{
+  position: relative;
+}
+.swiper-button-prev img, .swiper-button-next img{
+  width: 29px;
+  height: 14px;
+  cursor: pointer;
+}
+.swiper-button-next:after, .swiper-button-prev::after{
+  content: unset;
+}
+.swiper-button-next{
+  margin-left: 32px;
+}
+.swiper-button-prev{
+  left: unset;
+}
+
+@media screen and (max-width: 1440px) {
+  .cont__slider{
+  margin-left:  144px;
+  overflow: hidden;
+}
+}
+
+@media screen and (max-width: 1220px) {
+  .cont__slider{
+    margin-left:  34px;
+    overflow: hidden;
+  }
+  .swiper-slide{
+    width: 477px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .cont__slider{
+    margin-left:  113px;
+    overflow: hidden;
+  }
+  .swiper-slide{
+    width: 430px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cont__slider{
+    margin-left:  16px;
+    overflow: hidden;
+  }
+  .swiper-slide{
+    width: 400px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .cont__slider{
+    margin-left:  32px;
+    overflow: hidden;
+  }
+  .swiper-slide{
+    width: 214px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .cont__slider{
+    margin-left:  16px;
+    overflow: hidden;
+  }
+  .swiper-slide{
+    width: 214px;
+  }
 }
 </style>
 
