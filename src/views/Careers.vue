@@ -1843,7 +1843,7 @@ export default {
     display: block;
     position: absolute;
     top: 95%;
-    transform: rotate(180deg);
+    transform: rotate(360deg);
     right: 51%;
   }
 
@@ -2098,10 +2098,11 @@ export default {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 800px) {
-  .careers{
+  .careers {
     margin-top: 3px !important;
   }
-  .igaming-container{
+
+  .igaming-container {
     width: calc(100% - 64px);
     padding-left: 0px;
     padding-right: 0px;
@@ -2118,16 +2119,17 @@ export default {
   .benefits[data-v-5c6edceb] {
     padding: 8px !important;
   }
-  
+
 }
 
-@media screen and (max-width:768px) and (min-width:600px){
-  .careers{
+@media screen and (max-width:768px) and (min-width:600px) {
+  .careers {
     margin-top: 0px !important;
     // margin-bottom: 3px !important;
   }
-  .igaming-container{
-    width: calc(100% - 16px);
+
+  .igaming-container {
+    width: calc(95% - 16px);
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -2291,7 +2293,7 @@ export default {
   }
 }
 
-.kek{
+.kek {
   width: 100%;
   position: absolute;
   left: 0;
@@ -2300,7 +2302,8 @@ export default {
   opacity: 0;
   cursor: ew-resize;
 }
-.lol{
+
+.lol {
   position: relative;
 }
 .cont__slider{
@@ -2392,7 +2395,7 @@ export default {
 </style>
 
 <style>
-.slider img{
+.slider img {
   cursor: ew-resize;
 }
 </style>

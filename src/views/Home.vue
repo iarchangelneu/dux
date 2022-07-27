@@ -4194,7 +4194,7 @@ export default {
         font-weight: 400;
         font-size: 35px;
         margin: 0;
-        width: 75%;
+        width: 77%;
         line-height: 47px;
         color: #F0F0F0;
       }

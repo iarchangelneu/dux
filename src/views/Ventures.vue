@@ -1444,7 +1444,7 @@ export default {
           letter-spacing: 0.03em;
           text-transform: uppercase;
           color: #F0F0F0;
-          margin: 37px 70px 0px 0;
+          margin: 16px 70px 0px 0;
           vertical-align: top;
 
           svg {
