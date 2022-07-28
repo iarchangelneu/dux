@@ -1036,7 +1036,7 @@ export default {
 
       div {
         img {
-          width: 210px !important;
+          // width: 210px !important;
         }
       }
     }
