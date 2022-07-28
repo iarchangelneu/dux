@@ -3,10 +3,11 @@
     <div class="header">
       <div class="operation-banner">
         <div class="menu">
-          <Header/>
+          <Header />
         </div>
         <h1 class="operation-banner__title">
-          <p class="operation-us"><img class="span-svg" src="../assets/images/contact/Ellipse1.svg" alt="elipse">DUXGroup
+          <p class="operation-us"><img class="span-svg" src="../assets/images/contact/Ellipse1.svg"
+              alt="elipse">DUXGroup
             Operation</p>
           a Team &nbsp; of real <br> <span class="color-blue ndk"> professionals</span>
         </h1>
@@ -18,97 +19,91 @@
     </div>
     <div class="department">
       <h2 class="department__title">
-        At DUXGroup, more than <span class="color-blue">350 experts  </span>working in different departments <span
+        At DUXGroup, more than <span class="color-blue">350 experts </span>working in different departments <span
           class="color-blue">around the world</span> ensure the operational activities of the
         <span class="color-blue">holding</span> and its <span class="color-blue">brands.</span>
       </h2>
       <div class="mechanism-container">
         <div class="mechanism mechanism-support" @click="$modal.show('support-modal');">
           <img alt="shestiryonka" class='small-shestiryonka transparent'
-               src="../assets/images/operation/shestiryonka.svg"/>
+            src="../assets/images/operation/shestiryonka.svg" />
           <p class="mechanism-text">
             Support
           </p>
         </div>
         <div class="mechanism mechanism-vip" @click="$modal.show('vip-modal');">
-          <img alt="shestiryonka" class='medium-shestiryonka' src="../assets/images/operation/shestiryonka.svg"/>
+          <img alt="shestiryonka" class='medium-shestiryonka' src="../assets/images/operation/shestiryonka.svg" />
           <p class="mechanism-text medium-circle">
             VIP Support
           </p>
 
         </div>
         <div class="mechanism mechanism-hr" @click="$modal.show('hr-modal');">
-          <img alt="shestiryonka" class='small-shestiryonka' src="../assets/images/operation/shestiryonka.svg"/>
+          <img alt="shestiryonka" class='small-shestiryonka' src="../assets/images/operation/shestiryonka.svg" />
           <p class="mechanism-text">
             HR
           </p>
         </div>
         <div class="mechanism mechanism-legal" @click="$modal.show('legal-modal');">
-          <img alt="shestiryonka" class='big-shestiryonka' src="../assets/images/operation/shestiryonka.svg"/>
+          <img alt="shestiryonka" class='big-shestiryonka' src="../assets/images/operation/shestiryonka.svg" />
           <p class="mechanism-text big-circle">
             Legal & Finance
           </p>
         </div>
         <div class="mechanism mechanism-antifraud" @click="$modal.show('antifraud-modal');">
-          <img alt="shestiryonka" class='medium-shestiryonka' src="../assets/images/operation/shestiryonka.svg"/>
+          <img alt="shestiryonka" class='medium-shestiryonka' src="../assets/images/operation/shestiryonka.svg" />
           <p class="mechanism-text medium-circle">
             Antifraud
           </p>
         </div>
         <div class="mechanism mechanism-design" @click="$modal.show('design-modal');">
-          <img alt="shestiryonka" class='small-shestiryonka' src="../assets/images/operation/shestiryonka.svg"/>
+          <img alt="shestiryonka" class='small-shestiryonka' src="../assets/images/operation/shestiryonka.svg" />
           <p class="mechanism-text">
             Design
           </p>
         </div>
         <div class="mechanism mechanism-bi" @click="$modal.show('bi-modal');">
-          <img alt="shestiryonka" class='medium-shestiryonka' src="../assets/images/operation/shestiryonka.svg"/>
+          <img alt="shestiryonka" class='medium-shestiryonka' src="../assets/images/operation/shestiryonka.svg" />
           <p class="mechanism-text medium-circle">
             BI <br> Analytics
           </p>
         </div>
         <div class="mechanism mechanism-crm" @click="$modal.show('crm-modal');">
-          <img alt="shestiryonka" class='small-shestiryonka' src="../assets/images/operation/shestiryonka.svg"/>
+          <img alt="shestiryonka" class='small-shestiryonka' src="../assets/images/operation/shestiryonka.svg" />
           <p class="mechanism-text">
             CRM
           </p>
         </div>
         <div class="mechanism mechanism-development" @click="$modal.show('development-modal');">
-          <img alt="shestiryonka" class='big-shestiryonka' src="../assets/images/operation/shestiryonka.svg"/>
+          <img alt="shestiryonka" class='big-shestiryonka' src="../assets/images/operation/shestiryonka.svg" />
           <p class="mechanism-text big-circle">
             Development
           </p>
         </div>
         <div class="mechanism mechanism-team" @click="$modal.show('team-modal');">
-          <img alt="shestiryonka" class='medium-shestiryonka' src="../assets/images/operation/shestiryonka.svg"/>
+          <img alt="shestiryonka" class='medium-shestiryonka' src="../assets/images/operation/shestiryonka.svg" />
           <p class="mechanism-text medium-circle">
             Product <br> Team
           </p>
         </div>
         <div class="mechanism mechanism-pr" @click="$modal.show('pr-modal');">
-          <img alt="shestiryonka" class='big-shestiryonka' src="../assets/images/operation/shestiryonka.svg"/>
+          <img alt="shestiryonka" class='big-shestiryonka' src="../assets/images/operation/shestiryonka.svg" />
           <p class="mechanism-text big-circle">
             PR & Marketing
           </p>
         </div>
         <div class="mechanism mechanism-psp" @click="$modal.show('psp-modal');">
-          <img alt="shestiryonka" class='big-shestiryonka' src="../assets/images/operation/shestiryonka.svg"/>
+          <img alt="shestiryonka" class='big-shestiryonka' src="../assets/images/operation/shestiryonka.svg" />
           <p class="mechanism-text big-circle">
             Integration & PSP
           </p>
         </div>
       </div>
       <div class="modals">
-        <modal
-            name="psp-modal"
-            class="modal-container"
-            :max-width="667"
-            :width="667"
-            styles="background-color:transparent; text-align:center; box-shadow:none"
-            :height="'auto'"
-            :adaptive="true">
+        <modal name="psp-modal" class="modal-container" :max-width="667" :width="667"
+          styles="background-color:transparent; text-align:center; box-shadow:none" :height="'auto'" :adaptive="true">
           <div class="container">
-            <img src="../assets/images/operation/shestyorinka-grey.png"/>
+            <img src="../assets/images/operation/shestyorinka-grey.png" />
             <div class="text">
               <p>&#x2022; Integration & PSP</p>
               <p>Working on connecting the main payment and game providers necessary to provide an optimal level of
@@ -116,32 +111,20 @@
             </div>
           </div>
         </modal>
-        <modal
-            name="crm-modal"
-            class="modal-container"
-            :max-width="667"
-            :width="667"
-            styles="background-color:transparent; text-align:center; box-shadow:none"
-            :height="'auto'"
-            :adaptive="true">
+        <modal name="crm-modal" class="modal-container" :max-width="667" :width="667"
+          styles="background-color:transparent; text-align:center; box-shadow:none" :height="'auto'" :adaptive="true">
           <div class="container">
-            <img src="../assets/images/operation/shestyorinka-grey.png"/>
+            <img src="../assets/images/operation/shestyorinka-grey.png" />
             <div class="text">
               <p>&#x2022; CRM</p>
               <p>Develop and implement promotions and contests for users of the product.</p>
             </div>
           </div>
         </modal>
-        <modal
-            name="pr-modal"
-            class="modal-container"
-            :max-width="667"
-            :width="667"
-            styles="background-color:transparent; text-align:center; box-shadow:none"
-            :height="'auto'"
-            :adaptive="true">
+        <modal name="pr-modal" class="modal-container" :max-width="667" :width="667"
+          styles="background-color:transparent; text-align:center; box-shadow:none" :height="'auto'" :adaptive="true">
           <div class="container">
-            <img src="../assets/images/operation/shestyorinka-grey.png"/>
+            <img src="../assets/images/operation/shestyorinka-grey.png" />
             <div class="text">
               <p>&#x2022; PR & Marketing</p>
               <p>Promote the brands of the holding, follow the latest trends in the sphere, and implement them into
@@ -149,48 +132,30 @@
             </div>
           </div>
         </modal>
-        <modal
-            name="team-modal"
-            class="modal-container"
-            :max-width="667"
-            :width="667"
-            styles="background-color:transparent; text-align:center; box-shadow:none"
-            :height="'auto'"
-            :adaptive="true">
+        <modal name="team-modal" class="modal-container" :max-width="667" :width="667"
+          styles="background-color:transparent; text-align:center; box-shadow:none" :height="'auto'" :adaptive="true">
           <div class="container">
-            <img src="../assets/images/operation/shestyorinka-grey.png"/>
+            <img src="../assets/images/operation/shestyorinka-grey.png" />
             <div class="text">
               <p>&#x2022; Product Team</p>
               <p>Help in collaboration, systematic planning, and organization of the work on all types of products.</p>
             </div>
           </div>
         </modal>
-        <modal
-            name="development-modal"
-            class="modal-container"
-            :max-width="667"
-            :width="667"
-            styles="background-color:transparent; text-align:center; box-shadow:none"
-            :height="'auto'"
-            :adaptive="true">
+        <modal name="development-modal" class="modal-container" :max-width="667" :width="667"
+          styles="background-color:transparent; text-align:center; box-shadow:none" :height="'auto'" :adaptive="true">
           <div class="container">
-            <img src="../assets/images/operation/shestyorinka-grey.png"/>
+            <img src="../assets/images/operation/shestyorinka-grey.png" />
             <div class="text">
               <p>&#x2022; Development</p>
               <p>Create advanced frontend and backend solutions for all products of the company.</p>
             </div>
           </div>
         </modal>
-        <modal
-            name="bi-modal"
-            class="modal-container"
-            :max-width="667"
-            :width="667"
-            styles="background-color:transparent; text-align:center; box-shadow:none"
-            :height="'auto'"
-            :adaptive="true">
+        <modal name="bi-modal" class="modal-container" :max-width="667" :width="667"
+          styles="background-color:transparent; text-align:center; box-shadow:none" :height="'auto'" :adaptive="true">
           <div class="container">
-            <img src="../assets/images/operation/shestyorinka-grey.png"/>
+            <img src="../assets/images/operation/shestyorinka-grey.png" />
             <div class="text">
               <p>&#x2022; BI Analytics</p>
               <p>Calculating and analyzing the main indicators of user gaming activity in real-time, based on data
@@ -198,48 +163,30 @@
             </div>
           </div>
         </modal>
-        <modal
-            name="design-modal"
-            class="modal-container"
-            :max-width="667"
-            :width="667"
-            styles="background-color:transparent; text-align:center; box-shadow:none"
-            :height="'auto'"
-            :adaptive="true">
+        <modal name="design-modal" class="modal-container" :max-width="667" :width="667"
+          styles="background-color:transparent; text-align:center; box-shadow:none" :height="'auto'" :adaptive="true">
           <div class="container">
-            <img src="../assets/images/operation/shestyorinka-grey.png"/>
+            <img src="../assets/images/operation/shestyorinka-grey.png" />
             <div class="text">
               <p>&#x2022; Design</p>
               <p>Create modern visual depictions of all the projects we have.</p>
             </div>
           </div>
         </modal>
-        <modal
-            name="antifraud-modal"
-            class="modal-container"
-            :max-width="667"
-            :width="667"
-            styles="background-color:transparent; text-align:center; box-shadow:none"
-            :height="'auto'"
-            :adaptive="true">
+        <modal name="antifraud-modal" class="modal-container" :max-width="667" :width="667"
+          styles="background-color:transparent; text-align:center; box-shadow:none" :height="'auto'" :adaptive="true">
           <div class="container">
-            <img src="../assets/images/operation/shestyorinka-grey.png"/>
+            <img src="../assets/images/operation/shestyorinka-grey.png" />
             <div class="text">
               <p>&#x2022; Antifraud</p>
               <p>Continuously monitor and analyze the activity of players to identify suspicious activity.</p>
             </div>
           </div>
         </modal>
-        <modal
-            name="legal-modal"
-            class="modal-container"
-            :max-width="667"
-            :width="667"
-            styles="background-color:transparent; text-align:center; box-shadow:none"
-            :height="'auto'"
-            :adaptive="true">
+        <modal name="legal-modal" class="modal-container" :max-width="667" :width="667"
+          styles="background-color:transparent; text-align:center; box-shadow:none" :height="'auto'" :adaptive="true">
           <div class="container">
-            <img src="../assets/images/operation/shestyorinka-grey.png"/>
+            <img src="../assets/images/operation/shestyorinka-grey.png" />
             <div class="text">
               <p>&#x2022; Legal & Finance</p>
               <p>Take care of all legal and financial issues, including issues of obtaining various local licenses and
@@ -247,16 +194,10 @@
             </div>
           </div>
         </modal>
-        <modal
-            name="hr-modal"
-            class="modal-container"
-            :max-width="667"
-            :width="667"
-            styles="background-color:transparent; text-align:center; box-shadow:none"
-            :height="'auto'"
-            :adaptive="true">
+        <modal name="hr-modal" class="modal-container" :max-width="667" :width="667"
+          styles="background-color:transparent; text-align:center; box-shadow:none" :height="'auto'" :adaptive="true">
           <div class="container">
-            <img src="../assets/images/operation/shestyorinka-grey.png"/>
+            <img src="../assets/images/operation/shestyorinka-grey.png" />
             <div class="text">
               <p>&#x2022; HR</p>
               <p>Look for and find the best market experts, maintain a friendly atmosphere in all offices and take care
@@ -264,16 +205,10 @@
             </div>
           </div>
         </modal>
-        <modal
-            name="vip-modal"
-            class="modal-container"
-            :max-width="667"
-            :width="667"
-            styles="background-color:transparent; text-align:center; box-shadow:none"
-            :height="'auto'"
-            :adaptive="true">
+        <modal name="vip-modal" class="modal-container" :max-width="667" :width="667"
+          styles="background-color:transparent; text-align:center; box-shadow:none" :height="'auto'" :adaptive="true">
           <div class="container">
-            <img src="../assets/images/operation/shestyorinka-grey.png"/>
+            <img src="../assets/images/operation/shestyorinka-grey.png" />
             <div class="text">
               <p>&#x2022; & VIP Support</p>
               <p>Respond to the requests of players and VIP players, as well as provide round-the-clock support for each
@@ -281,16 +216,10 @@
             </div>
           </div>
         </modal>
-        <modal
-            name="support-modal"
-            class="modal-container"
-            :max-width="667"
-            :width="667"
-            styles="background-color:transparent; text-align:center; box-shadow:none"
-            :height="'auto'"
-            :adaptive="true">
+        <modal name="support-modal" class="modal-container" :max-width="667" :width="667"
+          styles="background-color:transparent; text-align:center; box-shadow:none" :height="'auto'" :adaptive="true">
           <div class="container">
-            <img src="../assets/images/operation/shestyorinka-grey.png"/>
+            <img src="../assets/images/operation/shestyorinka-grey.png" />
             <div class="text">
               <p>&#x2022; Support</p>
               <p>Respond to the requests of players and VIP players, as well as provide round-the-clock support for each
@@ -308,7 +237,7 @@
         <div class="unique-container">
           <div class="unique-container-left-side">
             <div class="unique-container-left-side-dote">
-              <img src="../assets/images/careers/dote16.svg" alt="dote16"/>
+              <img src="../assets/images/careers/dote16.svg" alt="dote16" />
             </div>
             <div class="unique-container-left-side-text">
               <h3 class="unique-container-left-side-title">Years of Experience</h3>
@@ -326,7 +255,7 @@
         <div class="unique-container">
           <div class="unique-container-left-side">
             <div class="unique-container-left-side-dote">
-              <img src="../assets/images/careers/dote16.svg" alt="dote16"/>
+              <img src="../assets/images/careers/dote16.svg" alt="dote16" />
             </div>
             <div class="unique-container-left-side-text">
               <h3 class="unique-container-left-side-title">Vast Portfolio</h3>
@@ -344,7 +273,7 @@
         <div class="unique-container">
           <div class="unique-container-left-side">
             <div class="unique-container-left-side-dote">
-              <img src="../assets/images/careers/dote16.svg" alt="dote16"/>
+              <img src="../assets/images/careers/dote16.svg" alt="dote16" />
             </div>
             <div class="unique-container-left-side-text">
               <h3 class="unique-container-left-side-title third-title">Innovation, design, and technology</h3>
@@ -364,7 +293,7 @@
         <div class="unique-container">
           <div class="unique-container-left-side">
             <div class="unique-container-left-side-dote">
-              <img src="../assets/images/careers/dote16.svg" alt="dote16"/>
+              <img src="../assets/images/careers/dote16.svg" alt="dote16" />
             </div>
             <div class="unique-container-left-side-text">
               <h3 class="unique-container-left-side-title">Special approach </h3>
@@ -415,33 +344,37 @@
             <img src="../assets/images/operation/gameproviders/Evolution.svg" alt="game-providers" class="provider-img">
             <img src="../assets/images/operation/gameproviders/Playson.svg" alt="game-providers" class="provider-img">
             <img src="../assets/images/operation/gameproviders/Pushgaming.svg" alt="game-providers"
-                 class="provider-img">
+              class="provider-img">
             <img src="../assets/images/operation/gameproviders/Booongo.svg" alt="game-providers" class="provider-img">
             <img src="../assets/images/operation/gameproviders/PragmaticLive.svg" alt="game-providers"
-                 class="provider-img">
+              class="provider-img">
             <img src="../assets/images/operation/gameproviders/Bgaming.svg" alt="game-providers" class="provider-img">
             <img src="../assets/images/operation/gameproviders/Spinomenal.svg" alt="game-providers"
-                 class="provider-img">
+              class="provider-img">
             <img src="../assets/images/operation/gameproviders/Nolimitcity.svg" alt="game-providers"
-                 class="provider-img">
+              class="provider-img">
             <img src="../assets/images/operation/gameproviders/Microgaming.svg" alt="game-providers"
-                 class="provider-img">
+              class="provider-img">
             <img src="../assets/images/operation/gameproviders/Redtiger.svg" alt="game-providers" class="provider-img">
             <img src="../assets/images/operation/gameproviders/Thunderkick.svg" alt="game-providers"
-                 class="provider-img">
+              class="provider-img">
             <img src="../assets/images/operation/gameproviders/wazdan.svg" alt="game-providers" class="provider-img">
             <img src="../assets/images/operation/gameproviders/booming.svg" alt="game-providers" class="provider-img">
             <img src="../assets/images/operation/gameproviders/Isoftbet.svg" alt="game-providers" class="provider-img">
             <img src="../assets/images/operation/gameproviders/Netent.svg" alt="game-providers" class="provider-img">
             <img src="../assets/images/operation/gameproviders/Yggdrasil.svg" alt="game-providers" class="provider-img">
-            <img src="../assets/images/operation/gameproviders/EGT.svg" alt="game-providers" class="provider-img provider-imgMH">
-            <img src="../assets/images/operation/gameproviders/belatra.svg" alt="game-providers" class="provider-img provider-imgMH">
+            <img src="../assets/images/operation/gameproviders/EGT.svg" alt="game-providers"
+              class="provider-img provider-imgMH">
+            <img src="../assets/images/operation/gameproviders/belatra.svg" alt="game-providers"
+              class="provider-img provider-imgMH">
 
           </div>
 
           <div class="d-flex">
-            <img src="../assets/images/operation/gameproviders/EGT.svg" alt="game-providers" class="provider-img provider-imgPH">
-            <img src="../assets/images/operation/gameproviders/belatra.svg" alt="game-providers" class="provider-img provider-imgPH">
+            <img src="../assets/images/operation/gameproviders/EGT.svg" alt="game-providers"
+              class="provider-img provider-imgPH">
+            <img src="../assets/images/operation/gameproviders/belatra.svg" alt="game-providers"
+              class="provider-img provider-imgPH">
           </div>
 
         </div>
@@ -462,13 +395,15 @@
             <div><img src="../assets/images/operation/payment/rappid.svg" class="provider-img" alt="payment"></div>
             <div><img src="../assets/images/operation/payment/ezwallet.svg" class="provider-img" alt="payment"></div>
             <div><img src="../assets/images/operation/payment/mifinity.svg" class="provider-img" alt="payment"></div>
-            <div><img src="../assets/images/operation/payment/dimoco.svg" class="provider-img provider-imgMarR" alt="payment"></div>
-            <div><img src="../assets/images/operation/payment/skrill.svg" class="provider-img provider-imgMarL" alt="payment"></div>
+            <div><img src="../assets/images/operation/payment/dimoco.svg" class="provider-img provider-imgMarR"
+                alt="payment"></div>
+            <div><img src="../assets/images/operation/payment/skrill.svg" class="provider-img provider-imgMarL"
+                alt="payment"></div>
           </div>
         </div>
       </div>
       <div class="footer">
-        <FooterPart/>
+        <FooterPart />
 
       </div>
     </div>
@@ -477,7 +412,7 @@
 </template>
 
 <script>
-import Header from '../components/Header' ;
+import Header from '../components/Header';
 import FooterPart from "@/components/Footer";
 import BlockTitle from '../components/BlockTitle.vue';
 
@@ -489,7 +424,7 @@ export default {
       version: 1,
     }
   },
-  components: {Header, FooterPart, BlockTitle},
+  components: { Header, FooterPart, BlockTitle },
   methods: {
     show() {
       this.$modal.show('my-first-modal');
@@ -498,7 +433,7 @@ export default {
   mounted() {
     this.show()
     let width = window.innerWidth
-    if(width > 480){
+    if (width > 480) {
       this.version = 1
     }
     else {
@@ -510,18 +445,20 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.unique-container-left-side-dote{
-  margin-right: 105px !important;  
+.unique-container-left-side-dote {
+  margin-right: 105px !important;
 }
+
 @media screen and (max-width: 1024px) {
-  .unique-container-left-side-dote{
-  margin-right: 65px !important;  
+  .unique-container-left-side-dote {
+    margin-right: 65px !important;
+  }
 }
-}
+
 @media screen and (max-width: 768px) {
-  .unique-container-left-side-dote{
-  margin-right: 10% !important;  
-}
+  .unique-container-left-side-dote {
+    margin-right: 10% !important;
+  }
 }
 
 .modal-container {
@@ -531,7 +468,7 @@ export default {
     position: relative;
 
     img {
-      animation: rotating-big 4s linear infinite;
+
       width: 100%;
     }
 
@@ -578,6 +515,7 @@ export default {
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   to {
     -ms-transform: rotate(-360deg);
     -moz-transform: rotate(-360deg);
@@ -595,6 +533,7 @@ export default {
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   to {
     -ms-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -618,25 +557,29 @@ export default {
   .footer {
     padding: 0 16px !important;
   }
+
   .operation-banner__title {
     font-size: 34px !important;
     line-height: 110% !important;
   }
+
   .operation-us {
     margin: 0 240px 0 0 !important;
     max-width: 280px;
     font-size: 16px !important;
     line-height: 20px !important;
 
-    & > img {
+    &>img {
       width: 10px;
     }
   }
 
 }
-.menu{
+
+.menu {
   padding: 25px 0;
 }
+
 .department {
   background: #010C28;
   display: flex;
@@ -669,12 +612,14 @@ export default {
   .operation-banner {
     padding: 8px 8px 0 8px !important;
   }
+
   .operation-us {
     font-size: 20px !important;
     line-height: 25px !important;
     max-width: 137px !important;
 
   }
+
   .operation-banner__title {
     font-size: 68px !important;
     line-height: 105% !important;
@@ -728,63 +673,75 @@ export default {
   .operation-banner {
     background: url("../assets/images/operation/bg-medium.svg") no-repeat right top;
   }
+
   .operation-banner {
     min-height: 417px !important;
   }
-  .first-devider{
+
+  .first-devider {
     padding: 105px 32px 0 32px !important;
   }
 
-  .span-svg{
+  .span-svg {
 
     width: 10px;
     padding-bottom: 3px;
   }
 }
-@media (max-width: 1023px) and (min-width: 769px){
- .operation-banner {
-   background: url("../assets/images/operation/small.svg") no-repeat right top;
 
-   min-height: 300px !important;
- }
- .operation-banner__title{
-   margin-top: 122px !important;
- }
-  .first-devider{
+@media (max-width: 1023px) and (min-width: 769px) {
+  .operation-banner {
+    background: url("../assets/images/operation/small.svg") no-repeat right top;
+
+    min-height: 300px !important;
+  }
+
+  .operation-banner__title {
+    margin-top: 122px !important;
+  }
+
+  .first-devider {
     padding: 72px 8px 0 8px !important;
   }
-  .operation-us{
+
+  .operation-us {
     align-items: center !important;
     margin: 0 20px 0 0 !important;
   }
-  .span-svg{
+
+  .span-svg {
     vertical-align: initial !important;
     width: 10px;
     padding-bottom: 26px;
   }
 }
-@media (max-width: 768px) and (min-width: 320px){
 
- .operation-banner {
-   background: url("../assets/images/operation/very-small.svg") no-repeat right top;
+@media (max-width: 768px) and (min-width: 320px) {
 
-   min-height: 265px !important;
- }
+  .operation-banner {
+    background: url("../assets/images/operation/very-small.svg") no-repeat right top;
+
+    min-height: 265px !important;
+  }
+
   .operation-banner__title {
     margin-top: 131px !important;
   }
-  .first-devider{
+
+  .first-devider {
     padding: 72px 8px 0 8px !important;
   }
 
 }
-@media (max-width: 767px) and (min-width: 320px){
-  .operation-banner {
-   background: url("../assets/images/operation/very-small.svg") no-repeat right top, linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28) !important;
 
-   min-height: 265px !important;
- }
+@media (max-width: 767px) and (min-width: 320px) {
+  .operation-banner {
+    background: url("../assets/images/operation/very-small.svg") no-repeat right top, linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28) !important;
+
+    min-height: 265px !important;
+  }
 }
+
 @media (min-width: 1024px) and (max-width: 1439px) {
 
   .operation-banner__title {
@@ -793,6 +750,7 @@ export default {
     line-height: 105% !important;
 
   }
+
   .operation-us {
     font-size: 22px !important;
     line-height: 28px !important;
@@ -851,6 +809,7 @@ export default {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -860,13 +819,14 @@ export default {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
 }
 
 
-.mechanism:hover > p {
+.mechanism:hover>p {
   transform: scale(1.1);
   font-size: 13.5px;
   border: none;
@@ -878,17 +838,26 @@ export default {
 }
 
 
-.mechanism-support, .mechanism-hr, .mechanism-design, .mechanism-crm {
+.mechanism-support,
+.mechanism-hr,
+.mechanism-design,
+.mechanism-crm {
   width: 114px;
   height: 114px;
 }
 
-.mechanism-vip, .mechanism-team, .mechanism-antifraud, .mechanism-bi {
+.mechanism-vip,
+.mechanism-team,
+.mechanism-antifraud,
+.mechanism-bi {
   width: 156px;
   height: 156px;
 }
 
-.mechanism-legal, .mechanism-pr, .mechanism-psp, .mechanism-development {
+.mechanism-legal,
+.mechanism-pr,
+.mechanism-psp,
+.mechanism-development {
   width: 217px;
   height: 217px;
 }
@@ -901,23 +870,39 @@ export default {
 //  animation: rotating-min 2s linear infinite;
 //}
 
-.mechanism-support img, .mechanism-design img, .mechanism-hr img, .mechanism-crm img, .mechanism-pr img, .mechanism-psp img, .mechanism-hr img, .mechanism-crm img {
+.mechanism-support img,
+.mechanism-design img,
+.mechanism-hr img,
+.mechanism-crm img,
+.mechanism-pr img,
+.mechanism-psp img,
+.mechanism-hr img,
+.mechanism-crm img {
   animation: rotating-min 4s linear infinite;
 }
 
-.mechanism-antifraud img, .mechanism-bi img, .mechanism-pr img, .mechanism-psp img {
+.mechanism-antifraud img,
+.mechanism-bi img,
+.mechanism-pr img,
+.mechanism-psp img {
   animation: rotating-min 5s linear infinite;
 }
 
-.mechanism-team img, .mechanism-vip img, .mechanism-vip img {
+.mechanism-team img,
+.mechanism-vip img,
+.mechanism-vip img {
   animation: rotating-big 5s linear infinite;
 }
 
-.mechanism-legal img, .mechanism-development img, .mechanism-pr img, .mechanism-psp img {
+.mechanism-legal img,
+.mechanism-development img,
+.mechanism-pr img,
+.mechanism-psp img {
   animation: rotating-big 7s linear infinite;
 }
 
-.mechanism-antifraud:hover, .mechanism-support:hover {
+.mechanism-antifraud:hover,
+.mechanism-support:hover {
   background: linear-gradient(86.5deg, #5433FF 8.33%, #20BDFF 73.44%, #A5FECB 100%);
   transform: scale(1.2);
   border-radius: 50%;
@@ -926,7 +911,8 @@ export default {
   font-family: 'Oxygen', sans-serif;
 }
 
-.mechanism-vip:hover, .mechanism-team:hover {
+.mechanism-vip:hover,
+.mechanism-team:hover {
   background: linear-gradient(286.9deg, #E52D27 29.52%, #A50C10 100%);
   transform: scale(1.2);
   border-radius: 50%;
@@ -935,7 +921,8 @@ export default {
   font-family: 'Oxygen', sans-serif;
 }
 
-.mechanism-legal:hover, .mechanism-crm:hover {
+.mechanism-legal:hover,
+.mechanism-crm:hover {
   background: linear-gradient(105.97deg, #4B0082 27.44%, #9400D3 100%);
   transform: scale(1.2);
   border-radius: 50%;
@@ -944,7 +931,8 @@ export default {
   font-family: 'Oxygen', sans-serif;
 }
 
-.mechanism-hr:hover, .mechanism-bi:hover {
+.mechanism-hr:hover,
+.mechanism-bi:hover {
   background: linear-gradient(95.7deg, #000428 7.7%, #004E92 90.93%);
   transform: scale(1.2);
   border-radius: 50%;
@@ -953,7 +941,8 @@ export default {
   font-family: 'Oxygen', sans-serif;
 }
 
-.mechanism-pr:hover, .mechanism-psp:hover {
+.mechanism-pr:hover,
+.mechanism-psp:hover {
   background: linear-gradient(135deg, #003D4D 0%, #00C996 100%);
   transform: scale(1.2);
   border-radius: 50%;
@@ -989,17 +978,17 @@ export default {
   justify-content: center;
   position: absolute;
 
-  & > .small-shestiryonka {
+  &>.small-shestiryonka {
     width: 174px;
     height: 174px;
   }
 
-  & > .medium-shestiryonka {
+  &>.medium-shestiryonka {
     width: 232px;
     height: 232px;
   }
 
-  & > .big-shestiryonka {
+  &>.big-shestiryonka {
     width: 330px;
     height: 330px;
   }
@@ -1402,11 +1391,12 @@ export default {
     }
 
   }
+
   .brands-container {
     width: 226px;
     height: 136px;
 
-    & > img {
+    &>img {
       width: 150px;
     }
   }
@@ -1486,7 +1476,7 @@ export default {
   justify-content: space-between;
   align-items: center;
 
-  & > div {
+  &>div {
     flex: 16%;
     display: flex;
     justify-content: center;
@@ -1500,7 +1490,7 @@ export default {
 
 @media screen and (min-width: 1160px) and (max-width: 1439px) {
   .payment-provider-row-columns {
-    & > div {
+    &>div {
       flex: 15% !important;
     }
   }
@@ -1508,7 +1498,7 @@ export default {
 
 @media screen and (min-width: 1024px) and (max-width: 1160px) {
   .payment-provider-row-columns {
-    & > div {
+    &>div {
       flex: 11% !important;
     }
   }
@@ -1516,7 +1506,7 @@ export default {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .payment-provider-row-columns {
-    & > div {
+    &>div {
       flex: 25% !important;
     }
   }
@@ -1524,7 +1514,7 @@ export default {
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .payment-provider-row-columns {
-    & > div {
+    &>div {
       flex: 33% !important;
     }
   }
@@ -1536,13 +1526,16 @@ export default {
     min-width: 300px !important;
     font-size: 34px !important;
   }
+
   .unique-container-right-side-text {
     max-width: 480px;
     font-size: 18px !important;
   }
+
   .title-container {
     padding: 110px 32px;
   }
+
   .mechanism-container {
     min-height: 980px;
   }
@@ -1562,6 +1555,7 @@ export default {
       padding-bottom: 0;
     }
   }
+
   .mechanism {
     &:nth-child(1) {
       left: 3%;
@@ -1631,6 +1625,7 @@ export default {
       right: 17%;
     }
   }
+
   .divider {
     padding-top: 150px !important;
   }
@@ -1638,7 +1633,8 @@ export default {
 
 @media only screen and (max-width: 960px) {
   .provider-row-columns {
-    grid-template-columns: auto auto auto auto !important;;
+    grid-template-columns: auto auto auto auto !important;
+    ;
   }
 
   .brands-container {
@@ -1648,17 +1644,17 @@ export default {
 
 
   .mechanism {
-    & > .small-shestiryonka {
+    &>.small-shestiryonka {
       width: 136px;
       height: 136px;
     }
 
-    & > .medium-shestiryonka {
+    &>.medium-shestiryonka {
       width: 182px;
       height: 182px;
     }
 
-    & > .big-shestiryonka {
+    &>.big-shestiryonka {
       width: 258px;
       height: 258px;
     }
@@ -1731,12 +1727,14 @@ export default {
       height: 89px;
     }
   }
+
   .big-circle {
 
     width: 171px;
     height: 171px;
 
   }
+
   .medium-circle {
     width: 116px;
     height: 116px;
@@ -1746,11 +1744,13 @@ export default {
     max-width: 591px !important;
     font-size: 38px !important;
   }
+
   .unique-container-left-side-title {
     max-width: 268px !important;
     min-width: 268px !important;
     font-size: 22px !important;
   }
+
   .unique-container-right-side-text {
     max-width: 376px !important;
     font-size: 16px !important;
@@ -1779,14 +1779,16 @@ export default {
     font-size: 58px !important;
     max-width: 752px !important;
   }
+
   .brands-container {
     width: 164px;
     height: 107px;
 
-    & > img {
+    &>img {
       width: 127px;
     }
   }
+
   .divider {
     padding-top: 100px !important;
   }
@@ -1800,8 +1802,10 @@ export default {
 
 @media only screen and (max-width: 744px) {
   .provider-row-columns {
-    grid-template-columns: auto auto auto !important;;
+    grid-template-columns: auto auto auto !important;
+    ;
   }
+
   .mechanism {
     &:nth-child(1) {
       top: 12%;
@@ -1824,7 +1828,8 @@ export default {
     }
 
     &:nth-child(5) {
-      left: 45%;;
+      left: 45%;
+      ;
     }
 
     &:nth-child(6) {
@@ -1874,6 +1879,7 @@ export default {
   .divider {
     padding-top: 100px !important
   }
+
   .mechanism {
     &:nth-child(1) {
       top: 18%;
@@ -1948,6 +1954,7 @@ export default {
 
     }
   }
+
   .brands-container {
     // width: 134px;
     width: 42.50vw;
@@ -1955,7 +1962,7 @@ export default {
     margin-top: 16px;
     // height: 82px;
 
-    & > img {
+    &>img {
       width: 99px;
     }
   }
@@ -1973,30 +1980,37 @@ export default {
       padding-bottom: 0;
     }
   }
+
   .unique-container {
     flex-direction: column;
   }
+
   .unique-container-right-side-text {
     margin-top: 10px;
   }
-  .unique-container-left-side{
+
+  .unique-container-left-side {
     align-items: flex-start;
   }
+
   .unique-container-left-side-dote {
     // margin: 10px;
     margin-right: 8px !important;
     padding-top: 3px;
-    img{
+
+    img {
       width: 10px;
       height: 10px;
     }
   }
+
   .unique-container-left-side-title {
     max-width: 100% !important;
     font-size: 20px !important;
     line-height: 25px;
     letter-spacing: 0.03em;
   }
+
   .unique-container-right-side-text {
     max-width: 100% !important;
     font-size: 14px !important;
@@ -2010,13 +2024,16 @@ export default {
   .provider-img {
     width: 100px;
   }
+
   .neteller {
     width: 70px !important;
   }
+
   .divider {
     padding-top: 25px !important;
   }
-  .div-brands{
+
+  .div-brands {
     padding-top: 72px !important;
   }
 
@@ -2025,37 +2042,44 @@ export default {
     letter-spacing: 0.03em;
 
   }
-  .operation-banner{
+
+  .operation-banner {
     padding: 0 16px;
   }
+
   .operation-us {
     width: 100%;
     font-size: 16px !important;
   }
+
   .department__title {
     font-size: 22px !important;
   }
+
   .mechanism-container {
     min-height: 747px;
   }
+
   .brands {
     flex-wrap: wrap;
   }
+
   .mechanism-container {
     min-height: 747px !important;
   }
+
   .mechanism {
-    & > .small-shestiryonka {
+    &>.small-shestiryonka {
       width: 78px;
       height: 78px;
     }
 
-    & > .medium-shestiryonka {
+    &>.medium-shestiryonka {
       width: 104px;
       height: 104px;
     }
 
-    & > .big-shestiryonka {
+    &>.big-shestiryonka {
       width: 146px;
       height: 146px;
     }
@@ -2168,16 +2192,20 @@ export default {
     width: 69px;
     height: 69px;
   }
+
   .brands-title {
     font-size: 22px !important;
   }
-  .brands{
+
+  .brands {
     padding-top: 36px;
     justify-content: space-evenly;
   }
+
   .game-provider-title {
     font-size: 20px !important;
   }
+
   .payment-provider-title {
     font-size: 20px !important;
   }
@@ -2200,7 +2228,8 @@ export default {
   .brands-container:nth-child(3) {
     margin-top: 17px;
   }
-  .department__title{
+
+  .department__title {
     padding: 0 16px;
     font-weight: 400;
     font-size: 22px;
@@ -2208,96 +2237,126 @@ export default {
     text-align: center;
     letter-spacing: 0.03em;
   }
-  .department{
+
+  .department {
     padding-top: 32px;
   }
 
-  .mechanism-vip, .mechanism-antifraud, .mechanism-bi, .mechanism-team{
+  .mechanism-vip,
+  .mechanism-antifraud,
+  .mechanism-bi,
+  .mechanism-team {
     // width: 104px;
     // height: 104px;
     width: 32.50vw;
     height: 32.50vw;
   }
-  .mechanism-support,.mechanism-hr, .mechanism-design, .mechanism-crm{
+
+  .mechanism-support,
+  .mechanism-hr,
+  .mechanism-design,
+  .mechanism-crm {
     // width: 78.74px;
     // height: 78.74px;
     width: 24.6vw;
     height: 24.6vw;
   }
-  .mechanism-legal, .mechanism-development, .mechanism-pr, .mechanism-psp{
+
+  .mechanism-legal,
+  .mechanism-development,
+  .mechanism-pr,
+  .mechanism-psp {
     // width: 149px;
     // height: 149px;
     width: 46.56vw;
     height: 46.56vw;
   }
-  .mechanism-text{
+
+  .mechanism-text {
     line-height: 10px;
   }
 }
 
 @media screen and (max-width: 480px) {
 
-  .mechanism-vip:hover, .mechanism-team:hover, .mechanism-antifraud:hover, .mechanism-support:hover, .mechanism-legal:hover, .mechanism-crm:hover, .mechanism-hr:hover, .mechanism-bi:hover,
-  .mechanism-pr:hover, .mechanism-psp:hover, .mechanism-development:hover, .mechanism-design:hover{
+  .mechanism-vip:hover,
+  .mechanism-team:hover,
+  .mechanism-antifraud:hover,
+  .mechanism-support:hover,
+  .mechanism-legal:hover,
+  .mechanism-crm:hover,
+  .mechanism-hr:hover,
+  .mechanism-bi:hover,
+  .mechanism-pr:hover,
+  .mechanism-psp:hover,
+  .mechanism-development:hover,
+  .mechanism-design:hover {
     background: unset
   }
-  .mechanism-vip p:hover, .mechanism-team p:hover {
-  background: linear-gradient(286.9deg, #E52D27 29.52%, #A50C10 100%);
-  // transform: scale(1.2);
-  border-radius: 50%;
-  border: none;
-  font-size: 18px;
-  font-family: 'Oxygen', sans-serif;
-}
 
-.mechanism-antifraud p:hover, .mechanism-support p:hover {
-  background: linear-gradient(86.5deg, #5433FF 8.33%, #20BDFF 73.44%, #A5FECB 100%);
-  border-radius: 50%;
-  border: none;
-  font-size: 12px !important;
-  font-family: 'Oxygen', sans-serif;
-}
+  .mechanism-vip p:hover,
+  .mechanism-team p:hover {
+    background: linear-gradient(286.9deg, #E52D27 29.52%, #A50C10 100%);
+    // transform: scale(1.2);
+    border-radius: 50%;
+    border: none;
+    font-size: 18px;
+    font-family: 'Oxygen', sans-serif;
+  }
 
-.mechanism-legal p:hover, .mechanism-crm p:hover {
-  background: linear-gradient(105.97deg, #4B0082 27.44%, #9400D3 100%);
-  border-radius: 50%;
-  border: none;
-  font-size: 18px;
-  font-family: 'Oxygen', sans-serif;
-}
+  .mechanism-antifraud p:hover,
+  .mechanism-support p:hover {
+    background: linear-gradient(86.5deg, #5433FF 8.33%, #20BDFF 73.44%, #A5FECB 100%);
+    border-radius: 50%;
+    border: none;
+    font-size: 12px !important;
+    font-family: 'Oxygen', sans-serif;
+  }
 
-.mechanism-hr p:hover, .mechanism-bi p:hover {
-  background: linear-gradient(95.7deg, #000428 7.7%, #004E92 90.93%);
-  border-radius: 50%;
-  border: none;
-  font-size: 18px;
-  font-family: 'Oxygen', sans-serif;
-}
+  .mechanism-legal p:hover,
+  .mechanism-crm p:hover {
+    background: linear-gradient(105.97deg, #4B0082 27.44%, #9400D3 100%);
+    border-radius: 50%;
+    border: none;
+    font-size: 18px;
+    font-family: 'Oxygen', sans-serif;
+  }
 
-.mechanism-pr p:hover, .mechanism-psp p:hover {
-  background: linear-gradient(135deg, #003D4D 0%, #00C996 100%);
-  border-radius: 50%;
-  border: none;
-  font-size: 18px;
-  font-family: 'Oxygen', sans-serif;
-}
+  .mechanism-hr p:hover,
+  .mechanism-bi p:hover {
+    background: linear-gradient(95.7deg, #000428 7.7%, #004E92 90.93%);
+    border-radius: 50%;
+    border: none;
+    font-size: 18px;
+    font-family: 'Oxygen', sans-serif;
+  }
 
-.mechanism-development p:hover {
-  background: linear-gradient(294.31deg, #FE8C00 0%, #F83600 100%);
-  border-radius: 50%;
-  border: none;
-  font-size: 18px;
-  font-family: 'Oxygen', sans-serif;
-}
+  .mechanism-pr p:hover,
+  .mechanism-psp p:hover {
+    background: linear-gradient(135deg, #003D4D 0%, #00C996 100%);
+    border-radius: 50%;
+    border: none;
+    font-size: 18px;
+    font-family: 'Oxygen', sans-serif;
+  }
 
-.mechanism-design p:hover {
-  background: linear-gradient(75.06deg, #42275A 10.32%, #734B6D 84.99%);
-  border-radius: 50%;
-  border: none;
-  font-size: 18px;
-  font-family: 'Oxygen', sans-serif;
-}
-  .department__title{
+  .mechanism-development p:hover {
+    background: linear-gradient(294.31deg, #FE8C00 0%, #F83600 100%);
+    border-radius: 50%;
+    border: none;
+    font-size: 18px;
+    font-family: 'Oxygen', sans-serif;
+  }
+
+  .mechanism-design p:hover {
+    background: linear-gradient(75.06deg, #42275A 10.32%, #734B6D 84.99%);
+    border-radius: 50%;
+    border: none;
+    font-size: 18px;
+    font-family: 'Oxygen', sans-serif;
+  }
+
+  .department__title {
     padding: 0 16px;
     font-weight: 400;
     font-size: 22px;
@@ -2305,212 +2364,265 @@ export default {
     text-align: center;
     letter-spacing: 0.03em;
   }
-  .department{
+
+  .department {
     padding-top: 32px;
   }
 
-  .mechanism-vip, .mechanism-antifraud, .mechanism-bi, .mechanism-team{
+  .mechanism-vip,
+  .mechanism-antifraud,
+  .mechanism-bi,
+  .mechanism-team {
     // width: 104px;
     // height: 104px;
     width: 32.50vw;
     height: 32.50vw;
   }
-  .mechanism-support,.mechanism-hr, .mechanism-design, .mechanism-crm{
+
+  .mechanism-support,
+  .mechanism-hr,
+  .mechanism-design,
+  .mechanism-crm {
     // width: 78.74px;
     // height: 78.74px;
     width: 24.6vw;
     height: 24.6vw;
 
   }
-  .mechanism-legal, .mechanism-development, .mechanism-pr, .mechanism-psp{
+
+  .mechanism-legal,
+  .mechanism-development,
+  .mechanism-pr,
+  .mechanism-psp {
     // width: 149px;
     // height: 149px;
     width: 46.56vw;
     height: 46.56vw;
   }
-  .mechanism-text{
+
+  .mechanism-text {
     line-height: 10px;
     width: 15.94vw;
     height: 15.94vw;
   }
-  .medium-circle{
+
+  .medium-circle {
     width: 21.56vw;
     height: 21.56vw;
   }
-  .big-circle{
+
+  .big-circle {
     width: 30.31vw;
     height: 30.31vw;
   }
-  .mechanism img{
+
+  .mechanism img {
     width: 100% !important;
     height: 100% !important;
   }
-  .unique-container{
+
+  .unique-container {
     width: calc(100% - 32px);
   }
-  .brands-title-container{
+
+  .brands-title-container {
     padding-top: 16px;
     padding-right: 16px;
     padding-left: 16px;
   }
-  .payment-provider-title{
+
+  .payment-provider-title {
     margin-top: 36px;
   }
-  .game-provider .provider-row, .payment-provider-row{
+
+  .game-provider .provider-row,
+  .payment-provider-row {
     padding-top: 24px;
   }
-  .payment-provider-row{
+
+  .payment-provider-row {
     padding-bottom: 72px;
   }
-  .provider-imgMH{
+
+  .provider-imgMH {
     display: none;
   }
-  .provider-imgMarR{
+
+  .provider-imgMarR {
     margin-right: 15px;
   }
-  .provider-imgMarL{
+
+  .provider-imgMarL {
     margin-left: 10px !important;
   }
-  .operation-banner__title{
+
+  .operation-banner__title {
     letter-spacing: 0.03em !important;
   }
 }
 
 @media screen and (min-width: 400px) and (max-width: 428px) {
-  .operation-us{
+  .operation-us {
     font-size: 20px !important;
     max-width: 270px !important;
   }
-  .operation-banner__title{
+
+  .operation-banner__title {
     font-size: 40px !important;
   }
-  .mechanism-text{
+
+  .mechanism-text {
     font-size: 10px !important;
   }
-  .unique-container-left-side-title{
+
+  .unique-container-left-side-title {
     font-size: 26px !important;
     line-height: 26px;
     letter-spacing: 0.05em;
   }
-  .unique-container-right-side-text{
+
+  .unique-container-right-side-text {
     font-size: 18px !important;
     line-height: 20px;
   }
-  .department__title{
+
+  .department__title {
     font-size: 26px !important;
     padding: 0 32px;
   }
-  .divider{
+
+  .divider {
     padding-top: 72px !important;
   }
 
-  .brands-title{
+  .brands-title {
     font-size: 27px !important;
     letter-spacing: 0.08em;
   }
 
-  .game-provider-title{
+  .game-provider-title {
     font-size: 26px !important;
   }
-  .provider-img{
+
+  .provider-img {
     width: 130px;
   }
-  .brands-title-container{
+
+  .brands-title-container {
     padding-top: 22px;
   }
 
-  .payment-provider-title{
+  .payment-provider-title {
     font-size: 26px !important;
   }
-  .brands-title{
+
+  .brands-title {
     line-height: 32px;
   }
-  .what__devider{
+
+  .what__devider {
     padding-top: 212px !important;
   }
-  .unique-container-right-side-text{
+
+  .unique-container-right-side-text {
     margin-top: 20px !important;
   }
-  .unique-container{
+
+  .unique-container {
     padding-top: 20px !important;
   }
 }
 
 @media screen and (min-width: 375px) and (max-width: 413px) {
-  .unique-container-right-side-text{
+  .unique-container-right-side-text {
     margin-top: 16px !important;
   }
-.brands-title{
+
+  .brands-title {
     line-height: 32px;
   }
-  .what__devider{
+
+  .what__devider {
     padding-top: 72px !important;
   }
-  .operation-us{
+
+  .operation-us {
     font-size: 20px !important;
     max-width: 270px !important;
   }
-  .operation-banner__title{
+
+  .operation-banner__title {
     font-size: 36px !important;
   }
-  .mechanism-text{
+
+  .mechanism-text {
     font-size: 10px !important;
   }
-  .unique-container-left-side-title{
+
+  .unique-container-left-side-title {
     font-size: 26px !important;
     line-height: 26px;
     letter-spacing: 0.05em;
   }
-  .unique-container-right-side-text{
+
+  .unique-container-right-side-text {
     font-size: 18px !important;
     line-height: 20px;
   }
-  .department__title{
+
+  .department__title {
     font-size: 26px !important;
     padding: 0 27px;
   }
-  .divider{
+
+  .divider {
     padding-top: 145px !important;
   }
 
-  .brands-title{
+  .brands-title {
     font-size: 26px !important;
     letter-spacing: 0.08em;
   }
 
-  .game-provider-title{
+  .game-provider-title {
     font-size: 26px !important;
   }
-  .provider-img{
+
+  .provider-img {
     width: 120px;
   }
-  .brands-title-container{
+
+  .brands-title-container {
     padding-top: 22px;
   }
 
-  .payment-provider-title{
+  .payment-provider-title {
     font-size: 26px !important;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .brands-container:nth-child(1) img{
+  .brands-container:nth-child(1) img {
     width: 66px;
   }
-  .operation-banner{
+
+  .operation-banner {
     padding: 0 13px;
   }
 }
+
 @media screen and (min-width: 1024px) {
-  .payment-provider-row{
+  .payment-provider-row {
     padding-bottom: 110px;
   }
 }
+
 @media screen and (min-width: 480px) {
-  .provider-imgPH{
+  .provider-imgPH {
     display: none;
   }
 }
+
 // @media only screen and (max-width: 338px) {
 //   .ndk {
 //     position: absolute;
@@ -2518,57 +2630,65 @@ export default {
 //   }
 // }
 @media screen and (max-width:1024px) and (min-width: 1000px) {
-  .divider{
+  .divider {
     padding-left: 25px;
     padding-right: 25px;
   }
 }
-.back{
+
+.back {
   background-color: #010C28;
 }
 
 
-@media (max-width: 768px) and (min-width: 600px){
-  .payment-provider-row{
+@media (max-width: 768px) and (min-width: 600px) {
+  .payment-provider-row {
     padding-bottom: 72px;
   }
-  .brands-title{
+
+  .brands-title {
     font-size: 38px !important;
   }
+
   .operation-banner {
-   background: url("../assets/images/operation/operation-top.png") no-repeat right top !important;
+    background: url("../assets/images/operation/operation-top.png") no-repeat right top !important;
 
-   min-height: 265px !important;
-   
-   align-items: center;
+    min-height: 265px !important;
 
-   padding-left: 8px;
-   padding-right: 8px;
- }
- .operation-us{
+    align-items: center;
+
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .operation-us {
     margin: 0px !important;
     max-width: 160px !important;
     // align-items: center !important;
     font-size: 20px !important;
     margin-top: 8px !important;
-  
- }
 
-  .unique-container-left-side-dote{
+  }
+
+  .unique-container-left-side-dote {
     padding-top: 6px !important;
   }
- .unique-container-left-side-dote img{
-  width: 12px !important;
- }
- .unique-container-left-side-title{
-  line-height: 28px !important;
-  max-width: 276px !important;
- }
- .unique-container{
-  width: calc(100% - 16px) !important;
- }
-  .payment-provider-row-columns > div[data-v-51e2911d] {
-      flex: 20% !important;
+
+  .unique-container-left-side-dote img {
+    width: 12px !important;
+  }
+
+  .unique-container-left-side-title {
+    line-height: 28px !important;
+    max-width: 276px !important;
+  }
+
+  .unique-container {
+    width: calc(100% - 16px) !important;
+  }
+
+  .payment-provider-row-columns>div[data-v-51e2911d] {
+    flex: 20% !important;
   }
 }
 </style>

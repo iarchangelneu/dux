@@ -150,7 +150,8 @@
             <div class="lol"><div class="kek"></div><img src="../assets/images/careers/slider/Rectangle930.png"></div>
           </VueSlickCarousel> -->
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="../assets/images/careers/slider/brooke-cagle-g1Kr4Ozfoac-unsplash1.png"></div>
+            <div class="swiper-slide"><img src="../assets/images/careers/slider/brooke-cagle-g1Kr4Ozfoac-unsplash1.png">
+            </div>
             <div class="swiper-slide"><img src="../assets/images/careers/slider/pexels-cowomen-20416291.png"></div>
             <div class="swiper-slide"><img src="../assets/images/careers/slider/pexels-cowomen-20416293.png"></div>
             <div class="swiper-slide"><img src="../assets/images/careers/slider/pexels-cowomen-20416294.png"></div>
@@ -451,14 +452,18 @@ import VueSlickCarousel from 'vue-slick-carousel'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 import BlockTitle from "../components/BlockTitle.vue";
-import Swiper, { Navigation, Pagination } from 'swiper'
+import Swiper, { Navigation, Pagination, Autoplay } from 'swiper'
 import 'swiper/swiper-bundle.css'
 
-Swiper.use([ Navigation, Pagination ])
+Swiper.use([Navigation, Pagination, Autoplay])
 
 export default {
   name: "Careers-page",
-
+  setup() {
+    return {
+      modules: [Autoplay, Pagination, Navigation],
+    };
+  },
   data() {
     return {
       window: {
@@ -510,12 +515,18 @@ export default {
   destroyed() {
     window.removeEventListener('resize', this.handleResize);
   },
-  mounted(){
+  mounted() {
+
     new Swiper('.swiper-container', {
       slidesPerView: 'auto',
       loop: true,
+      autoplay: {
+        delay: 0
+      },
       spaceBetween: 24,
       grabCursor: true,
+
+
       // width: 577,
       speed: 5000,
       pagination: {
@@ -529,34 +540,34 @@ export default {
       //   el: '.swiper-scrollbar',
       // },
       breakpoints: {
-          // when window width is >= 320px
-          // 320: {
-          //   slidesPerView: 2,
-          //   spaceBetween: 20
-          // },
-          // when window width is >= 480px
-          // 480: {
-          //   slidesPerView: 3,
-          //   spaceBetween: 30
-          // },
-          // when window width is >= 640px
-          // 640: {
-          //   slidesPerView: 4,
-          //   spaceBetween: 40
-          // },
-          320: {
-            // slidesPerView: 4,
-            spaceBetween: 8
-          },
-          760: {
-            // slidesPerView: 4,
-            spaceBetween: 16
-          },
-          1025: {
-            // slidesPerView: 4,
-            spaceBetween: 24
-          }
+        // when window width is >= 320px
+        // 320: {
+        //   slidesPerView: 2,
+        //   spaceBetween: 20
+        // },
+        // when window width is >= 480px
+        // 480: {
+        //   slidesPerView: 3,
+        //   spaceBetween: 30
+        // },
+        // when window width is >= 640px
+        // 640: {
+        //   slidesPerView: 4,
+        //   spaceBetween: 40
+        // },
+        320: {
+          // slidesPerView: 4,
+          spaceBetween: 8
+        },
+        760: {
+          // slidesPerView: 4,
+          spaceBetween: 16
+        },
+        1025: {
+          // slidesPerView: 4,
+          spaceBetween: 24
         }
+      }
     })
   }
 
@@ -2306,89 +2317,108 @@ export default {
 .lol {
   position: relative;
 }
-.cont__slider{
+
+.cont__slider {
   margin-left: 380px;
   overflow: hidden;
 }
 
-.swiper-slide{
+.swiper-slide {
   width: 577px;
 }
-.swiper-slide img{
+
+.swiper-slide img {
   width: 100%;
 }
-.swiper-slide-prev{
+
+.swiper-slide-prev {
   // transition: opacity 6s;
   // opacity: 0;
 }
-.swiper-button-prev, .swiper-button-next{
+
+.swiper-button-prev,
+.swiper-button-next {
   position: relative;
 }
-.swiper-button-prev img, .swiper-button-next img{
+
+.swiper-button-prev img,
+.swiper-button-next img {
   width: 29px;
   height: 14px;
   cursor: pointer;
 }
-.swiper-button-next:after, .swiper-button-prev::after{
+
+.swiper-button-next:after,
+.swiper-button-prev::after {
   content: unset;
 }
-.swiper-button-next{
+
+.swiper-button-next {
   margin-left: 32px;
 }
-.swiper-button-prev{
+
+.swiper-button-prev {
   left: unset;
 }
 
 @media screen and (max-width: 1440px) {
-  .cont__slider{
-  margin-left:  144px;
-  overflow: hidden;
-}
+  .cont__slider {
+    margin-left: 144px;
+    overflow: hidden;
+  }
 }
 
 @media screen and (max-width: 1220px) {
-  .cont__slider{
-    margin-left:  34px;
+  .cont__slider {
+    margin-left: 34px;
     overflow: hidden;
   }
-  .swiper-slide{
+
+  .swiper-slide {
     width: 477px;
   }
 }
+
 @media screen and (max-width: 1024px) {
-  .cont__slider{
-    margin-left:  113px;
+  .cont__slider {
+    margin-left: 113px;
     overflow: hidden;
   }
-  .swiper-slide{
+
+  .swiper-slide {
     width: 430px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .cont__slider{
-    margin-left:  16px;
+  .cont__slider {
+    margin-left: 16px;
     overflow: hidden;
   }
-  .swiper-slide{
+
+  .swiper-slide {
     width: 400px;
   }
 }
+
 @media screen and (max-width: 480px) {
-  .cont__slider{
-    margin-left:  32px;
+  .cont__slider {
+    margin-left: 32px;
     overflow: hidden;
   }
-  .swiper-slide{
+
+  .swiper-slide {
     width: 214px;
   }
 }
+
 @media screen and (max-width: 480px) {
-  .cont__slider{
-    margin-left:  16px;
+  .cont__slider {
+    margin-left: 16px;
     overflow: hidden;
   }
-  .swiper-slide{
+
+  .swiper-slide {
     width: 214px;
   }
 }

@@ -299,30 +299,30 @@
         <div class="Marquee">
           <div class="Marquee-content">
             <div class="Marquee-tag max-width">
-              <p>WE LOVE</p>
+              <p>WHAT WE DO</p>
               <img src="../assets/images/marquee/5.svg" class="ml10" />
             </div>
             <div class="Marquee-tag max-width">
-              <p>WE LOVE</p>
+              <p>WHAT WE DO</p>
               <img src="../assets/images/marquee/4.svg" class="ml10" />
             </div>
 
             <div class="Marquee-tag max-width">
-              <p>WE LOVE</p>
+              <p>WHAT WE DO</p>
               <img src="../assets/images/marquee/5.svg" class="ml10" />
             </div>
             <div class="Marquee-tag max-width">
-              <p>WE LOVE</p>
+              <p>WHAT WE DO</p>
               <img src="../assets/images/marquee/5.svg" class="ml10" />
             </div>
 
             <div class="Marquee-tag max-width">
-              <p>WE LOVE</p>
+              <p>WHAT WE DO</p>
               <img src="../assets/images/marquee/4.svg" class="ml10" />
             </div>
 
             <div class="Marquee-tag max-width">
-              <p>WE LOVE</p>
+              <p>WHAT WE DO</p>
               <img src="../assets/images/marquee/5.svg" class="ml10" />
             </div>
 
@@ -385,10 +385,11 @@
       <div class="content">
         <p>Make <span class="blue">big waves</span> in the iGaming segment together with <span class="blue">our
             team</span> and build an awesome <span class="blue">ecosystem</span></p>
-        <img src="../assets/images/mission/6.png" class="forth_figure" data-aos="fade-up" />
-        <img src="../assets/images/mission/23.png" class="second_figure" data-aos="fade-up" />
-        <img src="../assets/images/mission/33.png" class="third_figure" data-aos="fade-down" />
-        <img src="../assets/images/mission/45.png" class="first_figure" data-aos="fade-down" />
+        <img src="../assets/images/mission/6.png" class="forth_figure" data-aos="fade-down" data-aos-duration="2000" />
+        <img src="../assets/images/mission/23.png" class="second_figure" data-aos="fade-down"
+          data-aos-duration="2000" />
+        <img src="../assets/images/mission/33.png" class="third_figure" data-aos="fade-down" data-aos-duration="2000" />
+        <img src="../assets/images/mission/45.png" class="first_figure" data-aos="fade-down" data-aos-duration="2000" />
       </div>
     </div>
     <div class="gambling">
@@ -466,7 +467,7 @@
               <div class="item"
                 onclick="window.location.href = 'https://www.igbaffiliate.com/partner-insights/duxgroup-people-are-the-core-asset-in-our-business/'">
                 <div class="content">
-                  <p class="date">01.05.22</p>
+                  <p class="date">31.08.2021</p>
                   <p class="item_title">IGBAFFILIATE </p>
                   <p class="item_content">DUXGroup: People are the core asset in our business</p>
                 </div>
@@ -486,9 +487,9 @@
               <div class="item"
                 onclick="window.location.href = 'https://europeangaming.eu/portal/latest-news/2021/07/14/96210/hurricane-global-became-duxgroup-and-acquired-pinocasino/'">
                 <div class="content">
-                  <p class="date">01.05.22</p>
-                  <p class="item_title">IGBAFFILIATE </p>
-                  <p class="item_content">DUXGroup: People are the core asset in our business</p>
+                  <p class="date">11.07.2021</p>
+                  <p class="item_title">European Gaming </p>
+                  <p class="item_content">Hurricane Global became DUXGroup and acquired PinoCasino </p>
                 </div>
                 <div class="img">
                   <img src="../assets/images/person.png" />
@@ -502,46 +503,7 @@
                 </div>
               </div>
             </div>
-            <div>
-              <div class="item"
-                onclick="window.location.href = 'https://www.igbaffiliate.com/partner-insights/duxgroup-people-are-the-core-asset-in-our-business/'">
-                <div class="content">
-                  <p class="date">01.05.22</p>
-                  <p class="item_title">IGBAFFILIATE </p>
-                  <p class="item_content">DUXGroup: People are the core asset in our business</p>
-                </div>
-                <div class="img">
-                  <img src="../assets/images/person.png" />
-                </div>
-                <div class="btn">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="60" fill="currentColor"
-                    class="bi bi-chevron-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="item"
-                onclick="window.location.href = 'https://europeangaming.eu/portal/latest-news/2021/07/14/96210/hurricane-global-became-duxgroup-and-acquired-pinocasino/'">
-                <div class="content">
-                  <p class="date">01.05.22</p>
-                  <p class="item_title">IGBAFFILIATE </p>
-                  <p class="item_content">DUXGroup: People are the core asset in our business</p>
-                </div>
-                <div class="img">
-                  <img src="../assets/images/person.png" />
-                </div>
-                <div class="btn">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="60" fill="currentColor"
-                    class="bi bi-chevron-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                  </svg>
-                </div>
-              </div>
-            </div>
+
 
           </VueSlickCarousel>
           <div class="arrows">
@@ -825,6 +787,61 @@ export default {
   margin: 0 0.5rem !important;
 }
 
+@keyframes cube {
+  // 0% {
+  //   transform: translateX(0);
+  // }
+
+  // 50% {
+  //   transform: translateX(70%);
+  // }
+
+  // 100% {
+  //   transform: translateX(0);
+  // }
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(45deg) scale(.8);
+  }
+
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes rotate__figure {
+
+  // 0% {
+  //   transform: rotate(45deg)
+  // }
+
+  // 50% {
+  //   transform: rotate(180deg)
+  // }
+
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+.zar-mec,
+.klor,
+.zar-poqr {
+  animation: cube 10s linear infinite;
+  animation-play-state: running;
+  transform-origin: bottom right;
+}
+
+.third_figure,
+.second_figure,
+.forth_figure,
+.first_figure {
+  animation: rotate__figure 10s infinite linear;
+}
+
 .marquee-container {
   //margin: 15px auto;
   overflow: hidden;
@@ -863,6 +880,7 @@ export default {
       -o-animation: marquee 20s linear infinite running;
       -ms-animation: marquee 20s linear infinite running;
       animation: marquee 20s linear infinite running;
+      animation-direction: reverse;
 
       .Marquee-tag {
         width: fit-content;
