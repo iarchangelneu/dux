@@ -190,6 +190,14 @@ export default {
 
     
 <style scoped lang="scss">
+@keyframes rotate__figure {
+
+
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
 ::placeholder {
   color: #828FA1;
 }

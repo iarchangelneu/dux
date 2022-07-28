@@ -579,11 +579,12 @@ export default {
 
         .text {
           width: 85% !important;
+          padding-left: 45px;
 
 
           p {
             font-size: 38px !important;
-            line-height: 35px !important;
+            line-height: 45px !important;
           }
 
           span {

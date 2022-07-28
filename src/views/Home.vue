@@ -299,7 +299,7 @@
       </div>
       <div class="marquee-container">
         <div class="Marquee">
-          <div class="Marquee-content">
+          <div class="Marquee-content2">
             <div class="Marquee-tag max-width">
               <p>WHAT WE DO</p>
               <img src="../assets/images/marquee/5.svg" class="ml10" />
@@ -473,9 +473,6 @@
                   <p class="item_title">IGBAFFILIATE </p>
                   <p class="item_content">DUXGroup: People are the core asset in our business</p>
                 </div>
-                <div class="img" data-aos="fade-up">
-                  <img src="../assets/images/person.png" />
-                </div>
                 <div class="btn">
                   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="60" fill="currentColor"
                     class="bi bi-chevron-right" viewBox="0 0 16 16">
@@ -492,9 +489,6 @@
                   <p class="date">11.07.2021</p>
                   <p class="item_title">European Gaming </p>
                   <p class="item_content">Hurricane Global became DUXGroup and acquired PinoCasino </p>
-                </div>
-                <div class="img">
-                  <img src="../assets/images/person.png" />
                 </div>
                 <div class="btn">
                   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="60" fill="currentColor"
@@ -925,6 +919,68 @@ export default {
       -o-animation: marquee 20s linear infinite running;
       -ms-animation: marquee 20s linear infinite running;
       animation: marquee 20s linear infinite running;
+      animation-direction: reverse;
+
+      .Marquee-tag {
+        width: fit-content;
+        display: -webkit-inline-box;
+        display: -moz-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-box;
+        display: inline-flex;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        -o-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -moz-box-pack: center;
+        -o-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+
+        p {
+          color: #F0F0F0;
+          font-family: 'Oxygen';
+          font-style: normal;
+          font-weight: 400;
+          text-transform: uppercase;
+          font-size: 118px;
+          line-height: 95%;
+          margin: 0;
+        }
+
+        .circle {
+          margin: 40px;
+          width: 30px !important;
+          height: 30px !important;
+          background-color: #2F5BD8;
+          border-radius: 50%;
+        }
+      }
+
+    }
+
+    .Marquee-content2 {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: box;
+      display: flex;
+      -webkit-animation: marquee 27s linear infinite running;
+      -moz-animation: marquee 27s linear infinite running;
+      -o-animation: marquee 27s linear infinite running;
+      -ms-animation: marquee 27s linear infinite running;
+      animation: marquee 27s linear infinite running;
       animation-direction: reverse;
 
       .Marquee-tag {
@@ -4405,6 +4461,7 @@ export default {
           }
 
           .item_content {
+            text-align: center;
             font-family: 'Exo', sans-serif;
             font-style: normal;
             font-weight: 400;
