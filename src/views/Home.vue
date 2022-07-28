@@ -387,11 +387,10 @@
       <div class="content">
         <p>Make <span class="blue">big waves</span> in the iGaming segment together with <span class="blue">our
             team</span> and build an awesome <span class="blue">ecosystem</span></p>
-        <img src="../assets/images/mission/6.png" class="forth_figure" data-aos="fade-down" data-aos-duration="2000" />
-        <img src="../assets/images/mission/23.png" class="second_figure" data-aos="fade-down"
-          data-aos-duration="2000" />
-        <img src="../assets/images/mission/33.png" class="third_figure" data-aos="fade-down" data-aos-duration="2000" />
-        <img src="../assets/images/mission/45.png" class="first_figure" data-aos="fade-down" data-aos-duration="2000" />
+        <img src="../assets/images/mission/6.png" class="forth_figure" data-aos="fade-up" data-aos-duration="2000" />
+        <img src="../assets/images/mission/23.png" class="second_figure" data-aos="fade-up" data-aos-duration="2000" />
+        <img src="../assets/images/mission/33.png" class="third_figure" data-aos="fade-up" data-aos-duration="2000" />
+        <img src="../assets/images/mission/45.png" class="first_figure" data-aos="fade-up" data-aos-duration="2000" />
       </div>
     </div>
     <div class="gambling">
@@ -490,6 +489,7 @@
                   <p class="item_title">European Gaming </p>
                   <p class="item_content">Hurricane Global became DUXGroup and acquired PinoCasino </p>
                 </div>
+
                 <div class="btn">
                   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="60" fill="currentColor"
                     class="bi bi-chevron-right" viewBox="0 0 16 16">
