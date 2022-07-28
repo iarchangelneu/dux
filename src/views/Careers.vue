@@ -1036,7 +1036,7 @@ export default {
 
       div {
         img {
-          width: 210px !important;
+          // width: 210px !important;
         }
       }
     }
@@ -2319,7 +2319,7 @@ export default {
 }
 
 .cont__slider {
-  margin-left: 380px;
+  // margin-left: 380px;
   overflow: hidden;
 }
 
@@ -2363,14 +2363,14 @@ export default {
 
 @media screen and (max-width: 1440px) {
   .cont__slider {
-    margin-left: 144px;
+    // margin-left: 144px;
     overflow: hidden;
   }
 }
 
 @media screen and (max-width: 1220px) {
   .cont__slider {
-    margin-left: 34px;
+    // margin-left: 34px;
     overflow: hidden;
   }
 
@@ -2381,7 +2381,7 @@ export default {
 
 @media screen and (max-width: 1024px) {
   .cont__slider {
-    margin-left: 113px;
+    // margin-left: 113px;
     overflow: hidden;
   }
 
@@ -2392,7 +2392,7 @@ export default {
 
 @media screen and (max-width: 768px) {
   .cont__slider {
-    margin-left: 16px;
+    // margin-left: 16px;
     overflow: hidden;
   }
 
@@ -2403,7 +2403,7 @@ export default {
 
 @media screen and (max-width: 480px) {
   .cont__slider {
-    margin-left: 32px;
+    // margin-left: 32px;
     overflow: hidden;
   }
 
@@ -2414,7 +2414,7 @@ export default {
 
 @media screen and (max-width: 480px) {
   .cont__slider {
-    margin-left: 16px;
+    // margin-left: 16px;
     overflow: hidden;
   }
 
