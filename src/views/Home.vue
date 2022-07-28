@@ -586,7 +586,21 @@ let mooveCursor = () => {
     if (window.location.pathname == '/') {
       // console.log(document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth + 90)
       if (window.innerWidth >= 1920) {
+        if (mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - 150) {
+          document.querySelector('#cards').style.visibility = `hidden`;
+        } else {
+          document.querySelector('#cards').style.visibility = `visible`;
+        }
+      }
+      else if(window.innerWidth >= 1200){
         if (mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - 100) {
+          document.querySelector('#cards').style.visibility = `hidden`;
+        } else {
+          document.querySelector('#cards').style.visibility = `visible`;
+        }
+      }
+      else if(window.innerWidth >= 900){
+        if (mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - 70) {
           document.querySelector('#cards').style.visibility = `hidden`;
         } else {
           document.querySelector('#cards').style.visibility = `visible`;
@@ -601,17 +615,17 @@ let mooveCursor = () => {
       //   mouseX = e.clientX;
       // }
 
-      if (window.innerWidth > 480 && window.innerWidth < 1920) {
-        if (mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth - 40) {
-          document.querySelector('#cards').style.visibility = `hidden`;
-          console.log('mouse ' + mouseX)
-          // console.log('XYI ' + (document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth - 40))
-        } else {
-          console.log(mouseX)
-          // console.log(document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth - 40)
-          document.querySelector('#cards').style.visibility = `visible`;
-        }
-      }
+      // if (window.innerWidth > 480 && window.innerWidth < 1920) {
+      //   if (mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth - 40) {
+      //     document.querySelector('#cards').style.visibility = `hidden`;
+      //     console.log('mouse ' + mouseX)
+      //     // console.log('XYI ' + (document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth - 40))
+      //   } else {
+      //     console.log(mouseX)
+      //     // console.log(document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth - 40)
+      //     document.querySelector('#cards').style.visibility = `visible`;
+      //   }
+      // }
 
 
       if(mouseX < document.querySelector('.map').offsetWidth - 400){
