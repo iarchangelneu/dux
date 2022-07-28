@@ -4165,7 +4165,7 @@ export default {
 
     .third_figure {
       position: absolute;
-      right: 20%;
+      right: 30%;
       top: 30px;
     }
 
