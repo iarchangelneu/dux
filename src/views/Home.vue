@@ -467,10 +467,12 @@
             <div>
               <div class="item"
                 onclick="window.location.href = 'https://www.igbaffiliate.com/partner-insights/duxgroup-people-are-the-core-asset-in-our-business/'">
-                <div class="content">
+                <div class="content centre__cont">
                   <p class="date">31.08.2021</p>
-                  <p class="item_title">IGBAFFILIATE </p>
-                  <p class="item_content">DUXGroup: People are the core asset in our business</p>
+                  <div class="centre">
+                    <p class="item_title">IGBAFFILIATE </p>
+                    <p class="item_content">DUXGroup: People are the core asset in our business</p>
+                  </div>
                 </div>
                 <div class="btn">
                   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="60" fill="currentColor"
@@ -484,10 +486,12 @@
             <div>
               <div class="item"
                 onclick="window.location.href = 'https://europeangaming.eu/portal/latest-news/2021/07/14/96210/hurricane-global-became-duxgroup-and-acquired-pinocasino/'">
-                <div class="content">
+                <div class="content centre__cont">
                   <p class="date">11.07.2021</p>
-                  <p class="item_title">European Gaming </p>
-                  <p class="item_content">Hurricane Global became DUXGroup and acquired PinoCasino </p>
+                  <div class="centre">
+                    <p class="item_title">European Gaming </p>
+                    <p class="item_content">Hurricane Global became DUXGroup and acquired PinoCasino </p>
+                  </div>
                 </div>
 
                 <div class="btn">
@@ -4461,7 +4465,7 @@ export default {
           }
 
           .item_content {
-            text-align: center;
+            // text-align: center;
             font-family: 'Exo', sans-serif;
             font-style: normal;
             font-weight: 400;
@@ -4770,5 +4774,17 @@ export default {
   .partnership {
     padding-top: 80px !important;
   }
+}
+.centre{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.centre__cont{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 </style>
