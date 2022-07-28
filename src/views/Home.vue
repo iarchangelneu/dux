@@ -2,11 +2,13 @@
   <div class="container">
     <div class="header">
       <div class="bg-img">
-        <img src="../assets/images/home/title/klor.png" class="klor" data-aos="fade-down" data-aos-duration="2000" />
-        <img src="../assets/images/home/title/zar-mec.png" class="zar-mec" data-aos="fade-up"
-          data-aos-duration="2000" />
-        <img src="../assets/images/home/title/zar-poqr.png" class="zar-poqr" data-aos="fade-up"
-          data-aos-duration="2000" />
+        <div>
+          <img src="../assets/images/home/title/klor.png" class="klor" data-aos="fade-down" data-aos-duration="2000" />
+          <img src="../assets/images/home/title/zar-mec.png" class="zar-mec" data-aos="fade-up"
+            data-aos-duration="2000" />
+          <img src="../assets/images/home/title/zar-poqr.png" class="zar-poqr" data-aos="fade-up"
+            data-aos-duration="2000" />
+        </div>
         <div class="menu">
           <Header @opened="openedMobMenu" />
           <div class="content">
@@ -592,14 +594,14 @@ let mooveCursor = () => {
           document.querySelector('#cards').style.visibility = `visible`;
         }
       }
-      else if(window.innerWidth >= 1200){
+      else if (window.innerWidth >= 1200) {
         if (mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - 100) {
           document.querySelector('#cards').style.visibility = `hidden`;
         } else {
           document.querySelector('#cards').style.visibility = `visible`;
         }
       }
-      else if(window.innerWidth >= 900){
+      else if (window.innerWidth >= 900) {
         if (mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - 70) {
           document.querySelector('#cards').style.visibility = `hidden`;
         } else {
@@ -628,13 +630,13 @@ let mooveCursor = () => {
       // }
 
 
-      if(mouseX < document.querySelector('.map').offsetWidth - 400){
+      if (mouseX < document.querySelector('.map').offsetWidth - 400) {
         document.querySelector('#cards').style.transform = `translate3d(${mouseX}px, ${mouseY - 150}px, 0)`;
       }
-      else{
+      else {
         document.querySelector('#cards').style.transform = `translate3d(${document.querySelector('.map').offsetWidth - 400}px, ${mouseY - 150}px, 0)`;
       }
-      
+
     }
   }
 
@@ -810,24 +812,41 @@ export default {
   margin: 0 0.5rem !important;
 }
 
-@keyframes cube {
-  // 0% {
-  //   transform: translateX(0);
-  // }
-
-  // 50% {
-  //   transform: translateX(70%);
-  // }
-
-  // 100% {
-  //   transform: translateX(0);
-  // }
+@keyframes cube1 {
   0% {
     transform: rotate(0deg) scale(1);
   }
 
   50% {
-    transform: rotate(45deg) scale(.8);
+    transform: rotate(45deg) scale(.8) translate(15px, 100px);
+  }
+
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes cube2 {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(-45deg) scale(.8) translate(-100px, 15px);
+  }
+
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes cube3 {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(90deg) scale(.8) translate(100px, 10%);
   }
 
   100% {
@@ -837,23 +856,26 @@ export default {
 
 @keyframes rotate__figure {
 
-  // 0% {
-  //   transform: rotate(45deg)
-  // }
-
-  // 50% {
-  //   transform: rotate(180deg)
-  // }
 
   100% {
     transform: rotate(360deg)
   }
 }
 
-.zar-mec,
-.klor,
+.zar-mec {
+  animation: cube3 7s linear infinite;
+  animation-play-state: running;
+  transform-origin: bottom right;
+}
+
+.klor {
+  animation: cube2 8s linear infinite;
+  animation-play-state: running;
+  transform-origin: bottom right;
+}
+
 .zar-poqr {
-  animation: cube 10s linear infinite;
+  animation: cube1 6s linear infinite;
   animation-play-state: running;
   transform-origin: bottom right;
 }
