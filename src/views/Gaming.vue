@@ -5,7 +5,13 @@
         <Header @opened="openedMobMenu" />
       </div>
       <div class="images">
-        <img src="../assets/images/gaming/header-photo.svg" style="float: right" />
+        <!-- <img src="../assets/images/gaming/header-photo.svg" style="float: right" /> -->
+        <div class="anim__top__cont" id="anim__top__cont">
+          <img class="anim__lineTop" src="../assets/images/gaming/lineTop.svg" alt="">
+        </div>
+        <div class="anim__bot__cont" id="anim__bot__cont">
+          <img class="anim__lineBot" src="../assets/images/gaming/lineBot.svg" alt="">
+        </div>
       </div>
       <div class="content" v-if="menuClosed">
         <p class="p">
@@ -176,6 +182,11 @@ export default {
   destroyed() {
     window.removeEventListener('resize', this.handleResize);
   },
+  mounted(){
+    setTimeout(()=>{document.getElementById('anim__top__cont').classList.add('anim__top__cont__active')}, 1000)
+    setTimeout(()=>{document.getElementById('anim__bot__cont').classList.add('anim__bot__cont__active')}, 1300)
+    // document.getElementById('anim__top__cont').classList.add('anim__top__cont__active')
+  }
 }
 </script>
 
@@ -204,9 +215,11 @@ export default {
       margin-left: auto;
       display: flex;
       justify-content: flex-end;
+      flex-direction: column;
+      align-items: flex-end;
 
       img {
-        height: 420px;
+        // height: 420px;
       }
     }
 
@@ -1138,5 +1151,34 @@ export default {
       }
     }
   }
+}
+
+.anim__top__cont{
+  width: 0;
+  transition: width 4s;
+  overflow: hidden;
+}
+
+.anim__lineTop{
+  width: 900px;
+}
+.anim__bot__cont{
+  margin-top: 40px;
+  width: 0;
+  transition: width 4s;
+  overflow: hidden;
+}
+
+.anim__lineBot{
+  width: 600px;
+}
+</style>
+
+<style>
+.anim__top__cont__active{
+  width: 900px !important;
+}
+.anim__bot__cont__active{
+  width: 600px !important;
 }
 </style>
