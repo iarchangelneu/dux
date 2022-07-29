@@ -230,6 +230,7 @@ input {
     }
 
     .menu-items {
+      z-index: 1000;
       font-size: 12px !important;
       letter-spacing: 0.04em !important;
 
@@ -272,6 +273,7 @@ input {
   }
 
   .menu-items {
+    z-index: 1000;
     font-family: 'Oxygen', sans-serif;
     font-style: normal;
     font-weight: 700;
