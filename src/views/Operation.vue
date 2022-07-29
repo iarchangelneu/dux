@@ -454,6 +454,122 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@keyframes oper1 {
+  0% {
+    transform: translate(0, -100px);
+  }
+
+  50% {
+    transform: translate(0, -100px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes oper2 {
+  0% {
+    transform: translate(0, -80px);
+  }
+
+  50% {
+    transform: translate(0, -80px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes oper3 {
+  0% {
+    transform: translate(0, -60px);
+  }
+
+  50% {
+    transform: translate(0, -60px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes oper4 {
+  0% {
+    transform: translate(0, -40px);
+  }
+
+  50% {
+    transform: translate(0, -40px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes oper5 {
+  0% {
+    transform: translate(-100px, -50px);
+  }
+
+  50% {
+    transform: translate(-100px, -50px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes oper6 {
+  0% {
+    transform: translate(-60px, -50px);
+  }
+
+  50% {
+    transform: translate(-60px, -50px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes oper7 {
+  0% {
+    transform: translate(-30px, -50px);
+  }
+
+  50% {
+    transform: translate(-30px, -50px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes oper8 {
+  0% {
+    transform: translate(60px, -50px);
+    transition: all 1.5s;
+  }
+
+  50% {
+    transform: translate(60px, -50px);
+    transition: all 1.5s;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    transition: all 1.5s;
+  }
+}
+
+
 .oper__anim1,
 .oper__anim2,
 .oper__anim3,
@@ -463,43 +579,55 @@ export default {
 .oper__anim7,
 .oper__anim8 {
   position: absolute;
+  z-index: 1;
 }
 
 .oper__anim1 {
   right: 872px;
   top: -105px;
+  animation: oper1 1s linear;
 }
 
 .oper__anim2 {
   right: 574px;
   top: -135px;
+  animation: oper2 1.5s linear;
 }
 
 .oper__anim3 {
   right: 257px;
   top: -163px;
+  animation: oper3 2s linear;
 }
 
 .oper__anim4 {
   right: -37px;
   top: -190px;
+  animation: oper4 2.5s linear;
 }
 
 .oper__anim5 {
-  right: 690px;
-  top: 220px;
+  right: 675px;
+  top: 210px;
+  animation: oper5 1s linear;
 }
 
 .oper__anim6 {
-  left: 0;
+  right: 547px;
+  top: 185px;
+  animation: oper6 1.5s linear;
 }
 
 .oper__anim7 {
-  left: 0;
+  right: 297px;
+  top: 162px;
+  animation: oper7 2s linear;
 }
 
 .oper__anim8 {
-  left: 0;
+  right: 45px;
+  top: 140px;
+  animation: oper8 2.5s linear;
 }
 
 .unique-container-left-side-dote {
@@ -685,7 +813,7 @@ export default {
 
 .operation-banner {
   position: relative;
-  background: url("../assets/images/operation/operation-bg.svg") no-repeat right top;
+  // background: url("../assets/images/operation/operation-bg.svg") no-repeat right top;
   min-height: 702px;
   padding: 0 25px;
 

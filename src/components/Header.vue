@@ -82,6 +82,10 @@ input {
   -moz-appearance: textfield;
 }
 
+.container {
+  z-index: 1000;
+}
+
 .fixed-menu {
   z-index: 1100;
   position: fixed;
@@ -162,6 +166,7 @@ input {
     letter-spacing: 1px;
     font-family: 'Oxygen';
     text-transform: uppercase;
+
   }
 
   nav a:before {
