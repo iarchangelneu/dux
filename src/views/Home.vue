@@ -466,7 +466,7 @@
           <VueSlickCarousel ref="holding" v-bind="settings">
             <div>
               <div class="item"
-                onclick="window.location.href = 'https://www.igbaffiliate.com/partner-insights/duxgroup-people-are-the-core-asset-in-our-business/'">
+                onclick="window.open('https://www.igbaffiliate.com/partner-insights/duxgroup-people-are-the-core-asset-in-our-business/', '_blank')">
                 <div class="content centre__cont">
                   <p class="date">31.08.2021</p>
                   <div class="centre">
@@ -485,7 +485,7 @@
             </div>
             <div>
               <div class="item"
-                onclick="window.location.href = 'https://europeangaming.eu/portal/latest-news/2021/07/14/96210/hurricane-global-became-duxgroup-and-acquired-pinocasino/'">
+                onclick="window.open ('https://europeangaming.eu/portal/latest-news/2021/07/14/96210/hurricane-global-became-duxgroup-and-acquired-pinocasino/', '_blank')">
                 <div class="content centre__cont">
                   <p class="date">11.07.2021</p>
                   <div class="centre">
@@ -4775,14 +4775,15 @@ export default {
     padding-top: 80px !important;
   }
 }
-.centre{
+
+.centre {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.centre__cont{
+.centre__cont {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
