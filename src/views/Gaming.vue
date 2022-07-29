@@ -195,10 +195,18 @@ export default {
   mounted(){
     setTimeout(()=>{document.getElementById('anim__top__cont').classList.add('anim__top__cont__active')}, 500)
     setTimeout(()=>{document.getElementById('anim__bot__cont').classList.add('anim__bot__cont__active')}, 1500)
-    // setTimeout(()=>{document.getElementById('left__lock').style.display = 'block';
-    //                 // document.getElementById('left__lock').classList.add('anim__bot__cont__active')
-    // }, 6000)
-    // document.getElementById('anim__top__cont').classList.add('anim__top__cont__active')
+    setTimeout(()=>{
+      document.getElementById('left__lock').classList.add('anim__rot')
+    }, 3300)
+    setTimeout(()=>{
+      document.getElementById('shildUp').classList.add('anim__rot__left')
+    }, 3400)
+    setTimeout(()=>{
+      document.getElementById('lodckBot').classList.add('anim__rot')
+    }, 3500)
+    setTimeout(()=>{
+      document.getElementById('shildBot').classList.add('anim__rot__left')
+    }, 3600)
   }
 }
 </script>
@@ -1228,5 +1236,48 @@ export default {
 }
 .anim__bot__cont__active{
   width: 60.76vw !important;
+}
+.anim__rot{
+  animation: 3s linear 0s normal none infinite running rot;
+  -webkit-animation: 3s linear 0s normal none infinite running rot;
+}
+
+.anim__rot__left{
+  animation: 3s linear 0s normal none infinite running rotl;
+  -webkit-animation: 3s linear 0s normal none infinite running rotl;
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotl {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes rotl {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 </style>
