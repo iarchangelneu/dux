@@ -4,10 +4,20 @@
       <div class="menu">
         <Header @opened="openedMobMenu" />
       </div>
-      <div class="images">
+      <div class="images images__vl">
+        <img src="../assets/images/gaming/leftLock.svg" id="left__lock" style="" class="left__lock" data-aos-easing="linear"
+     data-aos-duration="500" alt="" data-aos="fade-down" data-aos-delay="2700">
         <!-- <img src="../assets/images/gaming/header-photo.svg" style="float: right" /> -->
+
+        <img src="../assets/images/gaming/shildUp.svg" id="shildUp" class="shildUp" alt="" data-aos-easing="linear"
+     data-aos-duration="500" data-aos="fade-down" data-aos-delay="2800">
+     <img src="../assets/images/gaming/lodckBot.svg" id="lodckBot" class="lodckBot" alt="" data-aos-easing="linear"
+     data-aos-duration="500" data-aos="fade-down" data-aos-delay="2900">
+     <img src="../assets/images/gaming/shildBot.svg" id="shildBot" class="shildBot" alt="" data-aos-easing="linear"
+     data-aos-duration="500" data-aos="fade-down" data-aos-delay="3000">
         <div class="anim__top__cont" id="anim__top__cont">
           <img class="anim__lineTop" src="../assets/images/gaming/lineTop.svg" alt="">
+          
         </div>
         <div class="anim__bot__cont" id="anim__bot__cont">
           <img class="anim__lineBot" src="../assets/images/gaming/lineBot.svg" alt="">
@@ -183,8 +193,11 @@ export default {
     window.removeEventListener('resize', this.handleResize);
   },
   mounted(){
-    setTimeout(()=>{document.getElementById('anim__top__cont').classList.add('anim__top__cont__active')}, 1000)
-    setTimeout(()=>{document.getElementById('anim__bot__cont').classList.add('anim__bot__cont__active')}, 1300)
+    setTimeout(()=>{document.getElementById('anim__top__cont').classList.add('anim__top__cont__active')}, 500)
+    setTimeout(()=>{document.getElementById('anim__bot__cont').classList.add('anim__bot__cont__active')}, 1500)
+    // setTimeout(()=>{document.getElementById('left__lock').style.display = 'block';
+    //                 // document.getElementById('left__lock').classList.add('anim__bot__cont__active')
+    // }, 6000)
     // document.getElementById('anim__top__cont').classList.add('anim__top__cont__active')
   }
 }
@@ -211,12 +224,13 @@ export default {
     }
 
     .images {
-      width: 90%;
+      width: 100%;
       margin-left: auto;
       display: flex;
       justify-content: flex-end;
       flex-direction: column;
       align-items: flex-end;
+      position: relative;
 
       img {
         // height: 420px;
@@ -545,7 +559,7 @@ export default {
       .images {
         img {
           //width: 100% !important;
-          height: 261px !important;
+          // height: 261px !important;
         }
       }
 
@@ -1153,32 +1167,66 @@ export default {
   }
 }
 
+.images__vl{
+  margin-top: 140px;
+}
+
 .anim__top__cont{
   width: 0;
-  transition: width 4s;
-  overflow: hidden;
+  transition: width 2s;
+  overflow-x: hidden;
+  position: relative;
+  overflow-y: visible;
 }
 
 .anim__lineTop{
-  width: 900px;
+  width: 75.69vw;
 }
 .anim__bot__cont{
-  margin-top: 40px;
+  margin-top: 2.08vw;
   width: 0;
-  transition: width 4s;
-  overflow: hidden;
+  transition: width 2s;
+  overflow-x: hidden;
+
 }
 
 .anim__lineBot{
-  width: 600px;
+  width: 60.76vw;
+}
+.left__lock{
+  position: absolute;
+  left: 160px;
+  top: -30px;
+}
+.shildUp{
+  position: absolute;
+  // top: -118px;
+  top: -7vw;
+  // right: 665px;
+  right: 47.48vw;
+}
+.lodckBot{
+  position: absolute;
+  // top: -118px;
+  top: 3.5vw;
+  // right: 665px;
+  right: 30.48vw;
+}
+.shildBot{
+  position: absolute;
+  // top: -118px;
+  bottom: -10vw;
+  // right: 665px;
+  right: 1.8vw;
 }
 </style>
 
 <style>
 .anim__top__cont__active{
-  width: 900px !important;
+  width: 75.69vw !important;
+  /* width: 100% !important; */
 }
 .anim__bot__cont__active{
-  width: 600px !important;
+  width: 60.76vw !important;
 }
 </style>
