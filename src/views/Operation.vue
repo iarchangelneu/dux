@@ -2,6 +2,15 @@
   <div class="back">
     <div class="header">
       <div class="operation-banner">
+        <img src="../assets/animation/oper1.svg" class="oper__anim1" alt="">
+        <img src="../assets/animation/oper2.svg" class="oper__anim2" alt="">
+        <img src="../assets/animation/oper3.svg" class="oper__anim3" alt="">
+        <img src="../assets/animation/oper4.svg" class="oper__anim4" alt="">
+        <img src="../assets/animation/oper5.svg" class="oper__anim5" alt="">
+        <img src="../assets/animation/oper6.svg" class="oper__anim6" alt="">
+        <img src="../assets/animation/oper7.svg" class="oper__anim7" alt="">
+        <img src="../assets/animation/oper8.svg" class="oper__anim8" alt="">
+
         <div class="menu">
           <Header />
         </div>
@@ -445,6 +454,54 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.oper__anim1,
+.oper__anim2,
+.oper__anim3,
+.oper__anim4,
+.oper__anim5,
+.oper__anim6,
+.oper__anim7,
+.oper__anim8 {
+  position: absolute;
+}
+
+.oper__anim1 {
+  right: 872px;
+  top: -105px;
+}
+
+.oper__anim2 {
+  right: 574px;
+  top: -135px;
+}
+
+.oper__anim3 {
+  right: 257px;
+  top: -163px;
+}
+
+.oper__anim4 {
+  right: -37px;
+  top: -190px;
+}
+
+.oper__anim5 {
+  right: 690px;
+  top: 220px;
+}
+
+.oper__anim6 {
+  left: 0;
+}
+
+.oper__anim7 {
+  left: 0;
+}
+
+.oper__anim8 {
+  left: 0;
+}
+
 .unique-container-left-side-dote {
   margin-right: 105px !important;
 }
@@ -627,6 +684,7 @@ export default {
 }
 
 .operation-banner {
+  position: relative;
   background: url("../assets/images/operation/operation-bg.svg") no-repeat right top;
   min-height: 702px;
   padding: 0 25px;

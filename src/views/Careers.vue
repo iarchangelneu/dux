@@ -616,41 +616,41 @@ export default {
 .car__anim1 {
   top: 92px;
   left: 1px;
-  animation: anim1 2s linear infinite;
-  animation-play-state: running;
-  transform-origin: bottom right;
+  animation: anim1 4s linear infinite;
+  // animation-play-state: running;
+  // transform-origin: bottom right;
 }
 
 .car__anim2 {
   left: 195px;
   top: 13px;
-  animation: anim1 3s linear infinite;
-  animation-play-state: running;
-  transform-origin: bottom right;
+  animation: anim1 5s linear infinite;
+  // animation-play-state: running;
+  // transform-origin: bottom right;
 }
 
 .car__anim3 {
   left: 670px;
   top: 85px;
-  animation: anim1 4s linear infinite;
-  animation-play-state: running;
-  transform-origin: bottom right;
+  animation: anim1 6s linear infinite;
+  // animation-play-state: running;
+  // transform-origin: bottom right;
 }
 
 .car__anim4 {
   right: 450px;
   top: 220px;
-  animation: anim1 5s linear infinite;
-  animation-play-state: running;
-  transform-origin: bottom right;
+  animation: anim1 7s linear infinite;
+  // animation-play-state: running;
+  // transform-origin: bottom right;
 }
 
 .car__anim5 {
-  right: -67px;
-  top: -76px;
-  animation: anim1 6s linear infinite;
-  animation-play-state: running;
-  transform-origin: bottom right;
+  right: 0;
+  top: 0;
+  animation: anim1 8s linear infinite;
+  // animation-play-state: running;
+  // transform-origin: bottom right;
 }
 
 .line {
@@ -828,6 +828,29 @@ export default {
 }
 
 @media (max-width: 1439px) and (min-width: 1024px) {
+  .car__anim1 {
+    animation: anim1 7s linear infinite;
+  }
+
+  .car__anim2 {
+    width: 150px;
+    animation: anim1 8s linear infinite;
+  }
+
+  .car__anim3 {
+    animation: anim1 9s linear infinite;
+  }
+
+  .car__anim4 {
+    width: 100px;
+    animation: anim1 10s linear infinite;
+  }
+
+  .car__anim5 {
+    width: 300px;
+    animation: anim1 11s linear infinite;
+  }
+
   .careers-banner {
     min-height: 417px !important;
 
@@ -992,8 +1015,31 @@ export default {
 
 
 @media (max-width: 768px) and (min-width: 320px) {
+  .car__anim1 {
+    animation: anim1 8s linear infinite;
+  }
+
+  .car__anim2 {
+    width: 150px;
+    animation: anim1 9s linear infinite;
+  }
+
+  .car__anim3 {
+    animation: anim1 10s linear infinite;
+  }
+
+  .car__anim4 {
+    width: 100px;
+    animation: anim1 11s linear infinite;
+  }
+
+  .car__anim5 {
+    width: 250px;
+    animation: anim1 12s linear infinite;
+  }
+
   .careers-banner {
-    background: url("../assets/images/careers/320.svg") no-repeat;
+    // background: url("../assets/images/careers/320.svg") no-repeat;
 
     min-height: 265px !important;
 
