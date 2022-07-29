@@ -456,116 +456,113 @@ export default {
 <style scoped lang="scss">
 @keyframes oper1 {
   0% {
-    transform: translate(0, -100px);
+    transform: scale(0);
   }
 
   50% {
-    transform: translate(0, -100px);
+    transform: scale(1);
   }
 
   100% {
-    transform: translate(0, 0);
+    transform: scale(0);
   }
 }
 
 @keyframes oper2 {
   0% {
-    transform: translate(0, -80px);
+    transform: scale(0);
   }
 
   50% {
-    transform: translate(0, -80px);
+    transform: scale(1);
   }
 
   100% {
-    transform: translate(0, 0);
+    transform: scale(0);
   }
 }
 
 @keyframes oper3 {
   0% {
-    transform: translate(0, -60px);
+    transform: scale(0);
   }
 
   50% {
-    transform: translate(0, -60px);
+    transform: scale(1);
   }
 
   100% {
-    transform: translate(0, 0);
+    transform: scale(0);
   }
 }
 
 @keyframes oper4 {
   0% {
-    transform: translate(0, -40px);
+    transform: scale(0);
   }
 
   50% {
-    transform: translate(0, -40px);
+    transform: scale(1);
   }
 
   100% {
-    transform: translate(0, 0);
+    transform: scale(0);
   }
 }
 
 @keyframes oper5 {
   0% {
-    transform: translate(-100px, -50px);
+    transform: scale(0);
   }
 
   50% {
-    transform: translate(-100px, -50px);
+    transform: scale(1);
   }
 
   100% {
-    transform: translate(0, 0);
+    transform: scale(0);
   }
 }
 
 @keyframes oper6 {
   0% {
-    transform: translate(-60px, -50px);
+    transform: scale(0);
   }
 
   50% {
-    transform: translate(-60px, -50px);
+    transform: scale(1);
   }
 
   100% {
-    transform: translate(0, 0);
+    transform: scale(0);
   }
 }
 
 @keyframes oper7 {
   0% {
-    transform: translate(-30px, -50px);
+    transform: scale(0);
   }
 
   50% {
-    transform: translate(-30px, -50px);
+    transform: scale(1);
   }
 
   100% {
-    transform: translate(0, 0);
+    transform: scale(0);
   }
 }
 
 @keyframes oper8 {
   0% {
-    transform: translate(60px, -50px);
-    transition: all 1.5s;
+    transform: scale(0);
   }
 
   50% {
-    transform: translate(60px, -50px);
-    transition: all 1.5s;
+    transform: scale(1);
   }
 
   100% {
-    transform: translate(0, 0);
-    transition: all 1.5s;
+    transform: scale(0);
   }
 }
 
@@ -585,49 +582,50 @@ export default {
 .oper__anim1 {
   right: 872px;
   top: -105px;
-  animation: oper1 1s linear;
+
+  animation: oper1 2s linear infinite;
 }
 
 .oper__anim2 {
   right: 574px;
   top: -135px;
-  animation: oper2 1.5s linear;
+  animation: oper2 2s linear infinite;
 }
 
 .oper__anim3 {
   right: 257px;
   top: -163px;
-  animation: oper3 2s linear;
+  animation: oper3 2s linear infinite;
 }
 
 .oper__anim4 {
   right: -37px;
   top: -190px;
-  animation: oper4 2.5s linear;
+  animation: oper4 2s linear infinite;
 }
 
 .oper__anim5 {
   right: 675px;
   top: 210px;
-  animation: oper5 1s linear;
+  animation: oper5 2s linear infinite;
 }
 
 .oper__anim6 {
   right: 547px;
   top: 185px;
-  animation: oper6 1.5s linear;
+  animation: oper6 2s linear infinite;
 }
 
 .oper__anim7 {
   right: 297px;
   top: 162px;
-  animation: oper7 2s linear;
+  animation: oper7 2s linear infinite;
 }
 
 .oper__anim8 {
   right: 45px;
   top: 140px;
-  animation: oper8 2.5s linear;
+  animation: oper8 2s linear infinite;
 }
 
 .unique-container-left-side-dote {
