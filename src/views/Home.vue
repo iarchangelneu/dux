@@ -387,11 +387,10 @@
       <div class="content">
         <p>Make <span class="blue">big waves</span> in the iGaming segment together with <span class="blue">our
             team</span> and build an awesome <span class="blue">ecosystem</span></p>
-        <img src="../assets/images/mission/6.png" class="forth_figure" data-aos="fade-down" data-aos-duration="2000" />
-        <img src="../assets/images/mission/23.png" class="second_figure" data-aos="fade-down"
-          data-aos-duration="2000" />
-        <img src="../assets/images/mission/33.png" class="third_figure" data-aos="fade-down" data-aos-duration="2000" />
-        <img src="../assets/images/mission/45.png" class="first_figure" data-aos="fade-down" data-aos-duration="2000" />
+        <img src="../assets/images/mission/6.png" class="forth_figure" data-aos="fade-up" data-aos-duration="2000" />
+        <img src="../assets/images/mission/23.png" class="second_figure" data-aos="fade-up" data-aos-duration="2000" />
+        <img src="../assets/images/mission/33.png" class="third_figure" data-aos="fade-up" data-aos-duration="2000" />
+        <img src="../assets/images/mission/45.png" class="first_figure" data-aos="fade-up" data-aos-duration="2000" />
       </div>
     </div>
     <div class="gambling">
@@ -467,7 +466,7 @@
           <VueSlickCarousel ref="holding" v-bind="settings">
             <div>
               <div class="item"
-                onclick="window.location.href = 'https://www.igbaffiliate.com/partner-insights/duxgroup-people-are-the-core-asset-in-our-business/'">
+                onclick="window.open('https://www.igbaffiliate.com/partner-insights/duxgroup-people-are-the-core-asset-in-our-business/', '_blank')">
                 <div class="content centre__cont">
                   <p class="date">31.08.2021</p>
                   <div class="centre">
@@ -486,7 +485,7 @@
             </div>
             <div>
               <div class="item"
-                onclick="window.location.href = 'https://europeangaming.eu/portal/latest-news/2021/07/14/96210/hurricane-global-became-duxgroup-and-acquired-pinocasino/'">
+                onclick="window.open ('https://europeangaming.eu/portal/latest-news/2021/07/14/96210/hurricane-global-became-duxgroup-and-acquired-pinocasino/', '_blank')">
                 <div class="content centre__cont">
                   <p class="date">11.07.2021</p>
                   <div class="centre">
@@ -494,6 +493,7 @@
                     <p class="item_content">Hurricane Global became DUXGroup and acquired PinoCasino </p>
                   </div>
                 </div>
+
                 <div class="btn">
                   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="60" fill="currentColor"
                     class="bi bi-chevron-right" viewBox="0 0 16 16">
@@ -4775,14 +4775,15 @@ export default {
     padding-top: 80px !important;
   }
 }
-.centre{
+
+.centre {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.centre__cont{
+.centre__cont {
   flex-grow: 1;
   display: flex;
   flex-direction: column;

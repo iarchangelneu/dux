@@ -40,13 +40,16 @@
         <p><span class="blue">DUXGROUP VENTURES</span> IS A VENTURE CAPITAL FUND THAT INVESTS <span class="blue">€1-5
             MILLION</span> IN IGAMING PROJECTS IN LINE WITH A <span class="blue">WIN-WIN MODEL</span> </p>
         <div class="imgs">
-          <img src="../assets/images/ventures/investment/euro-big.png" data-aos="fade-down" data-aos-duration="1500" />
-          <img src="../assets/images/ventures/investment/dive-small.png" data-aos="fade-up" data-aos-duration="1500" />
-          <img src="../assets/images/ventures/investment/euro-middle.png" data-aos="fade-down"
+          <img src="../assets/images/ventures/investment/euro-big.png" class="first__fig" data-aos="fade-up"
             data-aos-duration="1500" />
-          <img src="../assets/images/ventures/investment/euro-small.png" data-aos="fade-down"
+          <img src="../assets/images/ventures/investment/dive-small.png" class="first__fig" data-aos="fade-up"
             data-aos-duration="1500" />
-          <img src="../assets/images/ventures/investment/Union.png" data-aos="fade-left" data-aos-duration="1500" />
+          <img src="../assets/images/ventures/investment/euro-middle.png" class="first__fig" data-aos="fade-up"
+            data-aos-duration="1500" />
+          <img src="../assets/images/ventures/investment/euro-small.png" class="first__fig" data-aos="fade-up"
+            data-aos-duration="1500" />
+          <img src="../assets/images/ventures/investment/Union.png" class="first__fig" data-aos="fade-up"
+            data-aos-duration="1500" />
         </div>
       </div>
     </div>
@@ -196,6 +199,10 @@ export default {
   100% {
     transform: rotate(360deg)
   }
+}
+
+.first__fig {
+  animation: rotate__figure 10s infinite linear;
 }
 
 ::placeholder {
@@ -384,7 +391,7 @@ export default {
         }
 
         img:nth-child(2) {
-          bottom: 0 !important;
+          bottom: 15px !important;
           right: 200px !important;
         }
       }

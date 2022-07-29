@@ -3,6 +3,11 @@
 
     <div class="header-container">
       <div class="careers-banner">
+        <img src="../assets/animation/careers1.svg" class="car__anim1" alt="">
+        <img src="../assets/animation/careers2.svg" class="car__anim2" alt="">
+        <img src="../assets/animation/careers3.svg" class="car__anim3" alt="">
+        <img src="../assets/animation/careers4.svg" class="car__anim4" alt="">
+        <img src="../assets/animation/careers5.svg" class="car__anim5" alt="">
         <HeaderPart @opened="openedMobMenu" />
         <h1 class="careers-banner__title">
           <span class="careers"><img class="span-svg" src="../assets/images/contact/Ellipse1.svg"
@@ -586,6 +591,68 @@ export default {
 }
 </style>
 <style lang="scss" scoped>
+@keyframes anim1 {
+  0% {
+    transform: rotate(0deg) translate(0, -500px);
+  }
+
+  50% {
+    transform: rotate(45deg) translate(0, 0);
+  }
+
+  100% {
+    transform: rotate(0deg) translate(0, -100px);
+  }
+}
+
+.car__anim1,
+.car__anim2,
+.car__anim3,
+.car__anim4,
+.car__anim5 {
+  position: absolute;
+}
+
+.car__anim1 {
+  top: 92px;
+  left: 1px;
+  animation: anim1 2s linear infinite;
+  animation-play-state: running;
+  transform-origin: bottom right;
+}
+
+.car__anim2 {
+  left: 195px;
+  top: 13px;
+  animation: anim1 3s linear infinite;
+  animation-play-state: running;
+  transform-origin: bottom right;
+}
+
+.car__anim3 {
+  left: 670px;
+  top: 85px;
+  animation: anim1 4s linear infinite;
+  animation-play-state: running;
+  transform-origin: bottom right;
+}
+
+.car__anim4 {
+  right: 450px;
+  top: 220px;
+  animation: anim1 5s linear infinite;
+  animation-play-state: running;
+  transform-origin: bottom right;
+}
+
+.car__anim5 {
+  right: -67px;
+  top: -76px;
+  animation: anim1 6s linear infinite;
+  animation-play-state: running;
+  transform-origin: bottom right;
+}
+
 .line {
   background: #010C28;
   padding-top: 112px;
@@ -1124,7 +1191,8 @@ export default {
 }
 
 .careers-banner {
-  background: url("../assets/images/careers/careers-bg.svg") no-repeat right top;
+  position: relative;
+  // background: url("../assets/images/careers/careers-bg.svg") no-repeat right top;
   min-height: 702px;
   background-size: contain;
   padding: 25px;
