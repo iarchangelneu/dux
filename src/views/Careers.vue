@@ -167,19 +167,7 @@
             <div class="swiper-slide"><img src="../assets/images/careers/slider/pexels-cowomen-204162910.png"></div>
             <div class="swiper-slide"><img src="../assets/images/careers/slider/Rectangle930.png"></div>
           </div>
-          <div class="arrows">
-            <div class="prev swiper-button-prev" @click="$refs.images.prev()">
-              <!-- <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="#2F5BD8" class="bi bi-arrow-left"
-                viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
-              </svg> -->
-              <img src="../assets/images/careers/arrowPrev.svg" alt="">
-            </div>
-            <div class="next swiper-button-next" @click="$refs.images.next()">
-              <img src="../assets/images/careers/arrowNext.svg" alt="">
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
@@ -187,7 +175,7 @@
       <BlockTitle title="BENEFITS"></BlockTitle>
     </div>
     <div class="benefits">
-      <h2 class="benefits__title">We
+      <h2 class="benefits__title" data-aos="fade-down">We
         <span class="color-blue"> love our people</span>,
         appreciate our team, and try to become like a second
         <span class="color-blue">family</span>.
@@ -195,43 +183,43 @@
       </h2>
       <div class="row">
         <div class="row__container">
-          <p class="row__text">
+          <p class="row__text" data-aos="zoom-in" data-aos-duration="0">
             <span><img src="../assets/images/careers/dote.svg" alt="dote"></span>
             Modern, iGaming environment in a sunny climate.
           </p>
-          <p class="row__text">
+          <p class="row__text" data-aos="zoom-in" data-aos-duration="2000">
             <span><img src="../assets/images/careers/dote.svg" alt="dote"></span>
             Team lunches, drinks, and team events.
           </p>
-          <p class="row__text">
+          <p class="row__text" data-aos="zoom-in" data-aos-duration="1000">
             <span><img src="../assets/images/careers/dote.svg" alt="dote"></span>
             Employee Development Plans.
           </p>
         </div>
         <div class="row__container">
-          <p class="row__text">
+          <p class="row__text" data-aos="zoom-in" data-aos-duration="2000">
             <span><img src="../assets/images/careers/dote.svg" alt="dote"></span>
             Seafront offices.
           </p>
-          <p class="row__text">
+          <p class="row__text" data-aos="zoom-in" data-aos-duration="1000">
             <span><img src="../assets/images/careers/dote.svg" alt="dote"></span>
             Birthdays (we celebrate by giving employees birthday gifts + yummy treats).
           </p>
-          <p class="row__text">
+          <p class="row__text" data-aos="zoom-in" data-aos-duration="0">
             <span><img src="../assets/images/careers/dote.svg" alt="dote"></span>
             Mobile phone allowance.
           </p>
         </div>
         <div class="row__container">
-          <p class="row__text">
+          <p class="row__text" data-aos="zoom-in" data-aos-duration="0">
             <span><img src="../assets/images/careers/dote.svg" alt="dote"></span>
             Private health insurance.
           </p>
-          <p class="row__text">
+          <p class="row__text" data-aos="zoom-in" data-aos-duration="2000">
             <span><img src="../assets/images/careers/dote.svg" alt="dote"></span>
             Flexi-time.
           </p>
-          <p class="row__text">
+          <p class="row__text" data-aos="zoom-in" data-aos-duration="1000">
             <span><img src="../assets/images/careers/dote.svg" alt="dote"></span>
             Kitchen packed with free flowing treats/ fruit/ snacks.
           </p>
@@ -241,7 +229,7 @@
     <div class="devider">
       <BlockTitle title="CAREER"></BlockTitle>
     </div>
-    <div class="career">
+    <div class="career" data-aos="fade-down">
       <h2 class="career__title">Start your
         <span class="color-blue"> star</span>
         career at
@@ -293,45 +281,49 @@
       <BlockTitle title="Interview Process Timeline" :large="1"></BlockTitle>
     </div>
     <div class="stages" v-if="menuClosed">
-      <div class="stage-container">
+      <div class="stage-container" data-aos="fade-right">
         <h2 class="stage-container-title">Stage 01</h2>
         <p class="stage-container-sub-title">CV Screening</p>
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
-      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768" />
+      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768"
+        data-aos="fade-right" data-aos-duration="400" />
       <img class="line-svg " src="../assets/images/line__768.svg" alt="Line"
         v-if="window.width <= 768 && window.width > 450" />
       <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450" />
-      <div class="stage-container">
+      <div class="stage-container" data-aos="fade-right" data-aos-duration="600">
         <h2 class="stage-container-title">Stage 02</h2>
         <p class="stage-container-sub-title">1st Interview with HR</p>
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
-      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768" />
+      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768"
+        data-aos="fade-right" data-aos-duration="800" />
       <img class="line-svg " src="../assets/images/line__768.svg" alt="Line"
         v-if="window.width <= 768 && window.width > 450" />
       <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450" />
-      <div class="stage-container">
+      <div class="stage-container" data-aos="fade-right" data-aos-duration="1000">
         <h2 class="stage-container-title">Stage 03</h2>
         <p class="stage-container-sub-title">Interview with Hiring Manager</p>
         <p class="stage-container-sub-text">*Home Task may be<br> included in this stage</p>
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
-      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768" />
+      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768"
+        data-aos="fade-right" data-aos-duration="1200" />
       <img class="line-svg " src="../assets/images/wline__768.svg" style="transform: rotate(0deg);" alt="Line"
         v-if="window.width <= 768 && window.width > 450" />
       <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450" />
-      <div class="stage-container">
+      <div class="stage-container" data-aos="fade-right" data-aos-duration="1400">
         <h2 class="stage-container-title">Stage 04</h2>
         <p class="stage-container-sub-title">Final Interview with Management</p>
         <p class="stage-container-sub-text">(Usually for high level position)</p>
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
-      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768" />
+      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768"
+        data-aos="fade-right" data-aos-duration="1400" />
       <img class="line-svg " src="../assets/images/rline__768.svg" alt="Line"
         v-if="window.width <= 768 && window.width > 450" />
       <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450" />
-      <div class="stage-container">
+      <div class="stage-container" data-aos="fade-right" data-aos-duration="1800">
         <h2 class="stage-container-title">Stage 05</h2>
         <p class="stage-container-sub-title">Offer stage</p>
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
@@ -343,12 +335,12 @@
       <BlockTitle title="About our team"></BlockTitle>
     </div>
     <div class="igaming">
-      <h2 class="igaming-title">
+      <h2 class="igaming-title" data-aos="fade-down">
         Innovative
         <span class="color-blue"> iGaming</span>
         Meets a Passion for Tech
       </h2>
-      <div class="igaming-container">
+      <div class="igaming-container" data-aos="fade-down">
         <div class="igaming-container-left-side">
           <div class="igaming-container-left-side-dote">
             <img src="../assets/images/careers/dote16.svg" alt="dote16" />
@@ -365,7 +357,7 @@
           </p>
         </div>
       </div>
-      <div class="igaming-container">
+      <div class="igaming-container" data-aos="fade-down">
         <div class="igaming-container-left-side">
           <div class="igaming-container-left-side-dote">
             <img src="../assets/images/careers/dote16.svg" alt="dote16" />
@@ -382,7 +374,7 @@
           </p>
         </div>
       </div>
-      <div class="igaming-container">
+      <div class="igaming-container" data-aos="fade-down">
         <div class="igaming-container-left-side">
           <div class="igaming-container-left-side-dote">
             <img src="../assets/images/careers/dote16.svg" alt="dote16" />
@@ -399,7 +391,7 @@
           </p>
         </div>
       </div>
-      <div class="igaming-container">
+      <div class="igaming-container" data-aos="fade-down">
         <div class="igaming-container-left-side">
           <div class="igaming-container-left-side-dote">
             <img src="../assets/images/careers/dote16.svg" alt="dote16" />
@@ -416,7 +408,7 @@
           </p>
         </div>
       </div>
-      <div class="igaming-container">
+      <div class="igaming-container" data-aos="fade-down">
         <div class="igaming-container-left-side">
           <div class="igaming-container-left-side-dote">
             <img src="../assets/images/careers/dote16.svg" alt="dote16" />
@@ -435,7 +427,7 @@
       </div>
     </div>
     <div class="title-container">
-      <h2 class="title">
+      <h2 class="title" data-aos="fade-down">
         We are always in <span class="color-blue">search of talented</span> and dedicated
         <span class="color-blue">professionals.</span>
         Let’s raise the
@@ -591,6 +583,23 @@ export default {
 }
 </style>
 <style lang="scss" scoped>
+.career-main-block-items {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.career-main-block-items:hover {
+  background: #1F2941;
+  padding-left: 17px;
+  padding-right: 17px;
+
+}
+
+.career-main-block-items:hover .career-main-block-items-text-container-job-hirer:after {
+  padding-left: 24px;
+  content: url('../assets/images/job__arrow.svg');
+}
+
 @keyframes anim1 {
   0% {
     transform: rotate(0deg) translate(0, -500px);
@@ -1110,6 +1119,7 @@ export default {
   .career-main-block-button {
     font-size: 12px !important;
     line-height: 105% !important;
+    cursor: pointer;
   }
 
   .benefits__title {
@@ -1491,6 +1501,7 @@ export default {
       text-transform: uppercase;
       color: #F0F0F0;
       margin-top: 42px;
+      cursor: pointer;
 
       img {
         margin-left: 15px;

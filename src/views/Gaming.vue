@@ -5,19 +5,19 @@
         <Header @opened="openedMobMenu" />
       </div>
       <div class="images images__vl">
-        <img src="../assets/images/gaming/leftLock.svg" id="left__lock" style="" class="left__lock" data-aos-easing="linear"
-     data-aos-duration="500" alt="" data-aos="fade-down" data-aos-delay="2700">
+        <img src="../assets/images/gaming/leftLock.svg" id="left__lock" style="" class="left__lock"
+          data-aos-easing="linear" data-aos-duration="500" alt="" data-aos="fade-down" data-aos-delay="2700">
         <!-- <img src="../assets/images/gaming/header-photo.svg" style="float: right" /> -->
 
         <img src="../assets/images/gaming/shildUp.svg" id="shildUp" class="shildUp" alt="" data-aos-easing="linear"
-     data-aos-duration="500" data-aos="fade-down" data-aos-delay="2800">
-     <img src="../assets/images/gaming/lodckBot.svg" id="lodckBot" class="lodckBot" alt="" data-aos-easing="linear"
-     data-aos-duration="500" data-aos="fade-down" data-aos-delay="2900">
-     <img src="../assets/images/gaming/shildBot.svg" id="shildBot" class="shildBot" alt="" data-aos-easing="linear"
-     data-aos-duration="500" data-aos="fade-down" data-aos-delay="3000">
+          data-aos-duration="500" data-aos="fade-down" data-aos-delay="2800">
+        <img src="../assets/images/gaming/lodckBot.svg" id="lodckBot" class="lodckBot" alt="" data-aos-easing="linear"
+          data-aos-duration="500" data-aos="fade-down" data-aos-delay="2900">
+        <img src="../assets/images/gaming/shildBot.svg" id="shildBot" class="shildBot" alt="" data-aos-easing="linear"
+          data-aos-duration="500" data-aos="fade-down" data-aos-delay="3000">
         <div class="anim__top__cont" id="anim__top__cont">
           <img class="anim__lineTop" src="../assets/images/gaming/lineTop.svg" alt="">
-          
+
         </div>
         <div class="anim__bot__cont" id="anim__bot__cont">
           <img class="anim__lineBot" src="../assets/images/gaming/lineBot.svg" alt="">
@@ -41,7 +41,7 @@
         <BlockTitle title="Learn more"></BlockTitle>
       </div>
       <div class="content">
-        <p>
+        <p data-aos="fade-down">
           <span class="text-part">Gambling should always be seen as entertainment and nothing else. Unfortunately,
             sometimes people can take it too far and potentially lose control of their betting. You should never
             consider gambling as a source of income or a chance to recover from debt. Always keep track of the time and
@@ -62,7 +62,7 @@
         <BlockTitle title="how it works"></BlockTitle>
       </div>
       <div class="content">
-        <div class="content__item">
+        <div class="content__item" data-aos="fade-down">
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
               viewBox="0 0 16 16">
@@ -76,7 +76,7 @@
             level by adhering to KYC processes in accordance to the project. Reducing the limit will take effect
             immediately, but an increase in any limit will happen after email confirmation.</h4>
         </div>
-        <div class="content__item">
+        <div class="content__item" data-aos="fade-down">
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
               viewBox="0 0 16 16">
@@ -89,7 +89,7 @@
             still withdraw any remaining funds during this period. This Cooling-Off period is instantly applied to your
             account and when it expires your account will be re-activated automatically.</h4>
         </div>
-        <div class="content__item">
+        <div class="content__item" data-aos="fade-down">
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
               viewBox="0 0 16 16">
@@ -104,7 +104,7 @@
             that we need to do everything we can to block your access to your account and make sure that you receive no
             promotional materials whatsoever.</h4>
         </div>
-        <div class="content__item">
+        <div class="content__item" data-aos="fade-down">
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
               viewBox="0 0 16 16">
@@ -116,7 +116,7 @@
             minors from registering and playing. We always reserve the right to ask for any proof of identity and if the
             player is not 18+ their access to our casinos will be denied immediately.</h4>
         </div>
-        <div class="content__item">
+        <div class="content__item" data-aos="fade-down">
           <div class="our__r">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
               viewBox="0 0 16 16">
@@ -135,17 +135,20 @@
         <BlockTitle title="seeking outside help"></BlockTitle>
       </div>
       <div class="content">
-        <img src="../assets/images/gaming/seeking-bg.svg" v-if="window.width > 1024" />
-        <img src="../assets/images/seeking2.png" alt="" v-if="window.width <= 1024 && window.width > 450">
-        <img src="../assets/images/seeking320.png" v-if="window.width <= 450" />
-        <div class="text">
-          <p>Please contact any of the following organizations for consultation and support:</p>
-          <span>Gamblers Anonymous <a href="https://www.gamblersanonymous.org/ga/"
-              class="blue">http://www.gamblersanonymous.org/ga/</a> </span>
-          <span>GamCare <a href="https://www.gamblersanonymous.org/ga/" class="blue">https://www.gamcare.org.uk/</a>
-          </span>
-          <span>Gambling Therapy <a href="https://www.gamcare.org.uk/" class="blue">https://www.gamblingtherapy.org/</a>
-          </span>
+        <div data-aos="fade-down">
+          <img src="../assets/images/gaming/seeking-bg.svg" v-if="window.width > 1024" />
+          <img src="../assets/images/seeking2.png" alt="" v-if="window.width <= 1024 && window.width > 450">
+          <img src="../assets/images/seeking320.png" v-if="window.width <= 450" />
+          <div class="text">
+            <p>Please contact any of the following organizations for consultation and support:</p>
+            <span>Gamblers Anonymous <a href="https://www.gamblersanonymous.org/ga/"
+                class="blue">http://www.gamblersanonymous.org/ga/</a> </span>
+            <span>GamCare <a href="https://www.gamblersanonymous.org/ga/" class="blue">https://www.gamcare.org.uk/</a>
+            </span>
+            <span>Gambling Therapy <a href="https://www.gamcare.org.uk/"
+                class="blue">https://www.gamblingtherapy.org/</a>
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -192,19 +195,19 @@ export default {
   destroyed() {
     window.removeEventListener('resize', this.handleResize);
   },
-  mounted(){
-    setTimeout(()=>{document.getElementById('anim__top__cont').classList.add('anim__top__cont__active')}, 500)
-    setTimeout(()=>{document.getElementById('anim__bot__cont').classList.add('anim__bot__cont__active')}, 1500)
-    setTimeout(()=>{
+  mounted() {
+    setTimeout(() => { document.getElementById('anim__top__cont').classList.add('anim__top__cont__active') }, 500)
+    setTimeout(() => { document.getElementById('anim__bot__cont').classList.add('anim__bot__cont__active') }, 1500)
+    setTimeout(() => {
       document.getElementById('left__lock').classList.add('anim__rot')
     }, 3300)
-    setTimeout(()=>{
+    setTimeout(() => {
       document.getElementById('shildUp').classList.add('anim__rot__left')
     }, 3400)
-    setTimeout(()=>{
+    setTimeout(() => {
       document.getElementById('lodckBot').classList.add('anim__rot')
     }, 3500)
-    setTimeout(()=>{
+    setTimeout(() => {
       document.getElementById('shildBot').classList.add('anim__rot__left')
     }, 3600)
   }
@@ -1175,11 +1178,11 @@ export default {
   }
 }
 
-.images__vl{
+.images__vl {
   margin-top: 140px;
 }
 
-.anim__top__cont{
+.anim__top__cont {
   width: 0;
   transition: width 2s;
   overflow-x: hidden;
@@ -1187,10 +1190,11 @@ export default {
   overflow-y: visible;
 }
 
-.anim__lineTop{
+.anim__lineTop {
   width: 75.69vw;
 }
-.anim__bot__cont{
+
+.anim__bot__cont {
   margin-top: 2.08vw;
   width: 0;
   transition: width 2s;
@@ -1198,29 +1202,33 @@ export default {
 
 }
 
-.anim__lineBot{
+.anim__lineBot {
   width: 60.76vw;
 }
-.left__lock{
+
+.left__lock {
   position: absolute;
   left: 160px;
   top: -30px;
 }
-.shildUp{
+
+.shildUp {
   position: absolute;
   // top: -118px;
   top: -7vw;
   // right: 665px;
   right: 47.48vw;
 }
-.lodckBot{
+
+.lodckBot {
   position: absolute;
   // top: -118px;
   top: 3.5vw;
   // right: 665px;
   right: 30.48vw;
 }
-.shildBot{
+
+.shildBot {
   position: absolute;
   // top: -118px;
   bottom: -10vw;
@@ -1230,19 +1238,21 @@ export default {
 </style>
 
 <style>
-.anim__top__cont__active{
+.anim__top__cont__active {
   width: 75.69vw !important;
   /* width: 100% !important; */
 }
-.anim__bot__cont__active{
+
+.anim__bot__cont__active {
   width: 60.76vw !important;
 }
-.anim__rot{
+
+.anim__rot {
   animation: 3s linear 0s normal none infinite running rot;
   -webkit-animation: 3s linear 0s normal none infinite running rot;
 }
 
-.anim__rot__left{
+.anim__rot__left {
   animation: 3s linear 0s normal none infinite running rotl;
   -webkit-animation: 3s linear 0s normal none infinite running rotl;
 }
@@ -1251,14 +1261,17 @@ export default {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 @-webkit-keyframes rot {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -1268,14 +1281,17 @@ export default {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(-360deg);
   }
 }
+
 @-webkit-keyframes rotl {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(-360deg);
   }
