@@ -1044,7 +1044,7 @@ export default {
           font-style: normal;
           font-weight: 400;
           text-transform: uppercase;
-          font-size: 118px;
+          font-size: 96px;
           line-height: 95%;
           margin: 0;
         }
@@ -1570,7 +1570,7 @@ export default {
           }
 
           .circle {
-            width: 150px;
+            // width: 150px;
           }
         }
       }
@@ -1638,11 +1638,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 1201px) and (max-width: 1300px){
-  .mission .content p{
-    font-size: 50px;
-  }
-}
+
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   .slick-slide {
@@ -3221,7 +3217,7 @@ export default {
   system-ui;
   font-style: normal;
   font-weight: 400;
-  font-size: 35px;
+  font-size: 26px;
   line-height: 47px;
   color: #F0F0F0;
 
@@ -3759,7 +3755,7 @@ export default {
   system-ui;
   font-style: normal;
   font-weight: 400;
-  font-size: 35px;
+  font-size: 26px;
   line-height: 47px;
   color: #F0F0F0;
 
@@ -4212,12 +4208,16 @@ export default {
 
 .divider {
   .content {
+    svg{
+      width: 16px;
+      height: 16px;
+    }
     padding: 200px 25px 0 25px;
 
     &__item {
       border-top: 1px solid #828FA1;
       display: flex;
-      padding: 10px 0 110px 0;
+      padding: 16px 0 110px 0;
       align-items: flex-start;
       justify-content: space-between;
 
@@ -4234,8 +4234,8 @@ export default {
           font-family: 'Oxygen', sans-serif;
           font-style: normal;
           font-weight: 400;
-          font-size: 38px;
-          line-height: 48px;
+          font-size: 28px;
+          line-height: 35px;
           margin: 0;
           width: fit-content;
           letter-spacing: 0.03em;
@@ -4289,6 +4289,8 @@ export default {
       text-transform: uppercase;
       color: #F0F0F0;
     }
+
+    
 
     .first_figure {
       position: absolute;
@@ -4352,7 +4354,8 @@ export default {
         font-size: 28px;
         margin: 0;
         width: 77%;
-        line-height: 47px;
+        // line-height: 47px;
+        line-height: 125%;
         color: #F0F0F0;
       }
 
@@ -4405,7 +4408,7 @@ export default {
         font-family: 'Oxygen', sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 68px;
+        font-size: 48px;
         line-height: 105%;
         text-align: center;
         letter-spacing: 0.02em;
@@ -4496,9 +4499,12 @@ export default {
             letter-spacing: 0.03em;
             text-transform: uppercase;
             color: #F0F0F0;
+            margin-top: 54px;
+            margin-bottom: 0px;
           }
 
           .item_content {
+            margin-top: 16px;
             // text-align: center;
             font-family: 'Exo', sans-serif;
             font-style: normal;
@@ -4528,7 +4534,7 @@ export default {
           height: 100px;
           border-radius: 50%;
           background-color: #00FFFF;
-          margin-bottom: 30px;
+          margin-bottom: 50px;
           align-self: flex-end;
           display: flex;
           align-items: center;
@@ -4763,6 +4769,26 @@ export default {
   }
 }
 
+@media screen and (min-width: 1201px) and (max-width: 1400px){
+    .mission  {
+      .content{
+        p{
+          font-size: 40px;
+        }
+      }
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1265px){
+    .mission  {
+      .content{
+        p{
+          font-size: 36px;
+        }
+      }
+    }
+}
+
 .footer {
   background-color: #010C28;
   padding: 0 25px !important;
@@ -4815,7 +4841,7 @@ export default {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
 }
 
 .centre__cont {
