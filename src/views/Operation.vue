@@ -27,12 +27,12 @@
       <BlockTitle title="our departments"></BlockTitle>
     </div>
     <div class="department">
-      <h2 class="department__title">
+      <h2 class="department__title" data-aos="fade-up" data-aos-duration="1000">
         At DUXGroup, more than <span class="color-blue">350 experts </span>working in different departments <span
           class="color-blue">around the world</span> ensure the operational activities of the
         <span class="color-blue">holding</span> and its <span class="color-blue">brands.</span>
       </h2>
-      <div class="mechanism-container">
+      <div class="mechanism-container" data-aos="fade-up">
         <div class="mechanism mechanism-support" @click="$modal.show('support-modal');">
           <img alt="shestiryonka" class='small-shestiryonka transparent'
             src="../assets/images/operation/shestiryonka.svg" />
@@ -243,7 +243,7 @@
         <BlockTitle title="About our team" v-else></BlockTitle>
       </div>
       <div class="unique">
-        <div class="unique-container">
+        <div class="unique-container" data-aos="fade-up" data-aos-duration="500">
           <div class="unique-container-left-side">
             <div class="unique-container-left-side-dote">
               <img src="../assets/images/careers/dote16.svg" alt="dote16" />
@@ -261,7 +261,7 @@
             </p>
           </div>
         </div>
-        <div class="unique-container">
+        <div class="unique-container" data-aos="fade-up">
           <div class="unique-container-left-side">
             <div class="unique-container-left-side-dote">
               <img src="../assets/images/careers/dote16.svg" alt="dote16" />
@@ -279,7 +279,7 @@
             </p>
           </div>
         </div>
-        <div class="unique-container">
+        <div class="unique-container" data-aos="fade-up">
           <div class="unique-container-left-side">
             <div class="unique-container-left-side-dote">
               <img src="../assets/images/careers/dote16.svg" alt="dote16" />
@@ -299,7 +299,7 @@
             </p>
           </div>
         </div>
-        <div class="unique-container">
+        <div class="unique-container" data-aos="fade-up">
           <div class="unique-container-left-side">
             <div class="unique-container-left-side-dote">
               <img src="../assets/images/careers/dote16.svg" alt="dote16" />
@@ -323,7 +323,9 @@
       </div>
       <div class="brands">
         <div class="brands-container">
+
           <img src="../assets/images/operation/Getslots.svg" alt="brands">
+
         </div>
         <div class="brands-container">
           <img src="../assets/images/operation/Octo.svg" alt="brands">
@@ -336,46 +338,64 @@
         </div>
       </div>
       <div class="brands-title-container">
-        <h2 class="brands-title">
+        <h2 class="brands-title" data-aos="fade-up">
           On our brands we have<span class="color-blue"> the best </span>game and payment providers necessary to provide
           an <span class="color-blue">optimal level of service</span> and
           fun to players from <span class="color-blue">different countries.</span>
         </h2>
       </div>
       <div class="game-provider">
-        <h3 class="game-provider-title">
+        <h3 class="game-provider-title" data-aos="fade-up">
           <span class="color-blue"> game </span>providers
         </h3>
         <div class="provider-row">
           <div class="provider-row-columns">
-            <img src="../assets/images/operation/gameproviders/Pragmatic.svg" alt="game-providers" class="provider-img">
-            <img src="../assets/images/operation/gameproviders/Playn'Go.svg" alt="game-providers" class="provider-img">
-            <img src="../assets/images/operation/gameproviders/Evolution.svg" alt="game-providers" class="provider-img">
-            <img src="../assets/images/operation/gameproviders/Playson.svg" alt="game-providers" class="provider-img">
-            <img src="../assets/images/operation/gameproviders/Pushgaming.svg" alt="game-providers"
-              class="provider-img">
-            <img src="../assets/images/operation/gameproviders/Booongo.svg" alt="game-providers" class="provider-img">
+            <img src="../assets/images/operation/gameproviders/Pragmatic.svg" alt="game-providers" class="provider-img"
+              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="0" data-aos-offset="0">
+            <img src="../assets/images/operation/gameproviders/Playn'Go.svg" alt="game-providers" class="provider-img"
+              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-offset="0">
+            <img src="../assets/images/operation/gameproviders/Evolution.svg" alt="game-providers" class="provider-img"
+              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="0" data-aos-offset="0">
+            <img src="../assets/images/operation/gameproviders/Playson.svg" alt="game-providers" class="provider-img"
+              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-offset="0">
+            <img src="../assets/images/operation/gameproviders/Pushgaming.svg" alt="game-providers" class="provider-img"
+              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="0" data-aos-offset="0">
+            <img src="../assets/images/operation/gameproviders/Booongo.svg" alt="game-providers" class="provider-img"
+              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="2000" data-aos-offset="0">
             <img src="../assets/images/operation/gameproviders/PragmaticLive.svg" alt="game-providers"
-              class="provider-img">
-            <img src="../assets/images/operation/gameproviders/Bgaming.svg" alt="game-providers" class="provider-img">
-            <img src="../assets/images/operation/gameproviders/Spinomenal.svg" alt="game-providers"
-              class="provider-img">
+              class="provider-img" data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="0"
+              data-aos-offset="0">
+            <img src="../assets/images/operation/gameproviders/Bgaming.svg" alt="game-providers" class="provider-img"
+              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-offset="0">
+            <img src="../assets/images/operation/gameproviders/Spinomenal.svg" alt="game-providers" class="provider-img"
+              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="0" data-aos-offset="0">
             <img src="../assets/images/operation/gameproviders/Nolimitcity.svg" alt="game-providers"
-              class="provider-img">
+              class="provider-img" data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000"
+              data-aos-offset="0">
             <img src="../assets/images/operation/gameproviders/Microgaming.svg" alt="game-providers"
-              class="provider-img">
-            <img src="../assets/images/operation/gameproviders/Redtiger.svg" alt="game-providers" class="provider-img">
+              class="provider-img" data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="0"
+              data-aos-offset="0">
+            <img src="../assets/images/operation/gameproviders/Redtiger.svg" alt="game-providers" class="provider-img"
+              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-offset="0">
             <img src="../assets/images/operation/gameproviders/Thunderkick.svg" alt="game-providers"
-              class="provider-img">
-            <img src="../assets/images/operation/gameproviders/wazdan.svg" alt="game-providers" class="provider-img">
-            <img src="../assets/images/operation/gameproviders/booming.svg" alt="game-providers" class="provider-img">
-            <img src="../assets/images/operation/gameproviders/Isoftbet.svg" alt="game-providers" class="provider-img">
-            <img src="../assets/images/operation/gameproviders/Netent.svg" alt="game-providers" class="provider-img">
-            <img src="../assets/images/operation/gameproviders/Yggdrasil.svg" alt="game-providers" class="provider-img">
+              class="provider-img" data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="2000"
+              data-aos-offset="0">
+            <img src="../assets/images/operation/gameproviders/wazdan.svg" alt="game-providers" class="provider-img"
+              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="2000" data-aos-offset="0">
+            <img src="../assets/images/operation/gameproviders/booming.svg" alt="game-providers" class="provider-img"
+              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="2000" data-aos-offset="0">
+            <img src="../assets/images/operation/gameproviders/Isoftbet.svg" alt="game-providers" class="provider-img"
+              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-offset="0">
+            <img src="../assets/images/operation/gameproviders/Netent.svg" alt="game-providers" class="provider-img"
+              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="2000" data-aos-offset="0">
+            <img src="../assets/images/operation/gameproviders/Yggdrasil.svg" alt="game-providers" class="provider-img"
+              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="0" data-aos-offset="0">
             <img src="../assets/images/operation/gameproviders/EGT.svg" alt="game-providers"
-              class="provider-img provider-imgMH">
+              class="provider-img provider-imgMH" data-aos="zoom-in" data-aos-easing="ease-in-back"
+              data-aos-duration="1000" data-aos-offset="0">
             <img src="../assets/images/operation/gameproviders/belatra.svg" alt="game-providers"
-              class="provider-img provider-imgMH">
+              class="provider-img provider-imgMH" data-aos="zoom-in" data-aos-easing="ease-in-back"
+              data-aos-duration="0" data-aos-offset="0">
 
           </div>
 
@@ -389,25 +409,36 @@
         </div>
       </div>
       <div class="payment-provider">
-        <h3 class="payment-provider-title">
+        <h3 class="payment-provider-title" data-aos="fade-up">
           <span class="color-blue"> payment </span>providers
         </h3>
         <div class="payment-provider-row">
           <div class="payment-provider-row-columns">
-            <div><img src="../assets/images/operation/payment/visa.svg" class="provider-img" alt="payment"></div>
-            <div><img src="../assets/images/operation/payment/mastercard.svg" class="provider-img" alt="payment"></div>
-            <div><img src="../assets/images/operation/payment/interac.svg" class="provider-img" alt="payment"></div>
-            <div><img src="../assets/images/operation/payment/better.svg" class="provider-img" alt="payment"></div>
-            <div><img src="../assets/images/operation/payment/neteller.svg" class="provider-img neteller" alt="payment">
+            <div><img src="../assets/images/operation/payment/visa.svg" class="provider-img" alt="payment"
+                data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="0" data-aos-offset="0"></div>
+            <div><img src="../assets/images/operation/payment/mastercard.svg" class="provider-img" alt="payment"
+                data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-offset="0"></div>
+            <div><img src="../assets/images/operation/payment/interac.svg" class="provider-img" alt="payment"
+                data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="0" data-aos-offset="0"></div>
+            <div><img src="../assets/images/operation/payment/better.svg" class="provider-img" alt="payment"
+                data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-offset="0"></div>
+            <div><img src="../assets/images/operation/payment/neteller.svg" class="provider-img neteller" alt="payment"
+                data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="0" data-aos-offset="0">
             </div>
-            <div><img src="../assets/images/operation/payment/jeton.svg" class="provider-img" alt="payment"></div>
-            <div><img src="../assets/images/operation/payment/rappid.svg" class="provider-img" alt="payment"></div>
-            <div><img src="../assets/images/operation/payment/ezwallet.svg" class="provider-img" alt="payment"></div>
-            <div><img src="../assets/images/operation/payment/mifinity.svg" class="provider-img" alt="payment"></div>
+            <div><img src="../assets/images/operation/payment/jeton.svg" class="provider-img" alt="payment"
+                data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="2000" data-aos-offset="0"></div>
+            <div><img src="../assets/images/operation/payment/rappid.svg" class="provider-img" alt="payment"
+                data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-offset="0"></div>
+            <div><img src="../assets/images/operation/payment/ezwallet.svg" class="provider-img" alt="payment"
+                data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="2000" data-aos-offset="0"></div>
+            <div><img src="../assets/images/operation/payment/mifinity.svg" class="provider-img" alt="payment"
+                data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="0" data-aos-offset="0"></div>
             <div><img src="../assets/images/operation/payment/dimoco.svg" class="provider-img provider-imgMarR"
-                alt="payment"></div>
+                alt="payment" data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="2000"
+                data-aos-offset="0"></div>
             <div><img src="../assets/images/operation/payment/skrill.svg" class="provider-img provider-imgMarL"
-                alt="payment"></div>
+                alt="payment" data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000"
+                data-aos-offset="0"></div>
           </div>
         </div>
       </div>
@@ -1011,8 +1042,8 @@ export default {
 
 
 .mechanism:hover>p {
-  transform: scale(1.1);
-  font-size: 13.5px;
+  // transform: scale(1.1);
+  // font-size: 13.5px;
   border: none;
   border: none;
 }
@@ -1062,20 +1093,20 @@ export default {
 .mechanism-psp img,
 .mechanism-hr img,
 .mechanism-crm img {
-  animation: rotating-min 4s linear infinite;
+  animation: rotating-min 7s linear infinite;
 }
 
 .mechanism-antifraud img,
 .mechanism-bi img,
 .mechanism-pr img,
 .mechanism-psp img {
-  animation: rotating-min 5s linear infinite;
+  animation: rotating-min 7s linear infinite;
 }
 
 .mechanism-team img,
 .mechanism-vip img,
 .mechanism-vip img {
-  animation: rotating-big 5s linear infinite;
+  animation: rotating-big 7s linear infinite;
 }
 
 .mechanism-legal img,
@@ -1088,7 +1119,7 @@ export default {
 .mechanism-antifraud:hover,
 .mechanism-support:hover {
   background: linear-gradient(86.5deg, #5433FF 8.33%, #20BDFF 73.44%, #A5FECB 100%);
-  transform: scale(1.2);
+  // transform: scale(1.2);
   border-radius: 50%;
   border: none;
   font-size: 14px !important;
@@ -1098,7 +1129,7 @@ export default {
 .mechanism-vip:hover,
 .mechanism-team:hover {
   background: linear-gradient(286.9deg, #E52D27 29.52%, #A50C10 100%);
-  transform: scale(1.2);
+  // transform: scale(1.2);
   border-radius: 50%;
   border: none;
   font-size: 18px;
@@ -1108,7 +1139,7 @@ export default {
 .mechanism-legal:hover,
 .mechanism-crm:hover {
   background: linear-gradient(105.97deg, #4B0082 27.44%, #9400D3 100%);
-  transform: scale(1.2);
+  // transform: scale(1.2);
   border-radius: 50%;
   border: none;
   font-size: 18px;
@@ -1118,7 +1149,7 @@ export default {
 .mechanism-hr:hover,
 .mechanism-bi:hover {
   background: linear-gradient(95.7deg, #000428 7.7%, #004E92 90.93%);
-  transform: scale(1.2);
+  // transform: scale(1.2);
   border-radius: 50%;
   border: none;
   font-size: 18px;
@@ -1128,7 +1159,7 @@ export default {
 .mechanism-pr:hover,
 .mechanism-psp:hover {
   background: linear-gradient(135deg, #003D4D 0%, #00C996 100%);
-  transform: scale(1.2);
+  // transform: scale(1.2);
   border-radius: 50%;
   border: none;
   font-size: 18px;
@@ -1137,7 +1168,7 @@ export default {
 
 .mechanism-development:hover {
   background: linear-gradient(294.31deg, #FE8C00 0%, #F83600 100%);
-  transform: scale(1.2);
+  // transform: scale(1.2);
   border-radius: 50%;
   border: none;
   font-size: 18px;
@@ -1146,7 +1177,7 @@ export default {
 
 .mechanism-design:hover {
   background: linear-gradient(75.06deg, #42275A 10.32%, #734B6D 84.99%);
-  transform: scale(1.2);
+  // transform: scale(1.2);
   border-radius: 50%;
   border: none;
   font-size: 18px;
@@ -1366,6 +1397,7 @@ export default {
     border: 25px solid;
     border-image-source: url("../assets/images/operation/shape.svg");
     border-image-slice: 20 22;
+    transition: all .7s;
 
     background: no-repeat;
     background-size: cover;
@@ -1376,12 +1408,15 @@ export default {
     height: 197px;
 
     &:hover {
-      border-image-source: url("../assets/images/operation/border-hover.svg");
+      border-image-source: url("../assets/images/operation/test.svg");
       border-image-slice: 20 22;
+      transition: all .7s;
       cursor: pointer;
     }
   }
+
 }
+
 
 .brands-title-container {
   display: flex;
@@ -1584,6 +1619,7 @@ export default {
       width: 150px;
     }
   }
+
 }
 
 @media only screen and (max-width: 1236px) {
