@@ -1,5 +1,5 @@
 <template>
-    <div class="blockTitle__cont" v-if="largeS == 1" data-aos="fade-up">
+    <div class="blockTitle__cont" v-if="largeS == 1">
         <img src="../assets/images/block-title-w.png" alt="" v-if="window.widthT > 1024">
         <img src="../assets/images/block-title-w-1024.png" alt=""
             v-else-if="window.widthT > 768 && window.widthT <= 1024">
@@ -7,20 +7,20 @@
             v-else-if="window.widthT > 480 && window.widthT <= 768">
         <img src="../assets/images/block-title-w-320.png" alt="" v-else>
         <div class="blockTitle__text" v-if="window.widthT > 480">
-            <span class="">{{ title }}</span>
+            <span class="" data-aos="fade-up">{{ title }}</span>
         </div>
         <div class="blockTitle__text blockTitle__text__duo" v-else>
             <span class="">{{ firstString }} <br> {{ lastString }}</span>
         </div>
     </div>
-    <div class="blockTitle__cont" v-else data-aos="fade-up">
+    <div class="blockTitle__cont" v-else>
         <img src="../assets/images/block-title.png" alt="" v-if="window.widthT > 1024">
         <img src="../assets/images/block-title-1024.png" alt=""
             v-else-if="window.widthT > 768 && window.widthT <= 1024">
         <img src="../assets/images/block-title-768.png" alt="" v-else-if="window.widthT > 480 && window.widthT <= 768">
         <img src="../assets/images/block-title-320.png" alt="" v-else>
         <div class="blockTitle__text">
-            <span class="">{{ title }}</span>
+            <span class="" data-aos="fade-up">{{ title }}</span>
         </div>
     </div>
 </template>
