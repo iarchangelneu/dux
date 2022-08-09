@@ -19,7 +19,7 @@
               <router-link to="/operation">Operation</router-link>
               <router-link to="/careers">Careers</router-link>
               <router-link to="/contact">Contact us</router-link>
-              <router-link to="/gaming">Gaming</router-link>
+              <!-- <router-link to="/gaming">Gaming</router-link> -->
             </nav>
           </div>
         </div>
@@ -38,7 +38,7 @@
         <router-link to="/operation">Operation</router-link>
         <router-link to="/careers">Careers</router-link>
         <router-link to="/contact">Contact us</router-link>
-        <router-link to="/gaming">Gaming</router-link>
+        <!-- <router-link to="/gaming">Gaming</router-link> -->
       </div>
     </div>
   </div>

@@ -266,31 +266,31 @@
         <div class="Marquee" style="margin-bottom: 0;">
           <div class="Marquee-content">
             <div class="Marquee-tag max-width">
-              <img src="../assets/images/marquee/1.svg" class="ml10" />
+              <img src="../assets/images/marquee/nineCasino.svg" class="ml10" />
               <p>WE LOVE</p>
             </div>
 
             <div class="Marquee-tag max-width">
-              <img src="../assets/images/marquee/2.svg" class="ml10" />
+              <img src="../assets/images/marquee/pino.svg" class="ml10" />
               <p>WE LOVE</p>
             </div>
 
             <div class="Marquee-tag max-width">
-              <img src="../assets/images/marquee/3.svg" class="ml10" />
+              <img src="../assets/images/marquee/duxcasino.svg" class="ml10" />
               <p>WE LOVE</p>
             </div>
             <div class="Marquee-tag max-width">
-              <img src="../assets/images/marquee/1.svg" class="ml10" />
-              <p>WE LOVE</p>
-            </div>
-
-            <div class="Marquee-tag max-width">
-              <img src="../assets/images/marquee/2.svg" class="ml10" />
+              <img src="../assets/images/marquee/nineCasino.svg" class="ml10" />
               <p>WE LOVE</p>
             </div>
 
             <div class="Marquee-tag max-width">
-              <img src="../assets/images/marquee/3.svg" class="ml10" />
+              <img src="../assets/images/marquee/pino.svg" class="ml10" />
+              <p>WE LOVE</p>
+            </div>
+
+            <div class="Marquee-tag max-width">
+              <img src="../assets/images/marquee/duxcasino.svg" class="ml10" />
               <p>WE LOVE</p>
             </div>
 
@@ -302,30 +302,30 @@
           <div class="Marquee-content2">
             <div class="Marquee-tag max-width">
               <p>WHAT WE DO</p>
-              <img src="../assets/images/marquee/5.svg" class="ml10" />
+              <img src="../assets/images/marquee/octo.svg" class="ml10" />
             </div>
             <div class="Marquee-tag max-width">
               <p>WHAT WE DO</p>
-              <img src="../assets/images/marquee/4.svg" class="ml10" />
-            </div>
-
-            <div class="Marquee-tag max-width">
-              <p>WHAT WE DO</p>
-              <img src="../assets/images/marquee/5.svg" class="ml10" />
-            </div>
-            <div class="Marquee-tag max-width">
-              <p>WHAT WE DO</p>
-              <img src="../assets/images/marquee/5.svg" class="ml10" />
+              <img src="../assets/images/marquee/getslots.svg" class="ml10" />
             </div>
 
             <div class="Marquee-tag max-width">
               <p>WHAT WE DO</p>
-              <img src="../assets/images/marquee/4.svg" class="ml10" />
+              <img src="../assets/images/marquee/octo.svg" class="ml10" />
+            </div>
+            <div class="Marquee-tag max-width">
+              <p>WHAT WE DO</p>
+              <img src="../assets/images/marquee/getslots.svg" class="ml10" />
             </div>
 
             <div class="Marquee-tag max-width">
               <p>WHAT WE DO</p>
-              <img src="../assets/images/marquee/5.svg" class="ml10" />
+              <img src="../assets/images/marquee/octo.svg" class="ml10" />
+            </div>
+
+            <div class="Marquee-tag max-width">
+              <p>WHAT WE DO</p>
+              <img src="../assets/images/marquee/getslots.svg" class="ml10" />
             </div>
 
           </div>
@@ -406,11 +406,12 @@
           </p>
           <div class="circle">
             <span style="line-height: 180%;">READ MORE</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" fill="#00FFFF" class="bi bi-arrow-right"
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" fill="#00FFFF" class="bi bi-arrow-right"
               viewBox="0 0 16 16">
               <path fill-rule="evenodd"
                 d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-            </svg>
+            </svg> -->
+            <img class="bi bi-arrow-right" src="../assets/images/home/Arrow.svg" alt="">
           </div>
         </div>
       </div>
@@ -434,7 +435,7 @@
             <img src="../assets/images/organizations/asia.png" />
           </div>
           <div class="img">
-            <img src="../assets/images/organizations/london.svg" />
+            <img src="../assets/images/home/Amster.svg" />
           </div>
         </div>
         <div class="organizations__mob">
@@ -503,6 +504,7 @@
                 </div>
               </div>
             </div>
+            
 
 
           </VueSlickCarousel>
@@ -957,7 +959,7 @@ export default {
           font-style: normal;
           font-weight: 400;
           text-transform: uppercase;
-          font-size: 118px;
+          font-size: 96px;
           line-height: 95%;
           margin: 0;
         }
@@ -3151,8 +3153,8 @@ export default {
             svg {
               margin-right: 11px;
               vertical-align: baseline;
-              width: 20px;
-              height: 20px;
+              width: 14px;
+              height: 14px;
             }
           }
         }
@@ -3184,7 +3186,7 @@ export default {
   }
 
   background-color: #010C28;
-  padding-top: 140px;
+  padding-top: 120px;
   width: 100%;
   font-family: 'Exo',
   system-ui;
@@ -3650,7 +3652,7 @@ export default {
       padding: 25px;
 
       .content {
-        margin-top: 210px;
+        margin-top: 320px;
 
         //padding: 25px;
         //p::first-line {
@@ -3660,7 +3662,7 @@ export default {
           font-family: 'Oxygen', sans-serif;
           font-style: normal;
           font-weight: 400;
-          font-size: 134px;
+          font-size: 110px;
           line-height: 95%;
           letter-spacing: 0.02em;
           text-transform: uppercase;
@@ -3674,7 +3676,7 @@ export default {
             width: fit-content;
             font-weight: 400;
             min-width: 250px;
-            font-size: 38px;
+            font-size: 28px;
             line-height: 75px;
             display: inline-flex;
             align-items: center;
@@ -3689,8 +3691,8 @@ export default {
             svg {
               margin-right: 11px;
               vertical-align: baseline;
-              width: 20px;
-              height: 20px;
+              width: 14px;
+              height: 14px;
             }
           }
         }
@@ -3722,7 +3724,7 @@ export default {
   }
 
   background-color: #010C28;
-  padding-top: 140px;
+  padding-top: 120px;
   width: 100%;
   font-family: 'Exo',
   system-ui;
@@ -4018,7 +4020,8 @@ export default {
           font-weight: 400;
           font-size: 18px;
           line-height: 24px;
-          color: #F0F0F0;
+          // color: #F0F0F0;
+          color: #98A6B9;
           //width: 30vw;
         }
       }
@@ -4135,7 +4138,7 @@ export default {
     font-family: 'Oxygen', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 68px;
+    font-size: 48px;
     line-height: 105%;
     margin: 0 auto;
     text-align: center;
@@ -4219,8 +4222,10 @@ export default {
         font-weight: 400;
         font-size: 20px;
         margin: 0;
-        line-height: 27px;
-        color: #F0F0F0;
+        // line-height: 27px;
+        line-height: 150%;
+        // color: #F0F0F0;
+        color: rgba(152, 166, 185, 1);
       }
     }
   }
@@ -4315,7 +4320,7 @@ export default {
         font-family: 'Exo', sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 35px;
+        font-size: 28px;
         margin: 0;
         width: 77%;
         line-height: 47px;
@@ -4324,8 +4329,8 @@ export default {
 
       .circle {
         background-color: #010C28;
-        width: 130px;
-        height: 130px;
+        width: 194px;
+        height: 194px;
         cursor: pointer;
         display: flex;
         flex-direction: column;
@@ -4457,7 +4462,7 @@ export default {
             font-family: 'Oxygen', sans-serif;
             font-style: normal;
             font-weight: 400;
-            font-size: 38px;
+            font-size: 28px;
             line-height: 48px;
             letter-spacing: 0.03em;
             text-transform: uppercase;
@@ -4473,7 +4478,8 @@ export default {
             line-height: 27px;
             display: flex;
             align-items: flex-end;
-            color: #F0F0F0;
+            // color: #F0F0F0;
+            color: rgba(152, 166, 185, 1);
           }
         }
 
