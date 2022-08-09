@@ -404,7 +404,7 @@
             You should never consider gambling as a source of income or a chance to recover from debt.
             Always keep track of the time and money you spent on gambling, check this with yourself every day.
           </p>
-          <div class="circle">
+          <div class="circle" @click="goToGaming()">
             <span style="line-height: 180%;">READ MORE</span>
             <!-- <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" fill="#00FFFF" class="bi bi-arrow-right"
               viewBox="0 0 16 16">
@@ -504,11 +504,31 @@
                 </div>
               </div>
             </div>
+            <div>
+              <div class="item"
+                onclick="window.open ('https://igamingbusiness.com/company-news/duxgroup-launches-new-duxplatform-project/', '_blank')">
+                <div class="content centre__cont">
+                  <p class="date">24.09.2021</p>
+                  <div class="centre">
+                    <p class="item_title">IGBAFFILIATE </p>
+                    <p class="item_content">DUXGroup launches new DUXPlatform project </p>
+                  </div>
+                </div>
+
+                <div class="btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="60" fill="currentColor"
+                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
             
 
 
           </VueSlickCarousel>
-          <div class="arrows">
+          <!-- <div class="arrows">
             <div class="prev" @click="$refs.holding.prev()">
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="#2F5BD8" class="bi bi-arrow-left"
                 viewBox="0 0 16 16">
@@ -523,7 +543,7 @@
                   d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
               </svg>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -737,6 +757,9 @@ export default {
   },
   components: { FooterPart, Header, VueSlickCarousel, BlockTitle },
   methods: {
+    goToGaming(){
+      this.$router.push('/gaming')
+    },
     showNext() {
       this.$refs.carousel.next()
     },
@@ -1284,7 +1307,7 @@ export default {
 
 
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
   .slider {
     padding-top: 0px !important;
   }
@@ -4436,7 +4459,7 @@ export default {
         background-size: contain;
         min-height: 540px;
         padding: 0 30px;
-        margin-right: 50px;
+        margin-right: 10px;
         position: relative;
         display: flex;
         flex-direction: column;
