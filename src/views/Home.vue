@@ -1638,6 +1638,12 @@ export default {
   }
 }
 
+@media screen and (min-width: 1201px) and (max-width: 1300px){
+  .mission .content p{
+    font-size: 50px;
+  }
+}
+
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   .slick-slide {
     margin-right: 50px !important;
@@ -4275,9 +4281,9 @@ export default {
       font-family: 'Oxygen', sans-serif;
       font-style: normal;
       font-weight: 400;
-      width: 65%;
+      width: 69%;
       margin: 0;
-      font-size: 58px;
+      font-size: 48px;
       line-height: 105%;
       letter-spacing: 0.02em;
       text-transform: uppercase;
