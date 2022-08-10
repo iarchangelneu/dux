@@ -851,7 +851,7 @@ export default {
         spanInside.classList.add('mainTitleLetter')
 
         setTimeout(()=>{span.appendChild(spanInside)}, timer)
-        timer += 100
+        timer += 50
       })
 
       let spanBsp = document.createElement('span');
@@ -3217,7 +3217,8 @@ export default {
             text-transform: uppercase;
             color: #F0F0F0;
             margin: 0;
-            margin-right: 50px;
+            // margin-right: 50px;
+            margin-right: 20px;
             //margin: 0 70px 70px 0;
             vertical-align: top;
 
@@ -3739,7 +3740,8 @@ export default {
           text-transform: uppercase;
           color: #F0F0F0;
           margin: 0;
-          width: 1100px;
+          // width: 1100px;
+          width: 835px;
 
           .brave {
             font-family: 'Oxygen', sans-serif;
@@ -3755,7 +3757,8 @@ export default {
             text-transform: uppercase;
             color: #F0F0F0;
             margin: 0;
-            margin-right: 50px;
+            // margin-right: 50px;
+            margin-right: 20px;
             //margin: 0 70px 70px 0;
             vertical-align: top;
 
@@ -4900,9 +4903,9 @@ export default {
 </style>
 <style>
 @keyframes asd {
-  from {opacity: 0; transform: translateY(100px);}
+  from {opacity: 1; transform: translateY(100px);}
 
-  to {opacity: 1; transform: translateY(0px); bottom: 0px;}
+  to {opacity: 1; transform: translateY(0px);}
 }
 
 .mainTitleLetter{
@@ -4912,6 +4915,8 @@ export default {
 }
 
 .mainTitleWord{
+  overflow: hidden;
   white-space: nowrap;
+  display: inline-block;
 }
 </style>
