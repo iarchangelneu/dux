@@ -17,15 +17,15 @@
       <BlockTitle title="investments"></BlockTitle>
     </div>
     <div class="contact-form__container">
-      <form action="#" class="contact-form">
+      <form action="#" class="contact-form" data-aos="fade-down">
         <div class="form-left-side">
           <h2 class="form-left-side-title">General questions:</h2>
           <p class="form-left-side-text">hello@duxgroup.com</p>
         </div>
         <div class="form-right-side">
-          <input type="text" placeholder="Your contact e-mail" class="form-right-side-input">
+          <input type="text" placeholder="Your contact e-mail" class="form-right-side-input" id="mail__input">
           <textarea placeholder="Comment" class="form-right-side-input"></textarea>
-          <button type="submit" class="form-right-side-input">Apply now</button>
+          <p @click="test" class="apply">Apply now</p>
         </div>
       </form>
     </div>
@@ -42,13 +42,29 @@ import BlockTitle from '../components/BlockTitle.vue';
 export default {
 
   name: "Contact-us",
-  components: { HeaderPart, FooterPart, BlockTitle }
+  components: { HeaderPart, FooterPart, BlockTitle },
+  methods: {
+    test() {
+      let mail = document.getElementById('mail__input')
+
+      if (mail.value.length <= 0) {
+        mail.classList.add('error')
+      }
+      else {
+        mail.classList.remove('error')
+      }
+    },
+  }
 
 }
 </script>
     
 
 <style lang="scss" scoped>
+.error {
+  border: 1px solid #C22B2B !important;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -125,6 +141,46 @@ export default {
   }
 }
 
+form {
+  .apply {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 17px 0 17px 15px;
+    font-family: 'Oxygen', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 105%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #F0F0F0;
+    cursor: pointer;
+    text-align: left;
+    background: #2F5BD8;
+    border-radius: 10px;
+    width: 510px;
+    display: flex;
+    align-items: center;
+    min-height: 20px;
+  }
+
+  .apply::after {
+    content: url('../assets/images/btn_arrow.svg');
+    padding-left: 352px;
+    background-repeat: no-repeat;
+    display: none;
+
+  }
+
+  .apply:hover:after {
+    display: inline;
+  }
+
+  .apply:hover {
+    background: #0E339C;
+  }
+}
+
 .contact-form__container {
   background: #010C28 no-repeat;
   min-height: 700px;
@@ -191,26 +247,8 @@ export default {
           height: 108px;
           border: 1px solid #828FA1;
           border-radius: 10px;
+          margin-bottom: 14px;
 
-        }
-
-        &:last-child {
-          margin-bottom: 0;
-          width: 510px;
-          height: 48px;
-          background: #2F5BD8;
-          text-align: initial;
-          border-radius: 10px;
-          font-family: 'Oxygen', sans-serif;
-          font-style: normal;
-          font-weight: 700;
-          font-size: 14px;
-          border: 0;
-          outline: 0;
-          line-height: 105%;
-          letter-spacing: 0.04em;
-          color: white;
-          text-transform: uppercase;
         }
       }
     }
@@ -260,6 +298,13 @@ export default {
 
 
 @media only screen and (max-width: 998px) {
+  form {
+    .apply {
+
+      width: 352px;
+    }
+
+  }
 
   .form-left-side-title {
     font-size: 20px !important;

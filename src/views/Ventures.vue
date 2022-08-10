@@ -36,20 +36,15 @@
       <div class="title">
         <BlockTitle title="investments"></BlockTitle>
       </div>
-      <div class="content">
+      <div class="content" data-aos="fade-down">
         <p><span class="blue">DUXGROUP VENTURES</span> IS A VENTURE CAPITAL FUND THAT INVESTS <span class="blue">€1-5
             MILLION</span> IN IGAMING PROJECTS IN LINE WITH A <span class="blue">WIN-WIN MODEL</span> </p>
         <div class="imgs">
-          <img src="../assets/images/ventures/investment/euro-big.png" class="first__fig" data-aos="fade-up"
-            data-aos-duration="1500" />
-          <img src="../assets/images/ventures/investment/dive-small.png" class="first__fig" data-aos="fade-up"
-            data-aos-duration="1500" />
-          <img src="../assets/images/ventures/investment/euro-middle.png" class="first__fig" data-aos="fade-up"
-            data-aos-duration="1500" />
-          <img src="../assets/images/ventures/investment/euro-small.png" class="first__fig" data-aos="fade-up"
-            data-aos-duration="1500" />
-          <img src="../assets/images/ventures/investment/Union.png" class="first__fig" data-aos="fade-up"
-            data-aos-duration="1500" />
+          <img src="../assets/images/ventures/investment/euro-big.png" class="first__fig fig__hover" />
+          <img src="../assets/images/ventures/investment/dive-small.png" class="first__fig fig__hover2" />
+          <img src="../assets/images/ventures/investment/euro-middle.png" class="first__fig fig__hover3" />
+          <img src="../assets/images/ventures/investment/euro-small.png" class="first__fig fig__hover4" />
+          <img src="../assets/images/ventures/investment/Union.png" class="first__fig fig__hover5" />
         </div>
       </div>
     </div>
@@ -57,7 +52,7 @@
       <div class="title">
         <BlockTitle title="Our principles"></BlockTitle>
       </div>
-      <div class="items">
+      <div class="items" data-aos="fade-down">
         <div class="item">
           <div class="item__title">
             <img src="../assets/images/ventures/principes/3.png" />
@@ -93,32 +88,33 @@
       <div class="title">
         <BlockTitle title="We don't just invest money"></BlockTitle>
       </div>
-
-      <div class="list__title__mob">
-        <p>There are more than <br style="display:none"> <span class="blue">350 professionals</span> in our team</p>
-      </div>
-      <div class="description">
-        <div class="list">
-          <div class="list__title">
-            <p>There are more than <span class="blue"><br>350 professionals</span> in our team</p>
+      <div data-aos="fade-down">
+        <div class="list__title__mob">
+          <p>There are more than <br style="display:none"> <span class="blue">350 professionals</span> in our team</p>
+        </div>
+        <div class="description">
+          <div class="list">
+            <div class="list__title">
+              <p>There are more than <span class="blue"><br>350 professionals</span> in our team</p>
+            </div>
+            <div class="items">
+              <ul>
+                <li>Developers,</li>
+                <li>BI analyticians,</li>
+                <li>Marketologists,</li>
+                <li>Designers,</li>
+                <li>lawyers,</li>
+                <li>financiers,</li>
+                <li>And many more.</li>
+              </ul>
+            </div>
           </div>
-          <div class="items">
-            <ul>
-              <li>Developers,</li>
-              <li>BI analyticians,</li>
-              <li>Marketologists,</li>
-              <li>Designers,</li>
-              <li>lawyers,</li>
-              <li>financiers,</li>
-              <li>And many more.</li>
-            </ul>
+          <div class="img">
+            <img src="../assets/images/ventures/invest/image.jpeg" />
           </div>
         </div>
-        <div class="img">
-          <img src="../assets/images/ventures/invest/image.jpeg" />
-        </div>
       </div>
-      <div class="advert">
+      <div class="advert" data-aos="fade-down">
         <p>WE ARE A <span class="blue">STRONG TEAM</span> THAT HAS BEEN WORKING IN IGAMING FOR MORE THAN <span
             class="blue">8 YEARS.</span>
           WHEN WE INVEST, <span class="blue">WE NOT ONLY INVEST MONEY,</span> BUT ALL THE EXPERTISE WE HAVE GATHERED
@@ -132,7 +128,7 @@
       <div class="title">
         <BlockTitle title="Introduce yourself"></BlockTitle>
       </div>
-      <div class="content">
+      <div class="content" data-aos="fade-down">
         <div class="request">
           <p>Please <span class="blue">tell us</span> the following about <span class="blue">your business:</span></p>
         </div>
@@ -150,14 +146,17 @@
       </div>
     </div>
     <div class="contact">
-      <div class="title">
-        <p>Have a <span class="blue">cool idea</span> and want to conquer the <span class="blue">iGaming market?</span>
-          Then write to us and we'll figure out how to make a <span class="blue">great product together.</span></p>
-      </div>
-      <div class="form">
-        <input type="email" placeholder="You contact e-mail">
-        <textarea placeholder="Comment"></textarea>
-        <p>apply now</p>
+      <div data-aos="fade-down">
+        <div class="title">
+          <p>Have a <span class="blue">cool idea</span> and want to conquer the <span class="blue">iGaming
+              market?</span>
+            Then write to us and we'll figure out how to make a <span class="blue">great product together.</span></p>
+        </div>
+        <div class="form">
+          <input type="email" placeholder="You contact e-mail" id="mail__input">
+          <textarea placeholder="Comment"></textarea>
+          <p @click="test">apply now</p>
+        </div>
       </div>
     </div>
     <div class="footer">
@@ -186,23 +185,42 @@ export default {
         this.menuClosed = true
       }
     },
+    test() {
+      let mail = document.getElementById('mail__input')
+
+      if (mail.value.length <= 0) {
+        mail.classList.add('error')
+      }
+      else {
+        mail.classList.remove('error')
+      }
+    },
   },
   components: { FooterPart, HeaderPart, BlockTitle },
 }
 </script>
 
-    
 <style scoped lang="scss">
+.error {
+  border: 1px solid #C22B2B !important;
+}
+
 @keyframes rotate__figure {
 
 
   100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
     transform: rotate(360deg)
   }
 }
 
 .first__fig {
   animation: rotate__figure 10s infinite linear;
+  -webkit-animation: rotate__figure 10s infinite linear;
+  -moz-animation: rotate__figure 10s infinite linear;
+  -o-animation: rotate__figure 10s infinite linear;
 }
 
 ::placeholder {
@@ -1508,30 +1526,74 @@ export default {
           position: absolute;
           right: 30%;
           top: 50px;
+          -webkit-transition: all .5s;
+          -o-transition: all 5s;
+          -moz-transition: all 5s;
+          transition: all .5s;
+        }
+
+        img:first-child:hover {
+          margin-top: -10px;
+          margin-right: 15px;
         }
 
         img:nth-child(2) {
           position: absolute;
-          bottom: 200px;
+          bottom: 250px;
           right: 40%;
+          -webkit-transition: all .5s;
+          -o-transition: all 5s;
+          -moz-transition: all 5s;
+          transition: all .5s;
+        }
+
+        img:nth-child(2):hover {
+          margin-right: -15px;
+          margin-bottom: -10px;
         }
 
         img:nth-child(3) {
           position: absolute;
           top: 0px;
           left: 300px;
+          -webkit-transition: all .5s;
+          -o-transition: all 5s;
+          -moz-transition: all 5s;
+          transition: all .5s;
+        }
+
+        img:nth-child(3):hover {
+          margin-top: -5px;
+          margin-left: 10px;
         }
 
         img:nth-child(4) {
           position: absolute;
           top: 125px;
           left: 50px;
+          -webkit-transition: all .5s;
+          -o-transition: all 5s;
+          -moz-transition: all 5s;
+          transition: all .5s;
+        }
+
+        img:nth-child(4):hover {
+          margin-top: 7px;
+          margin-left: 10px;
         }
 
         img:nth-child(5) {
           position: absolute;
           top: 300px;
           right: 150px;
+          -webkit-transition: all .5s;
+          -o-transition: all 5s;
+          -moz-transition: all 5s;
+          transition: all .5s;
+        }
+
+        img:nth-child(5):hover {
+          margin-top: -20px;
         }
       }
     }
@@ -1863,9 +1925,12 @@ export default {
         width: 510px;
         font-family: 'Oxygen';
         min-height: 108px;
+        margin-bottom: 14px;
       }
 
       p {
+        margin-top: 0;
+        margin-bottom: 0;
         padding: 17px 0 17px 15px;
         font-family: 'Oxygen', sans-serif;
         font-style: normal;
@@ -1880,6 +1945,25 @@ export default {
         background: #2F5BD8;
         border-radius: 10px;
         width: 510px;
+        display: flex;
+        align-items: center;
+        min-height: 19px;
+      }
+
+      p::after {
+        content: url('../assets/images/btn_arrow.svg');
+        padding-left: 352px;
+        background-repeat: no-repeat;
+        display: none;
+
+      }
+
+      p:hover:after {
+        display: inline;
+      }
+
+      p:hover {
+        background: #0E339C;
       }
     }
   }
