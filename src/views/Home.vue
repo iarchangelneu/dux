@@ -3217,7 +3217,8 @@ export default {
             text-transform: uppercase;
             color: #F0F0F0;
             margin: 0;
-            margin-right: 50px;
+            // margin-right: 50px;
+            margin-right: 20px;
             //margin: 0 70px 70px 0;
             vertical-align: top;
 
@@ -3739,7 +3740,8 @@ export default {
           text-transform: uppercase;
           color: #F0F0F0;
           margin: 0;
-          width: 1100px;
+          // width: 1100px;
+          width: 835px;
 
           .brave {
             font-family: 'Oxygen', sans-serif;
@@ -3755,7 +3757,8 @@ export default {
             text-transform: uppercase;
             color: #F0F0F0;
             margin: 0;
-            margin-right: 50px;
+            // margin-right: 50px;
+            margin-right: 20px;
             //margin: 0 70px 70px 0;
             vertical-align: top;
 
@@ -4919,5 +4922,6 @@ export default {
 
 .mainTitleWord {
   white-space: nowrap;
+  display: inline-block;
 }
 </style>
