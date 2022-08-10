@@ -13,7 +13,7 @@
           <Header @opened="openedMobMenu" />
           <div class="content">
             <!-- <p class="p" data-aos="fade-up"> -->
-              <p class="p" id="p">
+            <p class="p" id="p">
               <span class="brave">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
                   viewBox="0 0 16 16">
@@ -21,11 +21,11 @@
                 </svg>{{ this.text }}
               </span>
               <!-- We Were Born To Make History -->
-              
-                <!-- <span class="mainTitleLetter" v-for="(letter,ind) in word" :key="ind" >{{ letter }}</span>&zwnj; -->
-              
 
-              
+              <!-- <span class="mainTitleLetter" v-for="(letter,ind) in word" :key="ind" >{{ letter }}</span>&zwnj; -->
+
+
+
               <!-- {{ mainTitleArr }} -->
             </p>
           </div>
@@ -531,7 +531,7 @@
                 </div>
               </div>
             </div>
-            
+
 
 
           </VueSlickCarousel>
@@ -766,7 +766,7 @@ export default {
   },
   components: { FooterPart, Header, VueSlickCarousel, BlockTitle },
   methods: {
-    goToGaming(){
+    goToGaming() {
       this.$router.push('/gaming')
     },
     showNext() {
@@ -828,11 +828,11 @@ export default {
 
 
     let firstSplit = this.mainTitle.split(' ')
-    
-    let block = document.getElementById('p') 
+
+    let block = document.getElementById('p')
     console.log(firstSplit);
     let timer = 0;
-    firstSplit.forEach( (word,ind) => {
+    firstSplit.forEach((word, ind) => {
       // if(word != ' '){
       //   setTimeout(()=>{this.mainTitleArr.push(word)}, timer)
       // }
@@ -840,17 +840,17 @@ export default {
       //   setTimeout(()=>{this.mainTitleArr.push('&thinsp;')}, timer)
       // }
       let span = document.createElement('span');
-      span.id = 'word'+ind;
+      span.id = 'word' + ind;
       span.classList.add('mainTitleWord')
       block.appendChild(span)
 
-      word.split('').forEach((letter)=>{
+      word.split('').forEach((letter) => {
 
         let spanInside = document.createElement('span');
         spanInside.innerText = letter;
         spanInside.classList.add('mainTitleLetter')
 
-        setTimeout(()=>{span.appendChild(spanInside)}, timer)
+        setTimeout(() => { span.appendChild(spanInside) }, timer)
         timer += 100
       })
 
@@ -3397,6 +3397,7 @@ export default {
         left: 35% !important;
       }
 
+
       &:hover>.anime .view4 img:nth-child(2) {
         right: 0 !important;
       }
@@ -3613,7 +3614,6 @@ export default {
       //  left: 24px;
       //}
     }
-
 
   }
 }
@@ -4254,10 +4254,11 @@ export default {
 
 .divider {
   .content {
-    svg{
+    svg {
       width: 16px;
       height: 16px;
     }
+
     padding: 200px 25px 0 25px;
 
     &__item {
@@ -4336,7 +4337,7 @@ export default {
       color: #F0F0F0;
     }
 
-    
+
 
     .first_figure {
       position: absolute;
@@ -4815,24 +4816,24 @@ export default {
   }
 }
 
-@media screen and (min-width: 1201px) and (max-width: 1400px){
-    .mission  {
-      .content{
-        p{
-          font-size: 40px;
-        }
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .mission {
+    .content {
+      p {
+        font-size: 40px;
       }
     }
+  }
 }
 
-@media screen and (min-width: 1201px) and (max-width: 1265px){
-    .mission  {
-      .content{
-        p{
-          font-size: 36px;
-        }
+@media screen and (min-width: 1201px) and (max-width: 1265px) {
+  .mission {
+    .content {
+      p {
+        font-size: 36px;
       }
     }
+  }
 }
 
 .footer {
@@ -4895,23 +4896,28 @@ export default {
   display: flex;
   flex-direction: column;
 }
-
-
 </style>
 <style>
 @keyframes asd {
-  from {opacity: 0; transform: translateY(100px);}
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
 
-  to {opacity: 1; transform: translateY(0px); bottom: 0px;}
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+    bottom: 0px;
+  }
 }
 
-.mainTitleLetter{
+.mainTitleLetter {
   animation-duration: 1s;
   animation-name: asd;
   display: inline-block;
 }
 
-.mainTitleWord{
+.mainTitleWord {
   white-space: nowrap;
 }
 </style>
