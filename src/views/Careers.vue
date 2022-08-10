@@ -235,47 +235,19 @@
         career at
         <span class="color-blue">DUXGroup</span>
       </h2>
-      <div class="career-main-block">
-        <h3 class="career-main-block-subtitle">Job openings</h3>
-        <h3 class="career-main-block-subtitle">Open Positions</h3>
-        <div class="career-main-block-items">
-          <p class="career-main-block-items-company-name">Affiliate Department</p>
-          <div class="career-main-block-items-text-container">
-            <p class="career-main-block-items-text-container-job-position">Junior Affiliate Manager</p>
-            <p class="career-main-block-items-text-container-job-hirer">Sliema, Malta</p>
+      <div class="openings__content">
+        <div id="BambooHR" data-domain="duxgroup.bamboohr.com" data-version="1.0.0" data-departmentid="">
+          <div id="BambooHR-ATS">
+            <div id="addhere"
+              style="font-family: Lato, sans-serif; font-size: 12px; color: rgb(153, 153, 153); text-align: right; margin: 9px 9px 0px 0px;">
+
+
+
+            </div>
           </div>
         </div>
-        <div class="career-main-block-items">
-          <p class="career-main-block-items-company-name">Affiliate Department</p>
-          <div class="career-main-block-items-text-container">
-            <p class="career-main-block-items-text-container-job-position">Junior Affiliate Manager</p>
-            <p class="career-main-block-items-text-container-job-hirer">Sliema, Malta</p>
-          </div>
-        </div>
-        <div class="career-main-block-items">
-          <p class="career-main-block-items-company-name">Affiliate Department</p>
-          <div class="career-main-block-items-text-container">
-            <p class="career-main-block-items-text-container-job-position">Junior Affiliate Manager</p>
-            <p class="career-main-block-items-text-container-job-hirer">Sliema, Malta</p>
-          </div>
-        </div>
-        <div class="career-main-block-items">
-          <p class="career-main-block-items-company-name">Affiliate Department</p>
-          <div class="career-main-block-items-text-container">
-            <p class="career-main-block-items-text-container-job-position">Junior Affiliate Manager</p>
-            <p class="career-main-block-items-text-container-job-hirer">Sliema, Malta</p>
-          </div>
-        </div>
-        <div class="career-main-block-items">
-          <p class="career-main-block-items-company-name">Affiliate Department</p>
-          <div class="career-main-block-items-text-container">
-            <p class="career-main-block-items-text-container-job-position">Junior Affiliate Manager</p>
-            <p class="career-main-block-items-text-container-job-hirer">Sliema, Malta</p>
-          </div>
-        </div>
-        <button class="career-main-block-button">see more <img src="../assets/images/careers/right.svg" alt="right">
-        </button>
       </div>
+
     </div>
     <div class="devider">
       <BlockTitle title="Interview Process Timeline" :large="1"></BlockTitle>
@@ -451,6 +423,7 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 import BlockTitle from "../components/BlockTitle.vue";
 import Swiper, { Navigation, Pagination, Autoplay } from 'swiper'
 import 'swiper/swiper-bundle.css'
+import postscribe from 'postscribe'
 
 Swiper.use([Navigation, Pagination, Autoplay])
 
@@ -514,6 +487,7 @@ export default {
   },
   mounted() {
 
+    postscribe('#addhere', `<script src="https://duxgroup.bamboohr.com/js/embed.js" type="text/javascript" async="" defer=""><\/script>`)
     new Swiper('.swiper-container', {
       slidesPerView: 'auto',
       loop: true,
@@ -581,8 +555,87 @@ export default {
     margin-right: 12px !important;
   }
 }
+
+.BambooHR-ATS-Location {
+  display: flex;
+  align-items: center;
+}
+
+.BambooHR-ATS-Location::after {
+  padding-left: 24px;
+  content: url('../assets/images/job__arrow.svg');
+  display: none;
+}
+
+.BambooHR-ATS-Jobs-Item:hover .BambooHR-ATS-Location::after {
+  display: inline;
+}
+
+.BambooHR-ATS-board ul {
+  padding: 2px 0px 12px 0px !important;
+  margin-bottom: 0 !important;
+}
+
+.BambooHR-ATS-board li:hover {
+  background: #1F2941;
+  padding-left: 17px !important;
+  padding-right: 17px;
+
+}
+
+.BambooHR-ATS-board a {
+  font-size: 20px !important;
+  color: #F0F0F0 !important;
+  text-decoration: none !important;
+  font-weight: 400 !important;
+  font-family: 'Exo' !important;
+}
+
+.BambooHR-ATS-board li {
+  color: #828FA1 !important;
+  font-size: 14px !important;
+  font-family: 'Oxygen' !important;
+  padding-left: 0 !important;
+  padding-top: 14px;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.BambooHR-ATS-board h2 {
+  margin-bottom: 15px !important;
+  border-bottom: 0 !important;
+  font-size: 35px !important;
+  color: #F0F0F0 !important;
+  font-family: 'Exo' !important;
+  font-weight: 400 !important;
+}
+
+@media screen and (max-width:450px) {
+  .BambooHR-ATS-board a {
+    font-size: 14px !important;
+
+  }
+
+  .BambooHR-ATS-Jobs-Item:hover .BambooHR-ATS-Location::after {
+    display: none;
+  }
+
+  .BambooHR-ATS-Location {
+    font-size: 12px;
+  }
+}
 </style>
 <style lang="scss" scoped>
+.openings__content {
+  width: 100%;
+  padding: 0 17px 0 17px;
+
+}
+
+
+
 .career-main-block-items {
   transition: all 0.5s;
   cursor: pointer;
