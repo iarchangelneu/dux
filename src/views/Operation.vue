@@ -18,7 +18,7 @@
           <p class="operation-us"><img class="span-svg" src="../assets/images/contact/Ellipse1.svg"
               alt="elipse">DUXGroup
             Operation</p>
-          a Team &nbsp; of real <br> <span class="color-blue ndk"> professionals</span>
+          a Team of real <br> <span class="color-blue ndk"> professionals</span>
         </h1>
       </div>
     </div>
@@ -804,7 +804,7 @@ export default {
 
 .department__title {
   text-align: center;
-  font-size: 58px;
+  font-size: 48px;
   color: white;
   padding: 0 25px;
   font-family: 'Oxygen', sans-serif;
@@ -851,7 +851,7 @@ export default {
     font-family: "Oxygen", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 134px;
+    font-size: 110px;
     line-height: 95%;
     letter-spacing: 0.02em;
     text-transform: uppercase;
@@ -864,7 +864,7 @@ export default {
       font-family: "Oxygen", sans-serif;
       font-style: normal;
       font-weight: 400;
-      font-size: 34px;
+      font-size: 28px;
       line-height: 110%;
       letter-spacing: 0.03em;
       text-transform: uppercase;
@@ -881,6 +881,12 @@ export default {
       }
 
     }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .operation-banner__title .operation-us .span-svg {
+    min-width: 14px;
   }
 }
 
@@ -1008,6 +1014,7 @@ export default {
 .mechanism-container {
   min-height: 860px;
   position: relative;
+  margin-top: -40px;
 }
 
 //.mechanism:first-child:hover .mechanism:nth-child(1) img{
@@ -1379,8 +1386,8 @@ export default {
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
-        line-height: 27px;
-        color: #F0F0F0;
+        line-height: 150%;
+        color: #98A6B9;
 
       }
     }

@@ -185,43 +185,43 @@
         <div class="row__container">
           <p class="row__text" data-aos="zoom-in" data-aos-duration="0">
             <span><img src="../assets/images/careers/dote.svg" alt="dote"></span>
-            Modern, iGaming environment in a sunny climate.
+            Modern, iGaming environment in a sunny climate
           </p>
           <p class="row__text" data-aos="zoom-in" data-aos-duration="2000">
             <span><img src="../assets/images/careers/dote.svg" alt="dote"></span>
-            Team lunches, drinks, and team events.
+            Team lunches, drinks, and team events
           </p>
           <p class="row__text" data-aos="zoom-in" data-aos-duration="1000">
             <span><img src="../assets/images/careers/dote.svg" alt="dote"></span>
-            Employee Development Plans.
+            Employee Development Plans
           </p>
         </div>
         <div class="row__container">
           <p class="row__text" data-aos="zoom-in" data-aos-duration="2000">
             <span><img src="../assets/images/careers/dote.svg" alt="dote"></span>
-            Seafront offices.
+            Seafront offices
           </p>
           <p class="row__text" data-aos="zoom-in" data-aos-duration="1000">
             <span><img src="../assets/images/careers/dote.svg" alt="dote"></span>
-            Birthdays (we celebrate by giving employees birthday gifts + yummy treats).
+            Birthdays (we celebrate by giving employees birthday gifts + yummy treats)
           </p>
           <p class="row__text" data-aos="zoom-in" data-aos-duration="0">
             <span><img src="../assets/images/careers/dote.svg" alt="dote"></span>
-            Mobile phone allowance.
+            Mobile phone allowance
           </p>
         </div>
         <div class="row__container">
           <p class="row__text" data-aos="zoom-in" data-aos-duration="0">
             <span><img src="../assets/images/careers/dote.svg" alt="dote"></span>
-            Private health insurance.
+            Private health insurance
           </p>
           <p class="row__text" data-aos="zoom-in" data-aos-duration="2000">
             <span><img src="../assets/images/careers/dote.svg" alt="dote"></span>
-            Flexi-time.
+            Flexi-time
           </p>
           <p class="row__text" data-aos="zoom-in" data-aos-duration="1000">
             <span><img src="../assets/images/careers/dote.svg" alt="dote"></span>
-            Kitchen packed with free flowing treats/ fruit/ snacks.
+            Kitchen packed with free flowing treats/ fruit/ snacks
           </p>
         </div>
       </div>
@@ -1310,7 +1310,7 @@ export default {
     font-family: "Oxygen", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 134px;
+    font-size: 110px;
     line-height: 95%;
     letter-spacing: 0.02em;
     text-transform: uppercase;
@@ -1326,7 +1326,7 @@ export default {
       font-style: normal;
       width: fit-content;
       font-weight: 400;
-      font-size: 34px;
+      font-size: 28px;
       line-height: 195%;
       letter-spacing: 0.03em;
       text-transform: uppercase;
@@ -1410,7 +1410,7 @@ export default {
     font-family: 'Oxygen', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 58px;
+    font-size: 48px;
     line-height: 105%;
     text-align: center;
     letter-spacing: 0.02em;
@@ -1782,8 +1782,8 @@ export default {
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
-        line-height: 27px;
-        color: #F0F0F0;
+        line-height: 150%;
+        color: #98A6B9;
 
       }
     }
@@ -2540,6 +2540,11 @@ export default {
 }
 
 @media screen and (max-width: 1440px) {
+  .span-svg {
+    min-width: 14px;
+    max-width: 14px;
+  }
+
   .cont__slider {
     // margin-left: 144px;
     overflow: hidden;

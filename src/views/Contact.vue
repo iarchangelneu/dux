@@ -162,7 +162,7 @@ form {
     cursor: pointer;
     text-align: left;
     background: #2F5BD8;
-    border-radius: 10px;
+    border-radius: 8px;
     width: 510px;
     display: flex;
     align-items: center;
@@ -242,7 +242,7 @@ form {
         max-width: 510px;
         height: 48px;
         border: 1px solid #828FA1;
-        border-radius: 10px;
+        border-radius: 8px;
         margin-bottom: 20px;
         background: none;
         padding: 14px;
@@ -251,7 +251,7 @@ form {
           width: 510px;
           height: 108px;
           border: 1px solid #828FA1;
-          border-radius: 10px;
+          border-radius: 8px;
           margin-bottom: 14px;
 
         }
@@ -434,14 +434,14 @@ form {
   }
 
   .contact-us {
-    font-size: 34px !important;
+    font-size: 28px !important;
     line-height: 28px !important;
     margin: 0 !important;
     position: relative;
     margin-top: 50px !important;
 
     &>img {
-      width: 10px;
+      width: 14px;
     }
   }
 
@@ -450,10 +450,10 @@ form {
   }
 
   .contact-banner__title {
-    font-size: 134px !important;
+    font-size: 110px !important;
     line-height: 105% !important;
     margin-top: 244px !important;
-    max-width: 1330px !important;
+    max-width: 1245px !important;
   }
 
   .header-container .contact-banner__title .contact-us {

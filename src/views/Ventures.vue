@@ -99,13 +99,13 @@
             </div>
             <div class="items">
               <ul>
-                <li>Developers,</li>
-                <li>BI analyticians,</li>
-                <li>Marketologists,</li>
-                <li>Designers,</li>
-                <li>lawyers,</li>
-                <li>financiers,</li>
-                <li>And many more.</li>
+                <li>Developers</li>
+                <li>BI analyticians</li>
+                <li>Marketologists</li>
+                <li>Designers</li>
+                <li>lawyers</li>
+                <li>financiers</li>
+                <li>And many more</li>
               </ul>
             </div>
           </div>
@@ -240,6 +240,83 @@ export default {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .header {
+    background: #010C28 url('../assets/images/gradient.png') center;
+    background-size: cover;
+    //background: linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    height: 702px;
+
+    &__menu {
+      z-index: 10;
+      //background-image: url('../assets/images/ventures/header-bg.png');
+      //background-repeat: no-repeat;
+      min-height: 300px;
+      //padding: 25px;
+      background-position: right;
+
+      .cubes {
+        position: absolute;
+        right: 0;
+        margin: 0;
+        z-index: -1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        div:nth-child(1) {
+          width: 50px;
+          height: 100px !important;
+        }
+
+        div:nth-child(2) {
+          width: 70px;
+          height: 150px !important;
+        }
+
+        div:nth-child(3) {
+          //animation: 1s ease-in 2s 1 run;
+          width: 90px;
+          height: 190px !important;
+        }
+
+        div:nth-child(4) {
+          width: 110px;
+          height: 240px !important;
+        }
+
+        div:nth-child(5) {
+          width: 130px;
+          height: 290px !important;
+        }
+
+        div:nth-child(6) {
+          width: 150px;
+          height: 360px !important;
+        }
+
+        div:nth-child(7) {
+          width: 170px;
+          height: 360px !important;
+        }
+
+        div:nth-child(8) {
+          width: 190px;
+          height: 360px !important;
+        }
+
+        .cube {
+          //background-color: red;
+          border: 1px solid;
+          border-image-slice: 1;
+          border-image-source: linear-gradient(to bottom, #0046b0, #0058ba, #0069c2, #0079c8, #0089cd);
+        }
+      }
+    }
+  }
+
   .container .header .content .p .brave svg {
     min-width: 20px;
     min-height: 20px;
@@ -261,6 +338,12 @@ export default {
 
   .container .header .content .p .brave {
     margin-top: 20px !important;
+  }
+
+  .container .header .content .p .brave svg {
+    max-width: 14px !important;
+    max-height: 14px !important;
+    min-width: 14px;
   }
 
   .container {
@@ -366,13 +449,14 @@ export default {
 
       .content {
         p {
-          font-size: 134px !important;
+          margin-top: 70px !important;
+          font-size: 110px !important;
           line-height: 105% !important;
 
           .brave {
             width: 250px !important;
             margin-right: 0px !important;
-            font-size: 34px !important;
+            font-size: 28px !important;
             line-height: 35px !important;
             letter-spacing: 0.03em !important;
             vertical-align: top !important;
@@ -430,7 +514,7 @@ export default {
 
           .text {
             font-weight: 400 !important;
-            font-size: 26px !important;
+            font-size: 20px !important;
             line-height: 27px !important;
           }
         }
@@ -1723,7 +1807,7 @@ export default {
               font-size: 16px;
               line-height: 20px;
               letter-spacing: 0.03em;
-              margin-bottom: 20px;
+              margin-bottom: 15px;
               text-transform: uppercase;
               color: #F0F0F0;
 
@@ -1750,7 +1834,7 @@ export default {
     }
 
     .advert {
-      padding: 40px 80px 150px 80px;
+      padding: 88px 80px 150px 80px;
 
       p {
         font-family: 'Oxygen', sans-serif;
@@ -1847,7 +1931,7 @@ export default {
 
           li {
             &:not(:last-child) {
-              margin-bottom: 25px;
+              margin-bottom: 17px;
             }
 
             span {
@@ -1906,7 +1990,7 @@ export default {
         border: 1px solid #828FA1;
         background: transparent;
         padding: 15px 0 15px 15px;
-        border-radius: 10px;
+        border-radius: 8px;
         color: #828FA1;
         font-size: 16px;
         width: 510px;
@@ -1918,7 +2002,7 @@ export default {
         background: transparent;
         padding: 15px 0 15px 15px;
         margin-top: 20px;
-        border-radius: 10px;
+        border-radius: 8px;
         resize: none;
         color: #828FA1;
         font-size: 16px;
@@ -1943,7 +2027,7 @@ export default {
         cursor: pointer;
         text-align: left;
         background: #2F5BD8;
-        border-radius: 10px;
+        border-radius: 8px;
         width: 510px;
         display: flex;
         align-items: center;

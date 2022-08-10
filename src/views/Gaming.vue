@@ -216,7 +216,7 @@ export default {
 
 <style lang="scss" scoped>
 .blue {
-  color: #2F5BD8;
+  color: #485567;
 }
 
 .small-bg {
@@ -387,8 +387,8 @@ export default {
           font-weight: 400;
           font-size: 20px;
           margin: 0;
-          line-height: 27px;
-          color: #F0F0F0;
+          line-height: 150%;
+          color: #98A6B9;
         }
       }
     }
@@ -451,7 +451,7 @@ export default {
           line-height: 28px;
           letter-spacing: 0.03em;
           text-transform: uppercase;
-          color: #F0F0F0;
+          color: #828FA1;
 
           a {
             margin-left: 25px;
@@ -522,6 +522,10 @@ export default {
 }
 
 @media screen and (max-width: 1440px) {
+  .container .header_part .content .p .brave svg {
+    min-width: 14px !important;
+    min-height: 14px !important;
+  }
 
   .container .lists .content__item div {
 
@@ -546,7 +550,7 @@ export default {
   }
 
   .container .learn .content p {
-    font-size: 26px !important;
+    font-size: 24px !important;
     ;
   }
 
@@ -576,7 +580,7 @@ export default {
 
       .content {
         p {
-          font-size: 134px !important;
+          font-size: 110px !important;
           line-height: 105% !important;
           margin: 34px 0 0 !important;
 
@@ -588,7 +592,7 @@ export default {
 
           span.brave {
 
-            font-size: 22px !important;
+            font-size: 28px !important;
             line-height: 28px !important;
           }
         }
