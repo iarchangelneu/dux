@@ -44,7 +44,7 @@
       <div class="title">
         <BlockTitle title="what we are?"></BlockTitle>
       </div>
-      <p>
+      <p data-aos="fade-up" data-aos-duration="1500">
         When DUXGroup started in <span class="blue">2020</span>, we set out to make history by creating something great,
         aiming to set the pace for the entire industry. <br /> <br />
         Individuals <span class="blue">specialising in iGaming</span>, mobile marketing, and product development came
@@ -56,7 +56,7 @@
     </div>
     <div class="running">
       <div class="title">
-        <p>We follow the principle </p>
+        <p data-aos="fade-down" data-aos-duration="500" >We follow the principle </p>
       </div>
       <div class="line" v-if="menuClosed">
         <!--          <marquee direction="row" behavior="slide" height="100" width="100%" bgcolor="#010C28" Scrollamount=20>-->
@@ -139,7 +139,7 @@
       <div class="title">
         <p>Synergy and partnership</p>
       </div>
-      <div class="items">
+      <div class="items" data-aos="fade-up" data-aos-duration="1500">
         <div class="item">
           <img src="../assets/images/partnership-bg.png" class="partnership-bg" v-if="window.width > 1024" />
           <img src="@/assets/images/partnership__bg2.png" class="partnership-bg"
@@ -243,10 +243,10 @@
       <div class="header-sldier">
         <BlockTitle title="what do we have?"></BlockTitle>
       </div>
-      <div class="title">
+      <div class="title" data-aos="fade-down" data-aos-duration="1000">
         <p>We create <span class="blue">products</span> that players <span class="blue">love</span></p>
       </div>
-      <div class="slide_part">
+      <div class="slide_part" data-aos="fade-up" data-aos-duration="2000">
         <div class="slider">
           <div><img src="../assets/images/slider/Card1.png"></div>
           <div><img src="../assets/images/slider/Card2.png"></div>
@@ -347,7 +347,7 @@
         </div>
       </div>
       <div class="content">
-        <div class="content__item">
+        <div class="content__item" data-aos="fade-up" data-aos-duration="1500">
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
               viewBox="0 0 16 16">
@@ -358,7 +358,7 @@
           <h4>IGaming platform that includes a casino and a sports betting solution. Innovative. Flexible. Comfortable.
             Unique.</h4>
         </div>
-        <div class="content__item">
+        <div class="content__item" data-aos="fade-up" data-aos-duration="1500">
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
               viewBox="0 0 16 16">
@@ -369,7 +369,7 @@
           <h4>A strategic partner of Chilli Partners, with huge expertise and connections in affiliate marketing. The
             main office is located in Malta.</h4>
         </div>
-        <div class="content__item">
+        <div class="content__item" data-aos="fade-up" data-aos-duration="1500">
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
               viewBox="0 0 16 16">
@@ -381,7 +381,7 @@
             largest brands in the world. We have the following departments: CRM, VIP, support, antifraud, payments, BI,
             and more.</h4>
         </div>
-        <div class="content__item">
+        <div class="content__item" data-aos="fade-up" data-aos-duration="1500">
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
               viewBox="0 0 16 16">
@@ -399,13 +399,13 @@
       <div class="title">
         <BlockTitle title="our mission"></BlockTitle>
       </div>
-      <div class="content">
-        <p>Make <span class="blue">big waves</span> in the iGaming segment together with <span class="blue">our
+      <div class="content" data-aos="fade-up" data-aos-duration="1500">
+        <p data-aos="fade-up" data-aos-duration="1500">Make <span class="blue">big waves</span> in the iGaming segment together with <span class="blue">our
             team</span> and build an awesome <span class="blue">ecosystem</span></p>
-        <img src="../assets/images/mission/6.png" class="forth_figure" data-aos="fade-up" data-aos-duration="2000" />
-        <img src="../assets/images/mission/23.png" class="second_figure" data-aos="fade-up" data-aos-duration="2000" />
-        <img src="../assets/images/mission/33.png" class="third_figure" data-aos="fade-up" data-aos-duration="2000" />
-        <img src="../assets/images/mission/45.png" class="first_figure" data-aos="fade-up" data-aos-duration="2000" />
+        <img src="../assets/images/mission/6.png" class="forth_figure forth_figure1" />
+        <img src="../assets/images/mission/23.png" class="second_figure forth_figure2" />
+        <img src="../assets/images/mission/33.png" class="third_figure forth_figure3"/>
+        <img src="../assets/images/mission/45.png" class="first_figure forth_figure4"/>
       </div>
     </div>
     <div class="gambling">
@@ -413,20 +413,21 @@
         <BlockTitle title="safe gambling"></BlockTitle>
       </div>
       <div class="content">
-        <div class="figure">
+        <div class="figure" data-aos="fade-up" data-aos-duration="1500">
           <p>Gambling should always be seen as entertainment and nothing else. Unfortunately, sometimes people can take
             it too far and potentially lose control of their betting.
             You should never consider gambling as a source of income or a chance to recover from debt.
             Always keep track of the time and money you spent on gambling, check this with yourself every day.
           </p>
-          <div class="circle" @click="goToGaming()">
+          <div class="circle" @click="goToGaming()" @mouseover="upHere = true" @mouseleave="upHere = false">
             <span style="line-height: 180%;">READ MORE</span>
             <!-- <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" fill="#00FFFF" class="bi bi-arrow-right"
               viewBox="0 0 16 16">
               <path fill-rule="evenodd"
                 d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
             </svg> -->
-            <img class="bi bi-arrow-right" src="../assets/images/home/Arrow.svg" alt="">
+            <img v-if="upHere == false" class="bi bi-arrow-right" src="../assets/images/home/Arrow.svg" alt="">
+            <img v-else class="bi bi-arrow-right" src="../assets/images/home/ArrowHov.svg" alt="">
           </div>
         </div>
       </div>
@@ -437,19 +438,19 @@
       </div>
       <div class="content">
         <div class="title">
-          <p>We always <span class="blue">participate</span> in</p>
+          <p data-aos="fade-up" data-aos-duration="1500">We always <span class="blue">participate</span> in</p>
         </div>
         <div class="organizations">
-          <div class="img">
+          <div class="img" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="100">
             <img src="../assets/images/organizations/sigma.svg" />
           </div>
-          <div class="img">
+          <div class="img" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">
             <img src="../assets/images/organizations/affiliate.svg" />
           </div>
-          <div class="img">
+          <div class="img" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="1000">
             <img src="../assets/images/organizations/asia.png" />
           </div>
-          <div class="img">
+          <div class="img" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="1400">
             <img src="../assets/images/home/Amster.svg" />
           </div>
         </div>
@@ -478,7 +479,7 @@
         <BlockTitle title="holding news"></BlockTitle>
       </div>
       <div class="slider-holding">
-        <div class="items">
+        <div class="items" data-aos="fade-up" data-aos-duration="1500">
           <VueSlickCarousel ref="holding" v-bind="settings">
             <div>
               <div class="item"
@@ -568,9 +569,9 @@
       </div>
       <div>
         <div class="office">
-          <img src="../assets/images/offices/3.jpeg" data-aos="fade-up" data-aos-duration="1500" />
-          <img src="../assets/images/offices/1.jpeg" data-aos="fade-up" data-aos-duration="1500" />
-          <img src="../assets/images/offices/2.jpeg" class="abs" data-aos="fade-down" data-aos-duration="1500" />
+          <img src="../assets/images/offices/3.jpeg" data-aos="fade-up" data-aos-duration="5000" />
+          <img src="../assets/images/offices/1.jpeg" data-aos="fade-up" data-aos-duration="4000" />
+          <img src="../assets/images/offices/2.jpeg" class="abs" data-aos="fade-up" data-aos-duration="3000" />
         </div>
         <div class="map">
 
@@ -626,17 +627,24 @@ let mooveCursor = () => {
     if (window.location.pathname == '/') {
       // console.log(document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth + 90)
       if (window.innerWidth >= 1920) {
-        if (mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - 150) {
+        if (mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - 150 ) {
           document.querySelector('#cards').style.visibility = `hidden`;
         } else {
           document.querySelector('#cards').style.visibility = `visible`;
+          
         }
       }
       else if (window.innerWidth >= 1200) {
-        if (mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - 100) {
+        if ((mouseX < 500 || mouseX > document.querySelector('.map').offsetWidth - 400) 
+            && (e.pageY < document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 150)
+            && (e.pageY > document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 400)) {
           document.querySelector('#cards').style.visibility = `hidden`;
         } else {
           document.querySelector('#cards').style.visibility = `visible`;
+          console.log(e.pageY)
+          console.log('map:')
+          console.log((document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 150))
+          console.log(e.pageY < document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 150)
         }
       }
       else if (window.innerWidth >= 900) {
@@ -700,6 +708,7 @@ export default {
   data() {
 
     return {
+      upHere: false,
       window: {
         width: 0,
       },
@@ -4368,25 +4377,46 @@ export default {
       position: absolute;
       left: 25px;
       top: 30px;
+      transition: 1s;
     }
+
+    .first_figure:hover{
+      left: 35px;
+      top: 40px;
+    } 
 
     .second_figure {
       position: absolute;
-      right: 0;
+      right: -80px;
       top: 20%;
+      transition: 2s;
     }
+    .second_figure:hover{
+      right: -100px;
+      top: 15%;
+    } 
 
     .third_figure {
       position: absolute;
       right: 30%;
       top: 30px;
+      transition: 2s;
     }
+    .third_figure:hover{
+      right: 35%;
+      top: 15px;
+    } 
 
     .forth_figure {
       position: absolute;
       right: 25%;
       bottom: 0;
+      transition: 3s;
     }
+    .forth_figure:hover{
+      right: 30%;
+      bottom: -10px;
+    } 
   }
 }
 
@@ -4458,6 +4488,10 @@ export default {
 
       .circle:hover {
         background: #1F2941;
+        // .bi-arrow-right{
+        //   width: 53px;
+        //   height: 8px;
+        // }
       }
     }
   }
@@ -4929,7 +4963,6 @@ export default {
 .swiper-slide{
   line-height: 28px;
 }
-
 
 </style>
 <style>
