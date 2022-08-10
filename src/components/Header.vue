@@ -14,11 +14,15 @@
         <div class="nav">
           <div class="nav-wrapper">
             <nav>
-              <router-link to="/">About us</router-link>
-              <router-link to="/ventures">Ventures</router-link>
-              <router-link to="/operation">Operation</router-link>
-              <router-link to="/careers">Careers</router-link>
-              <router-link to="/contact">Contact us</router-link>
+              <router-link to="/" onclick="document.documentElement.style.overflow = 'auto'">About us</router-link>
+              <router-link to="/ventures" onclick="document.documentElement.style.overflow = 'auto'">Ventures
+              </router-link>
+              <router-link to="/operation" onclick="document.documentElement.style.overflow = 'auto'">Operation
+              </router-link>
+              <router-link to="/careers" onclick="document.documentElement.style.overflow = 'auto'">Careers
+              </router-link>
+              <router-link to="/contact" onclick="document.documentElement.style.overflow = 'auto'">Contact us
+              </router-link>
               <!-- <router-link to="/gaming">Gaming</router-link> -->
             </nav>
           </div>
@@ -57,6 +61,9 @@ export default {
 
   },
   methods: {
+    test() {
+      console.log('erere')
+    },
     checkbox(e) {
       this.opened = !this.opened
       if (this.opened) {
