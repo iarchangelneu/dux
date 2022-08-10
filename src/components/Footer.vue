@@ -119,6 +119,10 @@ export default {
         margin-right: 30px;
       }
     }
+    a:hover{
+      color: #00FFFF;
+      border-bottom: 1px solid #00FFFF;
+    }
   }
 
   .link {

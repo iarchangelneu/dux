@@ -295,6 +295,12 @@ input {
       text-decoration: none;
       list-style-type: none;
     }
+    
+    a:hover{
+      // text-decoration: underline;
+      color: #00FFFF;
+      border-bottom: 1px solid #00FFFF;
+    }
 
     a:not(:last-child) {
       margin-right: 50px;

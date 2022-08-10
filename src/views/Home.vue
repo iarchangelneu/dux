@@ -140,8 +140,9 @@
         <p>Synergy and partnership</p>
       </div>
       <div class="items" data-aos="fade-up" data-aos-duration="1500">
-        <div class="item">
-          <img src="../assets/images/partnership-bg.png" class="partnership-bg" v-if="window.width > 1024" />
+        <div class="item" @mouseover="firstCardHover=true" @mouseleave="firstCardHover=false">
+          <img src="../assets/images/partnership-bg.png" class="partnership-bg" v-if="window.width > 1024 && firstCardHover == false" />
+          <img src="../assets/images/home/CardsAnimeHover.png" class="partnership-bg gradient" v-show="window.width > 1024 && firstCardHover == true" />
           <img src="@/assets/images/partnership__bg2.png" class="partnership-bg"
             v-if="window.width <= 1024 && window.width > 450" alt="">
           <img src="@/assets/images/partnership__bg3.png" class="partnership-bg bg__mob" v-if="window.width <= 375"
@@ -159,15 +160,16 @@
             </div>
           </div>
           <div class="content">
-            <p class="title">In People we Trust</p>
-            <p class="text">We build any and all success on hiring industry experts, who know exactly what our customers
+            <p class="title" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="300">In People we Trust</p>
+            <p class="text" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">We build any and all success on hiring industry experts, who know exactly what our customers
               demand.
               At DuxGroup there is no micromanagement, because we trust everyone to do their job to the highest
               standard. Our teams and people are our greatest asset.</p>
           </div>
         </div>
-        <div class="item">
-          <img src="../assets/images/partnership-bg.png" class="partnership-bg" v-if="window.width > 1024" />
+        <div class="item" @mouseover="secondCardHover=true" @mouseleave="secondCardHover=false">
+          <img src="../assets/images/partnership-bg.png" class="partnership-bg" v-if="window.width > 1024 && secondCardHover == false" />
+          <img src="../assets/images/home/CardsAnimeHover.png" class="partnership-bg gradient" v-show="window.width > 1024 && secondCardHover == true" />
           <img src="@/assets/images/partnership__bg2.png" class="partnership-bg"
             v-if="window.width <= 1024 && window.width > 450" alt="">
           <img src="@/assets/images/partnership__bg3.png" class="partnership-bg bg__mob2" v-if="window.width <= 375"
@@ -181,15 +183,16 @@
             </div>
           </div>
           <div class="content">
-            <p class="title">Transparency is Gold – Honesty, Directness, Clarity</p>
-            <p class="text">We build any and all success on hiring industry experts, who know exactly what our customers
+            <p class="title" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="300">Transparency is Gold – Honesty, Directness, Clarity</p>
+            <p class="text" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">We build any and all success on hiring industry experts, who know exactly what our customers
               demand.
               At DuxGroup there is no micromanagement, because we trust everyone to do their job to the highest
               standard. Our teams and people are our greatest asset.</p>
           </div>
         </div>
-        <div class="item">
-          <img src="../assets/images/partnership-bg.png" class="partnership-bg" v-if="window.width > 1024" />
+        <div class="item" @mouseover="thirdCardHover=true" @mouseleave="thirdCardHover=false">
+          <img src="../assets/images/partnership-bg.png" class="partnership-bg" v-if="window.width > 1024 && thirdCardHover == false" />
+          <img src="../assets/images/home/CardsAnimeHover.png" class="partnership-bg gradient" v-show="window.width > 1024 && thirdCardHover == true" />
           <img src="@/assets/images/partnership__bg2.png" class="partnership-bg"
             v-if="window.width <= 1024 && window.width > 450" alt="">
           <img src="@/assets/images/partnership__bg3.png" class="partnership-bg bg__mob3" v-if="window.width <= 375"
@@ -205,16 +208,17 @@
             </div>
           </div>
           <div class="content">
-            <p class="title">Resilience is Key – We have a plan</p>
-            <p class="text">We want to make an impact. But we are not too proud to admit that sometimes we need to
+            <p class="title" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="300">Resilience is Key – We have a plan</p>
+            <p class="text" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">We want to make an impact. But we are not too proud to admit that sometimes we need to
               re-adjust. Getting up after a fall and looking at different solutions that no one has ever thought of
               before - This is our strength.
               We learn from our mistakes and create something different. We live by the 1+1=3 principle, because with
               each new try, we add greater value. Every time.</p>
           </div>
         </div>
-        <div class="item">
-          <img src="../assets/images/partnership-bg.png" class="partnership-bg" v-if="window.width > 1024" />
+        <div class="item" @mouseover="forthCardHover=true" @mouseleave="forthCardHover=false">
+          <img src="../assets/images/partnership-bg.png" class="partnership-bg" v-if="window.width > 1024 && forthCardHover == false" />
+          <img src="../assets/images/home/CardsAnimeHover.png" class="partnership-bg gradient" v-show="window.width > 1024 && forthCardHover == true" />
           <img src="@/assets/images/partnership__bg2.png" class="partnership-bg"
             v-if="window.width <= 1024 && window.width > 450" alt="">
           <img src="@/assets/images/partnership__bg3.png" class="partnership-bg bg__mob4" v-if="window.width <= 375"
@@ -229,8 +233,8 @@
             </div>
           </div>
           <div class="content">
-            <p class="title">Team Dux – Together. – We are colleagues</p>
-            <p class="text">But first and foremost, we like each other and we are friends. We are one team and we stand
+            <p class="title" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="300">Team Dux – Together. – We are colleagues</p>
+            <p class="text" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">But first and foremost, we like each other and we are friends. We are one team and we stand
               together in our mission. There is no hierarchy.
               You can have a coffee with your immediate colleagues or the "Head of Anything". This is by far the most
               important value we hold.</p>
@@ -248,9 +252,18 @@
       </div>
       <div class="slide_part" data-aos="fade-up" data-aos-duration="2000">
         <div class="slider">
-          <div><img src="../assets/images/slider/Card1.png"></div>
-          <div><img src="../assets/images/slider/Card2.png"></div>
-          <div><img src="../assets/images/slider/Card3.png"></div>
+          <div @mouseover="firstSliderCardHover=true" @mouseleave="firstSliderCardHover=false">
+            <img src="../assets/images/slider/Card1.png" v-if="firstSliderCardHover==false">
+            <img src="../assets/images/home/WhatWeHave.png" v-else>
+          </div>
+          <div @mouseover="secondSliderCardHover=true" @mouseleave="secondSliderCardHover=false">
+            <img src="../assets/images/slider/Card2.png" v-if="secondSliderCardHover==false">
+            <img src="../assets/images/home/WhatWeHave2.png" v-else>
+          </div>
+          <div  @mouseover="thirdSliderCardHover=true" @mouseleave="thirdSliderCardHover=false">
+            <img src="../assets/images/slider/Card3.png" v-if="thirdSliderCardHover==false">
+            <img src="../assets/images/home/WhatWeHave3.png" v-else>
+          </div>
         </div>
         <VueSlickCarousel ref="carousel" v-bind="settingsImages" class="vue-slick">
           <div><img src="../assets/images/slider/Card1.png"></div>
@@ -635,16 +648,20 @@ let mooveCursor = () => {
         }
       }
       else if (window.innerWidth >= 1200) {
-        if ((mouseX < 500 || mouseX > document.querySelector('.map').offsetWidth - 400) 
-            && (e.pageY < document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 150)
-            && (e.pageY > document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 400)) {
+        if (mouseX < 500 || mouseX > document.querySelector('.map').offsetWidth - 400) 
+            // && (e.pageY < (document.querySelector('.map').getBoundingClientRect().top + window.pageYOffset + 600))
+            // && (e.pageY > document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 400)
+        {
           document.querySelector('#cards').style.visibility = `hidden`;
         } else {
           document.querySelector('#cards').style.visibility = `visible`;
-          console.log(e.pageY)
-          console.log('map:')
-          console.log((document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 150))
-          console.log(e.pageY < document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 150)
+          console.log(e.pageY < (document.querySelector('.map').getBoundingClientRect().top + window.pageYOffset + 600))
+          console.log('asd');
+          console.log(e.pageY > document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 400);
+          // console.log(e.pageY)
+          // console.log('map:')
+          // console.log((document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 150))
+          // console.log(e.pageY < document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 150)
         }
       }
       else if (window.innerWidth >= 900) {
@@ -708,6 +725,13 @@ export default {
   data() {
 
     return {
+      firstSliderCardHover: false,
+      secondSliderCardHover: false,
+      thirdSliderCardHover: false,
+      firstCardHover: false,
+      secondCardHover: false,
+      thirdCardHover: false,
+      forthCardHover: false,
       upHere: false,
       window: {
         width: 0,
@@ -962,19 +986,19 @@ export default {
 }
 
 .zar-mec {
-  animation: cube3 7s linear infinite;
+  animation: cube3 13s linear infinite;
   animation-play-state: running;
   transform-origin: bottom right;
 }
 
 .klor {
-  animation: cube2 8s linear infinite;
+  animation: cube2 15s linear infinite;
   animation-play-state: running;
   transform-origin: bottom right;
 }
 
 .zar-poqr {
-  animation: cube1 6s linear infinite;
+  animation: cube1 11s linear infinite;
   animation-play-state: running;
   transform-origin: bottom right;
 }
@@ -3431,6 +3455,7 @@ export default {
 
       &:hover>.anime .view4 img:nth-child(2) {
         right: 0 !important;
+        left: 47px !important;
       }
 
       &:hover>.anime .view4 img:nth-child(3) {
@@ -3647,6 +3672,11 @@ export default {
     }
 
   }
+}
+
+.gradient{
+  width: 100%;
+  height: 400px;
 }
 
 @media screen and (min-width: 375px) and (max-width: 450px) {
@@ -4088,6 +4118,7 @@ export default {
             position: absolute;
             bottom: -3px;
             left: 10%;
+            transition: 1s;
           }
 
           img:nth-child(3) {
@@ -4568,6 +4599,9 @@ export default {
     .items {
       padding-left: 25px;
 
+      .item:hover{
+        background-image: url('../assets/images/home/News.png');
+      }
       .item {
         background-image: url('../assets/images/holding/bg.svg');
         background-repeat: no-repeat;
@@ -4758,6 +4792,9 @@ export default {
           //}
         }
 
+        .text:hover{
+          background: linear-gradient(86.5deg, #5433FF 8.33%, #20BDFF 73.44%, #A5FECB 100%);
+        }
         .text {
           @media (min-width: 1025px) and (max-width: 1920px) {
             left: calc(385px + (820 - 385) * ((100vw - 1025px) / (1920 - 1025)));
@@ -4803,6 +4840,9 @@ export default {
           top: 45%;
         }
 
+        .text:hover{
+          background: linear-gradient(137.73deg, #0C7355 4.69%, #00FFFF 86.71%);
+        }
         .text {
           @media (min-width: 1025px) and (max-width: 1920px) {
             right: calc(340px + (760 - 340) * ((100vw - 1025px) / (1920 - 1025))) !important;
@@ -4988,5 +5028,6 @@ export default {
 .mainTitleWord {
   white-space: nowrap;
   display: inline-block;
+  overflow: hidden;
 }
 </style>
