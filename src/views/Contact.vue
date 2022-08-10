@@ -29,16 +29,21 @@
         </div>
       </form>
     </div>
+
     <div class="footer">
       <FooterPart />
+
     </div>
   </div>
+
 </template>
 
 <script>
 import HeaderPart from "@/components/Header";
 import FooterPart from "@/components/Footer"
 import BlockTitle from '../components/BlockTitle.vue';
+
+
 export default {
 
   name: "Contact-us",
