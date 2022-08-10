@@ -1403,7 +1403,7 @@ export default {
   &-container {
     border: 25px solid;
     border-image-source: url("../assets/images/operation/shape.svg");
-    border-image-slice: 20 22;
+    border-image-slice: 80 80;
     transition: all .7s;
 
     background: no-repeat;
