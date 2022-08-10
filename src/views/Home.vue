@@ -12,14 +12,21 @@
         <div class="menu">
           <Header @opened="openedMobMenu" />
           <div class="content">
-            <p class="p" data-aos="fade-up">
+            <!-- <p class="p" data-aos="fade-up"> -->
+              <p class="p" id="p">
               <span class="brave">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
                   viewBox="0 0 16 16">
                   <circle cx="8" cy="8" r="8" />
                 </svg>{{ this.text }}
               </span>
-              We Were Born To Make History
+              <!-- We Were Born To Make History -->
+              
+                <!-- <span class="mainTitleLetter" v-for="(letter,ind) in word" :key="ind" >{{ letter }}</span>&zwnj; -->
+              
+
+              
+              <!-- {{ mainTitleArr }} -->
             </p>
           </div>
         </div>
@@ -685,6 +692,8 @@ export default {
       window: {
         width: 0,
       },
+      mainTitle: 'We Were Born To Make History',
+      mainTitleArr: [],
       header_text: ['BRAVE', 'SMART', 'MOBILE', 'GAMBLERS'],
       text: 'brave',
       running: ['Revolutionize', 'Improve', 'Perfect', 'Revolutionize'],
@@ -816,6 +825,43 @@ export default {
     setTimeout(() => {
       this.text = 'SMART'
     }, 2000);
+
+
+    let firstSplit = this.mainTitle.split(' ')
+    
+    let block = document.getElementById('p') 
+    console.log(firstSplit);
+    let timer = 0;
+    firstSplit.forEach( (word,ind) => {
+      // if(word != ' '){
+      //   setTimeout(()=>{this.mainTitleArr.push(word)}, timer)
+      // }
+      // else{
+      //   setTimeout(()=>{this.mainTitleArr.push('&thinsp;')}, timer)
+      // }
+      let span = document.createElement('span');
+      span.id = 'word'+ind;
+      span.classList.add('mainTitleWord')
+      block.appendChild(span)
+
+      word.split('').forEach((letter)=>{
+
+        let spanInside = document.createElement('span');
+        spanInside.innerText = letter;
+        spanInside.classList.add('mainTitleLetter')
+
+        setTimeout(()=>{span.appendChild(spanInside)}, timer)
+        timer += 100
+      })
+
+      let spanBsp = document.createElement('span');
+      spanBsp.innerText = ' ';
+      block.appendChild(spanBsp)
+    })
+
+    // setTimeout(() => {console.log('asd',firstSplit)}, 1000)
+    // this.mainTitleArr = firstSplit
+
   }
 
 }
@@ -3218,7 +3264,7 @@ export default {
   font-style: normal;
   font-weight: 400;
   font-size: 26px;
-  line-height: 47px;
+  line-height: 125%;
   color: #F0F0F0;
 
   p {
@@ -3756,7 +3802,7 @@ export default {
   font-style: normal;
   font-weight: 400;
   font-size: 26px;
-  line-height: 47px;
+  line-height: 125%;
   color: #F0F0F0;
 
   p {
@@ -4076,7 +4122,7 @@ export default {
 
 .slider {
   background-color: #010C28;
-  padding-top: 95px;
+  padding-top: 20px;
 
   .header-sldier {
     padding: 0 25px;
@@ -4848,5 +4894,24 @@ export default {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+}
+
+
+</style>
+<style>
+@keyframes asd {
+  from {opacity: 0; transform: translateY(100px);}
+
+  to {opacity: 1; transform: translateY(0px); bottom: 0px;}
+}
+
+.mainTitleLetter{
+  animation-duration: 1s;
+  animation-name: asd;
+  display: inline-block;
+}
+
+.mainTitleWord{
+  white-space: nowrap;
 }
 </style>
