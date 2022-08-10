@@ -655,9 +655,9 @@ let mooveCursor = () => {
           document.querySelector('#cards').style.visibility = `hidden`;
         } else {
           document.querySelector('#cards').style.visibility = `visible`;
-          console.log(e.pageY < (document.querySelector('.map').getBoundingClientRect().top + window.pageYOffset + 600))
-          console.log('asd');
-          console.log(e.pageY > document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 400);
+          // console.log(e.pageY < (document.querySelector('.map').getBoundingClientRect().top + window.pageYOffset + 600))
+          // console.log('asd');
+          // console.log(e.pageY > document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 400);
           // console.log(e.pageY)
           // console.log('map:')
           // console.log((document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 150))
