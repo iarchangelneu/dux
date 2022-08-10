@@ -18,7 +18,15 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
                   viewBox="0 0 16 16">
                   <circle cx="8" cy="8" r="8" />
-                </svg>{{ this.text }}
+                </svg>
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <!-- {{ this.text }} -->
+                    <div class="swiper-slide" v-for="title in header_text" :key="title">
+                      {{title}}
+                    </div>
+                  </div>
+                </div>
               </span>
               <!-- We Were Born To Make History -->
               
@@ -601,6 +609,9 @@ import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 import gsap from "gsap";
 import BlockTitle from '../components/BlockTitle.vue';
+import Swiper, { Navigation, Pagination, Autoplay } from 'swiper'
+import 'swiper/swiper-bundle.css'
+Swiper.use([Navigation, Pagination, Autoplay])
 
 
 let mooveCursor = () => {
@@ -861,6 +872,16 @@ export default {
 
     // setTimeout(() => {console.log('asd',firstSplit)}, 1000)
     // this.mainTitleArr = firstSplit
+
+    new Swiper('.swiper-container', {
+      speed: 400,
+      spaceBetween: 0,
+      direction: 'vertical',
+      loop: true,
+      autoplay: {
+        delay: 2500
+      },
+    });
 
   }
 
@@ -3761,6 +3782,7 @@ export default {
             margin-right: 20px;
             //margin: 0 70px 70px 0;
             vertical-align: top;
+            margin-top: 15px;
 
             svg {
               margin-right: 11px;
@@ -4899,6 +4921,13 @@ export default {
   flex-direction: column;
 }
 
+.swiper-container{
+  max-height: 30px;
+  overflow: hidden;
+}
+.swiper-slide{
+  line-height: 28px;
+}
 
 </style>
 <style>
