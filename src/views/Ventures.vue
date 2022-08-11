@@ -1445,7 +1445,6 @@ export default {
         position: absolute;
         right: 0;
         margin: 0;
-        z-index: -1;
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
@@ -1464,42 +1463,83 @@ export default {
         div:nth-child(1) {
           width: 50px;
           height: 50px;
+          z-index: 1000;
+          transition: all .5s;
+        }
+
+        div:nth-child(1):hover {
+          margin-right: 55px !important;
         }
 
         div:nth-child(2) {
           width: 70px;
           height: 100px;
+          transition: all .5s;
+        }
+
+        div:nth-child(2):hover {
+          margin-right: 55px !important;
         }
 
         div:nth-child(3) {
           //animation: 1s ease-in 2s 1 run;
           width: 90px;
           height: 150px;
+          transition: all .5s;
+        }
+
+        div:nth-child(3):hover {
+          margin-right: 55px !important;
         }
 
         div:nth-child(4) {
           width: 110px;
           height: 200px;
+          transition: all .5s;
+        }
+
+        div:nth-child(4):hover {
+          margin-right: 55px !important;
         }
 
         div:nth-child(5) {
           width: 130px;
           height: 250px;
+          transition: all .5s;
+        }
+
+        div:nth-child(5):hover {
+          margin-right: 55px !important;
         }
 
         div:nth-child(6) {
           width: 150px;
           height: 300px;
+          transition: all .5s;
+        }
+
+        div:nth-child(6):hover {
+          margin-right: 55px !important;
         }
 
         div:nth-child(7) {
           width: 170px;
           height: 300px;
+          transition: all .5s;
+        }
+
+        div:nth-child(7):hover {
+          margin-right: 55px !important;
         }
 
         div:nth-child(8) {
           width: 190px;
           height: 300px;
+          transition: all .5s;
+        }
+
+        div:nth-child(8):hover {
+          margin-right: 55px !important;
         }
 
         .changeable {

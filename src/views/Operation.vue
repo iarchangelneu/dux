@@ -681,9 +681,176 @@ export default {
   .unique-container-left-side-dote {
     margin-right: 65px !important;
   }
+
+  .full__anim {
+    // animation: dayn;
+    // margin-top: 300px;
+  }
+
+  .oper__anim1 {
+    width: 170px;
+    top: -70px;
+    right: 740px;
+  }
+
+  .oper__anim2 {
+    width: 180px;
+    top: -97px;
+    right: 543px;
+  }
+
+  .oper__anim3 {
+    width: 170px;
+    top: -120px;
+    right: 335px;
+  }
+
+  .oper__anim4 {
+    width: 145px;
+    top: -125px;
+    right: 135px;
+  }
+
+  .oper__anim5 {
+    width: 220px;
+    right: 620px;
+    top: 130px;
+  }
+
+  .oper__anim6 {
+    width: 155px;
+    right: 525px;
+    top: 113px;
+  }
+
+  .oper__anim7 {
+    top: 95px;
+    right: 350px;
+    width: 140px;
+  }
+
+  .oper__anim8 {
+    top: 85px;
+    right: 180px;
+    width: 200px;
+  }
+
+  .oper__anim9 {
+    width: 140px;
+    top: -260px;
+    right: 0;
+    left: 65px;
+  }
+
+  .oper__anim10 {
+    width: 165px;
+    top: -290px;
+    right: 0;
+    left: 250px;
+  }
+
+  .oper__anim11 {
+    width: 180px;
+    top: -310px;
+    right: 340px;
+  }
+
+  .oper__anim12 {
+    width: 170px;
+    top: -320px;
+    right: 140px;
+  }
+
+  .oper__anim13 {}
+
+  .oper__anim14 {}
+
+  .oper__anim15 {}
+
+  .oper__anim16 {}
 }
 
 @media screen and (max-width: 768px) {
+  .full__anim {
+    // animation: dayn;
+    // margin-top: 300px;
+    // margin-right: -70px !important;
+  }
+
+  .oper__anim1 {
+    width: 110px;
+    top: -40px;
+    right: 493px;
+  }
+
+  .oper__anim2 {
+    width: 105px;
+    top: -47px;
+    right: 365px;
+  }
+
+  .oper__anim3 {
+    width: 100px;
+    top: -63px;
+    right: 240px;
+  }
+
+  .oper__anim4 {
+    width: 110px;
+    top: -95px;
+    right: 100px;
+  }
+
+  .oper__anim5 {
+    width: 150px;
+    right: 410px;
+    top: 85px;
+  }
+
+  .oper__anim6 {
+    width: 90px;
+    right: 355px;
+    top: 75px;
+  }
+
+  .oper__anim7 {
+    top: 65px;
+    right: 250px;
+    width: 80px;
+  }
+
+  .oper__anim8 {
+    top: 55px;
+    right: 135px;
+    width: 140px;
+  }
+
+  .oper__anim9 {
+    width: 95px;
+    top: -170px;
+    right: 0;
+    left: 143px;
+  }
+
+  .oper__anim10 {
+    width: 100px;
+    top: -170px;
+    right: 0;
+    left: 275px;
+  }
+
+  .oper__anim11 {
+    width: 100px;
+    top: -170px;
+    right: 250px;
+  }
+
+  .oper__anim12 {
+    width: 125px;
+    top: -210px;
+    right: 105px;
+  }
+
   .unique-container-left-side-dote {
     margin-right: 10% !important;
   }
@@ -779,6 +946,120 @@ export default {
 
 .footer {
   padding: 0 25px !important;
+}
+
+@media screen and (max-width: 450px) {
+  .full__anim {
+    // animation: dayn;
+    // margin-top: 300px;
+    // margin-right: -70px !important;
+  }
+
+  .oper__anim1 {
+    width: 80px;
+    top: -10px;
+    right: 310px;
+  }
+
+  .oper__anim2 {
+    width: 70px;
+    top: -10px;
+    right: 225px;
+  }
+
+  .oper__anim3 {
+    width: 60px;
+    top: -17px;
+    right: 145px;
+  }
+
+  .oper__anim4 {
+    width: 65px;
+    top: -35px;
+    right: 55px;
+  }
+
+  .oper__anim5 {
+    width: 105px;
+    right: 250px;
+    top: 78px;
+  }
+
+  .oper__anim6 {
+    width: 55px;
+    right: 220px;
+    top: 70px;
+  }
+
+  .oper__anim7 {
+    top: 63px;
+    right: 150px;
+    width: 50px;
+  }
+
+  .oper__anim8 {
+    top: 55px;
+    right: 70px;
+    width: 90px;
+  }
+
+  .oper__anim9 {
+    width: 65px;
+    top: -100px;
+    right: 0;
+    left: 30px;
+  }
+
+  .oper__anim10 {
+    width: 65px;
+    top: -95px;
+    right: 0;
+    left: 120px;
+  }
+
+  .oper__anim11 {
+    width: 65px;
+    top: -95px;
+    right: 150px;
+  }
+
+  .oper__anim12 {
+    width: 75px;
+    top: -115px;
+    right: 55px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .full__anim {
+    margin-right: -100px !important;
+  }
+
+  .oper__anim9 {
+    width: 65px;
+    top: -100px;
+    right: 0;
+    left: 50px;
+  }
+
+  .oper__anim10 {
+    width: 65px;
+    top: -95px;
+    right: 0;
+    left: 145px;
+  }
+
+  .oper__anim11 {
+    width: 65px;
+    top: -95px;
+    right: 150px;
+  }
+
+  .oper__anim12 {
+    width: 75px;
+    top: -115px;
+    right: 55px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
@@ -905,9 +1186,6 @@ export default {
 }
 
 @media (max-width: 1439px) and (min-width: 1024px) {
-  .operation-banner {
-    background: url("../assets/images/operation/bg-medium.svg") no-repeat right top;
-  }
 
   .operation-banner {
     min-height: 417px !important;
@@ -926,7 +1204,6 @@ export default {
 
 @media (max-width: 1023px) and (min-width: 769px) {
   .operation-banner {
-    background: url("../assets/images/operation/small.svg") no-repeat right top;
 
     min-height: 300px !important;
   }
@@ -954,13 +1231,13 @@ export default {
 @media (max-width: 768px) and (min-width: 320px) {
 
   .operation-banner {
-    background: url("../assets/images/operation/very-small.svg") no-repeat right top;
+
 
     min-height: 265px !important;
   }
 
   .operation-banner__title {
-    margin-top: 131px !important;
+    margin-top: 220px !important;
   }
 
   .first-devider {
@@ -971,7 +1248,6 @@ export default {
 
 @media (max-width: 767px) and (min-width: 320px) {
   .operation-banner {
-    background: url("../assets/images/operation/very-small.svg") no-repeat right top, linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28) !important;
 
     min-height: 265px !important;
   }
@@ -980,7 +1256,7 @@ export default {
 @media (min-width: 1024px) and (max-width: 1439px) {
 
   .operation-banner__title {
-    margin-top: 208px;
+    margin-top: 400px;
     font-size: 84px !important;
     line-height: 105% !important;
 
@@ -2279,7 +2555,7 @@ export default {
   }
 
   .operation-banner__title {
-    margin-top: 88px !important;
+    margin-top: 165px !important;
     letter-spacing: 0.03em;
 
   }
@@ -2892,7 +3168,6 @@ export default {
   }
 
   .operation-banner {
-    background: url("../assets/images/operation/operation-top.png") no-repeat right top !important;
 
     min-height: 265px !important;
 
