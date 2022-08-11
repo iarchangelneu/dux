@@ -1,6 +1,35 @@
 <template>
   <div>
     <div class="header-container">
+      
+      <img src="../assets/images/contact/NormEl.svg" class="round0 rounds RoundsAnime" alt="">
+      
+      <img src="../assets/images/contact/NormEl1.svg" class="round1 rounds RoundsAnime" alt="">
+      <img src="../assets/images/contact/Line1.svg" class="line1 lines LinesAnime" alt="">
+      
+      <img src="../assets/images/contact/CropedEl.svg" class="round2 rounds RoundsAnime" alt="">
+      <img src="../assets/images/contact/Line2.svg" class="line2 lines LinesAnime" alt="">
+      
+      <img src="../assets/images/contact/NormEl1.svg" class="round3 rounds RoundsAnime" alt="">
+      <img src="../assets/images/contact/Line3.svg" class="line3 lines LinesAnime" alt="">
+
+      <img src="../assets/images/contact/NormEl1.svg" class="round4 rounds RoundsAnime" alt="">
+      <img src="../assets/images/contact/Line4.svg" class="line4 lines LinesAnime" alt="">
+
+      <img src="../assets/images/contact/CropedEl.svg" class="round01 rounds RoundsAnime" alt="">
+
+      <img src="../assets/images/contact/NormEl1.svg" class="round5 rounds RoundsAnime" alt="">
+      <img src="../assets/images/contact/Line5.svg" class="line5 lines LinesAnime" alt="">
+
+      <img src="../assets/images/contact/CropedEl.svg" class="round6 rounds RoundsAnime" alt="">
+      <img src="../assets/images/contact/Line6.svg" class="line6 lines LinesAnime" alt="">
+
+      <img src="../assets/images/contact/NormEl1.svg" class="round7 rounds RoundsAnime" alt="">
+      <img src="../assets/images/contact/Line7.svg" class="line7 lines LinesAnime" alt="">
+      
+      <img src="../assets/images/contact/NormEl1.svg" class="round8 rounds RoundsAnime" alt="">
+      <img src="../assets/images/contact/Line8.svg" class="line8 lines LinesAnime" alt="">
+      
       <div class="contact-banner">
         <div class="header">
           <HeaderPart />
@@ -59,6 +88,82 @@ export default {
         mail.classList.remove('error')
       }
     },
+  },
+  mounted(){
+    
+    function addOpac(el){
+      document.querySelector(`.${el}`).classList.add('LinesShow')
+    }
+    function remOpac(el){
+      document.querySelector(`.${el}`).classList.remove('LinesShow')
+    }
+    function addShow(el){
+      document.querySelector(`.${el}`).classList.remove('RoundsAnimeR')
+      document.querySelector(`.${el}`).classList.add('RoundsAnime')
+      document.querySelector(`.${el}`).classList.add('RoundsShow')
+    }
+    function remShow(el){
+      document.querySelector(`.${el}`).classList.remove('RoundsAnime')
+      document.querySelector(`.${el}`).classList.add('RoundsAnimeR')
+      setTimeout(()=>{document.querySelector(`.${el}`).classList.remove('RoundsShow')}, 1000)
+      // document.querySelector(`.${el}`).classList.remove('RoundsShow')
+    }
+
+    function animating(){
+      //SHOWING
+    
+    setTimeout(addOpac, 1000, 'line1')
+    setTimeout(addOpac, 1100, 'line4')
+    setTimeout(addOpac, 1200, 'line7')
+    setTimeout(addOpac, 1300, 'line2')
+    setTimeout(addOpac, 1500, 'line5')
+    setTimeout(addOpac, 1600, 'line8')
+    setTimeout(addOpac, 1700, 'line6')
+    setTimeout(addOpac, 1800, 'line3')
+
+    setTimeout(addShow, 1900, 'round3')
+    setTimeout(addShow, 1900, 'round7')
+    setTimeout(addShow, 1900, 'round01')
+
+    setTimeout(addShow, 2900, 'round1')
+    setTimeout(addShow, 2900, 'round2')
+    setTimeout(addShow, 2900, 'round5')
+    setTimeout(addShow, 2900, 'round6')
+    setTimeout(addShow, 2900, 'round8')
+
+    setTimeout(addShow, 3900, 'round4')
+    setTimeout(addShow, 3900, 'round0')
+
+    //REMOVING
+
+    setTimeout(remShow, 4900, 'round4')
+    setTimeout(remShow, 4900, 'round0')
+
+    setTimeout(remShow, 5900, 'round1')
+    setTimeout(remShow, 5900, 'round2')
+    setTimeout(remShow, 5900, 'round5')
+    setTimeout(remShow, 5900, 'round6')
+    setTimeout(remShow, 5900, 'round8')
+
+    setTimeout(remShow, 6900, 'round3')
+    setTimeout(remShow, 6900, 'round7')
+    setTimeout(remShow, 6900, 'round01')
+
+    setTimeout(remOpac, 7000, 'line1')
+    setTimeout(remOpac, 7100, 'line4')
+    setTimeout(remOpac, 7200, 'line7')
+    setTimeout(remOpac, 7300, 'line2')
+    setTimeout(remOpac, 7400, 'line5')
+    setTimeout(remOpac, 7500, 'line8')
+    setTimeout(remOpac, 7600, 'line6')
+    setTimeout(remOpac, 7700, 'line3')
+    }
+
+    animating();
+
+    setInterval(animating,
+    8500
+    )
   }
 
 }
@@ -89,7 +194,7 @@ export default {
   background-size: cover;
 
   .contact-banner {
-    background: url("../assets/images/contact/Union.svg") no-repeat;
+    // background: url("../assets/images/contact/Union.svg") no-repeat;
     background-size: contain;
     padding: 25px;
     min-height: 702px;
@@ -452,7 +557,7 @@ form {
   .contact-banner__title {
     font-size: 110px !important;
     line-height: 105% !important;
-    margin-top: 244px !important;
+    margin-top: 310px !important;
     max-width: 1245px !important;
   }
 
@@ -609,5 +714,193 @@ form {
     margin-bottom: 30px;
     border-radius: 4px !important;
   }
+}
+
+.lines{
+  display: none;
+}
+.rounds{
+  display: none;
+}
+.round0{
+  position: absolute;
+  top: 18.19vw;
+  left: 2.78vw;
+}
+.round1{
+  position: absolute;
+  top: 1.46vw;
+  left: 16.25vw;
+  width: 7.99vw;
+}
+.line1{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 24.03vw;
+  width: 55.14vw;
+}
+.round2{
+  position: absolute;
+  top: 13.19vw;
+  left: 14.17vw;
+  width: 5.69vw;
+  // height: 82px;
+}
+.line2{
+  position: absolute;
+  top: 0;
+  left: 19.58vw;
+  width: 59.58vw;
+}
+.round3{
+  position: absolute;
+  top: 12.78vw;
+  left: 27.01vw;
+  width: 9.79vw;
+  // height: 141px;
+}
+.line3{
+  position: absolute;
+  top: 0;
+  left: 36.11vw;
+  width: 43.13vw;
+}
+.round4{
+  position: absolute;
+  top: 10.56vw;
+  left: 45.07vw;
+  width: 7.50vw;
+  // height: 108px;
+}
+.line4{
+  position: absolute;
+  top: 0;
+  left: 51.60vw;
+  width: 27.64vw;
+}
+
+.round01{
+  width: 3.26vw;
+  // height: 47px;
+  position: absolute;
+  top: 20.90vw;
+  left: 40.69vw;
+}
+
+.round5{
+  position: absolute;
+  top: 20.42vw;
+  left: 56.11vw;
+  width: 5vw;
+  // height: 72px;
+}
+.line5{
+  position: absolute;
+  top: 0;
+  left: 59.86vw;
+  width: 19.38vw;
+}
+
+.round6{
+  position: absolute;
+  top: 14.65vw;
+  left: 64.65vw;
+  width: 5.63vw;
+  // height: 81px;
+}
+.line6{
+  position: absolute;
+  top: 0;
+  left: 68.61vw;
+  width: 10.63vw;
+}
+
+.round7{
+  position: absolute;
+  top: 7.71vw;
+  left: 72.29vw;
+  width: 13.19vw;
+  // height: 190px;
+}
+.line7{
+  position: absolute;
+  top: 0;
+  left: 78.75vw;
+  width: 0.49vw;
+}
+
+.round8{
+  position: absolute;
+  top: 18.75vw;
+  left: 93.26vw;
+  width: 4.93vw;
+  // height: 71px;
+}
+.line8{
+  position: absolute;
+  top: 0;
+  left: 79.10vw;
+  width: 15.76vw;
+}
+</style>
+
+<style>
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes width {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes widthR {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0);
+  }
+}
+
+.LinesAnime {
+  animation-duration: 2s;
+  animation-name: opac;
+  /* display: block !important; */
+  /* opacity: 1 !important; */
+}
+
+.RoundsAnime {
+  animation-duration: 1s;
+  animation-name: width;
+  /* display: block !important; */
+  /* opacity: 1 !important; */
+}
+
+.RoundsAnimeR {
+  animation-duration: 1s;
+  animation-name: widthR;
+  /* display: block !important; */
+  /* opacity: 1 !important; */
+}
+
+.RoundsShow{
+  display: block !important;
+}
+.LinesShow{
+  display: block !important;
 }
 </style>
