@@ -618,7 +618,7 @@ export default {
 
   }
 
-  .BambooHR-ATS-Jobs-Item{
+  .BambooHR-ATS-Jobs-Item {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -681,17 +681,22 @@ export default {
 
 @keyframes anim1 {
   0% {
-    transform: rotate(0deg) translate(0, -500px);
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.25;
   }
 
   50% {
-    transform: rotate(45deg) translate(0, 0);
+    opacity: 1;
   }
 
   100% {
-    transform: rotate(0deg) translate(0, -100px);
+    opacity: 0;
   }
 }
+
 
 .car__anim1,
 .car__anim2,
@@ -701,44 +706,42 @@ export default {
   position: absolute;
 }
 
+.car__anim2,
+.car__anim5 {
+  animation: anim1 3s linear infinite;
+}
+
+.car__anim1,
+.car__anim3,
+.car__anim4 {
+  animation: anim1 4s linear infinite;
+  animation-delay: 1s;
+}
+
 .car__anim1 {
   top: 92px;
   left: 1px;
-  animation: anim1 4s linear infinite;
-  // animation-play-state: running;
-  // transform-origin: bottom right;
 }
 
 .car__anim2 {
   left: 195px;
   top: 13px;
-  animation: anim1 5s linear infinite;
-  // animation-play-state: running;
-  // transform-origin: bottom right;
 }
 
 .car__anim3 {
   left: 670px;
   top: 85px;
-  animation: anim1 6s linear infinite;
-  // animation-play-state: running;
-  // transform-origin: bottom right;
 }
 
 .car__anim4 {
   right: 450px;
   top: 220px;
-  animation: anim1 7s linear infinite;
-  // animation-play-state: running;
-  // transform-origin: bottom right;
 }
 
 .car__anim5 {
-  right: 0;
-  top: 0;
-  animation: anim1 8s linear infinite;
-  // animation-play-state: running;
-  // transform-origin: bottom right;
+  right: -90px;
+  top: -70px;
+
 }
 
 .line {

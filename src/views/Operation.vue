@@ -2,14 +2,24 @@
   <div class="back">
     <div class="header">
       <div class="operation-banner">
-        <img src="../assets/animation/oper1.svg" class="oper__anim1" alt="">
-        <img src="../assets/animation/oper2.svg" class="oper__anim2" alt="">
-        <img src="../assets/animation/oper3.svg" class="oper__anim3" alt="">
-        <img src="../assets/animation/oper4.svg" class="oper__anim4" alt="">
-        <img src="../assets/animation/oper5.svg" class="oper__anim5" alt="">
-        <img src="../assets/animation/oper6.svg" class="oper__anim6" alt="">
-        <img src="../assets/animation/oper7.svg" class="oper__anim7" alt="">
-        <img src="../assets/animation/oper8.svg" class="oper__anim8" alt="">
+        <div class="full__anim">
+          <img src="../assets/animation/oper1.svg" class="oper__anim1" alt="">
+          <img src="../assets/animation/oper2.svg" class="oper__anim2" alt="">
+          <img src="../assets/animation/oper3.svg" class="oper__anim3" alt="">
+          <img src="../assets/animation/oper4.svg" class="oper__anim4" alt="">
+          <img src="../assets/animation/oper5.svg" class="oper__anim5" alt="">
+          <img src="../assets/animation/oper6.svg" class="oper__anim6" alt="">
+          <img src="../assets/animation/oper7.svg" class="oper__anim7" alt="">
+          <img src="../assets/animation/oper8.svg" class="oper__anim8" alt="">
+          <img src="../assets/animation/oper9.svg" class="oper__anim9" alt="">
+          <img src="../assets/animation/oper10.svg" class="oper__anim10" alt="">
+          <img src="../assets/animation/oper11.svg" class="oper__anim11" alt="">
+          <img src="../assets/animation/oper12.svg" class="oper__anim12" alt="">
+          <img src="../assets/animation/oper13.svg" class="oper__anim13" alt="">
+          <img src="../assets/animation/oper14.svg" class="oper__anim14" alt="">
+          <img src="../assets/animation/oper15.svg" class="oper__anim15" alt="">
+          <img src="../assets/animation/oper16.svg" class="oper__anim16" alt="">
+        </div>
 
         <div class="menu">
           <Header />
@@ -471,6 +481,34 @@ export default {
     }
   },
   mounted() {
+    setTimeout(function () {
+      $('.oper__anim5').addClass('opacity');
+    }, 500);
+    setTimeout(function () {
+      $('.oper__anim3').addClass('opacity');
+    }, 700);
+    setTimeout(function () {
+      $('.oper__anim6').addClass('opacity');
+    }, 900);
+    setTimeout(function () {
+      $('.oper__anim4').addClass('opacity');
+    }, 1100);
+    setTimeout(function () {
+      $('.oper__anim1').addClass('opacity');
+    }, 1300);
+    setTimeout(function () {
+      $('.oper__anim2').addClass('opacity');
+    }, 1500);
+    setTimeout(function () {
+      $('.oper__anim8').addClass('opacity');
+    }, 1700);
+    setTimeout(function () {
+      $('.oper__anim7').addClass('opacity');
+    }, 1900);
+
+
+
+
     this.show()
     let width = window.innerWidth
     if (width > 480) {
@@ -485,117 +523,40 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@keyframes full {
+  0% {
+    transform: rotate(0);
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: rotate(-30deg) translate(-224px, 0);
+
+  }
+
+  100% {
+    transform: rotate(0) translate(0, 0);
+  }
+}
+
+.full__anim {
+  animation: full 7s infinite;
+  animation-delay: 2s;
+  padding-top: -30px;
+}
+
+.opacity {
+  opacity: 1 !important;
+}
+
 @keyframes oper1 {
-  0% {
-    transform: scale(0);
-  }
-
-  50% {
-    transform: scale(1);
-  }
 
   100% {
-    transform: scale(0);
+    opacity: 0;
   }
 }
 
-@keyframes oper2 {
-  0% {
-    transform: scale(0);
-  }
 
-  50% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(0);
-  }
-}
-
-@keyframes oper3 {
-  0% {
-    transform: scale(0);
-  }
-
-  50% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(0);
-  }
-}
-
-@keyframes oper4 {
-  0% {
-    transform: scale(0);
-  }
-
-  50% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(0);
-  }
-}
-
-@keyframes oper5 {
-  0% {
-    transform: scale(0);
-  }
-
-  50% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(0);
-  }
-}
-
-@keyframes oper6 {
-  0% {
-    transform: scale(0);
-  }
-
-  50% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(0);
-  }
-}
-
-@keyframes oper7 {
-  0% {
-    transform: scale(0);
-  }
-
-  50% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(0);
-  }
-}
-
-@keyframes oper8 {
-  0% {
-    transform: scale(0);
-  }
-
-  50% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(0);
-  }
-}
 
 
 .oper__anim1,
@@ -608,55 +569,108 @@ export default {
 .oper__anim8 {
   position: absolute;
   z-index: 1;
+  opacity: 0;
+}
+
+.oper__anim9,
+.oper__anim10,
+.oper__anim11,
+.oper__anim12,
+.oper__anim13,
+.oper__anim14,
+.oper__anim15,
+.oper__anim16 {
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
 }
 
 .oper__anim1 {
   right: 872px;
   top: -105px;
+  // animation: oper1 2s;
+  // animation-delay: 0.9s;
 
-  animation: oper1 2s linear infinite;
 }
 
 .oper__anim2 {
   right: 574px;
   top: -135px;
-  animation: oper2 2s linear infinite;
 }
 
 .oper__anim3 {
   right: 257px;
   top: -163px;
-  animation: oper3 2s linear infinite;
+  // animation: oper1 2s;
+  // animation-delay: 0.3s;
 }
 
 .oper__anim4 {
   right: -37px;
   top: -190px;
-  animation: oper4 2s linear infinite;
 }
 
 .oper__anim5 {
   right: 675px;
   top: 210px;
-  animation: oper5 2s linear infinite;
+  // animation: oper1 2s;
 }
 
 .oper__anim6 {
   right: 547px;
   top: 185px;
-  animation: oper6 2s linear infinite;
+  // animation: oper1 2s;
+  // animation-delay: 0.6s;
 }
 
 .oper__anim7 {
   right: 297px;
   top: 162px;
-  animation: oper7 2s linear infinite;
 }
 
 .oper__anim8 {
   right: 45px;
   top: 140px;
-  animation: oper8 2s linear infinite;
+}
+
+.oper__anim9 {
+  right: 920px;
+  top: -420px;
+}
+
+.oper__anim10 {
+  right: 595px;
+  top: -450px;
+}
+
+.oper__anim11 {
+  right: 260px;
+  top: -470px;
+}
+
+.oper__anim12 {
+  right: -30px;
+  top: -490px;
+}
+
+.oper__anim13 {
+  right: 780px;
+  top: -730px;
+}
+
+.oper__anim14 {
+  right: 620px;
+  top: -730px;
+}
+
+.oper__anim15 {
+  right: 335px;
+  top: -730px;
+}
+
+.oper__anim16 {
+  right: 90px;
+  top: -750px;
 }
 
 .unique-container-left-side-dote {
