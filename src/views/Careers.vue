@@ -618,6 +618,12 @@ export default {
 
   }
 
+  .BambooHR-ATS-Jobs-Item{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
   .BambooHR-ATS-board li:hover {
     background: #1F2941;
     padding-left: 0 !important;
@@ -643,6 +649,7 @@ export default {
 
   .BambooHR-ATS-Location {
     font-size: 12px;
+    white-space: nowrap;
   }
 }
 </style>
