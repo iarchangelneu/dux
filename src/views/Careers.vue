@@ -613,6 +613,25 @@ export default {
 }
 
 @media screen and (max-width:450px) {
+  .openings__content:hover {
+    width: 100%;
+
+  }
+
+  .BambooHR-ATS-board li:hover {
+    background: #1F2941;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+  }
+
+  .career-main-block-items:hover {
+    background: #1F2941;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+  }
+
   .BambooHR-ATS-board a {
     font-size: 14px !important;
 

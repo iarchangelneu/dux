@@ -577,6 +577,18 @@ export default {
 }
 
 @media screen and (max-width: 1024px) {
+  .container {
+    .header {
+      .content {
+        p {
+          margin-top: 10px !important;
+          font-size: 110px !important;
+          line-height: 105% !important;
+        }
+      }
+    }
+  }
+
   .container .header .content .p .brave svg {
     min-width: 10px;
     min-height: 10px;
