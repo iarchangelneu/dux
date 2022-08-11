@@ -825,171 +825,7 @@ export default {
 
 }
 
-@media screen and (max-width: 450px) {
-  .container .seeking .title {
-    padding: 0 25px;
-    padding-top: 72px;
-  }
-
-  .container .lists .title {
-    padding: 0px 25px;
-    padding-top: 72px;
-  }
-
-  .container .header_part .content p span {
-    margin: 0 !important;
-  }
-
-  .container {
-    &>* {
-      margin-top: -1px;
-    }
-
-    .header_part {
-      height: 265px !important;
-
-      .images {
-        img {
-          height: 120px !important;
-        }
-      }
-
-      .content {
-        p {
-          font-size: 34px !important;
-          width: 100% !important;
-          line-height: 110% !important;
-          position: relative !important;
-          margin-top: -20px !important;
-          display: flex !important;
-          flex-direction: column !important;
-
-          span.brave {
-            font-size: 16px !important;
-            line-height: 20px !important;
-            margin: 0 15px 10px 0 !important;
-            vertical-align: middle !important;
-
-            svg {
-              width: 10px !important;
-              height: 10px !important;
-            }
-          }
-        }
-      }
-    }
-
-    .learn {
-      .title {
-        padding: 0 16px !important;
-      }
-
-      padding-top: 70px !important;
-
-      .content {
-        width: auto !important;
-        padding: 30px 16px !important;
-
-        p {
-          font-size: 20px !important;
-        }
-      }
-    }
-
-    .lists {
-      .content {
-        padding: 20px 16px 0 16px !important;
-        display: flex !important;
-        flex-direction: column !important;
-
-        &__item {
-          padding: 10px 0 30px 0 !important;
-          display: flex !important;
-          flex-direction: column !important;
-          align-items: flex-start !important;
-
-          div {
-            width: auto !important;
-            display: flex !important;
-
-            //align-items: center !important;
-            svg {
-              margin-right: 10px !important;
-              width: 10px !important;
-              margin-top: 5px !important;
-              height: 10px !important;
-            }
-
-            p {
-              font-size: 16px !important;
-              line-height: 25px !important;
-            }
-          }
-
-          h4 {
-            width: auto !important;
-            font-size: 14px !important;
-            line-height: 16px !important;
-          }
-        }
-      }
-    }
-
-    .seeking {
-      padding: 0 !important;
-
-      .content {
-        width: 95% !important;
-        margin-top: 0px !important;
-
-        img:first-child {
-          display: none;
-        }
-
-        //img.small-bg{
-        //  display: block !important;
-        //  width: 100% !important;
-        //}
-        .text {
-          position: relative;
-          margin-top: 50px !important;
-          background-image: url('../assets/images/seeking320.png');
-          background-position: center;
-          background-size: cover;
-          width: auto !important;
-          border-radius: 15px !important;
-          margin: 0 auto;
-          padding: 50px 16px !important;
-
-          p {
-            font-size: 16px !important;
-            line-height: 20px !important;
-            padding-bottom: 25px !important;
-          }
-
-          span {
-            font-size: 16px !important;
-            line-height: 20px !important;
-
-            a {
-              display: block !important;
-              margin-left: 0 !important;
-              font-size: 12px !important;
-              line-height: 16px !important;
-              letter-spacing: 0.04em !important;
-            }
-          }
-
-          span:not(:last-child) {
-            margin-bottom: 30px !important;
-          }
-        }
-      }
-    }
-
-  }
-
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .container .header_part .content p span {
       margin: 0 !important;
     }
@@ -1148,9 +984,183 @@ export default {
     }
 
   }
-}
 
+@media screen and (max-width: 450px) {
+  .images__vl{
+    margin-top: 20px;
+  }
+  .container .seeking .title {
+    padding: 0 25px;
+    padding-top: 72px;
+  }
+
+  .container .lists .title {
+    padding: 0px 25px;
+    padding-top: 72px;
+  }
+
+  .container .header_part .content p span {
+    margin: 0 !important;
+  }
+
+  .container {
+    &>* {
+      margin-top: -1px;
+    }
+
+    .header_part {
+      height: 265px !important;
+
+      .images {
+        img {
+          height: 60px !important;
+        }
+      }
+
+      .content {
+        p {
+          font-size: 34px !important;
+          width: 100% !important;
+          line-height: 110% !important;
+          position: relative !important;
+          margin-top: -20px !important;
+          display: flex !important;
+          flex-direction: column !important;
+
+          span.brave {
+            font-size: 16px !important;
+            line-height: 20px !important;
+            margin: 0 15px 10px 0 !important;
+            vertical-align: middle !important;
+
+            svg {
+              width: 10px !important;
+              height: 10px !important;
+            }
+          }
+        }
+      }
+    }
+
+    .learn {
+      .title {
+        padding: 0 16px !important;
+      }
+
+      padding-top: 70px !important;
+
+      .content {
+        width: auto !important;
+        padding: 30px 16px !important;
+
+        p {
+          font-size: 20px !important;
+        }
+      }
+    }
+
+    .lists {
+      .content {
+        padding: 20px 16px 0 16px !important;
+        display: flex !important;
+        flex-direction: column !important;
+
+        &__item {
+          padding: 10px 0 30px 0 !important;
+          display: flex !important;
+          flex-direction: column !important;
+          align-items: flex-start !important;
+
+          div {
+            width: auto !important;
+            display: flex !important;
+
+            //align-items: center !important;
+            svg {
+              margin-right: 10px !important;
+              width: 10px !important;
+              margin-top: 5px !important;
+              height: 10px !important;
+            }
+
+            p {
+              font-size: 16px !important;
+              line-height: 25px !important;
+            }
+          }
+
+          h4 {
+            width: auto !important;
+            font-size: 14px !important;
+            line-height: 16px !important;
+          }
+        }
+      }
+    }
+
+    .seeking {
+      padding: 0 !important;
+
+      .content {
+        width: 95% !important;
+        margin-top: 0px !important;
+
+        img:first-child {
+          display: none;
+        }
+
+        //img.small-bg{
+        //  display: block !important;
+        //  width: 100% !important;
+        //}
+        .text {
+          position: relative;
+          margin-top: 50px !important;
+          background-image: url('../assets/images/seeking320.png');
+          background-position: center;
+          background-size: cover;
+          width: auto !important;
+          border-radius: 15px !important;
+          margin: 0 auto;
+          padding: 50px 16px !important;
+
+          p {
+            font-size: 16px !important;
+            line-height: 20px !important;
+            padding-bottom: 25px !important;
+          }
+
+          span {
+            font-size: 16px !important;
+            line-height: 20px !important;
+
+            a {
+              display: block !important;
+              margin-left: 0 !important;
+              font-size: 12px !important;
+              line-height: 16px !important;
+              letter-spacing: 0.04em !important;
+            }
+          }
+
+          span:not(:last-child) {
+            margin-bottom: 30px !important;
+          }
+        }
+      }
+    }
+
+  }
+
+  
+}
+.images__vl {
+  margin-top: 140px;
+}
 @media screen and (min-width: 375px) and (max-width: 425px) {
+  .images__vl {
+    margin-top: 20px;
+  }
   .container {
     .seeking {
       .content {
@@ -1182,9 +1192,7 @@ export default {
   }
 }
 
-.images__vl {
-  margin-top: 140px;
-}
+
 
 .anim__top__cont {
   width: 0;
