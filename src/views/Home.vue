@@ -593,7 +593,7 @@
 
 
           </VueSlickCarousel>
-          <!-- <div class="arrows">
+          <div class="arrows arrows-news">
             <div class="prev" @click="$refs.holding.prev()">
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="#2F5BD8" class="bi bi-arrow-left"
                 viewBox="0 0 16 16">
@@ -608,7 +608,7 @@
                   d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
               </svg>
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
@@ -1192,6 +1192,45 @@ export default {
           margin: 0;
         }
 
+        @media screen and (max-width: 1024px){
+          p {
+          color: #F0F0F0;
+          font-family: 'Oxygen';
+          font-style: normal;
+          font-weight: 400;
+          text-transform: uppercase;
+          font-size: 84px !important;
+          line-height: 95%;
+          margin: 0;
+        }
+        }
+
+        @media screen and (max-width: 768px){
+          p {
+          color: #F0F0F0;
+          font-family: 'Oxygen';
+          font-style: normal;
+          font-weight: 400;
+          text-transform: uppercase;
+          font-size: 68px !important;
+          line-height: 95%;
+          margin: 0;
+        }
+        }
+
+        @media screen and (max-width: 475px){
+          p {
+          color: #F0F0F0;
+          font-family: 'Oxygen';
+          font-style: normal;
+          font-weight: 400;
+          text-transform: uppercase;
+          font-size: 58px !important;
+          line-height: 95%;
+          margin: 0;
+        }
+        }
+
         .circle {
           margin: 40px;
           width: 30px !important;
@@ -1707,18 +1746,19 @@ export default {
 
       .content {
         .figure {
-          padding: 84px 95px !important;
+          padding: 73px 97px !important;
           background-image: url('../assets/images/gambling.png');
 
           p {
-            width: 100% !important;
+            width: 79% !important;
             font-size: 32px !important;
             line-height: 125% !important;
             margin-left: -45px;
           }
 
           .circle {
-            // width: 150px;
+            width: 130px;
+            height: 130px;
           }
         }
       }
@@ -1959,7 +1999,7 @@ export default {
         letter-spacing: 0.02em !important;
       }
 
-      img {
+      img:nth-child(1) {
         width: 70px !important;
         height: 70px !important;
         vertical-align: bottom !important;
@@ -2355,11 +2395,11 @@ export default {
         letter-spacing: 0.02em !important;
       }
 
-      img {
-        width: 70px !important;
-        height: 70px !important;
-        vertical-align: bottom !important;
-      }
+      // img:nth-child(1) {
+      //   width: 70px !important;
+      //   height: 70px !important;
+      //   vertical-align: bottom !important;
+      // }
     }
 
     .content {
@@ -5066,6 +5106,17 @@ export default {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .TestCazino{
+  width: 100px;
+  height: 100px;
+  border: 0.882353px solid #828FA1;
+  border-radius: 116.883px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+  }
+
 .TestCazino:hover{
   background: #828FA1;
   cursor: pointer;
@@ -5077,12 +5128,33 @@ export default {
     width: 61px;
     height: 40px;
   }
+  @media screen and (max-width: 1024px) {
+    img{
+      padding: 40px 30px 40px 30px;
+      width: 40px !important;
+      height: 27px !important;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    img{
+      padding: 40px 30px 40px 30px;
+      width: 40px !important;
+      height: 27px !important;
+    }
+  }
 }
 .Pino{
   img{
     padding: 59px 51px 60px 50px;
     width: 49px;
     height: 31px;
+  }
+  @media screen and (max-width: 1024px) {
+    img{
+      padding: 43px 30px 40px 34px;
+      width: 33px !important;
+      height: 18px !important;
+    }
   }
 }
 
@@ -5092,12 +5164,27 @@ export default {
     width: 63px;
     height: 32px;
   }
+  @media screen and (max-width: 1024px) {
+    img{
+      padding: 40px 24px 40px 30px;
+      width: 42px !important;
+      height: 22px !important;
+    }
+  }
 }
 .Octo{
   img{
     padding: 60px 44.5px 60px 44.5px;
     width: 61px;
     height: 30px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    img{
+      padding: 42px 40.5px 60px 30.5px;
+      width: 41px !important;
+      height: 20px !important;
+    }
   }
 }
 
@@ -5107,10 +5194,27 @@ export default {
     width: 51.45px;
     height: 36.95px;
   }
+  @media screen and (max-width: 1024px) {
+    img{
+      padding: 42px 38.5px 36px 34.5px;
+      width: 34px !important;
+      height: 24px !important;
+    }
+  }
 }
 
 .marqueeSecond{
   margin-top: 4px;
+}
+
+.arrows-news{
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .arrows-news{
+    display: flex;
+  }
 }
 
 </style>
