@@ -292,6 +292,12 @@ export default {
             min-height: 20px;
           }
         }
+        
+        @media screen and (max-width: 768px) {
+          .brave{
+            max-width: 150px;
+          }
+        }
       }
     }
   }
@@ -725,7 +731,7 @@ export default {
 
       .images {
         img {
-          height: 184px !important;
+          // height: 184px !important;
         }
       }
 
@@ -826,7 +832,7 @@ export default {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .container .header_part .content p span {
       margin: 0 !important;
     }
@@ -841,7 +847,7 @@ export default {
 
         .images {
           img {
-            height: 120px !important;
+            // height: 120px !important;
           }
         }
 
@@ -1014,7 +1020,7 @@ export default {
 
       .images {
         img {
-          height: 60px !important;
+          // height: 60px !important;
         }
       }
 
@@ -1167,7 +1173,7 @@ export default {
 
 @media screen and (min-width: 375px) and (max-width: 425px) {
   .images__vl {
-    margin-top: 20px;
+    margin-top: 50px;
   }
   .container {
     .seeking {
@@ -1302,6 +1308,12 @@ export default {
   transition: 1s !important;
 }
 
+@media screen and (max-width: 1378px) {
+.shildBot{
+  bottom: -13vw;
+}
+}
+
 @media screen and (max-width: 1024px) {
   .anim__top__cont {
   width: 69.43vw;
@@ -1349,7 +1361,7 @@ export default {
 }
 @media screen and (max-width: 768px) {
   .anim__top__cont {
-  width: 69.43vw;
+  width: 65.63vw;
   transition: width 2s;
   overflow-x: hidden;
   position: relative;
@@ -1358,36 +1370,82 @@ export default {
 
 .anim__bot__cont {
   margin-top: 2.08vw;
-  width: 56.25vw;
+  width: 52.86vw;
   transition: width 2s;
   overflow-x: hidden;
 }
 .shildUp{
-  width: 68px;
+  width: 48px;
   top: -6vw;
-  right: 43.5vw;
+  right: 41vw;
 }
 .lodckBot{
-  width: 30px;
-  right: 28vw;
+  width: 22px;
+  right: 26.5vw;
   top: 3.5vw;
 }
 .left__lock{
-  width: 64px;
-  left: 200px;
+  width: 46px;
+  left: 180px;
   top: -17px;
 }
 .shildBot{
-  width: 98px;
+  width: 70px;
   bottom: -10vw;
-  right: 5.8vw;
+  right: 4.8vw;
 }
 .container{
   .header_part{
 
     height: unset !important;
     .content{
-      margin-top: 26px;
+      margin-top: 77px;
+    }
+  }
+}
+}
+@media screen and (max-width: 450px) {
+  .anim__top__cont {
+  width: 96.25vw;
+  transition: width 2s;
+  overflow-x: hidden;
+  position: relative;
+  overflow-y: visible;
+}
+
+.anim__bot__cont {
+  margin-top: 2.08vw;
+  width: 76.88vw;
+  transition: width 2s;
+  overflow-x: hidden;
+}
+.shildUp{
+  width: 10vw;
+  top: -8vw;
+  right: 59.5vw;
+}
+.lodckBot{
+  width: 4.38vw;
+  right: 37vw;
+  top: 5.5vw;
+}
+.left__lock{
+  width: 46px;
+  left: 180px;
+  top: -17px;
+  display: none;
+}
+.shildBot{
+  width: 14.38vw;
+  bottom: -14vw;
+  right: 3.8vw;
+}
+.container{
+  .header_part{
+
+    height: unset !important;
+    .content{
+      margin-top: 77px;
     }
   }
 }
