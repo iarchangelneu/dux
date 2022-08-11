@@ -6,20 +6,21 @@
       </div>
       <div class="images images__vl">
         <img src="../assets/images/gaming/leftLock.svg" id="left__lock" style="" class="left__lock"
-          data-aos-easing="linear" data-aos-duration="500" alt="" data-aos="fade-down" data-aos-delay="2700">
+          data-aos-easing="linear" data-aos-duration="500" alt="" data-aos="zoom-in" data-aos-delay="2500">
         <!-- <img src="../assets/images/gaming/header-photo.svg" style="float: right" /> -->
 
         <img src="../assets/images/gaming/shildUp.svg" id="shildUp" class="shildUp" alt="" data-aos-easing="linear"
-          data-aos-duration="500" data-aos="fade-down" data-aos-delay="2800">
+          data-aos-duration="500" data-aos="zoom-in" data-aos-delay="2000">
         <img src="../assets/images/gaming/lodckBot.svg" id="lodckBot" class="lodckBot" alt="" data-aos-easing="linear"
-          data-aos-duration="500" data-aos="fade-down" data-aos-delay="2900">
+          data-aos-duration="500" data-aos="zoom-in" data-aos-delay="1500">
         <img src="../assets/images/gaming/shildBot.svg" id="shildBot" class="shildBot" alt="" data-aos-easing="linear"
-          data-aos-duration="500" data-aos="fade-down" data-aos-delay="3000">
-        <div class="anim__top__cont" id="anim__top__cont">
+          data-aos-duration="500" data-aos="zoom-in" data-aos-delay="3000">
+        
+        <div class="anim__top__cont" id="anim__top__cont" data-aos-duration="1000" data-aos-delay="500" data-aos="fade-in">
           <img class="anim__lineTop" src="../assets/images/gaming/lineTop.svg" alt="">
 
         </div>
-        <div class="anim__bot__cont" id="anim__bot__cont">
+        <div class="anim__bot__cont" id="anim__bot__cont" data-aos-duration="500" data-aos="fade-in">
           <img class="anim__lineBot" src="../assets/images/gaming/lineBot.svg" alt="">
         </div>
       </div>
@@ -196,27 +197,27 @@ export default {
     window.removeEventListener('resize', this.handleResize);
   },
   mounted() {
-    setTimeout(() => { document.getElementById('anim__top__cont').classList.add('anim__top__cont__active') }, 500)
-    setTimeout(() => { document.getElementById('anim__bot__cont').classList.add('anim__bot__cont__active') }, 1500)
+    // setTimeout(() => { document.getElementById('anim__top__cont').classList.add('anim__top__cont__active') }, 500)
+    // setTimeout(() => { document.getElementById('anim__bot__cont').classList.add('anim__bot__cont__active') }, 1500)
     setTimeout(() => {
-      document.getElementById('left__lock').classList.add('anim__rot')
-    }, 3300)
+      document.getElementById('left__lock').classList.add('trans')
+    }, 2500)
     setTimeout(() => {
-      document.getElementById('shildUp').classList.add('anim__rot__left')
-    }, 3400)
+      document.getElementById('shildUp').classList.add('trans')
+    }, 2000)
     setTimeout(() => {
-      document.getElementById('lodckBot').classList.add('anim__rot')
-    }, 3500)
+      document.getElementById('lodckBot').classList.add('trans')
+    }, 1500)
     setTimeout(() => {
-      document.getElementById('shildBot').classList.add('anim__rot__left')
-    }, 3600)
+      document.getElementById('shildBot').classList.add('trans')
+    }, 300)
   }
 }
 </script>
 
 <style lang="scss" scoped>
 .blue {
-  color: #485567;
+  color: #2F5BD8;
 }
 
 .small-bg {
@@ -1157,6 +1158,13 @@ export default {
 .images__vl {
   margin-top: 140px;
 }
+
+@media screen and (max-width: 1024px){
+ .images__vl {
+  margin-top: 80px;
+}
+}
+
 @media screen and (min-width: 375px) and (max-width: 425px) {
   .images__vl {
     margin-top: 20px;
@@ -1195,7 +1203,7 @@ export default {
 
 
 .anim__top__cont {
-  width: 0;
+  width: 75.69vw;
   transition: width 2s;
   overflow-x: hidden;
   position: relative;
@@ -1203,24 +1211,45 @@ export default {
 }
 
 .anim__lineTop {
-  width: 75.69vw;
+  width:100%;
 }
 
 .anim__bot__cont {
   margin-top: 2.08vw;
-  width: 0;
+  width: 60.76vw;
   transition: width 2s;
   overflow-x: hidden;
-
 }
 
 .anim__lineBot {
+  width:100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .anim__top__cont {
+  width: 75.69vw;
+  transition: width 2s;
+  overflow-x: hidden;
+  position: relative;
+  overflow-y: visible;
+}
+
+.anim__bot__cont {
+  margin-top: 2.08vw;
   width: 60.76vw;
+  transition: width 2s;
+  overflow-x: hidden;
+}
 }
 
 .left__lock {
   position: absolute;
   left: 160px;
+  top: -30px;
+}
+.left__lock:hover {
+  position: absolute;
+  left: 175px;
   top: -30px;
 }
 
@@ -1231,6 +1260,13 @@ export default {
   // right: 665px;
   right: 47.48vw;
 }
+.shildUp:hover {
+  position: absolute;
+  // top: -118px;
+  top: -6vw;
+  // right: 665px;
+  right: 48.48vw;
+}
 
 .lodckBot {
   position: absolute;
@@ -1239,6 +1275,13 @@ export default {
   // right: 665px;
   right: 30.48vw;
 }
+.lodckBot:hover {
+  position: absolute;
+  // top: -118px;
+  top: 2.8vw;
+  // right: 665px;
+  right: 29.7vw;
+}
 
 .shildBot {
   position: absolute;
@@ -1246,6 +1289,108 @@ export default {
   bottom: -10vw;
   // right: 665px;
   right: 1.8vw;
+}
+.shildBot:hover {
+  position: absolute;
+  // top: -118px;
+  bottom: -11.39vw;
+  // right: 665px;
+  right: 3.19vw;
+}
+
+.trans{
+  transition: 1s !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .anim__top__cont {
+  width: 69.43vw;
+  transition: width 2s;
+  overflow-x: hidden;
+  position: relative;
+  overflow-y: visible;
+}
+
+.anim__bot__cont {
+  margin-top: 2.08vw;
+  width: 56.25vw;
+  transition: width 2s;
+  overflow-x: hidden;
+}
+.shildUp{
+  width: 68px;
+  top: -6vw;
+  right: 43.5vw;
+}
+.lodckBot{
+  width: 30px;
+  right: 28vw;
+  top: 3.5vw;
+}
+.left__lock{
+  width: 64px;
+  left: 200px;
+  top: -17px;
+}
+.shildBot{
+  width: 98px;
+  bottom: -10vw;
+  right: 5.8vw;
+}
+.container{
+  .header_part{
+
+    height: unset !important;
+    .content{
+      margin-top: 26px;
+    }
+  }
+}
+}
+@media screen and (max-width: 768px) {
+  .anim__top__cont {
+  width: 69.43vw;
+  transition: width 2s;
+  overflow-x: hidden;
+  position: relative;
+  overflow-y: visible;
+}
+
+.anim__bot__cont {
+  margin-top: 2.08vw;
+  width: 56.25vw;
+  transition: width 2s;
+  overflow-x: hidden;
+}
+.shildUp{
+  width: 68px;
+  top: -6vw;
+  right: 43.5vw;
+}
+.lodckBot{
+  width: 30px;
+  right: 28vw;
+  top: 3.5vw;
+}
+.left__lock{
+  width: 64px;
+  left: 200px;
+  top: -17px;
+}
+.shildBot{
+  width: 98px;
+  bottom: -10vw;
+  right: 5.8vw;
+}
+.container{
+  .header_part{
+
+    height: unset !important;
+    .content{
+      margin-top: 26px;
+    }
+  }
+}
 }
 </style>
 
