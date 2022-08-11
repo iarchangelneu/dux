@@ -294,66 +294,102 @@
         <div class="Marquee" style="margin-bottom: 0;">
           <div class="Marquee-content">
             <div class="Marquee-tag max-width">
-              <img src="../assets/images/marquee/nineCasino.svg" class="ml10" />
+              <!-- <img src="../assets/images/marquee/nineCasino.svg" class="ml10" /> -->
+              <div class="TestCazino Nine" onclick="window.open('https://ninecasino.com/', '_blank')">
+                <img src="../assets/images/marquee/NineLogo.png" alt="">
+              </div>
               <p>WE LOVE</p>
             </div>
 
             <div class="Marquee-tag max-width">
-              <img src="../assets/images/marquee/pino.svg" class="ml10" />
+              <!-- <img src="../assets/images/marquee/pino.svg" class="ml10" /> -->
+              <div class="TestCazino Pino" onclick="window.open('https://www.pinocasino.com/', '_blank')">
+                <img src="../assets/images/marquee/PinoLogo.svg" alt="">
+              </div>
               <p>WE LOVE</p>
             </div>
 
             <div class="Marquee-tag max-width">
-              <img src="../assets/images/marquee/duxcasino.svg" class="ml10" />
+              <!-- <img src="../assets/images/marquee/duxcasino.svg" class="ml10" /> -->
+              <div class="TestCazino DuxMar" onclick="window.open('https://www.duxcasino.com/', '_blank')">
+                <img src="../assets/images/marquee/DuxLogo.svg" alt="">
+              </div>
               <p>WE LOVE</p>
             </div>
             <div class="Marquee-tag max-width">
-              <img src="../assets/images/marquee/nineCasino.svg" class="ml10" />
+              <!-- <img src="../assets/images/marquee/nineCasino.svg" class="ml10" /> -->
+              <div class="TestCazino Nine" onclick="window.open('https://ninecasino.com/', '_blank')">
+                <img src="../assets/images/marquee/NineLogo.png" alt="">
+              </div>
               <p>WE LOVE</p>
             </div>
 
             <div class="Marquee-tag max-width">
-              <img src="../assets/images/marquee/pino.svg" class="ml10" />
+              <!-- <img src="../assets/images/marquee/pino.svg" class="ml10" /> -->
+              <div class="TestCazino Pino" onclick="window.open('https://www.pinocasino.com/', '_blank')">
+                <img src="../assets/images/marquee/PinoLogo.svg" alt="">
+              </div>
               <p>WE LOVE</p>
             </div>
 
             <div class="Marquee-tag max-width">
-              <img src="../assets/images/marquee/duxcasino.svg" class="ml10" />
+              <!-- <img src="../assets/images/marquee/duxcasino.svg" class="ml10" /> -->
+              <div class="TestCazino DuxMar" onclick="window.open('https://www.duxcasino.com/', '_blank')">
+                <img src="../assets/images/marquee/DuxLogo.svg" alt="">
+              </div>
               <p>WE LOVE</p>
             </div>
 
           </div>
         </div>
       </div>
-      <div class="marquee-container">
+      <div class="marquee-container marqueeSecond">
         <div class="Marquee">
           <div class="Marquee-content2">
             <div class="Marquee-tag max-width">
               <p>WHAT WE DO</p>
-              <img src="../assets/images/marquee/octo.svg" class="ml10" />
+              <!-- <img src="../assets/images/marquee/octo.svg" class="ml10" /> -->
+              <div class="TestCazino Octo" onclick="window.open('https://www.octocasino.com/', '_blank')">
+                <img src="../assets/images/marquee/OctoLogo.svg" alt="">
+              </div>
             </div>
             <div class="Marquee-tag max-width">
               <p>WHAT WE DO</p>
-              <img src="../assets/images/marquee/getslots.svg" class="ml10" />
-            </div>
-
-            <div class="Marquee-tag max-width">
-              <p>WHAT WE DO</p>
-              <img src="../assets/images/marquee/octo.svg" class="ml10" />
-            </div>
-            <div class="Marquee-tag max-width">
-              <p>WHAT WE DO</p>
-              <img src="../assets/images/marquee/getslots.svg" class="ml10" />
+              <div class="TestCazino Gets" onclick="window.open('https://www.getslots.com/', '_blank')">
+                <img src="../assets/images/marquee/GetslotsLogo.svg" alt="">
+              </div>
+              <!-- <img src="../assets/images/marquee/getslots.svg" class="ml10" /> -->
             </div>
 
             <div class="Marquee-tag max-width">
               <p>WHAT WE DO</p>
-              <img src="../assets/images/marquee/octo.svg" class="ml10" />
+              <!-- <img src="../assets/images/marquee/octo.svg" class="ml10" /> -->
+              <div class="TestCazino Octo" onclick="window.open('https://www.octocasino.com/', '_blank')">
+                <img src="../assets/images/marquee/OctoLogo.svg" alt="">
+              </div>
+            </div>
+            <div class="Marquee-tag max-width">
+              <p>WHAT WE DO</p>
+              <!-- <img src="../assets/images/marquee/getslots.svg" class="ml10" /> -->
+              <div class="TestCazino Gets" onclick="window.open('https://www.getslots.com/', '_blank')">
+                <img src="../assets/images/marquee/GetslotsLogo.svg" alt="">
+              </div>
             </div>
 
             <div class="Marquee-tag max-width">
               <p>WHAT WE DO</p>
-              <img src="../assets/images/marquee/getslots.svg" class="ml10" />
+              <!-- <img src="../assets/images/marquee/octo.svg" class="ml10" /> -->
+              <div class="TestCazino Octo" onclick="window.open('https://www.octocasino.com/', '_blank')">
+                <img src="../assets/images/marquee/OctoLogo.svg" alt="">
+              </div>
+            </div>
+
+            <div class="Marquee-tag max-width">
+              <p>WHAT WE DO</p>
+              <!-- <img src="../assets/images/marquee/getslots.svg" class="ml10" /> -->
+              <div class="TestCazino Gets" onclick="window.open('https://www.getslots.com/', '_blank')">
+                <img src="../assets/images/marquee/GetslotsLogo.svg" alt="">
+              </div>
             </div>
 
           </div>
@@ -640,7 +676,10 @@ let mooveCursor = () => {
     if (window.location.pathname == '/') {
       // console.log(document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth + 90)
       if (window.innerWidth >= 1920) {
-        if (mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - 150 ) {
+        if (mouseX < 700 || mouseX > document.querySelector('.map').offsetWidth - 650
+        || e.pageY > document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 550
+        || e.pageY < document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 141
+        ) {
           document.querySelector('#cards').style.visibility = `hidden`;
         } else {
           document.querySelector('#cards').style.visibility = `visible`;
@@ -648,20 +687,19 @@ let mooveCursor = () => {
         }
       }
       else if (window.innerWidth >= 1200) {
-        if (mouseX < 500 || mouseX > document.querySelector('.map').offsetWidth - 400) 
+        if ((mouseX < 500 || mouseX > document.querySelector('.map').offsetWidth - 400) 
+        || e.pageY > document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 447
+        || e.pageY < document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 141
+        ) 
             // && (e.pageY < (document.querySelector('.map').getBoundingClientRect().top + window.pageYOffset + 600))
             // && (e.pageY > document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 400)
         {
           document.querySelector('#cards').style.visibility = `hidden`;
         } else {
+          // console.log(e.pageY>9140);
           document.querySelector('#cards').style.visibility = `visible`;
-          // console.log(e.pageY < (document.querySelector('.map').getBoundingClientRect().top + window.pageYOffset + 600))
-          // console.log('asd');
-          // console.log(e.pageY > document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 400);
+          // console.log(document.querySelector('.map').getBoundingClientRect().top + window.pageYOffset)
           // console.log(e.pageY)
-          // console.log('map:')
-          // console.log((document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 150))
-          // console.log(e.pageY < document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 150)
         }
       }
       else if (window.innerWidth >= 900) {
@@ -1043,11 +1081,11 @@ export default {
       display: -ms-flexbox;
       display: box;
       display: flex;
-      -webkit-animation: marquee 20s linear infinite running;
-      -moz-animation: marquee 20s linear infinite running;
-      -o-animation: marquee 20s linear infinite running;
-      -ms-animation: marquee 20s linear infinite running;
-      animation: marquee 20s linear infinite running;
+      -webkit-animation: marquee 25s linear infinite running;
+      -moz-animation: marquee 25s linear infinite running;
+      -o-animation: marquee 25s linear infinite running;
+      -ms-animation: marquee 25s linear infinite running;
+      animation: marquee 25s linear infinite running;
       animation-direction: reverse;
 
       .Marquee-tag {
@@ -1098,6 +1136,12 @@ export default {
 
     }
 
+    .Marquee-content:hover{
+        -webkit-animation-play-state:paused;
+        -moz-animation-play-state:paused;
+        animation-play-state:paused;
+    }
+
     .Marquee-content2 {
       display: -webkit-box;
       display: -moz-box;
@@ -1105,13 +1149,12 @@ export default {
       display: -ms-flexbox;
       display: box;
       display: flex;
-      -webkit-animation: marquee 27s linear infinite running;
-      -moz-animation: marquee 27s linear infinite running;
-      -o-animation: marquee 27s linear infinite running;
-      -ms-animation: marquee 27s linear infinite running;
-      animation: marquee 27s linear infinite running;
+      -webkit-animation: marquee 32s linear infinite running;
+      -moz-animation: marquee 32s linear infinite running;
+      -o-animation: marquee 32s linear infinite running;
+      -ms-animation: marquee 32s linear infinite running;
+      animation: marquee 32s linear infinite running;
       animation-direction: reverse;
-
       .Marquee-tag {
         width: fit-content;
         display: -webkit-inline-box;
@@ -1158,6 +1201,11 @@ export default {
         }
       }
 
+    }
+    .Marquee-content2:hover{
+        -webkit-animation-play-state:paused;
+        -moz-animation-play-state:paused;
+        animation-play-state:paused;
     }
   }
 }
@@ -5002,6 +5050,67 @@ export default {
 }
 .swiper-slide{
   line-height: 28px;
+}
+
+.TestCazino{
+  width: 150px;
+  height: 150px;
+  border: 0.882353px solid #828FA1;
+  border-radius: 116.883px;
+  margin-right: 10px;
+  margin-left: 10px;
+  img{
+    padding: 50px 45px 60px 44px;
+    width: 61px;
+    height: 40px;
+  }
+}
+
+.TestCazino:hover{
+  background: #828FA1;
+  cursor: pointer;
+}
+
+.Nine{
+  img{
+    padding: 50px 45px 60px 44px;
+    width: 61px;
+    height: 40px;
+  }
+}
+.Pino{
+  img{
+    padding: 59px 51px 60px 50px;
+    width: 49px;
+    height: 31px;
+  }
+}
+
+.DuxMar{
+  img{
+    padding: 61px 44px 57px 43px;
+    width: 63px;
+    height: 32px;
+  }
+}
+.Octo{
+  img{
+    padding: 60px 44.5px 60px 44.5px;
+    width: 61px;
+    height: 30px;
+  }
+}
+
+.Gets{
+  img{
+    padding: 57px 49.5px 56.05px 49.05px;
+    width: 51.45px;
+    height: 36.95px;
+  }
+}
+
+.marqueeSecond{
+  margin-top: 4px;
 }
 
 </style>
