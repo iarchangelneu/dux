@@ -3,13 +3,13 @@
 
     <div class="header-container">
       <div class="careers-banner">
-        <img src="../assets/animation/careers1.svg" class="car__anim1" alt="">
-        <img src="../assets/animation/careers2.svg" class="car__anim2" alt="">
-        <img src="../assets/animation/careers3.svg" class="car__anim3" alt="">
-        <img src="../assets/animation/careers4.svg" class="car__anim4" alt="">
-        <img src="../assets/animation/careers5.svg" class="car__anim5" alt="">
+        <img src="../assets/animation/careers1.svg" class="car__anim1" alt="" style="z-index:-1">
+        <img src="../assets/animation/careers2.svg" class="car__anim2" alt="" style="z-index:-1">
+        <img src="../assets/animation/careers3.svg" class="car__anim3" alt="" style="z-index:-1">
+        <img src="../assets/animation/careers4.svg" class="car__anim4" alt="" style="z-index:-1">
+        <img src="../assets/animation/careers5.svg" class="car__anim5" alt="" style="z-index:-1">
         <HeaderPart @opened="openedMobMenu" />
-        <h1 class="careers-banner__title">
+        <h1 class="careers-banner__title" data-aos="fade-up" style="z-index:1000">
           <span class="careers"><img class="span-svg" src="../assets/images/contact/Ellipse1.svg"
               alt="elipse">Careers</span>
           <span class="color-blue">People </span>are our main treasure
@@ -175,7 +175,7 @@
       <BlockTitle title="BENEFITS"></BlockTitle>
     </div>
     <div class="benefits">
-      <h2 class="benefits__title" data-aos="fade-down">We
+      <h2 class="benefits__title" data-aos="fade-up">We
         <span class="color-blue"> love our people</span>,
         appreciate our team, and try to become like a second
         <span class="color-blue">family</span>.
@@ -229,7 +229,7 @@
     <div class="devider">
       <BlockTitle title="CAREER"></BlockTitle>
     </div>
-    <div class="career" data-aos="fade-down">
+    <div class="career" data-aos="fade-up">
       <h2 class="career__title">Start your
         <span class="color-blue"> star</span>
         career at
@@ -307,12 +307,12 @@
       <BlockTitle title="About our team"></BlockTitle>
     </div>
     <div class="igaming">
-      <h2 class="igaming-title" data-aos="fade-down">
+      <h2 class="igaming-title" data-aos="fade-up">
         Innovative
         <span class="color-blue"> iGaming</span>
         Meets a Passion for Tech
       </h2>
-      <div class="igaming-container" data-aos="fade-down">
+      <div class="igaming-container" data-aos="fade-up">
         <div class="igaming-container-left-side">
           <div class="igaming-container-left-side-dote">
             <img src="../assets/images/careers/dote16.svg" alt="dote16" />
@@ -329,7 +329,7 @@
           </p>
         </div>
       </div>
-      <div class="igaming-container" data-aos="fade-down">
+      <div class="igaming-container" data-aos="fade-up">
         <div class="igaming-container-left-side">
           <div class="igaming-container-left-side-dote">
             <img src="../assets/images/careers/dote16.svg" alt="dote16" />
@@ -346,7 +346,7 @@
           </p>
         </div>
       </div>
-      <div class="igaming-container" data-aos="fade-down">
+      <div class="igaming-container" data-aos="fade-up">
         <div class="igaming-container-left-side">
           <div class="igaming-container-left-side-dote">
             <img src="../assets/images/careers/dote16.svg" alt="dote16" />
@@ -363,7 +363,7 @@
           </p>
         </div>
       </div>
-      <div class="igaming-container" data-aos="fade-down">
+      <div class="igaming-container" data-aos="fade-up">
         <div class="igaming-container-left-side">
           <div class="igaming-container-left-side-dote">
             <img src="../assets/images/careers/dote16.svg" alt="dote16" />
@@ -380,7 +380,7 @@
           </p>
         </div>
       </div>
-      <div class="igaming-container" data-aos="fade-down">
+      <div class="igaming-container" data-aos="fade-up">
         <div class="igaming-container-left-side">
           <div class="igaming-container-left-side-dote">
             <img src="../assets/images/careers/dote16.svg" alt="dote16" />
@@ -399,7 +399,7 @@
       </div>
     </div>
     <div class="title-container">
-      <h2 class="title" data-aos="fade-down">
+      <h2 class="title" data-aos="fade-up">
         We are always in <span class="color-blue">search of talented</span> and dedicated
         <span class="color-blue">professionals.</span>
         Let’s raise the
@@ -1334,6 +1334,7 @@ export default {
   min-height: 702px;
   background-size: contain;
   padding: 25px;
+  z-index: 0;
 
   &__title {
     font-family: "Oxygen", sans-serif;

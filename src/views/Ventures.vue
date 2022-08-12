@@ -20,7 +20,7 @@
       </div>
       <!--      <img src="../assets/images/ventures/header-bg.png"/>-->
       <div class="content">
-        <p class="p">
+        <p class="p" data-aos="fade-up">
           <span class="brave">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
               viewBox="0 0 16 16">
@@ -36,7 +36,7 @@
       <div class="title">
         <BlockTitle title="investments"></BlockTitle>
       </div>
-      <div class="content" data-aos="fade-down">
+      <div class="content" data-aos="fade-up">
         <p><span class="blue">DUXGROUP VENTURES</span> IS A VENTURE CAPITAL FUND THAT INVESTS <span class="blue">€1-5
             MILLION</span> IN IGAMING PROJECTS IN LINE WITH A <span class="blue">WIN-WIN MODEL</span> </p>
         <div class="imgs">
@@ -52,7 +52,7 @@
       <div class="title">
         <BlockTitle title="Our principles"></BlockTitle>
       </div>
-      <div class="items" data-aos="fade-down">
+      <div class="items" data-aos="fade-up">
         <div class="item">
           <div class="item__title">
             <img src="../assets/images/ventures/principes/3.png" />
@@ -88,7 +88,7 @@
       <div class="title">
         <BlockTitle title="We don't just invest money"></BlockTitle>
       </div>
-      <div data-aos="fade-down">
+      <div data-aos="fade-up">
         <div class="list__title__mob">
           <p>There are more than <br style="display:none"> <span class="blue">350 professionals</span> in our team</p>
         </div>
@@ -114,7 +114,7 @@
           </div>
         </div>
       </div>
-      <div class="advert" data-aos="fade-down">
+      <div class="advert" data-aos="fade-up">
         <p>WE ARE A <span class="blue">STRONG TEAM</span> THAT HAS BEEN WORKING IN IGAMING FOR MORE THAN <span
             class="blue">8 YEARS.</span>
           WHEN WE INVEST, <span class="blue">WE NOT ONLY INVEST MONEY,</span> BUT ALL THE EXPERTISE WE HAVE GATHERED
@@ -128,7 +128,7 @@
       <div class="title">
         <BlockTitle title="Introduce yourself"></BlockTitle>
       </div>
-      <div class="content" data-aos="fade-down">
+      <div class="content" data-aos="fade-up">
         <div class="request">
           <p>Please <span class="blue">tell us</span> the following about <span class="blue">your business:</span></p>
         </div>
@@ -146,7 +146,7 @@
       </div>
     </div>
     <div class="contact">
-      <div data-aos="fade-down">
+      <div data-aos="fade-up">
         <div class="title">
           <p>Have a <span class="blue">cool idea</span> and want to conquer the <span class="blue">iGaming
               market?</span>
@@ -1433,6 +1433,8 @@ export default {
     z-index: 1;
     height: 702px;
 
+
+
     &__menu {
       z-index: 10;
       //background-image: url('../assets/images/ventures/header-bg.png');
@@ -1440,6 +1442,11 @@ export default {
       min-height: 300px;
       //padding: 25px;
       background-position: right;
+
+
+      .cubes:hover .cube {
+        margin-right: 55px !important;
+      }
 
       .cubes {
         position: absolute;
@@ -1456,9 +1463,15 @@ export default {
           border-image-source: linear-gradient(to bottom, #0046b0, #0058ba, #0069c2, #0079c8, #0089cd);
         }
 
+
+
+
         div.cube {
           margin-right: 40px;
         }
+
+
+
 
         div:nth-child(1) {
           width: 50px;
@@ -1467,9 +1480,7 @@ export default {
           transition: all .5s;
         }
 
-        div:nth-child(1):hover {
-          margin-right: 55px !important;
-        }
+
 
         div:nth-child(2) {
           width: 70px;
@@ -1477,9 +1488,7 @@ export default {
           transition: all .5s;
         }
 
-        div:nth-child(2):hover {
-          margin-right: 55px !important;
-        }
+
 
         div:nth-child(3) {
           //animation: 1s ease-in 2s 1 run;
@@ -1488,9 +1497,7 @@ export default {
           transition: all .5s;
         }
 
-        div:nth-child(3):hover {
-          margin-right: 55px !important;
-        }
+
 
         div:nth-child(4) {
           width: 110px;
@@ -1498,9 +1505,6 @@ export default {
           transition: all .5s;
         }
 
-        div:nth-child(4):hover {
-          margin-right: 55px !important;
-        }
 
         div:nth-child(5) {
           width: 130px;
@@ -1508,9 +1512,6 @@ export default {
           transition: all .5s;
         }
 
-        div:nth-child(5):hover {
-          margin-right: 55px !important;
-        }
 
         div:nth-child(6) {
           width: 150px;
@@ -1518,9 +1519,7 @@ export default {
           transition: all .5s;
         }
 
-        div:nth-child(6):hover {
-          margin-right: 55px !important;
-        }
+
 
         div:nth-child(7) {
           width: 170px;
@@ -1528,9 +1527,7 @@ export default {
           transition: all .5s;
         }
 
-        div:nth-child(7):hover {
-          margin-right: 55px !important;
-        }
+
 
         div:nth-child(8) {
           width: 190px;
@@ -1538,9 +1535,7 @@ export default {
           transition: all .5s;
         }
 
-        div:nth-child(8):hover {
-          margin-right: 55px !important;
-        }
+
 
         .changeable {
           width: 100%;
