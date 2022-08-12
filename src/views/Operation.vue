@@ -24,11 +24,11 @@
         <div class="menu">
           <Header />
         </div>
-        <h1 class="operation-banner__title" data-aos="fade-up">
+        <h1 class="operation-banner__title" data-aos="fade-up"  id="p">
           <p class="operation-us"><img class="span-svg" src="../assets/images/contact/Ellipse1.svg"
               alt="elipse">DUXGroup
             Operation</p>
-          a Team of real <br> <span class="color-blue ndk"> professionals</span>
+          <!-- a Team of real <br> <span class="color-blue ndk"> professionals</span> -->
         </h1>
       </div>
     </div>
@@ -471,6 +471,7 @@ export default {
   name: "Operation-page",
   data() {
     return {
+      mainTitle: 'a Team of real professionals',
       version: 1,
     }
   },
@@ -517,7 +518,53 @@ export default {
     else {
       this.version = 0
     }
+
+
+    //TEXT
+
+    let firstSplit = this.mainTitle.split(' ')
+
+    let block = document.getElementById('p')
+    console.log(firstSplit);
+    let timer = 0;
+    if(window.innerWidth < 450){
+      for(let i = 0; i < 4; i++){
+        let spanBsp = document.createElement('span');
+        spanBsp.innerText = 'A';
+        spanBsp.classList.add('spanBsp')
+        block.appendChild(spanBsp)
+      }
+    }
+    firstSplit.forEach((word, ind) => {
+      
+      let span = document.createElement('span');
+      span.id = 'word' + ind;
+      if(ind > 3){
+        span.classList.add('blue')
+      }
+      span.classList.add('mainTitleWord')
+      block.appendChild(span)
+
+      word.split('').forEach((letter) => {
+
+        let spanInside = document.createElement('span');
+        spanInside.innerText = letter;
+        spanInside.classList.add('mainTitleLetter')
+
+        setTimeout(() => { span.appendChild(spanInside) }, timer)
+        timer += 50
+      })
+
+      let spanBsp = document.createElement('span');
+      spanBsp.innerText = 'A';
+      spanBsp.classList.add('spanBsp')
+      block.appendChild(spanBsp)
+    })
+
+
   }
+
+  
 
 }
 </script>
@@ -3223,6 +3270,59 @@ export default {
 
   .payment-provider-row-columns>div[data-v-51e2911d] {
     flex: 20% !important;
+  }
+}
+</style>
+
+<style>
+@keyframes asd {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+    bottom: 0px;
+  }
+}
+
+.mainTitleLetter {
+  animation-duration: 0.7s;
+  animation-name: asd;
+  display: inline-block;
+}
+
+.mainTitleWord {
+  white-space: nowrap;
+  display: inline-block;
+  overflow: hidden;
+}
+.blue {
+  color: #2F5BD8;
+}
+.spanBsp{
+  opacity: 0;
+}
+@media screen and (max-width: 1024px) {
+  .spanBsp{
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .spanBsp{
+    font-size: 44px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .spanBsp{
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .spanBsp{
+    font-size: 26px;
   }
 }
 </style>
