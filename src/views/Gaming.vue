@@ -252,6 +252,7 @@ export default {
     .content {
       padding: 0 25px;
       position: relative;
+      width: 1000px;
 
       .p {
         font-family: 'Oxygen', sans-serif;
@@ -575,7 +576,7 @@ export default {
 
       p {
         font-size: 134px !important;
-        width: 1176px !important;
+        width: 1030px !important;
       }
 
       .images {
@@ -1269,7 +1270,7 @@ export default {
 .shildUp:hover {
   position: absolute;
   // top: -118px;
-  top: -6vw;
+  top: -8vw;
   // right: 665px;
   right: 48.48vw;
 }

@@ -933,7 +933,7 @@ export default {
         spanInside.classList.add('mainTitleLetter')
 
         setTimeout(() => { span.appendChild(spanInside) }, timer)
-        timer += 100
+        timer += 50
       })
 
       let spanBsp = document.createElement('span');
@@ -4548,6 +4548,8 @@ export default {
       bottom: 0;
       transition: 3s;
       z-index: -1;
+      width: 162px;
+      height: 177px;
     }
     .forth_figure:hover{
       right: 30%;
@@ -5252,7 +5254,7 @@ export default {
 }
 
 .mainTitleLetter {
-  animation-duration: 1s;
+  animation-duration: 0.7s;
   animation-name: asd;
   display: inline-block;
 }
