@@ -24,7 +24,7 @@
         <div class="menu">
           <Header />
         </div>
-        <h1 class="operation-banner__title">
+        <h1 class="operation-banner__title" data-aos="fade-up">
           <p class="operation-us"><img class="span-svg" src="../assets/images/contact/Ellipse1.svg"
               alt="elipse">DUXGroup
             Operation</p>
@@ -530,12 +530,30 @@ export default {
   }
 
   50% {
-    transform: rotate(-30deg) translate(-224px, 0);
+    transform: rotate(15deg) translate(-424px, 0);
 
   }
 
   100% {
     transform: rotate(0) translate(0, 0);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  @keyframes full {
+    0% {
+      transform: rotate(0);
+      transform: translate(0, 0);
+    }
+
+    50% {
+      transform: rotate(15deg) translate(-150px, 0);
+
+    }
+
+    100% {
+      transform: rotate(0) translate(0, 0);
+    }
   }
 }
 
