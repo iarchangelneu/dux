@@ -2,8 +2,8 @@
   <div class="container">
     <div class="header">
       <div class="bg-img">
-        <div>
-          <img src="../assets/images/home/title/klor.png" class="klor" data-aos="fade-down" data-aos-duration="2000" />
+        <div class="bg-img-images">
+          <img src="../assets/images/home/title/klor.png" class="klor" data-aos="fade-up" data-aos-duration="2000" />
           <img src="../assets/images/home/title/zar-mec.png" class="zar-mec" data-aos="fade-up"
             data-aos-duration="2000" />
           <img src="../assets/images/home/title/zar-poqr.png" class="zar-poqr" data-aos="fade-up"
@@ -56,7 +56,7 @@
     </div>
     <div class="running">
       <div class="title">
-        <p data-aos="fade-down" data-aos-duration="500" >We follow the principle </p>
+        <p data-aos="fade-up" data-aos-duration="500" >We follow the principle </p>
       </div>
       <div class="line" v-if="menuClosed">
         <!--          <marquee direction="row" behavior="slide" height="100" width="100%" bgcolor="#010C28" Scrollamount=20>-->
@@ -100,7 +100,7 @@
         </div>
         <div class="marquee-container">
           <div class="Marquee">
-            <div class="Marquee-content" style="padding-left: 50px;">
+            <div class="Marquee-content Marquee-content3" style="padding-left: 50px;">
               <div class="Marquee-tag">
                 <div class="circle"></div>
                 <p>Improve</p>
@@ -136,7 +136,7 @@
       <div class="divide_partnership">
         <BlockTitle title="what we do?"></BlockTitle>
       </div>
-      <div class="title">
+      <div class="title" data-aos="fade-up" data-aos-duration="1500">
         <p>Synergy and partnership</p>
       </div>
       <div class="items" data-aos="fade-up" data-aos-duration="1500">
@@ -159,9 +159,9 @@
               <img src="../assets/images/partnership/view1/4.png" />
             </div>
           </div>
-          <div class="content">
-            <p class="title" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="300">In People we Trust</p>
-            <p class="text" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">We build any and all success on hiring industry experts, who know exactly what our customers
+          <div class="content" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+            <p class="title">In People we Trust</p>
+            <p class="text">We build any and all success on hiring industry experts, who know exactly what our customers
               demand.
               At DuxGroup there is no micromanagement, because we trust everyone to do their job to the highest
               standard. Our teams and people are our greatest asset.</p>
@@ -182,9 +182,9 @@
               <img src="../assets/images/partnership/view2/2.png" />
             </div>
           </div>
-          <div class="content">
-            <p class="title" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="300">Transparency is Gold – Honesty, Directness, Clarity</p>
-            <p class="text" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">We build any and all success on hiring industry experts, who know exactly what our customers
+          <div class="content" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+            <p class="title">Transparency is Gold – Honesty, Directness, Clarity</p>
+            <p class="text">We build any and all success on hiring industry experts, who know exactly what our customers
               demand.
               At DuxGroup there is no micromanagement, because we trust everyone to do their job to the highest
               standard. Our teams and people are our greatest asset.</p>
@@ -207,9 +207,9 @@
               <img src="../assets/images/partnership/view3/4.png" />
             </div>
           </div>
-          <div class="content">
-            <p class="title" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="300">Resilience is Key – We have a plan</p>
-            <p class="text" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">We want to make an impact. But we are not too proud to admit that sometimes we need to
+          <div class="content" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+            <p class="title" >Resilience is Key – We have a plan</p>
+            <p class="text">We want to make an impact. But we are not too proud to admit that sometimes we need to
               re-adjust. Getting up after a fall and looking at different solutions that no one has ever thought of
               before - This is our strength.
               We learn from our mistakes and create something different. We live by the 1+1=3 principle, because with
@@ -232,9 +232,9 @@
               <img src="../assets/images/partnership/view4/3.png" />
             </div>
           </div>
-          <div class="content">
-            <p class="title" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="300">Team Dux – Together. – We are colleagues</p>
-            <p class="text" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">But first and foremost, we like each other and we are friends. We are one team and we stand
+          <div class="content" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+            <p class="title">Team Dux – Together. – We are colleagues</p>
+            <p class="text">But first and foremost, we like each other and we are friends. We are one team and we stand
               together in our mission. There is no hierarchy.
               You can have a coffee with your immediate colleagues or the "Head of Anything". This is by far the most
               important value we hold.</p>
@@ -247,7 +247,7 @@
       <div class="header-sldier">
         <BlockTitle title="what do we have?"></BlockTitle>
       </div>
-      <div class="title" data-aos="fade-down" data-aos-duration="1000">
+      <div class="title" data-aos="fade-up" data-aos-duration="1000">
         <p>We create <span class="blue">products</span> that players <span class="blue">love</span></p>
       </div>
       <div class="slide_part" data-aos="fade-up" data-aos-duration="2000">
@@ -490,16 +490,16 @@
           <p data-aos="fade-up" data-aos-duration="1500">We always <span class="blue">participate</span> in</p>
         </div>
         <div class="organizations">
-          <div class="img" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="100">
+          <div class="img" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
             <img src="../assets/images/organizations/sigma.svg" />
           </div>
-          <div class="img" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">
+          <div class="img" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1000">
             <img src="../assets/images/organizations/affiliate.svg" />
           </div>
-          <div class="img" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="1000">
+          <div class="img" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="500">
             <img src="../assets/images/organizations/asia.png" />
           </div>
-          <div class="img" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="1400">
+          <div class="img" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1400">
             <img src="../assets/images/home/Amster.svg" />
           </div>
         </div>
@@ -1136,6 +1136,9 @@ export default {
 
     }
 
+    .Marquee-content3{
+      // animation-direction: normal;
+    }
     .Marquee-content:hover{
         -webkit-animation-play-state:paused;
         -moz-animation-play-state:paused;
@@ -1512,7 +1515,7 @@ export default {
       .bg-img {
         background-size: contain !important;
         min-height: 526px !important;
-
+        
         .klor {
           top: 12% !important;
           right: 50% !important;
@@ -3305,6 +3308,14 @@ export default {
     background-repeat: no-repeat;
     min-height: 702px;
 
+    z-index: 0;
+      .bg-img-images{
+        z-index: -1;
+        img{
+          z-index: -1;
+        }
+      }
+
     img.zar-poqr {
       position: absolute;
       bottom: -40px;
@@ -4373,7 +4384,7 @@ export default {
 }
 
 .divider {
-  padding-top: 150px;
+  padding-top: 120px;
   width: 100%;
   background-color: #010C28;
   align-items: flex-end;
@@ -4476,6 +4487,7 @@ export default {
   .content {
     padding: 300px 300px 180px 100px;
     position: relative;
+    z-index: 0;
 
     p {
       font-family: 'Oxygen', sans-serif;
@@ -4488,6 +4500,7 @@ export default {
       letter-spacing: 0.02em;
       text-transform: uppercase;
       color: #F0F0F0;
+      z-index: 1000;
     }
 
 
@@ -4497,6 +4510,7 @@ export default {
       left: 25px;
       top: 30px;
       transition: 1s;
+      z-index: -1;
     }
 
     .first_figure:hover{
@@ -4509,6 +4523,7 @@ export default {
       right: -80px;
       top: 20%;
       transition: 2s;
+      z-index: -1;
     }
     .second_figure:hover{
       right: -100px;
@@ -4520,6 +4535,7 @@ export default {
       right: 30%;
       top: 30px;
       transition: 2s;
+      z-index: -1;
     }
     .third_figure:hover{
       right: 35%;
@@ -4531,6 +4547,7 @@ export default {
       right: 25%;
       bottom: 0;
       transition: 3s;
+      z-index: -1;
     }
     .forth_figure:hover{
       right: 30%;
@@ -4560,13 +4577,14 @@ export default {
       background-position: top;
       background-repeat: no-repeat;
       background-size: cover;
-      width: 80%;
+      width: 70%;
       display: flex;
       align-items: center;
       justify-content: space-between;
       border-radius: 15px;
       margin: 0 auto;
-      padding: 112px 90px 90px 50px;
+      // padding: 112px 90px 90px 50px;
+      padding: 112px 88px 90px 88px;
 
       p {
         font-family: 'Exo', sans-serif;
@@ -4574,7 +4592,7 @@ export default {
         font-weight: 400;
         font-size: 28px;
         margin: 0;
-        width: 77%;
+        width: 72%;
         // line-height: 47px;
         line-height: 125%;
         color: #F0F0F0;
@@ -4982,6 +5000,7 @@ export default {
         display: none;
         border-radius: 10px;
         padding: 50px 18px 50px 25px;
+        z-index: 1000;
 
         .card {
 

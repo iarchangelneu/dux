@@ -42,7 +42,7 @@
         <BlockTitle title="Learn more"></BlockTitle>
       </div>
       <div class="content">
-        <p data-aos="fade-down">
+        <p data-aos="fade-up">
           <span class="text-part">Gambling should always be seen as entertainment and nothing else. Unfortunately,
             sometimes people can take it too far and potentially lose control of their betting. You should never
             consider gambling as a source of income or a chance to recover from debt. Always keep track of the time and
@@ -63,7 +63,7 @@
         <BlockTitle title="how it works"></BlockTitle>
       </div>
       <div class="content">
-        <div class="content__item" data-aos="fade-down">
+        <div class="content__item" data-aos="fade-up">
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
               viewBox="0 0 16 16">
@@ -77,7 +77,7 @@
             level by adhering to KYC processes in accordance to the project. Reducing the limit will take effect
             immediately, but an increase in any limit will happen after email confirmation.</h4>
         </div>
-        <div class="content__item" data-aos="fade-down">
+        <div class="content__item" data-aos="fade-up">
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
               viewBox="0 0 16 16">
@@ -90,7 +90,7 @@
             still withdraw any remaining funds during this period. This Cooling-Off period is instantly applied to your
             account and when it expires your account will be re-activated automatically.</h4>
         </div>
-        <div class="content__item" data-aos="fade-down">
+        <div class="content__item" data-aos="fade-up">
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
               viewBox="0 0 16 16">
@@ -105,7 +105,7 @@
             that we need to do everything we can to block your access to your account and make sure that you receive no
             promotional materials whatsoever.</h4>
         </div>
-        <div class="content__item" data-aos="fade-down">
+        <div class="content__item" data-aos="fade-up">
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
               viewBox="0 0 16 16">
@@ -117,7 +117,7 @@
             minors from registering and playing. We always reserve the right to ask for any proof of identity and if the
             player is not 18+ their access to our casinos will be denied immediately.</h4>
         </div>
-        <div class="content__item" data-aos="fade-down">
+        <div class="content__item" data-aos="fade-up">
           <div class="our__r">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
               viewBox="0 0 16 16">
@@ -136,7 +136,7 @@
         <BlockTitle title="seeking outside help"></BlockTitle>
       </div>
       <div class="content">
-        <div data-aos="fade-down">
+        <div data-aos="fade-up">
           <img src="../assets/images/gaming/seeking-bg.svg" v-if="window.width > 1024" />
           <img src="../assets/images/seeking2.png" alt="" v-if="window.width <= 1024 && window.width > 450">
           <img src="../assets/images/seeking320.png" v-if="window.width <= 450" />

@@ -46,7 +46,7 @@
       <BlockTitle title="investments"></BlockTitle>
     </div>
     <div class="contact-form__container">
-      <form action="#" class="contact-form" data-aos="fade-down">
+      <form action="#" class="contact-form" data-aos="fade-up">
         <div class="form-left-side">
           <h2 class="form-left-side-title">General questions:</h2>
           <p class="form-left-side-text">hello@duxgroup.com</p>
@@ -402,7 +402,7 @@ form {
   }
 
   .contact-banner {
-    background: url("../assets/images/contact/1024.svg") no-repeat, linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28);
+    // background: url("../assets/images/contact/1024.svg") no-repeat, linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28);
   }
 }
 
@@ -456,7 +456,7 @@ form {
 
 @media only screen and (max-width: 768px) {
   .contact-banner {
-    background: url("../assets/images/contact/768.svg") no-repeat, linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28);
+    // background: url("../assets/images/contact/768.svg") no-repeat, linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28);
   }
 }
 
@@ -518,7 +518,7 @@ form {
 
 @media only screen and (max-width: 321px) {
   .contact-banner {
-    background: url("../assets/images/contact/320.svg") no-repeat, linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28);
+    // background: url("../assets/images/contact/320.svg") no-repeat, linear-gradient(to bottom, #02185b, #00174e, #001542, #001135, #010c28);
   }
 }
 
@@ -532,7 +532,7 @@ form {
   }
 
   .header-container .contact-banner {
-    background: url(/img/Union.a63e40e7.svg) no-repeat;
+    // background: url(/img/Union.a63e40e7.svg) no-repeat;
     background-size: contain;
     padding: 25px;
     min-height: 730px;
