@@ -561,6 +561,10 @@ export default {
   align-items: center;
 }
 
+.BambooHR-ATS-Location:hover {
+  background: #1F2941;
+}
+
 .BambooHR-ATS-Location::after {
   padding-left: 24px;
   content: url('../assets/images/job__arrow.svg');
@@ -576,10 +580,20 @@ export default {
   margin-bottom: 0 !important;
 }
 
-.BambooHR-ATS-board li:hover {
+.BambooHR-ATS-Jobs-Item {
+  transition: all .5s;
+}
+
+.BambooHR-ATS-Jobs-Item:hover {
   background: #1F2941;
   padding-left: 17px !important;
   padding-right: 17px;
+}
+
+.BambooHR-ATS-board li:hover {
+  /* background: #1F2941; */
+  /* padding-left: 17px !important; */
+  /* padding-right: 17px; */
 
 }
 
@@ -596,7 +610,7 @@ export default {
   font-size: 14px !important;
   font-family: 'Oxygen' !important;
   padding-left: 0 !important;
-  padding-top: 14px;
+  padding: 14px;
   -moz-transition: all .5s;
   -o-transition: all .5s;
   -webkit-transition: all .5s;
