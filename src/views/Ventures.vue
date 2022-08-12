@@ -20,7 +20,7 @@
       </div>
       <!--      <img src="../assets/images/ventures/header-bg.png"/>-->
       <div class="content">
-        <p class="p" data-aos="fade-up">
+        <p class="p" data-aos="fade-up" >
           <span class="brave">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
               viewBox="0 0 16 16">
@@ -28,7 +28,8 @@
             </svg>
             <span>DUXGROUP VENTURES</span>
           </span>
-          We invest in <br /> <span class="blue">the future of<br> iGaming</span>
+          <!-- We invest in <br /> <span class="blue">the future of<br> iGaming</span> -->
+          <span id="p"></span>
         </p>
       </div>
     </div>
@@ -175,6 +176,7 @@ export default {
   data() {
     return {
       menuClosed: false,
+      mainTitle: 'We invest in the future of iGaming',
     }
   },
   methods: {
@@ -195,6 +197,36 @@ export default {
         mail.classList.remove('error')
       }
     },
+  },
+  mounted(){
+    let firstSplit = this.mainTitle.split(' ')
+
+    let block = document.getElementById('p')
+    console.log(firstSplit);
+    let timer = 0;
+    firstSplit.forEach((word, ind) => {
+      let span = document.createElement('span');
+      span.id = 'word' + ind;
+      if(ind > 2){
+        span.classList.add('blue')
+      }
+      span.classList.add('mainTitleWord')
+      block.appendChild(span)
+
+      word.split('').forEach((letter) => {
+
+        let spanInside = document.createElement('span');
+        spanInside.innerText = letter;
+        spanInside.classList.add('mainTitleLetter')
+
+        setTimeout(() => { span.appendChild(spanInside) }, timer)
+        timer += 50
+      })
+
+      let spanBsp = document.createElement('span');
+      spanBsp.innerText = ' ';
+      block.appendChild(spanBsp)
+    })
   },
   components: { FooterPart, HeaderPart, BlockTitle },
 }
@@ -451,8 +483,12 @@ export default {
         p {
           margin-top: 70px !important;
           font-size: 110px !important;
-          line-height: 105% !important;
-
+          line-height: 104px !important;
+          // width: 1000px;
+          width: 69.44vw;
+          @media screen and (max-width: 1024px) {
+            width: 75.44vw;
+          }
           .brave {
             width: 250px !important;
             margin-right: 0px !important;
@@ -1600,7 +1636,7 @@ export default {
         font-style: normal;
         font-weight: 400;
         font-size: 134px;
-        line-height: 95%;
+        line-height: 90%;
         letter-spacing: 0.02em;
         text-transform: uppercase;
         color: #F0F0F0;
@@ -2125,4 +2161,35 @@ export default {
     }
   }
 }
+</style>
+
+<style>
+@keyframes asd {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+    bottom: 0px;
+  }
+}
+
+.mainTitleLetter {
+  animation-duration: 0.7s;
+  animation-name: asd;
+  display: inline-block;
+}
+
+.mainTitleWord {
+  white-space: nowrap;
+  display: inline-block;
+  overflow: hidden;
+}
+.blue {
+  color: #2F5BD8;
+}
+
 </style>
