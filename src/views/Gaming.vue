@@ -546,7 +546,7 @@ export default {
 
   .container .lists .content__item div p {
 
-    font-size: 34px;
+    font-size: 28px;
 
   }
 

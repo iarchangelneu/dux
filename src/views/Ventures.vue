@@ -327,7 +327,7 @@ export default {
   }
 
   .container .invest .description .list__title p {
-    font-size: 36px !important;
+    font-size: 38px !important;
 
   }
 
@@ -472,8 +472,8 @@ export default {
         padding: 200px 0 125px 25px !important;
 
         p {
-          width: 60% !important;
-          font-size: 58px !important;
+          width: 62% !important;
+          font-size: 48px !important;
         }
       }
 
@@ -549,13 +549,19 @@ export default {
 
 
         &>* {
-          width: 100% !important;
+          // width: 100% !important;
         }
 
+        .request {
+          width: 42% !important;
+        }
         .request p {
-          font-size: 58px !important;
+          font-size: 48px !important;
         }
 
+        .list{
+          width: 50% !important;
+        }
         .list ul {
           padding-left: 20px !important;
 
@@ -815,6 +821,10 @@ export default {
           width: 100% !important;
         }
 
+          .request{
+            width: 42% !important;
+        }
+          
         .request p {
           font-size: 58px !important;
 
@@ -1350,10 +1360,13 @@ export default {
         margin-top: 40px !important;
         padding: 0 16px !important;
 
-        &>* {
-          width: 100% !important;
-        }
+        // &>* {
+        //   width: 100% !important;
+        // }
 
+        .request {
+          width: 42% !important;
+        }
         .request p {
           font-size: 22px !important;
           line-height: 28px !important;
@@ -1822,7 +1835,7 @@ export default {
       justify-content: space-between;
 
       .list {
-        width: 45%;
+        width: 50%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -2011,7 +2024,7 @@ export default {
         font-family: 'Oxygen', sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 58px;
+        font-size: 48px;
         line-height: 105%;
         text-align: center;
         letter-spacing: 0.02em;

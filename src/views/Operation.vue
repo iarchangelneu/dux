@@ -1678,7 +1678,7 @@ export default {
         font-family: 'Oxygen', sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 38px;
+        font-size: 28px;
         line-height: 48px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
@@ -1741,7 +1741,7 @@ export default {
 }
 
 .brands-title {
-  font-size: 58px;
+  font-size: 48px;
   color: white;
   max-width: 978px;
   font-family: 'Oxygen', sans-serif;

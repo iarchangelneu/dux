@@ -1305,7 +1305,7 @@ export default {
     font-family: 'Oxygen', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 58px;
+    font-size: 48px;
     line-height: 105%;
     text-align: center;
     letter-spacing: 0.02em;
@@ -1490,7 +1490,7 @@ export default {
     font-family: 'Oxygen', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 68px;
+    font-size: 48px;
     line-height: 105%;
     text-align: center;
     letter-spacing: 0.02em;
@@ -1756,7 +1756,7 @@ export default {
     font-family: 'Oxygen', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 58px;
+    font-size: 48px;
     line-height: 105%;
 
     letter-spacing: 0.02em;
@@ -1797,7 +1797,7 @@ export default {
         font-family: 'Oxygen', sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 38px;
+        font-size: 28px;
         line-height: 48px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
