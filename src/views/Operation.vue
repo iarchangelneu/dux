@@ -24,7 +24,7 @@
         <div class="menu">
           <Header />
         </div>
-        <h1 class="operation-banner__title" data-aos="fade-up"  id="p">
+        <h1 class="operation-banner__title" data-aos="fade-up" id="p">
           <p class="operation-us"><img class="span-svg" src="../assets/images/contact/Ellipse1.svg"
               alt="elipse">DUXGroup
             Operation</p>
@@ -527,8 +527,8 @@ export default {
     let block = document.getElementById('p')
     console.log(firstSplit);
     let timer = 0;
-    if(window.innerWidth < 450){
-      for(let i = 0; i < 4; i++){
+    if (window.innerWidth < 450) {
+      for (let i = 0; i < 4; i++) {
         let spanBsp = document.createElement('span');
         spanBsp.innerText = 'A';
         spanBsp.classList.add('spanBsp')
@@ -536,10 +536,10 @@ export default {
       }
     }
     firstSplit.forEach((word, ind) => {
-      
+
       let span = document.createElement('span');
       span.id = 'word' + ind;
-      if(ind > 3){
+      if (ind > 3) {
         span.classList.add('blue')
       }
       span.classList.add('mainTitleWord')
@@ -564,7 +564,7 @@ export default {
 
   }
 
-  
+
 
 }
 </script>
@@ -581,6 +581,11 @@ export default {
 
   }
 
+
+  // 75% {
+  //   transform: rotate(-15deg) translate(100px, 0);
+  // }
+
   100% {
     transform: rotate(0) translate(0, 0);
   }
@@ -594,7 +599,7 @@ export default {
     }
 
     50% {
-      transform: rotate(15deg) translate(-150px, 0);
+      transform: rotate(15deg) translate(-100px, 0);
 
     }
 
@@ -605,7 +610,7 @@ export default {
 }
 
 .full__anim {
-  animation: full 7s infinite;
+  animation: full 8s linear infinite;
   animation-delay: 2s;
   padding-top: -30px;
 }
@@ -3299,29 +3304,35 @@ export default {
   display: inline-block;
   overflow: hidden;
 }
+
 .blue {
   color: #2F5BD8;
 }
-.spanBsp{
+
+.spanBsp {
   opacity: 0;
 }
+
 @media screen and (max-width: 1024px) {
-  .spanBsp{
+  .spanBsp {
     font-size: 50px;
   }
 }
+
 @media screen and (max-width: 768px) {
-  .spanBsp{
+  .spanBsp {
     font-size: 44px;
   }
 }
+
 @media screen and (max-width: 450px) {
-  .spanBsp{
+  .spanBsp {
     font-size: 34px;
   }
 }
+
 @media screen and (max-width: 376px) {
-  .spanBsp{
+  .spanBsp {
     font-size: 26px;
   }
 }
