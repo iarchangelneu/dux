@@ -560,12 +560,7 @@ export default {
       spanBsp.classList.add('spanBsp')
       block.appendChild(spanBsp)
     })
-
-
   }
-
-
-
 }
 </script>
 
@@ -3334,6 +3329,11 @@ export default {
 @media screen and (max-width: 376px) {
   .spanBsp {
     font-size: 26px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .spanBsp {
+    font-size: 16px;
   }
 }
 </style>

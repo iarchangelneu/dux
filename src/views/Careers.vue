@@ -9,10 +9,11 @@
         <img src="../assets/animation/careers4.svg" class="car__anim4" alt="" style="z-index:-1">
         <img src="../assets/animation/careers5.svg" class="car__anim5" alt="" style="z-index:-1">
         <HeaderPart @opened="openedMobMenu" />
-        <h1 class="careers-banner__title" data-aos="fade-up" style="z-index:1000">
+        <h1 class="careers-banner__title" data-aos="fade-up" style="z-index:1000" id="p">
           <span class="careers"><img class="span-svg" src="../assets/images/contact/Ellipse1.svg"
               alt="elipse">Careers</span>
-          <span class="color-blue">People </span>are our main treasure
+          <!-- <span class="color-blue">People </span>are our main treasure -->
+
         </h1>
       </div>
     </div>
@@ -436,6 +437,7 @@ export default {
   },
   data() {
     return {
+      mainTitle: 'People are our main treasure',
       window: {
         width: 0
       },
@@ -467,6 +469,61 @@ export default {
     BlockTitle,
   },
   methods: {
+    spaBspCreate(block, amount=1){
+        for(let i = 0; i < amount; i++){
+          let spanBsp = document.createElement('span');
+          spanBsp.innerText = 'A';
+          spanBsp.classList.add('spanBsp')
+          block.appendChild(spanBsp)
+        }
+    },
+    spanletterCreate(letter){
+      let spanInside = document.createElement('span');
+      spanInside.innerText = letter;
+      spanInside.classList.add('mainTitleLetter')
+      return spanInside
+    },
+    titleBlock(){
+      let firstSplit = this.mainTitle.split(' ')
+
+      let block = document.getElementById('p')
+      let timer = 0;
+
+      firstSplit.forEach((word, ind) => {
+        let span = document.createElement('span');
+        span.id = 'word' + ind;
+
+        if (ind == 0) {
+          span.classList.add('blue')
+          if(window.innerWidth < 450){
+            this.spaBspCreate(block)
+          }
+        }
+
+        span.classList.add('mainTitleWord')
+        block.appendChild(span)
+
+        word.split('').forEach((letter) => {
+          let spanInside = this.spanletterCreate(letter)
+          setTimeout(() => { span.appendChild(spanInside) }, timer)
+          timer += 50
+        })
+
+        if(ind==0){
+          if(window.innerWidth < 340){
+            this.spaBspCreate(block, 10)
+          }
+          else if(window.innerWidth < 450){
+            this.spaBspCreate(block, 5)
+          }
+          else{
+            this.spaBspCreate(block, 3)
+          }
+        }
+
+        this.spaBspCreate(block)
+      })
+    },
     loadb(){
       let recaptchaScript = document.createElement('script')
       // recaptchaScript.setAttribute('src', 'https://duxgroup.bamboohr.com/js/embed.js')
@@ -600,6 +657,7 @@ export default {
     window.removeEventListener('resize', this.handleResize);
   },
   mounted() {
+    this.titleBlock();
     this.salamfunction();
     // postscribe('#addhere', `<script src="https://duxgroup.bamboohr.com/js/embed.js" type="text/javascript" async="" defer=""><\/script>`)
     // this.loadb();
@@ -1101,7 +1159,7 @@ export default {
   .careers-banner__title {
     font-size: 84px !important;
     line-height: 105% !important;
-    max-width: 619px !important;
+    max-width: 755px !important;
   }
 
   .line {
@@ -1348,7 +1406,7 @@ export default {
 
   .careers-banner__title {
     font-size: 34px !important;
-    max-width: 251px !important;
+    max-width: 265px !important;
   }
 
   .Marquee-tag>svg {
@@ -2563,6 +2621,10 @@ export default {
 }
 
 @media screen and (max-width: 480px) {
+
+  .careers-banner{
+    z-index: 1001;
+  }
   .careers-banner__title {
     font-size: 34px !important;
     max-width: 251px !important;
@@ -2576,7 +2638,7 @@ export default {
 
   .careers-banner__title {
     font-size: 40px !important;
-    max-width: 295px !important;
+    max-width: 340px !important;
   }
 
   .video__cont {
@@ -2636,6 +2698,11 @@ export default {
 }
 
 @media screen and (max-width: 320px) {
+
+  .careers-banner__title {
+    font-size: 34px !important;
+    max-width: 265px !important;
+  }
   .slick-slider {
     padding-left: 4px !important;
   }
@@ -2769,5 +2836,67 @@ export default {
 <style>
 .slider img {
   cursor: ew-resize;
+}
+</style>
+
+<style>
+@keyframes asd {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+    bottom: 0px;
+  }
+}
+
+.mainTitleLetter {
+  animation-duration: 0.7s;
+  animation-name: asd;
+  display: inline-block;
+}
+
+.mainTitleWord {
+  white-space: nowrap;
+  display: inline-block;
+  overflow: hidden;
+}
+.blue {
+  color: #2F5BD8;
+}
+.spanBsp {
+  opacity: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .spanBsp {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .spanBsp {
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .spanBsp {
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .spanBsp {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .spanBsp {
+    font-size: 16px;
+  }
 }
 </style>
