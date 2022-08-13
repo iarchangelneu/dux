@@ -25,7 +25,7 @@
         </div>
       </div>
       <div class="content" v-if="menuClosed">
-        <p class="p">
+        <p class="p" id="p">
           <span class="brave">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
               viewBox="0 0 16 16">
@@ -33,7 +33,7 @@
             </svg>
             <span>Why It Matters</span>
           </span>
-          <span class="blue">Responsible</span> Gaming
+          <!-- <span class="blue">Responsible</span> Gaming -->
         </p>
       </div>
     </div>
@@ -171,6 +171,7 @@ export default {
   },
   data() {
     return {
+      mainTitle: 'RESPONSIBLE GAMING',
       window: {
         width: 0,
       },
@@ -187,7 +188,62 @@ export default {
     },
     handleResize() {
       this.window.width = window.innerWidth;
-    }
+    },
+    spaBspCreate(block, amount=1){
+        for(let i = 0; i < amount; i++){
+          let spanBsp = document.createElement('span');
+          spanBsp.innerText = ' ';
+          // spanBsp.classList.add('spanBsp')
+          block.appendChild(spanBsp)
+        }
+    },
+    spanletterCreate(letter){
+      let spanInside = document.createElement('span');
+      spanInside.innerText = letter;
+      spanInside.classList.add('mainTitleLetter')
+      return spanInside
+    },
+    titleBlock(){
+      let firstSplit = this.mainTitle.split(' ')
+
+      let block = document.getElementById('p')
+      let timer = 0;
+
+      firstSplit.forEach((word, ind) => {
+        let span = document.createElement('span');
+        span.id = 'word' + ind;
+
+        if (ind == 0) {
+          span.classList.add('blue')
+          // if(window.innerWidth < 450){
+          //   this.spaBspCreate(block)
+          // }
+        }
+
+        span.classList.add('mainTitleWord')
+        block.appendChild(span)
+
+        word.split('').forEach((letter) => {
+          let spanInside = this.spanletterCreate(letter)
+          setTimeout(() => { span.appendChild(spanInside) }, timer)
+          timer += 50
+        })
+
+        // if(ind==0){
+        //   if(window.innerWidth < 340){
+        //     this.spaBspCreate(block, 10)
+        //   }
+        //   else if(window.innerWidth < 450){
+        //     this.spaBspCreate(block, 5)
+        //   }
+        //   else{
+        //     this.spaBspCreate(block, 3)
+        //   }
+        // }
+
+        this.spaBspCreate(block)
+      })
+    },
   },
   created() {
     window.addEventListener('resize', this.handleResize);
@@ -197,6 +253,7 @@ export default {
     window.removeEventListener('resize', this.handleResize);
   },
   mounted() {
+    this.titleBlock();
     // setTimeout(() => { document.getElementById('anim__top__cont').classList.add('anim__top__cont__active') }, 500)
     // setTimeout(() => { document.getElementById('anim__bot__cont').classList.add('anim__bot__cont__active') }, 1500)
     setTimeout(() => {
@@ -1355,7 +1412,7 @@ export default {
 
     height: unset !important;
     .content{
-      margin-top: 26px;
+      margin-top: 45px;
     }
   }
 }
@@ -1510,6 +1567,73 @@ export default {
 
   100% {
     transform: rotate(-360deg);
+  }
+}
+</style>
+
+<style>
+@keyframes asd {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+    bottom: 0px;
+  }
+}
+
+.mainTitleLetter {
+  animation-duration: 0.7s;
+  animation-name: asd;
+  display: inline-block;
+}
+
+.mainTitleWord {
+  white-space: nowrap;
+  display: inline-block;
+  overflow: hidden;
+}
+.blue {
+  color: #2F5BD8;
+}
+.spanBsp {
+  opacity: 0;
+}
+@media screen and (max-width: 1271px) {
+  .spanBsp {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .spanBsp {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .spanBsp {
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .spanBsp {
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .spanBsp {
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .spanBsp {
+    font-size: 16px;
   }
 }
 </style>

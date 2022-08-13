@@ -34,10 +34,10 @@
         <div class="header">
           <HeaderPart />
         </div>
-        <h1 class="contact-banner__title">
+        <h1 class="contact-banner__title" id="p">
           <span class="contact-us"><img class="span-svg" src="../assets/images/contact/Ellipse1.svg"
               alt="elipse">contact us</span>
-          We are open <span class="color-blue">24/7</span> for any kind of <span class="color-blue">collaboration</span>
+          <!-- We are open <span class="color-blue">24/7</span> for any kind of <span class="color-blue">collaboration</span> -->
         </h1>
       </div>
     </div>
@@ -74,7 +74,11 @@ import BlockTitle from '../components/BlockTitle.vue';
 
 
 export default {
-
+  data(){
+    return {
+      mainTitle: 'We are open 24/7 for any kind of collaboration',
+    }
+  },
   name: "Contact-us",
   components: { HeaderPart, FooterPart, BlockTitle },
   methods: {
@@ -88,8 +92,73 @@ export default {
         mail.classList.remove('error')
       }
     },
+    spaBspCreate(block, amount=1){
+        for(let i = 0; i < amount; i++){
+          let spanBsp = document.createElement('span');
+          spanBsp.innerText = 'A';
+          spanBsp.classList.add('spanBsp')
+          block.appendChild(spanBsp)
+        }
+    },
+    spanletterCreate(letter){
+      let spanInside = document.createElement('span');
+      spanInside.innerText = letter;
+      spanInside.classList.add('mainTitleLetter')
+      return spanInside
+    },
+    titleBlock(){
+      let firstSplit = this.mainTitle.split(' ')
+
+      let block = document.getElementById('p')
+      let timer = 0;
+
+      firstSplit.forEach((word, ind) => {
+        let span = document.createElement('span');
+        span.id = 'word' + ind;
+
+        if (ind == 3 || ind == 8) {
+          span.classList.add('blue')
+          // if(window.innerWidth < 450){
+          //   this.spaBspCreate(block)
+          // }
+        }
+
+        if (ind == 3 || ind == 8) {
+          span.classList.add('blue')
+          // if(window.innerWidth < 450){
+          //   this.spaBspCreate(block)
+          // }
+        }
+
+
+        span.classList.add('mainTitleWord')
+        block.appendChild(span)
+
+        word.split('').forEach((letter) => {
+          let spanInside = this.spanletterCreate(letter)
+          setTimeout(() => { span.appendChild(spanInside) }, timer)
+          timer += 50
+        })
+
+        // if(ind==0){
+        //   if(window.innerWidth < 340){
+        //     this.spaBspCreate(block, 10)
+        //   }
+        //   else if(window.innerWidth < 450){
+        //     this.spaBspCreate(block, 5)
+        //   }
+        //   else{
+        //     this.spaBspCreate(block, 3)
+        //   }
+        // }
+
+        this.spaBspCreate(block)
+      })
+    },
   },
   mounted(){
+
+    this.titleBlock();
     
     function addOpac(el){
       document.querySelector(`.${el}`).classList.add('LinesShow')
@@ -208,8 +277,8 @@ export default {
       letter-spacing: 0.02em;
       text-transform: uppercase;
       color: #F0F0F0;
-      margin-top: 250px;
-      max-width: 1390px;
+      margin-top: 410px;
+      max-width: 1615px;
 
       & .contact-us {
         font-family: "Oxygen", sans-serif;
@@ -221,13 +290,17 @@ export default {
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #F0F0F0;
-        margin: 0 70px 70px 0;
+        margin: 0 70px 0px 0;
         vertical-align: top;
         position: relative;
         top: 13px;
         display: inline-flex;
         align-items: center;
 
+
+        @media screen and (max-width:1440px) {
+          margin-right: 4.51vw;
+        }
         & .span-svg {
           margin-right: 11px;
           vertical-align: baseline;
@@ -541,7 +614,7 @@ form {
   .contact-us {
     font-size: 28px !important;
     line-height: 28px !important;
-    margin: 0 !important;
+    margin-top: 0 !important;
     position: relative;
     margin-top: 50px !important;
 
@@ -583,7 +656,7 @@ form {
   .header-container .contact-banner__title {
 
     font-size: 84px !important;
-    width: 850px !important;
+    width: 862px !important;
 
   }
 
@@ -595,7 +668,7 @@ form {
   .contact-us {
     font-size: 20px !important;
     line-height: 25px !important;
-    margin: 0 !important;
+    // margin: 0 !important;
     position: relative;
     top: 10px;
     margin-top: 15px !important;
@@ -612,8 +685,8 @@ form {
   .contact-banner__title {
     font-size: 68px !important;
     line-height: 105% !important;
-    margin-top: 60px !important;
-    max-width: 854px !important;
+    margin-top: 90px !important;
+    max-width: 870px !important;
   }
 }
 
@@ -902,5 +975,72 @@ form {
 }
 .LinesShow{
   display: block !important;
+}
+</style>
+
+<style>
+@keyframes asd {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+    bottom: 0px;
+  }
+}
+
+.mainTitleLetter {
+  animation-duration: 0.7s;
+  animation-name: asd;
+  display: inline-block;
+}
+
+.mainTitleWord {
+  white-space: nowrap;
+  display: inline-block;
+  overflow: hidden;
+}
+.blue {
+  color: #2F5BD8;
+}
+.spanBsp {
+  opacity: 0;
+}
+@media screen and (max-width: 1271px) {
+  .spanBsp {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .spanBsp {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .spanBsp {
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .spanBsp {
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .spanBsp {
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .spanBsp {
+    font-size: 16px;
+  }
 }
 </style>
