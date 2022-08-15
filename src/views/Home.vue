@@ -3860,6 +3860,7 @@ export default {
     background-size: contain;
     background-repeat: no-repeat;
     min-height: 702px;
+    z-index: 1;
 
     img.zar-poqr {
       position: absolute;

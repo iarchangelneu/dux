@@ -1628,7 +1628,7 @@ export default {
 
 @media screen and (max-width: 376px) {
   .spanBsp {
-    font-size: 34px;
+    font-size: 26px;
   }
 }
 @media screen and (max-width: 340px) {
