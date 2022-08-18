@@ -332,18 +332,22 @@
         <BlockTitle title="our brands"></BlockTitle>
       </div>
       <div class="brands">
-        <div class="brands-container">
+        <div class="brands-container " data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-delay="0"
+          data-aos-offset="0">
 
           <img src="../assets/images/operation/Getslots.svg" alt="brands">
 
         </div>
-        <div class="brands-container">
+        <div class="brands-container " data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-delay="2000"
+          data-aos-offset="0">
           <img src="../assets/images/operation/Octo.svg" alt="brands">
         </div>
-        <div class="brands-container">
+        <div class="brands-container" data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-delay="1000"
+          data-aos-offset="0">
           <img src="../assets/images/operation/Pino.svg" alt="brands">
         </div>
-        <div class="brands-container">
+        <div class="brands-container " data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-delay="3000"
+          data-aos-offset="0">
           <img src="../assets/images/operation/Dux.svg" alt="brands">
         </div>
       </div>
@@ -363,46 +367,46 @@
             <img src="../assets/images/operation/gameproviders/Pragmatic.svg" alt="game-providers" class="provider-img"
               data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="0" data-aos-offset="0">
             <img src="../assets/images/operation/gameproviders/Playn'Go.svg" alt="game-providers" class="provider-img"
-              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-offset="0">
+              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="500" data-aos-offset="0">
             <img src="../assets/images/operation/gameproviders/Evolution.svg" alt="game-providers" class="provider-img"
               data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="0" data-aos-offset="0">
             <img src="../assets/images/operation/gameproviders/Playson.svg" alt="game-providers" class="provider-img"
-              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-offset="0">
+              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="500" data-aos-offset="0">
             <img src="../assets/images/operation/gameproviders/Pushgaming.svg" alt="game-providers" class="provider-img"
               data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="0" data-aos-offset="0">
             <img src="../assets/images/operation/gameproviders/Booongo.svg" alt="game-providers" class="provider-img"
-              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="2000" data-aos-offset="0">
+              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1500" data-aos-offset="0">
             <img src="../assets/images/operation/gameproviders/PragmaticLive.svg" alt="game-providers"
               class="provider-img" data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="0"
               data-aos-offset="0">
             <img src="../assets/images/operation/gameproviders/Bgaming.svg" alt="game-providers" class="provider-img"
-              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-offset="0">
+              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="500" data-aos-offset="0">
             <img src="../assets/images/operation/gameproviders/Spinomenal.svg" alt="game-providers" class="provider-img"
               data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="0" data-aos-offset="0">
             <img src="../assets/images/operation/gameproviders/Nolimitcity.svg" alt="game-providers"
-              class="provider-img" data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000"
+              class="provider-img" data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="500"
               data-aos-offset="0">
             <img src="../assets/images/operation/gameproviders/Microgaming.svg" alt="game-providers"
               class="provider-img" data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="0"
               data-aos-offset="0">
             <img src="../assets/images/operation/gameproviders/Redtiger.svg" alt="game-providers" class="provider-img"
-              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-offset="0">
+              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="500" data-aos-offset="0">
             <img src="../assets/images/operation/gameproviders/Thunderkick.svg" alt="game-providers"
-              class="provider-img" data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="2000"
+              class="provider-img" data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1500"
               data-aos-offset="0">
             <img src="../assets/images/operation/gameproviders/wazdan.svg" alt="game-providers" class="provider-img"
-              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="2000" data-aos-offset="0">
+              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1500" data-aos-offset="0">
             <img src="../assets/images/operation/gameproviders/booming.svg" alt="game-providers" class="provider-img"
-              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="2000" data-aos-offset="0">
+              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1500" data-aos-offset="0">
             <img src="../assets/images/operation/gameproviders/Isoftbet.svg" alt="game-providers" class="provider-img"
-              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-offset="0">
+              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="500" data-aos-offset="0">
             <img src="../assets/images/operation/gameproviders/Netent.svg" alt="game-providers" class="provider-img"
-              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="2000" data-aos-offset="0">
+              data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1500" data-aos-offset="0">
             <img src="../assets/images/operation/gameproviders/Yggdrasil.svg" alt="game-providers" class="provider-img"
               data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="0" data-aos-offset="0">
             <img src="../assets/images/operation/gameproviders/EGT.svg" alt="game-providers"
               class="provider-img provider-imgMH" data-aos="zoom-in" data-aos-easing="ease-in-back"
-              data-aos-duration="1000" data-aos-offset="0">
+              data-aos-duration="500" data-aos-offset="0">
             <img src="../assets/images/operation/gameproviders/belatra.svg" alt="game-providers"
               class="provider-img provider-imgMH" data-aos="zoom-in" data-aos-easing="ease-in-back"
               data-aos-duration="0" data-aos-offset="0">
@@ -461,6 +465,7 @@
   </div>
 </template>
 
+
 <script>
 import Header from '../components/Header';
 import FooterPart from "@/components/Footer";
@@ -482,6 +487,7 @@ export default {
     }
   },
   mounted() {
+
     setTimeout(function () {
       $('.oper__anim5').addClass('opacity');
     }, 500);
@@ -506,8 +512,6 @@ export default {
     setTimeout(function () {
       $('.oper__anim7').addClass('opacity');
     }, 1900);
-
-
 
 
     this.show()
@@ -556,7 +560,7 @@ export default {
       })
 
       let spanBsp = document.createElement('span');
-      spanBsp.innerText = 'A';
+      spanBsp.innerText = '.';
       spanBsp.classList.add('spanBsp')
       block.appendChild(spanBsp)
     })
@@ -1756,10 +1760,10 @@ export default {
   padding-top: 97px;
 
   &-container {
-    border: 25px solid;
+    border: 50px solid;
     border-image-source: url("../assets/images/operation/shape.svg");
     border-image-slice: 80 80;
-    transition: all .7s;
+    transition: all .7s !important;
 
     background: no-repeat;
     background-size: cover;
@@ -1770,6 +1774,7 @@ export default {
     height: 197px;
 
     &:hover {
+      border: 20px solid;
       border-image-source: url("../assets/images/operation/test.svg");
       border-image-slice: 20 22;
       transition: all .7s;
@@ -1777,6 +1782,20 @@ export default {
     }
   }
 
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.brand0 {
+  animation: opacity 1s;
 }
 
 
@@ -3331,6 +3350,7 @@ export default {
     font-size: 26px;
   }
 }
+
 @media screen and (max-width: 340px) {
   .spanBsp {
     font-size: 16px;
