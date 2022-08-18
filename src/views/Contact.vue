@@ -100,7 +100,7 @@ export default {
     spaBspCreate(block, amount = 1) {
       for (let i = 0; i < amount; i++) {
         let spanBsp = document.createElement('span');
-        spanBsp.innerText = 'A';
+        spanBsp.innerText = 'I';
         spanBsp.classList.add('spanBsp')
         block.appendChild(spanBsp)
       }
@@ -690,7 +690,7 @@ form {
   .header-container .contact-banner__title {
 
     font-size: 84px !important;
-    width: 862px !important;
+    width: 900px !important;
 
   }
 
@@ -720,7 +720,7 @@ form {
     font-size: 68px !important;
     line-height: 105% !important;
     margin-top: 90px !important;
-    max-width: 870px !important;
+    max-width: 900px !important;
   }
 }
 
