@@ -695,7 +695,7 @@ export default {
           }
 
           span {
-            font-size: 20px !important;
+            // font-size: 20px !important;
           }
 
           span:not(:last-child) {

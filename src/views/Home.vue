@@ -1497,7 +1497,7 @@ export default {
 
 
 
-@media screen and (min-width: 1024px) and (max-width: 1200px) {
+@media screen and (min-width: 1024px) and (max-width: 1026px) {
   .slider {
     padding-top: 0px !important;
   }

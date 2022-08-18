@@ -2102,11 +2102,11 @@ export default {
   }
 }
 
-@media only screen and (max-width: 1160px) {
+@media only screen and (max-width: 1024px) {
   .unique-container-left-side-title {
     max-width: 307px !important;
     min-width: 300px !important;
-    font-size: 34px !important;
+    font-size: 28px !important;
   }
 
   .unique-container-right-side-text {

@@ -402,7 +402,7 @@ form {
         font-family: 'Exo', sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 26px;
+        font-size: 24px;
         line-height: 125%;
         color: #828FA1;
 

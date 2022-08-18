@@ -1010,7 +1010,7 @@ export default {
           font-style: normal;
           font-weight: 400;
           text-transform: uppercase;
-          font-size: 84px;
+          font-size: 86px;
           line-height: 95%;
           width: max-content;
           margin: 0;
@@ -1105,7 +1105,7 @@ export default {
   }
 }
 
-@media (max-width: 1439px) and (min-width: 1024px) {
+@media (max-width: 1025px) and (min-width: 1024px) {
   .car__anim1 {
     animation: anim1 7s linear infinite;
   }
@@ -2039,7 +2039,7 @@ export default {
 
   .row__text {
     max-width: 300px;
-    font-size: 22px;
+    // font-size: 22px;
   }
 
   .career__title {
@@ -2048,30 +2048,30 @@ export default {
   }
 
   .stage-container {
-    max-width: 150px;
-    max-height: 150px;
+    // max-width: 150px;
+    // max-height: 150px;
   }
 
   .stage-container-title {
-    font-size: 22px !important;
+    // font-size: 22px !important;
   }
 
   .stage-container-sub-title {
-    font-size: 16px !important;
+    // font-size: 16px !important;
   }
 
   .stage-container-sub-text {
-    font-size: 10px !important;
+    // font-size: 10px !important;
   }
 
   .igaming-container-left-side-title {
     max-width: 307px;
-    font-size: 34px !important;
+    // font-size: 34px !important;
   }
 
   .igaming-container-right-side-text {
     max-width: 480px;
-    font-size: 18px !important;
+    // font-size: 18px !important;
   }
 
   .title-container {
