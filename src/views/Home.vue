@@ -159,7 +159,7 @@
               <img src="../assets/images/partnership/view1/4.png" />
             </div>
           </div>
-          <div class="content" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+          <div class="content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="0" data-aos-easing="ease-out">
             <p class="title">In People we Trust</p>
             <p class="text">We build any and all success on hiring industry experts, who know exactly what our customers
               demand.
@@ -182,7 +182,7 @@
               <img src="../assets/images/partnership/view2/2.png" />
             </div>
           </div>
-          <div class="content" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+          <div class="content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="0" data-aos-easing="ease-out">
             <p class="title">Transparency is Gold – Honesty, Directness, Clarity</p>
             <p class="text">We build any and all success on hiring industry experts, who know exactly what our customers
               demand.
@@ -207,7 +207,7 @@
               <img src="../assets/images/partnership/view3/4.png" />
             </div>
           </div>
-          <div class="content" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+          <div class="content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="0" data-aos-easing="ease-out">
             <p class="title" >Resilience is Key – We have a plan</p>
             <p class="text">We want to make an impact. But we are not too proud to admit that sometimes we need to
               re-adjust. Getting up after a fall and looking at different solutions that no one has ever thought of
@@ -232,7 +232,7 @@
               <img src="../assets/images/partnership/view4/3.png" />
             </div>
           </div>
-          <div class="content" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+          <div class="content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="0" data-aos-easing="ease-out">
             <p class="title">Team Dux – Together. – We are colleagues</p>
             <p class="text">But first and foremost, we like each other and we are friends. We are one team and we stand
               together in our mission. There is no hierarchy.
@@ -475,8 +475,11 @@
               <path fill-rule="evenodd"
                 d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
             </svg> -->
-            <img v-if="upHere == false" class="bi bi-arrow-right" src="../assets/images/home/Arrow.svg" alt="">
-            <img v-else class="bi bi-arrow-right" src="../assets/images/home/ArrowHov.svg" alt="">
+            <!-- <img class="bi bi-arrow-right" src="../assets/images/home/Arrow.svg" alt=""> -->
+            <transition name="fade" mode="out-in">
+              <img v-if="upHere == false" class="bi bi-arrow-right" src="../assets/images/home/Arrow.svg" alt="">
+              <img v-else class="bi bi-arrow-right" src="../assets/images/home/ArrowHov.svg" alt="">
+             </transition>
           </div>
         </div>
       </div>
@@ -681,8 +684,10 @@ let mooveCursor = () => {
         || e.pageY < document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 141
         ) {
           document.querySelector('#cards').style.visibility = `hidden`;
+          document.querySelector('#cards').style.opacity = 0
         } else {
           document.querySelector('#cards').style.visibility = `visible`;
+          document.querySelector('#cards').style.opacity = 1
           
         }
       }
@@ -695,9 +700,11 @@ let mooveCursor = () => {
             // && (e.pageY > document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 400)
         {
           document.querySelector('#cards').style.visibility = `hidden`;
+          document.querySelector('#cards').style.opacity = 0
         } else {
           // console.log(e.pageY>9140);
           document.querySelector('#cards').style.visibility = `visible`;
+          document.querySelector('#cards').style.opacity = 1
           // console.log(document.querySelector('.map').getBoundingClientRect().top + window.pageYOffset)
           // console.log(e.pageY)
         }
@@ -705,8 +712,10 @@ let mooveCursor = () => {
       else if (window.innerWidth >= 900) {
         if (mouseX < 90 || mouseX > document.querySelector('.map').offsetWidth - 70) {
           document.querySelector('#cards').style.visibility = `hidden`;
+          document.querySelector('#cards').style.opacity = 0
         } else {
           document.querySelector('#cards').style.visibility = `visible`;
+          document.querySelector('#cards').style.opacity = 1
         }
       }
 
@@ -1137,7 +1146,18 @@ export default {
     }
 
     .Marquee-content3{
-      // animation-direction: normal;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: box;
+      display: flex;
+      -webkit-animation: marquee 23s linear infinite running;
+      -moz-animation: marquee 23s linear infinite running;
+      -o-animation: marquee 23s linear infinite running;
+      -ms-animation: marquee 23s linear infinite running;
+      animation: marquee 23s linear infinite running;
+      animation-direction: reverse;
     }
     .Marquee-content:hover{
         -webkit-animation-play-state:paused;
@@ -1514,7 +1534,7 @@ export default {
     .header {
       .bg-img {
         background-size: contain !important;
-        min-height: 526px !important;
+        min-height: 567px !important;
         
         .klor {
           top: 12% !important;
@@ -1749,14 +1769,17 @@ export default {
 
       .content {
         .figure {
-          padding: 73px 97px !important;
+          padding: 97px 50px 73px 65px !important;
+          width: 845px;
+          height: 360px;
           background-image: url('../assets/images/gambling.png');
 
           p {
-            width: 79% !important;
+            // width: 79% !important;
+            width: 691px;
             font-size: 32px !important;
             line-height: 125% !important;
-            margin-left: -45px;
+            // margin-left: -45px;
           }
 
           .circle {
@@ -2482,6 +2505,7 @@ export default {
           background-image: url('../assets/images/gambling2.png');
           padding: 55px 48px 48px 48px;
           margin: 0 !important;
+          height: auto;
           width: auto !important;
           justify-content: space-between !important;
 
@@ -3563,7 +3587,7 @@ export default {
 
       & img:first-child:not(.imgs img) {
         width: 100%;
-        height: 400px;
+        height: 410px;
       }
 
       &:hover>.anime .view3 {
@@ -3775,7 +3799,7 @@ export default {
 
 .gradient{
   width: 100%;
-  height: 400px;
+  height: 410px;
 }
 
 @media screen and (min-width: 375px) and (max-width: 450px) {
@@ -3859,7 +3883,8 @@ export default {
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
-    min-height: 702px;
+    // min-height: 702px;
+    min-height: 749px;
     z-index: 1;
 
     img.zar-poqr {
@@ -4085,6 +4110,7 @@ export default {
       position: relative;
       width: 45%;
       margin-bottom: 30px;
+      overflow: hidden;
       //background-image: url('../assets/images/partnership-bg.png');
       background-position: top;
       background-repeat: no-repeat;
@@ -4105,7 +4131,7 @@ export default {
 
       & img:first-child:not(.imgs img) {
         width: 100%;
-        height: 400px;
+        height: 410px;
       }
 
       .anime {
@@ -4424,7 +4450,7 @@ export default {
       height: 16px;
     }
 
-    padding: 200px 25px 0 25px;
+    padding: 110px 25px 0 25px;
 
     &__item {
       border-top: 1px solid #828FA1;
@@ -4580,14 +4606,17 @@ export default {
       background-position: top;
       background-repeat: no-repeat;
       background-size: cover;
-      width: 70%;
+      // width: 66%;
+      width: 978px;
+      height: 245px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       border-radius: 15px;
       margin: 0 auto;
       // padding: 112px 90px 90px 50px;
-      padding: 112px 88px 90px 88px;
+      // padding: 112px 88px 90px 88px;
+      padding: 161px 88px 124px 88px;
 
       p {
         font-family: 'Exo', sans-serif;
@@ -4624,14 +4653,15 @@ export default {
 
         color: #F0F0F0;
         border-radius: 50%;
+        transition: all 0.3s;
       }
 
       .circle:hover {
         background: #1F2941;
-        // .bi-arrow-right{
-        //   width: 53px;
-        //   height: 8px;
-        // }
+        .bi-arrow-right{
+          width: 53px;
+          height: 8px;
+        }
       }
     }
   }
@@ -4712,6 +4742,7 @@ export default {
         background-image: url('../assets/images/home/News.png');
       }
       .item {
+        transition: all 0.3s;
         background-image: url('../assets/images/holding/bg.svg');
         background-repeat: no-repeat;
         background-size: contain;
@@ -4779,6 +4810,7 @@ export default {
         }
 
         .btn {
+          transition: all 0.3s;
           width: 100px;
           height: 100px;
           border-radius: 50%;
@@ -5004,6 +5036,8 @@ export default {
         border-radius: 10px;
         padding: 50px 18px 50px 25px;
         z-index: 1000;
+        transition: visibility 0.3s;
+        transition: opacity 0.3s;
 
         .card {
 
@@ -5237,6 +5271,16 @@ export default {
   .arrows-news{
     display: flex;
   }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 
 </style>
