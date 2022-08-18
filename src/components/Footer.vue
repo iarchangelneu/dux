@@ -114,6 +114,15 @@ export default {
       letter-spacing: 0.04em;
       text-transform: uppercase;
       color: #828FA1;
+      
+      transition: all 0.3s;
+      border-bottom: 1px solid #00FFFF;
+      clip-path: polygon( 
+        calc(0% + 1px) calc(0% + 1px), /* top left */
+        calc(100% - 1px) calc(0% + 1px), /* top right */
+        calc(100% - 0px) calc(100% - 2px), /* bottom right */
+        calc(0% + 0px) calc(100% - 2px) /* bottom left */
+      );
 
       &:not(:last-child) {
         margin-right: 30px;
@@ -121,7 +130,8 @@ export default {
     }
     a:hover{
       color: #00FFFF;
-      border-bottom: 1px solid #00FFFF;
+      // border-bottom: 1px solid #00FFFF;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
   }
 
@@ -137,6 +147,19 @@ export default {
       letter-spacing: 0.04em;
       text-transform: uppercase;
       color: #F0F0F0;
+      transition: all 0.3s;
+      border-bottom: 1px solid #00FFFF;
+      clip-path: polygon( 
+        calc(0% + 1px) calc(0% + 1px), /* top left */
+        calc(100% - 1px) calc(0% + 1px), /* top right */
+        calc(100% - 0px) calc(100% - 2px), /* bottom right */
+        calc(0% + 0px) calc(100% - 2px) /* bottom left */
+      );
+    }
+    a:hover{
+      color: #00FFFF;
+      // border-bottom: 1px solid #00FFFF;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
   }
 }

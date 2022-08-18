@@ -291,15 +291,26 @@ input {
     color: #F0F0F0;
 
     a {
+      transition: all 0.3s;
       color: #F0F0F0;
       text-decoration: none;
       list-style-type: none;
+      border-bottom: 1px solid #00FFFF;
+      clip-path: polygon( 
+        calc(0% + 1px) calc(0% + 1px), /* top left */
+        calc(100% - 1px) calc(0% + 1px), /* top right */
+        calc(100% - 0px) calc(100% - 2px), /* bottom right */
+        calc(0% + 0px) calc(100% - 2px) /* bottom left */
+      );
     }
     
     a:hover{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       // text-decoration: underline;
       color: #00FFFF;
-      border-bottom: 1px solid #00FFFF;
+      // border-bottom: 1px solid #00FFFF;
+      // border-width: 1px;
+      
     }
 
     a:not(:last-child) {
