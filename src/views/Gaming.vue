@@ -143,11 +143,11 @@
           <div class="text">
             <p>Please contact any of the following organizations for consultation and support:</p>
             <span>Gamblers Anonymous <a href="https://www.gamblersanonymous.org/ga/"
-                class="blue">http://www.gamblersanonymous.org/ga/</a> </span>
-            <span>GamCare <a href="https://www.gamblersanonymous.org/ga/" class="blue">https://www.gamcare.org.uk/</a>
+                class="">http://www.gamblersanonymous.org/ga/</a> </span>
+            <span>GamCare <a href="https://www.gamblersanonymous.org/ga/" class="">https://www.gamcare.org.uk/</a>
             </span>
             <span>Gambling Therapy <a href="https://www.gamcare.org.uk/"
-                class="blue">https://www.gamblingtherapy.org/</a>
+                class="">https://www.gamblingtherapy.org/</a>
             </span>
           </div>
         </div>
@@ -447,7 +447,8 @@ export default {
 
         h4 {
           max-width: 562px;
-          font-family: 'Oxygen', sans-serif;
+          // font-family: 'Oxygen', sans-serif;
+          font-family: "Exo", sans-serif;
           font-style: normal;
           font-weight: 400;
           font-size: 20px;
@@ -521,6 +522,7 @@ export default {
           a {
             margin-left: 25px;
             text-transform: lowercase;
+            color: #485567;
           }
         }
 

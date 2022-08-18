@@ -184,43 +184,43 @@
       </h2>
       <div class="row">
         <div class="row__container">
-          <p class="row__text" data-aos="zoom-in" data-aos-duration="0">
+          <p class="row__text" data-aos="zoom-in" data-aos-duration="1500">
             <span><img src="../assets/images/careers/dote.svg" alt="dote"></span>
             Modern, iGaming environment in a sunny climate
           </p>
-          <p class="row__text" data-aos="zoom-in" data-aos-duration="2000">
+          <p class="row__text" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000">
             <span><img src="../assets/images/careers/dote.svg" alt="dote"></span>
             Team lunches, drinks, and team events
           </p>
-          <p class="row__text" data-aos="zoom-in" data-aos-duration="1000">
+          <p class="row__text" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="2000">
             <span><img src="../assets/images/careers/dote.svg" alt="dote"></span>
             Employee Development Plans
           </p>
         </div>
         <div class="row__container">
-          <p class="row__text" data-aos="zoom-in" data-aos-duration="2000">
+          <p class="row__text" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="2000">
             <span><img src="../assets/images/careers/dote.svg" alt="dote"></span>
             Seafront offices
           </p>
-          <p class="row__text" data-aos="zoom-in" data-aos-duration="1000">
+          <p class="row__text" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000">
             <span><img src="../assets/images/careers/dote.svg" alt="dote"></span>
             Birthdays (we celebrate by giving employees birthday gifts + yummy treats)
           </p>
-          <p class="row__text" data-aos="zoom-in" data-aos-duration="0">
+          <p class="row__text" data-aos="zoom-in" data-aos-duration="1500">
             <span><img src="../assets/images/careers/dote.svg" alt="dote"></span>
             Mobile phone allowance
           </p>
         </div>
         <div class="row__container">
-          <p class="row__text" data-aos="zoom-in" data-aos-duration="0">
+          <p class="row__text" data-aos="zoom-in" data-aos-duration="1500">
             <span><img src="../assets/images/careers/dote.svg" alt="dote"></span>
             Private health insurance
           </p>
-          <p class="row__text" data-aos="zoom-in" data-aos-duration="2000">
+          <p class="row__text" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="2000">
             <span><img src="../assets/images/careers/dote.svg" alt="dote"></span>
             Flexi-time
           </p>
-          <p class="row__text" data-aos="zoom-in" data-aos-duration="1000">
+          <p class="row__text" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000">
             <span><img src="../assets/images/careers/dote.svg" alt="dote"></span>
             Kitchen packed with free flowing treats/ fruit/ snacks
           </p>
@@ -254,49 +254,49 @@
       <BlockTitle title="Interview Process Timeline" :large="1"></BlockTitle>
     </div>
     <div class="stages" v-if="menuClosed">
-      <div class="stage-container" data-aos="fade-right">
+      <div class="stage-container" data-aos="fade">
         <h2 class="stage-container-title">Stage 01</h2>
         <p class="stage-container-sub-title">CV Screening</p>
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
       <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768"
-        data-aos="fade-right" data-aos-duration="400" />
+        data-aos="fade" data-aos-duration="200" data-aos-delay="200"/>
       <img class="line-svg " src="../assets/images/line__768.svg" alt="Line"
         v-if="window.width <= 768 && window.width > 450" />
       <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450" />
-      <div class="stage-container" data-aos="fade-right" data-aos-duration="600">
+      <div class="stage-container" data-aos="fade" data-aos-duration="300" data-aos-delay="400">
         <h2 class="stage-container-title">Stage 02</h2>
         <p class="stage-container-sub-title">1st Interview with HR</p>
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
       <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768"
-        data-aos="fade-right" data-aos-duration="800" />
+        data-aos="fade" data-aos-duration="200" data-aos-delay="700"/>
       <img class="line-svg " src="../assets/images/line__768.svg" alt="Line"
         v-if="window.width <= 768 && window.width > 450" />
       <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450" />
-      <div class="stage-container" data-aos="fade-right" data-aos-duration="1000">
+      <div class="stage-container" data-aos="fade" data-aos-duration="300" data-aos-delay="900">
         <h2 class="stage-container-title">Stage 03</h2>
         <p class="stage-container-sub-title">Interview with Hiring Manager</p>
         <p class="stage-container-sub-text">*Home Task may be<br> included in this stage</p>
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
       <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768"
-        data-aos="fade-right" data-aos-duration="1200" />
+        data-aos="fade" data-aos-duration="200" data-aos-delay="1200"/>
       <img class="line-svg " src="../assets/images/wline__768.svg" style="transform: rotate(0deg);" alt="Line"
         v-if="window.width <= 768 && window.width > 450" />
       <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450" />
-      <div class="stage-container" data-aos="fade-right" data-aos-duration="1400">
+      <div class="stage-container" data-aos="fade" data-aos-duration="300" data-aos-delay="1400">
         <h2 class="stage-container-title">Stage 04</h2>
         <p class="stage-container-sub-title">Final Interview with Management</p>
         <p class="stage-container-sub-text">(Usually for high level position)</p>
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
       <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768"
-        data-aos="fade-right" data-aos-duration="1400" />
+        data-aos="fade" data-aos-duration="200" data-aos-delay="1700"/>
       <img class="line-svg " src="../assets/images/rline__768.svg" alt="Line"
         v-if="window.width <= 768 && window.width > 450" />
       <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450" />
-      <div class="stage-container" data-aos="fade-right" data-aos-duration="1800">
+      <div class="stage-container" data-aos="fade" data-aos-duration="300" data-aos-delay="1900">
         <h2 class="stage-container-title">Stage 05</h2>
         <p class="stage-container-sub-title">Offer stage</p>
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
@@ -313,7 +313,7 @@
         <span class="color-blue"> iGaming</span>
         Meets a Passion for Tech
       </h2>
-      <div class="igaming-container" data-aos="fade-up">
+      <div class="igaming-container" data-aos="fade-up" data-aos-duration="1500">
         <div class="igaming-container-left-side">
           <div class="igaming-container-left-side-dote">
             <img src="../assets/images/careers/dote16.svg" alt="dote16" />
@@ -330,7 +330,7 @@
           </p>
         </div>
       </div>
-      <div class="igaming-container" data-aos="fade-up">
+      <div class="igaming-container" data-aos="fade-up" data-aos-duration="1500">
         <div class="igaming-container-left-side">
           <div class="igaming-container-left-side-dote">
             <img src="../assets/images/careers/dote16.svg" alt="dote16" />
@@ -347,7 +347,7 @@
           </p>
         </div>
       </div>
-      <div class="igaming-container" data-aos="fade-up">
+      <div class="igaming-container" data-aos="fade-up" data-aos-duration="1500">
         <div class="igaming-container-left-side">
           <div class="igaming-container-left-side-dote">
             <img src="../assets/images/careers/dote16.svg" alt="dote16" />
@@ -364,7 +364,7 @@
           </p>
         </div>
       </div>
-      <div class="igaming-container" data-aos="fade-up">
+      <div class="igaming-container" data-aos="fade-up" data-aos-duration="1500">
         <div class="igaming-container-left-side">
           <div class="igaming-container-left-side-dote">
             <img src="../assets/images/careers/dote16.svg" alt="dote16" />
@@ -381,7 +381,7 @@
           </p>
         </div>
       </div>
-      <div class="igaming-container" data-aos="fade-up">
+      <div class="igaming-container" data-aos="fade-up" data-aos-duration="1500">
         <div class="igaming-container-left-side">
           <div class="igaming-container-left-side-dote">
             <img src="../assets/images/careers/dote16.svg" alt="dote16" />
@@ -472,7 +472,7 @@ export default {
     spaBspCreate(block, amount=1){
         for(let i = 0; i < amount; i++){
           let spanBsp = document.createElement('span');
-          spanBsp.innerText = 'A';
+          spanBsp.innerText = 'I';
           spanBsp.classList.add('spanBsp')
           block.appendChild(spanBsp)
         }
@@ -514,10 +514,13 @@ export default {
             this.spaBspCreate(block, 10)
           }
           else if(window.innerWidth < 450){
-            this.spaBspCreate(block, 5)
+            this.spaBspCreate(block, 15)
+          }
+          else if(window.innerWidth < 1272){
+            this.spaBspCreate(block, 15)
           }
           else{
-            this.spaBspCreate(block, 3)
+            this.spaBspCreate(block, 5)
           }
         }
 
