@@ -277,7 +277,7 @@
       <div class="stage-container" data-aos="fade" data-aos-duration="300" data-aos-delay="900">
         <h2 class="stage-container-title">Stage 03</h2>
         <p class="stage-container-sub-title">Interview with Hiring Manager</p>
-        <p class="stage-container-sub-text">*Home Task may be<br> included in this stage</p>
+        <p class="stage-container-sub-text">*Home Task may be included in this stage</p>
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
       <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768"
@@ -751,6 +751,8 @@ export default {
   display: inline;
 }
 
+
+
 .BambooHR-ATS-board ul {
   padding: 2px 0px 12px 0px !important;
   margin-bottom: 0 !important;
@@ -787,6 +789,8 @@ export default {
   font-family: 'Oxygen' !important;
   padding-left: 0 !important;
   padding: 14px;
+  padding-top: 7px;
+  padding-bottom: 8px;
   -moz-transition: all .5s;
   -o-transition: all .5s;
   -webkit-transition: all .5s;
@@ -803,6 +807,9 @@ export default {
 }
 
 @media screen and (max-width:450px) {
+
+ 
+
   .openings__content:hover {
     width: 100%;
 
@@ -811,20 +818,21 @@ export default {
   .BambooHR-ATS-Jobs-Item {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .BambooHR-ATS-board li:hover {
-    background: #1F2941;
+    background: unset;
     padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-right: 14px !important;
 
   }
 
   .career-main-block-items:hover {
-    background: #1F2941;
+    background: unset;
     padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-right: 14px !important;
 
   }
 
@@ -840,6 +848,10 @@ export default {
   .BambooHR-ATS-Location {
     font-size: 12px;
     white-space: nowrap;
+  }
+   .BambooHR-ATS-board h2{
+    margin-bottom: 0px !important;
+    margin-top: 24px !important;
   }
 }
 </style>
@@ -1847,6 +1859,24 @@ export default {
       letter-spacing: 0.04em;
       text-transform: uppercase;
       color: #F0F0F0;
+      max-width: 85%;
+    }
+
+    @media screen and (max-width: 1024px) {
+      width: 150px;
+      height: 150px;
+
+      &-title{
+        font-size: 20px;
+      }
+
+      &-sub-title {
+        font-size: 16px;
+      }
+
+      &-sub-text{
+        font-size: 10px;
+      }
     }
   }
 }
@@ -1930,6 +1960,16 @@ export default {
     display: flex;
     font-size: 20px !important;
     margin-top: 10px !important;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .igaming-container-left-side-dote {
+    margin-right: 8px !important;
+  }
+  .marquee-container .Marquee-content .Marquee-tag p {
+    font-size: 38px !important;
+    line-height: 105% !important;
   }
 }
 
@@ -2103,7 +2143,7 @@ export default {
 
 @media screen and (max-width: 375px) {
   .stages .line-svg {
-    margin: 0 128px !important;
+    margin: 0 44% !important;
   }
 
   .stages {
@@ -2549,6 +2589,9 @@ export default {
   .igaming {
     padding: 0 16px !important;
   }
+  .igaming-container-left-side-dote{
+    margin-right: 8px;
+  }
 
   .igaming-container {
     padding: 10px 0 !important;
@@ -2684,11 +2727,12 @@ export default {
   }
 
   .igaming-container-left-side-title {
-    font-size: 24px !important;
+    font-size: 20px !important;
   }
 
   .igaming-container-right-side-text {
-    font-size: 18px !important;
+    font-size: 16px !important;
+    margin-top: 20px;
   }
 
   .igaming-container {
@@ -2832,6 +2876,33 @@ export default {
 
   .swiper-slide {
     width: 214px;
+  }
+  .car__anim5{
+    right: -144px;
+    top: -27px;
+  }
+  .car__anim2{
+    left: 1px;
+    top: 40px;
+    width: 111px;
+  }
+  .car__anim1{
+    top: 92px;
+    left: 170px;
+    width: 88px;
+  }
+  .car__anim3{
+    left: 162px;
+    top: 23px;
+    width: 50px;
+  }
+  .stages{
+    .stage-container-sub-title{
+      max-width: 90% !important;
+    }
+    .stage-container-sub-text{
+      max-width: 100% !important;
+    }
   }
 }
 </style>

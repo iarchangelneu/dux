@@ -1316,6 +1316,10 @@ export default {
 }
 
 @media (max-width: 767px) and (min-width: 320px) {
+
+  .unique-container{
+        padding: 10px 0px 42px 0px;
+  }
   .operation-banner {
 
     min-height: 265px !important;
@@ -2819,6 +2823,9 @@ export default {
 }
 
 @media only screen and (max-width: 500px) {
+  .unique-container {
+    padding: 10px 0px 42px 0px;
+  }
   .operation-us {
     margin: 0 !important;
     margin-bottom: 10px !important;
@@ -3077,13 +3084,13 @@ export default {
   }
 
   .unique-container-left-side-title {
-    font-size: 26px !important;
+    font-size: 20px !important;
     line-height: 26px;
     letter-spacing: 0.05em;
   }
 
   .unique-container-right-side-text {
-    font-size: 18px !important;
+    font-size: 16px !important;
     line-height: 20px;
   }
 

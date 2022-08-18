@@ -1463,7 +1463,7 @@ export default {
         // }
 
         .request {
-          width: 42% !important;
+          width: 85% !important;
         }
 
         .request p {

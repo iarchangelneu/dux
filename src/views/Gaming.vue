@@ -1151,14 +1151,14 @@ export default {
             }
 
             p {
-              font-size: 16px !important;
+              font-size: 20px !important;
               line-height: 25px !important;
             }
           }
 
           h4 {
             width: auto !important;
-            font-size: 14px !important;
+            font-size: 16px !important;
             line-height: 16px !important;
           }
         }

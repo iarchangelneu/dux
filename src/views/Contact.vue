@@ -741,6 +741,16 @@ form {
 }
 
 @media screen and (max-width: 450px) {
+  form {
+    .apply{
+      img{
+            padding-left: 190px;
+      }
+    }
+  }
+  .contact-form{
+    width: 100% !important;
+  }
   .contact-us {
     position: initial !important;
     font-size: 16px !important;
@@ -766,6 +776,11 @@ form {
   }
 
   .contact-form__container .contact-form {
+    .form-right-side{
+      textarea{
+        width: 100%;
+      }
+    }
     background: url('../assets/images/contact320.png') no-repeat center !important;
   }
 

@@ -296,7 +296,7 @@
             <div class="Marquee-tag max-width">
               <!-- <img src="../assets/images/marquee/nineCasino.svg" class="ml10" /> -->
               <div class="TestCazino Nine" onclick="window.open('https://ninecasino.com/', '_blank')">
-                <img src="../assets/images/marquee/NineLogo.png" alt="">
+                <img src="../assets/images/marquee/NineSVG.svg" alt="">
               </div>
               <p>WE LOVE</p>
             </div>
@@ -319,7 +319,7 @@
             <div class="Marquee-tag max-width">
               <!-- <img src="../assets/images/marquee/nineCasino.svg" class="ml10" /> -->
               <div class="TestCazino Nine" onclick="window.open('https://ninecasino.com/', '_blank')">
-                <img src="../assets/images/marquee/NineLogo.png" alt="">
+                <img src="../assets/images/marquee/NineSVG.svg" alt="">
               </div>
               <p>WE LOVE</p>
             </div>
@@ -1248,7 +1248,7 @@ export default {
           font-style: normal;
           font-weight: 400;
           text-transform: uppercase;
-          font-size: 58px !important;
+          font-size: 48px !important;
           line-height: 95%;
           margin: 0;
         }
@@ -2640,6 +2640,38 @@ export default {
 }
 
 @media screen and (max-width:450px) {
+
+  .container{
+    .content {
+      padding: 70px 16px !important;
+
+      &__item {
+        padding: 10px 0 36px 0 !important;
+
+        div {
+          width: 40% !important;
+
+          svg {
+            margin-right: 20px !important;
+          }
+
+          h3 {
+            font-size: 22px !important;
+            line-height: 28px !important;
+            letter-spacing: 0.03em !important;
+          }
+        }
+
+        h4 {
+          width: 55% !important;
+          font-size: 16px !important;
+          line-height: 20px !important;
+          letter-spacing: 0.04em !important;
+        }
+      }
+    }
+  }
+  
   .organizations__mob {
     display: contents;
 
@@ -2777,7 +2809,7 @@ export default {
             padding: 0 !important;
 
             p {
-              font-size: 58px !important;
+              font-size: 48px !important;
               line-height: 105% !important;
 
             }
@@ -2863,7 +2895,7 @@ export default {
           line-height: 110% !important;
           text-align: center !important;
           letter-spacing: 0.03em !important;
-          width: auto !important;
+          // width: auto !important;
         }
       }
 
@@ -2976,16 +3008,16 @@ export default {
           flex-direction: column !important;
           align-items: flex-start !important;
           padding-bottom: 25px !important;
-          padding-left: 16px !important;
-          padding-right: 16px !important;
+          // padding-left: 16px !important;
+          // padding-right: 16px !important;
 
           div {
             width: auto !important;
 
             svg {
               margin-right: 8px !important;
-              width: 15px !important;
-              height: 15px !important;
+              width: 10px !important;
+              height: 10px !important;
             }
 
             h3 {
@@ -3315,6 +3347,56 @@ export default {
 
 }
 
+@media screen and (min-width: 320px) and (max-width: 375px) {
+.container{
+  .slider {
+      .slide_part div img {
+        width: 288px !important;
+      }
+
+      .header-sldier {
+        padding: 0 16px !important;
+
+        img:first-child {
+          display: none !important;
+        }
+
+        img {
+          width: 100% !important;
+        }
+      }
+
+      .title {
+        margin: 50px 0 50px 0 !important;
+
+        p {
+          font-size: 34px !important;
+          line-height: 110% !important;
+          text-align: center !important;
+          letter-spacing: 0.03em !important;
+          width: auto !important;
+        }
+      }
+
+      .slide_part {
+        margin-left: 16px !important;
+
+        .slider {
+          .vue-slick {
+            div {
+
+              margin-right: 10px !important;
+
+            }
+          }
+
+
+        }
+      }
+    }
+}
+
+}
 
 
 .header {
@@ -5163,15 +5245,26 @@ export default {
 }
 
 @media screen and (max-width: 1024px) {
-  .TestCazino{
-  width: 100px;
-  height: 100px;
-  border: 0.882353px solid #828FA1;
-  border-radius: 116.883px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
+    .TestCazino{
+    width: 100px;
+    height: 100px;
+    border: 0.882353px solid #828FA1;
+    border-radius: 116.883px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
+}
+
+@media screen and (max-width: 475px) {
+    .TestCazino{
+    width: 70px;
+    height: 70px;
+    border: 0.882353px solid #828FA1;
+    border-radius: 116.883px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
 
 .TestCazino:hover{
   background: #828FA1;
@@ -5198,6 +5291,13 @@ export default {
       height: 27px !important;
     }
   }
+  @media screen and (max-width: 475px) {
+    img{
+      padding: 26px 17px 26px 17px;
+      width: 36px !important;
+      height: 20px !important;
+    }
+  }
 }
 .Pino{
   img{
@@ -5210,6 +5310,13 @@ export default {
       padding: 43px 30px 40px 34px;
       width: 33px !important;
       height: 18px !important;
+    }
+  }
+  @media screen and (max-width: 475px) {
+    img{
+      padding: 25px 20px 25px 20px;
+      width: 31px !important;
+      height: 20px !important;
     }
   }
 }
@@ -5227,6 +5334,13 @@ export default {
       height: 22px !important;
     }
   }
+  @media screen and (max-width: 475px) {
+    img{
+      padding: 27px 20px 27px 20px;
+      width: 31px !important;
+      height: 17px !important;
+    }
+  }
 }
 .Octo{
   img{
@@ -5242,6 +5356,13 @@ export default {
       height: 20px !important;
     }
   }
+  @media screen and (max-width: 475px) {
+    img{
+      padding: 27px 19px 27px 19px;
+      width: 33px !important;
+      height: 17px !important;
+    }
+  }
 }
 
 .Gets{
@@ -5255,6 +5376,13 @@ export default {
       padding: 42px 38.5px 36px 34.5px;
       width: 34px !important;
       height: 24px !important;
+    }
+  }
+  @media screen and (max-width: 475px) {
+    img{
+      padding: 25px 19px 24px 22px;
+      width: 29px !important;
+      height: 21px !important;
     }
   }
 }
