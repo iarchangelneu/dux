@@ -3,14 +3,14 @@
     <div class="header">
       <div class="header__menu">
         <div class="cubes">
-          <div class="cube" data-aos="fade-down" data-aos-delay="0"></div>
-          <div class="cube" data-aos="fade-down" data-aos-delay="300"></div>
-          <div class="cube" data-aos="fade-down" data-aos-delay="500"></div>
-          <div class="cube" data-aos="fade-down" data-aos-delay="700"></div>
-          <div class="cube" data-aos="fade-down" data-aos-delay="900"></div>
-          <div class="cube" data-aos="fade-down" data-aos-delay="1100"></div>
-          <div class="cube" data-aos="fade-down" data-aos-delay="1300"></div>
-          <div class="cube" data-aos="fade-down" data-aos-delay="1500"></div>
+          <div class="cube cube0"></div>
+          <div class="cube cube1"></div>
+          <div class="cube cube2"></div>
+          <div class="cube cube3"></div>
+          <div class="cube cube4"></div>
+          <div class="cube cube5"></div>
+          <div class="cube cube6"></div>
+          <div class="cube cube7"></div>
           <!--          <div class="changeable"></div>-->
         </div>
         <!--        <div class="animatin-header_width">-->
@@ -20,7 +20,7 @@
       </div>
       <!--      <img src="../assets/images/ventures/header-bg.png"/>-->
       <div class="content">
-        <p class="p" data-aos="fade-up" >
+        <p class="p" data-aos="fade-up">
           <span class="brave">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2F5BD8" class="bi bi-circle-fill"
               viewBox="0 0 16 16">
@@ -155,8 +155,11 @@
         </div>
         <div class="form">
           <input type="email" placeholder="You contact e-mail" id="mail__input">
+          <div style="display: flex;justify-content: left;">
+            <small class="error__msg" id="error__msg">Error message</small>
+          </div>
           <textarea placeholder="Comment"></textarea>
-          <p @click="test">apply now</p>
+          <p @click="test">apply now <img src="../assets/images/btn_arrow.svg" alt=""></p>
         </div>
       </div>
     </div>
@@ -189,16 +192,19 @@ export default {
     },
     test() {
       let mail = document.getElementById('mail__input')
+      let error = document.getElementById('error__msg')
 
       if (mail.value.length <= 0) {
-        mail.classList.add('error')
+        mail.style.borderColor = '#C22B2B'
+        error.style.display = 'block'
       }
       else {
-        mail.classList.remove('error')
+        mail.style.borderColor = '#828FA1'
+        error.style.display = 'none'
       }
     },
   },
-  mounted(){
+  mounted() {
     let firstSplit = this.mainTitle.split(' ')
 
     let block = document.getElementById('p')
@@ -207,7 +213,7 @@ export default {
     firstSplit.forEach((word, ind) => {
       let span = document.createElement('span');
       span.id = 'word' + ind;
-      if(ind > 2){
+      if (ind > 2) {
         span.classList.add('blue')
       }
       span.classList.add('mainTitleWord')
@@ -235,6 +241,57 @@ export default {
 <style scoped lang="scss">
 .error {
   border: 1px solid #C22B2B !important;
+}
+
+@keyframes cubeAnim {
+  0% {
+    opacity: 0;
+    transform: translate(0, -100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.cube0 {
+  animation: cubeAnim .5s linear;
+}
+
+.cube1 {
+  animation: cubeAnim .5s linear;
+  animation-delay: .3s;
+}
+
+.cube2 {
+  animation: cubeAnim .5s linear;
+  animation-delay: .5s;
+}
+
+.cube3 {
+  animation: cubeAnim .5s linear;
+  animation-delay: .7s;
+}
+
+.cube4 {
+  animation: cubeAnim .5s linear;
+  animation-delay: .9s;
+}
+
+.cube5 {
+  animation: cubeAnim .5s linear;
+  animation-delay: 1.1s;
+}
+
+.cube6 {
+  animation: cubeAnim .5s linear;
+  animation-delay: 1.3s;
+}
+
+.cube7 {
+  animation: cubeAnim .5s linear;
+  animation-delay: 1.5s;
 }
 
 @keyframes rotate__figure {
@@ -380,7 +437,7 @@ export default {
 
   .container {
     &>* {
-      margin-top: -1px;
+      // margin-top: -1px;
     }
 
     .header {
@@ -486,9 +543,11 @@ export default {
           line-height: 104px !important;
           // width: 1000px;
           width: 69.44vw;
+
           @media screen and (max-width: 1024px) {
             width: 75.44vw;
           }
+
           .brave {
             width: 250px !important;
             margin-right: 0px !important;
@@ -530,7 +589,7 @@ export default {
 
         img:nth-child(2) {
           bottom: 15px !important;
-          right: 200px !important;
+          right: 435px !important;
         }
       }
     }
@@ -591,15 +650,18 @@ export default {
         .request {
           width: 42% !important;
         }
+
         .request p {
           font-size: 48px !important;
         }
 
-        .list{
+        .list {
           width: 50% !important;
         }
+
         .list ul {
           padding-left: 20px !important;
+          margin-top: -0.3px;
 
           li {
             font-size: 19px !important;
@@ -638,7 +700,7 @@ export default {
 
   .container {
     &>* {
-      margin-top: -1px;
+      // margin-top: -1px;
     }
 
     .header {
@@ -857,10 +919,10 @@ export default {
           width: 100% !important;
         }
 
-          .request{
-            width: 42% !important;
+        .request {
+          width: 42% !important;
         }
-          
+
         .request p {
           font-size: 58px !important;
 
@@ -1116,7 +1178,7 @@ export default {
 
   .container {
     &>* {
-      margin-top: -1px;
+      // margin-top: -1px;
     }
 
     .header {
@@ -1403,6 +1465,7 @@ export default {
         .request {
           width: 42% !important;
         }
+
         .request p {
           font-size: 22px !important;
           line-height: 28px !important;
@@ -1470,7 +1533,7 @@ export default {
 
 .container {
   &>* {
-    margin-top: -1px;
+    // margin-top: -1px;
   }
 
   .header {
@@ -1510,6 +1573,7 @@ export default {
           border: 1px solid;
           border-image-slice: 1;
           border-image-source: linear-gradient(to bottom, #0046b0, #0058ba, #0069c2, #0079c8, #0089cd);
+
         }
 
 
@@ -1524,7 +1588,7 @@ export default {
 
         div:nth-child(1) {
           width: 50px;
-          height: 50px;
+          height: 75px;
           z-index: 1000;
           transition: all .5s;
         }
@@ -2031,7 +2095,7 @@ export default {
             }
 
             span {
-              font-family: 'Oxygen', sans-serif;
+              font-family: 'Exo', sans-serif;
               font-style: normal;
               font-weight: 400;
               font-size: 20px;
@@ -2091,13 +2155,14 @@ export default {
         font-size: 16px;
         width: 510px;
         font-family: 'Oxygen';
+        transition: all .3s;
       }
 
       textarea {
         border: 1px solid #828FA1;
         background: transparent;
         padding: 15px 0 15px 15px;
-        margin-top: 20px;
+        margin-top: 10px;
         border-radius: 8px;
         resize: none;
         color: #828FA1;
@@ -2106,6 +2171,15 @@ export default {
         font-family: 'Oxygen';
         min-height: 108px;
         margin-bottom: 14px;
+      }
+
+      .error__msg {
+        color: #C22B2B;
+        font-size: 14px;
+        margin-top: 10px;
+        margin-left: -260px;
+        display: none;
+        transition: display .3s;
       }
 
       p {
@@ -2128,22 +2202,21 @@ export default {
         display: flex;
         align-items: center;
         min-height: 19px;
-      }
+        transition: all .3s;
 
-      p::after {
-        content: url('../assets/images/btn_arrow.svg');
-        padding-left: 352px;
-        background-repeat: no-repeat;
-        display: none;
-
-      }
-
-      p:hover:after {
-        display: inline;
+        img {
+          opacity: 0;
+          padding-left: 352px;
+          transition: all .3s;
+        }
       }
 
       p:hover {
         background: #0E339C;
+      }
+
+      p:hover img {
+        opacity: 1;
       }
     }
   }
@@ -2188,8 +2261,8 @@ export default {
   display: inline-block;
   overflow: hidden;
 }
+
 .blue {
   color: #2F5BD8;
 }
-
 </style>
