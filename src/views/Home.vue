@@ -732,6 +732,20 @@ let mooveCursor = () => {
         }
       }
 
+      else if (window.innerWidth >= 320) {
+        if (mouseX < 100 || mouseX > document.querySelector('.map').offsetWidth - 50
+          || e.pageY > document.querySelector('.map').getBoundingClientRect().top + window.pageYOffset + 200
+          || e.pageY < document.querySelector('.map').getBoundingClientRect().top + window.pageYOffset + 10
+        ) {
+          document.querySelector('#cards').style.visibility = `hidden`;
+          document.querySelector('#cards').style.opacity = 0
+        } else {
+          document.querySelector('#cards').style.visibility = `visible`;
+          document.querySelector('#cards').style.opacity = 1
+
+        }
+      }
+
       // if(window.innerWidth < 1024){
       //   if( mouseX < 40 || mouseX > document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth){
       //     document.querySelector('#cards').style.visibility = `visible`;
@@ -5172,7 +5186,8 @@ export default {
 }
 
 @media screen and (max-width: 450px) {
-  .cards {
+  .cards {  
+    transform: translate3d(0px, 0px, 0px) !important; 
     top: 186px !important;
     left: 69px !important;
 
