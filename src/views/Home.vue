@@ -734,7 +734,7 @@ let mooveCursor = () => {
 
       else if (window.innerWidth >= 320) {
         if (mouseX < 100 || mouseX > document.querySelector('.map').offsetWidth - 50
-          || e.pageY > document.querySelector('.map').getBoundingClientRect().top + window.pageYOffset + 200
+          || e.pageY > document.querySelector('.map').getBoundingClientRect().top + window.pageYOffset + 230
           || e.pageY < document.querySelector('.map').getBoundingClientRect().top + window.pageYOffset + 10
         ) {
           document.querySelector('#cards').style.visibility = `hidden`;
