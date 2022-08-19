@@ -205,6 +205,12 @@ export default {
     },
   },
   mounted() {
+    let timerAnim = 0
+    document.querySelectorAll('.cube').forEach((el)=>{
+      setTimeout(()=>{el.classList.add('showdiv')},timerAnim)
+      timerAnim+=300;
+    })
+
     let firstSplit = this.mainTitle.split(' ')
 
     let block = document.getElementById('p')
@@ -350,7 +356,7 @@ export default {
         position: absolute;
         right: 0;
         margin: 0;
-        z-index: -1;
+        z-index: 0;
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
@@ -1581,6 +1587,7 @@ export default {
 
         div.cube {
           margin-right: 40px;
+          opacity: 0;
         }
 
 
@@ -2236,6 +2243,9 @@ export default {
     }
   }
 }
+.showdiv{
+  opacity: 1 !important;
+}
 </style>
 
 <style>
@@ -2266,5 +2276,13 @@ export default {
 
 .blue {
   color: #2F5BD8;
+}
+.showdiv{
+  opacity: 1 !important;
+}
+</style>
+<style>
+.showdiv{
+  opacity: 1 !important;
 }
 </style>
