@@ -623,6 +623,7 @@ export default {
 
 .opacity {
   opacity: 1 !important;
+  transition: all .3s;
 }
 
 @keyframes oper1 {
@@ -1324,9 +1325,10 @@ export default {
 
 @media (max-width: 767px) and (min-width: 320px) {
 
-  .unique-container{
-        padding: 10px 0px 42px 0px;
+  .unique-container {
+    padding: 10px 0px 42px 0px;
   }
+
   .operation-banner {
 
     min-height: 265px !important;
@@ -2833,6 +2835,7 @@ export default {
   .unique-container {
     padding: 10px 0px 42px 0px;
   }
+
   .operation-us {
     margin: 0 !important;
     margin-bottom: 10px !important;
