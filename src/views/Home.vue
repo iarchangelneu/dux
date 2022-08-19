@@ -987,12 +987,12 @@ export default {
     transform: rotate(0deg) scale(1);
   }
 
-  50% {
-    transform: rotate(45deg) scale(.8) translate(15px, 100px);
-  }
+  // 50% {
+  //   transform: rotate(45deg) scale(.8) translate(15px, 100px);
+  // }
 
   100% {
-    transform: rotate(0deg) scale(1);
+    transform: rotate(360deg) scale(1);
   }
 }
 
@@ -1001,12 +1001,12 @@ export default {
     transform: rotate(0deg) scale(1);
   }
 
-  50% {
-    transform: rotate(-45deg) scale(.8) translate(-100px, 15px);
-  }
+  // 50% {
+  //   transform: rotate(-45deg) scale(.8) translate(-100px, 15px);
+  // }
 
   100% {
-    transform: rotate(0deg) scale(1);
+    transform: rotate(-360deg);
   }
 }
 
@@ -1015,12 +1015,12 @@ export default {
     transform: rotate(0deg) scale(1);
   }
 
-  50% {
-    transform: rotate(90deg) scale(.8) translate(100px, 10%);
-  }
+  // 50% {
+  //   transform: rotate(90deg) scale(.8) translate(100px, 10%);
+  // }
 
   100% {
-    transform: rotate(0deg) scale(1);
+    transform: rotate(360deg) scale(1);
   }
 }
 
@@ -1033,21 +1033,21 @@ export default {
 }
 
 .zar-mec {
-  animation: cube3 13s linear infinite;
+  animation: cube3 15s linear infinite;
   animation-play-state: running;
-  transform-origin: bottom right;
+  // transform-origin: bottom right;
 }
 
 .klor {
-  animation: cube2 15s linear infinite;
+  animation: cube2 20s linear infinite;
   animation-play-state: running;
-  transform-origin: bottom right;
+  // transform-origin: bottom right;
 }
 
 .zar-poqr {
-  animation: cube1 11s linear infinite;
+  animation: cube1 25s linear infinite;
   animation-play-state: running;
-  transform-origin: bottom right;
+  // transform-origin: bottom right;
 }
 
 .third_figure,
