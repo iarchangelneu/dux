@@ -571,22 +571,28 @@ export default {
 <style scoped lang="scss">
 @keyframes full {
   0% {
-    transform: rotate(0);
-    transform: translate(0, 0);
+    transform: rotate(0deg) translate(0, 0);
+    animation-timing-function: ease-out;
   }
 
-  50% {
-    transform: rotate(15deg) translate(-424px, 0);
+  // 50% {
+  //   transform: rotate(15deg) translate(-424px, 0);
 
-  }
-
-
-  // 75% {
-  //   transform: rotate(-15deg) translate(100px, 0);
   // }
 
+  25% {
+    transform: rotate(15deg) translate(-424px, 0);
+    animation-timing-function: ease-in-out;
+  }
+
+  75% {
+    transform: rotate(-15deg) translate(284px, 0);
+    animation-timing-function: ease-in;
+  }
+
   100% {
-    transform: rotate(0) translate(0, 0);
+    transform: rotate(0deg) translate(0, 0);
+    animation-timing-function: linear;
   }
 }
 
@@ -609,14 +615,13 @@ export default {
 }
 
 .full__anim {
-  animation: full 8s linear infinite;
+  animation: full 7s infinite;
   animation-delay: 2s;
   padding-top: -30px;
 }
 
 .opacity {
   opacity: 1 !important;
-  transition: all .3s;
 }
 
 @keyframes oper1 {
@@ -1318,10 +1323,9 @@ export default {
 
 @media (max-width: 767px) and (min-width: 320px) {
 
-  .unique-container {
-    padding: 10px 0px 42px 0px;
+  .unique-container{
+        padding: 10px 0px 42px 0px;
   }
-
   .operation-banner {
 
     min-height: 265px !important;
@@ -2828,7 +2832,6 @@ export default {
   .unique-container {
     padding: 10px 0px 42px 0px;
   }
-
   .operation-us {
     margin: 0 !important;
     margin-bottom: 10px !important;
