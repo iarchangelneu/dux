@@ -37,12 +37,12 @@
       <BlockTitle title="our departments"></BlockTitle>
     </div>
     <div class="department">
-      <h2 class="department__title" data-aos="fade-up" data-aos-duration="1000">
+      <h2 class="department__title" data-aos="fade-up" data-aos-duration="1500">
         At DUXGroup, more than <span class="color-blue">350 experts </span>working in different departments <span
           class="color-blue">around the world</span> ensure the operational activities of the
         <span class="color-blue">holding</span> and its <span class="color-blue">brands.</span>
       </h2>
-      <div class="mechanism-container" data-aos="fade-up">
+      <div class="mechanism-container" data-aos="fade-up" data-aos-duration="1500">
         <div class="mechanism mechanism-support" @click="$modal.show('support-modal');">
           <img alt="shestiryonka" class='small-shestiryonka transparent'
             src="../assets/images/operation/shestiryonka.svg" />
@@ -253,7 +253,7 @@
         <BlockTitle title="About our team" v-else></BlockTitle>
       </div>
       <div class="unique">
-        <div class="unique-container" data-aos="fade-up" data-aos-duration="500">
+        <div class="unique-container" data-aos="fade-up" data-aos-duration="1500">
           <div class="unique-container-left-side">
             <div class="unique-container-left-side-dote">
               <img src="../assets/images/careers/dote16.svg" alt="dote16" />
@@ -271,7 +271,7 @@
             </p>
           </div>
         </div>
-        <div class="unique-container" data-aos="fade-up">
+        <div class="unique-container" data-aos="fade-up" data-aos-duration="1500">
           <div class="unique-container-left-side">
             <div class="unique-container-left-side-dote">
               <img src="../assets/images/careers/dote16.svg" alt="dote16" />
@@ -289,7 +289,7 @@
             </p>
           </div>
         </div>
-        <div class="unique-container" data-aos="fade-up">
+        <div class="unique-container" data-aos="fade-up" data-aos-duration="1500">
           <div class="unique-container-left-side">
             <div class="unique-container-left-side-dote">
               <img src="../assets/images/careers/dote16.svg" alt="dote16" />
@@ -309,7 +309,7 @@
             </p>
           </div>
         </div>
-        <div class="unique-container" data-aos="fade-up">
+        <div class="unique-container" data-aos="fade-up" data-aos-duration="1500">
           <div class="unique-container-left-side">
             <div class="unique-container-left-side-dote">
               <img src="../assets/images/careers/dote16.svg" alt="dote16" />
@@ -352,14 +352,14 @@
         </div>
       </div>
       <div class="brands-title-container">
-        <h2 class="brands-title" data-aos="fade-up">
+        <h2 class="brands-title" data-aos="fade-up" data-aos-duration="1500">
           On our brands we have<span class="color-blue"> the best </span>game and payment providers necessary to provide
           an <span class="color-blue">optimal level of service</span> and
           fun to players from <span class="color-blue">different countries.</span>
         </h2>
       </div>
       <div class="game-provider">
-        <h3 class="game-provider-title" data-aos="fade-up">
+        <h3 class="game-provider-title" data-aos="fade-up" data-aos-duration="1000">
           <span class="color-blue"> game </span>providers
         </h3>
         <div class="provider-row">
@@ -423,7 +423,7 @@
         </div>
       </div>
       <div class="payment-provider">
-        <h3 class="payment-provider-title" data-aos="fade-up">
+        <h3 class="payment-provider-title" data-aos="fade-up" data-aos-duration="1000">
           <span class="color-blue"> payment </span>providers
         </h3>
         <div class="payment-provider-row">

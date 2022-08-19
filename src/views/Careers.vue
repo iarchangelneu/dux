@@ -176,7 +176,7 @@
       <BlockTitle title="BENEFITS"></BlockTitle>
     </div>
     <div class="benefits">
-      <h2 class="benefits__title" data-aos="fade-up">We
+      <h2 class="benefits__title" data-aos="fade-up" data-aos-duration="1500">We
         <span class="color-blue"> love our people</span>,
         appreciate our team, and try to become like a second
         <span class="color-blue">family</span>.
@@ -230,7 +230,7 @@
     <div class="devider">
       <BlockTitle title="CAREER"></BlockTitle>
     </div>
-    <div class="career" data-aos="fade-up">
+    <div class="career" data-aos="fade-up" data-aos-duration="1500">
       <h2 class="career__title">Start your
         <span class="color-blue"> star</span>
         career at
@@ -308,7 +308,7 @@
       <BlockTitle title="About our team"></BlockTitle>
     </div>
     <div class="igaming">
-      <h2 class="igaming-title" data-aos="fade-up">
+      <h2 class="igaming-title" data-aos="fade-up" data-aos-duration="1500">
         Innovative
         <span class="color-blue"> iGaming</span>
         Meets a Passion for Tech
@@ -400,7 +400,7 @@
       </div>
     </div>
     <div class="title-container">
-      <h2 class="title" data-aos="fade-up">
+      <h2 class="title" data-aos="fade-up" data-aos-duration="1500">
         We are always in <span class="color-blue">search of talented</span> and dedicated
         <span class="color-blue">professionals.</span>
         Let’s raise the

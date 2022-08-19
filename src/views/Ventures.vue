@@ -37,7 +37,7 @@
       <div class="title">
         <BlockTitle title="investments"></BlockTitle>
       </div>
-      <div class="content" data-aos="fade-up">
+      <div class="content" data-aos="fade-up" data-aos-duration="1500">
         <p><span class="blue">DUXGROUP VENTURES</span> IS A VENTURE CAPITAL FUND THAT INVESTS <span class="blue">€1-5
             MILLION</span> IN IGAMING PROJECTS IN LINE WITH A <span class="blue">WIN-WIN MODEL</span> </p>
         <div class="imgs">
@@ -53,7 +53,7 @@
       <div class="title">
         <BlockTitle title="Our principles"></BlockTitle>
       </div>
-      <div class="items" data-aos="fade-up">
+      <div class="items" data-aos="fade-up" data-aos-duration="1500">
         <div class="item">
           <div class="item__title">
             <img src="../assets/images/ventures/principes/3.png" />
@@ -89,7 +89,7 @@
       <div class="title">
         <BlockTitle title="We don't just invest money"></BlockTitle>
       </div>
-      <div data-aos="fade-up">
+      <div data-aos="fade-up" data-aos-duration="1500">
         <div class="list__title__mob">
           <p>There are more than <br style="display:none"> <span class="blue">350 professionals</span> in our team</p>
         </div>
@@ -115,7 +115,7 @@
           </div>
         </div>
       </div>
-      <div class="advert" data-aos="fade-up">
+      <div class="advert" data-aos="fade-up" data-aos-duration="1500">
         <p>WE ARE A <span class="blue">STRONG TEAM</span> THAT HAS BEEN WORKING IN IGAMING FOR MORE THAN <span
             class="blue">8 YEARS.</span>
           WHEN WE INVEST, <span class="blue">WE NOT ONLY INVEST MONEY,</span> BUT ALL THE EXPERTISE WE HAVE GATHERED
@@ -129,7 +129,7 @@
       <div class="title">
         <BlockTitle title="Introduce yourself"></BlockTitle>
       </div>
-      <div class="content" data-aos="fade-up">
+      <div class="content" data-aos="fade-up" data-aos-duration="1500">
         <div class="request">
           <p>Please <span class="blue">tell us</span> the following about <span class="blue">your business:</span></p>
         </div>
@@ -147,7 +147,7 @@
       </div>
     </div>
     <div class="contact">
-      <div data-aos="fade-up">
+      <div data-aos="fade-up" data-aos-duration="1500">
         <div class="title">
           <p>Have a <span class="blue">cool idea</span> and want to conquer the <span class="blue">iGaming
               market?</span>

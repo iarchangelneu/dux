@@ -56,7 +56,7 @@
     </div>
     <div class="running">
       <div class="title">
-        <p data-aos="fade-up" data-aos-duration="500" >We follow the principle </p>
+        <p data-aos="fade-up" data-aos-duration="1500" >We follow the principle </p>
       </div>
       <div class="line" v-if="menuClosed">
         <!--          <marquee direction="row" behavior="slide" height="100" width="100%" bgcolor="#010C28" Scrollamount=20>-->
@@ -247,7 +247,7 @@
       <div class="header-sldier">
         <BlockTitle title="what do we have?"></BlockTitle>
       </div>
-      <div class="title" data-aos="fade-up" data-aos-duration="1000">
+      <div class="title" data-aos="fade-up" data-aos-duration="1500">
         <p>We create <span class="blue">products</span> that players <span class="blue">love</span></p>
       </div>
       <div class="slide_part" data-aos="fade-up" data-aos-duration="2000">

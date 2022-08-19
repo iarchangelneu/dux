@@ -46,7 +46,7 @@
       <BlockTitle title="investments"></BlockTitle>
     </div>
     <div class="contact-form__container">
-      <form action="#" class="contact-form" data-aos="fade-up">
+      <form action="#" class="contact-form" data-aos="fade-up" data-aos-duration="1500">
         <div class="form-left-side">
           <h2 class="form-left-side-title">General questions:</h2>
           <p class="form-left-side-text">hello@duxgroup.com</p>
