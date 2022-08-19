@@ -3,7 +3,7 @@
     <div class="header">
       <div class="bg-img">
         <div class="bg-img-images">
-          <img src="../assets/images/home/title/klor.svg" class="klor" />
+          <img src="../assets/images/home/title/klor.svg" class="klor"/>
           <img src="../assets/images/home/title/zar-mec.svg" class="zar-mec" data-aos="fade-up"
             data-aos-duration="2000" />
           <img src="../assets/images/home/title/zar-poqr.svg" class="zar-poqr" data-aos="fade-up"
@@ -1024,16 +1024,17 @@ export default {
 }
 
 @keyframes cube2 {
-  from {
+  0% {
     transform: rotate(0deg) scale(1);
+    // -webkit-transform: scale(1.1);
   }
 
   // 50% {
   //   transform: rotate(-45deg) scale(.8) translate(-100px, 15px);
   // }
 
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: rotate(360deg) scale(1);
   }
 }
 
