@@ -572,7 +572,8 @@ export default {
 @keyframes full {
   0% {
     transform: rotate(0deg) translate(0, 0);
-    animation-timing-function: ease-out;
+    // animation-timing-function: ease-out;
+    animation-timing-function: cubic-bezier(0, 0, 0.69, 0.89);
   }
 
   // 50% {
@@ -582,8 +583,8 @@ export default {
 
   25% {
     transform: rotate(15deg) translate(-424px, 0);
-    // animation-timing-function: ease-in-out;
-    animation-timing-function: cubic-bezier(0, 0, 0.69, 0.87);
+    animation-timing-function: ease-in-out;
+    // animation-timing-function: cubic-bezier(0, 0, 0.69, 0.89);
   }
 
   75% {
