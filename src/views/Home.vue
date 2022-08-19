@@ -1024,7 +1024,7 @@ export default {
 }
 
 @keyframes cube2 {
-  0% {
+  from {
     transform: rotate(0deg) scale(1);
   }
 
@@ -1032,8 +1032,8 @@ export default {
   //   transform: rotate(-45deg) scale(.8) translate(-100px, 15px);
   // }
 
-  100% {
-    transform: rotate(-360deg);
+  to {
+    transform: rotate(360deg);
   }
 }
 
@@ -1068,6 +1068,7 @@ export default {
 .klor {
   animation: cube2 20s linear infinite;
   animation-play-state: running;
+  animation-direction: reverse;
   // transform-origin: bottom right;
 }
 
