@@ -41,11 +41,11 @@
         <p><span class="blue">DUXGROUP VENTURES</span> IS A VENTURE CAPITAL FUND THAT INVESTS <span class="blue">€1-5
             MILLION</span> IN IGAMING PROJECTS IN LINE WITH A <span class="blue">WIN-WIN MODEL</span> </p>
         <div class="imgs">
-          <img src="../assets/images/ventures/investment/euro-big.png" class="first__fig fig__hover" />
-          <img src="../assets/images/ventures/investment/dive-small.png" class="first__fig fig__hover2" />
-          <img src="../assets/images/ventures/investment/euro-middle.png" class="first__fig fig__hover3" />
-          <img src="../assets/images/ventures/investment/euro-small.png" class="first__fig fig__hover4" />
-          <img src="../assets/images/ventures/investment/Union.png" class="first__fig fig__hover5" />
+          <img src="../assets/images/ventures/investment/euro-big.svg" class="first__fig fig__hover" />
+          <img src="../assets/images/ventures/investment/dive-small.svg" class="first__fig fig__hover2" />
+          <img src="../assets/images/ventures/investment/euro-middle.svg" class="first__fig fig__hover3" />
+          <img src="../assets/images/ventures/investment/euro-small.svg" class="first__fig fig__hover4" />
+          <img src="../assets/images/ventures/investment/Union.svg" class="first__fig fig__hover5" />
         </div>
       </div>
     </div>
@@ -56,7 +56,7 @@
       <div class="items" data-aos="fade-up" data-aos-duration="1500">
         <div class="item">
           <div class="item__title">
-            <img src="../assets/images/ventures/principes/3.png" />
+            <img src="../assets/images/ventures/principes/3.svg" />
             <p>1 + 1 = 3</p>
           </div>
           <div class="text">
@@ -65,7 +65,7 @@
         </div>
         <div class="item">
           <div class="item__title">
-            <img src="../assets/images/ventures/principes/2.png" />
+            <img src="../assets/images/ventures/principes/2.svg" />
             <p>A Strong Team</p>
           </div>
           <div class="text">
@@ -75,7 +75,7 @@
         </div>
         <div class="item">
           <div class="item__title">
-            <img src="../assets/images/ventures/principes/1.png" />
+            <img src="../assets/images/ventures/principes/1.svg" />
             <p>iGaming Network</p>
           </div>
           <div class="text">
@@ -111,7 +111,7 @@
             </div>
           </div>
           <div class="img">
-            <img src="../assets/images/ventures/invest/image.jpeg" />
+            <img src="../assets/images/ventures/invest/image.png" />
           </div>
         </div>
       </div>

@@ -664,8 +664,8 @@ form {
   .contact-banner__title {
     font-size: 110px !important;
     line-height: 105% !important;
-    margin-top: 310px !important;
-    max-width: 1245px !important;
+    margin-top: 285px !important;
+    max-width: 1261px !important;
   }
 
   .header-container .contact-banner__title .contact-us {

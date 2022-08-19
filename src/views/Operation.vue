@@ -1220,7 +1220,7 @@ export default {
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #F0F0F0;
-    margin-top: 400px;
+    margin-top: 420px;
     flex-wrap: wrap;
     display: flex;
 
@@ -1326,7 +1326,7 @@ export default {
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 1024px) and (max-width: 1025px) {
 
   .operation-banner__title {
     margin-top: 400px;

@@ -310,6 +310,7 @@ export default {
       padding: 0 25px;
       position: relative;
       width: 1000px;
+      margin-top: 120px;
 
       .p {
         font-family: 'Oxygen', sans-serif;
@@ -652,8 +653,9 @@ export default {
           margin: 34px 0 0 !important;
 
           span {
-            margin: 0 40px 10px 0 !important;
-            vertical-align: middle !important;
+            margin: 10px 40px 10px 0 !important;
+            vertical-align: top !important;
+            
 
           }
 
@@ -755,8 +757,8 @@ export default {
   }
 
   .container .header_part .content p span {
-    margin: 0 40px 4px 0 !important;
-    vertical-align: middle !important;
+    margin: 10px 40px 4px 0 !important;
+    vertical-align: top !important;
   }
 
   .container .header_part .content p {
@@ -807,7 +809,7 @@ export default {
 
           span.brave {
             font-size: 22px !important;
-            margin: 10px 20px 0 0px !important;
+            margin: 0px 20px 0 0px !important;
             vertical-align: top !important;
           }
         }

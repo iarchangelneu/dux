@@ -3,10 +3,10 @@
     <div class="header">
       <div class="bg-img">
         <div class="bg-img-images">
-          <img src="../assets/images/home/title/klor.png" class="klor" data-aos="fade-up" data-aos-duration="2000" />
-          <img src="../assets/images/home/title/zar-mec.png" class="zar-mec" data-aos="fade-up"
+          <img src="../assets/images/home/title/klor.svg" class="klor" data-aos="fade-up" data-aos-duration="2000" />
+          <img src="../assets/images/home/title/zar-mec.svg" class="zar-mec" data-aos="fade-up"
             data-aos-duration="2000" />
-          <img src="../assets/images/home/title/zar-poqr.png" class="zar-poqr" data-aos="fade-up"
+          <img src="../assets/images/home/title/zar-poqr.svg" class="zar-poqr" data-aos="fade-up"
             data-aos-duration="2000" />
         </div>
         <div class="menu">
@@ -153,10 +153,10 @@
 
           <div class="anime">
             <div class="imgs view1">
-              <img src="../assets/images/partnership/view1/1.png" />
-              <img src="../assets/images/partnership/view1/2.png" />
-              <img src="../assets/images/partnership/view1/3.png" />
-              <img src="../assets/images/partnership/view1/4.png" />
+              <img src="../assets/images/partnership/view1/1.svg" />
+              <img src="../assets/images/partnership/view1/2.svg" />
+              <img src="../assets/images/partnership/view1/3.svg" />
+              <img src="../assets/images/partnership/view1/4.svg" />
             </div>
           </div>
           <div class="content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="0" data-aos-easing="ease-out">
@@ -178,8 +178,8 @@
             v-if="window.width <= 450 && window.width > 375" alt="">
           <div class="anime">
             <div class="imgs view2">
-              <img src="../assets/images/partnership/view2/1.png" />
-              <img src="../assets/images/partnership/view2/2.png" />
+              <img src="../assets/images/partnership/view2/1.svg" />
+              <img src="../assets/images/partnership/view2/2.svg" />
             </div>
           </div>
           <div class="content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="0" data-aos-easing="ease-out">
@@ -201,10 +201,10 @@
             v-if="window.width <= 450 && window.width > 375" alt="">
           <div class="anime">
             <div class="imgs view3">
-              <img src="../assets/images/partnership/view3/1.png" />
-              <img src="../assets/images/partnership/view3/2.png" />
-              <img src="../assets/images/partnership/view3/3.png" />
-              <img src="../assets/images/partnership/view3/4.png" />
+              <img src="../assets/images/partnership/view3/1.svg" />
+              <img src="../assets/images/partnership/view3/2.svg" />
+              <img src="../assets/images/partnership/view3/3.svg" />
+              <img src="../assets/images/partnership/view3/4.svg" />
             </div>
           </div>
           <div class="content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="0" data-aos-easing="ease-out">
@@ -227,9 +227,9 @@
             v-if="window.width <= 450 && window.width > 375" alt="">
           <div class="anime">
             <div class="imgs view4">
-              <img src="../assets/images/partnership/view4/1.png" />
-              <img src="../assets/images/partnership/view4/2.png" />
-              <img src="../assets/images/partnership/view4/3.png" />
+              <img src="../assets/images/partnership/view4/1.svg" />
+              <img src="../assets/images/partnership/view4/2.svg" />
+              <img src="../assets/images/partnership/view4/3.svg" />
             </div>
           </div>
           <div class="content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="0" data-aos-easing="ease-out">
@@ -451,10 +451,10 @@
       <div class="content" data-aos="fade-up" data-aos-duration="1500">
         <p data-aos="fade-up" data-aos-duration="1500">Make <span class="blue">big waves</span> in the iGaming segment together with <span class="blue">our
             team</span> and build an awesome <span class="blue">ecosystem</span></p>
-        <img src="../assets/images/mission/6.png" class="forth_figure forth_figure1" />
-        <img src="../assets/images/mission/23.png" class="second_figure forth_figure2" />
-        <img src="../assets/images/mission/33.png" class="third_figure forth_figure3"/>
-        <img src="../assets/images/mission/45.png" class="first_figure forth_figure4"/>
+        <img src="../assets/images/mission/6.svg" class="forth_figure forth_figure1" />
+        <img src="../assets/images/mission/23.svg" class="second_figure forth_figure2" />
+        <img src="../assets/images/mission/33.svg" class="third_figure forth_figure3"/>
+        <img src="../assets/images/mission/45.svg" class="first_figure forth_figure4"/>
       </div>
     </div>
     <div class="gambling">
@@ -621,9 +621,9 @@
       </div>
       <div>
         <div class="office">
-          <img src="../assets/images/offices/3.jpeg" data-aos="fade-up" data-aos-duration="5000" />
-          <img src="../assets/images/offices/1.jpeg" data-aos="fade-up" data-aos-duration="4000" />
-          <img src="../assets/images/offices/2.jpeg" class="abs" data-aos="fade-up" data-aos-duration="3000" />
+          <img src="../assets/images/offices/3.png" data-aos="fade-up" data-aos-duration="5000" />
+          <img src="../assets/images/offices/1.png" data-aos="fade-up" data-aos-duration="4000" />
+          <img src="../assets/images/offices/2.png" class="abs" data-aos="fade-up" data-aos-duration="3000" />
         </div>
         <div class="map">
 
@@ -3408,7 +3408,8 @@ export default {
   .bg-img {
     width: 100%;
     position: relative;
-    background-image: url("../assets/images/home-bg.png");
+    // background-image: url("../assets/images/home-bg.png");
+     background-image: url("../assets/images/home-bg.svg");
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
@@ -3961,9 +3962,11 @@ export default {
   .bg-img {
     width: 100%;
     position: relative;
-    background-image: url("../assets/images/home-bg.png");
+    // background-image: url("../assets/images/home-bg.png");
+    background-image: url("../assets/images/home-bg.svg");
     background-position: right;
-    background-size: contain;
+    // background-size: contain;
+    background-size: auto;
     background-repeat: no-repeat;
     // min-height: 702px;
     min-height: 749px;

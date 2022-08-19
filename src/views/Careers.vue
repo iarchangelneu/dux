@@ -159,14 +159,14 @@
             <div class="swiper-slide"><img src="../assets/images/careers/slider/brooke-cagle-g1Kr4Ozfoac-unsplash1.png">
             </div>
             <div class="swiper-slide"><img src="../assets/images/careers/slider/pexels-cowomen-20416291.png"></div>
-            <div class="swiper-slide"><img src="../assets/images/careers/slider/pexels-cowomen-20416293.png"></div>
-            <div class="swiper-slide"><img src="../assets/images/careers/slider/pexels-cowomen-20416294.png"></div>
-            <div class="swiper-slide"><img src="../assets/images/careers/slider/pexels-cowomen-20416296.png"></div>
+            <div class="swiper-slide"><img src="../assets/images/careers/slider/pexels-cowomen-20416293x.png"></div>
+            <div class="swiper-slide"><img src="../assets/images/careers/slider/pexels-cowomen-20416294x.png"></div>
+            <div class="swiper-slide"><img src="../assets/images/careers/slider/pexels-cowomen-20416296x.png"></div>
             <div class="swiper-slide"><img src="../assets/images/careers/slider/pexels-cowomen-20416297.png"></div>
             <div class="swiper-slide"><img src="../assets/images/careers/slider/pexels-cowomen-20416298.png"></div>
             <div class="swiper-slide"><img src="../assets/images/careers/slider/pexels-cowomen-20416299.png"></div>
             <div class="swiper-slide"><img src="../assets/images/careers/slider/pexels-cowomen-204162910.png"></div>
-            <div class="swiper-slide"><img src="../assets/images/careers/slider/Rectangle930.png"></div>
+            <div class="swiper-slide"><img src="../assets/images/careers/slider/Rectangle930x.png"></div>
           </div>
 
         </div>
@@ -1547,7 +1547,7 @@ export default {
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #F0F0F0;
-    margin-top: 250px;
+    margin-top: 340px;
     max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
