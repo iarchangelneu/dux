@@ -260,24 +260,22 @@
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
       <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768"
-        data-aos="fade" data-aos-duration="200" data-aos-delay="150"/>
+        data-aos="fade" data-aos-duration="200" data-aos-delay="150" />
       <img class="line-svg " src="../assets/images/line__768.svg" alt="Line"
         v-if="window.width <= 768 && window.width > 450" data-aos="fade" data-aos-duration="200" data-aos-delay="150" />
-      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450" 
-      data-aos="fade" data-aos-duration="200" data-aos-delay="150"
-      />
+      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450"
+        data-aos="fade" data-aos-duration="200" data-aos-delay="150" />
       <div class="stage-container" data-aos="fade" data-aos-duration="300" data-aos-delay="350">
         <h2 class="stage-container-title">Stage 02</h2>
         <p class="stage-container-sub-title">1st Interview with HR</p>
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
       <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768"
-        data-aos="fade" data-aos-duration="200" data-aos-delay="500"/>
+        data-aos="fade" data-aos-duration="200" data-aos-delay="500" />
       <img class="line-svg " src="../assets/images/line__768.svg" alt="Line"
-        v-if="window.width <= 768 && window.width > 450" data-aos="fade" data-aos-duration="200" data-aos-delay="500"/>
+        v-if="window.width <= 768 && window.width > 450" data-aos="fade" data-aos-duration="200" data-aos-delay="500" />
       <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450"
-        data-aos="fade" data-aos-duration="200" data-aos-delay="500"
-      />
+        data-aos="fade" data-aos-duration="200" data-aos-delay="500" />
       <div class="stage-container" data-aos="fade" data-aos-duration="300" data-aos-delay="650">
         <h2 class="stage-container-title">Stage 03</h2>
         <p class="stage-container-sub-title">Interview with Hiring Manager</p>
@@ -285,12 +283,11 @@
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
       <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768"
-        data-aos="fade" data-aos-duration="200" data-aos-delay="800"/>
+        data-aos="fade" data-aos-duration="200" data-aos-delay="800" />
       <img class="line-svg " src="../assets/images/wline__768.svg" style="transform: rotate(0deg);" alt="Line"
         v-if="window.width <= 768 && window.width > 450" data-aos="fade" data-aos-duration="200" data-aos-delay="800" />
       <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450"
-        data-aos="fade" data-aos-duration="200" data-aos-delay="800"
-      />
+        data-aos="fade" data-aos-duration="200" data-aos-delay="800" />
       <div class="stage-container" data-aos="fade" data-aos-duration="300" data-aos-delay="950">
         <h2 class="stage-container-title">Stage 04</h2>
         <p class="stage-container-sub-title">Final Interview with Management</p>
@@ -298,12 +295,12 @@
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
       <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768"
-        data-aos="fade" data-aos-duration="200" data-aos-delay="1100"/>
+        data-aos="fade" data-aos-duration="200" data-aos-delay="1100" />
       <img class="line-svg " src="../assets/images/rline__768.svg" alt="Line"
-        v-if="window.width <= 768 && window.width > 450" data-aos="fade" data-aos-duration="200" data-aos-delay="1100"/>
+        v-if="window.width <= 768 && window.width > 450" data-aos="fade" data-aos-duration="200"
+        data-aos-delay="1100" />
       <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450"
-        data-aos="fade" data-aos-duration="200" data-aos-delay="1100"
-      />
+        data-aos="fade" data-aos-duration="200" data-aos-delay="1100" />
       <div class="stage-container" data-aos="fade" data-aos-duration="300" data-aos-delay="1250">
         <h2 class="stage-container-title">Stage 05</h2>
         <p class="stage-container-sub-title">Offer stage</p>
@@ -477,21 +474,21 @@ export default {
     BlockTitle,
   },
   methods: {
-    spaBspCreate(block, amount=1){
-        for(let i = 0; i < amount; i++){
-          let spanBsp = document.createElement('span');
-          spanBsp.innerText = 'I';
-          spanBsp.classList.add('spanBsp')
-          block.appendChild(spanBsp)
-        }
+    spaBspCreate(block, amount = 1) {
+      for (let i = 0; i < amount; i++) {
+        let spanBsp = document.createElement('span');
+        spanBsp.innerText = 'I';
+        spanBsp.classList.add('spanBsp')
+        block.appendChild(spanBsp)
+      }
     },
-    spanletterCreate(letter){
+    spanletterCreate(letter) {
       let spanInside = document.createElement('span');
       spanInside.innerText = letter;
       spanInside.classList.add('mainTitleLetter')
       return spanInside
     },
-    titleBlock(){
+    titleBlock() {
       let firstSplit = this.mainTitle.split(' ')
 
       let block = document.getElementById('p')
@@ -503,7 +500,7 @@ export default {
 
         if (ind == 0) {
           span.classList.add('blue')
-          if(window.innerWidth < 450){
+          if (window.innerWidth < 450) {
             this.spaBspCreate(block)
           }
         }
@@ -517,17 +514,17 @@ export default {
           timer += 50
         })
 
-        if(ind==0){
-          if(window.innerWidth < 340){
+        if (ind == 0) {
+          if (window.innerWidth < 340) {
             this.spaBspCreate(block, 10)
           }
-          else if(window.innerWidth < 450){
+          else if (window.innerWidth < 450) {
             this.spaBspCreate(block, 15)
           }
-          else if(window.innerWidth < 1272){
+          else if (window.innerWidth < 1272) {
             this.spaBspCreate(block, 15)
           }
-          else{
+          else {
             this.spaBspCreate(block, 5)
           }
         }
@@ -535,13 +532,13 @@ export default {
         this.spaBspCreate(block)
       })
     },
-    loadb(){
+    loadb() {
       let recaptchaScript = document.createElement('script')
       // recaptchaScript.setAttribute('src', 'https://duxgroup.bamboohr.com/js/embed.js')
       recaptchaScript.src = 'https://duxgroup.bamboohr.com/js/embed.js'
       recaptchaScript.async = true;
       recaptchaScript.defer = true;
-      document.body.appendChild(recaptchaScript)  
+      document.body.appendChild(recaptchaScript)
     },
     salamfunction() {
       console.log('asd')
@@ -549,7 +546,7 @@ export default {
       var rootId = 'BambooHR-ATS';
       var el = document.getElementById('BambooHR');
 
-      if(!el) {
+      if (!el) {
         console.error('BambooHR-ATS: Hmm, Looks like we are missing something, Double check the code snippet.');
         return;
       }
@@ -559,7 +556,7 @@ export default {
       var version = el.getAttribute('data-version') || '1.0.0';
       var noPudgy = el.hasAttribute('data-noPudgy');
 
-      if(!domain) {
+      if (!domain) {
         console.error('BambooHR-ATS: We are unable to retrieve the domain, Double check the code snippet.');
         return;
       }
@@ -568,17 +565,17 @@ export default {
       root.id = rootId;
       el.appendChild(root);
 
-      var footer =  document.createElement('div');
+      var footer = document.createElement('div');
       footer.style = 'font-family: "Lato", sans-serif; font-size: 12px; color: #999; text-align: right; margin: 9px 9px 0px 0px;'
       var poweredBy = document.createTextNode('Powered by');
       var logo = document.createElement('img');
-        logo.src = 'https://resources.bamboohr.com/images/footer-logo.png';
-        logo.alt = 'BambooHR - HR software';
-        logo.style = 'display:inline;'
+      logo.src = 'https://resources.bamboohr.com/images/footer-logo.png';
+      logo.alt = 'BambooHR - HR software';
+      logo.style = 'display:inline;'
       var link = document.createElement('a')
-        link.href = 'http://www.bamboohr.com';
-        link.target = '_blank';
-        link.rel = 'external'
+      link.href = 'http://www.bamboohr.com';
+      link.target = '_blank';
+      link.rel = 'external'
 
       link.appendChild(logo);
       footer.appendChild(poweredBy);
@@ -609,26 +606,26 @@ export default {
       //     xmlhttp.send();
       //   }
       // });
-      xmlhttp.onreadystatechange=function() {
-            if(xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+      xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 
-              var content = xmlhttp.responseText;
-              if(root) root.innerHTML = content;
-              if(!noPudgy) {
-                showPudgy();
-              }
-            }
+          var content = xmlhttp.responseText;
+          if (root) root.innerHTML = content;
+          if (!noPudgy) {
+            showPudgy();
           }
-          xmlhttp.open('GET', embedUrl, true);
-          xmlhttp.send();
+        }
+      }
+      xmlhttp.open('GET', embedUrl, true);
+      xmlhttp.send();
 
       function showPudgy() {
-        var ASCI_MAP = [null,["в–€в–€в–€в–€в–€в–€вЂЃ  в–€в–€в–€в–€в–€вЂЃ в–€в–€в–€вЂЃ   в–€в–€в–€вЂЃв–€в–€в–€в–€в–€в–€вЂЃ  в–€в–€в–€в–€в–€в–€вЂЃ  в–€в–€в–€в–€в–€в–€вЂЃ в–€в–€вЂЃ  в–€в–€вЂЃв–€в–€в–€в–€в–€в–€ "],null,["в–€в–€вЂЃвЂЃвЂЃв–€в–€вЂЃв–€в–€вЂЃвЂЃвЂЃв–€в–€вЂЃв–€в–€в–€в–€вЂЃ в–€в–€в–€в–€вЂЃв–€в–€вЂЃвЂЃвЂЃв–€в–€вЂЃв–€в–€вЂЃвЂЃвЂЃвЂЃв–€в–€вЂЃв–€в–€вЂЃвЂЃвЂЃвЂЃв–€в–€вЂЃв–€в–€вЂЃ  в–€в–€вЂЃв–€в–€вЂЃвЂЃвЂЃв–€в–€ "],null,["в–€в–€в–€в–€в–€в–€вЂЃвЂЃв–€в–€в–€в–€в–€в–€в–€вЂЃв–€в–€вЂЃв–€в–€в–€в–€вЂЃв–€в–€вЂЃв–€в–€в–€в–€в–€в–€вЂЃвЂЃв–€в–€вЂЃ   в–€в–€вЂЃв–€в–€вЂЃ   в–€в–€вЂЃв–€в–€в–€в–€в–€в–€в–€вЂЃв–€в–€в–€в–€в–€в–€ "],null,["в–€в–€вЂЃвЂЃвЂЃв–€в–€вЂЃв–€в–€вЂЃвЂЃвЂЃв–€в–€вЂЃв–€в–€вЂЃвЂЃв–€в–€вЂЃвЂЃв–€в–€вЂЃв–€в–€вЂЃвЂЃвЂЃв–€в–€вЂЃв–€в–€вЂЃ   в–€в–€вЂЃв–€в–€вЂЃ   в–€в–€вЂЃв–€в–€вЂЃвЂЃвЂЃв–€в–€вЂЃв–€в–€вЂЃвЂЃвЂЃв–€в–€ "],null,["в–€в–€в–€в–€в–€в–€вЂЃвЂЃв–€в–€вЂЃ  в–€в–€вЂЃв–€в–€вЂЃ вЂЃвЂЃвЂЃ в–€в–€вЂЃв–€в–€в–€в–€в–€в–€вЂЃвЂЃвЂЃв–€в–€в–€в–€в–€в–€вЂЃвЂЃвЂЃв–€в–€в–€в–€в–€в–€вЂЃвЂЃв–€в–€вЂЃ  в–€в–€вЂЃв–€в–€вЂЃ  в–€в–€ "],null,[" "],null, ['Pudgy the Panda says Hello!'], null, null, [10], ["в–„в–„в–„в–„"], [17], [".в–„в–„в–„в–„"],  null, [8], ["в–“в–€в–€в–Ђв•™'"], [19], ["в””в–Ђв–€в–€в–„"],  null, [7], ["jв–€в–Ђ"], [26], ["в””в–Ђ"],  null, [7], ["."],  null, [6], [";"], [7], ["в–„mв•–"], [10], ["в–„m,"],  null, [1],  ["в–€в–€в–€в–ЊГ†в–„"], [6], ["в•љв–€в–„в–“"], [3],  ["]в–“в–Њ"], [3], ["в•џв–€в–„в–€"],  null, ["в–€в–€в–€в–“в–“в–€в–€в–„"], [7], ["'"], [13], ["'"],  null, ["в–ђв–€в–€в–€в–€в–€в–€в–€в–€,"], [14], [".в–„в•ђВІ"],  null, [1], ["в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–“в–„в–„в–„в–„в–„в•“,,,,,,,,,,,,,в•“в–„в–„в–„в–„в–„в–“в–€в–€в–€в–€в–€в–Њ"],  null, [1], ["в•™в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€"],  null, [3], ["в–€в–€в–€в–€в–€в–€в–Ђв–Ђв–Ђв–Ђв•™в•™в•™в””в””в”Ђ'''"], [4], ["'''в”Ђв””в””в•™в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€"],  null, [3], ["в•™в•™в”"], [27], ["в•«в–€в–€в–€в–€в–€в–€в–€в–€'"],  null, [3], ["в–ђв–‘"], [28], ["^в–€в–€в–€в–€в–€в–€в–€в–€"],  null, [3], ["'."], [28], ["в–‘в–ђв–€в–€в–€в–€в–€в–€вЊђ"],  null, [4], ["в–‘в”‚"], [27], ["^в–‘в””в–€в–€в–€в–Њв•™"],  null, [4], ["]в–‘в”‚в”‚"],  null, [5], ["в–‘в–‘в–‘в”‚в”‚"],  null, [6], ["в–‘в–‘в–‘в–‘в–‘в”‚в”‚"],  null, [7], ["в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в”‚в”‚"], [21], ["в”‚"],  null, [8], ["в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в”‚в”‚"], [9], ["в”‚в”‚в”‚в–‘в–‘в–‘"],  null, [10], ["в–„в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в”‚О“"],  null, [10], ["в•џв–€в–„в–„в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–„в–“в–€"] ];
+        var ASCI_MAP = [null, ["в–€в–€в–€в–€в–€в–€вЂЃ  в–€в–€в–€в–€в–€вЂЃ в–€в–€в–€вЂЃ   в–€в–€в–€вЂЃв–€в–€в–€в–€в–€в–€вЂЃ  в–€в–€в–€в–€в–€в–€вЂЃ  в–€в–€в–€в–€в–€в–€вЂЃ в–€в–€вЂЃ  в–€в–€вЂЃв–€в–€в–€в–€в–€в–€ "], null, ["в–€в–€вЂЃвЂЃвЂЃв–€в–€вЂЃв–€в–€вЂЃвЂЃвЂЃв–€в–€вЂЃв–€в–€в–€в–€вЂЃ в–€в–€в–€в–€вЂЃв–€в–€вЂЃвЂЃвЂЃв–€в–€вЂЃв–€в–€вЂЃвЂЃвЂЃвЂЃв–€в–€вЂЃв–€в–€вЂЃвЂЃвЂЃвЂЃв–€в–€вЂЃв–€в–€вЂЃ  в–€в–€вЂЃв–€в–€вЂЃвЂЃвЂЃв–€в–€ "], null, ["в–€в–€в–€в–€в–€в–€вЂЃвЂЃв–€в–€в–€в–€в–€в–€в–€вЂЃв–€в–€вЂЃв–€в–€в–€в–€вЂЃв–€в–€вЂЃв–€в–€в–€в–€в–€в–€вЂЃвЂЃв–€в–€вЂЃ   в–€в–€вЂЃв–€в–€вЂЃ   в–€в–€вЂЃв–€в–€в–€в–€в–€в–€в–€вЂЃв–€в–€в–€в–€в–€в–€ "], null, ["в–€в–€вЂЃвЂЃвЂЃв–€в–€вЂЃв–€в–€вЂЃвЂЃвЂЃв–€в–€вЂЃв–€в–€вЂЃвЂЃв–€в–€вЂЃвЂЃв–€в–€вЂЃв–€в–€вЂЃвЂЃвЂЃв–€в–€вЂЃв–€в–€вЂЃ   в–€в–€вЂЃв–€в–€вЂЃ   в–€в–€вЂЃв–€в–€вЂЃвЂЃвЂЃв–€в–€вЂЃв–€в–€вЂЃвЂЃвЂЃв–€в–€ "], null, ["в–€в–€в–€в–€в–€в–€вЂЃвЂЃв–€в–€вЂЃ  в–€в–€вЂЃв–€в–€вЂЃ вЂЃвЂЃвЂЃ в–€в–€вЂЃв–€в–€в–€в–€в–€в–€вЂЃвЂЃвЂЃв–€в–€в–€в–€в–€в–€вЂЃвЂЃвЂЃв–€в–€в–€в–€в–€в–€вЂЃвЂЃв–€в–€вЂЃ  в–€в–€вЂЃв–€в–€вЂЃ  в–€в–€ "], null, [" "], null, ['Pudgy the Panda says Hello!'], null, null, [10], ["в–„в–„в–„в–„"], [17], [".в–„в–„в–„в–„"], null, [8], ["в–“в–€в–€в–Ђв•™'"], [19], ["в””в–Ђв–€в–€в–„"], null, [7], ["jв–€в–Ђ"], [26], ["в””в–Ђ"], null, [7], ["."], null, [6], [";"], [7], ["в–„mв•–"], [10], ["в–„m,"], null, [1], ["в–€в–€в–€в–ЊГ†в–„"], [6], ["в•љв–€в–„в–“"], [3], ["]в–“в–Њ"], [3], ["в•џв–€в–„в–€"], null, ["в–€в–€в–€в–“в–“в–€в–€в–„"], [7], ["'"], [13], ["'"], null, ["в–ђв–€в–€в–€в–€в–€в–€в–€в–€,"], [14], [".в–„в•ђВІ"], null, [1], ["в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–“в–„в–„в–„в–„в–„в•“,,,,,,,,,,,,,в•“в–„в–„в–„в–„в–„в–“в–€в–€в–€в–€в–€в–Њ"], null, [1], ["в•™в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€"], null, [3], ["в–€в–€в–€в–€в–€в–€в–Ђв–Ђв–Ђв–Ђв•™в•™в•™в””в””в”Ђ'''"], [4], ["'''в”Ђв””в””в•™в–€в–€в–€в–€в–€в–€в–€в–€в–€в–€"], null, [3], ["в•™в•™в”"], [27], ["в•«в–€в–€в–€в–€в–€в–€в–€в–€'"], null, [3], ["в–ђв–‘"], [28], ["^в–€в–€в–€в–€в–€в–€в–€в–€"], null, [3], ["'."], [28], ["в–‘в–ђв–€в–€в–€в–€в–€в–€вЊђ"], null, [4], ["в–‘в”‚"], [27], ["^в–‘в””в–€в–€в–€в–Њв•™"], null, [4], ["]в–‘в”‚в”‚"], null, [5], ["в–‘в–‘в–‘в”‚в”‚"], null, [6], ["в–‘в–‘в–‘в–‘в–‘в”‚в”‚"], null, [7], ["в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в”‚в”‚"], [21], ["в”‚"], null, [8], ["в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в”‚в”‚"], [9], ["в”‚в”‚в”‚в–‘в–‘в–‘"], null, [10], ["в–„в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в”‚О“"], null, [10], ["в•џв–€в–„в–„в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–‘в–„в–“в–€"]];
         var hello_from_BambooHR = ASCI_MAP.reduce((agg, val) => {
           if (val === null) return agg + '\n';
           agg = agg += '%c';
 
-          if(typeof val[0] === 'number') {
+          if (typeof val[0] === 'number') {
             for (var i = 0; i < val[0]; i++) {
               agg = agg += ' ';
             }
@@ -642,7 +639,7 @@ export default {
           .filter(x => x !== null)
           .map(
             val => `color:#527a00; font-family: monospace, font-weight: bold`
-        );
+          );
         // To remove Pudgy, add data-noPudgy to the snippet
         console.log(hello_from_BambooHR, ...color);
       }
@@ -662,7 +659,7 @@ export default {
   created() {
     window.addEventListener('resize', this.handleResize);
     this.handleResize();
-    
+
   },
   destroyed() {
     window.removeEventListener('resize', this.handleResize);
@@ -733,9 +730,11 @@ export default {
 .slick-slide {
   margin-right: 20px !important;
 }
-.BambooHR-ATS-Location{
+
+.BambooHR-ATS-Location {
   transition: all 0.3s;
 }
+
 @media screen and (max-width: 1024px) {
   .slick-slide {
     margin-right: 12px !important;
@@ -818,7 +817,7 @@ export default {
 
 @media screen and (max-width:450px) {
 
- 
+
 
   .openings__content:hover {
     width: 100%;
@@ -859,7 +858,8 @@ export default {
     font-size: 12px;
     white-space: nowrap;
   }
-   .BambooHR-ATS-board h2{
+
+  .BambooHR-ATS-board h2 {
     margin-bottom: 0px !important;
     margin-top: 24px !important;
   }
@@ -926,8 +926,7 @@ export default {
 .car__anim1,
 .car__anim3,
 .car__anim4 {
-  animation: anim1 4s linear infinite;
-  animation-delay: 1s;
+  animation: anim1 5s linear infinite;
 }
 
 .car__anim1 {
@@ -1876,7 +1875,7 @@ export default {
       width: 150px;
       height: 150px;
 
-      &-title{
+      &-title {
         font-size: 20px;
       }
 
@@ -1884,7 +1883,7 @@ export default {
         font-size: 16px;
       }
 
-      &-sub-text{
+      &-sub-text {
         font-size: 10px;
       }
     }
@@ -1977,6 +1976,7 @@ export default {
   .igaming-container-left-side-dote {
     margin-right: 8px !important;
   }
+
   .marquee-container .Marquee-content .Marquee-tag p {
     font-size: 38px !important;
     line-height: 105% !important;
@@ -2599,7 +2599,8 @@ export default {
   .igaming {
     padding: 0 16px !important;
   }
-  .igaming-container-left-side-dote{
+
+  .igaming-container-left-side-dote {
     margin-right: 8px;
   }
 
@@ -2678,9 +2679,10 @@ export default {
 
 @media screen and (max-width: 480px) {
 
-  .careers-banner{
+  .careers-banner {
     z-index: 1001;
   }
+
   .careers-banner__title {
     font-size: 34px !important;
     max-width: 251px !important;
@@ -2760,6 +2762,7 @@ export default {
     font-size: 34px !important;
     max-width: 265px !important;
   }
+
   .slick-slider {
     padding-left: 4px !important;
   }
@@ -2887,30 +2890,36 @@ export default {
   .swiper-slide {
     width: 214px;
   }
-  .car__anim5{
+
+  .car__anim5 {
     right: -144px;
     top: -27px;
   }
-  .car__anim2{
+
+  .car__anim2 {
     left: 1px;
     top: 40px;
     width: 111px;
   }
-  .car__anim1{
+
+  .car__anim1 {
     top: 92px;
     left: 170px;
     width: 88px;
   }
-  .car__anim3{
+
+  .car__anim3 {
     left: 162px;
     top: 23px;
     width: 50px;
   }
-  .stages{
-    .stage-container-sub-title{
+
+  .stages {
+    .stage-container-sub-title {
       max-width: 90% !important;
     }
-    .stage-container-sub-text{
+
+    .stage-container-sub-text {
       max-width: 100% !important;
     }
   }
@@ -2948,9 +2957,11 @@ export default {
   display: inline-block;
   overflow: hidden;
 }
+
 .blue {
   color: #2F5BD8;
 }
+
 .spanBsp {
   opacity: 0;
 }
@@ -2978,6 +2989,7 @@ export default {
     font-size: 26px;
   }
 }
+
 @media screen and (max-width: 340px) {
   .spanBsp {
     font-size: 16px;
