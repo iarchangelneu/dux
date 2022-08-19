@@ -4,30 +4,30 @@
 
       <img src="../assets/images/contact/NormEl.svg" class="round0 rounds RoundsAnime" alt="">
 
-      <img src="../assets/images/contact/NormEl1.svg" class="round1 rounds RoundsAnime" alt="">
+      <img src="../assets/images/contact/NormEl1.svg" class="round1 rounds LinesAnime" alt="">
       <img src="../assets/images/contact/Line1.svg" class="line1 lines LinesAnime" alt="">
 
-      <img src="../assets/images/contact/CropedEl.svg" class="round2 rounds RoundsAnime" alt="">
+      <img src="../assets/images/contact/CropedEl.svg" class="round2 rounds LinesAnime" alt="">
       <img src="../assets/images/contact/Line2.svg" class="line2 lines LinesAnime" alt="">
 
-      <img src="../assets/images/contact/NormEl1.svg" class="round3 rounds RoundsAnime" alt="">
+      <img src="../assets/images/contact/NormEl1.svg" class="round3 rounds LinesAnime" alt="">
       <img src="../assets/images/contact/Line3.svg" class="line3 lines LinesAnime" alt="">
 
-      <img src="../assets/images/contact/NormEl1.svg" class="round4 rounds RoundsAnime" alt="">
+      <img src="../assets/images/contact/NormEl1.svg" class="round4 rounds LinesAnime" alt="">
       <img src="../assets/images/contact/Line4.svg" class="line4 lines LinesAnime" alt="">
 
-      <img src="../assets/images/contact/CropedEl.svg" class="round01 rounds RoundsAnime" alt="">
+      <img src="../assets/images/contact/CropedEl.svg" class="round01 rounds LinesAnime" alt="">
 
-      <img src="../assets/images/contact/NormEl1.svg" class="round5 rounds RoundsAnime" alt="">
+      <img src="../assets/images/contact/NormEl1.svg" class="round5 rounds LinesAnime" alt="">
       <img src="../assets/images/contact/Line5.svg" class="line5 lines LinesAnime" alt="">
 
-      <img src="../assets/images/contact/CropedEl.svg" class="round6 rounds RoundsAnime" alt="">
+      <img src="../assets/images/contact/CropedEl.svg" class="round6 rounds LinesAnime" alt="">
       <img src="../assets/images/contact/Line6.svg" class="line6 lines LinesAnime" alt="">
 
-      <img src="../assets/images/contact/NormEl1.svg" class="round7 rounds RoundsAnime" alt="">
+      <img src="../assets/images/contact/NormEl1.svg" class="round7 rounds LinesAnime" alt="">
       <img src="../assets/images/contact/Line7.svg" class="line7 lines LinesAnime" alt="">
 
-      <img src="../assets/images/contact/NormEl1.svg" class="round8 rounds RoundsAnime" alt="">
+      <img src="../assets/images/contact/NormEl1.svg" class="round8 rounds LinesAnime" alt="">
       <img src="../assets/images/contact/Line8.svg" class="line8 lines LinesAnime" alt="">
 
       <div class="contact-banner">
@@ -166,10 +166,16 @@ export default {
     this.titleBlock();
 
     function addOpac(el) {
+      // console.log(el);
+      document.querySelector(`.${el}`).classList.remove('LinesAnimeR')
+      document.querySelector(`.${el}`).classList.add('LinesAnime')
       document.querySelector(`.${el}`).classList.add('LinesShow')
     }
     function remOpac(el) {
-      document.querySelector(`.${el}`).classList.remove('LinesShow')
+      document.querySelector(`.${el}`).classList.remove('LinesAnime')
+      document.querySelector(`.${el}`).classList.add('LinesAnimeR')
+      setTimeout(() => { document.querySelector(`.${el}`).classList.remove('LinesShow') }, 1000)
+      // document.querySelector(`.${el}`).classList.remove('LinesShow')
     }
     function addShow(el) {
       document.querySelector(`.${el}`).classList.remove('RoundsAnimeR')
@@ -183,54 +189,117 @@ export default {
       // document.querySelector(`.${el}`).classList.remove('RoundsShow')
     }
 
+    // function animating() {
+    //   //SHOWING
+
+    //   setTimeout(addOpac, 1000, 'line1')
+    //   setTimeout(addOpac, 1100, 'line4')
+    //   setTimeout(addOpac, 1200, 'line7')
+    //   setTimeout(addOpac, 1300, 'line2')
+    //   setTimeout(addOpac, 1500, 'line5')
+    //   setTimeout(addOpac, 1600, 'line8')
+    //   setTimeout(addOpac, 1700, 'line6')
+    //   setTimeout(addOpac, 1800, 'line3')
+
+    //   setTimeout(addShow, 1900, 'round3')
+    //   setTimeout(addShow, 1900, 'round7')
+    //   setTimeout(addShow, 1900, 'round01')
+
+    //   setTimeout(addShow, 2900, 'round1')
+    //   setTimeout(addShow, 2900, 'round2')
+    //   setTimeout(addShow, 2900, 'round5')
+    //   setTimeout(addShow, 2900, 'round6')
+    //   setTimeout(addShow, 2900, 'round8')
+
+    //   setTimeout(addShow, 3900, 'round4')
+    //   setTimeout(addShow, 3900, 'round0')
+
+    //   //REMOVING
+
+    //   setTimeout(remShow, 4900, 'round4')
+    //   setTimeout(remShow, 4900, 'round0')
+
+    //   setTimeout(remShow, 5900, 'round1')
+    //   setTimeout(remShow, 5900, 'round2')
+    //   setTimeout(remShow, 5900, 'round5')
+    //   setTimeout(remShow, 5900, 'round6')
+    //   setTimeout(remShow, 5900, 'round8')
+
+    //   setTimeout(remShow, 6900, 'round3')
+    //   setTimeout(remShow, 6900, 'round7')
+    //   setTimeout(remShow, 6900, 'round01')
+
+    //   setTimeout(remOpac, 7000, 'line1')
+    //   setTimeout(remOpac, 7100, 'line4')
+    //   setTimeout(remOpac, 7200, 'line7')
+    //   setTimeout(remOpac, 7300, 'line2')
+    //   setTimeout(remOpac, 7400, 'line5')
+    //   setTimeout(remOpac, 7500, 'line8')
+    //   setTimeout(remOpac, 7600, 'line6')
+    //   setTimeout(remOpac, 7700, 'line3')
+    // }
+
     function animating() {
       //SHOWING
 
       setTimeout(addOpac, 1000, 'line1')
-      setTimeout(addOpac, 1100, 'line4')
-      setTimeout(addOpac, 1200, 'line7')
-      setTimeout(addOpac, 1300, 'line2')
-      setTimeout(addOpac, 1500, 'line5')
-      setTimeout(addOpac, 1600, 'line8')
-      setTimeout(addOpac, 1700, 'line6')
-      setTimeout(addOpac, 1800, 'line3')
+      setTimeout(addOpac, 1000, 'round1')
 
-      setTimeout(addShow, 1900, 'round3')
-      setTimeout(addShow, 1900, 'round7')
-      setTimeout(addShow, 1900, 'round01')
+      setTimeout(addOpac, 1200, 'line2')
+      setTimeout(addOpac, 1200, 'round2')
 
-      setTimeout(addShow, 2900, 'round1')
-      setTimeout(addShow, 2900, 'round2')
-      setTimeout(addShow, 2900, 'round5')
-      setTimeout(addShow, 2900, 'round6')
-      setTimeout(addShow, 2900, 'round8')
+      setTimeout(addOpac, 1300, 'line3')
+      setTimeout(addOpac, 1300, 'round3')
 
-      setTimeout(addShow, 3900, 'round4')
-      setTimeout(addShow, 3900, 'round0')
+      setTimeout(addOpac, 1500, 'line4')
+      setTimeout(addOpac, 1500, 'round4')
+
+      setTimeout(addOpac, 1700, 'line5')
+      setTimeout(addOpac, 1700, 'round5')
+
+      setTimeout(addOpac, 1800, 'line6')
+      setTimeout(addOpac, 1800, 'round6')
+
+      setTimeout(addOpac, 1900, 'line7')
+      setTimeout(addOpac, 1900, 'round7')
+      
+      setTimeout(addOpac, 2900, 'line8')
+      setTimeout(addOpac, 2900, 'round8')
+      
+
+      setTimeout(addOpac, 1900, 'round01')
+      setTimeout(addOpac, 3900, 'round0')
 
       //REMOVING
+      setTimeout(remOpac, 4900, 'round3')
+      setTimeout(remOpac, 4900, 'line3')
 
-      setTimeout(remShow, 4900, 'round4')
-      setTimeout(remShow, 4900, 'round0')
+      setTimeout(remOpac, 5400, 'round1')
+      setTimeout(remOpac, 5400, 'line1')
 
-      setTimeout(remShow, 5900, 'round1')
-      setTimeout(remShow, 5900, 'round2')
-      setTimeout(remShow, 5900, 'round5')
-      setTimeout(remShow, 5900, 'round6')
-      setTimeout(remShow, 5900, 'round8')
+      setTimeout(remOpac, 6000, 'round7')
+      setTimeout(remOpac, 6000, 'line7')
 
-      setTimeout(remShow, 6900, 'round3')
-      setTimeout(remShow, 6900, 'round7')
-      setTimeout(remShow, 6900, 'round01')
+       setTimeout(remOpac, 6500, 'round4')
+      setTimeout(remOpac, 6500, 'line4')
 
-      setTimeout(remOpac, 7000, 'line1')
-      setTimeout(remOpac, 7100, 'line4')
-      setTimeout(remOpac, 7200, 'line7')
-      setTimeout(remOpac, 7300, 'line2')
-      setTimeout(remOpac, 7400, 'line5')
-      setTimeout(remOpac, 7500, 'line8')
-      setTimeout(remOpac, 7600, 'line6')
-      setTimeout(remOpac, 7700, 'line3')
+      setTimeout(remOpac, 6900, 'round6')
+      setTimeout(remOpac, 6900, 'line6')
+
+      setTimeout(remOpac, 7200, 'line2')
+      setTimeout(remOpac, 7200, 'round2')
+
+      setTimeout(remOpac, 7400, 'round8')
+      setTimeout(remOpac, 7400, 'line8')
+
+      setTimeout(remOpac, 7500, 'round5')
+      setTimeout(remOpac, 7500, 'line5')
+      
+      
+      
+     
+      setTimeout(remOpac, 5500, 'round0')
+      setTimeout(remOpac, 5500, 'round01')
     }
 
     animating();
@@ -992,6 +1061,16 @@ form {
   }
 }
 
+@keyframes opacR {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
 @keyframes width {
   from {
     transform: scale(0);
@@ -1015,6 +1094,13 @@ form {
 .LinesAnime {
   animation-duration: 2s;
   animation-name: opac;
+  /* display: block !important; */
+  /* opacity: 1 !important; */
+}
+
+.LinesAnimeR {
+  animation-duration: 1s;
+  animation-name: opacR;
   /* display: block !important; */
   /* opacity: 1 !important; */
 }
