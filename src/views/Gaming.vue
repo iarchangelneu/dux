@@ -1161,7 +1161,7 @@ export default {
           h4 {
             width: auto !important;
             font-size: 16px !important;
-            line-height: 16px !important;
+            line-height: 20px !important;
           }
         }
       }

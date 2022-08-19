@@ -242,33 +242,34 @@ export default {
     function animating() {
       //SHOWING
 
-      setTimeout(addOpac, 1000, 'line1')
-      setTimeout(addOpac, 1000, 'round1')
+      setTimeout(addOpac, 1000, 'line3')
+      setTimeout(addOpac, 1000, 'round3')
 
-      setTimeout(addOpac, 1200, 'line2')
-      setTimeout(addOpac, 1200, 'round2')
+      setTimeout(addOpac, 1300, 'line1')
+      setTimeout(addOpac, 1300, 'round1')
 
-      setTimeout(addOpac, 1300, 'line3')
-      setTimeout(addOpac, 1300, 'round3')
-
-      setTimeout(addOpac, 1500, 'line4')
-      setTimeout(addOpac, 1500, 'round4')
-
-      setTimeout(addOpac, 1700, 'line5')
-      setTimeout(addOpac, 1700, 'round5')
-
-      setTimeout(addOpac, 1800, 'line6')
-      setTimeout(addOpac, 1800, 'round6')
-
-      setTimeout(addOpac, 1900, 'line7')
-      setTimeout(addOpac, 1900, 'round7')
+      setTimeout(addOpac, 1500, 'line7')
+      setTimeout(addOpac, 1500, 'round7')
       
-      setTimeout(addOpac, 2900, 'line8')
-      setTimeout(addOpac, 2900, 'round8')
-      
+      setTimeout(addOpac, 1900, 'line4')
+      setTimeout(addOpac, 1900, 'round4')
+
+      setTimeout(addOpac, 2300, 'line6')
+      setTimeout(addOpac, 2300, 'round6')
+
+      setTimeout(addOpac, 2700, 'line2')
+      setTimeout(addOpac, 2700, 'round2')
+     
+      setTimeout(addOpac, 3100, 'line8')
+      setTimeout(addOpac, 3100, 'round8')
+
+      setTimeout(addOpac, 3400, 'line5')
+      setTimeout(addOpac, 3400, 'round5')
 
       setTimeout(addOpac, 1900, 'round01')
       setTimeout(addOpac, 3900, 'round0')
+
+      
 
       //REMOVING
       setTimeout(remOpac, 4900, 'round3')
@@ -377,7 +378,7 @@ export default {
         margin: 0 70px 0px 0;
         vertical-align: top;
         position: relative;
-        top: 13px;
+        top: 9px;
         display: inline-flex;
         align-items: center;
 
@@ -738,7 +739,7 @@ form {
   }
 
   .header-container .contact-banner__title .contact-us {
-    top: -23px;
+    top: -33px;
   }
 }
 

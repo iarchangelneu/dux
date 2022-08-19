@@ -2174,12 +2174,14 @@ export default {
       }
 
       .error__msg {
+        font-family: "Oxygen";
         color: #C22B2B;
         font-size: 14px;
         margin-top: 10px;
         margin-left: -260px;
         display: none;
         transition: display .3s;
+        padding-left: 10px;
       }
 
       p {

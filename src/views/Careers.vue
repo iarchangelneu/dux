@@ -260,43 +260,51 @@
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
       <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768"
-        data-aos="fade" data-aos-duration="200" data-aos-delay="200"/>
+        data-aos="fade" data-aos-duration="200" data-aos-delay="150"/>
       <img class="line-svg " src="../assets/images/line__768.svg" alt="Line"
-        v-if="window.width <= 768 && window.width > 450" />
-      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450" />
-      <div class="stage-container" data-aos="fade" data-aos-duration="300" data-aos-delay="400">
+        v-if="window.width <= 768 && window.width > 450" data-aos="fade" data-aos-duration="200" data-aos-delay="150" />
+      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450" 
+      data-aos="fade" data-aos-duration="200" data-aos-delay="150"
+      />
+      <div class="stage-container" data-aos="fade" data-aos-duration="300" data-aos-delay="350">
         <h2 class="stage-container-title">Stage 02</h2>
         <p class="stage-container-sub-title">1st Interview with HR</p>
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
       <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768"
-        data-aos="fade" data-aos-duration="200" data-aos-delay="700"/>
+        data-aos="fade" data-aos-duration="200" data-aos-delay="500"/>
       <img class="line-svg " src="../assets/images/line__768.svg" alt="Line"
-        v-if="window.width <= 768 && window.width > 450" />
-      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450" />
-      <div class="stage-container" data-aos="fade" data-aos-duration="300" data-aos-delay="900">
+        v-if="window.width <= 768 && window.width > 450" data-aos="fade" data-aos-duration="200" data-aos-delay="500"/>
+      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450"
+        data-aos="fade" data-aos-duration="200" data-aos-delay="500"
+      />
+      <div class="stage-container" data-aos="fade" data-aos-duration="300" data-aos-delay="650">
         <h2 class="stage-container-title">Stage 03</h2>
         <p class="stage-container-sub-title">Interview with Hiring Manager</p>
         <p class="stage-container-sub-text">*Home Task may be included in this stage</p>
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
       <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768"
-        data-aos="fade" data-aos-duration="200" data-aos-delay="1200"/>
+        data-aos="fade" data-aos-duration="200" data-aos-delay="800"/>
       <img class="line-svg " src="../assets/images/wline__768.svg" style="transform: rotate(0deg);" alt="Line"
-        v-if="window.width <= 768 && window.width > 450" />
-      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450" />
-      <div class="stage-container" data-aos="fade" data-aos-duration="300" data-aos-delay="1400">
+        v-if="window.width <= 768 && window.width > 450" data-aos="fade" data-aos-duration="200" data-aos-delay="800" />
+      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450"
+        data-aos="fade" data-aos-duration="200" data-aos-delay="800"
+      />
+      <div class="stage-container" data-aos="fade" data-aos-duration="300" data-aos-delay="950">
         <h2 class="stage-container-title">Stage 04</h2>
         <p class="stage-container-sub-title">Final Interview with Management</p>
         <p class="stage-container-sub-text">(Usually for high level position)</p>
         <img class="border__img" src="../assets/images/careers/border.png" alt="">
       </div>
       <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width > 768"
-        data-aos="fade" data-aos-duration="200" data-aos-delay="1700"/>
+        data-aos="fade" data-aos-duration="200" data-aos-delay="1100"/>
       <img class="line-svg " src="../assets/images/rline__768.svg" alt="Line"
-        v-if="window.width <= 768 && window.width > 450" />
-      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450" />
-      <div class="stage-container" data-aos="fade" data-aos-duration="300" data-aos-delay="1900">
+        v-if="window.width <= 768 && window.width > 450" data-aos="fade" data-aos-duration="200" data-aos-delay="1100"/>
+      <img class="line-svg " src="../assets/images/careers/Line.svg" alt="Line" v-if="window.width <= 450"
+        data-aos="fade" data-aos-duration="200" data-aos-delay="1100"
+      />
+      <div class="stage-container" data-aos="fade" data-aos-duration="300" data-aos-delay="1250">
         <h2 class="stage-container-title">Stage 05</h2>
         <p class="stage-container-sub-title">Offer stage</p>
         <img class="border__img" src="../assets/images/careers/border.png" alt="">

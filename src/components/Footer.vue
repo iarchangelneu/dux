@@ -148,7 +148,7 @@ export default {
       text-transform: uppercase;
       color: #F0F0F0;
       transition: all 0.3s;
-      border-bottom: 1px solid #00FFFF;
+      // border-bottom: 1px solid #00FFFF;
       clip-path: polygon( 
         calc(0% + 1px) calc(0% + 1px), /* top left */
         calc(100% - 1px) calc(0% + 1px), /* top right */
@@ -158,6 +158,7 @@ export default {
     }
     a:hover{
       color: #00FFFF;
+      border-bottom: 1px solid #00FFFF;
       // border-bottom: 1px solid #00FFFF;
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }

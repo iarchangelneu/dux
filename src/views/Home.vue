@@ -3,7 +3,7 @@
     <div class="header">
       <div class="bg-img">
         <div class="bg-img-images">
-          <img src="../assets/images/home/title/klor.svg" class="klor" data-aos="fade-up" data-aos-duration="2000" />
+          <img src="../assets/images/home/title/klor.svg" class="klor"/>
           <img src="../assets/images/home/title/zar-mec.svg" class="zar-mec" data-aos="fade-up"
             data-aos-duration="2000" />
           <img src="../assets/images/home/title/zar-poqr.svg" class="zar-poqr" data-aos="fade-up"
@@ -2815,7 +2815,9 @@ export default {
             }
 
             .circle {
-              margin: 30px !important;
+              margin: 10px !important;
+              width: 20px !important;
+              height: 20px !important;
             }
           }
         }
