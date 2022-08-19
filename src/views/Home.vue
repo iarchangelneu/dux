@@ -3,7 +3,7 @@
     <div class="header">
       <div class="bg-img">
         <div class="bg-img-images">
-          <img src="../assets/images/home/title/klor.svg" class="klor"/>
+          <img src="../assets/images/home/title/klor.svg" class="klor" />
           <img src="../assets/images/home/title/zar-mec.svg" class="zar-mec" data-aos="fade-up"
             data-aos-duration="2000" />
           <img src="../assets/images/home/title/zar-poqr.svg" class="zar-poqr" data-aos="fade-up"
@@ -23,7 +23,7 @@
                   <div class="swiper-wrapper">
                     <!-- {{ this.text }} -->
                     <div class="swiper-slide" v-for="title in header_text" :key="title">
-                      {{title}}
+                      {{ title }}
                     </div>
                   </div>
                 </div>
@@ -56,7 +56,7 @@
     </div>
     <div class="running">
       <div class="title">
-        <p data-aos="fade-up" data-aos-duration="1500" >We follow the principle </p>
+        <p data-aos="fade-up" data-aos-duration="1500">We follow the principle </p>
       </div>
       <div class="line" v-if="menuClosed">
         <!--          <marquee direction="row" behavior="slide" height="100" width="100%" bgcolor="#010C28" Scrollamount=20>-->
@@ -140,9 +140,11 @@
         <p>Synergy and partnership</p>
       </div>
       <div class="items" data-aos="fade-up" data-aos-duration="1500">
-        <div class="item" @mouseover="firstCardHover=true" @mouseleave="firstCardHover=false">
-          <img src="../assets/images/partnership-bg.png" class="partnership-bg" v-if="window.width > 1024 && firstCardHover == false" />
-          <img src="../assets/images/home/CardsAnimeHover.png" class="partnership-bg gradient" v-show="window.width > 1024 && firstCardHover == true" />
+        <div class="item" @mouseover="firstCardHover = true" @mouseleave="firstCardHover = false">
+          <img src="../assets/images/partnership-bg.png" class="partnership-bg"
+            v-if="window.width > 1024 && firstCardHover == false" />
+          <img src="../assets/images/home/CardsAnimeHover.png" class="partnership-bg gradient"
+            v-show="window.width > 1024 && firstCardHover == true" />
           <img src="@/assets/images/partnership__bg2.png" class="partnership-bg"
             v-if="window.width <= 1024 && window.width > 450" alt="">
           <img src="@/assets/images/partnership__bg3.png" class="partnership-bg bg__mob" v-if="window.width <= 375"
@@ -159,7 +161,8 @@
               <img src="../assets/images/partnership/view1/4.svg" />
             </div>
           </div>
-          <div class="content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="0" data-aos-easing="ease-out">
+          <div class="content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="0"
+            data-aos-easing="ease-out">
             <p class="title">In People we Trust</p>
             <p class="text">We build any and all success on hiring industry experts, who know exactly what our customers
               demand.
@@ -167,9 +170,11 @@
               standard. Our teams and people are our greatest asset.</p>
           </div>
         </div>
-        <div class="item" @mouseover="secondCardHover=true" @mouseleave="secondCardHover=false">
-          <img src="../assets/images/partnership-bg.png" class="partnership-bg" v-if="window.width > 1024 && secondCardHover == false" />
-          <img src="../assets/images/home/CardsAnimeHover.png" class="partnership-bg gradient" v-show="window.width > 1024 && secondCardHover == true" />
+        <div class="item" @mouseover="secondCardHover = true" @mouseleave="secondCardHover = false">
+          <img src="../assets/images/partnership-bg.png" class="partnership-bg"
+            v-if="window.width > 1024 && secondCardHover == false" />
+          <img src="../assets/images/home/CardsAnimeHover.png" class="partnership-bg gradient"
+            v-show="window.width > 1024 && secondCardHover == true" />
           <img src="@/assets/images/partnership__bg2.png" class="partnership-bg"
             v-if="window.width <= 1024 && window.width > 450" alt="">
           <img src="@/assets/images/partnership__bg3.png" class="partnership-bg bg__mob2" v-if="window.width <= 375"
@@ -182,7 +187,8 @@
               <img src="../assets/images/partnership/view2/2.svg" />
             </div>
           </div>
-          <div class="content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="0" data-aos-easing="ease-out">
+          <div class="content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="0"
+            data-aos-easing="ease-out">
             <p class="title">Transparency is Gold – Honesty, Directness, Clarity</p>
             <p class="text">We build any and all success on hiring industry experts, who know exactly what our customers
               demand.
@@ -190,9 +196,11 @@
               standard. Our teams and people are our greatest asset.</p>
           </div>
         </div>
-        <div class="item" @mouseover="thirdCardHover=true" @mouseleave="thirdCardHover=false">
-          <img src="../assets/images/partnership-bg.png" class="partnership-bg" v-if="window.width > 1024 && thirdCardHover == false" />
-          <img src="../assets/images/home/CardsAnimeHover.png" class="partnership-bg gradient" v-show="window.width > 1024 && thirdCardHover == true" />
+        <div class="item" @mouseover="thirdCardHover = true" @mouseleave="thirdCardHover = false">
+          <img src="../assets/images/partnership-bg.png" class="partnership-bg"
+            v-if="window.width > 1024 && thirdCardHover == false" />
+          <img src="../assets/images/home/CardsAnimeHover.png" class="partnership-bg gradient"
+            v-show="window.width > 1024 && thirdCardHover == true" />
           <img src="@/assets/images/partnership__bg2.png" class="partnership-bg"
             v-if="window.width <= 1024 && window.width > 450" alt="">
           <img src="@/assets/images/partnership__bg3.png" class="partnership-bg bg__mob3" v-if="window.width <= 375"
@@ -207,8 +215,9 @@
               <img src="../assets/images/partnership/view3/4.svg" />
             </div>
           </div>
-          <div class="content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="0" data-aos-easing="ease-out">
-            <p class="title" >Resilience is Key – We have a plan</p>
+          <div class="content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="0"
+            data-aos-easing="ease-out">
+            <p class="title">Resilience is Key – We have a plan</p>
             <p class="text">We want to make an impact. But we are not too proud to admit that sometimes we need to
               re-adjust. Getting up after a fall and looking at different solutions that no one has ever thought of
               before - This is our strength.
@@ -216,9 +225,11 @@
               each new try, we add greater value. Every time.</p>
           </div>
         </div>
-        <div class="item" @mouseover="forthCardHover=true" @mouseleave="forthCardHover=false">
-          <img src="../assets/images/partnership-bg.png" class="partnership-bg" v-if="window.width > 1024 && forthCardHover == false" />
-          <img src="../assets/images/home/CardsAnimeHover.png" class="partnership-bg gradient" v-show="window.width > 1024 && forthCardHover == true" />
+        <div class="item" @mouseover="forthCardHover = true" @mouseleave="forthCardHover = false">
+          <img src="../assets/images/partnership-bg.png" class="partnership-bg"
+            v-if="window.width > 1024 && forthCardHover == false" />
+          <img src="../assets/images/home/CardsAnimeHover.png" class="partnership-bg gradient"
+            v-show="window.width > 1024 && forthCardHover == true" />
           <img src="@/assets/images/partnership__bg2.png" class="partnership-bg"
             v-if="window.width <= 1024 && window.width > 450" alt="">
           <img src="@/assets/images/partnership__bg3.png" class="partnership-bg bg__mob4" v-if="window.width <= 375"
@@ -232,7 +243,8 @@
               <img src="../assets/images/partnership/view4/3.svg" />
             </div>
           </div>
-          <div class="content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="0" data-aos-easing="ease-out">
+          <div class="content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="0"
+            data-aos-easing="ease-out">
             <p class="title">Team Dux – Together. – We are colleagues</p>
             <p class="text">But first and foremost, we like each other and we are friends. We are one team and we stand
               together in our mission. There is no hierarchy.
@@ -252,16 +264,16 @@
       </div>
       <div class="slide_part" data-aos="fade-up" data-aos-duration="2000">
         <div class="slider">
-          <div @mouseover="firstSliderCardHover=true" @mouseleave="firstSliderCardHover=false">
-            <img src="../assets/images/slider/Card1x.png" v-if="firstSliderCardHover==false">
+          <div @mouseover="firstSliderCardHover = true" @mouseleave="firstSliderCardHover = false">
+            <img src="../assets/images/slider/Card1x.png" v-if="firstSliderCardHover == false">
             <img src="../assets/images/home/WhatWeHavex.png" v-else>
           </div>
-          <div @mouseover="secondSliderCardHover=true" @mouseleave="secondSliderCardHover=false">
-            <img src="../assets/images/slider/Card2x.png" v-if="secondSliderCardHover==false">
+          <div @mouseover="secondSliderCardHover = true" @mouseleave="secondSliderCardHover = false">
+            <img src="../assets/images/slider/Card2x.png" v-if="secondSliderCardHover == false">
             <img src="../assets/images/home/WhatWeHave2x.png" v-else>
           </div>
-          <div  @mouseover="thirdSliderCardHover=true" @mouseleave="thirdSliderCardHover=false">
-            <img src="../assets/images/slider/Card3x.png" v-if="thirdSliderCardHover==false">
+          <div @mouseover="thirdSliderCardHover = true" @mouseleave="thirdSliderCardHover = false">
+            <img src="../assets/images/slider/Card3x.png" v-if="thirdSliderCardHover == false">
             <img src="../assets/images/home/WhatWeHave3x.png" v-else>
           </div>
         </div>
@@ -449,12 +461,13 @@
         <BlockTitle title="our mission"></BlockTitle>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1500">
-        <p data-aos="fade-up" data-aos-duration="1500">Make <span class="blue">big waves</span> in the iGaming segment together with <span class="blue">our
+        <p data-aos="fade-up" data-aos-duration="1500">Make <span class="blue">big waves</span> in the iGaming segment
+          together with <span class="blue">our
             team</span> and build an awesome <span class="blue">ecosystem</span></p>
         <img src="../assets/images/mission/6.svg" class="forth_figure forth_figure1" />
         <img src="../assets/images/mission/23.svg" class="second_figure forth_figure2" />
-        <img src="../assets/images/mission/33.svg" class="third_figure forth_figure3"/>
-        <img src="../assets/images/mission/45.svg" class="first_figure forth_figure4"/>
+        <img src="../assets/images/mission/33.svg" class="third_figure forth_figure3" />
+        <img src="../assets/images/mission/45.svg" class="first_figure forth_figure4" />
       </div>
     </div>
     <div class="gambling">
@@ -479,7 +492,7 @@
             <transition name="fade" mode="out-in">
               <img v-if="upHere == false" class="bi bi-arrow-right" src="../assets/images/home/Arrow.svg" alt="">
               <img v-else class="bi bi-arrow-right" src="../assets/images/home/ArrowHov.svg" alt="">
-             </transition>
+            </transition>
           </div>
         </div>
       </div>
@@ -680,24 +693,24 @@ let mooveCursor = () => {
       // console.log(document.querySelector('.map').offsetWidth - document.querySelector('#cards').offsetWidth + 90)
       if (window.innerWidth >= 1920) {
         if (mouseX < 700 || mouseX > document.querySelector('.map').offsetWidth - 650
-        || e.pageY > document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 550
-        || e.pageY < document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 141
+          || e.pageY > document.querySelector('.map').getBoundingClientRect().top + window.pageYOffset + 550
+          || e.pageY < document.querySelector('.map').getBoundingClientRect().top + window.pageYOffset + 141
         ) {
           document.querySelector('#cards').style.visibility = `hidden`;
           document.querySelector('#cards').style.opacity = 0
         } else {
           document.querySelector('#cards').style.visibility = `visible`;
           document.querySelector('#cards').style.opacity = 1
-          
+
         }
       }
       else if (window.innerWidth >= 1200) {
-        if ((mouseX < 500 || mouseX > document.querySelector('.map').offsetWidth - 400) 
-        || e.pageY > document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 447
-        || e.pageY < document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 141
-        ) 
-            // && (e.pageY < (document.querySelector('.map').getBoundingClientRect().top + window.pageYOffset + 600))
-            // && (e.pageY > document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 400)
+        if ((mouseX < 500 || mouseX > document.querySelector('.map').offsetWidth - 400)
+          || e.pageY > document.querySelector('.map').getBoundingClientRect().top + window.pageYOffset + 447
+          || e.pageY < document.querySelector('.map').getBoundingClientRect().top + window.pageYOffset + 141
+        )
+        // && (e.pageY < (document.querySelector('.map').getBoundingClientRect().top + window.pageYOffset + 600))
+        // && (e.pageY > document.querySelector('.map').getBoundingClientRect().top+window.pageYOffset + 400)
         {
           document.querySelector('#cards').style.visibility = `hidden`;
           document.querySelector('#cards').style.opacity = 0
@@ -1145,7 +1158,7 @@ export default {
 
     }
 
-    .Marquee-content3{
+    .Marquee-content3 {
       display: -webkit-box;
       display: -moz-box;
       display: -webkit-flex;
@@ -1159,10 +1172,11 @@ export default {
       animation: marquee 23s linear infinite running;
       animation-direction: reverse;
     }
-    .Marquee-content:hover{
-        -webkit-animation-play-state:paused;
-        -moz-animation-play-state:paused;
-        animation-play-state:paused;
+
+    .Marquee-content:hover {
+      -webkit-animation-play-state: paused;
+      -moz-animation-play-state: paused;
+      animation-play-state: paused;
     }
 
     .Marquee-content2 {
@@ -1178,6 +1192,7 @@ export default {
       -ms-animation: marquee 32s linear infinite running;
       animation: marquee 32s linear infinite running;
       animation-direction: reverse;
+
       .Marquee-tag {
         width: fit-content;
         display: -webkit-inline-box;
@@ -1215,43 +1230,43 @@ export default {
           margin: 0;
         }
 
-        @media screen and (max-width: 1024px){
+        @media screen and (max-width: 1024px) {
           p {
-          color: #F0F0F0;
-          font-family: 'Oxygen';
-          font-style: normal;
-          font-weight: 400;
-          text-transform: uppercase;
-          font-size: 84px !important;
-          line-height: 95%;
-          margin: 0;
-        }
+            color: #F0F0F0;
+            font-family: 'Oxygen';
+            font-style: normal;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 84px !important;
+            line-height: 95%;
+            margin: 0;
+          }
         }
 
-        @media screen and (max-width: 768px){
+        @media screen and (max-width: 768px) {
           p {
-          color: #F0F0F0;
-          font-family: 'Oxygen';
-          font-style: normal;
-          font-weight: 400;
-          text-transform: uppercase;
-          font-size: 68px !important;
-          line-height: 95%;
-          margin: 0;
-        }
+            color: #F0F0F0;
+            font-family: 'Oxygen';
+            font-style: normal;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 68px !important;
+            line-height: 95%;
+            margin: 0;
+          }
         }
 
-        @media screen and (max-width: 475px){
+        @media screen and (max-width: 475px) {
           p {
-          color: #F0F0F0;
-          font-family: 'Oxygen';
-          font-style: normal;
-          font-weight: 400;
-          text-transform: uppercase;
-          font-size: 48px !important;
-          line-height: 95%;
-          margin: 0;
-        }
+            color: #F0F0F0;
+            font-family: 'Oxygen';
+            font-style: normal;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 48px !important;
+            line-height: 95%;
+            margin: 0;
+          }
         }
 
         .circle {
@@ -1264,10 +1279,11 @@ export default {
       }
 
     }
-    .Marquee-content2:hover{
-        -webkit-animation-play-state:paused;
-        -moz-animation-play-state:paused;
-        animation-play-state:paused;
+
+    .Marquee-content2:hover {
+      -webkit-animation-play-state: paused;
+      -moz-animation-play-state: paused;
+      animation-play-state: paused;
     }
   }
 }
@@ -1535,7 +1551,7 @@ export default {
       .bg-img {
         background-size: contain !important;
         min-height: 567px !important;
-        
+
         .klor {
           top: 12% !important;
           right: 50% !important;
@@ -2641,7 +2657,7 @@ export default {
 
 @media screen and (max-width:450px) {
 
-  .container{
+  .container {
     .content {
       padding: 70px 16px !important;
 
@@ -2671,7 +2687,7 @@ export default {
       }
     }
   }
-  
+
   .organizations__mob {
     display: contents;
 
@@ -3350,8 +3366,8 @@ export default {
 }
 
 @media screen and (min-width: 320px) and (max-width: 375px) {
-.container{
-  .slider {
+  .container {
+    .slider {
       .slide_part div img {
         width: 288px !important;
       }
@@ -3396,7 +3412,7 @@ export default {
         }
       }
     }
-}
+  }
 
 }
 
@@ -3411,19 +3427,21 @@ export default {
     width: 100%;
     position: relative;
     // background-image: url("../assets/images/home-bg.png");
-     background-image: url("../assets/images/home-bg.svg");
+    background-image: url("../assets/images/home-bg.svg");
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
     min-height: 702px;
 
     z-index: 0;
-      .bg-img-images{
+
+    .bg-img-images {
+      z-index: -1;
+
+      img {
         z-index: -1;
-        img{
-          z-index: -1;
-        }
       }
+    }
 
     img.zar-poqr {
       position: absolute;
@@ -3882,7 +3900,7 @@ export default {
   }
 }
 
-.gradient{
+.gradient {
   width: 100%;
   height: 410px;
 }
@@ -4627,10 +4645,10 @@ export default {
       z-index: -1;
     }
 
-    .first_figure:hover{
+    .first_figure:hover {
       left: 35px;
       top: 40px;
-    } 
+    }
 
     .second_figure {
       position: absolute;
@@ -4639,10 +4657,11 @@ export default {
       transition: 2s;
       z-index: -1;
     }
-    .second_figure:hover{
+
+    .second_figure:hover {
       right: -100px;
       top: 15%;
-    } 
+    }
 
     .third_figure {
       position: absolute;
@@ -4651,10 +4670,11 @@ export default {
       transition: 2s;
       z-index: -1;
     }
-    .third_figure:hover{
+
+    .third_figure:hover {
       right: 35%;
       top: 15px;
-    } 
+    }
 
     .forth_figure {
       position: absolute;
@@ -4665,10 +4685,11 @@ export default {
       width: 162px;
       height: 177px;
     }
-    .forth_figure:hover{
+
+    .forth_figure:hover {
       right: 30%;
       bottom: -10px;
-    } 
+    }
   }
 }
 
@@ -4745,7 +4766,8 @@ export default {
 
       .circle:hover {
         background: #1F2941;
-        .bi-arrow-right{
+
+        .bi-arrow-right {
           width: 53px;
           height: 8px;
         }
@@ -4825,9 +4847,10 @@ export default {
     .items {
       padding-left: 25px;
 
-      .item:hover{
+      .item:hover {
         background-image: url('../assets/images/home/News.png');
       }
+
       .item {
         transition: all 0.3s;
         background-image: url('../assets/images/holding/bg.svg');
@@ -5020,9 +5043,10 @@ export default {
           //}
         }
 
-        .text:hover{
+        .text:hover {
           background: linear-gradient(86.5deg, #5433FF 8.33%, #20BDFF 73.44%, #A5FECB 100%);
         }
+
         .text {
           @media (min-width: 1025px) and (max-width: 1920px) {
             left: calc(385px + (820 - 385) * ((100vw - 1025px) / (1920 - 1025)));
@@ -5068,9 +5092,10 @@ export default {
           top: 45%;
         }
 
-        .text:hover{
+        .text:hover {
           background: linear-gradient(137.73deg, #0C7355 4.69%, #00FFFF 86.71%);
         }
+
         .text {
           @media (min-width: 1025px) and (max-width: 1920px) {
             right: calc(340px + (760 - 340) * ((100vw - 1025px) / (1920 - 1025))) !important;
@@ -5143,6 +5168,24 @@ export default {
       }
 
     }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .cards {
+    top: 186px !important;
+    left: 69px !important;
+
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .cards {
+    transform: translate3d(0, 0, 0) !important;
+    visibility: visible !important;
+    top: 164px !important;
+    left: 52px !important;
+
   }
 }
 
@@ -5227,22 +5270,24 @@ export default {
   flex-direction: column;
 }
 
-.swiper-container{
+.swiper-container {
   max-height: 30px;
   overflow: hidden;
 }
-.swiper-slide{
+
+.swiper-slide {
   line-height: 28px;
 }
 
-.TestCazino{
+.TestCazino {
   width: 150px;
   height: 150px;
   border: 0.882353px solid #828FA1;
   border-radius: 116.883px;
   margin-right: 10px;
   margin-left: 10px;
-  img{
+
+  img {
     padding: 50px 45px 60px 44px;
     width: 61px;
     height: 40px;
@@ -5250,7 +5295,7 @@ export default {
 }
 
 @media screen and (max-width: 1024px) {
-    .TestCazino{
+  .TestCazino {
     width: 100px;
     height: 100px;
     border: 0.882353px solid #828FA1;
@@ -5261,7 +5306,7 @@ export default {
 }
 
 @media screen and (max-width: 475px) {
-    .TestCazino{
+  .TestCazino {
     width: 70px;
     height: 70px;
     border: 0.882353px solid #828FA1;
@@ -5271,54 +5316,60 @@ export default {
   }
 }
 
-.TestCazino:hover{
+.TestCazino:hover {
   background: #828FA1;
   cursor: pointer;
 }
 
-.Nine{
-  img{
+.Nine {
+  img {
     padding: 50px 45px 60px 44px;
     width: 61px;
     height: 40px;
   }
+
   @media screen and (max-width: 1024px) {
-    img{
+    img {
       padding: 40px 30px 40px 30px;
       width: 40px !important;
       height: 27px !important;
     }
   }
+
   @media screen and (max-width: 768px) {
-    img{
+    img {
       padding: 40px 30px 40px 30px;
       width: 40px !important;
       height: 27px !important;
     }
   }
+
   @media screen and (max-width: 475px) {
-    img{
+    img {
       padding: 26px 17px 26px 17px;
       width: 36px !important;
       height: 20px !important;
     }
   }
 }
-.Pino{
-  img{
+
+.Pino {
+  img {
     padding: 59px 51px 60px 50px;
     width: 49px;
     height: 31px;
   }
+
   @media screen and (max-width: 1024px) {
-    img{
+    img {
       padding: 43px 30px 40px 34px;
       width: 33px !important;
       height: 18px !important;
     }
   }
+
   @media screen and (max-width: 475px) {
-    img{
+    img {
       padding: 25px 20px 25px 20px;
       width: 31px !important;
       height: 20px !important;
@@ -5326,43 +5377,47 @@ export default {
   }
 }
 
-.DuxMar{
-  img{
+.DuxMar {
+  img {
     padding: 61px 44px 57px 43px;
     width: 63px;
     height: 32px;
   }
+
   @media screen and (max-width: 1024px) {
-    img{
+    img {
       padding: 40px 24px 40px 30px;
       width: 42px !important;
       height: 22px !important;
     }
   }
+
   @media screen and (max-width: 475px) {
-    img{
+    img {
       padding: 27px 20px 27px 20px;
       width: 31px !important;
       height: 17px !important;
     }
   }
 }
-.Octo{
-  img{
+
+.Octo {
+  img {
     padding: 60px 44.5px 60px 44.5px;
     width: 61px;
     height: 30px;
   }
 
   @media screen and (max-width: 1024px) {
-    img{
+    img {
       padding: 42px 40.5px 60px 30.5px;
       width: 41px !important;
       height: 20px !important;
     }
   }
+
   @media screen and (max-width: 475px) {
-    img{
+    img {
       padding: 27px 19px 27px 19px;
       width: 33px !important;
       height: 17px !important;
@@ -5370,21 +5425,23 @@ export default {
   }
 }
 
-.Gets{
-  img{
+.Gets {
+  img {
     padding: 57px 49.5px 56.05px 49.05px;
     width: 51.45px;
     height: 36.95px;
   }
+
   @media screen and (max-width: 1024px) {
-    img{
+    img {
       padding: 42px 38.5px 36px 34.5px;
       width: 34px !important;
       height: 24px !important;
     }
   }
+
   @media screen and (max-width: 475px) {
-    img{
+    img {
       padding: 25px 19px 24px 22px;
       width: 29px !important;
       height: 21px !important;
@@ -5392,16 +5449,16 @@ export default {
   }
 }
 
-.marqueeSecond{
+.marqueeSecond {
   margin-top: 4px;
 }
 
-.arrows-news{
+.arrows-news {
   display: none;
 }
 
 @media screen and (max-width: 1024px) {
-  .arrows-news{
+  .arrows-news {
     display: flex;
   }
 }
@@ -5415,7 +5472,6 @@ export default {
 .fade-leave-to {
   opacity: 0;
 }
-
 </style>
 <style>
 @keyframes asd {
