@@ -208,7 +208,7 @@ export default {
     let timerAnim = 0
     document.querySelectorAll('.cube').forEach((el)=>{
       setTimeout(()=>{el.classList.add('showdiv')},timerAnim)
-      timerAnim+=300;
+      timerAnim+=260;
     })
 
     let firstSplit = this.mainTitle.split(' ')
@@ -267,7 +267,7 @@ export default {
 
 .cube1 {
   animation: cubeAnim .5s linear;
-  animation-delay: .3s;
+  animation-delay: .2s;
 }
 
 .cube2 {
