@@ -725,7 +725,9 @@ export default {
 .slick-slide {
   margin-right: 20px !important;
 }
-
+.BambooHR-ATS-Location{
+  transition: all 0.3s;
+}
 @media screen and (max-width: 1024px) {
   .slick-slide {
     margin-right: 12px !important;

@@ -253,16 +253,16 @@
       <div class="slide_part" data-aos="fade-up" data-aos-duration="2000">
         <div class="slider">
           <div @mouseover="firstSliderCardHover=true" @mouseleave="firstSliderCardHover=false">
-            <img src="../assets/images/slider/Card1.png" v-if="firstSliderCardHover==false">
-            <img src="../assets/images/home/WhatWeHave.png" v-else>
+            <img src="../assets/images/slider/Card1x.png" v-if="firstSliderCardHover==false">
+            <img src="../assets/images/home/WhatWeHavex.png" v-else>
           </div>
           <div @mouseover="secondSliderCardHover=true" @mouseleave="secondSliderCardHover=false">
-            <img src="../assets/images/slider/Card2.png" v-if="secondSliderCardHover==false">
-            <img src="../assets/images/home/WhatWeHave2.png" v-else>
+            <img src="../assets/images/slider/Card2x.png" v-if="secondSliderCardHover==false">
+            <img src="../assets/images/home/WhatWeHave2x.png" v-else>
           </div>
           <div  @mouseover="thirdSliderCardHover=true" @mouseleave="thirdSliderCardHover=false">
-            <img src="../assets/images/slider/Card3.png" v-if="thirdSliderCardHover==false">
-            <img src="../assets/images/home/WhatWeHave3.png" v-else>
+            <img src="../assets/images/slider/Card3x.png" v-if="thirdSliderCardHover==false">
+            <img src="../assets/images/home/WhatWeHave3x.png" v-else>
           </div>
         </div>
         <VueSlickCarousel ref="carousel" v-bind="settingsImages" class="vue-slick">
