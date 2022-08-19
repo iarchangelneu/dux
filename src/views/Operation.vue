@@ -582,7 +582,8 @@ export default {
 
   25% {
     transform: rotate(15deg) translate(-424px, 0);
-    animation-timing-function: ease-in-out;
+    // animation-timing-function: ease-in-out;
+    animation-timing-function: cubic-bezier(0, 0, 0.69, 0.87);
   }
 
   75% {
