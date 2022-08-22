@@ -5,9 +5,9 @@
         <img src="../assets/images/logo.svg">
       </div>
       <div class="menu">
-        <router-link to="/">INSTAGRAM</router-link>
-        <router-link to="/">FACEBOOK</router-link>
-        <router-link to="/">LINKEDIN</router-link>
+        <a href="https://www.instagram.com/_duxgroup_/?utm_medium=copy_link" target="_blank">INSTAGRAM</a>
+        <a href="https://www.facebook.com/DUXGroup-105477341830207" target="_blank">FACEBOOK</a>
+        <a href="https://www.linkedin.com/company/72708803/" target="_blank">LINKEDIN</a>
       </div>
       <div class="link">
         <router-link to="/contact">CONTACTS</router-link>
@@ -25,9 +25,9 @@
           </div>
         </div>
         <div class="menu">
-          <router-link to="/">INSTAGRAM</router-link>
-          <router-link to="/">FACEBOOK</router-link>
-          <router-link to="/">LINKEDIN</router-link>
+          <a href="https://www.instagram.com/_duxgroup_/?utm_medium=copy_link" target="_blank">INSTAGRAM</a>
+          <a href="https://www.facebook.com/DUXGroup-105477341830207" target="_blank">FACEBOOK</a>
+          <a href="https://www.linkedin.com/company/72708803/" target="_blank">LINKEDIN</a>
         </div>
 
       </div>
