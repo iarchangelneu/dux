@@ -598,6 +598,8 @@ export default {
   }
 }
 
+@media screen {}
+
 @media screen and (max-width: 450px) {
   @keyframes full {
     // 0% {
