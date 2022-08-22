@@ -508,7 +508,7 @@
         </div>
         <div class="organizations">
           <div class="img" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
-            <img src="../assets/images/organizations/sigma.svg" />
+            <img src="../assets/images/organizations/sigma+.svg" />
           </div>
           <div class="img" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1000">
             <img src="../assets/images/organizations/affiliate.svg" />
@@ -523,7 +523,7 @@
         <div class="organizations__mob">
           <div style="display:flex; justify-content:space-between; align-items:center">
             <div class="img">
-              <img src="../assets/images/organizations/sigma.svg" />
+              <img src="../assets/images/organizations/sigma+.svg" />
             </div>
             <div class="img">
               <img src="../assets/images/organizations/affiliate.svg" />
@@ -3311,7 +3311,7 @@ export default {
 
           img:nth-child(3) {
             width: 30% !important;
-            bottom: 140px !important;
+            bottom: 157px !important;
             //top: calc(120px + (150 - 120) * ((100vw - 1440px) / (1920 - 1440)));
           }
 
