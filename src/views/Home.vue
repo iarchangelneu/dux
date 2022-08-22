@@ -514,7 +514,7 @@
             <img src="../assets/images/organizations/affiliate.svg" />
           </div>
           <div class="img" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="500">
-            <img src="../assets/images/organizations/asia.png" />
+            <img src="../assets/images/organizations/asia.svg" />
           </div>
           <div class="img" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1400">
             <img src="../assets/images/home/Amster.svg" />
@@ -534,7 +534,7 @@
               <img src="../assets/images/organizations/london.svg" />
             </div>
             <div class="img">
-              <img src="../assets/images/organizations/asia.png" />
+              <img src="../assets/images/organizations/asia.svg" />
             </div>
           </div>
         </div>
@@ -3303,15 +3303,15 @@ export default {
           }
 
           img:nth-child(2) {
-            width: 60% !important;
+            width: 55% !important;
             margin-top: 16px !important;
             z-index: 150 !important;
             align-self: center;
           }
 
           img:nth-child(3) {
-            width: 24% !important;
-            bottom: 110px !important;
+            width: 30% !important;
+            bottom: 140px !important;
             //top: calc(120px + (150 - 120) * ((100vw - 1440px) / (1920 - 1440)));
           }
 

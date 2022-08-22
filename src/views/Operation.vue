@@ -600,24 +600,45 @@ export default {
 
 @media screen and (max-width: 450px) {
   @keyframes full {
+    // 0% {
+    //   transform: rotate(0);
+    //   transform: translate(0, 0);
+    // }
+
+    // 50% {
+    //   transform: rotate(15deg) translate(-100px, 0);
+
+    // }
+
+    // 100% {
+    //   transform: rotate(0) translate(0, 0);
+    // }
     0% {
-      transform: rotate(0);
-      transform: translate(0, 0);
+      transform: rotate(0deg) translate(0, 0);
+      // animation-timing-function: ease-out;
+      animation-timing-function: cubic-bezier(0, 0, 0.69, 0.89);
     }
 
-    50% {
-      transform: rotate(15deg) translate(-100px, 0);
+    25% {
+      transform: rotate(10deg) translate(-70px, 0);
+      animation-timing-function: ease-in-out;
+      // animation-timing-function: cubic-bezier(0, 0, 0.69, 0.89);
+    }
 
+    75% {
+      transform: rotate(-10deg) translate(20px, 0);
+      animation-timing-function: ease-in;
     }
 
     100% {
-      transform: rotate(0) translate(0, 0);
+      transform: rotate(0deg) translate(0, 0);
+      animation-timing-function: linear;
     }
   }
 }
 
 .full__anim {
-  animation: full 7s infinite;
+  animation: full 9s infinite;
   animation-delay: 2s;
   padding-top: -30px;
 }
@@ -1034,51 +1055,69 @@ export default {
   }
 
   .oper__anim1 {
-    width: 80px;
-    top: -10px;
+    // width: 80px;
+    width: 100px;
+    // top: -10px;
+    top: -25px;
     right: 310px;
   }
 
   .oper__anim2 {
-    width: 70px;
-    top: -10px;
-    right: 225px;
+    // width: 70px;
+    width: 90px;
+    // top: -10px;
+    top: -25px;
+    // right: 225px;
+    right: 215px;
   }
 
   .oper__anim3 {
-    width: 60px;
-    top: -17px;
-    right: 145px;
+    // width: 60px;
+    width: 80px;
+    // top: -17px;
+    top: -29px;
+    // right: 145px;
+    right: 125px;
   }
 
   .oper__anim4 {
-    width: 65px;
-    top: -35px;
-    right: 55px;
+    // width: 65px;
+    width: 85px;
+    // top: -35px;
+    top: -50px;
+    // right: 55px;
+    right: 25px;
   }
 
   .oper__anim5 {
-    width: 105px;
-    right: 250px;
+    // width: 105px;
+    width: 125px;
+    right: 245px;
     top: 78px;
   }
 
   .oper__anim6 {
-    width: 55px;
-    right: 220px;
+    // width: 55px;
+    width: 75px;
+    // right: 220px;
+    right: 205px;
     top: 70px;
   }
 
   .oper__anim7 {
     top: 63px;
-    right: 150px;
-    width: 50px;
+    // right: 150px;
+    right: 130px;
+    // width: 50px;
+    width: 68px;
   }
 
   .oper__anim8 {
     top: 55px;
-    right: 70px;
-    width: 90px;
+    // right: 70px;
+    right: 45px;
+    // width: 90px;
+    width: 115px;
   }
 
   .oper__anim9 {

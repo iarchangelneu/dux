@@ -2399,13 +2399,18 @@ export default {
 
   .stage-container:nth-child(7) {
 
-    position: initial;
-
+    // position: initial;
+    position: relative;
+    top: unset;
+    right: unset !important;
   }
 
   .stage-container:nth-child(9) {
 
-    position: initial;
+    // position: initial;
+    position: relative;
+    top: unset;
+    right: unset !important;
 
   }
 
