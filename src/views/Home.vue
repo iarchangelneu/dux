@@ -1125,7 +1125,7 @@ export default {
       -o-animation: marquee 25s linear infinite running;
       -ms-animation: marquee 25s linear infinite running;
       animation: marquee 25s linear infinite running;
-      animation-direction: reverse;
+      // animation-direction: reverse;
 
       .Marquee-tag {
         width: fit-content;
