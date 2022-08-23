@@ -274,14 +274,14 @@
             <img src="../assets/images/home/WhatWeHave2x.png" v-else>
           </div>
           <div @mouseover="thirdSliderCardHover = true" @mouseleave="thirdSliderCardHover = false">
-            <img src="../assets/images/slider/Card3x.png" v-if="thirdSliderCardHover == false">
-            <img src="../assets/images/home/WhatWeHave3x.png" v-else>
+            <img src="../assets/images/slider/PinoLine.png" v-if="thirdSliderCardHover == false">
+            <img src="../assets/images/slider/nineHov.png" v-else>
           </div>
         </div>
         <VueSlickCarousel ref="carousel" v-bind="settingsImages" class="vue-slick">
           <div><img src="../assets/images/slider/Card1.png"></div>
           <div><img src="../assets/images/slider/Card2.png"></div>
-          <div><img src="../assets/images/slider/Card3.png"></div>
+          <div><img src="../assets/images/slider/PinoM.png"></div>
         </VueSlickCarousel>
         <div class="arrows">
           <div class="prev" @click="showPrev">
@@ -317,7 +317,7 @@
             <div class="Marquee-tag max-width">
               <!-- <img src="../assets/images/marquee/pino.svg" class="ml10" /> -->
               <div class="TestCazino Pino" onclick="window.open('https://www.pinocasino.com/', '_blank')">
-                <img src="../assets/images/marquee/PinoLogo.svg" alt="">
+                <img src="../assets/images/marquee/DuxLogo.svg" alt="">
               </div>
               <p>WE LOVE</p>
             </div>
@@ -325,14 +325,14 @@
             <div class="Marquee-tag max-width">
               <!-- <img src="../assets/images/marquee/duxcasino.svg" class="ml10" /> -->
               <div class="TestCazino DuxMar" onclick="window.open('https://www.duxcasino.com/', '_blank')">
-                <img src="../assets/images/marquee/DuxLogo.svg" alt="">
+                <img src="../assets/images/marquee/NineSVG.svg" alt="">
               </div>
               <p>WE LOVE</p>
             </div>
             <div class="Marquee-tag max-width">
               <!-- <img src="../assets/images/marquee/nineCasino.svg" class="ml10" /> -->
               <div class="TestCazino Nine" onclick="window.open('https://ninecasino.com/', '_blank')">
-                <img src="../assets/images/marquee/NineSVG.svg" alt="">
+                <img src="../assets/images/marquee/DuxLogo.svg" alt="">
               </div>
               <p>WE LOVE</p>
             </div>
@@ -340,7 +340,7 @@
             <div class="Marquee-tag max-width">
               <!-- <img src="../assets/images/marquee/pino.svg" class="ml10" /> -->
               <div class="TestCazino Pino" onclick="window.open('https://www.pinocasino.com/', '_blank')">
-                <img src="../assets/images/marquee/PinoLogo.svg" alt="">
+                <img src="../assets/images/marquee/NineSVG.svg" alt="">
               </div>
               <p>WE LOVE</p>
             </div>
@@ -369,7 +369,7 @@
             <div class="Marquee-tag max-width">
               <p>WHAT WE DO</p>
               <div class="TestCazino Gets" onclick="window.open('https://www.getslots.com/', '_blank')">
-                <img src="../assets/images/marquee/GetslotsLogo.svg" alt="">
+                <img src="../assets/images/marquee/PinoLogo.svg" alt="">
               </div>
               <!-- <img src="../assets/images/marquee/getslots.svg" class="ml10" /> -->
             </div>
@@ -385,7 +385,7 @@
               <p>WHAT WE DO</p>
               <!-- <img src="../assets/images/marquee/getslots.svg" class="ml10" /> -->
               <div class="TestCazino Gets" onclick="window.open('https://www.getslots.com/', '_blank')">
-                <img src="../assets/images/marquee/GetslotsLogo.svg" alt="">
+                <img src="../assets/images/marquee/PinoLogo.svg" alt="">
               </div>
             </div>
 
@@ -401,7 +401,7 @@
               <p>WHAT WE DO</p>
               <!-- <img src="../assets/images/marquee/getslots.svg" class="ml10" /> -->
               <div class="TestCazino Gets" onclick="window.open('https://www.getslots.com/', '_blank')">
-                <img src="../assets/images/marquee/GetslotsLogo.svg" alt="">
+                <img src="../assets/images/marquee/PinoLogo.svg" alt="">
               </div>
             </div>
 

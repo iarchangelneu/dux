@@ -75,10 +75,10 @@
             Antifraud
           </p>
         </div>
-        <div class="mechanism mechanism-design" @click="$modal.show('design-modal');">
+        <div class="mechanism mechanism-design" @click="$modal.show('crm-modal');">
           <img alt="shestiryonka" class='small-shestiryonka' src="../assets/images/operation/shestiryonka.svg" />
           <p class="mechanism-text">
-            Design
+            CRM
           </p>
         </div>
         <div class="mechanism mechanism-bi" @click="$modal.show('bi-modal');">
@@ -87,10 +87,10 @@
             BI <br> Analytics
           </p>
         </div>
-        <div class="mechanism mechanism-crm" @click="$modal.show('crm-modal');">
+        <div class="mechanism mechanism-crm" @click="$modal.show('design-modal');">
           <img alt="shestiryonka" class='small-shestiryonka' src="../assets/images/operation/shestiryonka.svg" />
           <p class="mechanism-text">
-            CRM
+            Design
           </p>
         </div>
         <div class="mechanism mechanism-development" @click="$modal.show('development-modal');">
